@@ -380,7 +380,7 @@ export default function ContactoPage() {
                       </div>
                       <div className={styles.locDetailItem}>
                         <span className={styles.detailLabel}>Teléfono / WhatsApp</span>
-                        <span className={styles.detailValue}>+1 (561) 253-5384</span>
+                        <span className={styles.detailValue}>561 253 5384</span>
                       </div>
                       <div className={styles.locDetailItem}>
                         <span className={styles.detailLabel}>Email</span>
@@ -532,7 +532,7 @@ export default function ContactoPage() {
                     </div>
                     <div className={styles.locDetailItem}>
                       <span className={styles.detailLabel}>Contacto</span>
-                      <span className={styles.detailValue}>+1 (561) 253-5384 | info@dermamskinhealth.com</span>
+                      <span className={styles.detailValue}>561 253 5384 | info@dermamskinhealth.com</span>
                     </div>
                   </div>
 

@@ -479,8 +479,8 @@ export default function ContactoPage() {
                   <PhoneCall size={28} strokeWidth={1} />
                   <h4 className={styles.quickActionTitle}>Llámanos</h4>
                   <p className={styles.quickActionText}>Consulta y agenda llamando directamente.</p>
-                  <a href={dialPhoneUrl} className={styles.quickActionLink}>
-                    Llamar ahora
+                  <a href="tel:+15612535384" className={styles.quickActionLink}>
+                    561 253 5384
                   </a>
                 </div>
 

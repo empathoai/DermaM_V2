@@ -174,10 +174,10 @@ export default function ContactoPage() {
                     Escríbenos por WhatsApp
                   </a>
                   <a 
-                    href={dialPhoneUrl} 
+                    href="tel:+15612535384" 
                     className={styles.secondaryBtn}
                   >
-                    Llamar ahora
+                    561 253 5384
                   </a>
                 </div>
               </div>

@@ -1,0 +1,192 @@
+.container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none; /* Let clicks pass outside UI elements */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    bottom: 32px;
+    right: 32px;
+  }
+}
+
+/* Helper Bubble above the button */
+.helperBubble {
+  pointer-events: auto;
+  background-color: #EFEFEB; /* Off White */
+  border: 1px solid rgba(54, 54, 51, 0.24);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  position: relative;
+  max-width: 280px;
+  border-radius: 0px;
+  animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: none;
+  border-left: 3px solid #363633; /* Solid accent anchor */
+}
+
+.helperTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.helperTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #363633;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 10px;
+  color: #BBB8B5; /* Soft Grey */
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 4px;
+  line-height: 1;
+}
+
+.closeBtn:hover {
+  color: #363633;
+}
+
+.helperInner {
+  display: flex;
+  align-items: center;
+}
+
+.helperText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #363633;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Elegant minimalist tail for the bubble */
+.bubbleTail {
+  position: absolute;
+  bottom: -6px;
+  right: 24px;
+  width: 10px;
+  height: 10px;
+  background-color: #EFEFEB;
+  border-right: 1px solid rgba(54, 54, 51, 0.24);
+  border-bottom: 1px solid rgba(54, 54, 51, 0.24);
+  transform: rotate(45deg);
+}
+
+/* Primary floating trigger button combining Option A & B styling */
+.floatButton {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+/* Subtlest lift and push-back on active click state */
+.floatButton:hover .iconCircle {
+  background-color: #141313; /* Dark Authority */
+  transform: translateY(-4px);
+}
+
+.floatButton:hover .labelBubble {
+  background-color: #F2F0F1;
+  border-color: rgba(54, 54, 51, 0.32);
+}
+
+/* Side Text Label Module */
+.labelBubble {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #363633;
+  background-color: #EFEFEB; /* Off White */
+  border: 1px solid rgba(54, 54, 51, 0.18);
+  padding: 10px 16px;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  opacity: 0; /* Starts hidden and fades/slides in gloriously */
+  transform: translateX(10px);
+  animation: slideLeftFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+@media (max-width: 575px) {
+  /* On compact screens, hide the text label by default to save precious screen real estate */
+  .labelBubble {
+    display: none;
+  }
+}
+
+/* Perfect customizable icon button base */
+.iconCircle {
+  width: 54px;
+  height: 54px;
+  background-color: #363633; /* Elegant branding base */
+  color: #F2F0F1; /* Clinical Canvas accent color */
+  border-radius : 50%; /* Made round as per user request */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(242, 240, 241, 0.18);
+  box-shadow: none;
+}
+
+.whatsappIcon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floatButton:hover .whatsappIcon {
+  transform: scale(1.1);
+}
+
+/* Motion system animations */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftFade {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

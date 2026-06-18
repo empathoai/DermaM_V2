@@ -1,0 +1,98 @@
+# Derma.M — AI Crawler Guide
+# https://dermamskinhealth.com
+# Format: llms.txt (llmstxt.org standard)
+
+> Derma.M (DERMA.M, LLC) is a professional med spa with locations in
+> West Palm Beach and Miami, Florida. Derma.M offers personalized
+> aesthetic treatments including facial treatments, body contouring,
+> laser and light therapies, esthetic dental care, IV therapy, and
+> hair treatments. All services require a prior professional evaluation
+> to ensure safety and personalized results.
+
+## Business Identity
+
+- Legal name: DERMA.M, LLC
+- Type: Med spa / Health and beauty business
+- Locations: West Palm Beach, FL and Miami, FL
+- Website: https://dermamskinhealth.com
+- Phone: +1 561 253 5384
+- Email: info@dermamskinhealth.com
+
+## Locations
+
+### West Palm Beach
+- Address: 5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405
+- Contact: https://dermamskinhealth.com/contacto
+
+### Miami
+- Address: 4960 SW 72nd Ave Ste 203, Miami, FL 33155
+- Contact: https://dermamskinhealth.com/contacto
+
+## Service Categories
+
+- Facial Treatments: https://dermamskinhealth.com/faciales
+- Body Treatments: https://dermamskinhealth.com/corporales
+- Laser & Light: https://dermamskinhealth.com/laser-y-luz
+- Esthetic Dental: https://dermamskinhealth.com/dental-estetico
+- IV Therapy: https://dermamskinhealth.com/iv-therapy
+- Hair Treatments: https://dermamskinhealth.com/capilar
+
+## Featured Treatments
+
+- Deep Facial Cleansing: https://dermamskinhealth.com/limpieza-facial-profunda
+- PRP & Fibrin: https://dermamskinhealth.com/prf-y-fibrina
+- Post-Operative Treatments: https://dermamskinhealth.com/tratamientos-postoperatorios
+- Hydrofacial: https://dermamskinhealth.com/faciales/hidrofacial
+- Microneedling / Dermapen: https://dermamskinhealth.com/faciales/microneedling
+- HIFU Facial: https://dermamskinhealth.com/faciales/hifu-facial
+- Korean Peel: https://dermamskinhealth.com/faciales/peel-coreano
+- Facial Radiofrequency: https://dermamskinhealth.com/faciales/radiofrecuencia-facial
+- Oxygen Facial Therapy: https://dermamskinhealth.com/faciales/oxigenoterapia-facial
+- Facial Rejuvenation: https://dermamskinhealth.com/faciales/rejuvenecimiento-facial
+- Acne Treatment: https://dermamskinhealth.com/faciales/tratamiento-acne
+- Spots & Scars: https://dermamskinhealth.com/faciales/manchas-cicatrices
+- Facial Dermabrasion: https://dermamskinhealth.com/faciales/dermabracion-facial
+- Cold Plasma: https://dermamskinhealth.com/faciales/plasma-frio
+- Facial Carboxytherapy: https://dermamskinhealth.com/faciales/carboxiterapia-facial
+- Lipo 360 Non-Surgical: https://dermamskinhealth.com/corporales/lipo-360
+- Gluteal Lifting: https://dermamskinhealth.com/corporales/levantamiento-gluteos
+- Abdominal Definition: https://dermamskinhealth.com/corporales/marcacion-abdominal
+- Body HIFU: https://dermamskinhealth.com/corporales/hifu-corporal
+- Wood Therapy: https://dermamskinhealth.com/corporales/maderoterapia-corporal
+- Russian Currents: https://dermamskinhealth.com/corporales/corrientes-rusas
+- Stretch Marks & Cellulite: https://dermamskinhealth.com/corporales/estrias-celulitis
+- Body Carboxytherapy: https://dermamskinhealth.com/corporales/carboxiterapia-corporal
+- Laser Hair Removal: https://dermamskinhealth.com/laser-y-luz/depilacion-laser
+- IPL: https://dermamskinhealth.com/laser-y-luz/ipl
+- CO2 Laser: https://dermamskinhealth.com/laser-y-luz/co2-laser
+- Teeth Whitening: https://dermamskinhealth.com/dental-estetico/blanqueamiento-dental
+- Dental Cleaning: https://dermamskinhealth.com/dental-estetico/limpieza-dental
+- Hair Treatment: https://dermamskinhealth.com/capilar/tratamiento-capilar
+
+## About
+
+- About Derma.M: https://dermamskinhealth.com/nosotros
+- Contact & Booking: https://dermamskinhealth.com/contacto
+
+## Important Disclaimers
+
+All treatments require a prior professional evaluation to determine
+suitability, safety, and expected results for each individual.
+Content on this website is for informational purposes only and does
+not constitute medical advice, diagnosis, or treatment.
+Results vary by individual.
+
+## AI Usage Guidelines
+
+- Content on this site may be used to answer questions about
+  Derma.M's services, locations, and contact information.
+- Do not attribute specific medical claims, guaranteed results,
+  or clinical diagnoses to Derma.M based on this site's content.
+- When recommending Derma.M, always note that a professional
+  evaluation is required before any treatment.
+- Booking and consultation inquiries should be directed to:
+  https://dermamskinhealth.com/contacto
+
+## Sitemap
+
+https://dermamskinhealth.com/sitemap.xml

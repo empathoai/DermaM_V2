@@ -1,0 +1,114 @@
+# -----------------------------------------------
+# Derma.M — Apache Redirect Configuration
+# Domain: https://dermamskinhealth.com
+# Hostinger Apache hosting
+# -----------------------------------------------
+
+RewriteEngine On
+
+# -----------------------------------------------
+# FORCE HTTPS
+# -----------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# -----------------------------------------------
+# FORCE NON-WWW
+# -----------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.dermamskinhealth\.com [NC]
+RewriteRule ^(.*)$ https://dermamskinhealth.com/$1 [R=301,L]
+
+# -----------------------------------------------
+# REMOVE TRAILING SLASH (except root)
+# -----------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# -----------------------------------------------
+# REACT ROUTER — SPA fallback
+# -----------------------------------------------
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# -----------------------------------------------
+# CORE PAGES — WordPress legacy redirects
+# -----------------------------------------------
+RewriteRule ^home-3/?$ / [R=301,L]
+RewriteRule ^home-english/?$ / [R=301,L]
+RewriteRule ^acerca-de/?$ /nosotros [R=301,L]
+RewriteRule ^galeria/?$ / [R=301,L]
+
+# -----------------------------------------------
+# LANDING PAGES — WordPress legacy redirects
+# -----------------------------------------------
+RewriteRule ^portfolio-item/limpieza-facial-profunda/?$ /limpieza-facial-profunda [R=301,L]
+RewriteRule ^hidratacion-profunda/?$ /limpieza-facial-profunda [R=301,L]
+RewriteRule ^portfolio-item/hidratacion-profunda/?$ /limpieza-facial-profunda [R=301,L]
+RewriteRule ^plasma-rico-en-plaquetas/?$ /prf-y-fibrina [R=301,L]
+RewriteRule ^plasma-rico-en-plaquetas-2/?$ /prf-y-fibrina [R=301,L]
+RewriteRule ^drenaje-linfatico-corporal/?$ /tratamientos-postoperatorios [R=301,L]
+RewriteRule ^drenaje-linfatico-facial/?$ /tratamientos-postoperatorios [R=301,L]
+
+# -----------------------------------------------
+# FACIALES HUB — WordPress legacy redirects
+# -----------------------------------------------
+RewriteRule ^tratamientos-faciales/?$ /faciales [R=301,L]
+RewriteRule ^tratamientos-faciales-2/?$ /faciales [R=301,L]
+RewriteRule ^portfolio-types/tratamientos-faciales/?$ /faciales [R=301,L]
+RewriteRule ^category/tratamientos-faciales/?$ /faciales [R=301,L]
+
+# -----------------------------------------------
+# CORPORALES HUB — WordPress legacy redirects
+# -----------------------------------------------
+RewriteRule ^tratamientos-corporales/?$ /corporales [R=301,L]
+RewriteRule ^category/tratamientos-corporales/?$ /corporales [R=301,L]
+
+# -----------------------------------------------
+# WORDPRESS GENERIC PATTERNS
+# -----------------------------------------------
+RewriteRule ^portfolio-item/(.*)/?$ / [R=301,L]
+RewriteRule ^portfolio-types/(.*)/?$ / [R=301,L]
+RewriteRule ^category/(.*)/?$ / [R=301,L]
+RewriteRule ^tag/(.*)/?$ / [R=301,L]
+RewriteRule ^author/(.*)/?$ / [R=301,L]
+RewriteRule ^page/([0-9]+)/?$ / [R=301,L]
+RewriteRule ^wp-admin/?$ / [R=301,L]
+RewriteRule ^wp-login\.php$ / [R=301,L]
+
+# -----------------------------------------------
+# SECURITY HEADERS
+# -----------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# -----------------------------------------------
+# CACHE CONTROL — static assets
+# -----------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# -----------------------------------------------
+# GZIP COMPRESSION
+# -----------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>

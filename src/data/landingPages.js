@@ -1,0 +1,523 @@
+export const landingPages = {
+  prfYFibrina: {
+    hero: {
+      eyebrow: 'TRATAMIENTO DESTACADO',
+      title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA',
+      body: 'Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel.',
+      backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg'
+    },
+    quickFacts: [
+      { label: "RESULTADO", value: "Progresivo", icon: "result" },
+      { label: "APLICACIÓN", value: "Según valoración", icon: "application" },
+      { label: "DURACIÓN", value: "Variable según protocolo", icon: "duration" },
+      { label: "ANESTESIA", value: "Según indicación profesional", icon: "anesthesia" }
+    ],
+    problem: {
+      eyebrow: 'CUÁNDO CONSIDERARLO',
+      headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL SIN UN CAMBIO ARTIFICIAL.',
+      body: 'PRP y Fibrina puede ser una opción para quienes desean acompañar la firmeza, textura y luminosidad de la piel mediante un protocolo personalizado y progresivo.',
+      list: [
+        'Piel con pérdida de luminosidad',
+        'Textura irregular',
+        'Firmeza disminuida',
+        'Signos visibles de cansancio',
+        'Interés en bioestimulación natural',
+        'Búsqueda de resultados graduales'
+      ],
+      image: '/assets/images/landings/prf-y-fibrina/how-it-works.jpg'
+    },
+    benefits: {
+      eyebrow: 'BENEFICIOS',
+      headline: 'BIOESTIMULACIÓN CUTÁNEA CON UN ENFOQUE NATURAL Y PROGRESIVO.',
+      list: [
+        {
+          title: 'APOYO A LA FIRMEZA',
+          body: 'Acompaña la apariencia de firmeza y calidad visible de la piel.'
+        },
+        {
+          title: 'TEXTURA MEJORADA',
+          body: 'Puede ayudar a que la piel se vea más uniforme y revitalizada.'
+        },
+        {
+          title: 'REGENERACIÓN AUTÓLOGA',
+          body: 'Utiliza componentes obtenidos del propio paciente dentro de un protocolo profesional.'
+        }
+      ]
+    },
+    howItWorks: {
+      eyebrow: 'CÓMO FUNCIONA',
+      headline: 'UN PROTOCOLO DISEÑADO PARA ESTIMULAR LA RESPUESTA NATURAL DE LA PIEL.',
+      body: 'El tratamiento se basa en la obtención y preparación de componentes autólogos para aplicarlos dentro de un protocolo personalizado, con el objetivo de acompañar la calidad visible de la piel de forma progresiva.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Revisamos tus objetivos, estado visible de la piel y condiciones generales.'
+        },
+        {
+          number: '02',
+          title: 'PREPARACIÓN',
+          body: 'Se realiza el proceso correspondiente para obtener y preparar el material autólogo.'
+        },
+        {
+          number: '03',
+          title: 'APLICACIÓN',
+          body: 'El protocolo se aplica de forma profesional según la zona y objetivo definido.'
+        },
+        {
+          number: '04',
+          title: 'EVOLUCIÓN',
+          body: 'Los resultados se observan de forma progresiva y pueden variar según cada persona.'
+        }
+      ]
+    },
+    specs: {
+      headline: 'DETALLES DEL TRATAMIENTO.',
+      items: {
+        'Tipo': 'Bioestimulación autóloga',
+        'Zona': 'Rostro, cuello o zonas indicadas durante la valoración',
+        'Objetivo': 'Firmeza, textura, luminosidad y calidad visible de la piel',
+        'Sesiones': 'Según valoración profesional',
+        'Recuperación': 'Puede variar según cada persona y zona tratada',
+        'Requiere valoración': 'Sí'
+      }
+    },
+    beforeAfter: {
+      eyebrow: 'RESULTADOS',
+      headline: 'EVOLUCIÓN VISIBLE, PROGRESIVA Y PERSONALIZADA.',
+      items: [
+        {
+          before: '/assets/images/landings/prf-y-fibrina/before-after-1.jpg',
+          after: '/assets/images/landings/prf-y-fibrina/before-after-2.jpg'
+        }
+      ],
+      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+    },
+    visitFlow: {
+      headline: 'CÓMO ES TU VISITA.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Escuchamos tus objetivos y evaluamos si el tratamiento es adecuado para ti.'
+        },
+        {
+          number: '02',
+          title: 'PLAN',
+          body: 'Definimos el protocolo según tu piel, zona y expectativas.'
+        },
+        {
+          number: '03',
+          title: 'TRATAMIENTO',
+          body: 'Realizamos el procedimiento con cuidado profesional y orientación clara.'
+        },
+        {
+          number: '04',
+          title: 'SEGUIMIENTO',
+          body: 'Te indicamos cuidados posteriores y próximos pasos según tu evolución.'
+        }
+      ]
+    },
+    testimonials: {
+      eyebrow: 'LO QUE DICEN',
+      headline: 'NUESTROS\nCLIENTES',
+      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      list: [
+        {
+          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
+          author: 'MIRASOL FERNÁNDEZ'
+        }
+      ]
+    },
+    faq: {
+      headline: 'PREGUNTAS FRECUENTES.',
+      items: [
+        {
+          question: '¿PRP y Fibrina es adecuado para todos?',
+          answer: 'No necesariamente. Requiere valoración previa para confirmar si es adecuado según tu piel, objetivos y condiciones individuales.'
+        },
+        {
+          question: '¿Cuándo se ven los resultados?',
+          answer: 'La evolución suele ser progresiva y puede variar según cada persona, protocolo y respuesta individual.'
+        },
+        {
+          question: '¿Requiere recuperación?',
+          answer: 'Puede haber sensibilidad o cambios temporales en la zona tratada. Durante la valoración se explican los cuidados posteriores.'
+        },
+        {
+          question: '¿Cuántas sesiones necesito?',
+          answer: 'La cantidad de sesiones depende de tus objetivos y de la recomendación profesional.'
+        },
+        {
+          question: '¿Los resultados están garantizados?',
+          answer: 'No. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+        }
+      ]
+    },
+    cta: {
+      eyebrow: 'AGENDA TU VALORACIÓN',
+      headline: 'DESCUBRE SI PRP Y FIBRINA ES ADECUADO PARA TU PIEL.',
+      body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo puede acompañar tus objetivos de firmeza, textura y luminosidad.',
+      primaryCta: 'RESERVAR',
+      secondaryCta: 'WHATSAPP',
+      disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
+      backgroundImage: '/assets/images/landings/prf-y-fibrina/cta.jpg'
+    }
+  },
+  limpiezaFacial: {
+    hero: {
+      eyebrow: 'TRATAMIENTO DESTACADO',
+      title: 'LIMPIEZA FACIAL PROFUNDA',
+      body: 'Un protocolo diseñado para limpiar, equilibrar y preparar la piel con una atención personalizada.',
+      backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
+    },
+    quickFacts: [
+      { label: "RESULTADO", value: "Inmediato", icon: "result" },
+      { label: "APLICACIÓN", value: "60 Minutos", icon: "application" },
+      { label: "DURACIÓN", value: "Cada 28 días", icon: "duration" },
+      { label: "ANESTESIA", value: "No necesaria", icon: "anesthesia" }
+    ],
+    problem: {
+      eyebrow: 'CUÁNDO CONSIDERARLO',
+      headline: 'SI BUSCAS UNA PIEL MÁS LIMPIA, EQUILIBRADA Y PREPARADA.',
+      body: 'La Limpieza Facial Profunda puede ayudarte a remover impurezas, mejorar la sensación de frescura y preparar la piel para absorber mejor los activos de cuidado.',
+      list: [
+        'Poros congestionados',
+        'Textura irregular',
+        'Piel opaca',
+        'Exceso de grasa visible',
+        'Sensación de piel pesada',
+        'Necesidad de preparación para otros tratamientos'
+      ],
+      image: '/assets/images/landings/limpieza-facial-profunda/how-it-works.jpg'
+    },
+    benefits: {
+      eyebrow: 'BENEFICIOS',
+      headline: 'UNA PIEL MÁS LIMPIA, FRESCA Y EQUILIBRADA.',
+      list: [
+        {
+          title: 'PURIFICACIÓN FOLICULAR',
+          body: 'Ayuda a remover impurezas visibles y acumulación en los poros.'
+        },
+        {
+          title: 'TEXTURA SUAVIZADA',
+          body: 'Acompaña una sensación de piel más uniforme, fresca y ligera.'
+        },
+        {
+          title: 'MEJOR ABSORCIÓN',
+          body: 'Prepara la piel para recibir mejor los activos de cuidado posterior.'
+        }
+      ]
+    },
+    howItWorks: {
+      eyebrow: 'CÓMO FUNCIONA',
+      headline: 'UN PROTOCOLO DE LIMPIEZA PROFUNDA ADAPTADO A TU PIEL.',
+      body: 'El tratamiento combina evaluación, limpieza, preparación y cuidado personalizado para apoyar una piel más equilibrada y renovada.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Observamos el estado visible de tu piel y tus objetivos de cuidado.'
+        },
+        {
+          number: '02',
+          title: 'PREPARACIÓN',
+          body: 'Preparamos la piel para facilitar una limpieza más cómoda y efectiva.'
+        },
+        {
+          number: '03',
+          title: 'LIMPIEZA',
+          body: 'Aplicamos el protocolo de limpieza profunda según las necesidades detectadas.'
+        },
+        {
+          number: '04',
+          title: 'CUIDADO FINAL',
+          body: 'Finalizamos con orientación y recomendaciones para mantener la piel cuidada.'
+        }
+      ]
+    },
+    specs: {
+      headline: 'DETALLES DEL TRATAMIENTO.',
+      items: {
+        'Tipo': 'Limpieza facial profunda',
+        'Zona': 'Rostro',
+        'Objetivo': 'Purificación, textura, equilibrio y preparación de la piel',
+        'Duración': '60 minutos',
+        'Frecuencia': 'Cada 28 días o según valoración',
+        'Anestesia': 'No necesaria',
+        'Requiere valoración': 'Sí'
+      }
+    },
+    beforeAfter: {
+      eyebrow: 'RESULTADOS',
+      headline: 'UNA PIEL VISUALMENTE MÁS LIMPIA Y RENOVADA.',
+      items: [
+        {
+          before: '/assets/images/landings/limpieza-facial-profunda/before-after-1.jpg',
+          after: '/assets/images/landings/limpieza-facial-profunda/before-after-2.jpg'
+        }
+      ],
+      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+    },
+    visitFlow: {
+      headline: 'CÓMO ES TU VISITA.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Escuchamos tus objetivos y observamos las necesidades visibles de tu piel.'
+        },
+        {
+          number: '02',
+          title: 'PROTOCOLO',
+          body: 'Definimos el enfoque de limpieza según tu tipo de piel y condición visible.'
+        },
+        {
+          number: '03',
+          title: 'TRATAMIENTO',
+          body: 'Realizamos el protocolo con cuidado profesional y productos seleccionados.'
+        },
+        {
+          number: '04',
+          title: 'RECOMENDACIÓN',
+          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
+        }
+      ]
+    },
+    testimonials: {
+      eyebrow: 'LO QUE DICEN',
+      headline: 'NUESTROS\nCLIENTES',
+      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      list: [
+        {
+          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
+          author: 'MIRASOL FERNÁNDEZ'
+        }
+      ]
+    },
+    faq: {
+      headline: 'PREGUNTAS FRECUENTES.',
+      items: [
+        {
+          question: '¿Cada cuánto se recomienda una limpieza facial profunda?',
+          answer: 'La frecuencia puede variar según tu piel y objetivos. Como referencia general, puede realizarse cada 28 días o según valoración profesional.'
+        },
+        {
+          question: '¿La limpieza facial profunda duele?',
+          answer: 'No suele requerir anestesia. La experiencia puede variar según la sensibilidad de cada persona y el estado de la piel.'
+        },
+        {
+          question: '¿Puedo realizarla antes de otro tratamiento?',
+          answer: 'En muchos casos puede ayudar a preparar la piel, pero debe confirmarse durante la valoración profesional.'
+        },
+        {
+          question: '¿Es adecuada para piel con acné?',
+          answer: 'Depende del estado visible de la piel y del tipo de brotes. Requiere valoración para definir si es el protocolo adecuado.'
+        },
+        {
+          question: '¿Los resultados son inmediatos?',
+          answer: 'La piel puede verse y sentirse más limpia desde la primera sesión, pero los resultados pueden variar según cada persona.'
+        }
+      ]
+    },
+    cta: {
+      eyebrow: 'AGENDA TU VALORACIÓN',
+      headline: 'EMPIEZA CON UNA LIMPIEZA FACIAL PERSONALIZADA.',
+      body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo es adecuado para tu piel y tus objetivos de cuidado.',
+      primaryCta: 'RESERVAR',
+      secondaryCta: 'WHATSAPP',
+      disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
+      backgroundImage: '/assets/images/landings/limpieza-facial-profunda/cta.jpg'
+    }
+  },
+  postoperatorios: {
+    hero: {
+      eyebrow: 'TRATAMIENTO DESTACADO',
+      title: 'TRATAMIENTOS POSTOPERATORIOS',
+      body: 'Acompañamiento profesional para apoyar una recuperación más cómoda y cuidar la evolución del proceso.',
+      backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg'
+    },
+    quickFacts: [
+      { label: "RESULTADO", value: "Primera sesión", icon: "result" },
+      { label: "APLICACIÓN", value: "60 Minutos", icon: "application" },
+      { label: "DURACIÓN", value: "Por evaluación", icon: "duration" },
+      { label: "ANESTESIA", value: "No necesaria", icon: "anesthesia" }
+    ],
+    problem: {
+      eyebrow: 'CUÁNDO CONSIDERARLO',
+      headline: 'SI BUSCAS ACOMPAÑAR TU RECUPERACIÓN CON CUIDADO PROFESIONAL.',
+      body: 'Los tratamientos postoperatorios pueden apoyar el proceso de recuperación corporal mediante protocolos enfocados en drenaje, inflamación, fibrosis y acompañamiento personalizado.',
+      list: [
+        'Inflamación o retención de líquidos',
+        'Sensación de pesadez corporal',
+        'Necesidad de drenaje linfático',
+        'Prevención o manejo de fibrosis',
+        'Recuperación después de procedimiento corporal',
+        'Búsqueda de seguimiento profesional'
+      ],
+      image: '/assets/images/landings/tratamientos-postoperatorios/how-it-works.jpg'
+    },
+    benefits: {
+      eyebrow: 'BENEFICIOS',
+      headline: 'APOYO PROFESIONAL PARA UNA RECUPERACIÓN MÁS CÓMODA.',
+      list: [
+        {
+          title: 'DRENAJE LINFÁTICO',
+          body: 'Ayuda a acompañar la eliminación de líquidos y sensación de pesadez.'
+        },
+        {
+          title: 'REDUCCIÓN DE INFLAMACIÓN',
+          body: 'Protocolos orientados a apoyar una evolución corporal más cómoda.'
+        },
+        {
+          title: 'PREVENCIÓN DE FIBROSIS',
+          body: 'Acompañamiento enfocado en cuidar la textura y recuperación del tejido.'
+        }
+      ]
+    },
+    howItWorks: {
+      eyebrow: 'CÓMO FUNCIONA',
+      headline: 'UN PROTOCOLO DE ACOMPAÑAMIENTO SEGÚN TU ETAPA DE RECUPERACIÓN.',
+      body: 'El tratamiento se adapta a tu proceso, zona tratada y evolución visible para acompañar la recuperación con técnicas profesionales y orientación clara.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Revisamos tu etapa de recuperación, zonas a tratar y necesidades visibles.'
+        },
+        {
+          number: '02',
+          title: 'PLAN',
+          body: 'Definimos el protocolo postoperatorio más adecuado según tu evolución.'
+        },
+        {
+          number: '03',
+          title: 'TRATAMIENTO',
+          body: 'Aplicamos técnicas enfocadas en drenaje, inflamación y cuidado del tejido.'
+        },
+        {
+          number: '04',
+          title: 'ORIENTACIÓN',
+          body: 'Te indicamos cuidados posteriores y próximos pasos según tu proceso.'
+        }
+      ]
+    },
+    specs: {
+      headline: 'DETALLES DEL TRATAMIENTO.',
+      items: {
+        'Tipo': 'Tratamiento postoperatorio',
+        'Zona': 'Corporal, según procedimiento y valoración',
+        'Objetivo': 'Drenaje, inflamación, fibrosis y recuperación cómoda',
+        'Duración': '60 minutos',
+        'Frecuencia': 'Por evaluación profesional',
+        'Anestesia': 'No necesaria',
+        'Requiere valoración': 'Sí'
+      }
+    },
+    beforeAfter: {
+      eyebrow: 'RESULTADOS',
+      headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN.',
+      items: [
+        {
+          before: '/assets/images/landings/tratamientos-postoperatorios/before-after-1.jpg',
+          after: '/assets/images/landings/tratamientos-postoperatorios/before-after-2.jpg'
+        }
+      ],
+      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+    },
+    visitFlow: {
+      headline: 'CÓMO ES TU VISITA.',
+      steps: [
+        {
+          number: '01',
+          title: 'VALORACIÓN',
+          body: 'Escuchamos tu proceso, procedimiento previo y necesidades actuales.'
+        },
+        {
+          number: '02',
+          title: 'PROTOCOLO',
+          body: 'Definimos la frecuencia y enfoque del acompañamiento postoperatorio.'
+        },
+        {
+          number: '03',
+          title: 'TRATAMIENTO',
+          body: 'Realizamos el tratamiento con técnicas profesionales y cuidado personalizado.'
+        },
+        {
+          number: '04',
+          title: 'SEGUIMIENTO',
+          body: 'Te orientamos sobre evolución, cuidados y próximas sesiones.'
+        }
+      ]
+    },
+    testimonials: {
+      eyebrow: 'LO QUE DICEN',
+      headline: 'NUESTROS\nCLIENTES',
+      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      list: [
+        {
+          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
+          author: 'KATHERINE BURGOS VALDEZ'
+        },
+        {
+          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
+          author: 'MIRASOL FERNÁNDEZ'
+        }
+      ]
+    },
+    faq: {
+      headline: 'PREGUNTAS FRECUENTES.',
+      items: [
+        {
+          question: '¿Cuándo puedo empezar tratamientos postoperatorios?',
+          answer: 'Depende del procedimiento realizado, la indicación profesional y tu evolución. Requiere valoración previa.'
+        },
+        {
+          question: '¿Ayuda con inflamación?',
+          answer: 'Puede acompañar procesos de inflamación y retención de líquidos, pero la evolución varía según cada persona.'
+        },
+        {
+          question: '¿Cuántas sesiones necesito?',
+          answer: 'La cantidad de sesiones depende del procedimiento, tu etapa de recuperación y la recomendación profesional.'
+        },
+        {
+          question: '¿Duele?',
+          answer: 'La experiencia puede variar según sensibilidad, zona tratada y etapa de recuperación. Se adapta el protocolo para mayor comodidad.'
+        },
+        {
+          question: '¿Sustituye el seguimiento médico?',
+          answer: 'No. La información y los tratamientos presentados no sustituyen una evaluación o seguimiento médico profesional.'
+        }
+      ]
+    },
+    cta: {
+      eyebrow: 'AGENDA TU VALORACIÓN',
+      headline: 'ACOMPAÑA TU RECUPERACIÓN CON CUIDADO PROFESIONAL.',
+      body: 'Agenda tu cita y recibe orientación profesional para definir el protocolo postoperatorio más adecuado según tu proceso.',
+      primaryCta: 'RESERVAR',
+      secondaryCta: 'WHATSAPP',
+      disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
+      backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/cta.jpg'
+    }
+  }
+};

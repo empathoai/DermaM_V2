@@ -1,0 +1,150 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid rgba(54, 54, 51, 0.18);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.offWhite .card {
+  background-color: #EFEFEB;
+}
+
+.light .card {
+  background-color: #F2F0F1;
+}
+
+.dark .card {
+  background-color: #141313;
+  border-color: rgba(242, 240, 241, 0.18);
+}
+
+.editorial .card {
+  padding: 48px;
+  text-align: center;
+}
+
+.quoteIcon {
+  color: rgba(54, 54, 51, 0.18);
+  margin-bottom: 32px;
+}
+
+.dark .quoteIcon {
+  color: rgba(242, 240, 241, 0.18);
+}
+
+.quoteIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.quote {
+  font-family: var(--font-sans, "Poppins", sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.light .quote, .offWhite .quote {
+  color: #4E4D4D;
+}
+
+.dark .quote {
+  color: #F2F0F1;
+}
+
+.cardDivider {
+  height: 1px;
+  background-color: rgba(54, 54, 51, 0.18);
+  margin: 24px 0;
+  width: 48px;
+}
+
+.dark .cardDivider {
+  background-color: rgba(242, 240, 241, 0.18);
+}
+
+.starsWrapper {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.star {
+  color: #363633;
+}
+
+.dark .star {
+  color: #F2F0F1;
+}
+
+.clientName {
+  font-family: var(--font-sans, "Poppins", sans-serif);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  margin: 0;
+  font-style: normal;
+}
+
+.light .clientName, .offWhite .clientName {
+  color: #363633;
+}
+
+.dark .clientName {
+  color: #BBB8B5;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .editorial .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .editorial .card {
+    flex: 1 1 calc(50% - 24px);
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .card {
+    padding: 40px 32px;
+  }
+  
+  .quote {
+    font-size: 15px;
+  }
+}

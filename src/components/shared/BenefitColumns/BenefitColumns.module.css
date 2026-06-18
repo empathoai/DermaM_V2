@@ -1,0 +1,85 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.number {
+  font-size: 16px;
+}
+
+.dark .number {
+  color: #CCC9C1;
+}
+
+.light .number {
+  color: #666463;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.body {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+}
+
+.light .body {
+  color: #4E4D4D;
+}
+
+.dark .body {
+  color: #CCC9C1;
+}
+
+@media (min-width: 768px) {
+  .columns .grid {
+    flex-direction: row;
+    gap: 64px;
+  }
+  
+  .columns .card {
+    flex: 1;
+  }
+  
+  .columns .card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -32px;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+  }
+
+  .columns.light .card:not(:last-child)::after {
+    background-color: rgba(54, 54, 51, 0.18);
+  }
+
+  .columns.dark .card:not(:last-child)::after {
+    background-color: rgba(242, 240, 241, 0.18);
+  }
+}

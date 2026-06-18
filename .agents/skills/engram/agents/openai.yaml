@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engram Handoff"
+  short_description: "Save status and create handoff prompt."
+  default_prompt: "Use $engram to save current project status to Engram and generate the next-session prompt."

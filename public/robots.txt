@@ -1,0 +1,55 @@
+# -----------------------------------------------
+# Derma.M — robots.txt
+# Domain: https://dermamskinhealth.com
+# -----------------------------------------------
+
+User-agent: *
+
+# Allow all main content
+Allow: /
+Allow: /nosotros
+Allow: /contacto
+Allow: /faciales
+Allow: /corporales
+Allow: /laser-y-luz
+Allow: /dental-estetico
+Allow: /iv-therapy
+Allow: /capilar
+Allow: /limpieza-facial-profunda
+Allow: /prf-y-fibrina
+Allow: /tratamientos-postoperatorios
+
+# Allow treatment detail pages
+Allow: /faciales/
+Allow: /corporales/
+Allow: /laser-y-luz/
+Allow: /dental-estetico/
+Allow: /capilar/
+
+# Legal pages — allow indexing of canonical versions only
+Allow: /politica-de-privacidad
+Allow: /terminos-de-uso
+Allow: /treatment-disclaimer
+Allow: /booking-cancellation-refund-policy
+Allow: /accessibility
+Allow: /legal
+
+# Disallow duplicate language variants (non-canonical)
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+
+# Disallow draft legal page until reviewed
+Disallow: /notice-of-privacy-practices
+
+# Disallow audit folder
+Disallow: /_audit/
+
+# Disallow WordPress legacy paths (already redirected but extra safety)
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+# Sitemap location
+Sitemap: https://dermamskinhealth.com/sitemap.xml

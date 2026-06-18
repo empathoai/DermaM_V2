@@ -1,0 +1,246 @@
+.section {
+  background-color: #141313;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTION INTRO */
+.introWrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 64px 24px 40px 24px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .introWrapper {
+    padding: 100px 64px 64px 64px;
+  }
+}
+
+.introContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .introContent {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #CCC9C1;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #F2F0F1;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    font-size: 44px;
+    line-height: 1.1;
+  }
+  .breakDesktop {
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .breakDesktop {
+    display: none;
+  }
+}
+
+.ctaWrapper {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .ctaWrapper {
+    padding-bottom: 8px; /* Optical alignment with the baseline of the headline */
+  }
+}
+
+.introCta {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #CCC9C1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.introCta:hover {
+  color: #F2F0F1;
+}
+
+.ctaArrow {
+  margin-left: 8px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.introCta:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(242, 240, 241, 0.18);
+}
+
+/* CATEGORY GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  /* Use grid gap matching the divider thickness to create a seamless 1px structural grid effect */
+  background-color: var(--color-border-dark, rgba(242, 240, 241, 0.18));
+  gap: 1px;
+  /* Overlapping bottom edge just in case */
+  border-bottom: 1px solid var(--color-border-dark, rgba(242, 240, 241, 0.18));
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tile {
+  position: relative;
+  background-color: var(--color-dark-authority, #141313);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  padding: 32px 24px;
+}
+
+@media (min-width: 1024px) {
+  .tile {
+    padding: 48px 40px;
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tile {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+/* IMAGE AND OVERLAYS */
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Desaturates and cools the image to avoid beige warmth, making it feel monochrome and clinical */
+  filter: grayscale(0.75) contrast(1.1) brightness(0.95);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(20, 19, 19, 0.45) 0%, rgba(20, 19, 19, 0.1) 30%, transparent 60%);
+  z-index: 2;
+  transition: opacity 0.4s ease;
+}
+
+/* HOVER INTERACTION */
+.tile:hover .image {
+  transform: scale(1.04);
+}
+
+.tile:hover .overlay {
+  opacity: 0.6;
+}
+
+/* TILE CONTENT */
+.tileContent {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tileTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: var(--color-clinical-canvas, #F2F0F1);
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .tileTitle {
+    font-size: 24px;
+    letter-spacing: 0.15em;
+  }
+}
+
+.tileArrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: var(--color-warm-light, #CCC9C1);
+  transition: transform 0.4s ease, color 0.4s ease;
+  display: inline-block;
+}
+
+.tile:hover .tileArrow {
+  transform: translateX(6px);
+  color: var(--color-clinical-canvas, #F2F0F1);
+}

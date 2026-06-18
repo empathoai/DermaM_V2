@@ -1,0 +1,13 @@
+.section {
+  background-color: #F2F0F1;
+  padding: 96px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 clamp(24px, 4vw, 64px);
+}

@@ -1,0 +1,291 @@
+.section {
+  background-color: var(--color-dark-authority, #141313);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 72px 24px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 120px 64px 140px 64px;
+  }
+}
+
+/* EDITORIAL ROW */
+.editorialRow {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1024px) {
+  .editorialRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 140px;
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .textContent {
+    flex: 0 0 38%;
+  }
+}
+
+.eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  color: #CCC9C1;
+  margin: 0 0 16px 0;
+}
+
+.eyebrowLine {
+  width: 64px;
+  height: 1px;
+  background-color: rgba(242, 240, 241, 0.18);
+  margin-bottom: 32px;
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #F2F0F1;
+  margin: 0 0 24px 0;
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+.bodyCopy {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #CCC9C1;
+  max-width: 520px;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .bodyCopy {
+    font-size: 16px;
+  }
+}
+
+.mediaContent {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .mediaContent {
+    flex: 0 0 54%;
+  }
+}
+
+.mediaImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgba(242, 240, 241, 0.18);
+  filter: grayscale(0.3) contrast(1.05) brightness(0.85);
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .mediaImage {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+/* TIMELINE AREA */
+.timelineArea {
+  position: relative;
+  width: 100%;
+}
+
+.track {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .track {
+    display: block;
+    position: absolute;
+    top: 31px; /* Optical center of 64px circle */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(242, 240, 241, 0.32);
+    z-index: 1;
+  }
+}
+
+.mobileTrack {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 23px; /* 48px/2 horizontally centered */
+  width: 1px;
+  background-color: rgba(242, 240, 241, 0.32);
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .mobileTrack {
+    display: none;
+  }
+}
+
+.stepsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .stepsGrid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .step {
+    flex: 1;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.markerContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-dark-authority, #141313);
+  border: 1px solid rgba(242, 240, 241, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #F2F0F1;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .circle {
+    width: 64px;
+    height: 64px;
+    font-size: 14px;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .stepContent {
+    padding-top: 0;
+    min-height: 120px;
+  }
+  
+  .step:first-child .stepContent {
+    padding-right: 24px;
+  }
+  
+  .step:not(:first-child) .stepContent {
+    padding-left: 40px;
+    padding-right: 24px;
+  }
+  
+  .step:not(:first-child) .markerContainer {
+    padding-left: 40px;
+  }
+
+  /* Vertical separators for desktop steps */
+  .step:not(:first-child) .stepContent::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -24px; /* Extends up towards the track line */
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(242, 240, 241, 0.18);
+  }
+}
+
+.stepTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #F2F0F1;
+  margin: 0 0 12px 0;
+}
+
+@media (min-width: 1024px) {
+  .stepTitle {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.stepDesc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #CCC9C1;
+  margin: 0;
+  max-width: 280px;
+}

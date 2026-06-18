@@ -1,0 +1,138 @@
+.landingPage {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+}
+
+.narrowContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+}
+
+/* 3. Problem / Diagnosis (#F2F0F1) */
+.problem {
+  background-color: #F2F0F1;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+.problemGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.problemList {
+  margin-top: 40px;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.problemListItem {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #363633;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dash {
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: #363633;
+  flex-shrink: 0;
+}
+
+.problemMedia {
+  width: 100%;
+}
+
+.problemMediaInner {
+  border: 1px solid rgba(54, 54, 51, 0.18);
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+/* 4. Benefits (#141313) */
+.benefits {
+  background-color: #141313;
+  color: #F2F0F1;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+/* 5. How It Works (#F2F0F1) */
+.howItWorks {
+  background-color: #F2F0F1;
+  color: #363633;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+.stepsWrapper {
+  margin-top: 64px;
+}
+
+/* 6. Specs (#EFEFEB) */
+.specs {
+  background-color: #EFEFEB;
+  color: #363633;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+/* 7. Before & After (#141313) */
+.beforeAfter {
+  background-color: #141313;
+  color: #F2F0F1;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+/* 8. Process / Visit Flow (#F2F0F1) */
+.visitFlow {
+  background-color: #F2F0F1;
+  color: #363633;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+.visitFlowHeader {
+  margin-bottom: 64px;
+}
+
+/* 9. Testimonials (#F2F0F1) */
+.testimonials {
+  background-color: #F2F0F1;
+  color: #363633;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+/* 10. FAQ (#EFEFEB) */
+.faq {
+  background-color: #EFEFEB;
+  padding: clamp(64px, 8vw, 140px) 0;
+}
+
+@media (min-width: 768px) {
+  .problemList {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .problemGrid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 6vw;
+    align-items: center;
+  }
+}

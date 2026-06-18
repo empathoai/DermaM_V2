@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ==================== -->
+  <!-- STATIC PAGES         -->
+  <!-- ==================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/nosotros</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== -->
+  <!-- LANDING PAGES        -->
+  <!-- ==================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/limpieza-facial-profunda</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/prf-y-fibrina</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/tratamientos-postoperatorios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== -->
+  <!-- CATEGORY HUBS        -->
+  <!-- ==================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/laser-y-luz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/dental-estetico</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/iv-therapy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/capilar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== -->
+  <!-- FACIALES TREATMENTS  -->
+  <!-- ==================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/hidrofacial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/microneedling</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/hifu-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/peel-coreano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/radiofrecuencia-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/oxigenoterapia-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/rejuvenecimiento-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/tratamiento-acne</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/manchas-cicatrices</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/dermabracion-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/plasma-frio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/faciales/carboxiterapia-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ====================== -->
+  <!-- CORPORALES TREATMENTS  -->
+  <!-- ====================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/lipo-360</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/levantamiento-gluteos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/marcacion-abdominal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/hifu-corporal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/maderoterapia-corporal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/corrientes-rusas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/estrias-celulitis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/corporales/carboxiterapia-corporal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- LASER Y LUZ           -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/laser-y-luz/depilacion-laser</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/laser-y-luz/ipl</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/laser-y-luz/co2-laser</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- DENTAL ESTÉTICO       -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/dental-estetico/blanqueamiento-dental</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/dental-estetico/limpieza-dental</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- CAPILAR               -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/capilar/tratamiento-capilar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- LEGAL PAGES           -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://dermamskinhealth.com/politica-de-privacidad</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/terminos-de-uso</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/treatment-disclaimer</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/booking-cancellation-refund-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/accessibility</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://dermamskinhealth.com/legal</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

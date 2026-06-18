@@ -1,0 +1,218 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal .header {
+  align-items: center;
+}
+
+/* TIMELINE AREA */
+.timelineArea {
+  position: relative;
+  width: 100%;
+}
+
+.track {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .track {
+    display: block;
+    position: absolute;
+    top: 31px; /* Optical center of 64px circle */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(54, 54, 51, 0.18);
+    z-index: 1;
+  }
+  .horizontal.dark .track {
+    background-color: rgba(242, 240, 241, 0.32);
+  }
+}
+
+.mobileTrack {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 23px; /* 48px/2 horizontally centered */
+  width: 1px;
+  background-color: rgba(54, 54, 51, 0.18);
+  z-index: 1;
+}
+
+.dark .mobileTrack {
+  background-color: rgba(242, 240, 241, 0.32);
+}
+
+@media (min-width: 1024px) {
+  .horizontal .mobileTrack {
+    display: none;
+  }
+}
+
+.stepsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .stepsGrid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .step {
+    flex: 1;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.markerContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(54, 54, 51, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans, "Poppins", sans-serif);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  background-color: #F2F0F1;
+}
+
+.dark .circle {
+  background-color: #141313;
+  border-color: rgba(242, 240, 241, 0.45);
+  color: #F2F0F1;
+}
+
+.light .circle, .offWhite .circle {
+  color: #363633;
+}
+
+.offWhite .circle {
+  background-color: #EFEFEB;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .circle {
+    width: 64px;
+    height: 64px;
+    font-size: 14px;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .stepContent {
+    padding-top: 0;
+    min-height: 120px;
+  }
+  
+  .horizontal .step:first-child .stepContent {
+    padding-right: 24px;
+  }
+  
+  .horizontal .step:not(:first-child) .stepContent {
+    padding-left: 40px;
+    padding-right: 24px;
+  }
+  
+  .horizontal .step:not(:first-child) .markerContainer {
+    padding-left: 40px;
+  }
+
+  .horizontal .step:not(:first-child) .stepContent::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -24px;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(54, 54, 51, 0.18);
+  }
+  
+  .horizontal.dark .step:not(:first-child) .stepContent::before {
+    background-color: rgba(242, 240, 241, 0.18);
+  }
+}
+
+.stepTitle {
+  font-family: var(--font-sans, "Poppins", sans-serif);
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin: 0 0 12px 0;
+}
+
+.light .stepTitle, .offWhite .stepTitle {
+  color: #363633;
+}
+
+.dark .stepTitle {
+  color: #F2F0F1;
+}
+
+@media (min-width: 1024px) {
+  .horizontal .stepTitle {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.stepBody {
+  font-family: var(--font-sans, "Poppins", sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
+  max-width: 280px;
+}
+
+.light .stepBody, .offWhite .stepBody {
+  color: #4E4D4D;
+}
+
+.dark .stepBody {
+  color: #CCC9C1;
+}

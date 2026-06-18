@@ -51,7 +51,7 @@ export default function Footer() {
               <p className="font-semibold text-sm text-[#F2F0F1] uppercase mb-1">DERMA.M, LLC</p>
               <p className={styles.contactItem}>5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405</p>
               <p className={styles.contactItem}>
-                <a href="tel:+15612535384" className={styles.link}>+1 561 253 5384</a>
+                <a href="tel:+15612535384" className={styles.link}>561 253 5384</a>
               </p>
               <p className={styles.contactItem}>
                 <a href="mailto:info@dermamskinhealth.com" className={styles.link}>info@dermamskinhealth.com</a>

@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
         <div className={styles.topInfoRight}>
           <a href="tel:+15612535384" className={styles.topInfoLink}>
-            +001 561 253 5384
+            561 253 5384
           </a>
           <span className={styles.topInfoSeparator}>&middot;</span>
           <a

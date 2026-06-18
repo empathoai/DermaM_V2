@@ -42,7 +42,7 @@ export default function FinalCTA() {
           </p>
           
           <p className={styles.supportingInfo}>
-            West Palm Beach / Miami · 561.405.2198
+            West Palm Beach / Miami &middot; <a href="tel:+15612535384" style={{ color: 'inherit', textDecoration: 'none' }}>561 253 5384</a>
           </p>
 
           <div className={styles.buttonGroup}>

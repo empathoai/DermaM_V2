@@ -50,21 +50,7 @@ export default function LandingPage({ data }) {
 
       {/* 2. Treatment Quick Facts Bar */}
       {quickFacts && quickFacts.length > 0 && (
-        <>
-          <TreatmentQuickFacts facts={quickFacts} variant="light" />
-          
-          {/* Clinical Note Block (Editorial, Subtle border, Small but readable copy) */}
-          <div className="bg-[#F2F0F1] py-8 border-b border-[#363633]/10">
-            <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16">
-              <div className="p-6 border border-[#363633]/15 bg-[#EFEFEB] max-w-3xl">
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#141313] mb-1.5">Nota clínica:</h4>
-                <p className="text-xs text-[#4E4D4D] leading-relaxed font-light">
-                  Los resultados pueden variar según las características individuales de la piel, el protocolo recomendado y el cumplimiento de las indicaciones pre y post-tratamiento. Ningún contenido de este sitio garantiza resultados específicos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </>
+        <TreatmentQuickFacts facts={quickFacts} variant="light" />
       )}
 
       {/* 3. Problem / Diagnosis */}

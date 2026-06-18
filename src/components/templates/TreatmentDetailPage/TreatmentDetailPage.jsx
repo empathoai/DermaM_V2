@@ -58,7 +58,7 @@ export default function TreatmentDetailPage({ data }) {
     }
   ];
 
-  const beforeAfterDisclaimer = "Las fotografías de antes y después y los testimonios pueden reflejar experiencias individuales reales, pero son solo ejemplos. Los resultados varían y no están garantizados.";
+  const beforeAfterDisclaimer = "Las fotografías de antes y después son ejemplos informativos de experiencias individuales reales. Los resultados varían según las características de cada persona, el protocolo aplicado y el seguimiento de las indicaciones pre y post-tratamiento. Ningún contenido de este sitio garantiza resultados específicos.";
 
   // 4. Default safe Process Steps for the timeline
   const defaultProcessSteps = [
@@ -108,17 +108,7 @@ export default function TreatmentDetailPage({ data }) {
         <TreatmentQuickFacts facts={quickFacts} variant="light" />
       </div>
 
-      {/* Clinical Note Block (Editorial, Subtle border, Small but readable copy) */}
-      <div className="bg-[#F2F0F1] py-8 border-b border-[#363633]/10">
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16">
-          <div className="p-6 border border-[#363633]/15 bg-[#EFEFEB] max-w-3xl">
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#141313] mb-1.5">Nota clínica:</h4>
-            <p className="text-xs text-[#4E4D4D] leading-relaxed font-light">
-              Los resultados pueden variar según las características individuales de la piel, el protocolo recomendado y el cumplimiento de las indicaciones pre y post-tratamiento. Ningún contenido de este sitio garantiza resultados específicos.
-            </p>
-          </div>
-        </div>
-      </div>
+
 
       {/* 4. What The Treatment Is (Clinical Canvas Surface: #F2F0F1) */}
       <section className={styles.whatIsSection}>

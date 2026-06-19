@@ -133,6 +133,17 @@
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     gap: 6vw;
-    align-items: center;
+    align-items: stretch;
+  }
+  
+  .problemMedia {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .problemMediaInner {
+    aspect-ratio: auto;
+    height: 100%;
   }
 }

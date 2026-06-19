@@ -10,29 +10,20 @@ export default function FeaturedServices() {
   return (
     <section className={styles.section} aria-label="Tratamientos destacados">
       
-      {/* Intro Band */}
-      <div className={styles.introBand}>
-        <div className={styles.container}>
-          <motion.div 
-            className={styles.introContent}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportConfig}
-            variants={sectionReveal}
-          >
-            <p className={styles.sectionEyebrow}>Tratamientos Destacados</p>
-            <h2 className={styles.headline}>
-              Cuidado especializado para piel, cuerpo y recuperación.
-            </h2>
-            <p className={styles.supportCopy}>
-              Protocolos diseñados para acompañar cada etapa de tu piel, tu bienestar y tu proceso corporal.
-            </p>
-          </motion.div>
-        </div>
-      </div>
-
       {/* Band 1 - Light */}
       <div className={styles.bandLight}>
+
+        {/* Section intro — integrated into first band */}
+        <div className={styles.bandIntro}>
+          <p className={styles.sectionEyebrow}>Tratamientos Destacados</p>
+          <h2 className={styles.headline}>
+            Cuidado especializado para piel, cuerpo y recuperación.
+          </h2>
+          <p className={styles.supportCopy}>
+            Protocolos diseñados para acompañar cada etapa de tu piel, tu bienestar y tu proceso corporal.
+          </p>
+        </div>
+
         <motion.div 
           className={styles.containerGrid}
           initial="hidden"

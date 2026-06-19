@@ -43,7 +43,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .whatIsContent {
@@ -56,10 +56,23 @@
   justify-content: center;
 }
 
+@media (min-width: 961px) {
+  .whatIsMedia {
+    align-items: stretch;
+  }
+}
+
 .whatIsImage {
   width: 100%;
   max-width: 600px;
   border: 1px solid rgba(54, 54, 51, 0.12);
+}
+
+@media (min-width: 961px) {
+  .whatIsImage {
+    aspect-ratio: auto !important;
+    height: 100% !important;
+  }
 }
 
 /* 5. Problem Context (Dark Authority) */

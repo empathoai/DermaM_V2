@@ -29,7 +29,7 @@
 @media (min-width: 1024px) {
   .editorialRow {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 80px;
     margin-bottom: 140px;
@@ -105,6 +105,8 @@
 @media (min-width: 1024px) {
   .mediaContent {
     flex: 0 0 54%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -119,7 +121,8 @@
 
 @media (min-width: 1024px) {
   .mediaImage {
-    aspect-ratio: 5 / 3;
+    aspect-ratio: auto;
+    height: 100%;
   }
 }
 

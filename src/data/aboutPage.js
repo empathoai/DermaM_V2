@@ -47,104 +47,118 @@ export const aboutPage = {
   },
   teamBySpecialty: [
     {
+      specialty: "Administración",
+      members: [
+        {
+          name: "Melisa L. Ríos",
+          role: "HR & Operations Manager",
+          tags: ["Operaciones"],
+          shortBio: "Esteticista y Flebotomista licenciada en Florida. Responsable de recursos humanos, operaciones y la experiencia integral del equipo y los pacientes en Derma.M.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/melisa-rios.mp4",
+          mediaSrc: "/assets/images/about/team/melisa-rios.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/melisa-rios.vcf",
+          status: "active"
+        }
+      ]
+    },
+    {
       specialty: "Faciales",
-      support: "Cuidado facial personalizado, acné, manchas, cicatrices y rejuvenecimiento.",
       members: [
         {
-          name: "Miembro del equipo",
-          role: "Especialista facial por confirmar",
-          specialty: "Faciales",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/faciales-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
+          name: "Tony Díaz, DO",
+          role: "Médico Director",
+          tags: ["Medicina Estética", "IV Therapy"],
+          shortBio: "Cirujano ortopédico con +30 años de práctica clínica. Combina experiencia médica con visión estética para planes de tratamiento personalizados y basados en evidencia.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/tony-diaz.mp4",
+          mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/tony-diaz.vcf",
+          status: "active"
+        },
+        {
+          name: "Mikaela Guajardo",
+          role: "Especialista Facial & Electróloga",
+          tags: ["Faciales", "Láser y Luz"],
+          shortBio: "Licenciada en Florida como Facial Specialist y Técnica en Electrólisis. Formación complementaria en enfermería aplicada al cuidado avanzado de piel.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/mikaela-guajardo.mp4",
+          mediaSrc: "/assets/images/about/team/mikaela-guajardo.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/mikaela-guajardo.vcf",
+          status: "active"
+        },
+        {
+          name: "Daniela Parra",
+          role: "Esteticista",
+          tags: ["Faciales"],
+          shortBio: "+3 años en tratamiento de pieles acneicas, hiperpigmentadas, sensibles y envejecidas. Terapeuta de masajes certificada con enfoque de bienestar integral.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/daniela-parra.mp4",
+          mediaSrc: "/assets/images/about/team/daniela-parra.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/daniela-parra.vcf",
+          status: "active"
+        },
+        {
+          name: "Samantha Atencio",
+          role: "Esteticista",
+          tags: ["Faciales"],
+          shortBio: "Especialista en el cuidado de piel para clientes de todas las edades. Comprometida con crear un espacio de confianza, relajación y resultados reales.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/samantha-atencio.mp4",
+          mediaSrc: "/assets/images/about/team/samantha-atencio.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/samantha-atencio.vcf",
+          status: "active"
         }
       ]
     },
     {
-      specialty: "Corporales",
-      support: "Protocolos corporales para moldeo, tonificación y recuperación.",
+      specialty: "Corporales & Postoperatorio",
       members: [
         {
-          name: "Miembro del equipo",
-          role: "Especialista corporal por confirmar",
-          specialty: "Corporales",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/corporales-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
-        }
-      ]
-    },
-    {
-      specialty: "Láser y Luz",
-      support: "Tecnología de aparatología avanzada para renovación y depilación láser.",
-      members: [
+          name: "Josey González",
+          role: "Masajista & Esteticista",
+          tags: ["Corporales", "Postoperatorio"],
+          shortBio: "Especializada en drenaje linfático, recuperación postoperatoria y tratamientos corporales. Protocolos personalizados con atención cercana y técnica especializada.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/josey-gonzalez.mp4",
+          mediaSrc: "/assets/images/about/team/josey-gonzalez.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/josey-gonzalez.vcf",
+          status: "active"
+        },
         {
-          name: "Miembro del equipo",
-          role: "Especialista en tecnología láser por confirmar",
-          specialty: "Láser y Luz",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/laser-y-luz-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
-        }
-      ]
-    },
-    {
-      specialty: "Dental Estético",
-      support: "Tratamientos diseñados para el cuidado visible y luminosidad de la sonrisa.",
-      members: [
-        {
-          name: "Miembro del equipo",
-          role: "Especialista dental por confirmar",
-          specialty: "Dental Estético",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/dental-estetico-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
+          name: "Elianne Trujillo",
+          role: "Masajista Terapéutica",
+          tags: ["Corporales", "Postoperatorio"],
+          shortBio: "2 años de experiencia en postoperatorio, drenaje linfático y masaje descontracturante. Enfocada en recuperación, remodelación y bienestar del paciente.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/elianne-trujillo.mp4",
+          mediaSrc: "/assets/images/about/team/elianne-trujillo.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/elianne-trujillo.vcf",
+          status: "active"
         }
       ]
     },
     {
       specialty: "IV Therapy",
-      support: "Terapias intravenosas para el bienestar general, hidratación y energía.",
       members: [
         {
-          name: "Miembro del equipo",
-          role: "Especialista en IV Therapy por confirmar",
-          specialty: "IV Therapy",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/iv-therapy-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
-        }
-      ]
-    },
-    {
-      specialty: "Capilar",
-      support: "Tratamientos especializados para la salud y estimulación capilar.",
-      members: [
-        {
-          name: "Miembro del equipo",
-          role: "Especialista capilar por confirmar",
-          specialty: "Capilar",
-          licenses: "Licencias por confirmar",
-          shortBio: "Información del perfil en preparación.",
-          mediaType: "image",
-          mediaSrc: "/assets/images/about/team/capilar-1.jpg",
-          vcardEnabled: false,
-          status: "draft"
+          name: "Tony Díaz, DO",
+          role: "Médico Director — Supervisión IV Therapy",
+          tags: ["IV Therapy"],
+          shortBio: "Responsable de la supervisión médica de los protocolos de IV Therapy en Derma.M.",
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/tony-diaz.mp4",
+          mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/tony-diaz.vcf",
+          status: "active"
         }
       ]
     }

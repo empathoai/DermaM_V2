@@ -35,6 +35,7 @@ export default function AboutPage({ data }) {
         body={hero.body}
         backgroundImage={hero.backgroundImage}
         variant={hero.variant}
+        hasTrustBar={false}
       />
 
       {/* 2. Founder Spotlight (Clinical Canvas #F2F0F1) */}

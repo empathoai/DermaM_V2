@@ -400,6 +400,7 @@ These rules apply to all content — data files, components, and copy:
 
 ## Available Project Skills
 
+- **assets-optimizer:** Converts PNG images to web-optimized JPGs (under 200KB) and compresses MP4 background videos using FFmpeg for web performance.
 - **impeccable:** Design, redesign, audit, polish, animate frontend interfaces. Commands: craft, animate, polish, audit, bolder, typeset, distill, adapt, quieter, critique, clarify, colorize, overdrive, delight, layout.
 - **interaction-design:** Microinteractions, motion design, transitions. Use `motion` package (already installed).
 - **engram:** Save current project state and produce a continuation prompt for the next session.

@@ -334,12 +334,22 @@
 .bandIntro {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px 24px 0 24px;
+  padding: 48px 24px 0 24px;
 }
 
 @media (min-width: 1024px) {
   .bandIntro {
-    padding: 80px 64px 0 64px;
+    padding: 120px 64px 0 64px;
+  }
+}
+
+.firstGrid {
+  padding-top: 32px;
+}
+
+@media (min-width: 1024px) {
+  .firstGrid {
+    padding-top: 64px;
   }
 }
 

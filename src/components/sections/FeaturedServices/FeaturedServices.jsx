@@ -15,24 +15,21 @@ export default function FeaturedServices() {
 
         {/* Section intro — integrated into first band */}
         <div className={styles.bandIntro}>
-          <p className={styles.sectionEyebrow}>Tratamientos Destacados</p>
+          <p className={styles.sectionEyebrow}>TRATAMIENTOS DESTACADOS</p>
           <h2 className={styles.headline}>
-            Cuidado especializado para piel, cuerpo y recuperación.
+            CUIDADO PERSONALIZADO PARA TU PIEL Y CUERPO.
           </h2>
-          <p className={styles.supportCopy}>
-            Protocolos diseñados para acompañar cada etapa de tu piel, tu bienestar y tu proceso corporal.
-          </p>
         </div>
 
         <motion.div 
-          className={styles.containerGrid}
+          className={`${styles.containerGrid} ${styles.firstGrid}`}
           initial="hidden"
           whileInView="visible"
           viewport={viewportConfig}
           variants={sectionReveal}
         >
           <div className={styles.contentCol}>
-            <p className={styles.editorialLabel}>Tratamiento Destacado</p>
+            <p className={styles.editorialLabel}>Cuidado Facial</p>
             <div className={styles.dividerLight}></div>
             <h3 className={styles.treatmentName}>Limpieza Facial Profunda</h3>
             <p className={styles.outcome}>Piel limpia, equilibrada y profundamente renovada.</p>

@@ -12,7 +12,8 @@ export default function PageHero({
   backgroundImage,
   variant = 'default',
   primaryCta,
-  secondaryCta
+  secondaryCta,
+  hasTrustBar = true
 }) {
   const isLanding = variant === 'landing';
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
@@ -31,7 +32,7 @@ export default function PageHero({
 
   return (
     <section 
-      className={`${styles.pageHero} ${isLanding ? styles.landingHeight : ''}`}
+      className={`${styles.pageHero} ${isLanding ? styles.landingHeight : ''} ${!hasTrustBar ? styles.fullViewport : ''}`}
     >
       <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
         <HeroMedia 

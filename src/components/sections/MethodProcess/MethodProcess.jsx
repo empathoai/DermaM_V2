@@ -45,21 +45,11 @@ export default function MethodProcess() {
             <p className={styles.eyebrow}>Nuestro Método</p>
             <div className={styles.eyebrowLine}></div>
             <h2 className={styles.headline}>
-              Así es nuestro<br />método.
+              Así es nuestro método.
             </h2>
             <p className={styles.bodyCopy}>
               Un proceso clínico, personalizado y consciente para resultados reales y sostenibles.
             </p>
-          </div>
-          <div className={styles.mediaContent} style={{ overflow: 'hidden' }}>
-            <motion.img 
-              src="/assets/images/home/method.jpg" 
-              alt="" 
-              className={styles.mediaImage} 
-              loading="lazy" 
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-            />
           </div>
         </motion.div>
 

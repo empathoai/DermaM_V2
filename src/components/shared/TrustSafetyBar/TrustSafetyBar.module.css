@@ -100,56 +100,48 @@
   color: #BBB8B5;
 }
 
+/* Mobile 2-column styles for cols4 */
+.cols4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cols4 .item {
+  border-right: 1px solid rgba(54, 54, 51, 0.18);
+  border-bottom: 1px solid rgba(54, 54, 51, 0.18);
+}
+
+.dark .cols4 .item {
+  border-right: 1px solid rgba(242, 240, 241, 0.18);
+  border-bottom: 1px solid rgba(242, 240, 241, 0.18);
+}
+
+.cols4 .item:nth-child(even) {
+  border-right: none !important;
+}
+
+.cols4 .item:nth-last-child(-n+2) {
+  border-bottom: none !important;
+}
+
 @media (min-width: 768px) {
   .cols3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  .cols4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .cols3 .item, .cols4 .item {
+  .cols3 .item {
     border-bottom: none;
   }
-  
-  .cols4 .item:nth-child(even) {
-    border-right: none;
-  }
 
-  /* Reset last elements bottom borders */
   .cols3 .item:nth-last-child(-n+3) {
     border-bottom: none;
   }
 
-  .cols4 .item:nth-last-child(-n+2) {
-    border-bottom: none;
-  }
-  
   .warm .cols3 .item:not(:last-child), .light .cols3 .item:not(:last-child) {
     border-right: 1px solid rgba(54, 54, 51, 0.18);
   }
 
   .dark .cols3 .item:not(:last-child) {
     border-right: 1px solid rgba(242, 240, 241, 0.18);
-  }
-  
-  .warm .cols4 .item, .light .cols4 .item {
-    border-bottom: 1px solid rgba(54, 54, 51, 0.18);
-    border-right: 1px solid rgba(54, 54, 51, 0.18);
-  }
-
-  .dark .cols4 .item {
-    border-bottom: 1px solid rgba(242, 240, 241, 0.18);
-    border-right: 1px solid rgba(242, 240, 241, 0.18);
-  }
-  
-  .cols4 .item:nth-child(even) {
-    border-right: none;
-  }
-
-  .cols4 .item:nth-last-child(-n+2) {
-    border-bottom: none;
   }
 }
 
@@ -159,8 +151,9 @@
   }
 
   .cols4 .item {
-    padding: 72px 32px;
+    padding: 48px 32px;
     border-bottom: none !important;
+    border-right: none !important;
   }
 
   .warm .cols4 .item:not(:last-child), .light .cols4 .item:not(:last-child) {
@@ -172,6 +165,6 @@
   }
 
   .cols3 .item {
-    padding: 72px 32px;
+    padding: 48px 32px;
   }
 }

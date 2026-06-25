@@ -1,1 +1,64 @@
-/* Empty CSS module for Hero section */
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    height: calc(100vh - 304px);
+    min-height: auto;
+  }
+}
+
+.mediaContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #141313;
+
+  @media (min-width: 1024px) {
+    left: auto;
+    right: 0;
+    width: 55%;
+    height: 100%;
+  }
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 19, 19, 0.92) 0%,
+    rgba(20, 19, 19, 0.55) 40%,
+    rgba(20, 19, 19, 0.18) 70%,
+    rgba(20, 19, 19, 0) 100%
+  );
+
+  @media (min-width: 1024px) {
+    background: linear-gradient(
+      90deg,
+      #141313 0%,
+      #141313 40%,
+      rgba(20, 19, 19, 0.6) 65%,
+      rgba(20, 19, 19, 0) 90%
+    );
+  }
+}
+
+.topBarOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgba(20, 19, 19, 0.8) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}

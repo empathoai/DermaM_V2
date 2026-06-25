@@ -56,33 +56,6 @@ export default function FounderSection() {
                 </p>
               </div>
             </div>
-
-            <div className={styles.qualitiesArea}>
-              <div className={styles.quality}>
-                <h3 className={styles.qualityTitle}>CRITERIO PROFESIONAL</h3>
-                <p className={styles.qualityDesc}>
-                  Cada recomendación parte de una evaluación personalizada, formación profesional y cuidado responsable.
-                </p>
-              </div>
-              
-              <div className={styles.qualityDivider}></div>
-              
-              <div className={styles.quality}>
-                <h3 className={styles.qualityTitle}>ESTÉTICA FACIAL AVANZADA</h3>
-                <p className={styles.qualityDesc}>
-                  Especialización enfocada en acné, manchas, cicatrices, rejuvenecimiento y mejora visible de la piel.
-                </p>
-              </div>
-
-              <div className={styles.qualityDivider}></div>
-
-              <div className={styles.quality}>
-                <h3 className={styles.qualityTitle}>CUIDADO CON PROPÓSITO</h3>
-                <p className={styles.qualityDesc}>
-                  Cada tratamiento es una oportunidad para acompañarte a verte mejor, sentirte mejor y recuperar confianza.
-                </p>
-              </div>
-            </div>
           </motion.div>
           
         </div>

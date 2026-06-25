@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "motion/react";
 import HeroMedia from '../../utils/HeroMedia';
+import styles from './Hero.module.css';
 
 export default function Hero({ backgroundImage, image }) {
   const mediaSrc = backgroundImage || image || '/assets/images/home/hero.mp4';
@@ -16,34 +17,26 @@ export default function Hero({ backgroundImage, image }) {
   }, [mediaSrc]);
 
   return (
-    <section className="relative w-full min-h-[70vh] lg:min-h-[76vh] flex flex-col justify-center">
+    <section className={styles.heroSection}>
       {/* BACKGROUND MEDIA CONTAINER & OVERLAYS */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#141313] via-[#171616] to-[#1A1919]">
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
-          <HeroMedia
-            src={mediaSrc}
-            alt=""
-            onReady={() => setMediaReady(true)}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
-        </div>
-
-        {/* Asymmetrical Gradient Overlay for Text Legibility & Mood */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(20,19,19,0.92) 0%, rgba(20,19,19,0.55) 40%, rgba(20,19,19,0.18) 70%, rgba(20,19,19,0) 100%)",
-          }}
-        ></div>
-
-        {/* Vertical subtle gradient for top bar/nav contrast */}
-        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#141313]/80 to-transparent pointer-events-none z-0"></div>
+      <div className={styles.mediaContainer}>
+        <HeroMedia
+          src={mediaSrc}
+          alt=""
+          onReady={() => setMediaReady(true)}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
+
+      {/* Asymmetrical Gradient Overlay for Text Legibility & Mood */}
+      <div className={styles.gradientOverlay}></div>
+
+      {/* Vertical subtle gradient for top bar/nav contrast */}
+      <div className={styles.topBarOverlay}></div>
 
       {/* HERO CONTENT */}
       <div
-        className="relative z-10 w-full max-w-[1440px] mx-auto text-left py-16 lg:py-24 px-[max(24px,4vw)] lg:px-[max(64px,4vw)]"
+        className="relative z-10 w-full max-w-[1440px] mx-auto text-left py-12 lg:py-16 px-[max(24px,4vw)] lg:px-[max(64px,4vw)]"
       >
         <div
           style={{
@@ -64,7 +57,7 @@ export default function Hero({ backgroundImage, image }) {
               }}
             >
               {/* Eyebrow */}
-              <div className="flex items-center gap-6 mb-10 lg:mb-14">
+              <div className="flex items-center gap-6 mb-6 lg:mb-8">
                 <div className="w-12 h-[1px] bg-[#f2f0f1]/18"></div>
                 <p className="text-[#CCC9C1] text-[12px] tracking-[0.15em] uppercase font-medium m-0">
                   Centro de estética, belleza y salud
@@ -72,7 +65,7 @@ export default function Hero({ backgroundImage, image }) {
               </div>
 
               {/* Headline */}
-              <h1 className="text-[clamp(2.5rem,5vw+1rem,4rem)] leading-[1.05] tracking-[0.05em] uppercase font-normal lg:font-medium text-[#F2F0F1] m-0 mb-8">
+              <h1 className="text-[clamp(2.5rem,5vw+1rem,4rem)] leading-[1.05] tracking-[0.05em] uppercase font-normal lg:font-medium text-[#F2F0F1] m-0 mb-6">
                 Salud <br />
                 profesional <br />
                 para tu <br />
@@ -86,7 +79,7 @@ export default function Hero({ backgroundImage, image }) {
               </p>
 
               {/* CTAs */}
-              <div className="mt-12 lg:mt-16 flex flex-col sm:flex-row items-stretch sm:items-center gap-5 sm:gap-6 w-full sm:w-auto">
+              <div className="mt-8 lg:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-5 sm:gap-6 w-full sm:w-auto">
                 <button className="bg-[#F2F0F1] border border-[#F2F0F1] text-[#141313] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center hover:bg-[#CCC9C1] hover:border-[#CCC9C1]">
                   Reservar
                 </button>

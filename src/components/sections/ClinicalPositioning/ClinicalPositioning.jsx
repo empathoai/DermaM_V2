@@ -8,38 +8,30 @@ export default function ClinicalPositioning() {
 
   return (
     <section className={styles.section} aria-label="Nuestro enfoque y diferenciadores">
-      <div className={styles.container}>
-        
-        {/* Part 1: Editorial Row */}
-        <motion.div 
-          className={styles.editorialRow}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          variants={sectionReveal}
-        >
-          <div className={styles.textContent}>
-            <p className={styles.eyebrow}>Nuestro Enfoque</p>
-            <div className={styles.eyebrowLine}></div>
-            <h2 className={styles.headline}>
-              Ciencia, experiencia y <br />cuidado que se nota.
-            </h2>
-            <p className={styles.bodyCopy}>
-              En Derma.M combinamos conocimiento médico, tecnología avanzada y un enfoque humano para diseñar tratamientos que elevan tu bienestar y tu confianza.
-            </p>
-          </div>
-          <div className={styles.mediaContent}>
-            <img
-              src="/assets/images/home/clinical.jpg"
-              alt=""
-              className={styles.mediaImage}
-              loading="lazy"
-            />
-          </div>
-        </motion.div>
+      
+      {/* Part 1: Editorial Row (Dark Banner) */}
+      <div className={styles.darkBanner}>
+        <div className={styles.container}>
+          <motion.div 
+            className={styles.editorialRow}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportConfig}
+            variants={sectionReveal}
+          >
+            <div className={styles.textContent}>
+              <p className={styles.eyebrow}>Nuestro Enfoque</p>
+              <div className={styles.eyebrowLine}></div>
+              <h2 className={styles.headline}>
+                Ciencia, experiencia y cuidado que se nota.
+              </h2>
+              <p className={styles.bodyCopy}>
+                En Derma.M combinamos conocimiento médico, tecnología avanzada y un enfoque humano para diseñar tratamientos que elevan tu bienestar y tu confianza.
+              </p>
+            </div>
+          </motion.div>
+        </div>
       </div>
-
-      <div className={styles.fullWidthDivider}></div>
 
       <div className={styles.container}>
         {/* Part 2: Differentiators */}

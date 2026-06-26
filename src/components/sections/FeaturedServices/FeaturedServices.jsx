@@ -10,16 +10,23 @@ export default function FeaturedServices() {
   return (
     <section className={styles.section} aria-label="Tratamientos destacados">
       
+      {/* Section intro — matching TreatmentCategories structure */}
+      <div className={styles.bandDarkIntro}>
+        <div className={styles.introWrapper}>
+          <div className={styles.introContent}>
+            <div className={styles.introText}>
+              <p className={styles.eyebrow}>TRATAMIENTOS DESTACADOS</p>
+              <h2 className={styles.headline}>
+                CUIDADO PERSONALIZADO <br className={styles.breakDesktop} />
+                PARA TU PIEL Y CUERPO
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Band 1 - Light */}
       <div className={styles.bandLight}>
-
-        {/* Section intro — integrated into first band */}
-        <div className={styles.bandIntro}>
-          <p className={styles.sectionEyebrow}>TRATAMIENTOS DESTACADOS</p>
-          <h2 className={styles.headline}>
-            CUIDADO PERSONALIZADO PARA TU PIEL Y CUERPO
-          </h2>
-        </div>
 
         <motion.div 
           className={`${styles.containerGrid} ${styles.firstGrid}`}

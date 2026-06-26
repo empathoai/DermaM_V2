@@ -9,6 +9,23 @@ test.describe('Visual Regression Tests', () => {
     await expect(page).toHaveScreenshot('home-hero.png');
   });
 
+  test('Home Page - Founder & Featured Services', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForTimeout(3000);
+    
+    // Scroll to Nancy Nieto profile
+    const founderSection = page.locator('section[aria-labelledby="founder-heading"]');
+    await founderSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(founderSection).toHaveScreenshot('home-founder.png');
+
+    // Scroll to Featured Services section
+    const featuredSection = page.locator('section[aria-label="Tratamientos destacados"]');
+    await featuredSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(featuredSection).toHaveScreenshot('home-featured-services.png');
+  });
+
   test('Nosotros Page - Viewport', async ({ page }, testInfo) => {
     // Only run on desktop viewport
     if (testInfo.project.name === 'mobile-safari') return;

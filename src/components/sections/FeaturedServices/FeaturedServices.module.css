@@ -21,22 +21,23 @@
 
 .containerGrid,
 .containerGridAlt {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 56px 24px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 48px;
+  flex-direction: column-reverse;
+  gap: 0;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
   .containerGrid,
   .containerGridAlt {
-    padding: 120px 64px;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    gap: 80px;
+    gap: 0;
+    min-height: 580px;
   }
   
   .containerGridAlt {
@@ -54,6 +55,7 @@
 .bandDark {
   background-color: var(--color-dark-authority, #141313);
   width: 100%;
+  border-bottom: 1px solid rgba(242, 240, 241, 0.08);
 }
 
 /* INTRO TYPOGRAPHY */
@@ -80,6 +82,7 @@
   line-height: 1.15;
   color: var(--color-stone, #363633);
   margin: 0 0 24px 0;
+  max-width: 680px;
 }
 
 @media (min-width: 1024px) {
@@ -109,6 +112,8 @@
 .contentCol, .contentColDark {
   display: flex;
   flex-direction: column;
+  padding: 56px 24px;
+  justify-content: center;
 }
 
 .mediaCol, .mediaColDark {
@@ -117,10 +122,11 @@
 
 @media (min-width: 1024px) {
   .contentCol, .contentColDark {
-    flex: 0 0 42%;
+    flex: 0 0 50%;
+    padding: 80px 10% 80px 10%;
   }
   .mediaCol, .mediaColDark {
-    flex: 0 0 48%;
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
   }
@@ -333,7 +339,7 @@
 
 .mediaImage {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
 }
@@ -345,25 +351,82 @@
   }
 }
 
-.bandIntro {
+.bandDarkIntro {
+  background-color: var(--color-dark-authority, #141313);
+  width: 100%;
+}
+
+.bandDarkIntro .introWrapper {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 48px 24px 0 24px;
+  padding: 64px 24px 40px 24px; /* restored bottom padding to match original */
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
-  .bandIntro {
-    padding: 120px 64px 0 64px;
+  .bandDarkIntro .introWrapper {
+    padding: 100px 64px 64px 64px; /* restored bottom padding to match original */
+  }
+}
+
+.bandDarkIntro .introContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .bandDarkIntro .introContent {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.bandDarkIntro .introText {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.bandDarkIntro .eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-warm-light, #CCC9C1);
+  margin: 0 0 24px 0;
+  font-weight: 500;
+}
+
+.bandDarkIntro .headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-clinical-canvas, #F2F0F1);
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .bandDarkIntro .headline {
+    font-size: 44px;
+    line-height: 1.1;
   }
 }
 
 .firstGrid {
-  padding-top: 32px;
+  padding-top: 0;
 }
 
 @media (min-width: 1024px) {
   .firstGrid {
-    padding-top: 64px;
+    padding-top: 0;
   }
 }
 

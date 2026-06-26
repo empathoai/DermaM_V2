@@ -6,29 +6,23 @@
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 24px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding: 120px 64px 140px;
-  }
 }
 
 .layoutSplit {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 0;
 }
 
 @media (min-width: 1024px) {
   .layoutSplit {
     flex-direction: row;
     align-items: stretch;
-    gap: 80px;
+    gap: 0;
   }
 }
 
@@ -39,7 +33,7 @@
 
 @media (min-width: 1024px) {
   .imageBlock {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
   }
@@ -47,9 +41,8 @@
 
 .imagePlaceholder {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   background-color: #1A1919;
-  border: 1px solid rgba(242, 240, 241, 0.18);
   position: relative;
   overflow: hidden;
 }
@@ -58,6 +51,7 @@
   .imagePlaceholder {
     aspect-ratio: auto;
     height: 100%;
+    min-height: 600px;
   }
 }
 
@@ -80,18 +74,28 @@
 .textBlock {
   display: flex;
   flex-direction: column;
+  padding: 56px 24px;
+  justify-content: center;
+  background-color: var(--color-clinical-canvas, #F2F0F1);
+  /* On mobile, we use the inline logo tag to prevent background overlap */
+  background-image: none;
 }
 
 @media (min-width: 1024px) {
   .textBlock {
-    flex: 0 0 48%;
+    flex: 0 0 50%;
+    padding: 80px 10% 80px 10%;
+    /* On desktop, we display the full-bleed background layout with the logo at the top */
+    background-image: url('/assets/images/home/founder_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 .headerArea {
   display: flex;
   flex-direction: column;
-  margin-bottom: 56px;
 }
 
 .eyebrow {
@@ -100,14 +104,14 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-weight: 500;
-  color: #CCC9C1;
+  color: var(--color-stone, #363633);
   margin: 0 0 16px 0;
 }
 
 .eyebrowLine {
   width: 64px;
   height: 1px;
-  background-color: rgba(242, 240, 241, 0.18);
+  background-color: rgba(54, 54, 51, 0.18);
   margin-bottom: 32px;
 }
 
@@ -118,7 +122,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 400;
-  color: #F2F0F1;
+  color: var(--color-stone, #363633);
   margin: 0 0 32px 0;
 }
 
@@ -139,7 +143,7 @@
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  color: #F2F0F1;
+  color: var(--color-stone, #363633);
   max-width: 620px;
   margin: 0;
 }
@@ -149,7 +153,7 @@
   font-size: 14px;
   line-height: 1.6;
   font-weight: 300;
-  color: #CCC9C1;
+  color: var(--color-text-secondary, #4E4D4D);
   max-width: 620px;
   margin: 0;
 }
@@ -157,6 +161,25 @@
 @media (min-width: 1024px) {
   .bodyCopy {
     font-size: 15px;
+  }
+}
+
+.mobileLogoContainer {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileLogo {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .mobileLogoContainer {
+    display: none;
   }
 }
 

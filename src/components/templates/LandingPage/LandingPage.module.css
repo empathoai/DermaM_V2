@@ -44,16 +44,8 @@
   line-height: 1.6;
   color: #EFEFEB;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-}
-
-.dash {
-  display: block;
-  width: 16px;
-  height: 1px;
-  background-color: #F2F0F1;
-  flex-shrink: 0;
 }
 
 .problemMedia {

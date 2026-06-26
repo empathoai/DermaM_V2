@@ -10,6 +10,7 @@ import BeforeAfterGrid from '../../shared/BeforeAfterGrid/BeforeAfterGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
+import ListSparkle from '../../shared/ListSparkle/ListSparkle';
 import styles from './LandingPage.module.css';
 
 export default function LandingPage({ data }) {
@@ -68,7 +69,7 @@ export default function LandingPage({ data }) {
                   <ul className={styles.problemList}>
                     {problem.list.map((item, idx) => (
                       <li key={idx} className={styles.problemListItem}>
-                        <span className={styles.dash}></span>
+                        <ListSparkle variant="light" />
                         <span>{item}</span>
                       </li>
                     ))}

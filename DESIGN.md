@@ -425,6 +425,14 @@ FAQ:
 - no boxed card stack
 - visible focus states
 
+### Lists & Bullets
+
+Lists must not use generic browser bullets (`ul > li`) or basic typography dashes (`-`). To maintain the high-end clinical aesthetic:
+- Always use the `<ListSparkle />` global shared component.
+- The sparkle is a precise SVG vector that replaces the bullet.
+- The sparkle must be aligned to `flex-start` (the top line of text) and not center-aligned, ensuring multi-line text wraps cleanly below its own starting point.
+- Color variations: use the light variant on dark backgrounds and the dark variant on light backgrounds.
+
 Footer:
 - Dark Authority preferred
 - legal disclaimer always visible

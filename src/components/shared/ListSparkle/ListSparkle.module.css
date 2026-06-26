@@ -1,0 +1,17 @@
+.sparkleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px; /* Optically aligns the sparkle with the first line of text */
+}
+
+.light {
+  color: #CCC9C1; /* Warm Light for dark backgrounds */
+}
+
+.dark {
+  color: #363633; /* Dark Authority (lighter variant) for light backgrounds */
+}

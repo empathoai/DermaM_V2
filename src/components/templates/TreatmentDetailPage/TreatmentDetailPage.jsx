@@ -12,6 +12,7 @@ import BeforeAfterGrid from '../../shared/BeforeAfterGrid/BeforeAfterGrid';
 import RelatedTreatments from '../../shared/RelatedTreatments/RelatedTreatments';
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
+import ListSparkle from '../../shared/ListSparkle/ListSparkle';
 import styles from './TreatmentDetailPage.module.css';
 
 export default function TreatmentDetailPage({ data }) {
@@ -188,15 +189,15 @@ export default function TreatmentDetailPage({ data }) {
           />
           <ul className={styles.whoForList}>
             <li className={styles.whoForItem}>
-              <span className={styles.dash}>—</span>
+              <ListSparkle variant="dark" />
               <p className={styles.whoForText}>{ideal}</p>
             </li>
             <li className={styles.whoForItem}>
-              <span className={styles.dash}>—</span>
+              <ListSparkle variant="dark" />
               <p className={styles.whoForText}>Quienes desean confiar el cuidado de su tejido cutáneo a aparatología dermoestética calificada.</p>
             </li>
             <li className={styles.whoForItem}>
-              <span className={styles.dash}>—</span>
+              <ListSparkle variant="dark" />
               <p className={styles.whoForText}>Personas en búsqueda de enfoques higiénicos y dermoprotectores que no requieran tiempo de descanso ni agujas invasivas profundas.</p>
             </li>
           </ul>

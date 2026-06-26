@@ -116,10 +116,6 @@
   }
 }
 
-.dash {
-  color: rgba(242, 240, 241, 0.32);
-  margin-top: -2px;
-}
 
 @media (min-width: 768px) {
   .whoForListItem {

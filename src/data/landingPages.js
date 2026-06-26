@@ -84,7 +84,7 @@ export const landingPages = {
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS\nCLIENTES',
+      headline: 'NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
@@ -221,7 +221,7 @@ export const landingPages = {
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS\nCLIENTES',
+      headline: 'NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
@@ -358,7 +358,7 @@ export const landingPages = {
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS\nCLIENTES',
+      headline: 'NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {

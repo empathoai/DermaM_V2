@@ -16,8 +16,15 @@
   color: #F2F0F1;
 }
 
-.dark.interactive:hover {
-  border-color: rgba(242, 240, 241, 0.32);
+@media (hover: hover) {
+  .dark.interactive:hover {
+    border-color: rgba(242, 240, 241, 0.32);
+  }
+}
+
+.dark.interactive:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .light {
@@ -26,8 +33,15 @@
   color: #363633;
 }
 
-.light.interactive:hover {
-  border-color: rgba(54, 54, 51, 0.32);
+@media (hover: hover) {
+  .light.interactive:hover {
+    border-color: rgba(54, 54, 51, 0.32);
+  }
+}
+
+.light.interactive:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 .imageWrapper {
@@ -210,14 +224,21 @@
   border-bottom-color: rgba(54, 54, 51, 0.3);
 }
 
-a.cta:hover {
-  border-bottom-color: currentColor;
+@media (hover: hover) {
+  a.cta:hover {
+    border-bottom-color: currentColor;
+  }
+  
+  a.cta:hover .arrow {
+    transform: translateX(4px);
+  }
+}
+
+.cta:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 .arrow {
   transition: transform 0.3s ease;
-}
-
-a.cta:hover .arrow {
-  transform: translateX(4px);
 }

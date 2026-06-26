@@ -82,13 +82,13 @@ export default function Footer() {
           <p className="order-1">&copy; 2026 Derma.M. Todos los derechos reservados.</p>
           
           <div className="order-2 lg:text-center text-[#BBB8B5]/85">
-            Created by: <a href="https://empathoai.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F2F0F1] underline underline-offset-4 transition-colors duration-200">EmpathoAI</a>
+            Created by: <a href="https://empathoai.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F2F0F1] underline underline-offset-4 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">EmpathoAI</a>
           </div>
           
           <div className="order-3 flex flex-wrap items-center gap-3">
-            <Link to="/politica-de-privacidad" className="hover:text-[#F2F0F1] transition-colors duration-200">Política de privacidad</Link>
+            <Link to="/politica-de-privacidad" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Política de privacidad</Link>
             <span className="text-[#F2F0F1]/20">|</span>
-            <Link to="/terminos-de-uso" className="hover:text-[#F2F0F1] transition-colors duration-200">Términos de uso</Link>
+            <Link to="/terminos-de-uso" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Términos de uso</Link>
           </div>
         </div>
       </div>

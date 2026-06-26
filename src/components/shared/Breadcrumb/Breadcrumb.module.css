@@ -15,8 +15,15 @@
   transition: opacity 0.2s ease;
 }
 
-.breadcrumb a:hover {
-  opacity: 0.7;
+@media (hover: hover) {
+  .breadcrumb a:hover {
+    opacity: 0.7;
+  }
+}
+
+.breadcrumb a:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 .breadcrumb span {

@@ -53,15 +53,28 @@
   right: 8px;
   background: none;
   border: none;
-  font-size: 10px;
+  font-size: 11px;
   color: #BBB8B5; /* Soft Grey */
   cursor: pointer;
-  transition: color 0.2s ease;
-  padding: 4px;
+  transition: all 0.2s ease;
+  padding: 8px;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
 }
 
-.closeBtn:hover {
+@media (hover: hover) {
+  .closeBtn:hover {
+    color: #363633;
+  }
+}
+
+.closeBtn:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 1px;
   color: #363633;
 }
 
@@ -106,15 +119,21 @@
   outline: none;
 }
 
-/* Subtlest lift and push-back on active click state */
-.floatButton:hover .iconCircle {
-  background-color: #141313; /* Dark Authority */
-  transform: translateY(-4px);
+@media (hover: hover) {
+  .floatButton:hover .iconCircle {
+    background-color: #141313; /* Dark Authority */
+    transform: translateY(-4px);
+  }
+
+  .floatButton:hover .labelBubble {
+    background-color: #F2F0F1;
+    border-color: rgba(54, 54, 51, 0.32);
+  }
 }
 
-.floatButton:hover .labelBubble {
-  background-color: #F2F0F1;
-  border-color: rgba(54, 54, 51, 0.32);
+.floatButton:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 4px;
 }
 
 /* Side Text Label Module */
@@ -164,8 +183,10 @@
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.floatButton:hover .whatsappIcon {
-  transform: scale(1.1);
+@media (hover: hover) {
+  .floatButton:hover .whatsappIcon {
+    transform: scale(1.1);
+  }
 }
 
 /* Motion system animations */

@@ -105,12 +105,20 @@
   transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.link:hover,
-.link:focus {
+@media (hover: hover) {
+  .link:hover {
+    color: #F2F0F1;
+    opacity: 0.8;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.link:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
   color: #F2F0F1;
-  opacity: 0.8;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
 }
 
 .addressBlock {
@@ -220,9 +228,17 @@
   transition: color 0.2s ease;
 }
 
-.bottomLink:hover,
-.bottomLink:focus {
+@media (hover: hover) {
+  .bottomLink:hover {
+    color: #F2F0F1;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.bottomLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
   color: #F2F0F1;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
 }

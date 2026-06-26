@@ -127,9 +127,16 @@
   border: 1px solid #F2F0F1;
 }
 
-.primaryBtn:hover {
-  background-color: #CCC9C1;
-  border-color: #CCC9C1;
+@media (hover: hover) {
+  .primaryBtn:hover {
+    background-color: #CCC9C1;
+    border-color: #CCC9C1;
+  }
+}
+
+.primaryBtn:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .secondaryBtn {
@@ -138,9 +145,16 @@
   border: 1px solid rgba(242, 240, 241, 0.32);
 }
 
-.secondaryBtn:hover {
-  background-color: rgba(242, 240, 241, 0.08);
-  border-color: #F2F0F1;
+@media (hover: hover) {
+  .secondaryBtn:hover {
+    background-color: rgba(242, 240, 241, 0.08);
+    border-color: #F2F0F1;
+  }
+}
+
+.secondaryBtn:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 /* 2. Quick Contact Cards */
@@ -183,8 +197,10 @@
   min-height: 240px;
 }
 
-.quickCard:hover {
-  border-color: rgba(54, 54, 51, 0.32);
+@media (hover: hover) {
+  .quickCard:hover {
+    border-color: rgba(54, 54, 51, 0.32);
+  }
 }
 
 .quickIcon {
@@ -223,9 +239,16 @@
   transition: all 0.3s ease;
 }
 
-.quickCta:hover {
-  border-color: #141313;
-  color: #141313;
+@media (hover: hover) {
+  .quickCta:hover {
+    border-color: #141313;
+    color: #141313;
+  }
+}
+
+.quickCta:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 4px;
 }
 
 /* 3. Form Section */
@@ -310,8 +333,9 @@
   width: 100%;
 }
 
-.input:focus, .textarea:focus, .select:focus {
-  border-color: rgba(54, 54, 51, 0.5);
+.input:focus-visible, .textarea:focus-visible, .select:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
   background-color: #F2F0F1;
 }
 
@@ -346,9 +370,16 @@
   margin-top: 12px;
 }
 
-.submitBtn:hover {
-  background-color: #141313;
-  border-color: #141313;
+@media (hover: hover) {
+  .submitBtn:hover {
+    background-color: #141313;
+    border-color: #141313;
+  }
+}
+
+.submitBtn:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 .microcopy {
@@ -580,9 +611,16 @@
   border: 1px solid #363633;
 }
 
-.locBtnPrimary:hover {
-  background-color: #141313;
-  border-color: #141313;
+@media (hover: hover) {
+  .locBtnPrimary:hover {
+    background-color: #141313;
+    border-color: #141313;
+  }
+}
+
+.locBtnPrimary:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 .locBtnSecondary {
@@ -591,9 +629,16 @@
   border: 1px solid rgba(54, 54, 51, 0.32);
 }
 
-.locBtnSecondary:hover {
-  background-color: rgba(54, 54, 51, 0.04);
-  border-color: #363633;
+@media (hover: hover) {
+  .locBtnSecondary:hover {
+    background-color: rgba(54, 54, 51, 0.04);
+    border-color: #363633;
+  }
+}
+
+.locBtnSecondary:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 /* 5. Map Section */
@@ -904,10 +949,17 @@
   max-width: 200px;
 }
 
-.quickActionLink:hover {
-  background-color: #F2F0F1;
-  color: #141313;
-  border-color: #F2F0F1;
+@media (hover: hover) {
+  .quickActionLink:hover {
+    background-color: #F2F0F1;
+    color: #141313;
+    border-color: #F2F0F1;
+  }
+}
+
+.quickActionLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .quickActionTitle {

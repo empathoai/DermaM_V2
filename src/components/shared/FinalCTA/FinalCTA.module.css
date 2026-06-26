@@ -118,9 +118,16 @@
   border: 1px solid #F2F0F1;
 }
 
-.dark .btnPrimary:hover {
-  background-color: transparent;
-  color: #F2F0F1;
+@media (hover: hover) {
+  .dark .btnPrimary:hover {
+    background-color: transparent;
+    color: #F2F0F1;
+  }
+}
+
+.dark .btnPrimary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .dark .btnSecondary {
@@ -129,8 +136,15 @@
   border: 1px solid rgba(242, 240, 241, 0.32);
 }
 
-.dark .btnSecondary:hover {
-  border-color: #F2F0F1;
+@media (hover: hover) {
+  .dark .btnSecondary:hover {
+    border-color: #F2F0F1;
+  }
+}
+
+.dark .btnSecondary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .disclaimer {

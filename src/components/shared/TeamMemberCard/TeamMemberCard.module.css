@@ -10,8 +10,10 @@
   height: 100%;
 }
 
-.card:hover {
-  border-color: rgba(54, 54, 51, 0.32);
+@media (hover: hover) {
+  .card:hover {
+    border-color: rgba(54, 54, 51, 0.32);
+  }
 }
 
 .mediaArea {
@@ -121,9 +123,16 @@
   color: #F2F0F1;
 }
 
-.vcardButton:hover {
-  background-color: #141313;
-  color: #F2F0F1;
+@media (hover: hover) {
+  .vcardButton:hover {
+    background-color: #141313;
+    color: #F2F0F1;
+  }
+}
+
+.vcardButton:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
 }
 
 .vcardButtonDisabled {

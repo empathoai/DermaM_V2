@@ -1,6 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function HeroMedia({ src, alt = '', className = '', onReady, style }) {
+  const [imgSrc, setImgSrc] = useState(src)
+  const [hasError, setHasError] = useState(false)
+
+  useEffect(() => {
+    setImgSrc(src)
+    setHasError(false)
+  }, [src])
+
   const isVideo = src?.endsWith('.mp4')
 
   const defaultStyle = { objectFit: 'cover', width: '100%', height: '100%' }
@@ -23,12 +31,20 @@ export default function HeroMedia({ src, alt = '', className = '', onReady, styl
     )
   }
 
+  const handleError = () => {
+    if (!hasError) {
+      setHasError(true)
+      setImgSrc('/assets/images/global/og-default.jpg')
+    }
+  }
+
   return (
     <img
-      src={src}
+      src={imgSrc}
       alt={alt}
       loading="eager"
       onLoad={onReady}
+      onError={handleError}
       className={className}
       style={combinedStyle}
     />

@@ -149,9 +149,16 @@
   border: 1px solid #F2F0F1;
 }
 
-.btnPrimary:hover {
-  background-color: #CCC9C1;
-  border-color: #CCC9C1;
+@media (hover: hover) {
+  .btnPrimary:hover {
+    background-color: #CCC9C1;
+    border-color: #CCC9C1;
+  }
+}
+
+.btnPrimary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .btnSecondary {
@@ -160,9 +167,16 @@
   border: 1px solid rgba(242, 240, 241, 0.32);
 }
 
-.btnSecondary:hover {
-  border-color: #F2F0F1;
-  background-color: rgba(242, 240, 241, 0.05);
+@media (hover: hover) {
+  .btnSecondary:hover {
+    border-color: #F2F0F1;
+    background-color: rgba(242, 240, 241, 0.05);
+  }
+}
+
+.btnSecondary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .disclaimer {

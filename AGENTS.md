@@ -47,6 +47,8 @@ Before starting any task, you **MUST** read the appropriate reference documents:
   Read [docs/ASSETS_AND_MEDIA.md](file:///d:/Derma_Content/Website_DermaM_V2/derma.m/docs/ASSETS_AND_MEDIA.md) and [docs/ASSETS_STRUCTURE.md](file:///d:/Derma_Content/Website_DermaM_V2/derma.m/docs/ASSETS_STRUCTURE.md) first.
 * **For agent skill execution, audits, or validations:** 
   Read [docs/AGENT_SKILLS.md](file:///d:/Derma_Content/Website_DermaM_V2/derma.m/docs/AGENT_SKILLS.md) and the corresponding skill file first.
+* **For site audits, visual validation, or accessibility reviews:**
+  Read [docs/AUDIT.md](file:///d:/Derma_Content/Website_DermaM_V2/derma.m/docs/AUDIT.md) first.
 
 ---
 

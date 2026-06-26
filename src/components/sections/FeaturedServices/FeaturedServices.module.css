@@ -277,14 +277,28 @@
   color: var(--color-clinical-canvas, #F2F0F1);
 }
 
-.ctaLight:hover {
-  background-color: var(--color-stone, #363633);
-  color: var(--color-clinical-canvas, #F2F0F1);
+@media (hover: hover) {
+  .ctaLight:hover {
+    background-color: var(--color-stone, #363633);
+    color: var(--color-clinical-canvas, #F2F0F1);
+  }
 }
 
-.ctaDark:hover {
-  background-color: var(--color-clinical-canvas, #F2F0F1);
-  color: var(--color-dark-authority, #141313);
+.ctaLight:focus-visible {
+  outline: 2px solid var(--color-stone, #363633);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .ctaDark:hover {
+    background-color: var(--color-clinical-canvas, #F2F0F1);
+    color: var(--color-dark-authority, #141313);
+  }
+}
+
+.ctaDark:focus-visible {
+  outline: 2px solid var(--color-clinical-canvas, #F2F0F1);
+  outline-offset: 2px;
 }
 
 .disclaimer, .disclaimerDark {

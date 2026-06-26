@@ -155,9 +155,16 @@
   border: 1px solid #F2F0F1;
 }
 
-.primaryCta:hover {
-  background-color: #CCC9C1;
-  border-color: #CCC9C1;
+@media (hover: hover) {
+  .primaryCta:hover {
+    background-color: #CCC9C1;
+    border-color: #CCC9C1;
+  }
+}
+
+.primaryCta:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 @media (min-width: 1024px) {
@@ -181,9 +188,16 @@
   border: 1px solid rgba(242, 240, 241, 0.32);
 }
 
-.secondaryCta:hover {
-  background-color: rgba(242, 240, 241, 0.05);
-  border-color: #F2F0F1;
+@media (hover: hover) {
+  .secondaryCta:hover {
+    background-color: rgba(242, 240, 241, 0.05);
+    border-color: #F2F0F1;
+  }
+}
+
+.secondaryCta:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 @media (min-width: 1024px) {

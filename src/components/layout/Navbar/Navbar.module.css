@@ -47,13 +47,15 @@
   }
 }
 
-.topInfoLink {
-  color: #CCC9C1;
-  text-decoration: none;
-  transition: color 0.3s ease;
+@media (hover: hover) {
+  .topInfoLink:hover {
+    color: #F2F0F1;
+  }
 }
 
-.topInfoLink:hover {
+.topInfoLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
   color: #F2F0F1;
 }
 
@@ -98,6 +100,11 @@
   text-decoration: none;
 }
 
+.navLogo:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 4px;
+}
+
 @media (min-width: 1024px) {
   .navLogo {
     font-size: 1.35rem;
@@ -139,7 +146,15 @@
   transition: color 0.3s ease;
 }
 
-.navLink:hover, .navLinkButton:hover {
+@media (hover: hover) {
+  .navLink:hover, .navLinkButton:hover {
+    color: #CCC9C1;
+  }
+}
+
+.navLink:focus-visible, .navLinkButton:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
   color: #CCC9C1;
 }
 
@@ -215,7 +230,15 @@
   font-weight: 400;
 }
 
-.megaMenuLink:hover {
+@media (hover: hover) {
+  .megaMenuLink:hover {
+    color: #666463;
+  }
+}
+
+.megaMenuLink:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
   color: #666463;
 }
 
@@ -245,9 +268,17 @@
   transition: all 0.3s ease;
 }
 
-.ctaButton:hover {
-  background-color: #F2F0F1;
-  color: #141313;
+@media (hover: hover) {
+  .ctaButton:hover {
+    background-color: #F2F0F1;
+    color: #141313;
+  }
+}
+
+.ctaButton:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
+  background-color: rgba(242, 240, 241, 0.1);
 }
 
 .mobileMenuToggle {
@@ -269,6 +300,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobileMenuButton:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .mobileMenuLayer {
@@ -325,6 +363,12 @@
   color: #F2F0F1;
   text-decoration: none;
   display: block;
+  padding-block: 0.75rem;
+}
+
+.mobileNavLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .mobileNavActions {
@@ -347,6 +391,11 @@
   text-decoration: none;
 }
 
+.mobileCtaPrimary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
+}
+
 .mobileCtaSecondary {
   border: 1px solid rgba(242, 240, 241, 0.32);
   color: #F2F0F1;
@@ -359,4 +408,9 @@
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
+}
+
+.mobileCtaSecondary:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }

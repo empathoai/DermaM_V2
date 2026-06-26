@@ -159,9 +159,15 @@
   transition: opacity 0.2s ease;
 }
 
-.primaryButton:hover,
-.primaryButton:focus {
-  opacity: 0.9;
+@media (hover: hover) {
+  .primaryButton:hover {
+    opacity: 0.9;
+  }
+}
+
+.primaryButton:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .secondaryButton {
@@ -183,10 +189,16 @@
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.secondaryButton:hover,
-.secondaryButton:focus {
-  background-color: rgba(242, 240, 241, 0.05);
-  border-color: rgba(242, 240, 241, 0.5);
+@media (hover: hover) {
+  .secondaryButton:hover {
+    background-color: rgba(242, 240, 241, 0.05);
+    border-color: rgba(242, 240, 241, 0.5);
+  }
+}
+
+.secondaryButton:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
 }
 
 .disclaimer {

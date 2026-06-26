@@ -52,7 +52,7 @@ export default function AboutPage({ data }) {
           <div className={styles.spotlightRow}>
             <div className={styles.spotlightMedia}>
               <div style={{ overflow: 'hidden' }}>
-                <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}>
+                <motion.div whileHover="hover" variants={{ hover: imageHover }}>
                   <MediaBlock
                     src={founderSpotlight.image}
                     alt=""
@@ -146,7 +146,7 @@ export default function AboutPage({ data }) {
             </div>
             <div className={styles.academyMedia}>
               <div style={{ overflow: 'hidden' }}>
-                <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}>
+                <motion.div whileHover="hover" variants={{ hover: imageHover }}>
                   <MediaBlock
                     src={academy.image}
                     alt=""

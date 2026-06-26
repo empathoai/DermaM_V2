@@ -436,7 +436,13 @@ export default function ContactoPage() {
                           className="absolute inset-0 bg-[#363633]/40 backdrop-blur-[2px] flex flex-col items-center justify-center cursor-pointer z-10 transition hover:bg-[#363633]/50 p-4"
                           onClick={() => setMapInteractive(true)}
                         >
-                          <button className="bg-[#141313] text-[#F2F0F1] uppercase text-xs tracking-widest px-6 py-3 border border-none">
+                          <button 
+                            className="bg-[#141313] text-[#F2F0F1] uppercase text-xs tracking-widest px-6 py-3 border border-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setMapInteractive(true);
+                            }}
+                          >
                             Interactuar con mapa
                           </button>
                         </div>

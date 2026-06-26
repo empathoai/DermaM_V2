@@ -11,3 +11,7 @@ coverage/
 playwright-report/
 test-results/
 playwright-report.zip
+
+# Agent reference docs
+docs/
+

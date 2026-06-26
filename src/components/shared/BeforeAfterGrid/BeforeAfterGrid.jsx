@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './BeforeAfterGrid.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
-export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer }) {
+export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, variant = 'dark' }) {
   if (!items || items.length === 0) return null;
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerRow}>
-        <SectionHeader eyebrow={eyebrow} title={headline} variant="dark" />
+        <SectionHeader eyebrow={eyebrow} title={headline} variant={variant} />
       </div>
       <div className={styles.grid}>
         {items.map((item, idx) => (
@@ -27,7 +27,7 @@ export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer }
                 ) : (
                   <div className={styles.fallbackImage} />
                 )}
-                <div className={styles.imageLabel}>ANTES</div>
+                <div className={`${styles.imageLabel} ${variant === 'light' ? styles.lightLabel : ''}`}>ANTES</div>
               </div>
               <div className={styles.imageContainer}>
                 {item.after ? (
@@ -42,15 +42,15 @@ export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer }
                 ) : (
                   <div className={styles.fallbackImage} />
                 )}
-                <div className={styles.imageLabel}>DESPUÉS</div>
+                <div className={`${styles.imageLabel} ${variant === 'light' ? styles.lightLabel : ''}`}>DESPUÉS</div>
               </div>
             </div>
           </div>
         ))}
       </div>
       {disclaimer && (
-        <div className={styles.disclaimerRow}>
-          <p className={styles.disclaimer}>{disclaimer}</p>
+        <div className={`${styles.disclaimerRow} ${variant === 'light' ? styles.lightDisclaimerRow : ''}`}>
+          <p className={`${styles.disclaimer} ${variant === 'light' ? styles.lightDisclaimer : ''}`}>{disclaimer}</p>
         </div>
       )}
     </div>

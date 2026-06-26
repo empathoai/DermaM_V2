@@ -4,8 +4,8 @@ import TreatmentQuickFacts from '../../shared/TreatmentQuickFacts/TreatmentQuick
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import MediaBlock from '../../shared/MediaBlock/MediaBlock';
 import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
+import BrandDivider from '../../shared/BrandDivider/BrandDivider';
 import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
-import SpecsGrid from '../../shared/SpecsGrid/SpecsGrid';
 import BeforeAfterGrid from '../../shared/BeforeAfterGrid/BeforeAfterGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
@@ -22,9 +22,7 @@ export default function LandingPage({ data }) {
     problem,
     benefits,
     howItWorks,
-    specs,
     beforeAfter,
-    visitFlow,
     testimonials,
     faq,
     cta
@@ -63,7 +61,7 @@ export default function LandingPage({ data }) {
                   eyebrow={problem.eyebrow}
                   title={problem.headline}
                   support={problem.body}
-                  variant="light"
+                  variant="dark"
                   align="left"
                 />
                 {problem.list && (
@@ -79,7 +77,7 @@ export default function LandingPage({ data }) {
               </div>
               <div className={styles.problemMedia}>
                 <div className={styles.problemMediaInner}>
-                  <MediaBlock src={problem.image} alt={problem.headline} variant="light" />
+                  <MediaBlock src={problem.image} alt={problem.headline} variant="dark" />
                 </div>
               </div>
             </div>
@@ -97,7 +95,7 @@ export default function LandingPage({ data }) {
                 title: benefits.headline
               }}
               items={benefits.list}
-              variant="dark"
+              variant="light"
             />
           </div>
         </section>
@@ -105,26 +103,18 @@ export default function LandingPage({ data }) {
 
       {/* 5. How It Works */}
       {howItWorks && (
-        <section className={styles.howItWorks}>
+        <section className={styles.howItWorks} style={{ backgroundImage: `url(${howItWorks.image || problem?.image || ''})` }}>
+          <div className={styles.overlay}></div>
           <div className={styles.container}>
             <SectionHeader 
               eyebrow={howItWorks.eyebrow}
               title={howItWorks.headline}
               support={howItWorks.body}
-              variant="light"
+              variant="dark"
             />
             <div className={styles.stepsWrapper}>
-              <ProcessTimeline steps={howItWorks.steps} variant="light" />
+              <ProcessTimeline steps={howItWorks.steps} variant="dark" />
             </div>
-          </div>
-        </section>
-      )}
-
-      {/* 6. Treatment Details / Specs */}
-      {specs && (
-        <section className={styles.specs}>
-          <div className={styles.container}>
-            <SpecsGrid headline={specs.headline} specs={specs.items} variant="light" />
           </div>
         </section>
       )}
@@ -137,22 +127,16 @@ export default function LandingPage({ data }) {
               eyebrow={beforeAfter.eyebrow} 
               headline={beforeAfter.headline} 
               items={beforeAfter.items} 
-              disclaimer={beforeAfter.disclaimer} 
+              disclaimer={beforeAfter.disclaimer}
+              variant="light"
             />
           </div>
         </section>
       )}
 
-      {/* 8. Process / Visit Flow */}
-      {visitFlow && (
-        <section className={styles.visitFlow}>
-          <div className={styles.container}>
-            <div className={styles.visitFlowHeader}>
-               <SectionHeader title={visitFlow.headline} variant="light" />
-            </div>
-            <ProcessTimeline steps={visitFlow.steps} variant="light" />
-          </div>
-        </section>
+      {/* 8. Brand Promise Divider */}
+      {beforeAfter && (
+        <BrandDivider text="EL BALANCE PERFECTO ENTRE CIENCIA Y ESTÉTICA NATURAL" image={cta?.backgroundImage || problem?.image} />
       )}
 
       {/* 9. Testimonials */}

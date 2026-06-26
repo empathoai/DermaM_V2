@@ -14,7 +14,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL SIN UN CAMBIO ARTIFICIAL.',
+      headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL SIN UN CAMBIO ARTIFICIAL',
       body: 'PRP y Fibrina puede ser una opción para quienes desean acompañar la firmeza, textura y luminosidad de la piel mediante un protocolo personalizado y progresivo.',
       list: [
         'Piel con pérdida de luminosidad',
@@ -28,7 +28,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'BIOESTIMULACIÓN CUTÁNEA CON UN ENFOQUE NATURAL Y PROGRESIVO.',
+      headline: 'BIOESTIMULACIÓN CUTÁNEA CON UN ENFOQUE NATURAL Y PROGRESIVO',
       list: [
         {
           title: 'APOYO A LA FIRMEZA',
@@ -46,7 +46,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DISEÑADO PARA ESTIMULAR LA RESPUESTA NATURAL DE LA PIEL.',
+      headline: 'UN PROTOCOLO DISEÑADO PARA ESTIMULAR LA RESPUESTA NATURAL DE LA PIEL',
       body: 'El tratamiento se basa en la obtención y preparación de componentes autólogos para aplicarlos dentro de un protocolo personalizado, con el objetivo de acompañar la calidad visible de la piel de forma progresiva.',
       steps: [
         {
@@ -71,20 +71,9 @@ export const landingPages = {
         }
       ]
     },
-    specs: {
-      headline: 'DETALLES DEL TRATAMIENTO.',
-      items: {
-        'Tipo': 'Bioestimulación autóloga',
-        'Zona': 'Rostro, cuello o zonas indicadas durante la valoración',
-        'Objetivo': 'Firmeza, textura, luminosidad y calidad visible de la piel',
-        'Sesiones': 'Según valoración profesional',
-        'Recuperación': 'Puede variar según cada persona y zona tratada',
-        'Requiere valoración': 'Sí'
-      }
-    },
     beforeAfter: {
       eyebrow: 'RESULTADOS',
-      headline: 'EVOLUCIÓN VISIBLE, PROGRESIVA Y PERSONALIZADA.',
+      headline: 'EVOLUCIÓN VISIBLE, PROGRESIVA Y PERSONALIZADA',
       items: [
         {
           before: '/assets/images/landings/prf-y-fibrina/before-after-1.jpg',
@@ -92,31 +81,6 @@ export const landingPages = {
         }
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
-    },
-    visitFlow: {
-      headline: 'CÓMO ES TU VISITA.',
-      steps: [
-        {
-          number: '01',
-          title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y evaluamos si el tratamiento es adecuado para ti.'
-        },
-        {
-          number: '02',
-          title: 'PLAN',
-          body: 'Definimos el protocolo según tu piel, zona y expectativas.'
-        },
-        {
-          number: '03',
-          title: 'TRATAMIENTO',
-          body: 'Realizamos el procedimiento con cuidado profesional y orientación clara.'
-        },
-        {
-          number: '04',
-          title: 'SEGUIMIENTO',
-          body: 'Te indicamos cuidados posteriores y próximos pasos según tu evolución.'
-        }
-      ]
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
@@ -138,7 +102,7 @@ export const landingPages = {
       ]
     },
     faq: {
-      headline: 'PREGUNTAS FRECUENTES.',
+      headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
           question: '¿PRP y Fibrina es adecuado para todos?',
@@ -164,7 +128,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE SI PRP Y FIBRINA ES ADECUADO PARA TU PIEL.',
+      headline: 'DESCUBRE SI PRP Y FIBRINA ES ADECUADO PARA TU PIEL',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo puede acompañar tus objetivos de firmeza, textura y luminosidad.',
       primaryCta: 'RESERVAR',
       secondaryCta: 'WHATSAPP',
@@ -187,7 +151,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS UNA PIEL MÁS LIMPIA, EQUILIBRADA Y PREPARADA.',
+      headline: 'SI BUSCAS UNA PIEL MÁS LIMPIA, EQUILIBRADA Y PREPARADA',
       body: 'La Limpieza Facial Profunda puede ayudarte a remover impurezas, mejorar la sensación de frescura y preparar la piel para absorber mejor los activos de cuidado.',
       list: [
         'Poros congestionados',
@@ -201,7 +165,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'UNA PIEL MÁS LIMPIA, FRESCA Y EQUILIBRADA.',
+      headline: 'UNA PIEL MÁS LIMPIA, FRESCA Y EQUILIBRADA',
       list: [
         {
           title: 'PURIFICACIÓN FOLICULAR',
@@ -219,7 +183,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DE LIMPIEZA PROFUNDA ADAPTADO A TU PIEL.',
+      headline: 'UN PROTOCOLO DE LIMPIEZA PROFUNDA ADAPTADO A TU PIEL',
       body: 'El tratamiento combina evaluación, limpieza, preparación y cuidado personalizado para apoyar una piel más equilibrada y renovada.',
       steps: [
         {
@@ -244,21 +208,9 @@ export const landingPages = {
         }
       ]
     },
-    specs: {
-      headline: 'DETALLES DEL TRATAMIENTO.',
-      items: {
-        'Tipo': 'Limpieza facial profunda',
-        'Zona': 'Rostro',
-        'Objetivo': 'Purificación, textura, equilibrio y preparación de la piel',
-        'Duración': '60 minutos',
-        'Frecuencia': 'Cada 28 días o según valoración',
-        'Anestesia': 'No necesaria',
-        'Requiere valoración': 'Sí'
-      }
-    },
     beforeAfter: {
       eyebrow: 'RESULTADOS',
-      headline: 'UNA PIEL VISUALMENTE MÁS LIMPIA Y RENOVADA.',
+      headline: 'UNA PIEL VISUALMENTE MÁS LIMPIA Y RENOVADA',
       items: [
         {
           before: '/assets/images/landings/limpieza-facial-profunda/before-after-1.jpg',
@@ -266,31 +218,6 @@ export const landingPages = {
         }
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
-    },
-    visitFlow: {
-      headline: 'CÓMO ES TU VISITA.',
-      steps: [
-        {
-          number: '01',
-          title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y observamos las necesidades visibles de tu piel.'
-        },
-        {
-          number: '02',
-          title: 'PROTOCOLO',
-          body: 'Definimos el enfoque de limpieza según tu tipo de piel y condición visible.'
-        },
-        {
-          number: '03',
-          title: 'TRATAMIENTO',
-          body: 'Realizamos el protocolo con cuidado profesional y productos seleccionados.'
-        },
-        {
-          number: '04',
-          title: 'RECOMENDACIÓN',
-          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
-        }
-      ]
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
@@ -312,7 +239,7 @@ export const landingPages = {
       ]
     },
     faq: {
-      headline: 'PREGUNTAS FRECUENTES.',
+      headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
           question: '¿Cada cuánto se recomienda una limpieza facial profunda?',
@@ -338,7 +265,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'EMPIEZA CON UNA LIMPIEZA FACIAL PERSONALIZADA.',
+      headline: 'EMPIEZA CON UNA LIMPIEZA FACIAL PERSONALIZADA',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo es adecuado para tu piel y tus objetivos de cuidado.',
       primaryCta: 'RESERVAR',
       secondaryCta: 'WHATSAPP',
@@ -361,7 +288,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS ACOMPAÑAR TU RECUPERACIÓN CON CUIDADO PROFESIONAL.',
+      headline: 'SI BUSCAS ACOMPAÑAR TU RECUPERACIÓN CON CUIDADO PROFESIONAL',
       body: 'Los tratamientos postoperatorios pueden apoyar el proceso de recuperación corporal mediante protocolos enfocados en drenaje, inflamación, fibrosis y acompañamiento personalizado.',
       list: [
         'Inflamación o retención de líquidos',
@@ -375,7 +302,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'APOYO PROFESIONAL PARA UNA RECUPERACIÓN MÁS CÓMODA.',
+      headline: 'APOYO PROFESIONAL PARA UNA RECUPERACIÓN MÁS CÓMODA',
       list: [
         {
           title: 'DRENAJE LINFÁTICO',
@@ -393,7 +320,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DE ACOMPAÑAMIENTO SEGÚN TU ETAPA DE RECUPERACIÓN.',
+      headline: 'UN PROTOCOLO DE ACOMPAÑAMIENTO SEGÚN TU ETAPA DE RECUPERACIÓN',
       body: 'El tratamiento se adapta a tu proceso, zona tratada y evolución visible para acompañar la recuperación con técnicas profesionales y orientación clara.',
       steps: [
         {
@@ -418,21 +345,9 @@ export const landingPages = {
         }
       ]
     },
-    specs: {
-      headline: 'DETALLES DEL TRATAMIENTO.',
-      items: {
-        'Tipo': 'Tratamiento postoperatorio',
-        'Zona': 'Corporal, según procedimiento y valoración',
-        'Objetivo': 'Drenaje, inflamación, fibrosis y recuperación cómoda',
-        'Duración': '60 minutos',
-        'Frecuencia': 'Por evaluación profesional',
-        'Anestesia': 'No necesaria',
-        'Requiere valoración': 'Sí'
-      }
-    },
     beforeAfter: {
       eyebrow: 'RESULTADOS',
-      headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN.',
+      headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN',
       items: [
         {
           before: '/assets/images/landings/tratamientos-postoperatorios/before-after-1.jpg',
@@ -440,31 +355,6 @@ export const landingPages = {
         }
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
-    },
-    visitFlow: {
-      headline: 'CÓMO ES TU VISITA.',
-      steps: [
-        {
-          number: '01',
-          title: 'VALORACIÓN',
-          body: 'Escuchamos tu proceso, procedimiento previo y necesidades actuales.'
-        },
-        {
-          number: '02',
-          title: 'PROTOCOLO',
-          body: 'Definimos la frecuencia y enfoque del acompañamiento postoperatorio.'
-        },
-        {
-          number: '03',
-          title: 'TRATAMIENTO',
-          body: 'Realizamos el tratamiento con técnicas profesionales y cuidado personalizado.'
-        },
-        {
-          number: '04',
-          title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre evolución, cuidados y próximas sesiones.'
-        }
-      ]
     },
     testimonials: {
       eyebrow: 'LO QUE DICEN',
@@ -486,7 +376,7 @@ export const landingPages = {
       ]
     },
     faq: {
-      headline: 'PREGUNTAS FRECUENTES.',
+      headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
           question: '¿Cuándo puedo empezar tratamientos postoperatorios?',
@@ -512,7 +402,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'ACOMPAÑA TU RECUPERACIÓN CON CUIDADO PROFESIONAL.',
+      headline: 'ACOMPAÑA TU RECUPERACIÓN CON CUIDADO PROFESIONAL',
       body: 'Agenda tu cita y recibe orientación profesional para definir el protocolo postoperatorio más adecuado según tu proceso.',
       primaryCta: 'RESERVAR',
       secondaryCta: 'WHATSAPP',

@@ -24,6 +24,7 @@ export default function Hero({ backgroundImage, image }) {
           src={mediaSrc}
           alt=""
           onReady={() => setMediaReady(true)}
+          className={styles.heroVideoElement}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
       </div>

@@ -23,7 +23,7 @@ export default function ClinicalPositioning() {
               <p className={styles.eyebrow}>Nuestro Enfoque</p>
               <div className={styles.eyebrowLine}></div>
               <h2 className={styles.headline}>
-                Ciencia, experiencia y cuidado que se nota.
+                Ciencia, experiencia y cuidado que se nota
               </h2>
               <p className={styles.bodyCopy}>
                 En Derma.M combinamos conocimiento médico, tecnología avanzada y un enfoque humano para diseñar tratamientos que elevan tu bienestar y tu confianza.

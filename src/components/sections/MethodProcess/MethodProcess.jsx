@@ -45,7 +45,7 @@ export default function MethodProcess() {
             <p className={styles.eyebrow}>Nuestro Método</p>
             <div className={styles.eyebrowLine}></div>
             <h2 className={styles.headline}>
-              Así es nuestro método.
+              Así es nuestro método
             </h2>
             <p className={styles.bodyCopy}>
               Un proceso clínico, personalizado y consciente para resultados reales y sostenibles.

@@ -17,7 +17,7 @@ export default function FeaturedServices() {
         <div className={styles.bandIntro}>
           <p className={styles.sectionEyebrow}>TRATAMIENTOS DESTACADOS</p>
           <h2 className={styles.headline}>
-            CUIDADO PERSONALIZADO PARA TU PIEL Y CUERPO.
+            CUIDADO PERSONALIZADO PARA TU PIEL Y CUERPO
           </h2>
         </div>
 

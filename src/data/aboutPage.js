@@ -1,7 +1,7 @@
 export const aboutPage = {
   hero: {
     eyebrow: "NOSOTROS",
-    title: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA PARA CUIDAR TU PIEL.",
+    title: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA PARA CUIDAR TU PIEL",
     body: "DERMA.M nace de la pasión por el cuidado de la piel, el bienestar y el servicio a los demás.",
     backgroundImage: "/assets/images/about/hero.jpg",
     variant: "default"
@@ -9,20 +9,20 @@ export const aboutPage = {
   founderSpotlight: {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     name: "NANCY NIETO",
-    subheadline: "Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida.",
+    subheadline: "Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida",
     body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Su formación como Cosmetóloga, Cosmiatra y Dermocosmiatra en Ecuador, junto con su capacitación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel, le ha permitido construir un enfoque profesional, ético y profundamente humano.",
     secondaryBody: "Para Nancy, cada tratamiento representa una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada.",
     image: "/assets/images/about/founder.jpg"
   },
   founderPhilosophy: {
     eyebrow: "FILOSOFÍA",
-    headline: "ESCUCHAR, EDUCAR Y ACOMPAÑAR.",
+    headline: "ESCUCHAR, EDUCAR Y ACOMPAÑAR",
     body: "La filosofía de Nancy se basa en escuchar, educar y acompañar a cada cliente de manera personalizada, entendiendo que detrás de cada piel existe una historia única.",
     supportingText: "En DERMA.M creemos que la estética va mucho más allá de la apariencia. Se trata de bienestar, autoestima y calidad de vida."
   },
   approach: {
     eyebrow: "NUESTRO ENFOQUE",
-    headline: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA.",
+    headline: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA",
     items: [
       {
         title: "CIENCIA",
@@ -40,7 +40,7 @@ export const aboutPage = {
   },
   academy: {
     eyebrow: "DERMA.M ACADEMY",
-    headline: "UN COMPROMISO CON LA EDUCACIÓN, LA EXCELENCIA Y EL CRECIMIENTO PROFESIONAL.",
+    headline: "UN COMPROMISO CON LA EDUCACIÓN, LA EXCELENCIA Y EL CRECIMIENTO PROFESIONAL",
     body: "DERMA.M Academy refleja el compromiso de Nancy con la excelencia, la educación continua y el crecimiento profesional dentro de la industria de la estética.",
     secondaryBody: "Su visión es seguir expandiendo DERMA.M para generar oportunidades a otras mujeres profesionales, inspirarlas a creer en su potencial y demostrar que los sueños pueden convertirse en realidad cuando se trabaja con pasión, disciplina y propósito.",
     image: "/assets/images/about/academy.jpg"
@@ -184,7 +184,7 @@ export const aboutPage = {
   ],
   cta: {
     eyebrow: "AGENDA TU VALORACIÓN",
-    headline: "CONOCE EL CUIDADO DERMA.M DESDE UNA EXPERIENCIA PERSONALIZADA.",
+    headline: "CONOCE EL CUIDADO DERMA.M DESDE UNA EXPERIENCIA PERSONALIZADA",
     body: "Agenda tu cita y recibe orientación profesional para elegir el tratamiento más adecuado según tu piel, tu cuerpo y tus objetivos.",
     primaryCta: "RESERVAR",
     secondaryCta: "WHATSAPP",

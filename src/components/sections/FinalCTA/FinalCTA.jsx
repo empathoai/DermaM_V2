@@ -35,7 +35,7 @@ export default function FinalCTA() {
           <p className={styles.eyebrow}>Reserva tu cita</p>
           <div className={styles.eyebrowLine}></div>
           <h2 id="cta-heading" className={styles.headline}>
-            Empieza con una valoración personalizada.
+            Empieza con una valoración personalizada
           </h2>
           <p className={styles.bodyCopy}>
             Agenda tu cita en Derma.M y recibe una orientación profesional según tu piel, tu cuerpo y tus objetivos.

@@ -62,7 +62,7 @@ export default function TreatmentCategories() {
             <p className={styles.eyebrow}>Tratamientos</p>
             <h2 className={styles.headline}>
               Soluciones avanzadas <br className={styles.breakDesktop} />
-              para cada necesidad.
+              para cada necesidad
             </h2>
           </div>
 

@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-color: #141313;
 
   @media (min-width: 1024px) {
     height: calc(100vh - 304px);
@@ -23,8 +24,9 @@
   @media (min-width: 1024px) {
     left: auto;
     right: 0;
-    width: 55%;
-    height: 100%;
+    margin: 0;
+    width: 100%;
+    max-width: 1920px;
   }
 }
 
@@ -42,12 +44,17 @@
   );
 
   @media (min-width: 1024px) {
+    left: auto;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1920px;
     background: linear-gradient(
       90deg,
       #141313 0%,
-      #141313 40%,
-      rgba(20, 19, 19, 0.6) 65%,
-      rgba(20, 19, 19, 0) 90%
+      #141313 35%,
+      rgba(20, 19, 19, 0.6) 55%,
+      rgba(20, 19, 19, 0) 80%
     );
   }
 }
@@ -61,4 +68,14 @@
   background: linear-gradient(to bottom, rgba(20, 19, 19, 0.8) 0%, transparent 100%);
   pointer-events: none;
   z-index: 2;
+}
+
+.heroVideoElement {
+  object-position: 75% center;
+}
+
+@media (min-width: 1024px) {
+  .heroVideoElement {
+    object-position: center;
+  }
 }

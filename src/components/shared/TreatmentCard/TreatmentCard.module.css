@@ -45,7 +45,8 @@
 }
 
 .imageWrapper {
-  height: 240px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   position: relative;
   overflow: hidden;
   border-bottom-width: 1px;
@@ -82,10 +83,10 @@
 
 .title {
   font-family: inherit;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   margin: 0 0 16px 0;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   line-height: 1.25;
 }
@@ -216,21 +217,23 @@
 
 .dark .cta {
   color: #F2F0F1;
-  border-bottom-color: rgba(242, 240, 241, 0.3);
+  border-bottom-color: rgba(242, 240, 241, 0.5);
 }
 
 .light .cta {
   color: #363633;
-  border-bottom-color: rgba(54, 54, 51, 0.3);
+  border-bottom-color: rgba(54, 54, 51, 0.5);
 }
 
 @media (hover: hover) {
-  a.cta:hover {
+  a.cta:hover,
+  .interactive:hover .cta {
     border-bottom-color: currentColor;
   }
   
-  a.cta:hover .arrow {
-    transform: translateX(4px);
+  a.cta:hover .arrow,
+  .interactive:hover .arrow {
+    transform: translateX(6px);
   }
 }
 

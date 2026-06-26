@@ -17,23 +17,16 @@ export default function TreatmentCard({
   showMedia = true,
   disclaimer
 }) {
-  const CardWrapper = to ? Link : 'article';
-  const wrapperProps = to ? { to, className: `${styles.card} ${styles[variant]} ${styles.interactive}` } : { className: `${styles.card} ${styles[variant]}` };
+  const finalTo = to || ctaTo;
+  const CardWrapper = finalTo ? Link : 'article';
+  const wrapperProps = finalTo 
+    ? { to: finalTo, className: `${styles.card} ${styles[variant]} ${styles.interactive}` } 
+    : { className: `${styles.card} ${styles[variant]}` };
 
   const finalCtaLabel = ctaLabel || cta;
 
   const renderCta = () => {
     if (!finalCtaLabel) return null;
-    if (!to && ctaTo) {
-      return (
-        <div className={styles.ctaWrapper}>
-          <Link to={ctaTo} className={styles.cta}>
-            <span>{finalCtaLabel}</span>
-            <span className={styles.arrow}>&rarr;</span>
-          </Link>
-        </div>
-      );
-    }
     return (
       <div className={styles.ctaWrapper}>
         <span className={styles.cta}>
@@ -46,7 +39,7 @@ export default function TreatmentCard({
 
   return (
     <CardWrapper {...wrapperProps}>
-      {showMedia && (
+      {showMedia && image && (
         <div className={styles.imageWrapper}>
           <MediaBlock src={image} alt={title} variant={variant} />
         </div>
@@ -55,16 +48,6 @@ export default function TreatmentCard({
         {variant === 'dark' && <div className={styles.accentLine} />}
         <h3 className={styles.title}>{title}</h3>
         {description && <p className={styles.desc}>{description}</p>}
-        
-        {benefits && benefits.length > 0 && (
-          <ul className={styles.benefitsList}>
-            {benefits.map((bt, idx) => (
-              <li key={idx} className={styles.benefitItem}>
-                <span className={styles.dash}>—</span> {bt}
-              </li>
-            ))}
-          </ul>
-        )}
         
         {ideal && <p className={styles.ideal}>{ideal}</p>}
         

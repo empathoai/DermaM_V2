@@ -1,15 +1,11 @@
 import React from 'react';
 import PageHero from '../../sections/PageHero/PageHero';
-import Breadcrumb from '../../shared/Breadcrumb/Breadcrumb';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import MediaBlock from '../../shared/MediaBlock/MediaBlock';
 import TrustSafetyBar from '../../shared/TrustSafetyBar/TrustSafetyBar';
 import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
-import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
-import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
-import ListSparkle from '../../shared/ListSparkle/ListSparkle';
 import styles from './CategoryPage.module.css';
 
 export default function CategoryPage({ data }) {
@@ -32,15 +28,6 @@ export default function CategoryPage({ data }) {
 
   return (
     <div className={styles.categoryPage}>
-      {/* 1. Breadcrumb */}
-      {breadcrumb && (
-        <div className={styles.breadcrumbWrapper}>
-          <div className={styles.container}>
-            <Breadcrumb items={breadcrumb.map(item => ({ label: item.label, to: item.link }))} />
-          </div>
-        </div>
-      )}
-
       {/* 2. PageHero */}
       {hero && (
         <PageHero
@@ -94,7 +81,7 @@ export default function CategoryPage({ data }) {
                 image: t.image
               }))}
               variant="dark"
-              columns={2}
+              columns={3}
               sectionHeader={{
                 eyebrow: featuredTreatments.eyebrow,
                 title: featuredTreatments.headline,
@@ -134,66 +121,28 @@ export default function CategoryPage({ data }) {
         </section>
       )}
 
-      {/* 6. Who This Category Is For */}
+      {/* 6. Who This Category Is For (Dark Parallax Section) */}
       {whoFor && (
-        <section className={styles.whoFor}>
-          <div className={styles.narrowContainer}>
+        <section 
+          className={styles.whoForParallax} 
+          style={{ backgroundImage: `url(${whoFor.backgroundImage || hero?.backgroundImage || ''})` }}
+        >
+          <div className={styles.parallaxOverlay}></div>
+          <div className={styles.parallaxContainer}>
             <SectionHeader 
               eyebrow={whoFor.eyebrow}
               title={whoFor.headline}
               variant="dark"
-            />
-            <ul className={styles.whoForList}>
-              {whoFor.list.map((item, idx) => (
-                <li key={idx} className={styles.whoForListItem}>
-                  <ListSparkle variant="light" /> 
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {/* 7. Category Benefits */}
-      {benefits && (
-        <section className={styles.benefits}>
-          <div className={styles.container}>
-            <BenefitColumns 
-              items={benefits.list}
-              variant="light"
-              sectionHeader={{
-                title: benefits.headline
-              }}
-            />
-          </div>
-        </section>
-      )}
-
-      {/* 8. Method / Category Approach */}
-      {approach && (
-        <section className={styles.approach}>
-          <div className={styles.narrowContainer}>
-            <SectionHeader 
-              eyebrow={approach.eyebrow}
-              title={approach.headline}
-              support={approach.body}
-              variant="dark"
               align="center"
             />
-          </div>
-        </section>
-      )}
-
-      {/* 9. Process / Visit Flow */}
-      {process && (
-        <section className={styles.process}>
-          <div className={styles.container}>
-            <ProcessTimeline 
-              title={process.headline}
-              steps={process.steps}
-              variant="light"
-            />
+            <div className={styles.whoForEditorialGrid}>
+              {whoFor.list.map((item, idx) => (
+                <div key={idx} className={styles.whoForCard}>
+                  <span className={styles.whoForNumber}>{(idx + 1).toString().padStart(2, '0')}</span>
+                  <p className={styles.whoForText}>{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}

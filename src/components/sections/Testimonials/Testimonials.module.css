@@ -121,11 +121,11 @@
 .card::before {
   content: '“';
   position: absolute;
-  top: -40px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 180px;
+  font-size: 130px;
   line-height: 1;
   color: var(--color-stone, #363633);
   opacity: 0.05;
@@ -137,6 +137,20 @@
   .card {
     padding: 40px 32px;
   }
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: var(--color-stone, #363633);
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .quote {

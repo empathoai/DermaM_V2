@@ -30,11 +30,11 @@
 .card::before {
   content: '“';
   position: absolute;
-  top: -40px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 180px;
+  font-size: 130px;
   line-height: 1;
   color: #363633;
   opacity: 0.05;
@@ -65,6 +65,23 @@
   text-align: center;
 }
 
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: #363633;
+}
+
+.dark .stars {
+  color: #F2F0F1;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
 
 .quote {
   font-family: var(--font-sans, "Poppins", sans-serif);

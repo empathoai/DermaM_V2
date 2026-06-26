@@ -170,16 +170,16 @@ export const aboutPage = {
   },
   testimonials: [
     {
-      quote: "Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.",
-      author: "KATHERINE BURGOS VALDEZ"
+      quote: "Realmente estoy muy agradecida con DERMA.M especialmente con Mikaela y Nancy, aunque todo el equipo de trabajo es una maravilla. Súper lindas, cariñosas, comprometidas con su trabajo.",
+      author: "KARINA PÉREZ VAILLANT"
     },
     {
-      quote: "Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.",
-      author: "KATHERINE BURGOS VALDEZ"
+      quote: "Tengo dos años asistiendo a DERMA y estoy muy feliz con los cambios que ha tenido mi piel, Nancy y las muchachas son excelentes y muy profesionales.",
+      author: "CECY GARCIA"
     },
     {
-      quote: "Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.",
-      author: "MIRASOL FERNÁNDEZ"
+      quote: "Súper agradecida con Nancy. Tiene unas manos magníficas y un don especial para cuidar la piel. Llevo 6 años visitándola cada mes y mi piel ha cambiado.",
+      author: "CARLA AFRICA GARUZ"
     }
   ],
   cta: {

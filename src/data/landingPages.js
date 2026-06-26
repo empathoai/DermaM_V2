@@ -88,16 +88,16 @@ export const landingPages = {
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Realmente estoy muy agradecida con DERMA.M especialmente con Mikaela y Nancy... Es un momento de relajación.',
+          author: 'KARINA PÉREZ VAILLANT'
         },
         {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Tengo dos años asistiendo a DERMA y estoy muy feliz con los cambios que ha tenido mi piel. Son excelentes y muy profesionales.',
+          author: 'CECY GARCIA'
         },
         {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
+          quote: 'Una exprencia muy buena, el tratamiento me hizo muy bien. Me explicaron sobre los beneficios y el seguimiento para tener una piel más saludable.',
+          author: 'CELIDA SAAVEDRA'
         }
       ]
     },
@@ -225,16 +225,16 @@ export const landingPages = {
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Desde que llamé me sentí muy cómoda y confiada. El spa es muy limpio. Y con el facial que me realizó quedé muy conforme.',
+          author: 'SONIA GARAY'
         },
         {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Súper agradecida con Nancy. Tengo acné y siempre sabe exactamente qué productos ponerme y qué tratamientos necesito.',
+          author: 'CARLA AFRICA GARUZ'
         },
         {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
+          quote: 'Una exprencia muy buena, el tratamiento me hizo muy bien. Muy profesional Daniela, amable y me explicó sobre los beneficios.',
+          author: 'CELIDA SAAVEDRA'
         }
       ]
     },
@@ -362,16 +362,16 @@ export const landingPages = {
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Recibí un tratamiento de 5 masajes corporales con Yosy, la mejor masajista de West Palm Beach, la clínica excelente y las chicas súper amables.',
+          author: 'YULEDSY RODRIGUEZ DOMINGUEZ'
         },
         {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Experiencia increíble, muy profesionales, mi masajista Yosy todo un amor como persona y con una preparación de calidad, me van encantando mis resultados.',
+          author: 'LISANDRA'
         },
         {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
+          quote: 'Realmente estoy muy agradecida con DERMA.M aunque todo el equipo de trabajo es una maravilla. Súper lindas, cariñosas, comprometidas con su trabajo.',
+          author: 'KARINA PÉREZ VAILLANT'
         }
       ]
     },

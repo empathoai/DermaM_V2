@@ -1,28 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
+import { Star } from 'lucide-react';
+import { aboutPage } from '../../../data/aboutPage';
 import styles from './Testimonials.module.css';
 
 export default function Testimonials() {
   const { sectionReveal, cardStaggerContainer, cardReveal, viewportConfig } = useMotionSystem();
 
-  const testimonials = [
-    {
-      id: 1,
-      quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-      name: 'KATHERINE BURGOS VALDEZ'
-    },
-    {
-      id: 2,
-      quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-      name: 'KATHERINE BURGOS VALDEZ'
-    },
-    {
-      id: 3,
-      quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-      name: 'MIRASOL FERNÁNDEZ'
-    }
-  ];
+  const testimonials = aboutPage.testimonials;
+
 
   return (
     <section className={styles.section} aria-labelledby="testimonials-heading">
@@ -57,17 +44,22 @@ export default function Testimonials() {
             viewport={viewportConfig}
             variants={cardStaggerContainer}
           >
-            {testimonials.map((test) => (
+            {testimonials.map((test, idx) => (
               <motion.div 
-                key={test.id} 
+                key={idx} 
                 className={styles.card}
                 variants={cardReveal}
               >
+                <div className={styles.stars}>
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className={styles.starIcon} fill="currentColor" />
+                  ))}
+                </div>
                 <blockquote className={styles.quote}>
                   {test.quote}
                 </blockquote>
                 <div className={styles.cardDivider}></div>
-                <cite className={styles.clientName}>{test.name}</cite>
+                <cite className={styles.clientName}>{test.author}</cite>
               </motion.div>
             ))}
           </motion.div>

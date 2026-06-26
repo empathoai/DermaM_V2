@@ -1,4 +1,5 @@
 import React from 'react';
+import { Star } from 'lucide-react';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import styles from './TestimonialsSection.module.css';
 
@@ -29,6 +30,11 @@ export default function TestimonialsSection({
       <div className={styles.grid}>
         {testimonials.map((item, idx) => (
           <div key={idx} className={styles.card}>
+            <div className={styles.stars}>
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className={styles.starIcon} fill="currentColor" />
+              ))}
+            </div>
             <blockquote className={styles.quote}>
               {item.quote}
             </blockquote>

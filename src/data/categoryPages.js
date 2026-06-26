@@ -355,16 +355,16 @@ export const categoryPages = {
       support: 'Conoce cómo nuestros tratamientos faciales han devuelto la salud y luminosidad a la piel de nuestros pacientes.',
       list: [
         {
-          quote: 'Me realicé una limpieza profunda. Mi cutis quedó respirando y con una luminosidad que no veía hace años. Nancy es una artista.',
-          author: 'Valeria R.'
+          quote: 'Desde que llamé me sentí muy cómoda y confiada. El spa es muy limpio. Y con el facial que me realizó quedé muy conforme.',
+          author: 'SONIA GARAY'
         },
         {
-          quote: 'Llegué con problemas de acné severo, y tras dos sesiones del facial personalizado, la inflamación bajó drásticamente y mi piel está sanando.',
-          author: 'Camila S.'
+          quote: 'Súper agradecida con Nancy. Tengo acné y siempre sabe exactamente qué productos ponerme y qué tratamientos necesito.',
+          author: 'CARLA AFRICA GARUZ'
         },
         {
-          quote: 'La delicadeza y los productos que usan marcan toda la diferencia. Es más que un facial, es una experiencia de cuidado integral.',
-          author: 'Andrea L.'
+          quote: 'Una exprencia muy buena, el tratamiento me hizo muy bien. Muy profesional Daniela, amable y me explicó sobre los beneficios.',
+          author: 'CELIDA SAAVEDRA'
         }
       ]
     },
@@ -607,19 +607,19 @@ export const categoryPages = {
     testimonials: {
       eyebrow: 'Testimonios',
       headline: 'Experiencias de Clientes',
-      support: 'Conoce cómo nuestros tratamientos faciales han devuelto la salud y luminosidad a la piel de nuestros pacientes.',
+      support: 'Conoce cómo nuestros tratamientos corporales han ayudado a la recuperación y bienestar de nuestros pacientes.',
       list: [
         {
-          quote: 'Me realicé una limpieza profunda. Mi cutis quedó respirando y con una luminosidad que no veía hace años. Nancy es una artista.',
-          author: 'Valeria R.'
+          quote: 'Recibí un tratamiento de 5 masajes corporales con Yosy, la mejor masajista de West Palm Beach, la clínica excelente y las chicas súper amables.',
+          author: 'YULEDSY RODRIGUEZ DOMINGUEZ'
         },
         {
-          quote: 'Llegué con problemas de acné severo, y tras dos sesiones del facial personalizado, la inflamación bajó drásticamente y mi piel está sanando.',
-          author: 'Camila S.'
+          quote: 'Experiencia increíble, muy profesionales, mi masajista Yosy todo un amor como persona y con una preparación de calidad, me van encantando mis resultados.',
+          author: 'LISANDRA'
         },
         {
-          quote: 'La delicadeza y los productos que usan marcan toda la diferencia. Es más que un facial, es una experiencia de cuidado integral.',
-          author: 'Andrea L.'
+          quote: 'Realmente estoy muy agradecida con DERMA.M aunque todo el equipo de trabajo es una maravilla. Súper lindas, cariñosas, comprometidas con su trabajo.',
+          author: 'KARINA PÉREZ VAILLANT'
         }
       ]
     },
@@ -781,16 +781,16 @@ export const categoryPages = {
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Tengo dos años asistiendo a DERMA y estoy muy feliz con los cambios que ha tenido mi piel. Son excelentes y muy profesionales.',
+          author: 'CECY GARCIA'
         },
         {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
+          quote: 'Una exprencia muy buena, el tratamiento me hizo muy bien. Me explicaron sobre los beneficios y el seguimiento para tener una piel más saludable.',
+          author: 'CELIDA SAAVEDRA'
         },
         {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
+          quote: 'Realmente estoy muy agradecida con DERMA.M especialmente con Mikaela y Nancy... Es un momento de relajación.',
+          author: 'KARINA PÉREZ VAILLANT'
         }
       ]
     },

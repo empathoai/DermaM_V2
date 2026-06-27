@@ -112,40 +112,38 @@ export default function TreatmentDetailPage({ data }) {
 
 
       {/* 4. What The Treatment Is (Clinical Canvas Surface: #F2F0F1) */}
-      <section className={styles.whatIsSection}>
-        <div className={styles.container}>
-          <div className={styles.whatIsGrid}>
-            <div className={styles.whatIsContent}>
-              <SectionHeader 
-                eyebrow={whatIs.eyebrow}
-                title={whatIs.headline}
-                support={whatIs.body}
-                variant="light"
-              />
-            </div>
-            <div className={styles.whatIsMedia}>
-              <MediaBlock 
-                src={image} 
-                alt={title} 
-                aspectRatio="4/3" 
-                variant="light"
-                className={styles.whatIsImage}
-              />
-            </div>
+      <section className={styles.whatIsSection} aria-labelledby="whatis-heading">
+        <div className={styles.whatIsGrid}>
+          <div className={styles.whatIsContent}>
+            <p className={styles.whatIsEyebrow}>{whatIs.eyebrow}</p>
+            <div className={styles.whatIsDivider}></div>
+            <h2 id="whatis-heading" className={styles.whatIsHeadline}>{whatIs.headline}</h2>
+            <p className={styles.whatIsSupport}>{whatIs.body}</p>
+          </div>
+          <div className={styles.whatIsMedia}>
+            <img 
+              src={image} 
+              alt={title} 
+              className={styles.whatIsImage} 
+              loading="lazy" 
+            />
           </div>
         </div>
       </section>
 
       {/* 5. Problem / Condition Context (Dark Authority Surface: #141313) */}
-      <section className={styles.problemSection}>
-        <div className={styles.narrowContainer}>
-          <SectionHeader 
-            eyebrow={problemContext.eyebrow}
-            title={problemContext.headline}
-            support={problemContext.body}
-            variant="dark"
-            align="center"
-          />
+      <section className={styles.problemSection} aria-labelledby="problem-heading">
+        <div className={styles.container}>
+          <div className={styles.problemGrid}>
+            <div className={styles.problemMetaCol}>
+              <p className={styles.problemEyebrow}>{problemContext.eyebrow}</p>
+              <div className={styles.problemDivider}></div>
+            </div>
+            <div className={styles.problemContentCol}>
+              <h2 id="problem-heading" className={styles.problemHeadline}>{problemContext.headline}</h2>
+              <p className={styles.problemSupport}>{problemContext.body}</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,14 +177,11 @@ export default function TreatmentDetailPage({ data }) {
       </section>
 
       {/* 8. Who This Treatment Is For (Clinical Canvas Surface: #F2F0F1) */}
-      <section className={styles.whoForSection}>
+      <section className={styles.whoForSection} aria-labelledby="whofor-heading">
         <div className={styles.narrowContainer}>
-          <SectionHeader 
-            eyebrow="PARA QUIÉN ES"
-            title="INDICACIONES ESTÉTICAS RECOMENDADAS"
-            variant="light"
-            align="left"
-          />
+          <p className={styles.whoForEyebrow}>PARA QUIÉN ES</p>
+          <div className={styles.whoForDivider}></div>
+          <h2 id="whofor-heading" className={styles.whoForHeadline}>INDICACIONES ESTÉTICAS RECOMENDADAS</h2>
           <ul className={styles.whoForList}>
             <li className={styles.whoForItem}>
               <ListSparkle variant="dark" />

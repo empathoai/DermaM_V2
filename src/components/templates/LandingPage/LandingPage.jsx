@@ -54,33 +54,31 @@ export default function LandingPage({ data }) {
 
       {/* 3. Problem / Diagnosis */}
       {problem && (
-        <section className={styles.problem}>
-          <div className={styles.container}>
-            <div className={styles.problemGrid}>
-              <div className={styles.problemContent}>
-                <SectionHeader 
-                  eyebrow={problem.eyebrow}
-                  title={problem.headline}
-                  support={problem.body}
-                  variant="dark"
-                  align="left"
-                />
-                {problem.list && (
-                  <ul className={styles.problemList}>
-                    {problem.list.map((item, idx) => (
-                      <li key={idx} className={styles.problemListItem}>
-                        <ListSparkle variant="light" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-              <div className={styles.problemMedia}>
-                <div className={styles.problemMediaInner}>
-                  <MediaBlock src={problem.image} alt={problem.headline} variant="dark" />
-                </div>
-              </div>
+        <section className={styles.problem} aria-labelledby="problem-heading">
+          <div className={styles.problemGrid}>
+            <div className={styles.problemContent}>
+              <p className={styles.problemEyebrow}>{problem.eyebrow}</p>
+              <div className={styles.problemDivider}></div>
+              <h2 id="problem-heading" className={styles.problemHeadline}>{problem.headline}</h2>
+              <p className={styles.problemSupport}>{problem.body}</p>
+              {problem.list && (
+                <ul className={styles.problemList}>
+                  {problem.list.map((item, idx) => (
+                    <li key={idx} className={styles.problemListItem}>
+                      <ListSparkle variant="light" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <div className={styles.problemMedia}>
+              <img 
+                src={problem.image} 
+                alt={problem.headline} 
+                className={styles.problemImage} 
+                loading="lazy" 
+              />
             </div>
           </div>
         </section>

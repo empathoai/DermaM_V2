@@ -1,7 +1,6 @@
 import React from 'react';
 import PageHero from '../../sections/PageHero/PageHero';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
-import MediaBlock from '../../shared/MediaBlock/MediaBlock';
 import TrustSafetyBar from '../../shared/TrustSafetyBar/TrustSafetyBar';
 import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
@@ -46,20 +45,21 @@ export default function CategoryPage({ data }) {
 
       {/* 4. Category Overview */}
       {overview && (
-        <section className={styles.overview}>
-          <div className={styles.container}>
-            <div className={styles.overviewGrid}>
-              <div className={styles.overviewContent}>
-                <SectionHeader 
-                  eyebrow={overview.eyebrow}
-                  title={overview.headline}
-                  support={overview.body}
-                  variant="light"
-                />
-              </div>
-              <div className={styles.overviewMedia}>
-                <MediaBlock src={overview.image} alt={overview.headline} variant="light" />
-              </div>
+        <section className={styles.overview} aria-labelledby="overview-heading">
+          <div className={styles.overviewGrid}>
+            <div className={styles.overviewContent}>
+              <p className={styles.overviewEyebrow}>{overview.eyebrow}</p>
+              <div className={styles.overviewDivider}></div>
+              <h2 id="overview-heading" className={styles.overviewHeadline}>{overview.headline}</h2>
+              <p className={styles.overviewSupport}>{overview.body}</p>
+            </div>
+            <div className={styles.overviewMedia}>
+              <img 
+                src={overview.image} 
+                alt={overview.headline} 
+                className={styles.overviewImage} 
+                loading="lazy" 
+              />
             </div>
           </div>
         </section>

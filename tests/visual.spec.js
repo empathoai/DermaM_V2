@@ -40,4 +40,56 @@ test.describe('Visual Regression Tests', () => {
     await page.waitForTimeout(3000);
     await expect(page).toHaveScreenshot('contacto-viewport.png');
   });
+
+  test('Limpieza Facial Landing - Viewport', async ({ page }) => {
+    await page.goto('/limpieza-facial-profunda');
+    await page.waitForTimeout(3000);
+    
+    // Check hero and scroll to problem/diagnosis section
+    const problemSection = page.locator('section[class*="problem"]');
+    await problemSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(problemSection).toHaveScreenshot('limpieza-problem.png');
+  });
+
+  test('PRP y Fibrina Landing - Viewport', async ({ page }) => {
+    await page.goto('/prf-y-fibrina');
+    await page.waitForTimeout(3000);
+    
+    const problemSection = page.locator('section[class*="problem"]');
+    await problemSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(problemSection).toHaveScreenshot('prf-problem.png');
+  });
+
+  test('Postoperatorios Landing - Viewport', async ({ page }) => {
+    await page.goto('/tratamientos-postoperatorios');
+    await page.waitForTimeout(3000);
+    
+    const problemSection = page.locator('section[class*="problem"]');
+    await problemSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(problemSection).toHaveScreenshot('postoperatorios-problem.png');
+  });
+
+  test('Hidrofacial Detail Page - Viewport', async ({ page }) => {
+    await page.goto('/faciales/hidrofacial');
+    await page.waitForTimeout(3000);
+    
+    const whatIsSection = page.locator('section[class*="whatIsSection"]');
+    await whatIsSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(whatIsSection).toHaveScreenshot('hidrofacial-whatis.png');
+    
+    const problemSection = page.locator('section[class*="problemSection"]');
+    await problemSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(problemSection).toHaveScreenshot('hidrofacial-problem.png');
+    
+    const whoForSection = page.locator('section[class*="whoForSection"]');
+    await whoForSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(whoForSection).toHaveScreenshot('hidrofacial-whofor.png');
+  });
 });
+

@@ -428,7 +428,8 @@ export const categoryPages = {
           to: '/tratamientos-postoperatorios',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/landings/tratamientos-postoperatorios/card.jpg'
+          image: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
+          imagePosition: '70% center'
         },
         {
           title: 'LIPO 360',
@@ -442,7 +443,8 @@ export const categoryPages = {
           to: '/corporales/lipo-360',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/lipo-360/hero.jpg'
+          image: '/assets/images/treatments/corporales/lipo-360/hero.jpg',
+          imagePosition: '74% center'
         },
         {
           title: 'LEVANTAMIENTO DE GLÚTEOS',
@@ -456,7 +458,8 @@ export const categoryPages = {
           to: '/corporales/levantamiento-gluteos',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/levantamiento-gluteos/hero.jpg'
+          image: '/assets/images/treatments/corporales/levantamiento-gluteos/hero.jpg',
+          imagePosition: '72% center'
         },
         {
           title: 'MARCACIÓN ABDOMINAL',
@@ -470,7 +473,8 @@ export const categoryPages = {
           to: '/corporales/marcacion-abdominal',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/marcacion-abdominal/hero.jpg'
+          image: '/assets/images/treatments/corporales/marcacion-abdominal/hero.jpg',
+          imagePosition: '70% center'
         },
         {
           title: 'HIFU CORPORAL',
@@ -484,7 +488,8 @@ export const categoryPages = {
           to: '/corporales/hifu-corporal',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/hifu-corporal/hero.jpg'
+          image: '/assets/images/treatments/corporales/hifu-corporal/hero.jpg',
+          imagePosition: '82% center'
         },
         {
           title: 'CORRIENTES RUSAS',
@@ -498,7 +503,8 @@ export const categoryPages = {
           to: '/corporales/corrientes-rusas',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/corrientes-rusas/hero.jpg'
+          image: '/assets/images/treatments/corporales/corrientes-rusas/hero.jpg',
+          imagePosition: '76% center'
         },
         {
           title: 'ESTRÍAS Y CELULITIS',
@@ -512,7 +518,8 @@ export const categoryPages = {
           to: '/corporales/estrias-celulitis',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/estrias-celulitis/hero.jpg'
+          image: '/assets/images/treatments/corporales/estrias-celulitis/hero.jpg',
+          imagePosition: '72% center'
         },
         {
           title: 'CARBOXITERAPIA CORPORAL',
@@ -526,7 +533,8 @@ export const categoryPages = {
           to: '/corporales/carboxiterapia-corporal',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/corporales/carboxiterapia-corporal/hero.jpg'
+          image: '/assets/images/treatments/corporales/carboxiterapia-corporal/hero.jpg',
+          imagePosition: '78% center'
         }
       ]
     },
@@ -855,7 +863,8 @@ export const categoryPages = {
           to: '/dental-estetico/blanqueamiento-dental',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/hero.jpg'
+          image: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/hero.jpg',
+          imagePosition: '74% center'
         },
         {
           title: 'LIMPIEZA DENTAL',
@@ -869,7 +878,8 @@ export const categoryPages = {
           to: '/dental-estetico/limpieza-dental',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/dental-estetico/limpieza-dental/hero.jpg'
+          image: '/assets/images/treatments/dental-estetico/limpieza-dental/hero.jpg',
+          imagePosition: '74% center'
         }
       ]
     },

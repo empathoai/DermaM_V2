@@ -7,6 +7,7 @@ export default function MediaBlock({
   aspectRatio,
   variant = 'light',
   className = '',
+  imagePosition,
 }) {
   const [error, setError] = useState(false);
 
@@ -22,6 +23,7 @@ export default function MediaBlock({
         src={src}
         alt={alt ? alt : undefined}
         className={styles.image}
+        style={imagePosition ? { objectPosition: imagePosition } : undefined}
         onError={() => setError(true)}
       />
     </div>

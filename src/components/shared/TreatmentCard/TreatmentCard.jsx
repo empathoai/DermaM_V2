@@ -13,6 +13,7 @@ export default function TreatmentCard({
   cta, // support both cta and ctaLabel
   ctaTo,
   image,
+  imagePosition,
   variant = 'dark',
   showMedia = true,
   disclaimer
@@ -41,7 +42,7 @@ export default function TreatmentCard({
     <CardWrapper {...wrapperProps}>
       {showMedia && image && (
         <div className={styles.imageWrapper}>
-          <MediaBlock src={image} alt={title} variant={variant} />
+          <MediaBlock src={image} alt={title} variant={variant} imagePosition={imagePosition} />
         </div>
       )}
       <div className={styles.content}>

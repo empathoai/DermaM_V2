@@ -78,7 +78,8 @@ export default function CategoryPage({ data }) {
                 disclaimer: t.disclaimer,
                 ctaLabel: t.cta,
                 to: t.to || t.link,
-                image: t.image
+                image: t.image,
+                imagePosition: t.imagePosition
               }))}
               variant="dark"
               columns={3}
@@ -106,7 +107,8 @@ export default function CategoryPage({ data }) {
                 ctaLabel: t.cta,
                 to: null,
                 ctaTo: t.ctaTo,
-                image: t.image
+                image: t.image,
+                imagePosition: t.imagePosition
               }))}
               variant="light"
               columns={3}

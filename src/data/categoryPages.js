@@ -350,8 +350,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'Experiencias de Clientes',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestros tratamientos faciales han devuelto la salud y luminosidad a la piel de nuestros pacientes.',
       list: [
         {
@@ -613,8 +613,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'Experiencias de Clientes',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestros tratamientos corporales han ayudado a la recuperación y bienestar de nuestros pacientes.',
       list: [
         {
@@ -784,8 +784,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'EXPERIENCIAS DE CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {
@@ -943,8 +943,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'EXPERIENCIAS DE CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {
@@ -1160,8 +1160,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'EXPERIENCIAS DE CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {
@@ -1303,8 +1303,8 @@ export const categoryPages = {
       ]
     },
     testimonials: {
-      eyebrow: 'Testimonios',
-      headline: 'EXPERIENCIAS DE CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {

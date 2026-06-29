@@ -26,10 +26,10 @@ export default function Testimonials() {
             viewport={viewportConfig}
             variants={sectionReveal}
           >
-            <p className={styles.eyebrow}>Lo que dicen</p>
+            <p className={styles.eyebrow}>GOOGLE REVIEWS</p>
             <div className={styles.eyebrowLine}></div>
             <h2 id="testimonials-heading" className={styles.headline}>
-              Nuestros clientes
+              LO QUE DICEN NUESTROS CLIENTES
             </h2>
             <p className={styles.support}>
               Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.

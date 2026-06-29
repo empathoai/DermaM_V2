@@ -83,8 +83,8 @@ export const landingPages = {
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
     testimonials: {
-      eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
@@ -220,8 +220,8 @@ export const landingPages = {
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
     testimonials: {
-      eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
@@ -357,8 +357,8 @@ export const landingPages = {
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
     testimonials: {
-      eyebrow: 'LO QUE DICEN',
-      headline: 'NUESTROS CLIENTES',
+      eyebrow: 'GOOGLE REVIEWS',
+      headline: 'LO QUE DICEN NUESTROS CLIENTES',
       support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {

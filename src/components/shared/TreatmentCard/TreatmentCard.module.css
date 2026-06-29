@@ -45,7 +45,7 @@
 }
 
 .imageWrapper {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   height: auto;
   position: relative;
   overflow: hidden;

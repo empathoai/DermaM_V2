@@ -49,7 +49,7 @@ export const categoryPages = {
           to: '/limpieza-facial-profunda',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/landings/limpieza-facial-profunda/card.jpg'
+          image: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
         },
         {
           title: 'PRP Y FIBRINA',
@@ -63,7 +63,7 @@ export const categoryPages = {
           to: '/prf-y-fibrina',
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/landings/prf-y-fibrina/card.jpg'
+          image: '/assets/images/landings/prf-y-fibrina/hero.jpg'
         },
         {
           title: 'HIDROFACIAL',

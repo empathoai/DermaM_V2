@@ -3,6 +3,18 @@
 
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  /* Centralized Editorial Typography System */
+  --font-size-eyebrow: 10px;
+  --font-size-heading: clamp(24px, 3.5vw, 32px);
+  --font-size-body-large: 20px;
+  --font-size-body-base: 15px;
+  --font-size-body-small: 12px;
+
+  --letter-spacing-eyebrow: 0.25em;
+  --letter-spacing-heading: 0.05em;
+
+  --divider-width: 48px;
 }
 
 body {

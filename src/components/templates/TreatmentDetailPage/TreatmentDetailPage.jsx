@@ -162,15 +162,16 @@ export default function TreatmentDetailPage({ data }) {
         </div>
       </section>
 
-      {/* 7. How The Treatment Works (Off White Surface: #EFEFEB) */}
-      <section className={styles.processSection}>
+      {/* 7. How The Treatment Works (Dark Authority Surface: #141313 with background image) */}
+      <section className={styles.processSection} style={{ backgroundImage: `url(${image})` }}>
+        <div className={styles.overlay}></div>
         <div className={styles.container}>
           <ProcessTimeline 
             eyebrow="EL PROCESO"
             title={`CÓMO FUNCIONA EL PROTOCOLO DE ${title}`}
             support="Cada visita en Derma.M está orquestada para garantizar la máxima seguridad, comodidad y un resultado satisfactorio y personalizado."
             steps={defaultProcessSteps}
-            variant="light"
+            variant="dark"
             layout="horizontal"
           />
         </div>
@@ -178,30 +179,36 @@ export default function TreatmentDetailPage({ data }) {
 
       {/* 8. Who This Treatment Is For (Clinical Canvas Surface: #F2F0F1) */}
       <section className={styles.whoForSection} aria-labelledby="whofor-heading">
-        <div className={styles.narrowContainer}>
-          <p className={styles.whoForEyebrow}>PARA QUIÉN ES</p>
-          <div className={styles.whoForDivider}></div>
-          <h2 id="whofor-heading" className={styles.whoForHeadline}>INDICACIONES ESTÉTICAS RECOMENDADAS</h2>
-          <ul className={styles.whoForList}>
-            <li className={styles.whoForItem}>
-              <ListSparkle variant="dark" />
-              <p className={styles.whoForText}>{ideal}</p>
-            </li>
-            <li className={styles.whoForItem}>
-              <ListSparkle variant="dark" />
-              <p className={styles.whoForText}>Quienes desean confiar el cuidado de su tejido cutáneo a aparatología dermoestética calificada.</p>
-            </li>
-            <li className={styles.whoForItem}>
-              <ListSparkle variant="dark" />
-              <p className={styles.whoForText}>Personas en búsqueda de enfoques higiénicos y dermoprotectores que no requieran tiempo de descanso ni agujas invasivas profundas.</p>
-            </li>
-          </ul>
+        <div className={styles.container}>
+          <div className={styles.whoForGrid}>
+            <div className={styles.whoForMetaCol}>
+              <p className={styles.whoForEyebrow}>PARA QUIÉN ES</p>
+              <div className={styles.whoForDivider}></div>
+            </div>
+            <div className={styles.whoForContentCol}>
+              <h2 id="whofor-heading" className={styles.whoForHeadline}>INDICACIONES ESTÉTICAS RECOMENDADAS</h2>
+              <ul className={styles.whoForList}>
+                <li className={styles.whoForItem}>
+                  <ListSparkle variant="dark" />
+                  <p className={styles.whoForText}>{ideal}</p>
+                </li>
+                <li className={styles.whoForItem}>
+                  <ListSparkle variant="dark" />
+                  <p className={styles.whoForText}>Quienes desean confiar el cuidado de su tejido cutáneo a aparatología dermoestética calificada.</p>
+                </li>
+                <li className={styles.whoForItem}>
+                  <ListSparkle variant="dark" />
+                  <p className={styles.whoForText}>Personas en búsqueda de enfoques higiénicos y dermoprotectores que no requieran tiempo de descanso ni agujas invasivas profundas.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* 9. When It Is Not Recommended (Warm Light Surface: #CCC9C1) */}
       <section className={styles.warningSection}>
-        <div className={styles.narrowContainer}>
+        <div className={styles.container}>
           <WarningBox variant="warm" />
         </div>
       </section>

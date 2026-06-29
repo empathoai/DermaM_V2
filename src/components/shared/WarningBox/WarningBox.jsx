@@ -1,7 +1,9 @@
 import React from 'react';
+import ListSparkle from '../ListSparkle/ListSparkle';
 import styles from './WarningBox.module.css';
 
 export default function WarningBox({
+  eyebrow = 'PRECAUCIONES CLÍNICAS',
   title = 'CUÁNDO CONSULTAR ANTES',
   body = 'Este tratamiento requiere valoración previa para confirmar si es adecuado para ti.',
   items = [
@@ -15,36 +17,26 @@ export default function WarningBox({
 }) {
   return (
     <div className={`${styles.box} ${styles[variant]}`}>
-      <div className={styles.iconContainer}>
-        {/* Clinical Info / Alert Icon */}
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="1.5" 
-          strokeLinecap="round" 
-          strokeLinejoin="round" 
-          className={styles.icon}
-        >
-          <circle cx="12" cy="12" r="10" />
-          <line x1="12" y1="8" x2="12" y2="12" />
-          <line x1="12" y1="16" x2="12.01" y2="16" />
-        </svg>
-      </div>
-      <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
-        {body && <p className={styles.body}>{body}</p>}
-        {items && items.length > 0 && (
-          <ul className={styles.list}>
-            {items.map((item, idx) => (
-              <li key={idx} className={styles.item}>
-                <span className={styles.bullet}>—</span>
-                <span className={styles.itemText}>{item}</span>
-              </li>
-            ))}
-          </ul>
-        )}
+      <div className={styles.grid}>
+        <div className={styles.metaCol}>
+          <p className={styles.eyebrow}>{eyebrow}</p>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.contentCol}>
+          <h2 className={styles.title}>{title}</h2>
+          {body && <p className={styles.body}>{body}</p>}
+          
+          {items && items.length > 0 && (
+            <ul className={styles.list}>
+              {items.map((item, idx) => (
+                <li key={idx} className={styles.item}>
+                  <ListSparkle variant="dark" />
+                  <p className={styles.itemText}>{item}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );

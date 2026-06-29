@@ -26,6 +26,7 @@ export default function TreatmentDetailPage({ data }) {
     title,
     description,
     image,
+    protocolImage,
     quickFacts,
     benefits,
     ideal,
@@ -122,10 +123,25 @@ export default function TreatmentDetailPage({ data }) {
           </div>
           <div className={styles.whatIsMedia}>
             <img 
-              src={image} 
+              src={whatIs.image || image} 
               alt={title} 
               className={styles.whatIsImage} 
               loading="lazy" 
+              width="960"
+              height="1200"
+              onError={(event) => {
+                const heroFallback = new URL(image, window.location.origin).href;
+                const globalFallback = new URL('/assets/images/global/og-default.jpg', window.location.origin).href;
+
+                if (event.currentTarget.src !== heroFallback) {
+                  event.currentTarget.src = image;
+                  return;
+                }
+
+                if (event.currentTarget.src !== globalFallback) {
+                  event.currentTarget.src = '/assets/images/global/og-default.jpg';
+                }
+              }}
             />
           </div>
         </div>
@@ -163,7 +179,10 @@ export default function TreatmentDetailPage({ data }) {
       </section>
 
       {/* 7. How The Treatment Works (Dark Authority Surface: #141313 with background image) */}
-      <section className={styles.processSection} style={{ backgroundImage: `url(${image})` }}>
+      <section
+        className={styles.processSection}
+        style={{ backgroundImage: `url(${protocolImage || image}), url(${image})` }}
+      >
         <div className={styles.overlay}></div>
         <div className={styles.container}>
           <ProcessTimeline 

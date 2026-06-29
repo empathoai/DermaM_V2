@@ -1,5 +1,11 @@
 import { categoryPages } from './categoryPages';
 
+function getTreatmentAssetFolder(categoryKey) {
+  if (categoryKey === 'laserYLuz') return 'laser-y-luz';
+  if (categoryKey === 'dentalEstetico') return 'dental-estetico';
+  return categoryKey;
+}
+
 // Dynamic helper to find base treatment info from categoryPages
 function getBaseTreatment(categoryKey, slug) {
   const cat = categoryPages[categoryKey];
@@ -30,8 +36,8 @@ function getBaseTreatment(categoryKey, slug) {
       description: found.description,
       benefits: found.benefits || [],
       ideal: found.ideal || '',
-      image: found.image || `/assets/images/treatments/${categoryKey === 'laserYLuz' ? 'laser-y-luz' : categoryKey}/${slug}/hero.jpg`,
-      route: found.to || found.link || `/${categoryKey === 'laserYLuz' ? 'laser-y-luz' : categoryKey === 'dentalEstetico' ? 'dental-estetico' : categoryKey}/${slug}`,
+      image: found.image || `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
+      route: found.to || found.link || `/${getTreatmentAssetFolder(categoryKey)}/${slug}`,
       disclaimer: found.disclaimer || 'Requiere valoración previa para garantizar tu seguridad y resultados.'
     };
   }
@@ -42,8 +48,8 @@ function getBaseTreatment(categoryKey, slug) {
     description: 'Protocolo de cuidado estético profesional integral en Derma.M.',
     benefits: ['Cuidado profesional', 'Enfoque personalizado', 'Bienestar visible'],
     ideal: 'Ideal si buscas un cuidado personalizado y de alta calidad.',
-    image: `/assets/images/treatments/${categoryKey === 'laserYLuz' ? 'laser-y-luz' : categoryKey}/${slug}/hero.jpg`,
-    route: `/${categoryKey === 'laserYLuz' ? 'laser-y-luz' : categoryKey === 'dentalEstetico' ? 'dental-estetico' : categoryKey}/${slug}`,
+    image: `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
+    route: `/${getTreatmentAssetFolder(categoryKey)}/${slug}`,
     disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.'
   };
 }
@@ -430,6 +436,9 @@ const compileTreatments = () => {
         };
       });
 
+      const treatmentAssetFolder = getTreatmentAssetFolder(catKey);
+      const treatmentAssetBase = `/assets/images/treatments/${treatmentAssetFolder}/${slug}`;
+
       compiled[catKey][slug] = {
         category: catKey,
         categoryLabel: categoryLabels[catKey],
@@ -438,6 +447,7 @@ const compileTreatments = () => {
         title,
         description,
         image,
+        protocolImage: `${treatmentAssetBase}/protocol.jpg`,
         quickFacts,
         benefits,
         ideal,
@@ -448,7 +458,7 @@ const compileTreatments = () => {
           eyebrow: 'EL PROTOCOLO',
           headline: `TRATAMIENTO DE ${title}`,
           body: custom.whatIsBody || `El tratamiento de ${title} en Derma.M es un protocolo diseñado estratégicamente para abordar ${description.toLowerCase()} utilizando aparatología y activos avanzados. Buscamos restaurar la luminosidad, equilibrio y vitalidad de la zona mediante un cuidado integral.`,
-          image: image
+          image: `${treatmentAssetBase}/whatis.jpg`
         },
         problemContext: {
           eyebrow: 'CONTEXTO Y CONDICIÓN',
@@ -462,7 +472,7 @@ const compileTreatments = () => {
           primaryCta: 'RESERVAR',
           secondaryCta: 'WHATSAPP',
           disclaimer: disclaimer,
-          backgroundImage: `/assets/images/treatments/${catKey === 'laserYLuz' ? 'laser-y-luz' : catKey === 'dentalEstetico' ? 'dental-estetico' : catKey}/${slug}/cta.jpg`
+          backgroundImage: `${treatmentAssetBase}/cta.jpg`
         }
       };
     });
@@ -472,3 +482,4 @@ const compileTreatments = () => {
 };
 
 export const treatmentPages = compileTreatments();
+

@@ -12,7 +12,8 @@ export default function FinalCTA({
   disclaimer,
   variant = 'dark',
   primaryLink,
-  secondaryLink
+  secondaryLink,
+  compactLegal = false
 }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
   const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
@@ -38,7 +39,7 @@ export default function FinalCTA({
           {title && <h2 className={styles.headline}>{title}</h2>}
           {body && <p className={styles.body}>{body}</p>}
           
-          <div className={styles.actions}>
+          <div className={`${styles.actions} ${compactLegal ? styles.actionsCompact : ''}`}>
             {primaryCta && (
               <a href={href1} target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
                 {primaryCta}
@@ -51,17 +52,20 @@ export default function FinalCTA({
             )}
           </div>
 
-          {/* Contextual Booking & Cancellation Disclaimer */}
-          <div className="mt-4 pt-1 text-[11px] leading-relaxed text-[#CCC9C1]/80 max-w-lg mx-auto font-light">
-            Al reservar tu cita, aceptas nuestra{" "}
-            <Link to="/booking-cancellation-refund-policy" className="underline hover:text-[#F2F0F1] transition-colors duration-200">
+          <div className={compactLegal ? styles.legalCompact : styles.legal}>
+            Reserva sujeta a{" "}
+            <Link to="/booking-cancellation-refund-policy" className={styles.legalLink}>
               Política de reserva y cancelación
             </Link>
-            . Los depósitos, cancelaciones, reprogramaciones y ausencias están sujetos a esta misma.
+            .
           </div>
           
           {disclaimer && (
-            <p className={styles.disclaimer}>{disclaimer}</p>
+            <p className={styles.disclaimer}>
+              {compactLegal
+                ? 'Requiere valoración médica previa para garantizar tu seguridad y resultados. Resultados pueden variar.'
+                : disclaimer}
+            </p>
           )}
         </div>
       </div>

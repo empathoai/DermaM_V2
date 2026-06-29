@@ -172,6 +172,7 @@ export default function LandingPage({ data }) {
           secondaryCta={cta.secondaryCta}
           disclaimer={cta.disclaimer}
           backgroundImage={cta.backgroundImage}
+          compactLegal
         />
       )}
     </div>

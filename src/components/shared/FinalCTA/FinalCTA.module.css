@@ -103,6 +103,10 @@
   margin-bottom: 48px;
 }
 
+.actionsCompact {
+  margin-bottom: 30px;
+}
+
 .btnPrimary,
 .btnSecondary {
   display: inline-flex;
@@ -151,6 +155,39 @@
 .dark .btnSecondary:focus-visible {
   outline: 2px solid #F2F0F1;
   outline-offset: 2px;
+}
+
+.legal,
+.legalCompact {
+  color: rgba(204, 201, 193, 0.8);
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  max-width: 540px;
+}
+
+.legalCompact {
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.legalLink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+@media (hover: hover) {
+  .legalLink:hover {
+    color: #F2F0F1;
+  }
+}
+
+.legalLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 3px;
 }
 
 .disclaimer {

@@ -172,10 +172,12 @@
   padding: clamp(64px, 8vw, 140px) 0;
 }
 
-/* 10. FAQ (#EFEFEB) */
+/* 10. FAQ (Warm Light editorial transition) */
 .faq {
-  background-color: #EFEFEB;
-  padding: clamp(64px, 8vw, 140px) 0;
+  background-color: #CCC9C1;
+  color: #363633;
+  padding: clamp(64px, 7vw, 112px) 0;
+  border-bottom: 1px solid #141313;
 }
 
 @media (min-width: 1024px) {

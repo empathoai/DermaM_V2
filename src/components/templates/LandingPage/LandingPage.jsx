@@ -157,7 +157,12 @@ export default function LandingPage({ data }) {
       {faq && (
         <section className={styles.faq}>
           <div className={styles.container}>
-            <FAQAccordion headline={faq.headline} items={faq.items} />
+            <FAQAccordion
+              headline={faq.headline}
+              items={faq.items}
+              variant="warm"
+              layout="split"
+            />
           </div>
         </section>
       )}

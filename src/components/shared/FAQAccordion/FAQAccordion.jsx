@@ -3,7 +3,12 @@ import { motion, AnimatePresence } from 'motion/react';
 import styles from './FAQAccordion.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
-export default function FAQAccordion({ headline, items }) {
+export default function FAQAccordion({
+  headline,
+  items,
+  variant = 'light',
+  layout = 'stacked'
+}) {
   const [openIndex, setOpenIndex] = useState(null);
 
   if (!items || items.length === 0) return null;
@@ -13,7 +18,7 @@ export default function FAQAccordion({ headline, items }) {
   };
 
   return (
-    <div className={styles.faqWrapper}>
+    <div className={`${styles.faqWrapper} ${styles[variant]} ${styles[layout]}`}>
       {headline && (
         <div className={styles.headerRow}>
           <SectionHeader title={headline} variant="light" />

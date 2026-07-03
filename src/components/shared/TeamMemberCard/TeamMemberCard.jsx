@@ -13,14 +13,16 @@ function ViewportVideo({ src, poster, position }) {
     if (prefersReducedMotion) return undefined;
 
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !video.ended) {
+      const isProminentlyVisible = entry.isIntersecting && entry.intersectionRatio >= 0.5;
+
+      if (isProminentlyVisible && !video.ended) {
         video.play().catch(() => {});
       } else {
         video.pause();
       }
     }, {
-      rootMargin: '120px 0px',
-      threshold: 0.35
+      rootMargin: '0px',
+      threshold: [0, 0.5]
     });
 
     observer.observe(video);

@@ -170,7 +170,7 @@ export default function TreatmentDisclaimer() {
       
       <Navbar />
       
-      <main className="flex-grow pt-24">
+      <main className="flex-grow">
         <LegalPageLayout
           title="Descargo de Tratamientos y Resultados"
           subtitle="Advertencias legales y especificaciones clínicas obligatorias respecto de las expectativas de resultados estéticos de nuestros tratamientos faciales y corporales."

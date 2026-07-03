@@ -156,7 +156,7 @@ export default function NoticePrivacyPractices() {
       
       <Navbar />
       
-      <main className="flex-grow pt-24">
+      <main className="flex-grow">
         <LegalPageLayout
           title="Aviso de Prácticas de Privacidad"
           subtitle="[BORRADOR DE RESPONSABILIDAD DE SALUD] Estructura informativa interna para la protección y tratamiento de la Información de Salud Protegida (PHI) de conformidad con directrices de salud de Florida."

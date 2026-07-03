@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldAlert } from 'lucide-react';
+import { legalUiCopy } from '../../data/legalPages';
 
 export default function LegalPageLayout({
   title,
@@ -17,10 +18,10 @@ export default function LegalPageLayout({
       <header className="border-b border-[#363633]/10 py-16 sm:py-24 bg-[#EFEFEB]">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-16">
           <div className="max-w-3xl">
-            <span className="text-xs uppercase tracking-[0.2em] text-[#BBB8B5] font-medium block mb-4">
-              DERMA.M, LLC • DOCUMENTACIÓN DE CUMPLIMIENTO / COMPLIANCE DOCUMENTATION
+            <span className="text-xs uppercase tracking-[0.2em] text-[#666463] font-medium block mb-4">
+              {legalUiCopy.complianceLabel}
             </span>
-            <h1 className="font-sans text-4xl sm:text-5xl md:text-6xl uppercase tracking-wide font-normal text-[#141313] leading-none mb-6">
+            <h1 className="font-sans text-[clamp(2.25rem,10vw,3.75rem)] uppercase tracking-wide font-normal text-[#141313] leading-[0.98] mb-6 break-words">
               {title}
             </h1>
             {subtitle && (
@@ -30,13 +31,13 @@ export default function LegalPageLayout({
             )}
             
             {/* Meta Dates Block */}
-            <div className="flex flex-wrap gap-x-8 gap-y-3 pt-6 border-t border-[#363633]/10 text-xs uppercase tracking-wider text-[#BBB8B5]">
+            <div className="flex flex-wrap gap-x-8 gap-y-3 pt-6 border-t border-[#363633]/10 text-xs uppercase tracking-wider text-[#666463]">
               <div>
-                <span className="font-semibold text-[#363633]">Fecha de Entrada en Vigor / Effective Date:</span> {effectiveDate}
+                <span className="font-semibold text-[#363633]">{legalUiCopy.effectiveDateLabel}</span> {effectiveDate}
               </div>
               <div className="hidden sm:block text-[#363633]/20">|</div>
               <div>
-                <span className="font-semibold text-[#363633]">Última Actualización / Last Updated:</span> {lastUpdated}
+                <span className="font-semibold text-[#363633]">{legalUiCopy.lastUpdatedLabel}</span> {lastUpdated}
               </div>
             </div>
           </div>
@@ -54,29 +55,48 @@ export default function LegalPageLayout({
             </div>
             <div>
               <span className="text-xs uppercase tracking-wider font-semibold text-[#141313] block mb-1">
-                [LEGAL REVIEW REQUIRED / REQUIERE REVISIÓN LEGAL]
+                {legalUiCopy.legalReviewLabel}
               </span>
-              <p className="text-sm font-light text-[#363633]/90 leading-relaxed italic">
-                {attorneyCalloutText || "Este documento es un borrador estructurado con base en normativas y mejores prácticas de Florida. Requiere la revisión formal del asesor legal y el equipo de operaciones de DERMA.M, LLC antes de su publicación o firma."}
+              <p className="text-base font-light text-[#363633]/90 leading-relaxed italic">
+                {attorneyCalloutText || legalUiCopy.defaultLegalReviewText}
               </p>
             </div>
           </div>
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 sm:gap-16 items-start">
+          {sections && sections.length > 0 && (
+            <details className="lg:hidden border-y border-[#363633]/15 py-4">
+              <summary className="cursor-pointer text-xs uppercase tracking-widest text-[#141313] font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#141313]">
+                {legalUiCopy.contentsLabel}
+              </summary>
+              <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-xs tracking-wider uppercase">
+                {sections.map(sec => (
+                  <li key={sec.id}>
+                    <a
+                      href={`#${sec.id}`}
+                      className="block py-1 text-[#666463] underline decoration-[#363633]/20 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#141313]"
+                    >
+                      {sec.shortTitle || sec.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
           
           {/* Table of Contents Sticky Sidebar (Desktop Only) */}
           {sections && sections.length > 0 && (
             <aside className="hidden lg:block lg:col-span-1 sticky top-32 border-l border-[#363633]/10 pl-6 py-2">
               <h2 className="text-xs uppercase tracking-widest text-[#141313] font-semibold mb-6">
-                CONTENIDO / SECTIONS
+                {legalUiCopy.contentsLabel}
               </h2>
               <ul className="flex flex-col gap-4 text-xs tracking-wider uppercase">
                 {sections.map(sec => (
                   <li key={sec.id}>
                     <a 
                       href={`#${sec.id}`}
-                      className="text-[#BBB8B5] hover:text-[#141313] font-light transition-colors duration-200 block border-b border-transparent hover:border-[#141313]/20 pb-1"
+                      className="text-[#666463] hover:text-[#141313] font-light transition-colors duration-200 block border-b border-transparent hover:border-[#141313]/20 pb-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#141313]"
                     >
                       {sec.shortTitle || sec.title}
                     </a>
@@ -88,20 +108,20 @@ export default function LegalPageLayout({
 
           {/* Core Legal Content Section */}
           <section className={`col-span-1 ${sections && sections.length > 0 ? "lg:col-span-3" : "lg:col-span-4"}`}>
-            <div className="space-y-12 max-w-4xl">
+            <div className="space-y-12 max-w-[72ch]">
               {sections.map((sec, index) => (
                 <div 
                   id={sec.id} 
                   key={sec.id} 
-                  className={`pt-8 ${index !== 0 ? "border-t border-[#363633]/10" : ""}`}
+                  className={`scroll-mt-32 pt-8 ${index !== 0 ? "border-t border-[#363633]/10" : ""}`}
                 >
-                  <h3 className="text-xs uppercase tracking-[0.2em] text-[#BBB8B5] font-semibold mb-2">
-                    SECCIÓN {index + 1}
+                  <h3 className="text-xs uppercase tracking-[0.2em] text-[#666463] font-semibold mb-2">
+                    {legalUiCopy.sectionLabel} {index + 1}
                   </h3>
                   <h2 className="font-sans text-xl sm:text-2xl uppercase tracking-wider font-normal text-[#141313] mb-6">
                     {sec.title}
                   </h2>
-                  <div className="text-sm font-light leading-relaxed text-[#363633]/90 space-y-4">
+                  <div className="text-base font-light leading-relaxed text-[#363633]/90 space-y-4">
                     {sec.content}
                   </div>
                 </div>

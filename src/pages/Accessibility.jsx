@@ -110,7 +110,7 @@ export default function Accessibility() {
       
       <Navbar />
       
-      <main className="flex-grow pt-24">
+      <main className="flex-grow">
         <LegalPageLayout
           title="Declaración de Accesibilidad"
           subtitle="Compromiso y pautas de inclusión informática aplicadas al sitio de DERMA.M para garantizar facilidad de uso a todos nuestros usuarios."

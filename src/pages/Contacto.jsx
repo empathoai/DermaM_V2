@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { 
   MessageSquare, 
   PhoneCall, 
@@ -18,6 +19,7 @@ import Footer from '../components/layout/Footer/Footer';
 import FAQAccordion from '../components/shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../components/shared/FinalCTA/FinalCTA';
 import styles from './Contacto.module.css';
+import { contactConsentCopy } from '../data/legalPages';
 
 export default function ContactoPage() {
   const siteUrl = import.meta.env.VITE_SITE_URL || '';
@@ -324,11 +326,16 @@ export default function ContactoPage() {
                       {/* Form-Level Clinical Disclaimer (Bilingual) */}
                       <div className="p-4 border border-[#363633]/15 bg-[#EFEFEB] text-[11px] leading-relaxed text-[#363633]/90 space-y-2">
                         <p>
-                          <strong>ES:</strong> Por favor, no envíes información médica sensible, urgente o altamente confidencial a través de este formulario. Este canal es para consultas generales y coordinación de citas.
+                          <strong>ES:</strong> {contactConsentCopy.sensitiveInfoEs}
                         </p>
                         <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic">
-                          <strong>EN:</strong> Please do not submit sensitive, urgent, or highly confidential medical information through this form. This channel is intended for general inquiries and appointment coordination.
+                          <strong>EN:</strong> {contactConsentCopy.sensitiveInfoEn}
                         </p>
+                      </div>
+
+                      <div className="p-4 border border-[#363633]/15 bg-white/40 text-[11px] leading-relaxed text-[#363633]/90 space-y-2">
+                        <p><strong>ES:</strong> {contactConsentCopy.serviceNoticeEs}</p>
+                        <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic"><strong>EN:</strong> {contactConsentCopy.serviceNoticeEn}</p>
                       </div>
 
                       {/* Consent checkbox for marketing communication (Bilingual, unchecked) */}
@@ -343,10 +350,10 @@ export default function ContactoPage() {
                         />
                         <label htmlFor="marketingConsent" className="text-[11px] leading-snug text-[#4E4D4D] select-none cursor-pointer">
                           <span className="block mb-1 text-[#363633]">
-                            <strong>ES:</strong> Acepto recibir comunicaciones relacionadas con citas y, si lo selecciono, mensajes promocionales de DERMA.M por teléfono, SMS, WhatsApp o email. El consentimiento no es una condición de compra. Pueden aplicarse cargos por mensajes y datos. Puedo optar por no recibir comunicaciones en cualquier momento.
+                            <strong>ES:</strong> {contactConsentCopy.marketingEs}
                           </span>
                           <span className="block italic text-[#666463]">
-                            <strong>EN:</strong> I agree to receive appointment-related communications and, if selected, promotional messages from DERMA.M by phone, SMS, WhatsApp, or email. Consent is not a condition of purchase. Message and data rates may apply. I may opt out at any time.
+                            <strong>EN:</strong> {contactConsentCopy.marketingEn}
                           </span>
                         </label>
                       </div>
@@ -356,7 +363,9 @@ export default function ContactoPage() {
                           Enviar solicitud
                         </button>
                         <p className={styles.microcopy}>
-                          Tu información está segura y protegida bajo nuestra política de privacidad.
+                          <Link to="/politica-de-privacidad" className="underline underline-offset-2">
+                            {contactConsentCopy.privacyMicrocopy}
+                          </Link>
                         </p>
                       </div>
                     </form>

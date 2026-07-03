@@ -43,35 +43,43 @@ export default function AboutPage({ data }) {
         className={styles.spotlightSection} 
         id="founder-spotlight"
         aria-labelledby="founder-heading"
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={sectionReveal}
       >
         <div className={styles.spotlightContainer}>
           <div className={styles.spotlightRow}>
-            <div className={styles.spotlightMedia}>
-              <div style={{ overflow: 'hidden' }}>
-                <motion.div whileHover="hover" variants={{ hover: imageHover }}>
+            <motion.div
+              className={styles.spotlightMedia}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
+            >
+              <div className={styles.spotlightMediaFrame}>
+                <motion.div className={styles.spotlightMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
                   <MediaBlock
                     src={founderSpotlight.image}
-                    alt=""
-                    aspectRatio="4/5"
+                    alt={founderSpotlight.imageAlt}
                     variant="light"
                     className={styles.spotlightImage}
                   />
                 </motion.div>
               </div>
-            </div>
-            <div className={styles.spotlightContent}>
+            </motion.div>
+            <motion.div
+              className={styles.spotlightContent}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
+            >
               <p className={styles.spotlightEyebrow}>{founderSpotlight.eyebrow}</p>
+              <div className={styles.spotlightEyebrowLine} aria-hidden="true"></div>
               <h2 id="founder-heading" className={styles.spotlightTitle}>{founderSpotlight.name}</h2>
               <p className={styles.spotlightSubheadline}>{founderSpotlight.subheadline}</p>
               <p className={styles.spotlightBody}>{founderSpotlight.body}</p>
               {founderSpotlight.secondaryBody && (
                 <p className={styles.spotlightBodySecondary}>{founderSpotlight.secondaryBody}</p>
               )}
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>
@@ -129,34 +137,42 @@ export default function AboutPage({ data }) {
       <motion.section 
         className={styles.academySection} 
         aria-labelledby="academy-heading"
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={sectionReveal}
       >
         <div className={styles.academyContainer}>
           <div className={styles.academyRow}>
-            <div className={styles.academyContent}>
+            <motion.div
+              className={styles.academyContent}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
+            >
               <p className={styles.academyEyebrow}>{academy.eyebrow}</p>
+              <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
               <h2 id="academy-heading" className={styles.academyTitle}>{academy.headline}</h2>
               <p className={styles.academyBody}>{academy.body}</p>
               {academy.secondaryBody && (
                 <p className={styles.academyBodySecondary}>{academy.secondaryBody}</p>
               )}
-            </div>
-            <div className={styles.academyMedia}>
-              <div style={{ overflow: 'hidden' }}>
-                <motion.div whileHover="hover" variants={{ hover: imageHover }}>
+            </motion.div>
+            <motion.div
+              className={styles.academyMedia}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
+            >
+              <div className={styles.academyMediaFrame}>
+                <motion.div className={styles.academyMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
                   <MediaBlock
                     src={academy.image}
-                    alt=""
-                    aspectRatio="16/10"
+                    alt={academy.imageAlt}
                     variant="light"
                     className={styles.academyImage}
                   />
                 </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>

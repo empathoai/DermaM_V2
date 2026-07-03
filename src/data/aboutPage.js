@@ -12,7 +12,8 @@ export const aboutPage = {
     subheadline: "Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida",
     body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Su formación como Cosmetóloga, Cosmiatra y Dermocosmiatra en Ecuador, junto con su capacitación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel, le ha permitido construir un enfoque profesional, ético y profundamente humano.",
     secondaryBody: "Para Nancy, cada tratamiento representa una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada.",
-    image: "/assets/images/about/founder.jpg"
+    image: "/assets/images/home/founder.jpg",
+    imageAlt: "Nancy Nieto, fundadora y directora de DERMA.M"
   },
   founderPhilosophy: {
     eyebrow: "FILOSOFÍA",
@@ -43,7 +44,8 @@ export const aboutPage = {
     headline: "UN COMPROMISO CON LA EDUCACIÓN, LA EXCELENCIA Y EL CRECIMIENTO PROFESIONAL",
     body: "DERMA.M Academy refleja el compromiso de Nancy con la excelencia, la educación continua y el crecimiento profesional dentro de la industria de la estética.",
     secondaryBody: "Su visión es seguir expandiendo DERMA.M para generar oportunidades a otras mujeres profesionales, inspirarlas a creer en su potencial y demostrar que los sueños pueden convertirse en realidad cuando se trabaja con pasión, disciplina y propósito.",
-    image: "/assets/images/about/academy.jpg"
+    image: "/assets/images/about/dermam-academy.jpg",
+    imageAlt: "Nancy Nieto durante una actividad educativa de DERMA.M Academy"
   },
   teamBySpecialty: [
     {
@@ -57,6 +59,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/melisa-rios.mp4",
           mediaSrc: "/assets/images/about/team/melisa-rios.jpg",
+          mediaPosition: "center 18%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/melisa-rios.vcf",
           status: "active"
@@ -67,18 +70,6 @@ export const aboutPage = {
       specialty: "Faciales",
       members: [
         {
-          name: "Tony Díaz, DO",
-          role: "Médico Director",
-          tags: ["Medicina Estética", "IV Therapy"],
-          shortBio: "Cirujano ortopédico con +30 años de práctica clínica. Combina experiencia médica con visión estética para planes de tratamiento personalizados y basados en evidencia.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/tony-diaz.mp4",
-          mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/tony-diaz.vcf",
-          status: "active"
-        },
-        {
           name: "Mikaela Guajardo",
           role: "Especialista Facial & Electróloga",
           tags: ["Faciales", "Láser y Luz"],
@@ -86,6 +77,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/mikaela-guajardo.mp4",
           mediaSrc: "/assets/images/about/team/mikaela-guajardo.jpg",
+          mediaPosition: "center 18%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/mikaela-guajardo.vcf",
           status: "active"
@@ -98,6 +90,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/daniela-parra.mp4",
           mediaSrc: "/assets/images/about/team/daniela-parra.jpg",
+          mediaPosition: "center top",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/daniela-parra.vcf",
           status: "active"
@@ -127,6 +120,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/josey-gonzalez.mp4",
           mediaSrc: "/assets/images/about/team/josey-gonzalez.jpg",
+          mediaPosition: "center 12%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/josey-gonzalez.vcf",
           status: "active"
@@ -139,6 +133,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/elianne-trujillo.mp4",
           mediaSrc: "/assets/images/about/team/elianne-trujillo.jpg",
+          mediaPosition: "center 12%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/elianne-trujillo.vcf",
           status: "active"

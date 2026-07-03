@@ -7,35 +7,48 @@
 /* 2. Spotlight Section */
 .spotlightSection {
   background-color: #F2F0F1; /* Clinical Canvas */
-  padding: 96px 0;
+  width: 100%;
 }
 
 .spotlightContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 clamp(24px, 4vw, 64px);
+  width: 100%;
 }
 
 .spotlightRow {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 0;
 }
 
 .spotlightMedia {
   width: 100%;
+  height: clamp(400px, 120vw, 720px);
+}
+
+.spotlightMediaFrame,
+.spotlightMotionMedia {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .spotlightImage {
   width: 100%;
-  max-width: 520px;
-  margin: 0 auto;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.spotlightImage img {
+  object-position: center 18%;
 }
 
 .spotlightContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 56px 24px;
+  background-color: #F2F0F1;
+  background-image: none;
 }
 
 .spotlightEyebrow {
@@ -44,16 +57,23 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #BBB8B5; /* Soft Grey */
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
+}
+
+.spotlightEyebrowLine {
+  width: 64px;
+  height: 1px;
+  background-color: rgba(54, 54, 51, 0.18);
+  margin-bottom: 32px;
 }
 
 .spotlightTitle {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #363633;
-  margin: 0 0 16px 0;
+  margin: 0 0 32px 0;
   line-height: 1.1;
 }
 
@@ -68,7 +88,7 @@
 }
 
 .spotlightBody {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #4E4D4D;
   font-weight: 300;
@@ -77,7 +97,7 @@
 }
 
 .spotlightBodySecondary {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #4E4D4D;
   font-weight: 300;
@@ -146,25 +166,25 @@
 /* 5. DERMA.M Academy */
 .academySection {
   background-color: #EFEFEB; /* Off White */
-  padding: 96px 0;
+  width: 100%;
 }
 
 .academyContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 clamp(24px, 4vw, 64px);
+  width: 100%;
 }
 
 .academyRow {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 0;
 }
 
 .academyContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 56px 24px;
+  background-color: #EFEFEB;
 }
 
 .academyEyebrow {
@@ -173,21 +193,28 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #BBB8B5;
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
+}
+
+.academyEyebrowLine {
+  width: 64px;
+  height: 1px;
+  background-color: rgba(54, 54, 51, 0.18);
+  margin-bottom: 32px;
 }
 
 .academyTitle {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #363633;
-  margin: 0 0 24px 0;
-  line-height: 1.2;
+  margin: 0 0 32px 0;
+  line-height: 1.1;
 }
 
 .academyBody {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #4E4D4D;
   font-weight: 300;
@@ -196,7 +223,7 @@
 }
 
 .academyBodySecondary {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #4E4D4D;
   font-weight: 300;
@@ -206,12 +233,32 @@
 
 .academyMedia {
   width: 100%;
+  height: clamp(400px, 120vw, 720px);
+  order: -1;
+}
+
+.academyMediaFrame,
+.academyMotionMedia {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .academyImage {
   width: 100%;
-  max-width: 680px;
-  margin: 0 auto;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.academyImage img {
+  object-position: center center;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .spotlightMedia,
+  .academyMedia {
+    height: clamp(520px, 72vw, 680px);
+  }
 }
 
 /* 7. Quote Section */
@@ -270,23 +317,42 @@
 }
 
 /* Responsive Grids & Spacing Scaling */
-@media (min-width: 992px) {
-  .spotlightSection {
-    padding: 120px 0;
-  }
-  
+@media (min-width: 1024px) {
   .spotlightRow {
     flex-direction: row;
-    align-items: center;
-    gap: 80px;
+    align-items: stretch;
+    height: clamp(680px, 44vw, 800px);
   }
   
   .spotlightMedia {
-    flex: 0 0 42%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
   }
   
   .spotlightContent {
-    flex: 1;
+    flex: 0 0 50%;
+    min-width: 0;
+    padding: 80px clamp(64px, 8vw, 160px);
+    background-image: url('/assets/images/home/founder_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .spotlightImage {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+
+  .spotlightImage img {
+    object-position: center 8%;
+  }
+
+  .spotlightTitle {
+    font-size: 56px;
   }
   
   .philosophySection {
@@ -299,22 +365,30 @@
     align-items: start;
   }
   
-  .academySection {
-    padding: 120px 0;
-  }
-  
   .academyRow {
     flex-direction: row;
-    align-items: center;
-    gap: 80px;
+    align-items: stretch;
+    height: clamp(680px, 42vw, 760px);
   }
   
   .academyContent {
-    flex: 1;
+    flex: 0 0 50%;
+    min-width: 0;
+    padding: 80px clamp(64px, 8vw, 160px);
   }
   
   .academyMedia {
     flex: 0 0 50%;
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .academyImage {
+    aspect-ratio: auto;
+    min-height: 0;
   }
 
   .quoteText {

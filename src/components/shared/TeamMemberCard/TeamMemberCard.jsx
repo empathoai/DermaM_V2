@@ -1,6 +1,50 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import MediaBlock from '../MediaBlock/MediaBlock';
 import styles from './TeamMemberCard.module.css';
+
+function ViewportVideo({ src, poster, position }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !src) return undefined;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return undefined;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !video.ended) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }, {
+      rootMargin: '120px 0px',
+      threshold: 0.35
+    });
+
+    observer.observe(video);
+
+    return () => {
+      observer.disconnect();
+      video.pause();
+    };
+  }, [src]);
+
+  return (
+    <video
+      ref={videoRef}
+      src={src}
+      poster={poster}
+      className={styles.video}
+      style={position ? { objectPosition: position } : undefined}
+      muted
+      playsInline
+      preload="none"
+      aria-hidden="true"
+    />
+  );
+}
 
 export default function TeamMemberCard({ member }) {
   if (!member) return null;
@@ -44,6 +88,7 @@ export default function TeamMemberCard({ member }) {
     mediaType = 'image',
     mediaSrc,
     videoSrc,
+    mediaPosition,
     vcardUrl,
     vcardEnabled = false
   } = member;
@@ -52,13 +97,10 @@ export default function TeamMemberCard({ member }) {
     <article className={styles.card} id={`member-${name.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className={styles.mediaArea}>
         {mediaType === 'video' && videoSrc ? (
-          <video
+          <ViewportVideo
             src={videoSrc}
-            className={styles.video}
-            muted
-            playsInline
-            loop
-            autoPlay
+            poster={mediaSrc}
+            position={mediaPosition}
           />
         ) : (
           <MediaBlock

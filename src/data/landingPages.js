@@ -105,24 +105,24 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿PRP y Fibrina es adecuado para todos?',
-          answer: 'No necesariamente. Requiere valoración previa para confirmar si es adecuado según tu piel, objetivos y condiciones individuales.'
+          question: '¿Qué diferencia hay entre el PRP y otros tratamientos tensores?',
+          answer: 'El PRP (Plasma Rico en Plaquetas) utiliza los factores autólogos obtenidos de tu propio plasma para estimular la producción de colágeno natural en la dermis, lo que mejora la textura, luminosidad y firmeza de forma progresiva sin introducir activos sintéticos.'
         },
         {
-          question: '¿Cuándo se ven los resultados?',
-          answer: 'La evolución suele ser progresiva y puede variar según cada persona, protocolo y respuesta individual.'
+          question: '¿Cuánto tiempo dura el enrojecimiento tras la aplicación?',
+          answer: 'El enrojecimiento es una respuesta normal y suele atenuarse casi por completo entre las 24 y 48 horas posteriores. Te indicaremos geles descongestionantes y protectores específicos para acompañar tu recuperación en casa.'
         },
         {
-          question: '¿Requiere recuperación?',
-          answer: 'Puede haber sensibilidad o cambios temporales en la zona tratada. Durante la valoración se explican los cuidados posteriores.'
+          question: '¿Cuántas sesiones de PRP y Fibrina se recomiendan?',
+          answer: 'Para obtener resultados visibles y acumulativos en la elasticidad cutánea, se aconseja programar un ciclo inicial de 3 a 4 sesiones, espaciadas una vez al mes.'
         },
         {
-          question: '¿Cuántas sesiones necesito?',
-          answer: 'La cantidad de sesiones depende de tus objetivos y de la recomendación profesional.'
+          question: '¿Es normal que aparezcan pequeños hematomas?',
+          answer: 'Sí, debido a las micro-aplicaciones locales pueden aparecer pequeños puntos o hematomas leves en zonas sensibles. Desaparecen de forma natural en pocos días y pueden disimularse con corrector cosmético.'
         },
         {
-          question: '¿Los resultados están garantizados?',
-          answer: 'No. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+          question: '¿Cuándo se aprecian los resultados finales de vitalidad?',
+          answer: 'Aunque notarás un brillo saludable a los pocos días por la hidratación dérmica, el tensado real y la reestructuración profunda de colágeno nuevo se consolidan a partir de los 60 a 90 días.'
         }
       ]
     },
@@ -242,24 +242,24 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿Cada cuánto se recomienda una limpieza facial profunda?',
-          answer: 'La frecuencia puede variar según tu piel y objetivos. Como referencia general, puede realizarse cada 28 días o según valoración profesional.'
+          question: '¿Cada cuánto tiempo se aconseja programar una limpieza facial profunda?',
+          answer: 'Recomendamos programar una sesión cada 28 a 30 días. Este lapso acompaña el proceso natural de recambio celular y renovación de tu epidermis, manteniendo los poros libres de impurezas y exceso de grasa.'
         },
         {
-          question: '¿La limpieza facial profunda duele?',
-          answer: 'No suele requerir anestesia. La experiencia puede variar según la sensibilidad de cada persona y el estado de la piel.'
+          question: '¿La extracción de puntos negros e impurezas causa marcas rojas?',
+          answer: 'No. En Derma.M aplicamos un protocolo previo de ablandamiento térmico y enzimático que dilata el poro de forma natural, permitiendo una extracción manual sumamente suave y previniendo la aparición de marcas o rojeces severas.'
         },
         {
-          question: '¿Puedo realizarla antes de otro tratamiento?',
-          answer: 'En muchos casos puede ayudar a preparar la piel, pero debe confirmarse durante la valoración profesional.'
+          question: '¿Es la limpieza facial adecuada si tengo brotes activos?',
+          answer: 'Sí. Diseñamos el facial adaptándolo para purificar los poros congestionados de forma suave, utilizando activos seborreguladores y evitando presiones agresivas sobre las áreas irritadas.'
         },
         {
-          question: '¿Es adecuada para piel con acné?',
-          answer: 'Depende del estado visible de la piel y del tipo de brotes. Requiere valoración para definir si es el protocolo adecuado.'
+          question: '¿Puedo aplicar maquillaje inmediatamente después de la limpieza?',
+          answer: 'Sugerimos esperar un mínimo de 4 a 6 horas para permitir que los poros se cierren completamente y la piel absorba los sueros antioxidantes e hidratantes aplicados.'
         },
         {
-          question: '¿Los resultados son inmediatos?',
-          answer: 'La piel puede verse y sentirse más limpia desde la primera sesión, pero los resultados pueden variar según cada persona.'
+          question: '¿Qué cuidados posteriores debo seguir al salir del spa?',
+          answer: 'Es fundamental mantener la piel hidratada, evitar la exfoliación casera por 5 días y aplicar protector solar de amplio espectro SPF 30+ todos los días.'
         }
       ]
     },
@@ -379,24 +379,24 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿Cuándo puedo empezar tratamientos postoperatorios?',
-          answer: 'Depende del procedimiento realizado, la indicación profesional y tu evolución. Requiere valoración previa.'
+          question: '¿Cuándo es el momento adecuado para iniciar los masajes postoperatorios?',
+          answer: 'Suele recomendarse iniciar entre el séptimo y décimo día posterior al procedimiento, previa autorización de tu especialista a cargo para garantizar la seguridad del tejido.'
         },
         {
-          question: '¿Ayuda con inflamación?',
-          answer: 'Puede acompañar procesos de inflamación y retención de líquidos, pero la evolución varía según cada persona.'
+          question: '¿Por qué son importantes los masajes estéticos tras una lipoescultura?',
+          answer: 'Los masajes de drenaje linfático manual y el moldeo asisten de forma activa en la desinflamación corporal, previenen la retención de líquidos acumulados y disminuyen la aparición de fibrosis y adherencias.'
         },
         {
-          question: '¿Cuántas sesiones necesito?',
-          answer: 'La cantidad de sesiones depende del procedimiento, tu etapa de recuperación y la recomendación profesional.'
+          question: '¿El drenaje linfático manual postoperatorio debe ser doloroso?',
+          answer: 'No. En Derma.M seguimos pautas de suavidad absoluta. El drenaje postoperatorio consiste en presiones manuales sumamente sutiles y superficiales para aliviar el tejido inflamado sin causar dolor.'
         },
         {
-          question: '¿Duele?',
-          answer: 'La experiencia puede variar según sensibilidad, zona tratada y etapa de recuperación. Se adapta el protocolo para mayor comodidad.'
+          question: '¿Cuántas sesiones del protocolo postoperatorio se recomiendan?',
+          answer: 'Generalmente se aconseja realizar un ciclo continuo de 10 a 15 sesiones, programadas de 2 a 3 veces por semana, adaptándose a la evolución visible de tu recuperación.'
         },
         {
-          question: '¿Sustituye el seguimiento médico?',
-          answer: 'No. La información y los tratamientos presentados no sustituyen una evaluación o seguimiento médico profesional.'
+          question: '¿Reemplaza este acompañamiento las indicaciones de mi cirujano?',
+          answer: 'En absoluto. Nuestros masajes estéticos son un complemento de apoyo físico para tu comodidad; todas las indicaciones, uso de faja y reposo de tu cirujano deben respetarse estrictamente.'
         }
       ]
     },

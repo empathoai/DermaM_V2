@@ -20,11 +20,17 @@ export default function AboutPage({ data }) {
     founderPhilosophy,
     approach,
     academy,
+    teamHeader,
     teamBySpecialty,
     quote,
     testimonials,
+    testimonialsHeader,
     cta
   } = data;
+
+  const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
+  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
 
   return (
     <div className={styles.aboutPage}>
@@ -35,6 +41,8 @@ export default function AboutPage({ data }) {
         body={hero.body}
         backgroundImage={hero.backgroundImage}
         variant={hero.variant}
+        primaryCta={hero.primaryCta}
+        secondaryCta={hero.secondaryCta}
         hasTrustBar={false}
       />
 
@@ -106,6 +114,13 @@ export default function AboutPage({ data }) {
             {founderPhilosophy.supportingText && (
               <p className={styles.philosophySupport}>{founderPhilosophy.supportingText}</p>
             )}
+            <blockquote className={styles.philosophyQuote}>
+              <p>“{quote.text}”</p>
+              <footer>
+                <cite>{quote.author}</cite>
+                <span>{quote.title}</span>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </motion.section>
@@ -130,6 +145,22 @@ export default function AboutPage({ data }) {
               align: "left"
             }}
           />
+          {approach.conversion && (
+            <div className={styles.approachConversion}>
+              <div className={styles.approachConversionCopy}>
+                <h3>{approach.conversion.headline}</h3>
+                <p>{approach.conversion.body}</p>
+              </div>
+              <div className={styles.approachConversionActions}>
+                <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.conversionPrimary}>
+                  {approach.conversion.primaryCta}
+                </a>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.conversionSecondary}>
+                  {approach.conversion.secondaryCta}
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </motion.section>
 
@@ -178,30 +209,9 @@ export default function AboutPage({ data }) {
       </motion.section>
 
       {/* 6. Team By Specialty (Clinical Canvas #F2F0F1) */}
-      <TeamBySpecialty groups={teamBySpecialty} />
+      <TeamBySpecialty groups={teamBySpecialty} header={teamHeader} />
 
-      {/* 7. Quote Block (Dark Authority #141313) */}
-      <motion.section 
-        className={styles.quoteSection}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={sectionReveal}
-      >
-        <div className={styles.quoteContainer}>
-          <blockquote className={styles.blockquote}>
-            <p className={styles.quoteText}>
-              “{quote.text}”
-            </p>
-            <footer className={styles.quoteFooter}>
-              <cite className={styles.quoteAuthor}>{quote.author}</cite>
-              <span className={styles.quoteTitle}>{quote.title}</span>
-            </footer>
-          </blockquote>
-        </div>
-      </motion.section>
-
-      {/* 8. Testimonials (Clinical Canvas #F2F0F1 layout, Off White #EFEFEB card background) */}
+      {/* 7. Testimonials (Clinical Canvas #F2F0F1 layout, Off White #EFEFEB card background) */}
       <section className={styles.testimonialsSection} aria-labelledby="testimonials-heading">
         <div className={styles.testimonialsContainer}>
           <div className={styles.layoutSplit}>
@@ -212,14 +222,10 @@ export default function AboutPage({ data }) {
               viewport={viewportConfig}
               variants={sectionReveal}
             >
-              <p className={styles.testimonialEyebrow}>GOOGLE REVIEWS</p>
+              <p className={styles.testimonialEyebrow}>{testimonialsHeader.eyebrow}</p>
               <div className={styles.eyebrowLine}></div>
-              <h2 id="testimonials-heading" className={styles.headline}>
-                LO QUE DICEN<br />NUESTROS CLIENTES
-              </h2>
-              <p className={styles.testimonialSupport}>
-                Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.
-              </p>
+              <h2 id="testimonials-heading" className={styles.headline}>{testimonialsHeader.headline}</h2>
+              <p className={styles.testimonialSupport}>{testimonialsHeader.body}</p>
             </motion.div>
             
             <motion.div 
@@ -260,7 +266,7 @@ export default function AboutPage({ data }) {
         </div>
       </section>
 
-      {/* 9. Final CTA (Dark Authority #141313) */}
+      {/* 8. Final CTA (Dark Authority #141313) */}
       <FinalCTA 
         eyebrow={cta.eyebrow}
         title={cta.headline}

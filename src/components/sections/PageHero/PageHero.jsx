@@ -17,7 +17,8 @@ export default function PageHero({
 }) {
   const isLanding = variant === 'landing';
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappUrl = 'https://wa.link/z7i9vm';
+  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
   const { sectionReveal } = useMotionSystem();
   const [mediaReady, setMediaReady] = useState(!backgroundImage);
 
@@ -68,7 +69,7 @@ export default function PageHero({
             
             {body && <p className={styles.body}>{body}</p>}
             
-            {isLanding && (primaryCta || secondaryCta) && (
+            {(primaryCta || secondaryCta) && (
               <div className={styles.ctaGroup}>
                 {primaryCta && (
                   <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.primaryCta}>

@@ -400,23 +400,23 @@ const compileTreatments = () => {
       const faq = [
         {
           question: `¿Este tratamiento es adecuado para todos?`,
-          answer: 'No necesariamente. En Derma.M priorizamos la seguridad, por lo que este protocolo requiere una valoración profesional estricta previa para confirmar que no presentas contraindicaciones temporales y que se adapta completamente a tus objetivos personales.'
+          answer: 'No necesariamente. La recomendación depende de una valoración profesional previa, tus objetivos y tus condiciones individuales.'
         },
         {
-          question: '¿Cuántas sesiones se recomiendan para ver cambios notables?',
-          answer: 'La cantidad exacta de sesiones se define en tu cita de valoración, donde se diseña un protocolo a tu medida. No obstante, muchos de nuestros tratamientos ofrecen mejoras visibles en la frescura y humectación de la zona de inmediato en la primera sesión.'
+          question: '¿Cuántas sesiones se recomiendan?',
+          answer: 'La cantidad y frecuencia se definen después de la valoración. Pueden variar según el tratamiento, tus objetivos y la respuesta individual.'
         },
         {
-          question: '¿Hay algún dolor o molestia durante la aplicación?',
-          answer: 'La mayoría de nuestros protocolos no invasivos e higiénicos son sumamente cómodos y bien tolerados, sintiéndose únicamente micro-presiones templadas o un cosquilleo fresco. Si una técnica requiere anestesia tópica o consideración especial, se te indicará y aplicará con total cuidado.'
+          question: '¿Qué puedo sentir durante la aplicación?',
+          answer: 'Las sensaciones dependen de la técnica y de la sensibilidad de cada persona. Antes de comenzar, el equipo te explicará qué puedes esperar y las medidas de comodidad disponibles.'
         },
         {
-          question: '¿Qué cuidados posteriores debo tener en cuenta?',
-          answer: 'El cuidado posterior principal es el uso continuo de protector solar con FPS 50+, evitando la exposición directa prolongada al sol durante las primeras 48 horas, junto con rutinas higiénicas e hidratantes suaves que te indicaremos con todo detalle al finalizar tu sesión.'
+          question: '¿Qué cuidados posteriores debo seguir?',
+          answer: 'Los cuidados cambian según el protocolo. Al finalizar recibirás indicaciones personalizadas y señales específicas para saber cuándo consultar al equipo.'
         },
         {
           question: '¿Los resultados están garantizados?',
-          answer: 'En el sector estético dermoepitelial, la dehidratación, el envejecimiento o la respuesta celular son intrínsecamente variables en cada persona. Por ello, no se pueden prometer cronogramas rígidos ni garantías absolutas; nuestro compromiso reside en brindarte el protocolo profesional con la mayor calidad.'
+          answer: 'No. La evolución y los resultados pueden variar según cada persona, el tratamiento indicado y el seguimiento de los cuidados recomendados.'
         }
       ];
 
@@ -452,6 +452,7 @@ const compileTreatments = () => {
         benefits,
         ideal,
         specs,
+        faqHeadline: 'PREGUNTAS FRECUENTES',
         faq,
         related,
         whatIs: {

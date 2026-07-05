@@ -3,7 +3,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 import TeamMemberCard from '../TeamMemberCard/TeamMemberCard';
 import styles from './TeamBySpecialty.module.css';
 
-export default function TeamBySpecialty({ groups }) {
+export default function TeamBySpecialty({ groups, header }) {
   if (!groups || groups.length === 0) return null;
 
   return (
@@ -11,9 +11,9 @@ export default function TeamBySpecialty({ groups }) {
       <div className={styles.container}>
         <div className={styles.headerBlock}>
           <SectionHeader
-            eyebrow="EQUIPO Y ESPECIALIDADES"
-            title="PROFESIONALES POR ÁREA DE CUIDADO."
-            support="Cada área de DERMA.M cuenta con profesionales preparados para acompañarte con criterio, sensibilidad y atención personalizada."
+            eyebrow={header?.eyebrow}
+            title={header?.headline}
+            support={header?.body}
             variant="light"
             align="left"
           />

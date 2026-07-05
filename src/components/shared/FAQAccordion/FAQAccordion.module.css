@@ -1,7 +1,28 @@
+.section {
+  color: #363633;
+  padding: clamp(64px, 7vw, 112px) 0;
+  border-bottom: 1px solid #141313;
+}
+
+.warm {
+  background-color: #CCC9C1;
+}
+
+.light {
+  background-color: #EFEFEB;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+}
+
 .faqWrapper {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .split {
@@ -27,9 +48,11 @@
 
 .accordionButton {
   width: 100%;
+  min-height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   padding: 24px 0;
   background: none;
   border: none;
@@ -39,62 +62,46 @@
 }
 
 .accordionButton:focus-visible {
-  outline: 2px solid #363633;
+  outline: 2px solid #141313;
   outline-offset: 4px;
 }
 
-.warm .accordionButton:focus-visible {
-  outline-color: #141313;
-}
-
 .question {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-sans, 'Poppins', sans-serif);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: 0.05em;
-  padding-right: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-wrap: pretty;
 }
 
 .icon {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-sans, 'Poppins', sans-serif);
+  font-size: 28px;
   line-height: 1;
   font-weight: 300;
   color: #363633;
 }
 
-.accordionPanel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.openPanel {
-  max-height: 500px;
-}
-
 .answer {
-  font-family: 'Poppins', sans-serif;
+  max-width: 70ch;
+  padding: 0 68px 32px 0;
+  font-family: var(--font-sans, 'Poppins', sans-serif);
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #4E4D4D;
   font-weight: 300;
-  padding-bottom: 32px;
-}
-
-.warm .accordionButton,
-.warm .icon {
-  color: #363633;
-}
-
-.warm .answer {
-  color: #4E4D4D;
+  text-wrap: pretty;
 }
 
 @media (hover: hover) {
-  .warm .accordionButton:hover,
-  .warm .accordionButton:hover .icon {
+  .accordionButton:hover,
+  .accordionButton:hover .icon {
     color: #141313;
   }
 }
@@ -111,5 +118,11 @@
     margin-bottom: 0;
     position: sticky;
     top: 144px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon {
+    transition: none;
   }
 }

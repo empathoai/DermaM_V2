@@ -20,6 +20,7 @@ import FAQAccordion from '../components/shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../components/shared/FinalCTA/FinalCTA';
 import styles from './Contacto.module.css';
 import { contactConsentCopy } from '../data/legalPages';
+import { contactFaq } from '../data/contactPage';
 
 export default function ContactoPage() {
   const siteUrl = import.meta.env.VITE_SITE_URL || '';
@@ -65,29 +66,6 @@ export default function ContactoPage() {
 
   const formattedWhatsAppUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
   const dialPhoneUrl = 'tel:+15612535384';
-
-  const faqItems = [
-    {
-      question: '¿Necesito cita previa?',
-      answer: 'Sí. Te recomendamos agendar tu cita antes de visitarnos para asegurar disponibilidad y brindarte una atención personalizada.'
-    },
-    {
-      question: '¿Puedo consultar por WhatsApp?',
-      answer: 'Sí. Puedes escribirnos por WhatsApp al +1 561 253 5384 y nuestro equipo te orientará.'
-    },
-    {
-      question: '¿Dónde están ubicados?',
-      answer: 'Actualmente nuestra ubicación activa está en 5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405. Nuestra sede de Miami estará disponible próximamente.'
-    },
-    {
-      question: '¿Qué servicios puedo consultar?',
-      answer: 'Puedes consultar sobre evaluación facial, acné, manchas, cicatrices, rejuvenecimiento facial, limpiezas faciales y otros tratamientos personalizados.'
-    },
-    {
-      question: '¿Atienden en Miami?',
-      answer: 'La sede de Miami estará disponible próximamente. Por ahora puedes contactarnos por WhatsApp para recibir información o agendar en West Palm Beach.'
-    }
-  ];
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
@@ -596,17 +574,10 @@ export default function ContactoPage() {
           </section>
 
           {/* 5. FAQ Section */}
-          <section className={styles.faqSection} aria-labelledby="faq-heading">
-            <div className={styles.faqContainer}>
-              <div className={styles.faqHeaderBlock}>
-                <h2 id="faq-heading" className={styles.faqTitle}>
-                  Preguntas frecuentes
-                </h2>
-                <div className={styles.faqDivider}></div>
-              </div>
-              <FAQAccordion items={faqItems} />
-            </div>
-          </section>
+          <FAQAccordion
+            headline={contactFaq.headline}
+            items={contactFaq.items}
+          />
 
           {/* 6. Final CTA Section */}
           <FinalCTA 

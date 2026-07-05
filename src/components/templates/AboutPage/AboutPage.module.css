@@ -151,6 +151,47 @@
   border-left: 1px solid rgba(242, 240, 241, 0.18);
 }
 
+.philosophyQuote {
+  margin: 16px 0 0;
+  padding: 32px 0 0;
+  border-top: 1px solid rgba(242, 240, 241, 0.18);
+  max-width: 680px;
+}
+
+.philosophyQuote p {
+  margin: 0;
+  color: #F2F0F1;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.philosophyQuote footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 24px;
+}
+
+.philosophyQuote cite,
+.philosophyQuote span {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.philosophyQuote cite {
+  color: #F2F0F1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.philosophyQuote span {
+  color: #CCC9C1;
+  font-size: 10px;
+}
+
 /* 4. Science / Experience / Human Care Section */
 .approachSection {
   background-color: #F2F0F1;
@@ -161,6 +202,110 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 clamp(24px, 4vw, 64px);
+}
+
+.approachConversion {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(54, 54, 51, 0.18);
+}
+
+.approachConversionCopy h3 {
+  max-width: 620px;
+  margin: 0 0 16px;
+  color: #363633;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.approachConversionCopy p {
+  max-width: 620px;
+  margin: 0;
+  color: #4E4D4D;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.approachConversionActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conversionPrimary,
+.conversionSecondary {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border: 1px solid #141313;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.conversionPrimary {
+  background-color: #141313;
+  color: #F2F0F1;
+}
+
+.conversionSecondary {
+  background-color: transparent;
+  color: #363633;
+  border-color: rgba(54, 54, 51, 0.32);
+}
+
+@media (hover: hover) {
+  .conversionPrimary:hover {
+    background-color: #363633;
+  }
+
+  .conversionSecondary:hover {
+    border-color: #141313;
+    color: #141313;
+  }
+}
+
+.conversionPrimary:focus-visible,
+.conversionSecondary:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 3px;
+}
+
+@media (min-width: 640px) {
+  .approachConversionActions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .approachConversion {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    gap: 64px;
+    margin-top: 72px;
+    padding-top: 48px;
+  }
+
+  .approachConversionActions {
+    flex: 0 0 auto;
+  }
 }
 
 /* 5. DERMA.M Academy */
@@ -261,61 +406,6 @@
   }
 }
 
-/* 7. Quote Section */
-.quoteSection {
-  background-color: #141313; /* Dark Authority */
-  padding: 120px 0;
-  color: #F2F0F1;
-}
-
-.quoteContainer {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 clamp(24px, 4vw, 64px);
-  text-align: center;
-}
-
-.blockquote {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-}
-
-.quoteText {
-  font-size: 20px;
-  line-height: 1.8;
-  color: #F2F0F1;
-  font-weight: 300;
-  margin: 0;
-}
-
-.quoteFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.quoteAuthor {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #F2F0F1;
-  font-style: normal;
-}
-
-.quoteTitle {
-  font-size: 12px;
-  color: #CCC9C1;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-}
-
 /* Responsive Grids & Spacing Scaling */
 @media (min-width: 1024px) {
   .spotlightRow {
@@ -391,13 +481,6 @@
     min-height: 0;
   }
 
-  .quoteText {
-    font-size: 24px;
-  }
-  
-  .quoteSection {
-    padding: 140px 0;
-  }
 }
 
 /* 8. Testimonials Section styling matching Home exactly */

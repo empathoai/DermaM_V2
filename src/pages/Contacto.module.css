@@ -794,44 +794,6 @@
   font-weight: 300;
 }
 
-/* 7. FAQ Section */
-.faqSection {
-  background-color: #EFEFEB; /* Off White */
-  padding: 80px 24px;
-}
-
-@media (min-width: 1024px) {
-  .faqSection {
-    padding: 100px 64px;
-  }
-}
-
-.faqContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.faqHeaderBlock {
-  margin-bottom: 56px;
-  text-align: center;
-}
-
-.faqTitle {
-  font-size: 32px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #363633;
-  margin: 0;
-}
-
-.faqDivider {
-  width: 64px;
-  height: 1px;
-  background-color: rgba(54, 54, 51, 0.32);
-  margin: 24px auto 0 auto;
-}
-
 /* Restructured Two-Column Contact Layout */
 .twoColumnCoreBlock {
   background-color: #F2F0F1; /* Clinical Canvas */

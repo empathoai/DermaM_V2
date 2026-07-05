@@ -8,6 +8,7 @@ export default function SectionHeader({
   variant = 'light',
   align = 'left',
   maxWidth,
+  titleId,
 }) {
   return (
     <div className={`${styles.header} ${styles[variant]} ${styles[align]}`} style={maxWidth ? { maxWidth } : {}}>
@@ -17,7 +18,7 @@ export default function SectionHeader({
           <div className={styles.line}></div>
         </div>
       )}
-      {title && <h2 className={styles.title}>{title}</h2>}
+      {title && <h2 id={titleId} className={styles.title}>{title}</h2>}
       {support && <p className={styles.support}>{support}</p>}
     </div>
   );

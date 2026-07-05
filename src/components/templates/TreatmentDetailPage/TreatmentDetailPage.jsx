@@ -31,6 +31,7 @@ export default function TreatmentDetailPage({ data }) {
     benefits,
     ideal,
     specs,
+    faqHeadline,
     faq,
     related,
     whatIs,
@@ -261,15 +262,11 @@ export default function TreatmentDetailPage({ data }) {
         headline={`TRATAMIENTOS DE ${categoryLabel} COMPLEMENTARIOS`}
       />
 
-      {/* 13. FAQ (Off White Surface: #EFEFEB) */}
-      <section className={styles.faqSection}>
-        <div className={styles.container}>
-          <FAQAccordion 
-            headline="PREGUNTAS FRECUENTES"
-            items={faq}
-          />
-        </div>
-      </section>
+      {/* 13. Canonical FAQ */}
+      <FAQAccordion
+        headline={faqHeadline}
+        items={faq}
+      />
 
       {/* 14. Final CTA (Dark Authority Surface: #141313) */}
       <FinalCTA 

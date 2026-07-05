@@ -306,12 +306,6 @@
   padding: 140px 0; /* Dynamic rhythm cinematic highlight */
 }
 
-/* 13. FAQ (Off White) */
-.faqSection {
-  background-color: #EFEFEB;
-  padding: 112px 0;
-}
-
 /* Global Responsive Adapters */
 @media (min-width: 1024px) {
   .whatIsGrid {
@@ -380,8 +374,7 @@
   .processSection, 
   .whoForSection, 
   .specsSection, 
-  .beforeAfterSection, 
-  .faqSection {
+  .beforeAfterSection {
     padding: 72px 0;
   }
 }

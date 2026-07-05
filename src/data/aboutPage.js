@@ -1,51 +1,64 @@
 export const aboutPage = {
   hero: {
     eyebrow: "NOSOTROS",
-    title: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA PARA CUIDAR TU PIEL",
-    body: "DERMA.M nace de la pasión por el cuidado de la piel, el bienestar y el servicio a los demás.",
+    title: "CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL",
+    body: "En DERMA.M combinamos valoración profesional, formación continua y acompañamiento cercano para diseñar una experiencia de cuidado alineada con tus objetivos.",
+    primaryCta: "AGENDAR VALORACIÓN",
+    secondaryCta: "HABLAR POR WHATSAPP",
     backgroundImage: "/assets/images/about/hero.jpg",
     variant: "default"
   },
   founderSpotlight: {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     name: "NANCY NIETO",
-    subheadline: "Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida",
-    body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Su formación como Cosmetóloga, Cosmiatra y Dermocosmiatra en Ecuador, junto con su capacitación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel, le ha permitido construir un enfoque profesional, ético y profundamente humano.",
-    secondaryBody: "Para Nancy, cada tratamiento representa una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada.",
+    subheadline: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
+    body: "DERMA.M nació de la visión de Nancy Nieto: ofrecer una atención estética responsable, cercana y guiada por la formación continua. Su preparación en Ecuador y Estados Unidos ha dado forma a un enfoque que prioriza la valoración, la educación del paciente y protocolos adaptados a cada persona.",
+    secondaryBody: "Para Nancy, cuidar también significa explicar, escuchar y acompañar con honestidad en cada etapa del proceso.",
     image: "/assets/images/home/founder.jpg",
     imageAlt: "Nancy Nieto, fundadora y directora de DERMA.M"
   },
   founderPhilosophy: {
     eyebrow: "FILOSOFÍA",
-    headline: "ESCUCHAR, EDUCAR Y ACOMPAÑAR",
-    body: "La filosofía de Nancy se basa en escuchar, educar y acompañar a cada cliente de manera personalizada, entendiendo que detrás de cada piel existe una historia única.",
-    supportingText: "En DERMA.M creemos que la estética va mucho más allá de la apariencia. Se trata de bienestar, autoestima y calidad de vida."
+    headline: "ESCUCHAR ANTES DE RECOMENDAR",
+    body: "Cada piel, objetivo y momento personal requiere una conversación distinta. Por eso comenzamos comprendiendo tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
+    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas."
   },
   approach: {
     eyebrow: "NUESTRO ENFOQUE",
-    headline: "CIENCIA, EXPERIENCIA Y ATENCIÓN HUMANA",
+    headline: "CÓMO CUIDAMOS CADA DECISIÓN",
     items: [
       {
-        title: "CIENCIA",
-        body: "Tratamientos seguros, éticos y orientados a resultados reales desde una mirada profesional."
+        title: "VALORACIÓN",
+        body: "Escuchamos tus objetivos y revisamos tus necesidades antes de recomendar una opción."
       },
       {
-        title: "EXPERIENCIA",
-        body: "Formación continua y conocimiento aplicado en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento."
+        title: "CRITERIO PROFESIONAL",
+        body: "Aplicamos formación continua y protocolos definidos con atención a la seguridad y al contexto de cada persona."
       },
       {
-        title: "ATENCIÓN HUMANA",
-        body: "Acompañamiento personalizado para que cada persona se sienta escuchada, orientada y cuidada."
+        title: "ACOMPAÑAMIENTO",
+        body: "Explicamos cada etapa con claridad y damos seguimiento para que te sientas orientada durante el proceso."
       }
-    ]
+    ],
+    conversion: {
+      headline: "TU CUIDADO COMIENZA CON UNA CONVERSACIÓN",
+      body: "Cuéntanos qué deseas mejorar y te orientaremos sobre el siguiente paso para agendar una valoración.",
+      primaryCta: "AGENDAR VALORACIÓN",
+      secondaryCta: "CONSULTAR POR WHATSAPP"
+    }
   },
   academy: {
     eyebrow: "DERMA.M ACADEMY",
-    headline: "UN COMPROMISO CON LA EDUCACIÓN, LA EXCELENCIA Y EL CRECIMIENTO PROFESIONAL",
-    body: "DERMA.M Academy refleja el compromiso de Nancy con la excelencia, la educación continua y el crecimiento profesional dentro de la industria de la estética.",
-    secondaryBody: "Su visión es seguir expandiendo DERMA.M para generar oportunidades a otras mujeres profesionales, inspirarlas a creer en su potencial y demostrar que los sueños pueden convertirse en realidad cuando se trabaja con pasión, disciplina y propósito.",
+    headline: "FORMACIÓN QUE ELEVA NUESTRO ESTÁNDAR DE ATENCIÓN",
+    body: "DERMA.M Academy representa el compromiso de Nancy con la actualización continua, el intercambio de conocimiento y la consistencia del equipo.",
+    secondaryBody: "Esta visión busca fortalecer la calidad de la atención y, al mismo tiempo, abrir oportunidades de desarrollo para otras mujeres profesionales dentro de la industria estética.",
     image: "/assets/images/about/dermam-academy.jpg",
     imageAlt: "Nancy Nieto durante una actividad educativa de DERMA.M Academy"
+  },
+  teamHeader: {
+    eyebrow: "EQUIPO Y ESPECIALIDADES",
+    headline: "PROFESIONALES POR ÁREA DE CUIDADO",
+    body: "Conoce a las profesionales que acompañan cada área de cuidado y la preparación que aportan a tu experiencia en DERMA.M."
   },
   teamBySpecialty: [
     {
@@ -159,7 +172,7 @@ export const aboutPage = {
     }
   ],
   quote: {
-    text: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso. Cuando ayudamos a alguien a sentirse mejor consigo mismo, también estamos cambiando su día, su confianza y, muchas veces, una parte importante de su vida.",
+    text: "Mi mayor satisfacción es que cada persona se sienta escuchada, bien orientada y acompañada con honestidad. Esa confianza también forma parte del cuidado.",
     author: "Nancy Nieto",
     title: "Fundadora y Directora de DERMA.M"
   },
@@ -177,13 +190,18 @@ export const aboutPage = {
       author: "CARLA AFRICA GARUZ"
     }
   ],
+  testimonialsHeader: {
+    eyebrow: "RESEÑAS DE GOOGLE",
+    headline: "EXPERIENCIAS COMPARTIDAS POR NUESTROS CLIENTES",
+    body: "Testimonios de personas que eligieron a DERMA.M para acompañar sus objetivos de cuidado."
+  },
   cta: {
-    eyebrow: "AGENDA TU VALORACIÓN",
-    headline: "CONOCE EL CUIDADO DERMA.M DESDE UNA EXPERIENCIA PERSONALIZADA",
-    body: "Agenda tu cita y recibe orientación profesional para elegir el tratamiento más adecuado según tu piel, tu cuerpo y tus objetivos.",
-    primaryCta: "RESERVAR",
-    secondaryCta: "WHATSAPP",
-    disclaimer: "La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.",
+    eyebrow: "TU PRIMER PASO",
+    headline: "AGENDA UNA VALORACIÓN PERSONALIZADA",
+    body: "Conversemos sobre tus objetivos y revisemos qué opciones pueden ajustarse a ti después de una valoración profesional.",
+    primaryCta: "AGENDAR VALORACIÓN",
+    secondaryCta: "CONSULTAR POR WHATSAPP",
+    disclaimer: "La recomendación final depende de una valoración profesional. Los resultados y la respuesta a cada tratamiento pueden variar.",
     backgroundImage: "/assets/images/about/cta.jpg"
   }
 };

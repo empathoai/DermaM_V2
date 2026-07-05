@@ -155,16 +155,10 @@ export default function LandingPage({ data }) {
 
       {/* 10. FAQ */}
       {faq && (
-        <section className={styles.faq}>
-          <div className={styles.container}>
-            <FAQAccordion
-              headline={faq.headline}
-              items={faq.items}
-              variant="warm"
-              layout="split"
-            />
-          </div>
-        </section>
+        <FAQAccordion
+          headline={faq.headline}
+          items={faq.items}
+        />
       )}
 
       {/* 11. Final CTA */}

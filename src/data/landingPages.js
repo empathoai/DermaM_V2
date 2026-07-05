@@ -3,7 +3,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA',
-      body: 'Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel.',
+      body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg'
     },
     quickFacts: [
@@ -40,7 +40,7 @@ export const landingPages = {
         },
         {
           title: 'REGENERACIÓN AUTÓLOGA',
-          body: 'Utiliza componentes obtenidos del propio paciente dentro de un protocolo profesional.'
+          body: 'Utiliza componentes naturales obtenidos de tu propio organismo dentro de un protocolo profesional de máxima higiene.'
         }
       ]
     },
@@ -57,7 +57,7 @@ export const landingPages = {
         {
           number: '02',
           title: 'PREPARACIÓN',
-          body: 'Se realiza el proceso correspondiente para obtener y preparar el material autólogo.'
+          body: 'Se realiza el proceso de obtención y purificación de tus proteínas y factores naturales mediante centrifugación avanzada.'
         },
         {
           number: '03',
@@ -105,16 +105,16 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿Qué diferencia hay entre el PRP y otros tratamientos tensores?',
-          answer: 'El PRP (Plasma Rico en Plaquetas) utiliza los factores autólogos obtenidos de tu propio plasma para estimular la producción de colágeno natural en la dermis, lo que mejora la textura, luminosidad y firmeza de forma progresiva sin introducir activos sintéticos.'
+          question: '¿Qué es el protocolo de PRP y Fibrina y cómo se diferencia de las inyecciones tradicionales?',
+          answer: 'Nuestro protocolo combina el Plasma Rico en Plaquetas (PRP) con Fibrina Rica en Plaquetas (PRF) y se aplica únicamente de forma tópica mediante micro-infusión con Dermapen. A diferencia de las inyecciones de PRP convencional, este método no invasivo distribuye los factores naturales de forma uniforme sobre la superficie del rostro para mejorar la textura y firmeza sin pinchazos profundos ni hematomas severos.'
         },
         {
-          question: '¿Cuánto tiempo dura el enrojecimiento tras la aplicación?',
-          answer: 'El enrojecimiento es una respuesta normal y suele atenuarse casi por completo entre las 24 y 48 horas posteriores. Te indicaremos geles descongestionantes y protectores específicos para acompañar tu recuperación en casa.'
+          question: '¿Es dolorosa la aplicación de PRP y Fibrina?',
+          answer: 'Para garantizar tu comodidad, aplicamos un gel calmante de alta potencia antes de la sesión. Los micro-pinchazos se realizan de forma muy suave y rápida, haciéndolo sumamente tolerable.'
         },
         {
-          question: '¿Cuántas sesiones de PRP y Fibrina se recomiendan?',
-          answer: 'Para obtener resultados visibles y acumulativos en la elasticidad cutánea, se aconseja programar un ciclo inicial de 3 a 4 sesiones, espaciadas una vez al mes.'
+          question: '¿Cuántas sesiones se recomiendan para ver resultados firmes?',
+          answer: 'Se recomienda un ciclo inicial de 3 a 4 sesiones, espaciadas cada 30 días. Los cambios en la luminosidad y firmeza se aprecian de forma progresiva a partir del primer mes.'
         },
         {
           question: '¿Es normal que aparezcan pequeños hematomas?',
@@ -140,7 +140,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'LIMPIEZA FACIAL PROFUNDA',
-      body: 'Un protocolo diseñado para limpiar, equilibrar y preparar la piel con una atención personalizada.',
+      body: 'El protocolo de purificación profunda que respeta tu barrera de hidratación. Extrae impurezas de forma cómoda, sin marcas y con nutrición activa.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
     },
     quickFacts: [
@@ -168,8 +168,8 @@ export const landingPages = {
       headline: 'UNA PIEL MÁS LIMPIA, FRESCA Y EQUILIBRADA',
       list: [
         {
-          title: 'PURIFICACIÓN FOLICULAR',
-          body: 'Ayuda a remover impurezas visibles y acumulación en los poros.'
+          title: 'PURIFICACIÓN PROFUNDA',
+          body: 'Remueve impurezas acumuladas, puntos negros y células muertas de forma meticulosa y sin maltratar tu cutis.'
         },
         {
           title: 'TEXTURA SUAVIZADA',
@@ -246,8 +246,8 @@ export const landingPages = {
           answer: 'Recomendamos programar una sesión cada 28 a 30 días. Este lapso acompaña el proceso natural de recambio celular y renovación de tu epidermis, manteniendo los poros libres de impurezas y exceso de grasa.'
         },
         {
-          question: '¿La extracción de puntos negros e impurezas causa marcas rojas?',
-          answer: 'No. En Derma.M aplicamos un protocolo previo de ablandamiento térmico y enzimático que dilata el poro de forma natural, permitiendo una extracción manual sumamente suave y previniendo la aparición de marcas o rojeces severas.'
+          question: '¿La limpieza facial profunda es dolorosa?',
+          answer: 'No. En Derma.M aplicamos una técnica de ablandamiento previo que facilita la extracción de impurezas de forma sumamente suave, evitando molestias innecesarias y rojeces severas.'
         },
         {
           question: '¿Es la limpieza facial adecuada si tengo brotes activos?',
@@ -277,7 +277,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
-      body: 'Acompañamiento profesional para apoyar una recuperación más cómoda y cuidar la evolución del proceso.',
+      body: 'Acompañamiento profesional y drenaje superficial no invasivo para apoyar una evolución cómoda, suave y segura tras tu procedimiento estético.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg'
     },
     quickFacts: [
@@ -359,10 +359,10 @@ export const landingPages = {
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      support: 'Experiencias reales de personas que han confiado en Derma.M para acompañar su recuperación y cuidar su bienestar corporal.',
       list: [
         {
-          quote: 'Recibí un tratamiento de 5 masajes corporales con Yosy, la mejor masajista de West Palm Beach, la clínica excelente y las chicas súper amables.',
+          quote: 'Recibí un tratamiento de 5 masajes corporales con Yosy, la mejor masajista de West Palm Beach, el centro estético es excelente y las chicas súper amables.',
           author: 'YULEDSY RODRIGUEZ DOMINGUEZ'
         },
         {
@@ -395,8 +395,8 @@ export const landingPages = {
           answer: 'Generalmente se aconseja realizar un ciclo continuo de 10 a 15 sesiones, programadas de 2 a 3 veces por semana, adaptándose a la evolución visible de tu recuperación.'
         },
         {
-          question: '¿Reemplaza este acompañamiento las indicaciones de mi cirujano?',
-          answer: 'En absoluto. Nuestros masajes estéticos son un complemento de apoyo físico para tu comodidad; todas las indicaciones, uso de faja y reposo de tu cirujano deben respetarse estrictamente.'
+          question: '¿Este protocolo sustituye las indicaciones de mi cirujano?',
+          answer: 'No. Nuestro acompañamiento de drenaje estético es complementario y se realiza respetando estrictamente las indicaciones de tu especialista a cargo.'
         }
       ]
     },

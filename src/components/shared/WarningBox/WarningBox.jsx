@@ -3,13 +3,13 @@ import ListSparkle from '../ListSparkle/ListSparkle';
 import styles from './WarningBox.module.css';
 
 export default function WarningBox({
-  eyebrow = 'PRECAUCIONES CLÍNICAS',
+  eyebrow = 'PRECAUCIONES DE SEGURIDAD',
   title = 'CUÁNDO CONSULTAR ANTES',
   body = 'Este tratamiento requiere valoración previa para confirmar si es adecuado para ti.',
   items = [
     'Si tienes condiciones activas en la zona a tratar',
     'Si estás embarazada o en lactancia',
-    'Si estás bajo tratamiento médico o estético reciente',
+    'Si estás bajo tratamiento especializado o estético reciente',
     'Si presentas sensibilidad, irritación o lesiones visibles',
     'Si tienes dudas sobre compatibilidad con tu estado actual'
   ],

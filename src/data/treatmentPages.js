@@ -67,13 +67,23 @@ const categoryLabels = {
 const customDetails = {
   // --- FACIALES ---
   hidrofacial: {
-    whatIsBody: 'Hidrofacial es un tratamiento estético avanzado de limpieza, exfoliación e hidratación profunda simultáneas. Mediante un sistema de succión de vacío combinado con la infusión activa de sueros cargados de nutrientes, antioxidantes y ácido hialurónico, el protocolo limpia los poros de forma exhaustiva mientras satura la superficie celular.',
+    whatIsBody: 'Hidrofacial es un protocolo estético avanzado de renovación dérmica que limpia, extrae impurezas e hidrata profundamente de forma simultánea. Utilizando un sistema de succión de vacío suave combinado con la infusión activa de sueros ricos en antioxidantes, péptidos y ácido hialurónico, limpia los poros meticulosamente sin dejar marcas ni irritaciones en la piel.',
     problemContextHeadline: 'LA CONGESTIÓN DIARIA DISMINUYE LA LUMINOSIDAD DE TU ROSTRO',
     problemContextBody: 'El sebo acumulado, la exposición solar continua y la polución crean una película que obstruye los folículos y ralentiza el proceso de renovación de la piel. Esto da como resultado un rostro apagado, deshidratación profunda y una textura áspera que no responde a la rutina habitual de cuidado en casa.',
     duration: '45 - 60 min',
     application: 'Cabina / Tópica',
     anesthesia: 'No requiere',
     resultado: 'Revitalización y humectación inmediatas',
+    whoForList: [
+      'Personas con poros congestionados o acumulación de impurezas visibles.',
+      'Quienes desean un brillo natural y una hidratación profunda inmediata.',
+      'Todo tipo de piel, incluyendo aquellas propensas a la sensibilidad y rojeces.'
+    ],
+    safetyPrecautions: [
+      'No se aplica sobre piel con heridas abiertas o quemaduras solares recientes.',
+      'Evitar exfoliantes químicos fuertes en casa durante las primeras 72 horas.',
+      'Se recomienda la aplicación diaria y protector solar constante.'
+    ],
     faq: [
       {
         question: '¿La extracción del Hidrofacial deja marcas rojas?',
@@ -98,13 +108,24 @@ const customDetails = {
     ]
   },
   microneedling: {
-    whatIsBody: 'El microneedling con Dermapen es una terapia de inducción de colágeno altamente precisa. Consiste en realizar micro-perforaciones controladas en la epidermis utilizando agujas ultrafinas estériles de alta velocidad. Estos micro-canales activan las cascadas naturales de curación de la piel y maximizan la absorción de activos regeneradores aplicados durante la sesión.',
+    whatIsBody: 'El microneedling con Dermapen es un protocolo avanzado de renovación y firmeza cutánea. Utiliza micro-perforaciones superficiales de alta precisión mediante aplicadores estériles ultrafinos de velocidad regulada. Estos micro-canales activan los mecanismos naturales de renovación de la piel y maximizan la asimilación de sueros tensores de alta calidad.',
     problemContextHeadline: 'LA PERDIDA PROGRESIVA DE SOPORTE ESTRUCTURAL DE LA PIEL',
-    problemContextBody: 'Con los años y el daño ambiental, la producción interna de colágeno disminuye, abriendo paso a poros dilatados, líneas finas visibles y marcas resistentes de acné. El microneedling despierta de forma mecánica la capacidad regenerativa de la dermis para restaurar la firmeza y suavizar imperfecciones de relieve.',
+    problemContextBody: 'Con los años y el daño ambiental, la producción interna de colágeno disminuye, abriendo paso a poros dilatados, líneas finas visibles y marcas resistentes de acné. El microneedling despierta de forma mecánica la capacidad de renovación de la estructura cutánea para restaurar la firmeza y suavizar imperfecciones de relieve.',
     duration: '45 - 60 min',
     application: 'Cabina / Facial',
     anesthesia: 'Anestesia tópica',
     resultado: 'Atuenuación de líneas y textura de forma progresiva',
+    whoForList: [
+      'Personas que buscan suavizar el relieve de marcas persistentes y líneas finas.',
+      'Quienes desean mejorar la apariencia de poros dilatados y devolver firmeza al rostro.',
+      'Búsqueda de una renovación cutánea progresiva mediante un protocolo profesional de alta precisión vertical.'
+    ],
+    safetyPrecautions: [
+      'No aplicable directamente sobre brotes de acné activo o inflamado.',
+      'Evitar el uso de ingredientes activos fuertes (retinol, ácidos) durante las primeras 48 horas.',
+      'No recomendado en caso de historial de cicatrización queloide o lesiones abiertas.',
+      'Requiere posponer el maquillaje convencional durante las primeras 24 horas.'
+    ],
     faq: [
       {
         question: '¿El microneedling con Dermapen duele mucho?',
@@ -124,18 +145,28 @@ const customDetails = {
       },
       {
         question: '¿Es seguro para pieles con brotes activos?',
-        answer: 'Evitamos pasar las microagujas sobre brotes activos e inflamados para prevenir la propagación de imperfecciones, enfocándonos en las zonas sanas del rostro.'
+        answer: 'Evitamos pasar los aplicadores de micro-infusión sobre brotes activos e inflamados para prevenir la propagación de imperfecciones, enfocándonos en las zonas sanas del rostro.'
       }
     ]
   },
   'hifu-facial': {
-    whatIsBody: 'El HIFU Facial (Ultrasonido Focalizado de Alta Intensidad) es un método de soporte facial profundo de origen estético que trabaja mediante energía ultrasónica concentrada. Estimula las capas estructurales internas del rostro (incluido el SMAS, la capa tratada en cirugías estéticas) para generar calor controlado y promover la termogénesis de fibras de colágeno, logrando un efecto de soporte y firmeza.',
+    whatIsBody: 'El HIFU Facial (Ultrasonido Focalizado de Alta Intensidad) es un protocolo estético de soporte profundo que trabaja mediante energía ultrasónica concentrada. Estimula las capas estructurales internas de la piel del rostro para generar un calor controlado que promueve la firmeza y elasticidad natural, logrando un aspecto más definido y firme sin procesos invasivos.',
     problemContextHeadline: 'LA FLACIDEZ CUTÁNEA EN EL ÓVALO FACIAL Y CUELLO',
-    problemContextBody: 'El envejecimiento de la piel debilita las fibras elásticas que sostienen las facciones del rostro, provocando descolgamiento visible en la línea mandibular, mejillas y cuello. HIFU actúa en zonas profundas sin dañar la superficie epidérmica, ideal para quienes buscan firmeza sin pasar por procesos quirúrgicos.',
+    problemContextBody: 'El envejecimiento de la piel debilita las fibras elásticas que sostienen las facciones del rostro, provocando descolgamiento visible en la línea mandibular, mejillas y cuello. HIFU actúa en zonas profundas sin dañar la superficie externa de la piel, ideal para quienes buscan firmeza sin pasar por procesos quirúrgicos.',
     duration: '60 - 90 min',
     application: 'Cabina / Ultrasonido',
     anesthesia: 'Evaluación personalizada',
     resultado: 'Tensión cutánea y definición progresiva en 2 a 3 meses',
+    whoForList: [
+      'Personas con flacidez leve a moderada en el contorno del rostro, papada y cuello.',
+      'Quienes desean un efecto de soporte y definición de contornos sin tiempo de recuperación.',
+      'Quienes buscan estimular la síntesis natural de colágeno a largo plazo.'
+    ],
+    safetyPrecautions: [
+      'No recomendado en caso de hilos tensores metálicos o implantes metálicos activos en la zona.',
+      'Evitar tratamientos que generen calor intenso en el rostro por una semana.',
+      'No aplicar directamente sobre zonas con rellenos inyectables recientes (esperar 4 semanas).'
+    ],
     faq: [
       {
         question: '¿El HIFU facial duele o causa quemaduras?',
@@ -160,13 +191,23 @@ const customDetails = {
     ]
   },
   'peel-coreano': {
-    whatIsBody: 'El peel coreano es un tratamiento de renovación celular selectiva que asocia exfoliación enzimática e infusión botánica avanzada. Inspirado en los altos estándares de luminosidad orientales, este protocolo favorece el desprendimiento suave del estrato córneo sin inducir descamación agresiva, protegiendo en todo momento la barrera de humedad cutánea.',
+    whatIsBody: 'El peel coreano es un protocolo de renovación celular selectiva que asocia exfoliación enzimática e infusión botánica avanzada. Inspirado en los altos estándares de luminosidad orientales, este protocolo favorece el desprendimiento suave de células muertas sin indicar descamación agresiva, protegiendo en todo momento la barrera de humedad cutánea.',
     problemContextHeadline: 'LA OPACIDAD FACIAL POR ACUMULACIÓN DE IMPUREZAS',
     problemContextBody: 'Muchos exfoliantes convencionales dañan el manto hidrolipídico natural, generando enrojecimiento y descamación molesta. El tratamiento de piel coreano ofrece una renovación controlada para devolver el aspecto fresco y el característico efecto de "piel de vidrio" (glass skin) sin agresión y con una recuperación inmediata.',
     duration: '45 - 60 min',
     application: 'Cabina / Tópico profesional',
     anesthesia: 'No requiere',
     resultado: 'Efecto luminoso inmediato',
+    whoForList: [
+      'Personas que buscan un efecto de piel radiante y translúcida (glass skin).',
+      'Quienes desean una renovación superficial libre de descamaciones agresivas.',
+      'Pieles opacas, deshidratadas o que deseen prepararse para un evento especial.'
+    ],
+    safetyPrecautions: [
+      'Evitar la exposición solar directa durante las siguientes 48 horas.',
+      'No aplicar ácidos (glicólico, salicílico) en casa por 3 días.',
+      'Es indispensable el uso de protector solar de amplio espectro.'
+    ],
     faq: [
       {
         question: '¿El peel coreano deja la piel descamada u opaca?',
@@ -191,13 +232,23 @@ const customDetails = {
     ]
   },
   'radiofrecuencia-facial': {
-    whatIsBody: 'La Radiofrecuencia Facial es una tecnología de rejuvenecimiento térmico no invasivo. Emplea ondas electromagnéticas que calientan de manera segura y controlada las capas profundas de la dermis. Este incremento controlado del calor promueve la contracción inmediata de las fibras de colágeno existentes y estimula los fibroblastos para producir nuevas proteínas de sostén.',
+    whatIsBody: 'La Radiofrecuencia Facial es un protocolo de estimulación térmica superficial que utiliza ondas electromagnéticas controladas. Su objetivo es generar una contracción inmediata del colágeno existente y promover la producción progresiva de nuevas fibras para suavizar líneas de expresión y atenuar la flacidez de forma cómoda.',
     problemContextHeadline: 'CANSANCIO VISIBLE Y PÉRDIDA DE TONO EPIDÉRMICO',
-    problemContextBody: 'La menor elasticidad debida al estrés cutáneo favorece que las líneas de expresión se marquen de manera fija y permanente en las zonas gesticulares del rostro. Mediante un aumento térmico preciso, estimulamos la microcirculación y elasticidad cutánea para suavizar facciones y atenuar el aspecto fatigado.',
+    problemContextBody: 'Con el tiempo, la pérdida de firmeza se hace evidente en zonas como las mejillas, el óvalo facial y el cuello debido a la disminución del colágeno interno. El calor controlado reactiva los procesos tensores naturales, devolviendo turgencia y elasticidad a los tejidos.',
     duration: '40 - 50 min',
     application: 'Cabina / Electromagnética',
     anesthesia: 'No requiere',
     resultado: 'Atuenuación de líneas y sensación turgente',
+    whoForList: [
+      'Personas que notan pérdida de elasticidad y turgencia en el rostro y cuello.',
+      'Quienes buscan suavizar líneas finas de expresión de forma progresiva.',
+      'Quienes prefieren un tratamiento relajante con sensación de calor agradable.'
+    ],
+    safetyPrecautions: [
+      'No recomendado si tienes marcapasos o dispositivos metálicos activos en la zona.',
+      'Evitar en caso de inflamaciones cutáneas graves o quemaduras solares activas.',
+      'No apto durante procesos infecciosos sistémicos.'
+    ],
     faq: [
       {
         question: '¿Qué se siente durante la sesión de radiofrecuencia?',
@@ -222,13 +273,22 @@ const customDetails = {
     ]
   },
   'oxigenoterapia-facial': {
-    whatIsBody: 'La Oxigenoterapia Facial es una bruma de hidratación y revitalización celular. El tratamiento consiste en la proyección a alta presión de oxígeno con un porcentaje de pureza superior combinado con principios activos nebulizados (vitaminas, péptidos y ácido hialurónico). Permite humectar la barrera protectora de la piel y devolverle frescura al rostro de forma inmediata.',
+    whatIsBody: 'La Oxigenoterapia Facial es una bruma de hidratación y revitalización superficial. El protocolo consiste en la proyección de oxígeno de alta pureza combinado con principios activos nebulizados (vitaminas, péptidos y ácido hialurónico). Permite humectar la barrera protectora y devolver frescura al rostro de forma inmediata.',
     problemContextHeadline: 'PIEL DESHIDRATADA Y ESTRESADA POR FACTORES URBANOS',
-    problemContextBody: 'El aire acondicionado, la falta de descanso y los hábitos cotidianos saturan y asfixian las células de la piel, haciéndola lucir opaca, seca y reactiva. Este protocolo calma el rostro sensible, aporta oxigenación dérmica profunda y restaura un aspecto descansado y fresco al instante.',
+    problemContextBody: 'El aire acondicionado, la falta de descanso y los hábitos cotidianos saturan y apagan las células de la piel, haciéndola lucir opaca y deshidratada. Este protocolo calma el rostro sensible, aporta oxigenación superficial profunda y restaura un aspecto descansado y fresco al instante.',
     duration: '45 min',
     application: 'Cabina / Nebulización',
     anesthesia: 'No requiere',
     resultado: 'Suavidad y frescura tras finalizar el tratamiento',
+    whoForList: [
+      'Pieles apagadas, estresadas o visiblemente deshidratadas.',
+      'Ideal como preparación previa a eventos especiales para un aspecto luminoso inmediato.',
+      'Pieles sensibles que buscan una hidratación reconfortante sin exfoliación física.'
+    ],
+    safetyPrecautions: [
+      'No recomendado en caso de heridas abiertas o infecciones activas en el rostro.',
+      'Evitar la exposición directa a fuentes de calor intenso el día de la sesión.'
+    ],
     faq: [
       {
         question: '¿Qué es la bruma de oxígeno y qué se siente?',
@@ -253,13 +313,23 @@ const customDetails = {
     ]
   },
   'rejuvenecimiento-facial': {
-    whatIsBody: 'El Rejuvenecimiento Facial en Derma.M es un protocolo integral personalizado concebido para mejorar la calidad global del rostro. Combina técnicas de vanguardia, como la bioestimulación de tejidos o la aparatología avanzada, para mejorar parámetros esenciales: elasticidad, textura, unificación del tono y soporte de la dermis.',
+    whatIsBody: 'El Rejuvenecimiento Facial en Derma.M es un protocolo integral personalizado concebido para mejorar la calidad global del rostro. Combina técnicas de vanguardia, como la bioestimulación de tejidos y la aparatología avanzada, para mejorar parámetros esenciales: elasticidad, textura, unificación del tono y soporte cutáneo.',
     problemContextHeadline: 'SIGNOS GLOBALES DE ENVEJECIMIENTO CRÓNICO Y SOLAR',
-    problemContextBody: 'La combinación de fotoenvejecimiento y desgaste genético no afecta solo una zona del rostro, sino que se manifiesta en flacidez media, líneas finas extendidas y pérdida generalizada del brillo. Un enfoque integrado permite abordar múltiples necesidades simultáneamente para un rejuvenecimiento armónico y muy natural.',
+    problemContextBody: 'La combinación de fotoenvejecimiento y desgaste genético no afecta solo una zona del rostro, sino que se manifiesta en flacidez media, líneas finas extendidas y pérdida generalizada del brillo. Un enfoque integrado permite abordar múltiples necesidades simultáneamente para un aspecto armónico y muy natural.',
     duration: '60 - 75 min',
     application: 'Cabina / Enfoque multi-técnico',
     anesthesia: 'Según protocolo elegido',
     resultado: 'Mejora progresiva de la calidad total de la piel',
+    whoForList: [
+      'Personas con signos globales de cansancio y envejecimiento solar o cronológico.',
+      'Quienes buscan una mejora integral de la textura, tono y firmeza de la piel.',
+      'Quienes desean un protocolo personalizado adaptado a múltiples necesidades faciales.'
+    ],
+    safetyPrecautions: [
+      'Sujeto a valoración obligatoria según las tecnologías combinadas.',
+      'Evitar el uso de retinoides u otros ingredientes de descamación 3 días antes.',
+      'Es indispensable el uso de protector solar SPF 30+ diario en casa.'
+    ],
     faq: [
       {
         question: '¿En qué consiste el protocolo de rejuvenecimiento integral?',
@@ -284,13 +354,23 @@ const customDetails = {
     ]
   },
   'tratamiento-acne': {
-    whatIsBody: 'El Tratamiento de Acné es un protocolo higiénico y calmante diseñado específicamente para equilibrar las pieles propensas a brotes o imperfecciones constantes. Integra agentes purificantes, activos seborreguladores y tecnologías de luz estimulante para limpiar en profundidad los poros obstruidos, bajar el aspecto irritado y prevenir marcas residuales.',
+    whatIsBody: 'El Tratamiento de Acné es un protocolo higiénico y calmante diseñado específicamente para equilibrar las pieles propensas a brotes o imperfecciones constantes. Integra agentes purificantes, activos seborreguladores y tecnologías de luz estimulante para limpiar en profundidad los poros obstruidos, atenuar la apariencia irritada y prevenir marcas residuales.',
     problemContextHeadline: 'EL CICLO INFLAMATORIO Y CONGESTIÓN SEBÁCEA',
-    problemContextBody: 'La sobreproducción de grasa natural, unida a la hiperqueratosis folicular, crea el entorno propicio para brotes recurrentes e inflamaciones cutáneas incómodas. Tratar la piel con delicadeza pero con gran precisión clínica ayuda a despejar impurezas, controlar el brillo graso y restaurar la claridad y confianza cutánea.',
+    problemContextBody: 'La sobreproducción de grasa natural, unida a la acumulación de células muertas en la entrada del poro, crea el entorno propicio para brotes recurrentes e inflamaciones cutáneas incómodas. Tratar la piel con delicadeza pero con gran precisión ayuda a despejar impurezas, controlar el brillo graso y restaurar la claridad cutánea.',
     duration: '60 min',
     application: 'Cabina / Purificación',
     anesthesia: 'No requiere',
-    resultado: 'Reducción de imperfecciones y piel equilibrada',
+    resultado: 'Reducción de imperfecciones and piel equilibrada',
+    whoForList: [
+      'Personas con imperfecciones recurrentes, poros congestionados y brillo graso visible.',
+      'Quienes buscan calmar la apariencia enrojecida e inflamada de su cutis.',
+      'Pieles jóvenes y adolescentes que deseen establecer una higiene cutánea correcta.'
+    ],
+    safetyPrecautions: [
+      'No se realizan extracciones sobre lesiones severamente inflamadas o infectadas.',
+      'Evitar manipular la piel o pellizcar brotes en casa para prevenir marcas.',
+      'Suspender el uso de exfoliantes abrasivos caseros tras el protocolo.'
+    ],
     faq: [
       {
         question: '¿La limpieza de acné me va a dejar más brotes?',
@@ -315,13 +395,23 @@ const customDetails = {
     ]
   },
   'manchas-cicatrices': {
-    whatIsBody: 'El tratamiento para Manchas y Cicatrices es un protocolo especializado que asocia terapias exfoliantes, activos despigmentantes y técnicas de bioestimulación de relieve. Su finalidad es unificar el tono cutáneo desvaído y atenuar la apariencia estética de las cicatrices por acné o traumatismos menores, apoyando la textura lisa original.',
+    whatIsBody: 'El tratamiento para Manchas y Cicatrices es un protocolo especializado que asocia agentes exfoliantes suaves, activos unificadores del tono y técnicas de estimulación de relieve. Su finalidad es suavizar la apariencia estética de las cicatrices residuales y atenuar las manchas causadas por el sol, devolviendo la uniformidad al rostro.',
     problemContextHeadline: 'DISCROMÍAS Y TEXTURA CRATERIFORME EN LA PIEL',
-    problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas permanentes tras imperfecciones curadas alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación regeneradora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
+    problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas permanentes tras imperfecciones alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación renovadora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
     duration: '50 - 60 min',
     application: 'Cabina / Focalizado',
     anesthesia: 'Según protocolo sugerido',
     resultado: 'Tono visiblemente más homogéneo y relieve suavizado',
+    whoForList: [
+      'Personas con hiperpigmentaciones solares o tono irregular en el rostro.',
+      'Quienes desean suavizar la textura de marcas superficiales dejadas por imperfecciones.',
+      'Quienes buscan devolver luminosidad y claridad al cutis de forma gradual.'
+    ],
+    safetyPrecautions: [
+      'Uso obligatorio de protector solar SPF 30+ cada 4 horas tras la sesión.',
+      'Evitar la exposición directa al sol o cámaras de bronceado durante el ciclo.',
+      'Suspender el uso de ácidos fuertes en casa 3 días antes y después.'
+    ],
     faq: [
       {
         question: '¿El peeling para manchas oscurece la piel al principio?',
@@ -346,13 +436,23 @@ const customDetails = {
     ]
   },
   'dermabracion-facial': {
-    whatIsBody: 'La Dermabrasión Facial (o Microdermoabrasión con punta de diamante) consiste en una exfoliación física calibrada de las capas más superficiales de la epidermis. Remueve células muertas adheridas de forma precisa al tiempo que realiza una micro-succión que activa el flujo linfático local, favoreciendo suavidad dérmica y vitalidad profundas.',
-    problemContextHeadline: 'LA CASTRACIÓN CUTÁNEA DE LAS CÉLULAS ENVEJECIDAS',
-    problemContextBody: 'El proceso natural de recambio dérmico va perdiendo velocidad, lo que genera que las células muertas se apilen en la capa superficial, obstruyendo tratamientos y apagando el rostro. Un pulido mecánico controlado deja la superficie libre de asperezas y lista para asimilar nutrientes en plenitud.',
+    whatIsBody: 'La Dermabrasión Facial (o Microdermoabrasión con punta de diamante) consiste en una exfoliación física calibrada de las capas más superficiales de la piel. Remueve células muertas adheridas de forma precisa al tiempo que realiza una micro-succión que activa el flujo de drenaje local, favoreciendo suavidad y vitalidad cutáneas.',
+    problemContextHeadline: 'LA REMOCIÓN CUTÁNEA DE LAS CÉLULAS ENVEJECIDAS',
+    problemContextBody: 'El proceso natural de recambio de la piel va perdiendo velocidad, lo que genera que las células muertas se apilen en la capa superficial, obstruyendo tratamientos y apagando el rostro. Un pulido mecánico controlado deja la superficie libre de asperezas y lista para asimilar nutrientes en plenitud.',
     duration: '45 min',
     application: 'Cabina / Mecánica dermoestética',
     anesthesia: 'No requiere',
     resultado: 'Suavidad y textura sedosa desde la primera sesión',
+    whoForList: [
+      'Personas con textura áspera, piel opaca o acumulación de células muertas.',
+      'Quienes buscan suavizar de inmediato la superficie cutánea y refinar poros.',
+      'Ideal como paso previo para optimizar la asimilación de sueros y activos.'
+    ],
+    safetyPrecautions: [
+      'No realizar sobre piel con acné inflamado activo o rosácea severa.',
+      'Evitar el uso de exfoliantes físicos o químicos caseros por 7 días.',
+      'No exponer la zona tratada al sol directo durante las primeras 48 horas.'
+    ],
     faq: [
       {
         question: '¿La punta de diamante raspa la piel de forma dolorosa?',
@@ -377,13 +477,23 @@ const customDetails = {
     ]
   },
   'plasma-frio': {
-    whatIsBody: 'El Plasma Frío es un innovador protocolo que utiliza energía gaseosa ionizada a temperatura ambiente. Al entrar en contacto con el rostro, el plasma ejerce una potente acción purificante y desinfectante del tejido, al tiempo que abre microporos provisionales e impulsa la restauración celular de pieles sensibilizadas o con desequilibrios.',
+    whatIsBody: 'El Plasma Frío es un innovador protocolo que utiliza energía gaseosa ionizada a temperatura ambiente. Al entrar en contacto con el rostro, el plasma ejerce una potente acción purificante y desinfectante del tejido, al tiempo que abre micro-canales provisionales e impulsa la restauración de pieles sensibilizadas o con desequilibrios.',
     problemContextHeadline: 'SENSIBILIDAD, INFLAMACIÓN O BROTES RECURRENTES',
     problemContextBody: 'Muchas pieles reactivas no toleran las exfoliaciones ácidas fuertes o el calor de ciertos láseres, lo que dificulta tratar impurezas o acné. El plasma frío proporciona una alternativa libre de calor que equilibra, desinfecta y estimula la barrera protectora de la piel con total confort.',
     duration: '30 - 45 min',
     application: 'Cabina / Gas ionizado',
     anesthesia: 'No requiere',
     resultado: 'Alivio visible y purificación folicular calmada',
+    whoForList: [
+      'Pieles altamente sensibles, reactivas o con enrojecimiento de barrera.',
+      'Personas con brotes o desequilibrios de grasa que buscan purificar su cutis.',
+      'Quienes desean un protocolo no térmico para favorecer la recuperación.'
+    ],
+    safetyPrecautions: [
+      'No recomendado en caso de implantes electrónicos o marcapasos.',
+      'Evitar la aplicación de cremas densas o aceites las primeras 6 horas.',
+      'Asegurar que la zona a tratar esté libre de lesiones abiertas graves.'
+    ],
     faq: [
       {
         question: '¿Qué se siente durante la sesión de plasma frío?',
@@ -408,13 +518,23 @@ const customDetails = {
     ]
   },
   'carboxiterapia-facial': {
-    whatIsBody: 'La Carboxiterapia Facial se basa en la aplicación estética controlada de dióxido de carbono medicinal (CO2). Este flujo genera un incremento súbito de oxígeno local (Efecto Bohr), aumentando la microcirculación tisular, eliminando toxinas retenidas e impulsando el soporte celular profundo.',
+    whatIsBody: 'La Carboxiterapia Facial es un protocolo avanzado que utiliza la aplicación controlada de dióxido de carbono de grado cosmético. Este proceso activa la oxigenación natural de la piel desde el interior, aumentando de forma inmediata la microcirculación local, facilitando la desinflamación del rostro y aportando un aspecto visiblemente fresco y descansado.',
     problemContextHeadline: 'MICROCIRCULACIÓN DEFICIENTE Y ASPECTO CONGESTIONADO',
-    problemContextBody: 'La mala oxigenación en áreas frágiles del rostro, como la órbita ocular u óvalo de la mandíbula, produce ojeras marcadas, retención de líquidos y pérdida de brillo saludable. La carboxiterapia estimula de forma activa la red vascular del cutis para un drenaje revitalizador inmediato.',
+    problemContextBody: 'La mala oxigenación en áreas frágiles del rostro, como la órbita ocular u óvalo de la mandíbula, produce ojeras marcadas, retención de líquidos y pérdida de brillo saludable. Este protocolo estimula de forma activa la red vascular del cutis para un drenaje y revitalización inmediatos.',
     duration: '30 - 40 min',
     application: 'Cabina / Oxigenación tisular',
     anesthesia: 'No requiere',
     resultado: 'Piel desinflamada y contornos revitalizados',
+    whoForList: [
+      'Personas con ojeras oscuras o aspecto cansado en la zona de la mirada.',
+      'Quienes buscan mejorar la microcirculación y desinflamar el rostro de forma natural.',
+      'Quienes deseen un soporte no invasivo contra la retención de líquidos facial.'
+    ],
+    safetyPrecautions: [
+      'No recomendado en caso de infecciones activas en la zona facial.',
+      'Evitar masajes fuertes o fricción en el rostro durante las primeras 12 horas.',
+      'Posponer en caso de condiciones circulatorias graves no controladas.'
+    ],
     faq: [
       {
         question: '¿La carboxiterapia facial se aplica con agujas dolorosas?',
@@ -441,13 +561,23 @@ const customDetails = {
 
   // --- CORPORALES ---
   'lipo-360': {
-    whatIsBody: 'El protocolo estético de Lipo 360 en Derma.M es un sistema de acompañamiento y moldeo del contorno abdominal, costados y espalda. Combina terapias no invasivas diseñadas para mejorar la firmeza cutánea, potenciar el drenaje circulatorio e incentivar la correcta adhesión de los tejidos cutáneos.',
+    whatIsBody: 'El protocolo estético de Lipo 360 es un sistema de acompañamiento manual y moldeo del contorno de la cintura, abdomen y espalda. Combina técnicas de masaje suave y drenaje linfático superficial diseñadas para promover la firmeza de la piel y facilitar la desinflamación corporal tras variaciones de peso.',
     problemContextHeadline: 'IRREGULARIDAD DE CONTORNOS Y PÉRDIDA DE ARMONÍA CORPORAL',
-    problemContextBody: 'El cuerpo acumula de forma caprichosa ciertos volúmenes grasos o líquido intersticial difíciles de tratar solo con dieta. Un protocolo estético estructurado favorece la remodelación global del contorno para suavizar relieves y potenciar una silueta más equilibrada.',
+    problemContextBody: 'La acumulación de líquidos transitorios y la pérdida de elasticidad en la zona media y espalda dificultan lucir un contorno definido. El estímulo manual continuo promueve la retracción cutánea y la circulación de líquidos para un contorno más firme.',
     duration: '60 - 90 min',
     application: 'Cabina / Corporal',
     anesthesia: 'No requiere',
     resultado: 'Silueta más moldeada y contornos más definidos',
+    whoForList: [
+      'Personas que buscan moldear y desinflamar la zona del abdomen, costados y espalda.',
+      'Quienes desean un acompañamiento manual pos-variación de peso para tensar la piel.',
+      'Quienes buscan mejorar la definición de su silueta de forma cómoda e higiénica.'
+    ],
+    safetyPrecautions: [
+      'No apto en caso de inflamaciones agudas de la pared abdominal o hernias no tratadas.',
+      'Evitar masajes de alta presión sobre la zona si hay dolor agudo.',
+      'Sujeto a valoración de las condiciones circulatorias previas.'
+    ],
     faq: [
       {
         question: '¿Cuándo puedo iniciar los masajes de Lipo 360?',
@@ -472,13 +602,23 @@ const customDetails = {
     ]
   },
   'levantamiento-gluteos': {
-    whatIsBody: 'El Levantamiento de Glúteos consiste en un conjunto de técnicas manuales y aparatología estimulante enfocadas en reafirmar, tonificar y realzar la silueta glútea. Combina drenaje local, estimulación con copas dermoestéticas y corrientes reafirmantes para aportar turgencia y definición.',
+    whatIsBody: 'Este protocolo combina técnicas manuales y copas de succión pulsada para realzar y reafirmar la silueta glútea. Nuestro estándar de vacío intermitente estimula la microcirculación local y tonifica los tejidos de forma cómoda, garantizando una piel firme y libre de marcas o hematomas molestos.',
     problemContextHeadline: 'PÉRDIDA DE VOLUMEN Y FLACIDEZ EN LA ZONA POSTERIOR',
-    problemContextBody: 'Factores sedentarios o cambios de peso bruscos debilitan las fibras de sostén de los tejidos glúteos de forma progresiva. El tratamiento de glúteos ayuda a modelar la forma, activar la circulación muscular local y devolver un aspecto más elevado y tonificado.',
+    problemContextBody: 'La falta de tono cutáneo y la ralentización circulatoria local aplanan la silueta y opacan la textura de la piel glútea. La tecnología de succión rítmica y pulsada oxigena las células en profundidad, devolviendo volumen visual, firmeza y suavidad al tejido.',
     duration: '60 min',
     application: 'Cabina / Aparatología y drenaje',
     anesthesia: 'No requiere',
     resultado: 'Sensación de firmeza y apariencia estilizada',
+    whoForList: [
+      'Personas que buscan tonificar y realzar de forma visible la silueta glútea.',
+      'Quienes desean alisar la textura y mejorar la firmeza de la piel en esa zona.',
+      'Quienes buscan un protocolo cómodo libre de morados e irritaciones severas.'
+    ],
+    safetyPrecautions: [
+      'No aplicar directamente sobre zonas con implantes de glúteos recientes o rellenos.',
+      'Evitar en caso de fragilidad capilar extrema o venas varicosas en la zona.',
+      'No recomendado sobre lesiones cutáneas activas o eccemas.'
+    ],
     faq: [
       {
         question: '¿La succión con copas en los glúteos causa flacidez?',
@@ -503,13 +643,23 @@ const customDetails = {
     ]
   },
   'marcacion-abdominal': {
-    whatIsBody: 'La Marcación Abdominal en Derma.M asocia tecnologías turgentes de alta frecuencia y técnicas de masaje estético para realzar visualmente la definición natural de las líneas del abdomen. Ideal para esculpir de forma localizada, potenciar la firmeza de la dermis y atenuar acúmulos grasos mínimos.',
+    whatIsBody: 'Nuestro protocolo de marcación abdominal combina electroestimulación muscular de alta intensidad para tonificar las fibras del abdomen con radiofrecuencia superficial que tensa la piel. Esta doble acción ayuda a definir los contornos musculares y evitar la flacidez de forma 100% no invasiva y cómoda.',
     problemContextHeadline: 'DIFICULTAD PARA VISUALIZAR EL TONO RECTO ABDOMINAL',
-    problemContextBody: 'Incluso manteniendo hábitos saludables y actividad física regular, una pequeña capa de líquido o grasa puede opacar la estética de las líneas abdominales. Ofrecemos asistencia no invasiva específica para desinflar la zona y realzar la silueta natural.',
+    problemContextBody: 'A pesar del ejercicio, a veces la piel abdominal pierde turgencia y las fibras musculares carecen de la estimulación necesaria para marcar definición. El enfoque de doble acción fortalece las fibras y tensa la piel de forma simultánea.',
     duration: '50 - 75 min',
     application: 'Cabina / Definición no invasiva',
     anesthesia: 'No requiere',
     resultado: 'Definición visual y firmeza en la zona tratada',
+    whoForList: [
+      'Personas con bajo porcentaje de grasa que desean acentuar la definición abdominal.',
+      'Quienes buscan tonificar la musculatura abdominal sin ejercicio de alto impacto.',
+      'Personas que desean combatir la flacidez cutánea superficial en el abdomen.'
+    ],
+    safetyPrecautions: [
+      'Contraindicado si tienes marcapasos o implantes metálicos en la zona abdominal.',
+      'No apto en caso de sospecha de hernias o diástasis abdominal severa sin evaluar.',
+      'No recomendado si estás embarazada o en proceso de recuperación de cirugía abdominal reciente.'
+    ],
     faq: [
       {
         question: '¿Se sienten calambres dolorosos durante la sesión?',
@@ -534,13 +684,23 @@ const customDetails = {
     ]
   },
   'hifu-corporal': {
-    whatIsBody: 'El HIFU Corporal utiliza ondas focalizadas de ultrasonido de alta intensidad direccionadas hacia las capas más profundas de la grasa y la dermis corporal. Provoca una contracción selectiva a nivel celular para modelar perímetros y regenerar el colágeno corporal, combatiendo la flacidez flácida estructural.',
+    whatIsBody: 'El HIFU Corporal es un protocolo estético avanzado que utiliza energía de ultrasonido focalizada de alta intensidad. Actúa de forma controlada sobre los tejidos corporales profundos para promover la tensión y firmeza de la piel de forma progresiva, ideal para modelar contornos sin procesos quirúrgicos.',
     problemContextHeadline: 'FLACIDEZ INSTALADA EN ABDOMEN, MUSLOS O BRAZOS',
-    problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo desde adentro, sin reposo postoperatorio.',
+    problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo desde adentro, sin reposo posoperatorio.',
     duration: '60 - 90 min',
     application: 'Cabina / Ultrasonido profundo',
     anesthesia: 'No requiere',
     resultado: 'Reducción de flacidez corporal progresiva',
+    whoForList: [
+      'Personas con flacidez corporal moderada en brazos, abdomen o muslos.',
+      'Quienes desean modelar zonas específicas sin recurrir a cirugías o inyecciones.',
+      'Quienes buscan un protocolo de soporte corporal profundo y progresivo.'
+    ],
+    safetyPrecautions: [
+      'No apto en caso de implantes metálicos o dispositivos activos en la zona.',
+      'Evitar masajes o presiones fuertes en el área tratada por 5 días.',
+      'Sujeto a medición de pliegue graso para confirmar idoneidad.'
+    ],
     faq: [
       {
         question: '¿El HIFU corporal quema la piel o daña los nervios?',
@@ -565,13 +725,23 @@ const customDetails = {
     ]
   },
   'corrientes-rusas': {
-    whatIsBody: 'El tratamiento de Corrientes Rusas emplea electroestimulación de frecuencia media regulable. Emite impulsos eléctricos controlados directo a la masa muscular profunda para generar una contracción involuntaria, tónica e isométrica. Esto asiste la definición del contorno, tonificación y drenaje del músculo.',
+    whatIsBody: 'El tratamiento de Corrientes Rusas emplea electroestimulación de frecuencia media regulable. Emite impulsos controlados dirigidos a grupos musculares seleccionados para generar contracciones rítmicas. Esto asiste en la definición del contorno, tonificación y drenaje estético del músculo de forma cómoda.',
     problemContextHeadline: 'FALTA DE TONO MUSCULAR Y ASISTENCIA REAFIRMANTE',
     problemContextBody: 'La inactividad o debilidad en grupos musculares específicos, como glúteos o abdomen, complica obtener una apariencia tónica o firme mediante ejercicio regular únicamente. Las corrientes rusas incrementan el trabajo de la fibra muscular, complementando tu rutina.',
     duration: '45 min',
     application: 'Cabina / Electroestimulación',
     anesthesia: 'No requiere',
     resultado: 'Tonificación, drenaje y activación profunda',
+    whoForList: [
+      'Personas que desean complementar su rutina de ejercicio y definir zonas rebeldes.',
+      'Quienes buscan elevar y tonificar glúteos o firmeza en el abdomen.',
+      'Quienes desean mejorar la circulación y drenaje local mediante contracción muscular.'
+    ],
+    safetyPrecautions: [
+      'Contraindicado si posees marcapasos o implantes metálicos en las áreas a tratar.',
+      'No aplicar sobre abdomen en personas embarazadas o con sospecha de embarazo.',
+      'No recomendado si sufres de várices inflamadas o trombosis en la zona.'
+    ],
     faq: [
       {
         question: '¿Las corrientes rusas dan descargas o corrientazos dolorosos?',
@@ -596,13 +766,23 @@ const customDetails = {
     ]
   },
   'estrias-celulitis': {
-    whatIsBody: 'Este protocolo multidimensional asocia aparatología térmica, masoterapia drenante y activos de renovación epidérmica. Diseñado con rigor dermoestético, combate de forma sinérgica la acumulación de adipocitos (celulitis) y estimula el relleno natural de colágeno en estrías cutáneas para restaurar una textura lisa.',
+    whatIsBody: 'Este protocolo multidimensional asocia tecnologías de estimulación térmica, técnicas de masaje y activos de renovación cutánea. Su finalidad es combatir de forma sinérgica la apariencia de la celulitis (piel de naranja) y estimular la elasticidad natural en zonas con estrías para recuperar una textura suave.',
     problemContextHeadline: 'TEXTURA IRREGULAR Y MARCAS DE ESTIRAMIENTO DÉRMICO',
-    problemContextBody: 'La acumulación localizada de toxinas o la rotura de fibras elásticas por cambios volumétricos dejan relieves con aspecto de piel de naranja o líneas cicatrizales finas (estrías). Abordar este desafío desde la circulación profunda y reestructuración dérmica es clave para alisar la zona.',
+    problemContextBody: 'La acumulación localizada de líquidos o el estiramiento rápido de los tejidos dejan relieves con aspecto de piel de naranja o líneas delgadas visibles (estrías). Abordar este desafío desde la circulación superficial y reestructuración cutánea es clave para alisar la zona.',
     duration: '60 min',
     application: 'Cabina / Enfoque combinado',
     anesthesia: 'No requiere',
     resultado: 'Suavizado progresivo de marcas y relieves corporales',
+    whoForList: [
+      'Personas que buscan suavizar la apariencia de hoyuelos o piel de naranja.',
+      'Quienes desean mejorar la elasticidad y disimular la textura de las estrías corporales.',
+      'Quienes buscan un protocolo no invasivo para atenuar relieves y mejorar la textura cutánea.'
+    ],
+    safetyPrecautions: [
+      'Evitar la exposición solar directa sobre la zona tratada durante las siguientes 48 horas.',
+      'No aplicar exfoliantes fuertes en casa por una semana.',
+      'Aplicar protector solar corporal de amplio espectro SPF 30+ diariamente.'
+    ],
     faq: [
       {
         question: '¿Este protocolo elimina las estrías blancas por completo?',
@@ -627,17 +807,27 @@ const customDetails = {
     ]
   },
   'carboxiterapia-corporal': {
-    whatIsBody: 'La Carboxiterapia Corporal utiliza micro-inyecciones de CO2 medicinal para tratar la piel de naranja, acumulación grasa localizada y flacidez corporal. Al mejorar intensamente la oxigenación y circulación capilar, asiste al cuerpo en sus procesos naturales de eliminación linfática adiposa.',
+    whatIsBody: 'La Carboxiterapia Corporal utiliza la aplicación controlada de CO2 cosmético para mejorar la apariencia de la piel de naranja, la pesadez en las extremidades y la falta de firmeza corporal. Al activar la oxigenación y el flujo circulatorio superficial, asiste al cuerpo en sus procesos naturales de drenaje.',
     problemContextHeadline: 'CONGESTIÓN EN TEJIDOS Y GRASA FOCALIZADA',
-    problemContextBody: 'Una microcirculación deficiente favorece la retención de agua y entorpece la correcta eliminación de depósitos lipídicos en zonas Rebeldes. El suministro estético de CO2 reactiva de inmediato la microcirculación para oxigenar las fibras y alisar relieves.',
+    problemContextBody: 'Una microcirculación deficiente favorece la retención de agua y la falta de tono en zonas rebeldes. El suministro estético de CO2 reactiva de inmediato la oxigenación para dar mayor tersura y alisar relieves.',
     duration: '35 - 50 min',
     application: 'Cabina / Estética de reflujo CO2',
     anesthesia: 'No requiere',
     resultado: 'Alisado de la piel de naranja y mejor microcirculación',
+    whoForList: [
+      'Personas con retención de líquidos o celulitis visible en piernas y glúteos.',
+      'Quienes desean suavizar la textura irregular y mejorar la firmeza corporal.',
+      'Quienes buscan un protocolo de drenaje y oxigenación corporal efectivo.'
+    ],
+    safetyPrecautions: [
+      'Evitar realizar ejercicio físico intenso las siguientes 4 horas.',
+      'No tomar baños de inmersión caliente, piscina o sauna el día de la sesión.',
+      'Sujeto a valoración circulatoria general.'
+    ],
     faq: [
       {
         question: '¿Es peligroso que el gas de carboxiterapia quede en mi cuerpo?',
-        answer: 'No. El gas CO2 de grado médico es inofensivo y se absorbe por completo de forma natural en un lapso de 1 a 3 horas, eliminándose al respirar.'
+        answer: 'No. El gas CO2 de grado profesional cosmético es inofensivo y se absorbe por completo de forma natural en un lapso de 1 a 3 horas, eliminándose de manera natural.'
       },
       {
         question: '¿Qué es la sensación de crujido en la piel después?',
@@ -658,13 +848,23 @@ const customDetails = {
     ]
   },
   'maderoterapia-corporal': {
-    whatIsBody: 'La maderoterapia corporal es una técnica manual depurada basada en masajes con instrumentos esculpidos en madera noble de pino u otras maderas terapéuticas. Trabaja a través de deslizamientos rítmicos controlados que ejercen presiones anatómicas capaces de movilizar toxinas acumuladas, drenar retención de líquidos y asistir al moldeo de contornos.',
-    problemContextHeadline: 'RETENCIÓN DE LÍQUIDOS, TOXINAS Y TENSIÓN ACUMULADA',
-    problemContextBody: 'La pesadez y las irregularidades en la textura del cuerpo derivan habitualmente de una acumulación excesiva de linfa obstruida o cansancio circulatorio. Los de estímulos anatómicos de madera liberan contracturas del tejido, dinamizan el flujo de drenaje corporal y aportan contornos fluidos.',
+    whatIsBody: 'La maderoterapia corporal es una técnica manual depurada basada en masajes con instrumentos esculpidos en madera noble de pino. Trabaja a través de deslizamientos rítmicos controlados que ejercen presiones anatómicas capaces de favorecer la circulación, drenar la retención de líquidos y asistir al moldeo de contornos.',
+    problemContextHeadline: 'RETENCIÓN DE LÍQUIDOS Y TENSIÓN ACUMULADA',
+    problemContextBody: 'La pesadez y las irregularidades en la textura del cuerpo derivan habitualmente de una acumulación excesiva de líquidos o cansancio circulatorio. Los estímulos anatómicos de madera liberan la tensión del tejido, dinamizan el flujo de drenaje corporal y aportan contornos fluidos.',
     duration: '50 - 60 min',
     application: 'Cabina / Manual / Maderas',
     anesthesia: 'No requiere',
     resultado: 'Drenaje inmediato, ligereza corporal y sensación relajante',
+    whoForList: [
+      'Personas con retención de líquidos acumulados o sensación de pesadez corporal.',
+      'Quienes desean un protocolo manual natural para moldear cintura, caderas y piernas.',
+      'Quienes buscan un masaje relajante y descontracturante corporal profundo.'
+    ],
+    safetyPrecautions: [
+      'No recomendado sobre zonas con várices inflamadas expuestas.',
+      'Evitar si se presentan infecciones activas en la piel corporal.',
+      'Sujeto a presión moderada personalizada según sensibilidad capilar.'
+    ],
     faq: [
       {
         question: '¿La maderoterapia corporal debe dejar morados para funcionar?',
@@ -691,13 +891,23 @@ const customDetails = {
 
   // --- LÁSER Y LUZ ---
   'depilacion-laser': {
-    whatIsBody: 'La Depilación Láser es un procedimiento de eliminación progresiva del vello corporal y facial fundado en el principio de fototermólisis selectiva. La luz emitida por el cabezal viaja canalizada por la melanina del vello hasta convertir su energía en calor, inhabilitando progresivamente el folículo piloso sin alterar la dermis sana circundante.',
-    problemContextHeadline: 'EL DESAFÍO DEL VELLO CORPORAL NO DESEADO Y LA FOLICULITIS',
-    problemContextBody: 'El afeitado tradicional o la cera convencional irritan repetidamente los poros, provocando vellos enconados (foliculitis), aspereza crónica y hiperpigmentación folicular molesta. El láser ofrece una vía definitiva que refina la textura de la piel volviéndola sedosa y libre de vello de forma gradual.',
+    whatIsBody: 'La Depilación Láser es un procedimiento de eliminación progresiva del vello corporal y facial fundado en el principio de fototermólisis selectiva. La luz emitida por el cabezal viaja canalizada por el pigmento del vello hasta atenuar el folículo de forma gradual, logrando una piel suave y libre de vello sin alterar los tejidos circundantes.',
+    problemContextHeadline: 'EL DESAFÍO DEL VELLO CORPORAL NO DESEADO Y LA IRRITACIÓN',
+    problemContextBody: 'El afeitado tradicional o la cera convencional irritan repetidamente los poros, provocando vellos encarnados, aspereza crónica y manchas oscuras. El láser ofrece una vía de cuidado que refina la textura de la piel volviéndola sedosa y libre de vello de forma gradual.',
     duration: '20 - 60 min (según zona)',
     application: 'Cabina / Tecnología láser de vanguardia',
     anesthesia: 'No requiere (incluye frío integrado)',
     resultado: 'Reducción notable del vello sesión tras sesión',
+    whoForList: [
+      'Personas que buscan una reducción progresiva y duradera del vello facial o corporal.',
+      'Quienes sufren de poros irritados o vellos encarnados por métodos tradicionales.',
+      'Todo tipo de piel, seleccionando los parámetros adecuados para máxima seguridad.'
+    ],
+    safetyPrecautions: [
+      'No exponer al sol directo la zona tratada por 7 días antes y después de la sesión.',
+      'Venir a la cita con la zona rasurada al ras del día anterior (evitar cera o pinzas).',
+      'Aplicar protector solar SPF 30+ o superior de forma continua.'
+    ],
     faq: [
       {
         question: '¿La depilación láser corporal es dolorosa?',
@@ -722,13 +932,23 @@ const customDetails = {
     ]
   },
   ipl: {
-    whatIsBody: 'El IPL (Luz Pulsada Intensa) es una terapia lumínica versátil encargada de acompañar la unificación general del cutis y cuerpo. Trabaja emitiendo un espectro amplio de longitudes de onda capaces de atenuar de forma selectiva imperfecciones vasculares locales y acumulaciones irregulares de melanina (manchas solares), además de incentivar el rejuvenecimiento dérmico.',
+    whatIsBody: 'El IPL (Luz Pulsada Intensa) es una terapia lumínica versátil encargada de acompañar la unificación general del tono del rostro y cuerpo. Trabaja emitiendo un espectro amplio de longitudes de onda capaces de atenuar de forma selectiva enrojecimientos superficiales y acumulaciones irregulares de pigmento (manchas solares), además de incentivar la luminosidad de la piel.',
     problemContextHeadline: 'DAÑO SOLAR, MANCHAS EN LA EDAD Y TONO DISCRÓMICO',
-    problemContextBody: 'La acumulación acumulada de radiación UV da paso a pecas solares marcadas, enrojecimientos capilares finos y apagamiento visual crónico de la piel. El tratamiento por pulsación lumínica rompe los pigmentos focales oscuros y promueve una unificación global en pocas sesiones.',
+    problemContextBody: 'La acumulación de radiación UV da paso a pecas solares marcadas, rojeces superficiales finas y opacidad en la piel. El tratamiento por pulsación lumínica rompe los pigmentos focales oscuros y promueve una unificación global en pocas sesiones.',
     duration: '40 - 50 min',
     application: 'Cabina / Luz Pulsada de Alta Gama',
     anesthesia: 'No requiere',
     resultado: 'Piel más uniforme, luminosa y con menos pigmentaciones visibles',
+    whoForList: [
+      'Personas con manchas causadas por el sol o enrojecimiento superficial persistente.',
+      'Quienes desean unificar el tono y aportar luminosidad a rostro, cuello o escote.',
+      'Quienes buscan un protocolo rápido con mínimo tiempo de recuperación.'
+    ],
+    safetyPrecautions: [
+      'Es obligatorio evitar la exposición solar directa por 14 días posteriores.',
+      'Uso estricto de protector solar de amplio espectro SPF 30+ cada 4 horas.',
+      'No recomendado si has bronceado tu piel recientemente (esperar 4 semanas).'
+    ],
     faq: [
       {
         question: '¿El IPL sirve para quitar las manchas de sol de los brazos?',
@@ -753,13 +973,23 @@ const customDetails = {
     ]
   },
   'co2-laser': {
-    whatIsBody: 'El Láser CO2 Fraccionado es un estándar estético de primer nivel para la renovación profunda de la epidermis. Emplea un haz de luz infrarroja dividida en miles de puntos microscópicos que retiran de manera controlada una sección fraccional de la capa superficial cutánea, impulsando una regeneración acelerada de la barrera de colágeno subyacente.',
+    whatIsBody: 'El Láser CO2 Fraccionado es un estándar estético de primer nivel para la renovación de las capas superficiales de la piel. Emplea un haz de luz fraccionada que realiza una vaporización microscópica controlada de la superficie cutánea, impulsando una renovación completa que mejora la textura, el tono y la firmeza general.',
     problemContextHeadline: 'TEXTURA ALTAMENTE IRREGULAR, CICATRICES PROFUNDAS O LINEAS DE EDAD',
-    problemContextBody: 'Tanto marcas cicatrizales atróficas como arrugas finas e irregularidades profundas no logran remediarse con exfoliaciones leves ordinarias. Un protocolo energético fraccionado asiste a la renovación celular profunda de forma idónea, mejorando drásticamente el tono y superficie.',
+    problemContextBody: 'Tanto marcas cicatrizales como arrugas finas e irregularidades de relieve no logran atenuarse con exfoliaciones leves ordinarias. Un protocolo energético fraccionado asiste a la renovación profunda de la piel de forma idónea, mejorando drásticamente el relieve y superficie.',
     duration: '45 - 60 min',
     application: 'Cabina / Láser fraccionado ablativo',
     anesthesia: 'Tópica o según indicación profesional',
     resultado: 'Efecto renovador notable con piel lisa a mediano plazo',
+    whoForList: [
+      'Personas con secuelas de marcas profundas o relieve cutáneo muy irregular.',
+      'Quienes buscan atenuar arrugas finas visibles y recuperar firmeza cutánea.',
+      'Quienes desean una renovación completa de la superficie de la piel con resultados notables.'
+    ],
+    safetyPrecautions: [
+      'Requiere un periodo de recuperación de 3 a 5 días con descamación y enrojecimiento temporal.',
+      'Uso obligatorio de cremas regeneradoras e hidratantes según indicación profesional.',
+      'Evitar la exposición solar y aplicar protector solar SPF 30+ de forma estricta.'
+    ],
     faq: [
       {
         question: '¿Qué downtime o reposo requiere el láser CO2?',
@@ -786,13 +1016,23 @@ const customDetails = {
 
   // --- DENTAL ESTÉTICO ---
   'blanqueamiento-dental': {
-    whatIsBody: 'El Blanqueamiento Dental Estético en Derma.M consiste en un protocolo destinado a aclarar la tonalidad natural del esmalte dental de forma segura. Empleamos un agente aclarador certificado que se activa de forma idónea para diluir manchas intrínsecas e impregnaciones cromáticas de dientes sin desgastar ni alterar el esmalte.',
+    whatIsBody: 'El Blanqueamiento Dental Estético consiste en un protocolo destinado a aclarar de forma segura la tonalidad de las piezas dentales. Empleamos geles aclaradores certificados que actúan diluyendo manchas superficiales y pigmentaciones acumuladas en el esmalte sin desgastar ni alterar la estructura dental.',
     problemContextHeadline: 'OPACIDAD Y PIGMENTACIÓN ADQUIRIDA EN LAS PIEZAS DENTALES',
-    problemContextBody: 'El tabaco, café, té y ciertos pigmentos de alimentos naturales van creando una fina veladura opaca sobre el esmalte, oscureciendo tu sonrisa e influyendo en la percepción de frescura gesticular. El blanqueamiento te devuelve un tono más brillante, blanco y armónico compatible con tu simetría facial.',
+    problemContextBody: 'El tabaco, café, té y ciertos pigmentos de alimentos van creando una película opaca sobre el esmalte, oscureciendo la sonrisa. El blanqueamiento te devuelve un tono más brillante, blanco y armónico compatible con tu simetría facial.',
     duration: '45 - 60 min',
     application: 'Cabina dermoestética dental',
     anesthesia: 'No requiere',
     resultado: 'Dientes visiblemente más claros y brillantes tras el tratamiento',
+    whoForList: [
+      'Personas con esmalte oscurecido o manchado por hábitos de alimentación y tabaco.',
+      'Quienes desean lucir una sonrisa notablemente más brillante y clara de forma rápida.',
+      'Ideal antes de eventos sociales o sesiones fotográficas.'
+    ],
+    safetyPrecautions: [
+      'Requiere seguir una "dieta blanca" (evitar café, té, vino tinto, salsas oscuras) durante 48 horas.',
+      'No recomendado si presentas caries activas o sensibilidad extrema sin tratar.',
+      'Sujeto a evaluación previa del esmalte.'
+    ],
     faq: [
       {
         question: '¿El blanqueamiento dental estético desgasta el esmalte?',
@@ -817,13 +1057,23 @@ const customDetails = {
     ]
   },
   'limpieza-dental': {
-    whatIsBody: 'La Limpieza Dental Estética es un protocolo de mantenimiento e higiene gesticular en profundidad. Consiste en la eliminación de cálculo duro (sarro acumulado) y biopelícula blanda para recuperar un esmalte limpio, pulido y fresco mediante instrumental de ultrasonido preciso y pulidores específicos.',
+    whatIsBody: 'La Limpieza Dental Estética es un protocolo de mantenimiento e higiene profunda. Consiste en la remoción de placa y sarro acumulados para recuperar un esmalte limpio, pulido y fresco mediante instrumental ultrasónico suave y copas de pulido estético.',
     problemContextHeadline: 'ACUMULO DE CÁLCULO E INFLAMACIÓN GINGIVAL DISCRETA',
-    problemContextBody: 'El cepillado doméstico regular no logra retirar por completo el sarro duro calcificado en el cuello de las piezas dentales o entre espacios interproximales profundos. Una limpieza experta remueve acumulaciones, puliendo la sonrisa y regalando una profunda sensación de ligereza y frescor bucal.',
+    problemContextBody: 'El cepillado doméstico regular no logra retirar por completo el sarro calcificado en el cuello de las piezas dentales o entre espacios interproximales. Una limpieza experta remueve estas acumulaciones, puliendo la sonrisa y regalando una profunda sensación de ligereza y frescor bucal.',
     duration: '45 min',
     application: 'Cabina dermoestética dental',
     anesthesia: 'No requiere',
     resultado: 'Sarro removido, esmalte pulido y frescura gingival total',
+    whoForList: [
+      'Personas con acumulación de sarro o manchas superficiales en los dientes.',
+      'Quienes desean mantener una higiene oral óptima y prevenir la opacidad dental.',
+      'Quienes buscan un pulido dental estético y una sensación duradera de frescor.'
+    ],
+    safetyPrecautions: [
+      'No reemplaza los tratamientos periodontales o restauraciones estructurales.',
+      'Se recomienda agendar cada 6 meses como mantenimiento estético e higiénico.',
+      'Evitar alimentos altamente pigmentados las primeras 2 horas posteriores.'
+    ],
     faq: [
       {
         question: '¿La limpieza dental por ultrasonido duele o sangra?',
@@ -850,13 +1100,23 @@ const customDetails = {
 
   // --- CAPILAR ---
   'tratamiento-capilar': {
-    whatIsBody: 'El Tratamiento Capilar enfocado de Derma.M es un protocolo dermoestético de bioestimulación y nutrición del cuero cabelludo. Ofrece una aplicación integral o infusión de péptidos enriquecedores, aminoácidos estructurales y estimulantes locales circulatorios en la raíz folicular para fortalecer visualmente el bulbo capilar y atenuar la fragilidad y pérdida progresiva de densidad del cabello.',
+    whatIsBody: 'El Tratamiento Capilar es un protocolo avanzado de bioestimulación y nutrición del cuero cabelludo. Ofrece la aplicación e infusión de péptidos enriquecedores, aminoácidos estructurales y nutrientes en la raíz folicular para fortalecer el bulbo capilar y atenuar la fragilidad y pérdida progresiva de densidad del cabello.',
     problemContextHeadline: 'CABELLO DEBILITADO, CAÍDA ESTACIONAL Y PÉRDIDA DE VOLUMEN',
-    problemContextBody: 'Tanto desequilibrios de estrés temporales como agentes ambientales agresivos fatigan al folículo piloso, haciendo que el pelo nazca más delgado, frágil o se desprenda prematuramente. El aporte localizado dermoestético nutre y oxigena en profundidad la base para prolongar la calidad y fase de anclaje de la hebra capilar.',
+    problemContextBody: 'El estrés, el cansancio y agentes ambientales agresivos debilitan el folículo, haciendo que el vello capilar nazca más delgado, frágil o se desprenda prematuramente. El aporte localizado nutre y oxigena en profundidad la base para prolongar la calidad y resistencia del cabello.',
     duration: '45 - 60 min',
     application: 'Cabina / Estimulación dermo-capilar',
     anesthesia: 'No requiere o anestesia tópica mínima',
     resultado: 'Fragilidad disminuida y cabello fortalecido progresivamente',
+    whoForList: [
+      'Personas que notan caída de cabello estacional o pérdida progresiva de volumen.',
+      'Quienes desean fortalecer el cabello frágil y delgado desde la raíz.',
+      'Quienes buscan un protocolo de nutrición y estimulación capilar profundo.'
+    ],
+    safetyPrecautions: [
+      'No lavar el cabello ni mojar la cabeza por un mínimo de 12 horas posteriores.',
+      'Evitar el uso de tintes o tratamientos químicos fuertes durante la semana de la sesión.',
+      'No recomendado sobre cuero cabelludo con infecciones o heridas abiertas.'
+    ],
     faq: [
       {
         question: '¿El tratamiento capilar duele o se aplica con agujas?',
@@ -1028,7 +1288,9 @@ const compileTreatments = () => {
           secondaryCta: 'WHATSAPP',
           disclaimer: disclaimer,
           backgroundImage: `${treatmentAssetBase}/cta.jpg`
-        }
+        },
+        whoForList: custom.whoForList || null,
+        safetyPrecautions: custom.safetyPrecautions || null
       };
     });
   });

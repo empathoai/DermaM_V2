@@ -36,7 +36,9 @@ export default function TreatmentDetailPage({ data }) {
     related,
     whatIs,
     problemContext,
-    cta
+    cta,
+    whoForList,
+    safetyPrecautions
   } = data;
 
   // 1. Map breadcrumbs safely (supporting link or to properties)
@@ -85,6 +87,13 @@ export default function TreatmentDetailPage({ data }) {
       title: 'SEGUIMIENTO',
       body: 'Te proporcionamos pautas específicas para prolongar los resultados en casa y agendar tus próximas visitas.'
     }
+  ];
+
+  // Safe fallback list for "Para quién es"
+  const defaultWhoFor = [
+    ideal,
+    'Quienes desean confiar el cuidado de su tejido cutáneo a tecnología de estética avanzada calificada.',
+    'Personas en búsqueda de enfoques higiénicos y dermoprotectores adaptados a sus objetivos personales.'
   ];
 
   return (
@@ -208,18 +217,12 @@ export default function TreatmentDetailPage({ data }) {
             <div className={styles.whoForContentCol}>
               <h2 id="whofor-heading" className={styles.whoForHeadline}>INDICACIONES ESTÉTICAS RECOMENDADAS</h2>
               <ul className={styles.whoForList}>
-                <li className={styles.whoForItem}>
-                  <ListSparkle variant="dark" />
-                  <p className={styles.whoForText}>{ideal}</p>
-                </li>
-                <li className={styles.whoForItem}>
-                  <ListSparkle variant="dark" />
-                  <p className={styles.whoForText}>Quienes desean confiar el cuidado de su tejido cutáneo a aparatología dermoestética calificada.</p>
-                </li>
-                <li className={styles.whoForItem}>
-                  <ListSparkle variant="dark" />
-                  <p className={styles.whoForText}>Personas en búsqueda de enfoques higiénicos y dermoprotectores que no requieran tiempo de descanso ni agujas invasivas profundas.</p>
-                </li>
+                {(whoForList && whoForList.length > 0 ? whoForList : defaultWhoFor).map((item, idx) => (
+                  <li key={idx} className={styles.whoForItem}>
+                    <ListSparkle variant="dark" />
+                    <p className={styles.whoForText}>{item}</p>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -229,7 +232,7 @@ export default function TreatmentDetailPage({ data }) {
       {/* 9. When It Is Not Recommended (Warm Light Surface: #CCC9C1) */}
       <section className={styles.warningSection}>
         <div className={styles.container}>
-          <WarningBox variant="warm" />
+          <WarningBox variant="warm" items={safetyPrecautions} />
         </div>
       </section>
 

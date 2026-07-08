@@ -18,6 +18,7 @@ import Navbar from '../components/layout/Navbar/Navbar';
 import Footer from '../components/layout/Footer/Footer';
 import FAQAccordion from '../components/shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../components/shared/FinalCTA/FinalCTA';
+import HeroMedia from '../components/utils/HeroMedia';
 import styles from './Contacto.module.css';
 import { contactConsentCopy } from '../data/legalPages';
 import { contactFaq } from '../data/contactPage';
@@ -66,6 +67,7 @@ export default function ContactoPage() {
 
   const formattedWhatsAppUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
   const dialPhoneUrl = 'tel:+15612535384';
+  const contactHeroImage = '/assets/images/contact/hero.jpg';
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
@@ -132,6 +134,10 @@ export default function ContactoPage() {
           
           {/* 1. Contact Hero Section */}
           <section className={styles.heroSection} aria-labelledby="contact-hero-heading">
+            <div className={styles.heroBackground} aria-hidden="true">
+              <HeroMedia src={contactHeroImage} alt="" className={styles.heroMedia} />
+            </div>
+            <div className={styles.heroOverlay} aria-hidden="true"></div>
             <div className={styles.heroContainer}>
               <div className={styles.heroContent}>
                 <div className={styles.eyebrowWrapper}>

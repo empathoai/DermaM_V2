@@ -121,8 +121,7 @@
   }
   
   .overviewImage {
-    aspect-ratio: auto;
-    height: 100%;
+    aspect-ratio: 4 / 5;
   }
 }
 

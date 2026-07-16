@@ -68,6 +68,7 @@ export default function ContactoPage() {
   const formattedWhatsAppUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
   const dialPhoneUrl = 'tel:+15612535384';
   const contactHeroImage = '/assets/images/contact/hero.jpg';
+  const contactCtaImage = '/assets/images/contact/cta.jpg';
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
@@ -589,6 +590,7 @@ export default function ContactoPage() {
           <FinalCTA 
             title="¿Lista para dar el siguiente paso?"
             body="Estamos aquí para acompañarte en el camino hacia una piel más sana, dándole un cuidado profesional con propósito."
+            backgroundImage={contactCtaImage}
             primaryCta="Agendar evaluación por WhatsApp"
             primaryLink={formattedWhatsAppUrl}
             variant="dark"

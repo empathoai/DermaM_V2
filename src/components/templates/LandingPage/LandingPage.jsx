@@ -24,6 +24,7 @@ export default function LandingPage({ data }) {
     benefits,
     howItWorks,
     beforeAfter,
+    brandPromise,
     testimonials,
     faq,
     cta
@@ -134,8 +135,8 @@ export default function LandingPage({ data }) {
       )}
 
       {/* 8. Brand Promise Divider */}
-      {beforeAfter && (
-        <BrandDivider text="EL BALANCE PERFECTO ENTRE CIENCIA Y ESTÉTICA NATURAL" image={cta?.backgroundImage || problem?.image} />
+      {brandPromise && (
+        <BrandDivider text={brandPromise} image={cta?.backgroundImage || problem?.image} />
       )}
 
       {/* 9. Testimonials */}

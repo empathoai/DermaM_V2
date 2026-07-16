@@ -82,6 +82,7 @@ export const landingPages = {
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
+    brandPromise: 'RENOVACIÓN PROGRESIVA DESDE TUS PROPIOS COMPONENTES NATURALES',
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
@@ -219,6 +220,7 @@ export const landingPages = {
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
+    brandPromise: 'PURIFICACIÓN PROFUNDA QUE RESPETA EL EQUILIBRIO DE TU PIEL',
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
@@ -356,6 +358,7 @@ export const landingPages = {
       ],
       disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
+    brandPromise: 'CUIDADO PROFESIONAL EN CADA ETAPA DE TU RECUPERACIÓN',
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',

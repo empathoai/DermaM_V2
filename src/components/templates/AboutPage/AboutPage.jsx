@@ -1,4 +1,5 @@
 import React from 'react';
+import useWhatsAppUrl from '../../utils/useWhatsAppUrl';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import PageHero from '../../sections/PageHero/PageHero';
@@ -11,6 +12,7 @@ import styles from './AboutPage.module.css';
 
 export default function AboutPage({ data }) {
   const { sectionReveal, cardStaggerContainer, cardReveal, imageHover, viewportConfig } = useMotionSystem();
+  const whatsappUrl = useWhatsAppUrl();
 
   if (!data) return null;
 
@@ -29,8 +31,6 @@ export default function AboutPage({ data }) {
   } = data;
 
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
 
   return (
     <div className={styles.aboutPage}>

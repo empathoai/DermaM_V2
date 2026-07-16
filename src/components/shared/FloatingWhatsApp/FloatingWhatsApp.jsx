@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import useWhatsAppUrl from '../../utils/useWhatsAppUrl';
 import styles from './FloatingWhatsApp.module.css';
 
 export default function FloatingWhatsApp() {
+  const whatsappUrl = useWhatsAppUrl();
   const [showHelper, setShowHelper] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
 
@@ -26,8 +28,6 @@ export default function FloatingWhatsApp() {
     setIsDismissed(true);
     sessionStorage.setItem('derma_wp_dismissed', 'true');
   };
-
-  const whatsappUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
 
   return (
     <div className={styles.container} id="derma-m-floating-whatsapp">

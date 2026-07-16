@@ -19,11 +19,13 @@ import Footer from '../components/layout/Footer/Footer';
 import FAQAccordion from '../components/shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../components/shared/FinalCTA/FinalCTA';
 import HeroMedia from '../components/utils/HeroMedia';
+import useWhatsAppUrl from '../components/utils/useWhatsAppUrl';
 import styles from './Contacto.module.css';
 import { contactConsentCopy } from '../data/legalPages';
 import { contactFaq } from '../data/contactPage';
 
 export default function ContactoPage() {
+  const formattedWhatsAppUrl = useWhatsAppUrl();
   const siteUrl = import.meta.env.VITE_SITE_URL || '';
   const canonicalUrl = siteUrl ? `${siteUrl}/contacto` : undefined;
 
@@ -65,7 +67,6 @@ export default function ContactoPage() {
     setFormSubmitted(true);
   };
 
-  const formattedWhatsAppUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
   const dialPhoneUrl = 'tel:+15612535384';
   const contactHeroImage = '/assets/images/contact/hero.jpg';
   const contactCtaImage = '/assets/images/contact/cta.jpg';

@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
+import useWhatsAppUrl from '../../utils/useWhatsAppUrl';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA() {
   const { sectionReveal, viewportConfig } = useMotionSystem();
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappUrl = import.meta.env.VITE_WHATSAPP_NUMBER || 'https://wa.link/z7i9vm';
+  const whatsappUrl = useWhatsAppUrl();
 
   return (
     <section className={styles.section} aria-labelledby="cta-heading">

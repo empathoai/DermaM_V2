@@ -31,7 +31,6 @@ export default function LandingPage({ data }) {
   } = data;
 
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappUrl = import.meta.env.VITE_WHATSAPP_NUMBER || 'https://wa.link/z7i9vm';
 
   return (
     <div className={styles.landingPage}>

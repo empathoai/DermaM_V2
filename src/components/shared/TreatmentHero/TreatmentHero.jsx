@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeroMedia from '../../utils/HeroMedia';
+import useWhatsAppUrl from '../../utils/useWhatsAppUrl';
 import styles from './TreatmentHero.module.css';
 
 export default function TreatmentHero({
@@ -12,10 +13,7 @@ export default function TreatmentHero({
   disclaimer
 }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv
-    ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}`
-    : 'https://wa.link/z7i9vm';
+  const whatsappUrl = useWhatsAppUrl();
 
   const [mediaReady, setMediaReady] = useState(!image);
 

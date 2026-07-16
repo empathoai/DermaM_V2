@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useWhatsAppUrl from '../../utils/useWhatsAppUrl';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA({
@@ -16,8 +17,7 @@ export default function FinalCTA({
   compactLegal = false
 }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
+  const whatsappUrl = useWhatsAppUrl();
 
   const href1 = primaryLink || bookingUrl;
   const href2 = secondaryLink || whatsappUrl;

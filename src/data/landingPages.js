@@ -127,6 +127,14 @@ export const landingPages = {
         {
           question: '¿Cuándo se aprecian los resultados finales de vitalidad?',
           answer: 'Aunque notarás un brillo saludable a los pocos días por la hidratación dérmica, el tensado real y la reestructuración profunda de colágeno nuevo se consolidan a partir de los 60 a 90 días.'
+        },
+        {
+          question: '¿Cuál es la diferencia entre PRP y PRF?',
+          answer: 'No son lo mismo, aunque están relacionados. El PRP (Plasma Rico en Plaquetas) es una fracción líquida de tu sangre concentrada en plaquetas. El PRF (Plasma/Fibrina Rica en Plaquetas) usa la misma extracción pero se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En Derma.M combinamos ambos en un solo protocolo, aplicado de forma tópica con Dermapen — no como inyección.'
+        },
+        {
+          question: '¿Qué diferencia hay entre este protocolo y un facial de plasma con microagujado tradicional?',
+          answer: 'El microagujado con plasma tradicional utiliza únicamente PRP. En Derma.M combinamos PRP y PRF en un mismo protocolo tópico con Dermapen, buscando aprovechar tanto la acción inicial del PRP como la liberación más gradual de factores de crecimiento del PRF.'
         }
       ]
     },

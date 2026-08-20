@@ -35,7 +35,11 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - Don't bundle multiple changes into one working pass — one requested item at a time, registered (PROGRESS/DECISIONS/MEMORY) before starting the next.
 
 ## Open questions / things to verify later
-- `docs/` only has `LEGAL_VISUAL_AUDIT_2026.md` — the topic docs referenced in `CLAUDE.md`'s task-routing list (SITE_ARCHITECTURE.md, SECURITY.md, etc.) may not exist yet in this checkout. Confirm before relying on them.
+- `docs/` (gitignored) has grown since the initial checkout: `LEGAL_VISUAL_AUDIT_2026.md`, `SEO_AUDIT_2026.md`, `MEDICAL_COMPLIANCE.md` (added 2026-08-20, see below). Most other topic docs referenced in `CLAUDE.md`'s task-routing list (SITE_ARCHITECTURE.md, SECURITY.md, etc.) still don't exist in this checkout — confirm before relying on them.
+- The user has a separate, older local checkout of this project's `docs/` at `D:\Derma_Content\Website_DermaM_V2\derma.m\docs\` (different machine/drive than this repo's `F:\EmpathoAI-projects\DermaM_Website`) with ~114 files including per-treatment research (`docs/research/intelligence/*`, `docs/research/strategy/*`), a copy knowledge base, and several audit docs beyond what exists here. Check that path before assuming a missing `docs/` file needs to be created from scratch — it may already exist there as real research, not something to invent.
+
+## Medical compliance rules (docs/MEDICAL_COMPLIANCE.md)
+Added 2026-08-20 — copied verbatim (not authored by Claude) from the user's own research at `D:\Derma_Content\Website_DermaM_V2\derma.m\docs\MEDICAL_COMPLIANCE.md`. 8 site-wide rules: no guaranteed-results language, a banned-words list (`"no side effects"`, `"painless"`, `"permanent"`, `"no downtime"`, `"guaranteed"`, `"FDA-approved"`, `"clinically proven"`), a mandatory pre-treatment CTA disclaimer line, always-visible footer disclaimer, real (non-stock) before/after images only, real (non-invented) testimonials only, no diagnosis/cure claims, health-first positioning. Consult this file before writing or approving any treatment/medical copy — this is the canonical source now referenced by `CLAUDE.md`'s task-routing list, not scattered Footer/llms.txt/TreatmentDisclaimer.jsx knowledge. Gitignored (`docs/` is not versioned in this repo), so it must be re-verified present each session rather than assumed from git history.
 - `AGENTS.md` is now just a pointer to `CLAUDE.md` (2026-08-20, see [[decisions]]) — it carries no rule content of its own anymore, don't treat it as a fallback doc.
 
 ---

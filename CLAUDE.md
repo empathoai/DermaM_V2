@@ -119,6 +119,9 @@ Recommended diagnostic flow: `seo-checklist-65` (baseline scorecard) → `seo-au
 
 Like any change on this project, treat SEO skill output as a draft — run it through `superpowers:brainstorming` and get explicit approval before applying anything.
 
+### External reference: SecondBrain wiki
+`F:\OS-EmpathoAI-SecondBrain` is the user's personal wiki (separate repo, outside this project). Consult it for SEO/AEO/GEO background and reference material — the user has validated it aligns with the SEO/GEO/AEO/Local skill suite above. It is a reference source only: read from it as needed, never write to it, and it is not part of this project's protected-files or approval workflow.
+
 ### Gemini integration
 `@google/genai` is a dependency and `.env.example` references `GEMINI_API_KEY`, but no current feature requires it to run the site locally.
 

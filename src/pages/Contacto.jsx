@@ -381,7 +381,7 @@ export default function ContactoPage() {
                       </div>
                       <div className={styles.locDetailItem}>
                         <span className={styles.detailLabel}>Horario</span>
-                        <span className={styles.detailValue}>Atención dermoestética con cita previa</span>
+                        <span className={styles.detailValue}>Lun-Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM</span>
                       </div>
                     </div>
 

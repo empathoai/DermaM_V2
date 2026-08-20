@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Horario real visible en la card de contacto (Contacto.jsx)
+- **Contexto:** derivado de la sesión de 8.7 (JSON-LD geo/horario) — el usuario, al revisar la card visual de contacto, notó que el campo "Horario" mostraba el texto genérico "Atención dermoestética con cita previa" en vez del horario real ya usado en el JSON-LD.
+- **Cambio:** en [Contacto.jsx:384](src/pages/Contacto.jsx:384), reemplazado ese texto por "Lun-Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM" — mismos datos de horario ya confirmados por el usuario y usados en `openingHoursSpecification` de `Home.jsx`.
+- Verificado en browser (`http://localhost:3000/contacto`): el texto aparece correctamente en la sección "SEDE PRINCIPAL".
+- **Nota:** el dato sigue hardcodeado en el componente (no en `src/data/contactPage.js`), siguiendo el patrón preexistente de esa card (dirección/teléfono/email también hardcodeados ahí) — no se refactorizó, fuera de alcance del pedido.
+
 ## 2026-08-20 — SEO backlog ítem 8.7: `geo`/`openingHoursSpecification` en el JSON-LD principal
 - **Contexto:** priorización decidida vía `/llm-council` entre 8.4, 8.7, 2.3 y la auditoría de redirects 301 — el consejo recomendó cerrar primero 8.7 por ser edición aditiva de datos ya empezados (`aggregateRating` agregado en sesión previa), sin tocar routing.
 - **Verificaciones previas (gate del propio consejo, antes de escribir código):** primer intento con coordenadas del iframe de Google Maps embebido en `Contacto.jsx:446` (lat `26.6531589`, lng `-80.0543666` — apuntan a la dirección postal genérica); el usuario luego proveyó el link real del listado de Google Business Profile ("DERMA.M") con coordenadas del pin del negocio (lat `26.6627718`, lng `-80.0558881`), que reemplazaron a las del iframe por ser más precisas (pin real del negocio vs. geocodificación de dirección). Usuario confirmó explícitamente que el `aggregateRating` (4.9★/117 reviews) ya escrito está respaldado por reseñas reales verificables — no se tocó.

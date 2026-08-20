@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Auditoría SEO/GEO/AEO + skills externas de AEO/keyword research
+- Se auditó el sitio completo (Helmet/meta, JSON-LD, robots/sitemap/llms.txt, rutas, E-E-A-T, performance, NAP) contra el checklist de 65 factores y el wiki de GEO/AEO. Resultado volcado en [docs/SEO_AUDIT_2026.md](docs/SEO_AUDIT_2026.md) — backlog priorizado por bloque, cada ítem pendiente de aprobación individual antes de implementarse.
+- Se instalaron dos skills externas (`npx skills add`, aprobadas por el usuario) que faltaban en el wiki/checklist a nivel táctico: `bencium/bencium-marketplace@bencium-aeo` (2.5K installs) y `kostja94/marketing-skills@keyword-research` (1.1K installs), ambas en `.agents/skills/`. Se usaron para escribir la sección 3 de `docs/SEO_AUDIT_2026.md` (estrategia de keyword/AEO para las 3 landing pages destacadas). Ver [[decisions]] 2026-08-20 y `MEMORY.md`.
+- No se tocó ningún archivo de código del sitio en este pase — solo documentación y la instalación de skills.
+
 ## 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO
 - Se agregó una nota en [CLAUDE.md](CLAUDE.md) señalando `F:\OS-EmpathoAI-SecondBrain` como wiki personal del usuario (repo separado, fuera de este proyecto) para consultar material de SEO/AEO/GEO, validado como alineado con el suite de skills SEO/GEO/AEO/Local de este repo. Es solo fuente de lectura — no forma parte del flujo de archivos protegidos/aprobación de este proyecto. Commit [04b94ba](https://github.com/empathoai/DermaM_V2/commit/04b94ba).
 

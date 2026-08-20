@@ -22,6 +22,44 @@ export default function PrfYFibrinaPage() {
         <meta name="twitter:description" content="Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel. Derma.M, West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/landings/prf-y-fibrina/hero.jpg" />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": landingPages.prfYFibrina?.hero?.title?.replace(/\n/g, ' ') || "Plasma Rico en Plaquetas y Fibrina",
+              "description": landingPages.prfYFibrina?.hero?.body || "Bioestimulación cutánea con PRP y Fibrina en Derma.M.",
+              "url": "https://dermamskinhealth.com/prf-y-fibrina",
+              "serviceType": "Aesthetic Treatment",
+              "provider": {
+                "@type": "HealthAndBeautyBusiness",
+                "name": "Derma.M",
+                "url": "https://dermamskinhealth.com",
+                "address": [
+                  {
+                    "@type": "PostalAddress",
+                    "streetAddress": "5707 S Dixie Hwy UNIT D",
+                    "addressLocality": "West Palm Beach",
+                    "addressRegion": "FL",
+                    "postalCode": "33405",
+                    "addressCountry": "US"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": (landingPages.prfYFibrina?.faq?.items || []).map((item) => ({
+                "@type": "Question",
+                "name": item.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": item.answer
+                }
+              }))
+            }
+          ]
+        })}</script>
       </Helmet>
       
       <Navbar />

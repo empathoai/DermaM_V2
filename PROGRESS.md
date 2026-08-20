@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.7 (parcial): agregado aggregateRating al JSON-LD principal
+- **Contexto:** tercera pregunta bloqueante de la sesión de `/llm-council`. Usuario confirmó el rating real de Google: 4.9 sobre 117 reseñas ("DERMA.M · 4.9 · 117 Google reviews · Medical spa in West Palm Beach, Florida").
+- **Cambio:** agregado `"aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "117"}` al nodo `HealthAndBeautyBusiness` en [Home.jsx](src/pages/Home.jsx) (dentro del `@graph`) y en [Contacto.jsx](src/pages/Contacto.jsx) (dentro de `mainEntity`).
+- Verificado en browser: JSON-LD parsea sin errores en ambas páginas, `aggregateRating` presente con los valores correctos.
+- **Ítem marcado "Parcial", no "Hecho":** el hallazgo original de 8.7 también pedía `geo` (coordenadas) y `openingHoursSpecification` — no se pidieron esos datos en este ciclo, quedan pendientes para un próximo ciclo.
+- **Nota para el futuro:** el usuario preguntó por automatizar este número vía la API de Google Business Profile — quedó identificado como un proyecto aparte (no para esta sesión), el valor queda hardcodeado por ahora.
+
 ## 2026-08-20 — docs/MEDICAL_COMPLIANCE.md: sumada sección complementaria de reglas legales de Florida (wiki)
 - **Contexto:** tras cerrar el ítem 4.1 con el doc de copy compliance del usuario, el usuario señaló que la matriz de Florida del wiki externo (descartada antes por cobertura insuficiente por-tratamiento) podía servir igual como complemento — no reemplaza las 8 reglas de copy, agrega otro tipo de información (legal/operativa, no de redacción).
 - **Cambio:** agregada una nueva sección "## Florida Legal & Operational Rules (complementary reference)" a `docs/MEDICAL_COMPLIANCE.md`, copiando textual (sin modificar) solo las subsecciones "Key Rules" y "Claims Framework" del wiki (`florida-healthcare-beauty-advertising-compliance.md`) — delegación médica, director médico requerido, consentimiento informado, retención de historias clínicas, reglas de Meta Ads (pagado/orgánico), framework de evidencia por tipo de claim, y privacidad (HIPAA/FIPA/Meta CAPI). **No** se copió la tabla de matriz por-servicio (sigue sin aplicar, solo 3 de ~25 tratamientos coinciden).

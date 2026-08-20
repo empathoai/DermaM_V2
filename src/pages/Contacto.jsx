@@ -95,6 +95,11 @@ export default function ContactoPage() {
             "name": "Derma.M",
             "telephone": "+15612535384",
             "email": "info@dermamskinhealth.com",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "117"
+            },
             "location": [
               {
                 "@type": "HealthAndBeautyBusiness",

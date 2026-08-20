@@ -48,6 +48,11 @@ export default function Home() {
               "currenciesAccepted": "USD",
               "paymentAccepted": "Cash, Credit Card",
               "medicalSpecialty": "Dermatology",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "117"
+              },
               "location": [
                 {
                   "@type": "HealthAndBeautyBusiness",

@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 5.4 cerrado sin implementar (preconnect/preload/font-display)
+- **Contexto:** se corrió un consejo de 5 advisors (Contrarian, First Principles, Expansionist, Outsider, Executor + revisión entre pares) sobre si mover la fuente Poppins de `@import` en `src/index.css` a `<link>` en `index.html`.
+- **Hallazgo clave:** `&display=swap` ya está presente en el `@import` actual — el problema de "texto invisible" que este ítem busca resolver ya está resuelto. Lo único que quedaba era una ganancia de latencia de conexión sin medir, probablemente de milisegundos.
+- **Decisión del usuario:** dejar como está por ahora, sin ningún cambio de código. Se revisará más adelante con métricas reales (Lighthouse/Core Web Vitals) en vez de suposición.
+- **Sin cambios de código** — solo documentación: decisión agregada a `DECISIONS.md`, ítem 5.4 marcado `Cerrado (no se implementa por ahora)` en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — SEO backlog ítem 2.3 cerrado: no hace falta `hreflang`
 - **Contexto:** 2.3 estaba "Pendiente (decisión)" desde la sesión de 8.7 — bloqueado hasta confirmar si existe un sitio en inglés real detrás de las rutas EN (`/privacy-policy`, `/terms-of-use`, `/tratamientos-disclaimer`).
 - **Confirmado por el usuario:** no existe sitio en inglés. Esas rutas son solo alias de páginas legales, no una traducción completa del sitio.

@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.7 (cierre): `geo`/`openingHoursSpecification` también en Contacto.jsx
+- **Contexto:** al revisar qué seguía en el backlog, se detectó que `docs/SEO_AUDIT_2026.md` tenía 8.7 marcado "Parcial/Pendiente" pero el código ya tenía `geo` y `openingHoursSpecification` resueltos en `Home.jsx` (sesión previa, commit `ef0d6c1`) — el doc había quedado desactualizado. El hallazgo original de 8.7 apuntaba a **dos** archivos (`Home.jsx`, `Contacto.jsx`); `Contacto.jsx` nunca recibió esos campos.
+- **Cambio:** en [Contacto.jsx](src/pages/Contacto.jsx), dentro de `mainEntity.location[0]`, agregados `telephone`, `url`, `geo` (mismas coordenadas del pin real de GBP: lat `26.6627718`/lng `-80.0558881`) y `openingHoursSpecification` (mismo horario que `Home.jsx`) — shape idéntico al de `Home.jsx:56-90`. Sin datos nuevos: se reutilizaron los ya confirmados por el usuario y en uso en `Home.jsx`.
+- Verificado en browser (`http://localhost:3000/contacto`): `JSON.parse` → `mainEntity.location[0]` contiene `geo`/`openingHoursSpecification` con los valores correctos, sin errores de consola, sin cambio visual.
+- Spec breve escrita en `docs/superpowers/specs/2026-08-20-item-8.7-contacto-geo-hours-design.md` (gitignoreado, no commiteado) vía `superpowers:brainstorming`.
+- Marcado `Hecho` 8.7 en `docs/SEO_AUDIT_2026.md` (gitignoreado) — corrige el estado desactualizado.
+
 ## 2026-08-20 — SEO backlog ítem 8.4: JSON-LD `Service`+`FAQPage` en las 3 landing pages destacadas
 - **Contexto:** plan `docs/superpowers/plans/2026-08-20-item-8.4-json-ld-landings.md`, ejecutado con `superpowers:executing-plans`. Cierra el último hallazgo Alta pendiente del Bloque 8.
 - **Cambio 1 (contenido):** agregadas 2 FAQs nuevas de desambiguación PRP/PRF a `landingPages.prfYFibrina.faq.items` en [landingPages.js](src/data/landingPages.js) (de 5 a 7 preguntas) — se renderizan automáticamente en el accordion visible y en el JSON-LD.

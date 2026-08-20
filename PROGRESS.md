@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.8: metadatos completos en LegalResources.jsx — cierre del "Cubo 1"
+- **Contexto:** cuarto y último ítem del "Cubo 1" (batch de 5 fixes mecánicos: 8.5, 8.6, 8.8, 2.1, 2.2 — todos cerrados con este). El `<Helmet>` de [LegalResources.jsx](src/pages/LegalResources.jsx) (ruta `/legal`, confirmada en `routes.jsx`) solo tenía `title` + `description`.
+- **Cambio:** agregados `canonical`, `og:type/title/description/url/image`, `twitter:card/title/description/image`, `robots: index, follow` — mismo patrón que ya usan los demás hubs (`IvTherapy.jsx`, `Capilar.jsx`). Sin JSON-LD nuevo (fuera de alcance del hallazgo original).
+- Verificado en browser: exactamente un `<link rel="canonical">` (`https://dermamskinhealth.com/legal`), `og:url` correcto, `robots` presente, sin errores de consola, sin cambio visual.
+- Marcado `Hecho` 8.8 en `docs/SEO_AUDIT_2026.md` (gitignoreado). Los 5 ítems del Cubo 1 quedan cerrados.
+
 ## 2026-08-20 — SEO backlog ítem 8.6: `Service.url` determinístico en las 5 páginas de tratamiento
 - **Contexto:** tercer ítem del "Cubo 1". Los 5 `[treatment].jsx` (faciales, laser, dental, corporales, capilar) construían `Service.url` del JSON-LD con `` `https://dermamskinhealth.com${window?.location?.pathname || ''}` `` en render — frágil/no determinístico. Cada archivo ya calculaba el mismo valor de forma determinística para su propio `<link rel="canonical">` a partir de `treatment` (`useParams()`) + prefijo de categoría.
 - **Cambio:** reemplazado `window?.location?.pathname` por el mismo template literal que ya usa el canonical de cada archivo — `faciales/${treatment}`, `laser-y-luz/${treatment}`, `dental-estetico/${treatment}`, `corporales/${treatment}`, `capilar/${treatment}`.

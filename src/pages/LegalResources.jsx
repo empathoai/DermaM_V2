@@ -40,6 +40,17 @@ export default function LegalResources() {
       <Helmet>
         <title>Recursos Legales • DERMA.M</title>
         <meta name="description" content="Centro de documentación de cumplimiento legal de DERMA.M. Accede a nuestras políticas de privacidad, términos de uso, y deslindes clínicos." />
+        <link rel="canonical" href="https://dermamskinhealth.com/legal" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Recursos Legales • DERMA.M" />
+        <meta property="og:description" content="Centro de documentación de cumplimiento legal de DERMA.M. Accede a nuestras políticas de privacidad, términos de uso, y deslindes clínicos." />
+        <meta property="og:url" content="https://dermamskinhealth.com/legal" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Recursos Legales • DERMA.M" />
+        <meta name="twitter:description" content="Centro de documentación de cumplimiento legal de DERMA.M. Accede a nuestras políticas de privacidad, términos de uso, y deslindes clínicos." />
+        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <Navbar />

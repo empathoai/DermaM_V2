@@ -22,6 +22,44 @@ export default function LimpiezaFacialPage() {
         <meta name="twitter:description" content="Purificación profunda del rostro con protocolo profesional personalizado. Derma.M, West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/landings/limpieza-facial-profunda/hero.jpg" />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": landingPages.limpiezaFacial?.hero?.title || "Limpieza Facial Profunda",
+              "description": landingPages.limpiezaFacial?.hero?.body || "Limpieza facial profunda en Derma.M.",
+              "url": "https://dermamskinhealth.com/limpieza-facial-profunda",
+              "serviceType": "Aesthetic Treatment",
+              "provider": {
+                "@type": "HealthAndBeautyBusiness",
+                "name": "Derma.M",
+                "url": "https://dermamskinhealth.com",
+                "address": [
+                  {
+                    "@type": "PostalAddress",
+                    "streetAddress": "5707 S Dixie Hwy UNIT D",
+                    "addressLocality": "West Palm Beach",
+                    "addressRegion": "FL",
+                    "postalCode": "33405",
+                    "addressCountry": "US"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": (landingPages.limpiezaFacial?.faq?.items || []).map((item) => ({
+                "@type": "Question",
+                "name": item.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": item.answer
+                }
+              }))
+            }
+          ]
+        })}</script>
       </Helmet>
       
       <Navbar />

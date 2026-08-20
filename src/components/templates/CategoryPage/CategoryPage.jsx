@@ -5,6 +5,7 @@ import TrustSafetyBar from '../../shared/TrustSafetyBar/TrustSafetyBar';
 import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
+import Picture from '../../shared/Picture/Picture';
 import styles from './CategoryPage.module.css';
 
 export default function CategoryPage({ data }) {
@@ -54,11 +55,11 @@ export default function CategoryPage({ data }) {
               <p className={styles.overviewSupport}>{overview.body}</p>
             </div>
             <div className={styles.overviewMedia}>
-              <img 
-                src={overview.image} 
-                alt={overview.headline} 
-                className={styles.overviewImage} 
-                loading="lazy" 
+              <Picture
+                src={overview.image}
+                alt={overview.headline}
+                className={styles.overviewImage}
+                loading="lazy"
               />
             </div>
           </div>

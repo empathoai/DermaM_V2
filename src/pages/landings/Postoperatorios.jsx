@@ -22,6 +22,44 @@ export default function PostoperatoriosPage() {
         <meta name="twitter:description" content="Acompañamiento profesional en tu recuperación postoperatoria. Drenaje linfático y cuidados especializados en Derma.M, West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/landings/tratamientos-postoperatorios/hero.jpg" />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": landingPages.postoperatorios?.hero?.title || "Tratamientos Postoperatorios",
+              "description": landingPages.postoperatorios?.hero?.body || "Acompañamiento postoperatorio en Derma.M.",
+              "url": "https://dermamskinhealth.com/tratamientos-postoperatorios",
+              "serviceType": "Aesthetic Treatment",
+              "provider": {
+                "@type": "HealthAndBeautyBusiness",
+                "name": "Derma.M",
+                "url": "https://dermamskinhealth.com",
+                "address": [
+                  {
+                    "@type": "PostalAddress",
+                    "streetAddress": "5707 S Dixie Hwy UNIT D",
+                    "addressLocality": "West Palm Beach",
+                    "addressRegion": "FL",
+                    "postalCode": "33405",
+                    "addressCountry": "US"
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": (landingPages.postoperatorios?.faq?.items || []).map((item) => ({
+                "@type": "Question",
+                "name": item.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": item.answer
+                }
+              }))
+            }
+          ]
+        })}</script>
       </Helmet>
       
       <Navbar />

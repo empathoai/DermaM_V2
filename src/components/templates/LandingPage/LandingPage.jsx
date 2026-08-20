@@ -3,6 +3,7 @@ import PageHero from '../../sections/PageHero/PageHero';
 import TreatmentQuickFacts from '../../shared/TreatmentQuickFacts/TreatmentQuickFacts';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import MediaBlock from '../../shared/MediaBlock/MediaBlock';
+import Picture from '../../shared/Picture/Picture';
 import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
 import BrandDivider from '../../shared/BrandDivider/BrandDivider';
 import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
@@ -74,11 +75,11 @@ export default function LandingPage({ data }) {
               )}
             </div>
             <div className={styles.problemMedia}>
-              <img 
-                src={problem.image} 
-                alt={problem.headline} 
-                className={styles.problemImage} 
-                loading="lazy" 
+              <Picture
+                src={problem.image}
+                alt={problem.headline}
+                className={styles.problemImage}
+                loading="lazy"
               />
             </div>
           </div>

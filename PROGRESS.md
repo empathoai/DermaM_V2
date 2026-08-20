@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítems 8.2/8.3: canonical faltante en Nosotros.jsx, resto de páginas legales OK
+- **Contexto:** siguiendo el backlog de `docs/SEO_AUDIT_2026.md` tras cerrar 8.1. Al revisar el ítem 8.3 ("`VITE_SITE_URL` usada condicionalmente en 7 páginas, sin documentar en `.env.example`") se confirmó que la variable no está seteada en ningún lugar del repo (`.env.example`, `vite.config.js`, ni config de deploy) — solo se lee en 7 componentes de página.
+- **Hallazgo:** de las 7 páginas, 6 (TermsOfUse, PrivacyPolicy, BookingPolicy, Accessibility, NoticePrivacyPractices, TreatmentDisclaimer) ya tenían fallback correcto a `https://dermamskinhealth.com` y siempre renderizaban su canonical — sin bug real. Solo `Nosotros.jsx` tenía `siteUrl = ... || ''` (fallback a string vacío) — si `VITE_SITE_URL` no está seteada en el build de producción, esa página sale sin `<link rel="canonical">`.
+- **Cambio:** [Nosotros.jsx](src/pages/Nosotros.jsx) — reemplazado el canonical condicional/calculado por uno fijo (`https://dermamskinhealth.com/nosotros`), mismo patrón que Contacto/tratamientos del ítem 8.1.
+- Verificado en browser: `/nosotros` renderiza un único canonical correcto, sin errores de consola.
+- Marcados `Hecho` 8.2 y 8.3 en `docs/SEO_AUDIT_2026.md` (8.2 quedó resuelto de facto al cerrar 8.1; ver nota en ese doc).
+
 ## 2026-08-20 — Nota: auditoría de redirecciones 301 queda para el final, antes de publicar
 - Usuario preguntó si el remapeo de URLs del sitio anterior (redirecciones 301) está contemplado. Confirmado: `public/.htaccess` (protegido) ya tiene un bloque completo de redirects WordPress→sitio nuevo (páginas core, 3 landings, hubs Faciales/Corporales, patrones genéricos de WP). No hay redirects para Láser y Luz, Dental Estético, Capilar ni IV Therapy — confirmado por el usuario que es porque esas secciones no existían en el sitio anterior, no un olvido.
 - **Acción diferida a propósito:** re-auditar el `.htaccess` contra el sitemap/lista real de URLs del sitio anterior como último paso antes de publicar el rediseño (no ahora, no es parte del ciclo actual de ítems del backlog SEO). Detalle completo en `docs/SEO_AUDIT_2026.md` sección 5 (gitignoreado, no versionado).

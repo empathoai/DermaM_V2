@@ -6,15 +6,12 @@ import AboutPage from '../components/templates/AboutPage/AboutPage';
 import { aboutPage } from '../data/aboutPage';
 
 export default function NosotrosPage() {
-  const siteUrl = import.meta.env.VITE_SITE_URL || '';
-  const canonicalUrl = siteUrl ? `${siteUrl}/nosotros` : undefined;
-
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
       <Helmet>
         <title>Equipo y filosofía de cuidado | DERMA.M Florida</title>
         <meta name="description" content="Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach." />
-        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+        <link rel="canonical" href="https://dermamskinhealth.com/nosotros" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Equipo y filosofía de cuidado | DERMA.M Florida" />
         <meta property="og:description" content="Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach." />

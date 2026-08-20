@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.7: `geo`/`openingHoursSpecification` en el JSON-LD principal
+- **Contexto:** priorización decidida vía `/llm-council` entre 8.4, 8.7, 2.3 y la auditoría de redirects 301 — el consejo recomendó cerrar primero 8.7 por ser edición aditiva de datos ya empezados (`aggregateRating` agregado en sesión previa), sin tocar routing.
+- **Verificaciones previas (gate del propio consejo, antes de escribir código):** primer intento con coordenadas del iframe de Google Maps embebido en `Contacto.jsx:446` (lat `26.6531589`, lng `-80.0543666` — apuntan a la dirección postal genérica); el usuario luego proveyó el link real del listado de Google Business Profile ("DERMA.M") con coordenadas del pin del negocio (lat `26.6627718`, lng `-80.0558881`), que reemplazaron a las del iframe por ser más precisas (pin real del negocio vs. geocodificación de dirección). Usuario confirmó explícitamente que el `aggregateRating` (4.9★/117 reviews) ya escrito está respaldado por reseñas reales verificables — no se tocó.
+- **Cambio:** en [Home.jsx](src/pages/Home.jsx), dentro de `@graph[0].location[0]` (HealthAndBeautyBusiness → West Palm Beach), agregados `geo` (`GeoCoordinates`, lat `26.6627718`/lng `-80.0558881` del pin real de GBP) y `openingHoursSpecification` (Lun-Sáb 9:00-17:00, Dom 9:00-13:00, datos provistos por el usuario).
+- Verificado en browser (`http://localhost:3000`): `JSON.parse` del script `application/ld+json` → `@graph[0].location[0]` contiene `geo` y `openingHoursSpecification` con los valores correctos, sin errores de consola, sin cambio visual (edición solo en `<head>`).
+- Marcar `Hecho` 8.7 en `docs/SEO_AUDIT_2026.md` (gitignoreado) en la próxima edición de ese archivo.
+
 ## 2026-08-20 — SEO backlog ítem 8.8: metadatos completos en LegalResources.jsx — cierre del "Cubo 1"
 - **Contexto:** cuarto y último ítem del "Cubo 1" (batch de 5 fixes mecánicos: 8.5, 8.6, 8.8, 2.1, 2.2 — todos cerrados con este). El `<Helmet>` de [LegalResources.jsx](src/pages/LegalResources.jsx) (ruta `/legal`, confirmada en `routes.jsx`) solo tenía `title` + `description`.
 - **Cambio:** agregados `canonical`, `og:type/title/description/url/image`, `twitter:card/title/description/image`, `robots: index, follow` — mismo patrón que ya usan los demás hubs (`IvTherapy.jsx`, `Capilar.jsx`). Sin JSON-LD nuevo (fuera de alcance del hallazgo original).

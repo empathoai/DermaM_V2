@@ -66,7 +66,26 @@ export default function Home() {
                     "addressCountry": "US"
                   },
                   "telephone": "+15612535384",
-                  "url": "https://dermamskinhealth.com/contacto"
+                  "url": "https://dermamskinhealth.com/contacto",
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 26.6627718,
+                    "longitude": -80.0558881
+                  },
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                      "opens": "09:00",
+                      "closes": "17:00"
+                    },
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": "Sunday",
+                      "opens": "09:00",
+                      "closes": "13:00"
+                    }
+                  ]
                 }
               ],
               "sameAs": [

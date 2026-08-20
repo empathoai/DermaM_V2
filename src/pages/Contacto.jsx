@@ -25,9 +25,6 @@ import { contactConsentCopy } from '../data/legalPages';
 import { contactFaq } from '../data/contactPage';
 
 export default function ContactoPage() {
-  const siteUrl = import.meta.env.VITE_SITE_URL || '';
-  const canonicalUrl = siteUrl ? `${siteUrl}/contacto` : undefined;
-
   const [mapInteractive, setMapInteractive] = useState(false);
 
   // Contact Form State
@@ -76,7 +73,6 @@ export default function ContactoPage() {
       <Helmet>
         <title>Contacto | Derma.M</title>
         <meta name="description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach." />
-        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
         <link rel="canonical" href="https://dermamskinhealth.com/contacto" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contacto | Derma.M" />

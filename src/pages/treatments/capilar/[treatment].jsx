@@ -48,15 +48,11 @@ export default function CapilarTreatmentPage() {
     );
   }
 
-  const siteUrl = import.meta.env.VITE_SITE_URL || 'https://dermam.com';
-  const canonicalUrl = `${siteUrl}${treatmentData.route}`;
-
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
       <Helmet>
         <title>{treatmentData.title} | Derma.M</title>
         <meta name="description" content={treatmentData.description} />
-        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
         <link rel="canonical" href={`https://dermamskinhealth.com/capilar/${treatment}`} />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({

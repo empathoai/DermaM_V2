@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítems 2.1/2.2: `html lang="es"` y reemplazo del título placeholder de AI Studio
+- **Contexto:** primer ítem del "Cubo 1" (batch de 5 fixes mecánicos del backlog SEO), acordado tras `/llm-council`. Diseño y plan pasaron por `superpowers:brainstorming`/`writing-plans` (ver `docs/superpowers/specs/2026-08-20-cubo1-mechanical-seo-fixes-design.md` y `docs/superpowers/plans/2026-08-20-cubo1-mechanical-seo-fixes.md`, ambos gitignoreados).
+- **Cambio:** en [index.html](index.html), `<html lang="en">` → `<html lang="es">` (el sitio es en español); `<title>My Google AI Studio App</title>` → `<title>Derma.M | Medical Spa West Palm Beach, Florida</title>` (placeholder de exportación de Google AI Studio, visible a crawlers/scrapers sin JS antes de que Helmet lo pise en runtime).
+- Verificado: `document.documentElement.lang` → `"es"` en el navegador; `curl http://localhost:3000/` (HTML fuente, sin ejecutar JS) muestra `lang="es"` y el título correcto.
+- Marcados `Hecho` 2.1 y 2.2 en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — SEO backlog ítem 8.7 (parcial): agregado aggregateRating al JSON-LD principal
 - **Contexto:** tercera pregunta bloqueante de la sesión de `/llm-council`. Usuario confirmó el rating real de Google: 4.9 sobre 117 reseñas ("DERMA.M · 4.9 · 117 Google reviews · Medical spa in West Palm Beach, Florida").
 - **Cambio:** agregado `"aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "117"}` al nodo `HealthAndBeautyBusiness` en [Home.jsx](src/pages/Home.jsx) (dentro del `@graph`) y en [Contacto.jsx](src/pages/Contacto.jsx) (dentro de `mainEntity`).

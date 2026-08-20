@@ -2,7 +2,7 @@ export default function Picture({ src, alt, className, style, loading, onLoad, o
   const webpSrc = typeof src === 'string' ? src.replace(/\.jpe?g$/i, '.webp') : undefined;
 
   return (
-    <picture>
+    <picture style={{ display: 'contents' }}>
       {webpSrc && webpSrc !== src && <source srcSet={webpSrc} type="image/webp" />}
       <img
         src={src}

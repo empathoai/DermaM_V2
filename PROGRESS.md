@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Home FounderSection: quitar fondo logo watermark, dejar Clinical Canvas sólido
+- **Contexto:** el usuario confundió el `FounderSection` de Home con el `.spotlightContent` de About (entrada anterior de hoy) y preguntó por qué no se había aplicado el mismo cambio ahí. Se confirmó que eran componentes distintos y, a pedido explícito, se replicó el cambio.
+- **Cambio en [FounderSection.module.css](src/components/sections/FounderSection/FounderSection.module.css):** en el breakpoint desktop (`min-width: 1024px`) del `.textBlock`, se removió `background-image: url('/assets/images/home/founder_logo.png')` (+ `background-size`/`position`/`repeat`) y se dejó `background-color: var(--color-clinical-canvas, #F2F0F1)`, igual que en About. Mobile no cambia (ya usaba `background-image: none` + logo chico inline).
+- Commit [ddc3ccf](https://github.com/empathoai/DermaM_V2/commit/ddc3ccf), pusheado a `main`.
+
 ## 2026-08-20 — Formulario de Contacto: menos scroll en mobile (acordeón de aviso legal + Nombre/Teléfono en fila)
 - **Contexto:** el usuario notó que el formulario de Contacto obligaba a un scroll excesivo en mobile — confirmado con captura (`ux-heuristics` + revisión de código): 6 campos apilados + dos bloques de aviso legal bilingües completos (ES/EN) + checkbox de marketing + submit, todo antes de llegar a la tarjeta de ubicación/mapa. El aviso de "no envíes info sensible" ya existía (`contactConsentCopy.sensitiveInfoEs/En`), así que no había que agregarlo, solo dejarlo más accesible.
 - **Cambio en [Contacto.jsx](src/pages/Contacto.jsx) y [Contacto.module.css](src/pages/Contacto.module.css):**

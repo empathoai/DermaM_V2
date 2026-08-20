@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 import Nosotros from "./pages/Nosotros";
+import NancyNieto from "./pages/NancyNieto";
 import Contacto from "./pages/Contacto";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
@@ -33,6 +34,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/nosotros" element={<Nosotros />} />
+      <Route path="/nosotros/nancy-nieto" element={<NancyNieto />} />
       <Route path="/contacto" element={<Contacto />} />
       <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />

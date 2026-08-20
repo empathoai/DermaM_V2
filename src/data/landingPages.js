@@ -15,11 +15,14 @@ export const landingPages = {
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
       headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL SIN UN CAMBIO ARTIFICIAL',
-      body: 'PRP y Fibrina puede ser una opción para quienes desean acompañar la firmeza, textura y luminosidad de la piel mediante un protocolo personalizado y progresivo.',
+      body: 'Plasma Rico en Plaquetas y Fibrina pueden ser una opción para quienes desean acompañar la firmeza, textura, luminosidad y apariencia general de la piel mediante un protocolo personalizado y progresivo.',
       list: [
         'Piel con pérdida de luminosidad',
         'Textura irregular',
         'Firmeza disminuida',
+        'Apariencia de manchas o tono desigual',
+        'Marcas y textura asociadas al post-acné',
+        'Piel con tendencia acneica, según valoración profesional',
         'Signos visibles de cansancio',
         'Interés en bioestimulación natural',
         'Búsqueda de resultados graduales'
@@ -141,7 +144,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'LIMPIEZA FACIAL PROFUNDA',
-      body: 'El protocolo de purificación profunda que respeta tu barrera de hidratación. Extrae impurezas de forma cómoda, sin marcas y con nutrición activa.',
+      body: 'Preparamos la piel para que tus productos en casa funcionen perfectamente, te asesoramos y guiamos en el proceso.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
     },
     quickFacts: [
@@ -279,7 +282,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
-      body: 'Acompañamiento profesional y drenaje superficial no invasivo para apoyar una evolución cómoda, suave y segura tras tu procedimiento estético.',
+      body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg'
     },
     quickFacts: [

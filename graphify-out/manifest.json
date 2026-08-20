@@ -1,0 +1,382 @@
+{
+  "App.jsx": {
+    "mtime": 1787192971.6821246,
+    "ast_hash": "8f65823e405b2e6bbb3b4e8bbcb9afb0",
+    "semantic_hash": "8f65823e405b2e6bbb3b4e8bbcb9afb0"
+  },
+  "components/layout/Footer/Footer.jsx": {
+    "mtime": 1787192971.682624,
+    "ast_hash": "0ad160fe3b95c52ba92e9069b4226457",
+    "semantic_hash": "0ad160fe3b95c52ba92e9069b4226457"
+  },
+  "components/layout/LegalContent.jsx": {
+    "mtime": 1787192971.6831248,
+    "ast_hash": "7b13665deb8a4909e9a5ad261395bb3b",
+    "semantic_hash": "7b13665deb8a4909e9a5ad261395bb3b"
+  },
+  "components/layout/LegalPageLayout.jsx": {
+    "mtime": 1787192971.683625,
+    "ast_hash": "941fad4cf9eba2db72201ef1e785ccd4",
+    "semantic_hash": "941fad4cf9eba2db72201ef1e785ccd4"
+  },
+  "components/layout/Navbar/Navbar.jsx": {
+    "mtime": 1787192971.6841252,
+    "ast_hash": "7f727546dcefaa2723f6c93d7c99e18a",
+    "semantic_hash": "7f727546dcefaa2723f6c93d7c99e18a"
+  },
+  "components/sections/ClinicalPositioning/ClinicalPositioning.jsx": {
+    "mtime": 1787192971.6846275,
+    "ast_hash": "4373205759cc83bc9746bbc9da393186",
+    "semantic_hash": "4373205759cc83bc9746bbc9da393186"
+  },
+  "components/sections/FeaturedServices/FeaturedServices.jsx": {
+    "mtime": 1787192971.6856325,
+    "ast_hash": "891dcfa68c81236e31b5eaaa632e06d8",
+    "semantic_hash": "891dcfa68c81236e31b5eaaa632e06d8"
+  },
+  "components/sections/FinalCTA/FinalCTA.jsx": {
+    "mtime": 1787192971.6861353,
+    "ast_hash": "d031e24db93585f37d6c90dd3fc8e039",
+    "semantic_hash": "d031e24db93585f37d6c90dd3fc8e039"
+  },
+  "components/sections/FounderSection/FounderSection.jsx": {
+    "mtime": 1787192971.6866338,
+    "ast_hash": "0a65ea2f59a04d94d61dfa278171f692",
+    "semantic_hash": "0a65ea2f59a04d94d61dfa278171f692"
+  },
+  "components/sections/Hero/Hero.jsx": {
+    "mtime": 1787192971.6876345,
+    "ast_hash": "1e0f32ea61e874d33ae75c20882bd2d6",
+    "semantic_hash": "1e0f32ea61e874d33ae75c20882bd2d6"
+  },
+  "components/sections/MethodProcess/MethodProcess.jsx": {
+    "mtime": 1787192971.6881328,
+    "ast_hash": "6c3d8cff5ab0e9ea08d21d5c1c4288ee",
+    "semantic_hash": "6c3d8cff5ab0e9ea08d21d5c1c4288ee"
+  },
+  "components/sections/PageHero/PageHero.jsx": {
+    "mtime": 1787192971.688633,
+    "ast_hash": "b4d956eb4c94cb9e44ebed4d8b75d32b",
+    "semantic_hash": "b4d956eb4c94cb9e44ebed4d8b75d32b"
+  },
+  "components/sections/Testimonials/Testimonials.jsx": {
+    "mtime": 1787192971.6896336,
+    "ast_hash": "897a956a92a0e6a5a13c08806c4bc239",
+    "semantic_hash": "897a956a92a0e6a5a13c08806c4bc239"
+  },
+  "components/sections/TreatmentCategories/TreatmentCategories.jsx": {
+    "mtime": 1787192971.6906333,
+    "ast_hash": "96766421428d73bafc2b570496684770",
+    "semantic_hash": "96766421428d73bafc2b570496684770"
+  },
+  "components/sections/TrustBar/TrustBar.jsx": {
+    "mtime": 1787192971.6911345,
+    "ast_hash": "dff3384ee5f019ff5246eee0ccca73de",
+    "semantic_hash": "dff3384ee5f019ff5246eee0ccca73de"
+  },
+  "components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
+    "mtime": 1787192971.691634,
+    "ast_hash": "6796949014288b30043d6f0c52aa26f8",
+    "semantic_hash": "6796949014288b30043d6f0c52aa26f8"
+  },
+  "components/shared/BenefitColumns/BenefitColumns.jsx": {
+    "mtime": 1787192971.6926348,
+    "ast_hash": "2e892b8529009052c72c4547d7f7b369",
+    "semantic_hash": "2e892b8529009052c72c4547d7f7b369"
+  },
+  "components/shared/BrandDivider/BrandDivider.jsx": {
+    "mtime": 1787192971.6931324,
+    "ast_hash": "ad51c1ac8e3c45ca96ec9e8799a4c1a3",
+    "semantic_hash": "ad51c1ac8e3c45ca96ec9e8799a4c1a3"
+  },
+  "components/shared/Breadcrumb/Breadcrumb.jsx": {
+    "mtime": 1787192971.6936324,
+    "ast_hash": "07f849776100a13c3cd5e9ed133a4746",
+    "semantic_hash": "07f849776100a13c3cd5e9ed133a4746"
+  },
+  "components/shared/FAQAccordion/FAQAccordion.jsx": {
+    "mtime": 1787192971.6941335,
+    "ast_hash": "bbd8f821f128124d601f4525e51386f9",
+    "semantic_hash": "bbd8f821f128124d601f4525e51386f9"
+  },
+  "components/shared/FinalCTA/FinalCTA.jsx": {
+    "mtime": 1787192971.6946344,
+    "ast_hash": "b477b6520d33d7b6217c74a58af561ca",
+    "semantic_hash": "b477b6520d33d7b6217c74a58af561ca"
+  },
+  "components/shared/FloatingWhatsApp/FloatingWhatsApp.jsx": {
+    "mtime": 1787192971.6956356,
+    "ast_hash": "bc67653cbe5dc75a604970cbfcebd603",
+    "semantic_hash": "bc67653cbe5dc75a604970cbfcebd603"
+  },
+  "components/shared/ListSparkle/ListSparkle.jsx": {
+    "mtime": 1787192971.696134,
+    "ast_hash": "6d2a7a69a4f87c511e47184205ea3458",
+    "semantic_hash": "6d2a7a69a4f87c511e47184205ea3458"
+  },
+  "components/shared/MediaBlock/MediaBlock.jsx": {
+    "mtime": 1787192971.6966372,
+    "ast_hash": "769f00e17f46e94d62b10604e4aa01db",
+    "semantic_hash": "769f00e17f46e94d62b10604e4aa01db"
+  },
+  "components/shared/ProcessTimeline/ProcessTimeline.jsx": {
+    "mtime": 1787192971.6976376,
+    "ast_hash": "a0f2b133ecdb99a386d98d1a3fcd3dee",
+    "semantic_hash": "a0f2b133ecdb99a386d98d1a3fcd3dee"
+  },
+  "components/shared/RelatedTreatments/RelatedTreatments.jsx": {
+    "mtime": 1787192971.6981366,
+    "ast_hash": "d21e612de84aeffa13c30f58913b18b2",
+    "semantic_hash": "d21e612de84aeffa13c30f58913b18b2"
+  },
+  "components/shared/SectionHeader/SectionHeader.jsx": {
+    "mtime": 1787192971.698637,
+    "ast_hash": "8f6bc04202d079f84e2901be875c3ddb",
+    "semantic_hash": "8f6bc04202d079f84e2901be875c3ddb"
+  },
+  "components/shared/SpecsGrid/SpecsGrid.jsx": {
+    "mtime": 1787192971.6991372,
+    "ast_hash": "8342accc74b6ece1ebe9a253622b83b1",
+    "semantic_hash": "8342accc74b6ece1ebe9a253622b83b1"
+  },
+  "components/shared/TeamBySpecialty/TeamBySpecialty.jsx": {
+    "mtime": 1787192971.7001429,
+    "ast_hash": "df53cbb2a3c3183a9cf3f0765f0211ce",
+    "semantic_hash": "df53cbb2a3c3183a9cf3f0765f0211ce"
+  },
+  "components/shared/TeamMemberCard/TeamMemberCard.jsx": {
+    "mtime": 1787192971.7006521,
+    "ast_hash": "784e54e745903844b69401a6793885e4",
+    "semantic_hash": "784e54e745903844b69401a6793885e4"
+  },
+  "components/shared/TestimonialsSection/TestimonialsSection.jsx": {
+    "mtime": 1787192971.7011497,
+    "ast_hash": "10efbefda982baa859516d351bf1c87e",
+    "semantic_hash": "10efbefda982baa859516d351bf1c87e"
+  },
+  "components/shared/TreatmentCard/TreatmentCard.jsx": {
+    "mtime": 1787192971.7021506,
+    "ast_hash": "1158c9870e462e73c9747cac5faeec0f",
+    "semantic_hash": "1158c9870e462e73c9747cac5faeec0f"
+  },
+  "components/shared/TreatmentGrid/TreatmentGrid.jsx": {
+    "mtime": 1787192971.7031488,
+    "ast_hash": "e2e89a7cbc8958ba0d41d0c2e53e7573",
+    "semantic_hash": "e2e89a7cbc8958ba0d41d0c2e53e7573"
+  },
+  "components/shared/TreatmentHero/TreatmentHero.jsx": {
+    "mtime": 1787192971.7036483,
+    "ast_hash": "302668e0fb24a6eadd304394df192a74",
+    "semantic_hash": "302668e0fb24a6eadd304394df192a74"
+  },
+  "components/shared/TreatmentQuickFacts/TreatmentQuickFacts.jsx": {
+    "mtime": 1787192971.7046494,
+    "ast_hash": "ab2aec4eb2b42d15ebd25ce180ed2710",
+    "semantic_hash": "ab2aec4eb2b42d15ebd25ce180ed2710"
+  },
+  "components/shared/TrustSafetyBar/TrustSafetyBar.jsx": {
+    "mtime": 1787192971.7056544,
+    "ast_hash": "c9e657f62c1507e29e8a29df6c6af315",
+    "semantic_hash": "c9e657f62c1507e29e8a29df6c6af315"
+  },
+  "components/shared/WarningBox/WarningBox.jsx": {
+    "mtime": 1787192971.7061498,
+    "ast_hash": "7227961682b57bb9968886992b1cb852",
+    "semantic_hash": "7227961682b57bb9968886992b1cb852"
+  },
+  "components/templates/AboutPage/AboutPage.jsx": {
+    "mtime": 1787192971.7071493,
+    "ast_hash": "df28752e3bd8983fbee98973bce5968b",
+    "semantic_hash": "df28752e3bd8983fbee98973bce5968b"
+  },
+  "components/templates/CategoryPage/CategoryPage.jsx": {
+    "mtime": 1787192971.7081494,
+    "ast_hash": "8f71ed2f6623c9f100821a3f33c269ec",
+    "semantic_hash": "8f71ed2f6623c9f100821a3f33c269ec"
+  },
+  "components/templates/LandingPage/LandingPage.jsx": {
+    "mtime": 1787192971.7086499,
+    "ast_hash": "f74fdcd42f329dfc9db2fd72df8904db",
+    "semantic_hash": "f74fdcd42f329dfc9db2fd72df8904db"
+  },
+  "components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
+    "mtime": 1787192971.7096493,
+    "ast_hash": "2b66681ca4860a0cde37df77e1ed8f6b",
+    "semantic_hash": "2b66681ca4860a0cde37df77e1ed8f6b"
+  },
+  "components/utils/HeroMedia.jsx": {
+    "mtime": 1787192971.7101483,
+    "ast_hash": "c815d4be1070d1cc7ad98fb140daa150",
+    "semantic_hash": "c815d4be1070d1cc7ad98fb140daa150"
+  },
+  "components/utils/ScrollToTop.jsx": {
+    "mtime": 1787192971.7101483,
+    "ast_hash": "ca26f7a83ca3e7d58a0911897fd580d5",
+    "semantic_hash": "ca26f7a83ca3e7d58a0911897fd580d5"
+  },
+  "components/utils/motion.js": {
+    "mtime": 1787192971.7106514,
+    "ast_hash": "a4d768ba9333599e10b2395296a58944",
+    "semantic_hash": "a4d768ba9333599e10b2395296a58944"
+  },
+  "data/aboutPage.js": {
+    "mtime": 1787192971.7111506,
+    "ast_hash": "704af6eee684c49ff84628af96247e69",
+    "semantic_hash": "704af6eee684c49ff84628af96247e69"
+  },
+  "data/categoryPages.js": {
+    "mtime": 1787192971.7111506,
+    "ast_hash": "574276dec7a3477addfe8c519fe4fc35",
+    "semantic_hash": "574276dec7a3477addfe8c519fe4fc35"
+  },
+  "data/contactPage.js": {
+    "mtime": 1787192971.7116492,
+    "ast_hash": "8d90efaae61010741737b6769ef9c7d9",
+    "semantic_hash": "8d90efaae61010741737b6769ef9c7d9"
+  },
+  "data/landingPages.js": {
+    "mtime": 1787192971.7121491,
+    "ast_hash": "9fcb3c0d8930c1881a57c8377924ffd1",
+    "semantic_hash": "9fcb3c0d8930c1881a57c8377924ffd1"
+  },
+  "data/legalPages.js": {
+    "mtime": 1787192971.7126496,
+    "ast_hash": "a4883aed92fa77ab92d8fefe05fcc844",
+    "semantic_hash": "a4883aed92fa77ab92d8fefe05fcc844"
+  },
+  "data/treatmentPages.js": {
+    "mtime": 1787192971.7131495,
+    "ast_hash": "e24d0a49658ac650cd4ceb4f50f062e4",
+    "semantic_hash": "e24d0a49658ac650cd4ceb4f50f062e4"
+  },
+  "main.jsx": {
+    "mtime": 1787192971.7141507,
+    "ast_hash": "2d18e3dc028d8fd2f846ba1c5de99dba",
+    "semantic_hash": "2d18e3dc028d8fd2f846ba1c5de99dba"
+  },
+  "pages/Accessibility.jsx": {
+    "mtime": 1787192971.7141507,
+    "ast_hash": "d71a5eeaaf2bee2e81850661fd1ffc66",
+    "semantic_hash": "d71a5eeaaf2bee2e81850661fd1ffc66"
+  },
+  "pages/BookingPolicy.jsx": {
+    "mtime": 1787192971.714652,
+    "ast_hash": "00cbc1af0397d03937d95fcfe1c60dd2",
+    "semantic_hash": "00cbc1af0397d03937d95fcfe1c60dd2"
+  },
+  "pages/Contacto.jsx": {
+    "mtime": 1787192971.715149,
+    "ast_hash": "d6440e6c5ecc2b8605d402a781d7eba3",
+    "semantic_hash": "d6440e6c5ecc2b8605d402a781d7eba3"
+  },
+  "pages/Home.jsx": {
+    "mtime": 1787192971.7156496,
+    "ast_hash": "ec7b388a4d5553f6620db0fe77aaee02",
+    "semantic_hash": "ec7b388a4d5553f6620db0fe77aaee02"
+  },
+  "pages/LegalResources.jsx": {
+    "mtime": 1787192971.7156496,
+    "ast_hash": "4b4d51c80b9ad22c1811c1868dd9ea63",
+    "semantic_hash": "4b4d51c80b9ad22c1811c1868dd9ea63"
+  },
+  "pages/Nosotros.jsx": {
+    "mtime": 1787192971.7161505,
+    "ast_hash": "5054694beb082d873c15ffa771455e0c",
+    "semantic_hash": "5054694beb082d873c15ffa771455e0c"
+  },
+  "pages/NoticePrivacyPractices.jsx": {
+    "mtime": 1787192971.7161505,
+    "ast_hash": "1bd21b85e0eb57ddb9af04798c137eea",
+    "semantic_hash": "1bd21b85e0eb57ddb9af04798c137eea"
+  },
+  "pages/PrivacyPolicy.jsx": {
+    "mtime": 1787192971.7166495,
+    "ast_hash": "58983cfbadd0de8b8375a5ee5126184d",
+    "semantic_hash": "58983cfbadd0de8b8375a5ee5126184d"
+  },
+  "pages/TermsOfUse.jsx": {
+    "mtime": 1787192971.7171512,
+    "ast_hash": "accc6c272a7941a4de69182cc8903bd3",
+    "semantic_hash": "accc6c272a7941a4de69182cc8903bd3"
+  },
+  "pages/TreatmentDisclaimer.jsx": {
+    "mtime": 1787192971.7171512,
+    "ast_hash": "253736fd9fbf1c0fbb2e97bb2e18a9ec",
+    "semantic_hash": "253736fd9fbf1c0fbb2e97bb2e18a9ec"
+  },
+  "pages/hubs/Capilar.jsx": {
+    "mtime": 1787192971.7176487,
+    "ast_hash": "dc8bc17dbd927dbd2e97480efa4a4c6f",
+    "semantic_hash": "dc8bc17dbd927dbd2e97480efa4a4c6f"
+  },
+  "pages/hubs/Corporales.jsx": {
+    "mtime": 1787192971.7176487,
+    "ast_hash": "392e024fb612fb84ffa60a9ed936eb9c",
+    "semantic_hash": "392e024fb612fb84ffa60a9ed936eb9c"
+  },
+  "pages/hubs/DentalEstetico.jsx": {
+    "mtime": 1787192971.7181492,
+    "ast_hash": "0865b5247d05da96e57a07c8b6bcb722",
+    "semantic_hash": "0865b5247d05da96e57a07c8b6bcb722"
+  },
+  "pages/hubs/Faciales.jsx": {
+    "mtime": 1787192971.7186525,
+    "ast_hash": "a17c7d5ddad7886ac5d1b5c0b757cd68",
+    "semantic_hash": "a17c7d5ddad7886ac5d1b5c0b757cd68"
+  },
+  "pages/hubs/IvTherapy.jsx": {
+    "mtime": 1787192971.7186525,
+    "ast_hash": "ecaf8caededdd378f26a96b2720821e6",
+    "semantic_hash": "ecaf8caededdd378f26a96b2720821e6"
+  },
+  "pages/hubs/LaserYLuz.jsx": {
+    "mtime": 1787192971.7186525,
+    "ast_hash": "18618fde70e61e64bcc0e4a7b7162248",
+    "semantic_hash": "18618fde70e61e64bcc0e4a7b7162248"
+  },
+  "pages/landings/LimpiezaFacial.jsx": {
+    "mtime": 1787192971.7191484,
+    "ast_hash": "e50db2d8abdb26ea2e25edc631e39d0a",
+    "semantic_hash": "e50db2d8abdb26ea2e25edc631e39d0a"
+  },
+  "pages/landings/Postoperatorios.jsx": {
+    "mtime": 1787192971.7191484,
+    "ast_hash": "fe717d948157828d00ad33ce214d07d0",
+    "semantic_hash": "fe717d948157828d00ad33ce214d07d0"
+  },
+  "pages/landings/PrfYFibrina.jsx": {
+    "mtime": 1787192971.719648,
+    "ast_hash": "e99982ff6312325123d55f581d83a6cc",
+    "semantic_hash": "e99982ff6312325123d55f581d83a6cc"
+  },
+  "pages/treatments/capilar/[treatment].jsx": {
+    "mtime": 1787192971.7201488,
+    "ast_hash": "bceb44d645542629bd4f96df186fdb1b",
+    "semantic_hash": "bceb44d645542629bd4f96df186fdb1b"
+  },
+  "pages/treatments/corporales/[treatment].jsx": {
+    "mtime": 1787192971.7206495,
+    "ast_hash": "86f9296f023d0ef2b155b9460c4e2b1f",
+    "semantic_hash": "86f9296f023d0ef2b155b9460c4e2b1f"
+  },
+  "pages/treatments/dental/[treatment].jsx": {
+    "mtime": 1787192971.7211492,
+    "ast_hash": "c8a8eb333d2c7c7c8171fef5ed24e3b1",
+    "semantic_hash": "c8a8eb333d2c7c7c8171fef5ed24e3b1"
+  },
+  "pages/treatments/faciales/[treatment].jsx": {
+    "mtime": 1787192971.7216527,
+    "ast_hash": "e818ac3872c3b4e9cb3f409ae7da7a2a",
+    "semantic_hash": "e818ac3872c3b4e9cb3f409ae7da7a2a"
+  },
+  "pages/treatments/laser/[treatment].jsx": {
+    "mtime": 1787192971.7216527,
+    "ast_hash": "ff98f78b5aca34fdde7dfe1cab8187c2",
+    "semantic_hash": "ff98f78b5aca34fdde7dfe1cab8187c2"
+  },
+  "routes.jsx": {
+    "mtime": 1787192971.7221506,
+    "ast_hash": "40e623bb4b6598be51da4415988783f6",
+    "semantic_hash": "40e623bb4b6598be51da4415988783f6"
+  }
+}

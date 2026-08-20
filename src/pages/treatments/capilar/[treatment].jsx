@@ -78,14 +78,6 @@ export default function CapilarTreatmentPage() {
                 "addressRegion": "FL",
                 "postalCode": "33405",
                 "addressCountry": "US"
-              },
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "4960 SW 72nd Ave Ste 203",
-                "addressLocality": "Miami",
-                "addressRegion": "FL",
-                "postalCode": "33155",
-                "addressCountry": "US"
               }
             ]
           }

@@ -426,10 +426,7 @@
     flex: 0 0 50%;
     min-width: 0;
     padding: 80px clamp(64px, 8vw, 160px);
-    background-image: url('/assets/images/home/founder_logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #F2F0F1;
   }
 
   .spotlightImage {

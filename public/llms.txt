@@ -2,8 +2,8 @@
 # https://dermamskinhealth.com
 # Format: llms.txt (llmstxt.org standard)
 
-> Derma.M (DERMA.M, LLC) is a professional med spa with locations in
-> West Palm Beach and Miami, Florida. Derma.M offers personalized
+> Derma.M (DERMA.M, LLC) is a professional med spa located in
+> West Palm Beach, Florida. Derma.M offers personalized
 > aesthetic treatments including facial treatments, body contouring,
 > laser and light therapies, esthetic dental care, IV therapy, and
 > hair treatments. All services require a prior professional evaluation
@@ -13,19 +13,15 @@
 
 - Legal name: DERMA.M, LLC
 - Type: Med spa / Health and beauty business
-- Locations: West Palm Beach, FL and Miami, FL
+- Location: West Palm Beach, FL
 - Website: https://dermamskinhealth.com
 - Phone: +1 561 253 5384
 - Email: info@dermamskinhealth.com
 
-## Locations
+## Location
 
 ### West Palm Beach
 - Address: 5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405
-- Contact: https://dermamskinhealth.com/contacto
-
-### Miami
-- Address: 4960 SW 72nd Ave Ste 203, Miami, FL 33155
 - Contact: https://dermamskinhealth.com/contacto
 
 ## Service Categories

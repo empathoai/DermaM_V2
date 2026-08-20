@@ -1,0 +1,41 @@
+# MEMORY.md
+
+Living context file for this project. Read this before starting work; update it when you learn something durable (not covered by git history or code itself).
+
+## What this project is
+Derma.M — marketing/booking website for a clinic (facial, corporal, dental, láser, capilar, IV therapy treatments). Exported originally from Google AI Studio, now developed independently. Vite + React 19 SPA.
+
+## Stack snapshot
+- Vite + React 19, React Router v7, Tailwind v4, `motion` (not Framer Motion), `lucide-react`, `react-helmet-async`.
+- Content lives in `src/data/*.js` — never hardcode copy in components.
+- Full architecture detail lives in [CLAUDE.md](CLAUDE.md); don't duplicate it here.
+
+## Tooling installed in this repo
+- **graphify** — knowledge graph of the codebase at `graphify-out/` (169 nodes, 497 edges, 8 communities as of last build from commit `20508457`). Query it with `graphify query/path/explain` instead of grepping for architecture questions. Run `graphify update .` after code changes to keep it fresh.
+- **Playwright** — visual regression suite (`npm run test:visual`), baseURL `http://localhost:3003`.
+- **superpowers** — process-skill plugin, scoped to this project via `.claude/settings.json` (`enabledPlugins` + `extraKnownMarketplaces`, source `github.com/obra/superpowers-marketplace`). Mandatory usage rules are in `CLAUDE.md`.
+- **SEO/GEO/AEO/Local skill suite** — as of 2026-08-20, the 8-skill "canonical-suite" imported from `F:\OS-skillsLibrary\12-OS-Seo-skills\canonical-suite\` into `.claude/skills/` and `.agents/skills/` (identical copies in both, kept in sync manually): `ai-seo`, `seo-audit`, `seo-local`, `seo-checklist-65`, `schema`, `site-architecture`, `programmatic-seo`, `cro`. This replaced the earlier 11-skill "Palo Seco" suite wholesale (see [[decisions]] 2026-08-20) — old skill names (`seo`, `seo-content`, `seo-content-writer`, `keyword-fanout-map`, `onpage-optimizer`, `internal-link-architect`, `ai-visibility-checker`, `site-brief-builder`) no longer exist in this repo. Recommended workflow order + approval-gate rule documented in `CLAUDE.md` under "SEO/GEO/AEO/Local skill suite" (as of 2026-08-20 this is no longer a command table — each skill's own `description` is its pointer, see [[decisions]] 2026-08-20). Any output they produce (audits, copy drafts) still needs `superpowers:brainstorming` + explicit approval before being applied, per this project's near-final protection rules.
+  - When editing any of these SKILL.md files, edit `.claude/skills/` and `.agents/skills/` in tandem — there's no symlink, they're plain duplicated copies.
+  - Saneada 2026-08-20 (fine-grained, post-reset): fixed a dead link in `ai-seo/SKILL.md`, replaced a leftover `palo-seco-seo` User-Agent string in `seo-local/references/maps-free-apis.md`, and pruned "Related Skills"/"See also" references (in both SKILL.md files and references/*.md) down to only the 8 skills actually installed in this suite. No phantom scripts or hard DataForSEO blocking were found this time — the suite is clean.
+
+## Project status
+Near-final. Treat as a finished, working site — not a blank canvas. Every change requires explicit user request + explicit approval, one change at a time, no scope creep. Full rules in `CLAUDE.md` under "Mandatory: project is near-final — protect it" and "Mandatory: one change at a time, close it out fully".
+
+## Team member cards (About page)
+- Data: `src/data/aboutPage.js`, grouped by specialty (`teamGroups` array of `{ specialty, members[] }`). Rendered by `TeamBySpecialty` → `TeamMemberCard.jsx` → `MediaBlock.jsx`.
+- All team vCards (`public/team/vcards/*.vcf`) intentionally share one clinic phone (`+15612535384`) — only `FN`/`TITLE` differ per person. This is the established pattern, not a bug (see [[decisions]] 2026-08-20).
+- `MediaBlock.jsx` already renders a clean fallback block when `mediaSrc`/`src` is undefined or fails to load — safe to add a team member before their photo/video asset is ready (see [[decisions]] 2026-08-20). `member.status === 'comingSoon'` is a different, unrelated path (generic "nuevos especialistas" card) — don't use it for "real person, pending asset."
+
+## Known constraints / do-nots
+- Don't introduce Next.js, styled-components, Framer Motion, or another CSS framework (per `AGENTS.md`).
+- Don't modify `public/.htaccess`, `robots.txt`, `sitemap.xml`, `llms.txt` without explicit step-by-step instruction.
+- Don't touch `~/.codex/config.toml` or any Codex-global config from this project — user keeps those separate ("no lo consideres en este proyecto").
+- Don't make unrequested changes, refactors, or "while I'm in here" cleanup — user must approve each change explicitly, even after a superpowers plan is written.
+- Don't bundle multiple changes into one working pass — one requested item at a time, registered (PROGRESS/DECISIONS/MEMORY) before starting the next.
+
+## Open questions / things to verify later
+- `docs/` only has `LEGAL_VISUAL_AUDIT_2026.md` — the topic docs referenced in `CLAUDE.md`'s task-routing list (SITE_ARCHITECTURE.md, SECURITY.md, etc.) may not exist yet in this checkout. Confirm before relying on them.
+- `AGENTS.md` is now just a pointer to `CLAUDE.md` (2026-08-20, see [[decisions]]) — it carries no rule content of its own anymore, don't treat it as a fallback doc.
+
+---
+See also: [PROGRESS.md](PROGRESS.md) for what's in flight, [DECISIONS.md](DECISIONS.md) for why things are the way they are.

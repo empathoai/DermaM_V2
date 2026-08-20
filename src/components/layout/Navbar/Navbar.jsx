@@ -53,7 +53,7 @@ export default function Navbar() {
       {/* TOP INFO BAR */}
       <div className={styles.topInfoBar}>
         <div className={styles.topInfoLeft}>
-          <span>West Palm Beach / Miami</span>
+          <span>West Palm Beach</span>
         </div>
         <div className={styles.topInfoRight}>
           <a href="tel:+15612535384" className={styles.topInfoLink}>
@@ -99,9 +99,9 @@ export default function Navbar() {
                   <div className={styles.megaMenuGroup}>
                     <h3 className={styles.megaMenuHeading}>Tratamientos Destacados</h3>
                     <ul className={styles.megaMenuList}>
-                      <li><Link to="/limpieza-facial-profunda" onClick={() => setIsDropdownOpen(false)} className={styles.megaMenuLink}>Limpieza Facial Profunda</Link></li>
                       <li><Link to="/prf-y-fibrina" onClick={() => setIsDropdownOpen(false)} className={styles.megaMenuLink}>PRP y Fibrina</Link></li>
                       <li><Link to="/tratamientos-postoperatorios" onClick={() => setIsDropdownOpen(false)} className={styles.megaMenuLink}>Tratamientos Postoperatorios</Link></li>
+                      <li><Link to="/limpieza-facial-profunda" onClick={() => setIsDropdownOpen(false)} className={styles.megaMenuLink}>Limpieza Facial Profunda</Link></li>
                     </ul>
                   </div>
                   <div className={styles.megaMenuGroup}>
@@ -155,9 +155,9 @@ export default function Navbar() {
             <div className={styles.mobileNavSection}>
               <h2 className={styles.mobileNavHeading}>Tratamientos Destacados</h2>
               <ul className={styles.mobileNavList}>
-                <li><Link to="/limpieza-facial-profunda" onClick={() => setIsMobileMenuOpen(false)} className={styles.mobileNavLink}>Limpieza Facial Profunda</Link></li>
                 <li><Link to="/prf-y-fibrina" onClick={() => setIsMobileMenuOpen(false)} className={styles.mobileNavLink}>PRP y Fibrina</Link></li>
                 <li><Link to="/tratamientos-postoperatorios" onClick={() => setIsMobileMenuOpen(false)} className={styles.mobileNavLink}>Tratamientos Postoperatorios</Link></li>
+                <li><Link to="/limpieza-facial-profunda" onClick={() => setIsMobileMenuOpen(false)} className={styles.mobileNavLink}>Limpieza Facial Profunda</Link></li>
               </ul>
             </div>
 

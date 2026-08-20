@@ -9,17 +9,17 @@ export default function CorporalesPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
       <Helmet>
-        <title>Tratamientos Corporales en West Palm Beach y Miami | Derma.M</title>
-        <meta name="description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach y Miami, Florida." />
+        <title>Tratamientos Corporales en West Palm Beach | Derma.M</title>
+        <meta name="description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach, Florida." />
         <link rel="canonical" href="https://dermamskinhealth.com/corporales" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Tratamientos Corporales en West Palm Beach y Miami | Derma.M" />
-        <meta property="og:description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach y Miami, Florida." />
+        <meta property="og:title" content="Tratamientos Corporales en West Palm Beach | Derma.M" />
+        <meta property="og:description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/corporales" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Tratamientos Corporales en West Palm Beach y Miami | Derma.M" />
-        <meta name="twitter:description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach y Miami, Florida." />
+        <meta name="twitter:title" content="Tratamientos Corporales en West Palm Beach | Derma.M" />
+        <meta name="twitter:description" content="Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({

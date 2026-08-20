@@ -19,6 +19,17 @@ export default function FloatingWhatsApp() {
     }
   }, []);
 
+  useEffect(() => {
+    // Once the user scrolls, the bubble has done its job — hide it so it
+    // stops covering page content further down (not a manual dismissal,
+    // so it can still reappear on the next page load).
+    if (!showHelper) return;
+
+    const handleScroll = () => setShowHelper(false);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [showHelper]);
+
   const handleDismiss = (e) => {
     e.preventDefault();
     e.stopPropagation();

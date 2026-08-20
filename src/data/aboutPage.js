@@ -126,19 +126,6 @@ export const aboutPage = {
       specialty: "Corporales & Postoperatorio",
       members: [
         {
-          name: "Josey González",
-          role: "Masajista & Esteticista",
-          tags: ["Corporales", "Postoperatorio"],
-          shortBio: "Especializada en drenaje linfático, recuperación postoperatoria y tratamientos corporales. Protocolos personalizados con atención cercana y técnica especializada.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/josey-gonzalez.mp4",
-          mediaSrc: "/assets/images/about/team/josey-gonzalez.jpg",
-          mediaPosition: "center 12%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/josey-gonzalez.vcf",
-          status: "active"
-        },
-        {
           name: "Elianne Trujillo",
           role: "Masajista Terapéutica",
           tags: ["Corporales", "Postoperatorio"],
@@ -166,6 +153,22 @@ export const aboutPage = {
           mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/tony-diaz.vcf",
+          status: "active"
+        }
+      ]
+    },
+    {
+      specialty: "Estética Dental",
+      members: [
+        {
+          name: "Dr. Miguel Ramos",
+          role: "Odontólogo Especialista en Ortodoncia, Rehabilitación Oral y Estética Dental",
+          tags: ["Estética Dental"],
+          shortBio: "Más de 25 años de práctica clínica en ortodoncia, rehabilitación oral y blanqueamiento dental certificado, combinando conocimiento clínico con una visión estética centrada en el paciente.",
+          mediaType: "image",
+          mediaSrc: undefined,
+          vcardEnabled: true,
+          vcardUrl: "/team/vcards/miguel-ramos.vcf",
           status: "active"
         }
       ]

@@ -79,12 +79,12 @@ export default function ContactoPage() {
         <link rel="canonical" href="https://dermamskinhealth.com/contacto" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contacto | Derma.M" />
-        <meta property="og:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach y Miami, Florida." />
+        <meta property="og:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/contacto" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contacto | Derma.M" />
-        <meta name="twitter:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach y Miami, Florida." />
+        <meta name="twitter:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
@@ -92,7 +92,7 @@ export default function ContactoPage() {
           "@type": "ContactPage",
           "name": "Contacto | Derma.M",
           "url": "https://dermamskinhealth.com/contacto",
-          "description": "Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach y Miami, Florida.",
+          "description": "Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida.",
           "mainEntity": {
             "@type": "HealthAndBeautyBusiness",
             "name": "Derma.M",
@@ -108,18 +108,6 @@ export default function ContactoPage() {
                   "addressLocality": "West Palm Beach",
                   "addressRegion": "FL",
                   "postalCode": "33405",
-                  "addressCountry": "US"
-                }
-              },
-              {
-                "@type": "HealthAndBeautyBusiness",
-                "name": "Derma.M — Miami",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "4960 SW 72nd Ave Ste 203",
-                  "addressLocality": "Miami",
-                  "addressRegion": "FL",
-                  "postalCode": "33155",
                   "addressCountry": "US"
                 }
               }
@@ -498,89 +486,7 @@ export default function ContactoPage() {
             </div>
           </section>
 
-          {/* 4. Locations: Side-by-Side Sede Details */}
-          <section className={styles.locationsSection} aria-labelledby="loc-section-title">
-            <div className={styles.locationsContainer}>
-              <div className={styles.sectionHeaderBlock}>
-                <h2 id="loc-section-title" className={styles.sectionTitle}>
-                  Nuestras sedes
-                </h2>
-                <p className={styles.sectionIntro}>
-                  Ofrecemos atención dermoestética en locaciones de primer nivel para tu total comodidad.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                {/* Sede: West Palm Beach */}
-                <div className={styles.locationCard}>
-                  <div className={styles.badgeRow}>
-                    <span className={styles.badgeActive}>Ubicación activa</span>
-                  </div>
-                  <h3 className={styles.locName}>DERMA.M West Palm Beach</h3>
-                  
-                  <div className={styles.locDetailsList}>
-                    <div className={styles.locDetailItem}>
-                      <span className={styles.detailLabel}>Dirección</span>
-                      <span className={styles.detailValue}>
-                        5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405
-                      </span>
-                    </div>
-                    <div className={styles.locDetailItem}>
-                      <span className={styles.detailLabel}>Horario</span>
-                      <span className={styles.detailValue}>Atención con cita previa</span>
-                    </div>
-                    <div className={styles.locDetailItem}>
-                      <span className={styles.detailLabel}>Contacto</span>
-                      <span className={styles.detailValue}>561 253 5384 | info@dermamskinhealth.com</span>
-                    </div>
-                  </div>
-
-                  <p className={styles.locNote}>
-                    Las evaluaciones de la piel se realizan con un enfoque dermoestético y planificación de cuidado responsable.
-                  </p>
-
-                  <div className={styles.locBtnGroup}>
-                    <a 
-                      href="https://maps.app.goo.gl/Hgy4FgMVrEJoFWZWA" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className={styles.locBtnPrimary}
-                    >
-                      Cómo llegar
-                    </a>
-                  </div>
-                </div>
-
-                {/* Sede: Miami */}
-                <div className={styles.locationCard}>
-                  <div className={styles.badgeRow}>
-                    <span className={styles.badgeUpcoming}>PROXIMAMENTE en miami</span>
-                  </div>
-                  <h3 className={styles.locName}>DERMA.M Miami</h3>
-                  
-                  <p className={styles.quickText} style={{ lineHeight: '1.8', fontSize: '14px', marginBottom: '32px' }}>
-                    Estamos preparando una nueva sede para seguir ofreciendo una atención dermoestética personalizada con el estándar profesional de DERMA.M. Mientras tanto, puedes agendar tu evaluación en West Palm Beach o escribirnos por WhatsApp.
-                  </p>
-                  
-                  <div style={{ flexGrow: 1 }}></div>
-
-                  <a 
-                    href={formattedWhatsAppUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={styles.locBtnPrimary}
-                    style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                  >
-                    Consultar disponibilidad
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-          {/* 5. FAQ Section */}
+          {/* 4. FAQ Section */}
           <FAQAccordion
             headline={contactFaq.headline}
             items={contactFaq.items}

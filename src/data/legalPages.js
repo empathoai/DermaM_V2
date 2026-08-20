@@ -220,11 +220,11 @@ export const privacyPolicyData = {
       shortTitle: 'Internacional',
       title: '13. Usuarios internacionales / International users',
       es: [
-        { type: 'p', text: 'DERMA.M opera en Florida y dirige este sitio principalmente a personas que buscan servicios en Miami y West Palm Beach. No ofrecemos ni monitoreamos intencionalmente servicios dirigidos al Espacio Económico Europeo mediante este sitio.' },
+        { type: 'p', text: 'DERMA.M opera en Florida y dirige este sitio principalmente a personas que buscan servicios en West Palm Beach. No ofrecemos ni monitoreamos intencionalmente servicios dirigidos al Espacio Económico Europeo mediante este sitio.' },
         { type: 'p', text: 'Si nuestras actividades cambian y comenzamos a dirigir servicios o monitoreo a personas en otras jurisdicciones, evaluaremos y aplicaremos los avisos, bases jurídicas y mecanismos internacionales que correspondan.' }
       ],
       en: [
-        { type: 'p', text: 'DERMA.M operates in Florida and primarily directs this website to people seeking services in Miami and West Palm Beach. We do not intentionally offer or monitor services directed to the European Economic Area through this website.' },
+        { type: 'p', text: 'DERMA.M operates in Florida and primarily directs this website to people seeking services in West Palm Beach. We do not intentionally offer or monitor services directed to the European Economic Area through this website.' },
         { type: 'p', text: 'If our activities change and we begin directing services or monitoring to people in other jurisdictions, we will assess and implement applicable notices, legal bases, and international mechanisms.' }
       ]
     },

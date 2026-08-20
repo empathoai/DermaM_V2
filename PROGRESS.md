@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 2.3 cerrado: no hace falta `hreflang`
+- **Contexto:** 2.3 estaba "Pendiente (decisión)" desde la sesión de 8.7 — bloqueado hasta confirmar si existe un sitio en inglés real detrás de las rutas EN (`/privacy-policy`, `/terms-of-use`, `/tratamientos-disclaimer`).
+- **Confirmado por el usuario:** no existe sitio en inglés. Esas rutas son solo alias de páginas legales, no una traducción completa del sitio.
+- **Verificado en código:** las 3 rutas EN ya están en `Disallow` de `public/robots.txt` (comentario "Disallow duplicate language variants (non-canonical)") — nunca se indexan.
+- **Conclusión:** no se implementa `hreflang`. Con esas rutas bloqueadas de indexación, agregar `hreflang` crearía referencias "dangling" sin ningún beneficio (riesgo real de error en Search Console).
+- **Sin cambios de código** — solo documentación: decisión agregada a `DECISIONS.md`, ítem 2.3 marcado `Hecho (decisión: no aplica)` en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — Fix: hueco vacío bajo las imágenes en FeaturedServices (regresión de SEO 5.2)
 - **Contexto:** el usuario reportó, mirando el sitio en el navegador, que las imágenes de la sección "Tratamientos destacados" (patrón Z de Home) no cubrían toda la mitad de su banda — quedaba un espacio vacío abajo, tipo "cuadrícula de ajedrez". Investigado con `superpowers:systematic-debugging` antes de proponer ningún fix.
 - **Causa raíz:** la migración a `<Picture>` de la sesión SEO 5.2 (commit `ec00ab2`) envolvió el `<img>` en un `<picture>` sin ningún estilo. El CSS de `FeaturedServices.module.css` (`.mediaImage { height: 100% }` a partir de 1024px) esperaba que el `<img>` fuera el hijo directo del contenedor flex `.mediaCol` — al interponerse un `<picture>` sin altura definida, ese `height:100%` no podía resolverse (colapsa a `auto`), y el navegador caía a la relación de aspecto nativa de la imagen, dejando espacio vacío. Confirmado con medición real en el navegador (`mediaCol` 678.9px vs `img` 426.7px) antes de tocar código.

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
+import Picture from '../../shared/Picture/Picture';
 import styles from './FeaturedServices.module.css';
 
 export default function FeaturedServices() {
@@ -53,7 +54,7 @@ export default function FeaturedServices() {
             </div>
           </div>
           <div className={styles.mediaCol}>
-            <img
+            <Picture
               src="/assets/images/home/featured-limpieza.jpg"
               alt=""
               className={styles.mediaImage}
@@ -90,7 +91,7 @@ export default function FeaturedServices() {
             </div>
           </div>
           <div className={styles.mediaColDark}>
-            <img
+            <Picture
               src="/assets/images/home/featured-prf.jpg"
               alt=""
               className={styles.mediaImage}
@@ -127,7 +128,7 @@ export default function FeaturedServices() {
             </div>
           </div>
           <div className={styles.mediaCol}>
-            <img
+            <Picture
               src="/assets/images/home/featured-postoperatorios.jpg"
               alt=""
               className={styles.mediaImage}

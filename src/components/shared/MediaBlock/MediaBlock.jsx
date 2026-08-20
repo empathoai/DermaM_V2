@@ -24,6 +24,8 @@ export default function MediaBlock({
         alt={alt ? alt : undefined}
         className={styles.image}
         style={imagePosition ? { objectPosition: imagePosition } : undefined}
+        loading="lazy"
+        decoding="async"
         onError={() => setError(true)}
       />
     </div>

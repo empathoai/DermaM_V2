@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 5.1 (parcial): `loading="lazy"`/`decoding="async"` en MediaBlock.jsx
+- **Contexto:** primer ítem de Alta severidad del bloque de performance/imágenes. Diseño vía `superpowers:brainstorming` (spec `docs/superpowers/specs/2026-08-20-item-5.1-medblock-lazy-loading-design.md`).
+- **Hallazgo previo a implementar:** el wrapper de `MediaBlock` ya reserva espacio (`width:100%`/`height:100%` + `aspectRatio` opcional inline), así que `width`/`height` explícitos en el `<img>` no aportan nada real (la CSS los sobreescribe). `srcset` requiere variantes de imagen (`.webp`/tamaños) que no existen todavía — eso es el ítem 5.2, pendiente. `Hero` (above-the-fold) no usa `MediaBlock` (confirmado por grep, usa background-image), así que no hay riesgo de retrasar el LCP.
+- **Cambio:** en [MediaBlock.jsx](src/components/shared/MediaBlock/MediaBlock.jsx), agregados `loading="lazy"` y `decoding="async"` al `<img>`. Sin cambios de props ni CSS.
+- Verificado en browser (`/faciales/hidrofacial`): el `<img class="_image_...">` (instancia de `MediaBlock`, distinguido de otros `<img>` de la página que no pasan por este componente) renderiza con `loading="lazy" decoding="async"`; sin errores de consola; sin cambio visual.
+- Marcado `Hecho (parcial)` 5.1 en `docs/SEO_AUDIT_2026.md` — `width`/`height`/`srcset` reales quedan atados a resolver 5.2 primero.
+
 ## 2026-08-20 — SEO backlog ítem 8.7 (cierre): `geo`/`openingHoursSpecification` también en Contacto.jsx
 - **Contexto:** al revisar qué seguía en el backlog, se detectó que `docs/SEO_AUDIT_2026.md` tenía 8.7 marcado "Parcial/Pendiente" pero el código ya tenía `geo` y `openingHoursSpecification` resueltos en `Home.jsx` (sesión previa, commit `ef0d6c1`) — el doc había quedado desactualizado. El hallazgo original de 8.7 apuntaba a **dos** archivos (`Home.jsx`, `Contacto.jsx`); `Contacto.jsx` nunca recibió esos campos.
 - **Cambio:** en [Contacto.jsx](src/pages/Contacto.jsx), dentro de `mainEntity.location[0]`, agregados `telephone`, `url`, `geo` (mismas coordenadas del pin real de GBP: lat `26.6627718`/lng `-80.0558881`) y `openingHoursSpecification` (mismo horario que `Home.jsx`) — shape idéntico al de `Home.jsx:56-90`. Sin datos nuevos: se reutilizaron los ya confirmados por el usuario y en uso en `Home.jsx`.

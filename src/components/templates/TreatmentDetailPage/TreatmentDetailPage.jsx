@@ -4,6 +4,7 @@ import TreatmentHero from '../../shared/TreatmentHero/TreatmentHero';
 import TreatmentQuickFacts from '../../shared/TreatmentQuickFacts/TreatmentQuickFacts';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import MediaBlock from '../../shared/MediaBlock/MediaBlock';
+import Picture from '../../shared/Picture/Picture';
 import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
 import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
 import WarningBox from '../../shared/WarningBox/WarningBox';
@@ -132,11 +133,11 @@ export default function TreatmentDetailPage({ data }) {
             <p className={styles.whatIsSupport}>{whatIs.body}</p>
           </div>
           <div className={styles.whatIsMedia}>
-            <img 
-              src={whatIs.image || image} 
-              alt={title} 
-              className={styles.whatIsImage} 
-              loading="lazy" 
+            <Picture
+              src={whatIs.image || image}
+              alt={title}
+              className={styles.whatIsImage}
+              loading="lazy"
               width="960"
               height="1200"
               onError={(event) => {

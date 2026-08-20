@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Picture from '../Picture/Picture';
 import styles from './MediaBlock.module.css';
 
 export default function MediaBlock({
@@ -19,7 +20,7 @@ export default function MediaBlock({
 
   return (
     <div className={`${styles.wrapper} ${className}`} style={style}>
-      <img
+      <Picture
         src={src}
         alt={alt ? alt : undefined}
         className={styles.image}

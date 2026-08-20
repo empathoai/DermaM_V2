@@ -12,7 +12,8 @@ import {
   ShieldCheck, 
   ArrowRight, 
   ExternalLink,
-  CheckCircle2
+  CheckCircle2,
+  ChevronDown
 } from 'lucide-react';
 import Navbar from '../components/layout/Navbar/Navbar';
 import Footer from '../components/layout/Footer/Footer';
@@ -208,32 +209,34 @@ export default function ContactoPage() {
                       )}
 
                       <div className="flex flex-col gap-4">
-                        <div className={styles.inputGroup}>
-                          <label htmlFor="nombre" className={styles.label}>Nombre *</label>
-                          <input
-                            id="nombre"
-                            type="text"
-                            name="nombre"
-                            value={formData.nombre}
-                            onChange={handleInputChange}
-                            className={styles.input}
-                            placeholder="Tu nombre completo"
-                            required
-                          />
-                        </div>
+                        <div className={styles.fieldRow}>
+                          <div className={styles.inputGroup}>
+                            <label htmlFor="nombre" className={styles.label}>Nombre *</label>
+                            <input
+                              id="nombre"
+                              type="text"
+                              name="nombre"
+                              value={formData.nombre}
+                              onChange={handleInputChange}
+                              className={styles.input}
+                              placeholder="Tu nombre completo"
+                              required
+                            />
+                          </div>
 
-                        <div className={styles.inputGroup}>
-                          <label htmlFor="telefono" className={styles.label}>Teléfono *</label>
-                          <input
-                            id="telefono"
-                            type="tel"
-                            name="telefono"
-                            value={formData.telefono}
-                            onChange={handleInputChange}
-                            className={styles.input}
-                            placeholder="Ej. +1 561 000 0000"
-                            required
-                          />
+                          <div className={styles.inputGroup}>
+                            <label htmlFor="telefono" className={styles.label}>Teléfono *</label>
+                            <input
+                              id="telefono"
+                              type="tel"
+                              name="telefono"
+                              value={formData.telefono}
+                              onChange={handleInputChange}
+                              className={styles.input}
+                              placeholder="Ej. +1 561 000 0000"
+                              required
+                            />
+                          </div>
                         </div>
 
                         <div className={styles.inputGroup}>
@@ -296,20 +299,27 @@ export default function ContactoPage() {
                         </div>
                       </div>
 
-                      {/* Form-Level Clinical Disclaimer (Bilingual) */}
-                      <div className="p-4 border border-[#363633]/15 bg-[#EFEFEB] text-[11px] leading-relaxed text-[#363633]/90 space-y-2">
-                        <p>
-                          <strong>ES:</strong> {contactConsentCopy.sensitiveInfoEs}
-                        </p>
-                        <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic">
-                          <strong>EN:</strong> {contactConsentCopy.sensitiveInfoEn}
-                        </p>
-                      </div>
+                      {/* Form-Level Clinical Disclaimer (Bilingual) — collapsed by default */}
+                      <details className={styles.legalAccordion}>
+                        <summary className={styles.legalSummary}>
+                          <span>Aviso legal / Legal notice</span>
+                          <ChevronDown size={16} className={styles.legalSummaryIcon} aria-hidden="true" />
+                        </summary>
 
-                      <div className="p-4 border border-[#363633]/15 bg-white/40 text-[11px] leading-relaxed text-[#363633]/90 space-y-2">
-                        <p><strong>ES:</strong> {contactConsentCopy.serviceNoticeEs}</p>
-                        <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic"><strong>EN:</strong> {contactConsentCopy.serviceNoticeEn}</p>
-                      </div>
+                        <div className="p-4 border border-[#363633]/15 bg-[#EFEFEB] text-[11px] leading-relaxed text-[#363633]/90 space-y-2">
+                          <p>
+                            <strong>ES:</strong> {contactConsentCopy.sensitiveInfoEs}
+                          </p>
+                          <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic">
+                            <strong>EN:</strong> {contactConsentCopy.sensitiveInfoEn}
+                          </p>
+                        </div>
+
+                        <div className="p-4 border border-[#363633]/15 bg-white/40 text-[11px] leading-relaxed text-[#363633]/90 space-y-2 mt-2">
+                          <p><strong>ES:</strong> {contactConsentCopy.serviceNoticeEs}</p>
+                          <p className="border-t border-[#363633]/10 pt-2 text-[#4E4D4D] italic"><strong>EN:</strong> {contactConsentCopy.serviceNoticeEn}</p>
+                        </div>
+                      </details>
 
                       {/* Consent checkbox for marketing communication (Bilingual, unchecked) */}
                       <div className="flex items-start gap-3 my-2">

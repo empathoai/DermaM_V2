@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './BeforeAfterGrid.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import Picture from '../Picture/Picture';
 
 export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, variant = 'dark' }) {
   if (!items || items.length === 0) return null;
@@ -16,10 +17,10 @@ export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, 
             <div className={styles.imagePair}>
               <div className={styles.imageContainer}>
                 {item.before ? (
-                  <img 
-                    src={item.before} 
-                    alt="Before" 
-                    className={styles.image} 
+                  <Picture
+                    src={item.before}
+                    alt="Before"
+                    className={styles.image}
                     onError={(e) => {
                       e.target.style.display = 'none';
                     }}
@@ -31,10 +32,10 @@ export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, 
               </div>
               <div className={styles.imageContainer}>
                 {item.after ? (
-                  <img 
-                    src={item.after} 
-                    alt="After" 
-                    className={styles.image} 
+                  <Picture
+                    src={item.after}
+                    alt="After"
+                    className={styles.image}
                     onError={(e) => {
                       e.target.style.display = 'none';
                     }}

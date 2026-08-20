@@ -2,6 +2,9 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO
+- Se agregó una nota en [CLAUDE.md](CLAUDE.md) señalando `F:\OS-EmpathoAI-SecondBrain` como wiki personal del usuario (repo separado, fuera de este proyecto) para consultar material de SEO/AEO/GEO, validado como alineado con el suite de skills SEO/GEO/AEO/Local de este repo. Es solo fuente de lectura — no forma parte del flujo de archivos protegidos/aprobación de este proyecto. Commit [04b94ba](https://github.com/empathoai/DermaM_V2/commit/04b94ba).
+
 ## 2026-08-20 — Eliminado tratamiento CO2 Láser (Láser y Luz) y todas sus dependencias
 - **Contexto:** el usuario pidió eliminar el tratamiento "CO2 Láser" de la categoría Láser y Luz. No existía archivo de ruta dedicado — se sirve por la ruta genérica `/laser-y-luz/:treatment` ([routes.jsx:55](src/routes.jsx:55)) leyendo `treatmentPages.js` por slug, así que al quitar los datos la URL pasa a 404 naturalmente.
 - **Archivos tocados:**

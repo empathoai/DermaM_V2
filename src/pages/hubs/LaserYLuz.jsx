@@ -30,8 +30,7 @@ export default function LaserYLuzPage() {
           "description": "Tratamientos con tecnología estética para renovar y mejorar la piel en Derma.M.",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Depilación Láser", "url": "https://dermamskinhealth.com/laser-y-luz/depilacion-laser" },
-            { "@type": "ListItem", "position": 2, "name": "IPL", "url": "https://dermamskinhealth.com/laser-y-luz/ipl" },
-            { "@type": "ListItem", "position": 3, "name": "CO2 Láser", "url": "https://dermamskinhealth.com/laser-y-luz/co2-laser" }
+            { "@type": "ListItem", "position": 2, "name": "IPL", "url": "https://dermamskinhealth.com/laser-y-luz/ipl" }
           ]
         })}</script>
       </Helmet>

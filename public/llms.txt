@@ -60,7 +60,6 @@
 - Body Carboxytherapy: https://dermamskinhealth.com/corporales/carboxiterapia-corporal
 - Laser Hair Removal: https://dermamskinhealth.com/laser-y-luz/depilacion-laser
 - IPL: https://dermamskinhealth.com/laser-y-luz/ipl
-- CO2 Laser: https://dermamskinhealth.com/laser-y-luz/co2-laser
 - Teeth Whitening: https://dermamskinhealth.com/dental-estetico/blanqueamiento-dental
 - Dental Cleaning: https://dermamskinhealth.com/dental-estetico/limpieza-dental
 - Hair Treatment: https://dermamskinhealth.com/capilar/tratamiento-capilar

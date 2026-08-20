@@ -972,48 +972,6 @@ const customDetails = {
       }
     ]
   },
-  'co2-laser': {
-    whatIsBody: 'El Láser CO2 Fraccionado es un estándar estético de primer nivel para la renovación de las capas superficiales de la piel. Emplea un haz de luz fraccionada que realiza una vaporización microscópica controlada de la superficie cutánea, impulsando una renovación completa que mejora la textura, el tono y la firmeza general.',
-    problemContextHeadline: 'TEXTURA ALTAMENTE IRREGULAR, CICATRICES PROFUNDAS O LINEAS DE EDAD',
-    problemContextBody: 'Tanto marcas cicatrizales como arrugas finas e irregularidades de relieve no logran atenuarse con exfoliaciones leves ordinarias. Un protocolo energético fraccionado asiste a la renovación profunda de la piel de forma idónea, mejorando drásticamente el relieve y superficie.',
-    duration: '45 - 60 min',
-    application: 'Cabina / Láser fraccionado ablativo',
-    anesthesia: 'Tópica o según indicación profesional',
-    resultado: 'Efecto renovador notable con piel lisa a mediano plazo',
-    whoForList: [
-      'Personas con secuelas de marcas profundas o relieve cutáneo muy irregular.',
-      'Quienes buscan atenuar arrugas finas visibles y recuperar firmeza cutánea.',
-      'Quienes desean una renovación completa de la superficie de la piel con resultados notables.'
-    ],
-    safetyPrecautions: [
-      'Requiere un periodo de recuperación de 3 a 5 días con descamación y enrojecimiento temporal.',
-      'Uso obligatorio de cremas regeneradoras e hidratantes según indicación profesional.',
-      'Evitar la exposición solar y aplicar protector solar SPF 30+ de forma estricta.'
-    ],
-    faq: [
-      {
-        question: '¿Qué downtime o reposo requiere el láser CO2?',
-        answer: 'Requiere de 3 a 5 días de enrojecimiento y descamación fina y seca. Debes evitar el maquillaje y mantener la piel altamente hidratada durante este periodo.'
-      },
-      {
-        question: '¿Es doloroso el tratamiento de renovación profunda?',
-        answer: 'Aplicamos previamente un gel de confort de alta potencia en la cabina para garantizar que la sesión sea sumamente tolerable y cómoda.'
-      },
-      {
-        question: '¿Cuántas sesiones se recomiendan para cicatrices?',
-        answer: 'Se aconseja realizar de 1 a 3 sesiones al año, espaciadas cada 6 u 8 semanas, dependiendo de la profundidad de las marcas.'
-      },
-      {
-        question: '¿Ayuda a tensar la piel flácida corporal?',
-        answer: 'Sí. El haz fraccionado estimula una intensa regeneración de colágeno profundo, mejorando la firmeza y textura arrugada del abdomen o muslos.'
-      },
-      {
-        question: '¿Cuándo se aprecian los resultados finales de textura?',
-        answer: 'Notarás suavidad a partir del décimo día. El proceso de colágeno nuevo continuará mejorando el relieve y firmeza de la piel hasta por 90 días.'
-      }
-    ]
-  },
-
   // --- DENTAL ESTÉTICO ---
   'blanqueamiento-dental': {
     whatIsBody: 'El Blanqueamiento Dental Estético consiste en un protocolo destinado a aclarar de forma segura la tonalidad de las piezas dentales. Empleamos geles aclaradores certificados que actúan diluyendo manchas superficiales y pigmentaciones acumuladas en el esmalte sin desgastar ni alterar la estructura dental.',
@@ -1181,8 +1139,7 @@ const compileTreatments = () => {
     ],
     laserYLuz: [
       'depilacion-laser',
-      'ipl',
-      'co2-laser'
+      'ipl'
     ],
     dentalEstetico: [
       'blanqueamiento-dental',

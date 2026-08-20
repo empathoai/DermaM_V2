@@ -707,20 +707,6 @@ export const categoryPages = {
           cta: 'VER TRATAMIENTO',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
           image: '/assets/images/treatments/laser-y-luz/ipl/hero.jpg'
-        },
-        {
-          title: 'CO2 LÁSER',
-          description: 'Tecnología fraccionada para renovación profunda de la piel.',
-          benefits: [
-            'Textura refinada',
-            'Apoyo en cicatrices',
-            'Renovación cutánea'
-          ],
-          ideal: 'Ideal si buscas mejorar textura, marcas o signos visibles de envejecimiento.',
-          to: '/laser-y-luz/co2-laser',
-          cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: '/assets/images/treatments/laser-y-luz/co2-laser/hero.jpg'
         }
       ]
     },

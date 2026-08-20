@@ -92,11 +92,7 @@
   .textBlock {
     flex: 0 0 50%;
     padding: 80px 10% 80px 10%;
-    /* On desktop, we display the full-bleed background layout with the logo at the top */
-    background-image: url('/assets/images/home/founder_logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: var(--color-clinical-canvas, #F2F0F1);
   }
 
   .image {

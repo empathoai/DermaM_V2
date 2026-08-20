@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Picture from '../shared/Picture/Picture'
 
 export default function HeroMedia({ src, alt = '', className = '', onReady, style }) {
   const [imgSrc, setImgSrc] = useState(src)
@@ -39,7 +40,7 @@ export default function HeroMedia({ src, alt = '', className = '', onReady, styl
   }
 
   return (
-    <img
+    <Picture
       src={imgSrc}
       alt={alt}
       loading="eager"

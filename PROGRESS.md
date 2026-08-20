@@ -2,6 +2,16 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Eliminado tratamiento CO2 Láser (Láser y Luz) y todas sus dependencias
+- **Contexto:** el usuario pidió eliminar el tratamiento "CO2 Láser" de la categoría Láser y Luz. No existía archivo de ruta dedicado — se sirve por la ruta genérica `/laser-y-luz/:treatment` ([routes.jsx:55](src/routes.jsx:55)) leyendo `treatmentPages.js` por slug, así que al quitar los datos la URL pasa a 404 naturalmente.
+- **Archivos tocados:**
+  - [categoryPages.js](src/data/categoryPages.js): tarjeta "CO2 LÁSER" removida de la grilla del hub Láser y Luz.
+  - [treatmentPages.js](src/data/treatmentPages.js): entrada de detalle `'co2-laser'` (whatIs, FAQs, etc.) eliminada; también quitado de la lista `laserYLuz` de tratamientos relacionados.
+  - [LaserYLuz.jsx](src/pages/hubs/LaserYLuz.jsx): quitado del `ItemList` del JSON-LD del hub.
+  - `public/sitemap.xml` y `public/llms.txt` (protegidos, se tocaron con instrucción explícita del usuario): removida la entrada `co2-laser`.
+  - Carpeta de imágenes huérfana `public/assets/images/treatments/laser-y-luz/co2-laser/` eliminada.
+- Verificado en navegador: hub Láser y Luz ahora solo muestra Depilación Láser e IPL. Commit [7ca53e3](https://github.com/empathoai/DermaM_V2/commit/7ca53e3), pusheado a `main`.
+
 ## 2026-08-20 — Home FounderSection: quitar fondo logo watermark, dejar Clinical Canvas sólido
 - **Contexto:** el usuario confundió el `FounderSection` de Home con el `.spotlightContent` de About (entrada anterior de hoy) y preguntó por qué no se había aplicado el mismo cambio ahí. Se confirmó que eran componentes distintos y, a pedido explícito, se replicó el cambio.
 - **Cambio en [FounderSection.module.css](src/components/sections/FounderSection/FounderSection.module.css):** en el breakpoint desktop (`min-width: 1024px`) del `.textBlock`, se removió `background-image: url('/assets/images/home/founder_logo.png')` (+ `background-size`/`position`/`repeat`) y se dejó `background-color: var(--color-clinical-canvas, #F2F0F1)`, igual que en About. Mobile no cambia (ya usaba `background-image: none` + logo chico inline).

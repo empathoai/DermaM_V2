@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.6: `Service.url` determinístico en las 5 páginas de tratamiento
+- **Contexto:** tercer ítem del "Cubo 1". Los 5 `[treatment].jsx` (faciales, laser, dental, corporales, capilar) construían `Service.url` del JSON-LD con `` `https://dermamskinhealth.com${window?.location?.pathname || ''}` `` en render — frágil/no determinístico. Cada archivo ya calculaba el mismo valor de forma determinística para su propio `<link rel="canonical">` a partir de `treatment` (`useParams()`) + prefijo de categoría.
+- **Cambio:** reemplazado `window?.location?.pathname` por el mismo template literal que ya usa el canonical de cada archivo — `faciales/${treatment}`, `laser-y-luz/${treatment}`, `dental-estetico/${treatment}`, `corporales/${treatment}`, `capilar/${treatment}`.
+- Verificado en browser en 2 categorías (`/faciales/hidrofacial`, `/dental-estetico/blanqueamiento-dental`): `Service.url` del JSON-LD coincide exactamente con `canonical`, sin errores de consola.
+- Marcado `Hecho` 8.6 en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — SEO backlog ítem 8.5: poblado `itemListElement` en el JSON-LD de IvTherapy.jsx
 - **Contexto:** segundo ítem del "Cubo 1". El `ItemList` de [IvTherapy.jsx](src/pages/hubs/IvTherapy.jsx) tenía `name`/`url`/`description` pero sin `itemListElement`.
 - **Particularidad frente a los demás hubs:** los 11 protocolos de IV Therapy (`src/data/categoryPages.js` → `ivTherapy.services.treatments`) no tienen página propia por decisión de producto ya tomada (baja relevancia comercial individual en la zona) — todos sus CTA apuntan a `/contacto`, no a un slug de tratamiento. Confirmado con el usuario antes de implementar.

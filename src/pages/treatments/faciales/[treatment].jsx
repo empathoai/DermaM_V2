@@ -61,7 +61,7 @@ export default function FacialesTreatmentPage() {
           "@type": "Service",
           "name": treatmentData?.hero?.title || treatmentData?.title || "Tratamiento Estético",
           "description": treatmentData?.hero?.body || treatmentData?.description || "Tratamiento estético profesional en Derma.M.",
-          "url": `https://dermamskinhealth.com${window?.location?.pathname || ''}`,
+          "url": `https://dermamskinhealth.com/faciales/${treatment}`,
           "serviceType": "Aesthetic Treatment",
           "provider": {
             "@type": "HealthAndBeautyBusiness",

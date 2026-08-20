@@ -60,7 +60,7 @@ export default function LaserTreatmentPage() {
           "@type": "Service",
           "name": treatmentData?.hero?.title || treatmentData?.title || "Tratamiento Estético",
           "description": treatmentData?.hero?.body || treatmentData?.description || "Tratamiento estético profesional en Derma.M.",
-          "url": `https://dermamskinhealth.com${window?.location?.pathname || ''}`,
+          "url": `https://dermamskinhealth.com/laser-y-luz/${treatment}`,
           "serviceType": "Aesthetic Treatment",
           "provider": {
             "@type": "HealthAndBeautyBusiness",

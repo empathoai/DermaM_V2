@@ -2,11 +2,11 @@ import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
 const faqRoutes = [
-  '/contacto',
-  '/limpieza-facial-profunda',
-  '/prf-y-fibrina',
-  '/tratamientos-postoperatorios',
-  '/faciales/hidrofacial'
+  { path: '/contacto', count: 5 },
+  { path: '/limpieza-facial-profunda', count: 5 },
+  { path: '/prf-y-fibrina', count: 7 },
+  { path: '/tratamientos-postoperatorios', count: 5 },
+  { path: '/faciales/hidrofacial', count: 5 }
 ];
 
 const categorySource = readFileSync(
@@ -18,7 +18,7 @@ const treatmentRoutes = [...categorySource.matchAll(
 )].map((match) => match[1]);
 
 test.describe('FAQ consistency', () => {
-  for (const route of faqRoutes) {
+  for (const { path: route, count } of faqRoutes) {
     test(`${route} uses the canonical accessible FAQ`, async ({ page }, testInfo) => {
       await page.goto(route);
 
@@ -38,10 +38,10 @@ test.describe('FAQ consistency', () => {
       const faqSchema = structuredData
         .map((entry) => JSON.parse(entry))
         .find((entry) => entry['@type'] === 'FAQPage');
-      expect(faqSchema?.mainEntity).toHaveLength(5);
+      expect(faqSchema?.mainEntity).toHaveLength(count);
 
       const buttons = section.locator('button[aria-expanded]');
-      await expect(buttons).toHaveCount(5);
+      await expect(buttons).toHaveCount(count);
 
       const firstButton = buttons.first();
       const buttonBox = await firstButton.boundingBox();

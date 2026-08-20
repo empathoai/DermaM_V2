@@ -2,6 +2,17 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.4: JSON-LD `Service`+`FAQPage` en las 3 landing pages destacadas
+- **Contexto:** plan `docs/superpowers/plans/2026-08-20-item-8.4-json-ld-landings.md`, ejecutado con `superpowers:executing-plans`. Cierra el último hallazgo Alta pendiente del Bloque 8.
+- **Cambio 1 (contenido):** agregadas 2 FAQs nuevas de desambiguación PRP/PRF a `landingPages.prfYFibrina.faq.items` en [landingPages.js](src/data/landingPages.js) (de 5 a 7 preguntas) — se renderizan automáticamente en el accordion visible y en el JSON-LD.
+- **Cambio 2 (JSON-LD):** agregado `<script type="application/ld+json">` con `@graph` de 2 nodos (`Service` + `FAQPage`) dentro del `<Helmet>` existente de [LimpiezaFacial.jsx](src/pages/landings/LimpiezaFacial.jsx), [PrfYFibrina.jsx](src/pages/landings/PrfYFibrina.jsx) y [Postoperatorios.jsx](src/pages/landings/Postoperatorios.jsx) — mismo shape de `Service` que los 5 `[treatment].jsx` (sin `sameAs`, sin campos de entidad extra). `PrfYFibrina.jsx` requiere `.replace(/\n/g, ' ')` en `hero.title` porque ese string tiene un `\n` literal.
+- **Hallazgo evitado:** verificado (`grep -in "vampire"`) que la palabra "Vampire Facial" (marca registrada, sin licencia) no aparece en ningún string tocado.
+- Verificado en browser: `JSON.parse` de cada script parsea sin errores; conteo de `mainEntity` correcto (5/7/5); sin cambio visual (edición solo en `<head>`); sin errores de consola.
+- **Fix colateral necesario:** `tests/faq-consistency.spec.js` tenía hardcodeado `toHaveLength(5)` / `toHaveCount(5)` para todas las rutas de FAQ, incluida `/prf-y-fibrina` — actualizado a un mapa `{path, count}` por ruta para reflejar las 7 FAQs nuevas de esa landing.
+- **Test:visual — hallazgo pre-existente, no tocado:** `npm run test:visual` mostró fallos en `/contacto` (FAQ consistency: solo 4 preguntas, no 5) y en varios snapshots de sección "problem"/hero en páginas no tocadas por este cambio (Home, Hidrofacial, Contacto, y las 3 landings en mobile-safari) — diffs de 6-10% en secciones que este cambio nunca toca (solo se editó `<head>`). Se investigó y se concluyó que son fallos preexistentes/flaky (timing de fuentes, no relacionados a JSON-LD ni al FAQ). No se tocaron esos snapshots ni el archivo `Contacto.jsx` — fuera de alcance de este ítem.
+- Registrados ítems 8.9 (auditoría de desambiguación de naming en tratamientos) y 8.10 (estrategia de posicionamiento PRP/PRF — Vampire Facial® sin licencia) en `docs/SEO_AUDIT_2026.md` como Pendiente/Media, referenciando la spec de este plan.
+- Marcado `Hecho` 8.4 en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — Horario real visible en la card de contacto (Contacto.jsx)
 - **Contexto:** derivado de la sesión de 8.7 (JSON-LD geo/horario) — el usuario, al revisar la card visual de contacto, notó que el campo "Horario" mostraba el texto genérico "Atención dermoestética con cita previa" en vez del horario real ya usado en el JSON-LD.
 - **Cambio:** en [Contacto.jsx:384](src/pages/Contacto.jsx:384), reemplazado ese texto por "Lun-Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM" — mismos datos de horario ya confirmados por el usuario y usados en `openingHoursSpecification` de `Home.jsx`.

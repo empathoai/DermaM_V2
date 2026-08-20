@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import PageHero from '../../sections/PageHero/PageHero';
@@ -87,6 +88,9 @@ export default function AboutPage({ data }) {
               {founderSpotlight.secondaryBody && (
                 <p className={styles.spotlightBodySecondary}>{founderSpotlight.secondaryBody}</p>
               )}
+              <Link to="/nosotros/nancy-nieto" className={styles.spotlightLink}>
+                Conoce más sobre Nancy →
+              </Link>
             </motion.div>
           </div>
         </div>

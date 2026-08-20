@@ -105,6 +105,32 @@
   margin: 0;
 }
 
+.spotlightLink {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #363633;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(54, 54, 51, 0.32);
+  padding-bottom: 2px;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+@media (hover: hover) {
+  .spotlightLink:hover {
+    color: #141313;
+    border-color: #141313;
+  }
+}
+
+.spotlightLink:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 3px;
+}
+
 /* 3. Founder Philosophy Section */
 .philosophySection {
   background-color: #141313; /* Dark Authority */

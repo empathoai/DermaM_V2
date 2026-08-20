@@ -34,6 +34,22 @@ test.describe('Visual Regression Tests', () => {
     await expect(page).toHaveScreenshot('nosotros-viewport.png');
   });
 
+  test('Nancy Nieto Bio Page - Viewport', async ({ page }, testInfo) => {
+    if (testInfo.project.name === 'mobile-safari') return;
+    await page.goto('/nosotros/nancy-nieto');
+    await page.waitForTimeout(3000);
+    await expect(page).toHaveScreenshot('nancy-nieto-viewport.png');
+  });
+
+  test('Nosotros Page - Founder Cross-link', async ({ page }) => {
+    await page.goto('/nosotros');
+    await page.waitForTimeout(3000);
+    const founderSection = page.locator('section[aria-labelledby="founder-heading"]');
+    await founderSection.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await expect(founderSection).toHaveScreenshot('nosotros-founder-with-link.png');
+  });
+
   test('Contacto Page - Viewport', async ({ page }, testInfo) => {
     if (testInfo.project.name === 'mobile-safari') return;
     await page.goto('/contacto');

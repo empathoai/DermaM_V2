@@ -27,7 +27,20 @@ export default function IvTherapyPage() {
           "@type": "ItemList",
           "name": "IV Therapy | Derma.M",
           "url": "https://dermamskinhealth.com/iv-therapy",
-          "description": "Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado en Derma.M."
+          "description": "Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado en Derma.M.",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Tri-Immune Boost IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 2, "name": "Get-Up-and-Go IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 3, "name": "Immunity IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 4, "name": "Brainstorm IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 5, "name": "Alleviate IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 6, "name": "Quench IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 7, "name": "Reboot IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 8, "name": "Recovery & Performance IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 9, "name": "Snow Bright IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 10, "name": "Timeless IV", "url": "https://dermamskinhealth.com/iv-therapy" },
+            { "@type": "ListItem", "position": 11, "name": "El B-Lean IV", "url": "https://dermamskinhealth.com/iv-therapy" }
+          ]
         })}</script>
       </Helmet>
       <Navbar />

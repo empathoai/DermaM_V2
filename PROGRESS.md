@@ -2,6 +2,14 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 8.5: poblado `itemListElement` en el JSON-LD de IvTherapy.jsx
+- **Contexto:** segundo ítem del "Cubo 1". El `ItemList` de [IvTherapy.jsx](src/pages/hubs/IvTherapy.jsx) tenía `name`/`url`/`description` pero sin `itemListElement`.
+- **Particularidad frente a los demás hubs:** los 11 protocolos de IV Therapy (`src/data/categoryPages.js` → `ivTherapy.services.treatments`) no tienen página propia por decisión de producto ya tomada (baja relevancia comercial individual en la zona) — todos sus CTA apuntan a `/contacto`, no a un slug de tratamiento. Confirmado con el usuario antes de implementar.
+- **Cambio:** agregados 11 `ListItem` (`position` 1-11, `name` = cada protocolo en Title Case, `url` idéntica para los 11 = `https://dermamskinhealth.com/iv-therapy`, la del hub, ya que no existen URLs individuales).
+- Verificado en browser: `itemListElement.length === 11` en el JSON-LD parseado, sin errores de consola, sin cambio visual (edición solo en `<head>`).
+- **Nota abierta del usuario, no accionada en este ciclo:** puede haber oportunidad de mejorar las descripciones de estos protocolos — no se tocó, queda para un ciclo aparte si se decide perseguirlo.
+- Marcado `Hecho` 8.5 en `docs/SEO_AUDIT_2026.md` (gitignoreado).
+
 ## 2026-08-20 — SEO backlog ítems 2.1/2.2: `html lang="es"` y reemplazo del título placeholder de AI Studio
 - **Contexto:** primer ítem del "Cubo 1" (batch de 5 fixes mecánicos del backlog SEO), acordado tras `/llm-council`. Diseño y plan pasaron por `superpowers:brainstorming`/`writing-plans` (ver `docs/superpowers/specs/2026-08-20-cubo1-mechanical-seo-fixes-design.md` y `docs/superpowers/plans/2026-08-20-cubo1-mechanical-seo-fixes.md`, ambos gitignoreados).
 - **Cambio:** en [index.html](index.html), `<html lang="en">` → `<html lang="es">` (el sitio es en español); `<title>My Google AI Studio App</title>` → `<title>Derma.M | Medical Spa West Palm Beach, Florida</title>` (placeholder de exportación de Google AI Studio, visible a crawlers/scrapers sin JS antes de que Helmet lo pise en runtime).

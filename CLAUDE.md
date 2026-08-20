@@ -9,6 +9,10 @@ This project is essentially finished. Treat every change as risk to something th
 - Do not agree by default. Do not tell the user what they want to hear. If a request is illogical, contradicts existing decisions in `DECISIONS.md`/`MEMORY.md`, risks breaking a working feature, medical-compliance copy, accessibility, or visual regressions, push back and say so plainly before doing it — do not proceed and hope it's fine.
 - When in doubt about blast radius, stop and ask rather than guessing generously in the user's favor.
 
+## Mandatory: dev server / browser session workflow
+- At session start, before doing other work, open the site in the Browser pane (dev server on port 3000) so it's ready without the user asking.
+- At session end (when work is done / user signals wrap-up), close/stop the dev server tab or process you opened, so the port is freed for the next session.
+
 ## Mandatory: superpowers skills
 This project has the `superpowers` plugin enabled (`.claude/settings.json`, marketplace `github.com/obra/superpowers-marketplace`). Its process skills are **mandatory**, not optional — use them before acting, every session:
 - New feature, UI/behavior change, or any creative/design work → `superpowers:brainstorming` first.

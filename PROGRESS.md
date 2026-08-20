@@ -2,6 +2,14 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Formulario de Contacto: menos scroll en mobile (acordeón de aviso legal + Nombre/Teléfono en fila)
+- **Contexto:** el usuario notó que el formulario de Contacto obligaba a un scroll excesivo en mobile — confirmado con captura (`ux-heuristics` + revisión de código): 6 campos apilados + dos bloques de aviso legal bilingües completos (ES/EN) + checkbox de marketing + submit, todo antes de llegar a la tarjeta de ubicación/mapa. El aviso de "no envíes info sensible" ya existía (`contactConsentCopy.sensitiveInfoEs/En`), así que no había que agregarlo, solo dejarlo más accesible.
+- **Cambio en [Contacto.jsx](src/pages/Contacto.jsx) y [Contacto.module.css](src/pages/Contacto.module.css):**
+  1. Los dos bloques informativos (`sensitiveInfo` + `serviceNotice`, sin checkbox asociado) se envolvieron en un `<details>/<summary>` nativo, colapsado por defecto en mobile y desktop, con label "Aviso legal / Legal notice" y chevron que rota al abrir. El checkbox de consentimiento de marketing (`marketingEs/En`) quedó **fuera** del acordeón, siempre visible — no se puede ocultar algo que el usuario debe leer para decidir si tilda la casilla.
+  2. Nombre y Teléfono se emparejaron en una sola fila desde 768px (`fieldRow`: columna en mobile, grid 2 columnas en desktop). Email, Servicio, Preferencia y Mensaje siguen en columna completa.
+- Sin cambios de copy, validación ni handler de submit. Proceso completo: `superpowers:brainstorming` → spec (`docs/superpowers/specs/2026-08-20-contact-form-mobile-scroll-design.md`, gitignored) → `superpowers:writing-plans` → `superpowers:executing-plans` inline.
+- Verificado en el navegador de Claude Code (no Playwright, decisión explícita del usuario): acordeón abre/cierra y rota el ícono en desktop y mobile (375px), texto ES/EN intacto, Nombre/Teléfono en fila en desktop y apilados en mobile, smoke test de envío completo (llenar campos → "¡Mensaje enviado!") sin romper nada.
+
 ## 2026-08-20 — Popup de WhatsApp ya no tapa contenido al hacer scroll (fix del pendiente de la auditoría UX)
 - **Contexto:** hallazgo pendiente de la auditoría `ux-heuristics` (ver entrada de abajo, "Eliminada sección 'Nuestra sede' duplicada") — la burbuja de texto del botón flotante de WhatsApp se quedaba fija indefinidamente (`position: fixed`, sin auto-hide) y tapaba contenido/botones al hacer scroll, tanto en desktop como mobile.
 - **Diagnóstico con skill `cro`:** el trigger (aparece 3s después de cargar la página, sin relación a scroll) está bien y no se tocó. El problema era puramente de colisión: la burbuja no tenía ningún mecanismo para dejar de superponerse al contenido una vez que el usuario empezaba a interactuar con la página.

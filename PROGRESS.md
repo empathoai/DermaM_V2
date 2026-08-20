@@ -2,6 +2,18 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — SEO backlog ítem 4.2: página de bio del fundador (E-E-A-T)
+- **Contexto:** ítem de severidad Media, "sin página de autor/bio médica". Diseño y plan vía `superpowers:brainstorming`/`writing-plans` (spec `docs/superpowers/specs/2026-08-20-item-4.2-founder-bio-page-design.md`, plan `docs/superpowers/plans/2026-08-20-founder-bio-page.md`), ejecutado inline con `superpowers:executing-plans`, directo en `main` (decisión del usuario).
+- **Alcance:** solo Nancy Nieto (fundadora/directora) — enfoque A de 3 evaluados. Bios de staff con licencia (Tony Díaz DO, Dr. Miguel Ramos) quedan fuera de alcance, posible ítem futuro.
+- **Restricción explícita de Nancy:** no publicar números de licencia ni datos que faciliten su mal uso (patrón conocido en Florida de operadores no licenciados usando licencias ajenas). Solo texto cualitativo ya aprobado en `aboutPage.js` — ver `DECISIONS.md`.
+- **Cambio 1 (datos):** nuevo export `founderBioPage` en [aboutPage.js](src/data/aboutPage.js) — reutiliza (no duplica) `founderSpotlight`/`founderPhilosophy`/`quote`/`cta` ya existentes, con `hero` propio.
+- **Cambio 2 (template):** nuevo [FounderBioPage.jsx](src/components/templates/FounderBioPage/FounderBioPage.jsx) + `.module.css` — copia literal de 4 secciones ya existentes en `AboutPage.jsx` (Hero, Founder Spotlight, Philosophy+Quote, Final CTA), mismas clases/estilos/variantes `motion`, sin componentes inventados. Sin Academy/Team/Testimonials (confirmado con usuario).
+- **Cambio 3 (ruta):** nueva página [NancyNieto.jsx](src/pages/NancyNieto.jsx) en `/nosotros/nancy-nieto`, registrada en [routes.jsx](src/routes.jsx). Helmet con meta/OG/Twitter tags + JSON-LD `@type: "Person"` (sin `hasCredential`, sin licencia) con `worksFor` apuntando a la entidad `HealthAndBeautyBusiness` ya usada en `/nosotros`.
+- **Cambio 4 (cross-link):** en [AboutPage.jsx](src/components/templates/AboutPage/AboutPage.jsx), agregado link "Conoce más sobre Nancy →" bajo el founder spotlight de `/nosotros`, apuntando a la nueva página.
+- **Verificado en browser:** `/nosotros/nancy-nieto` renderiza las 4 secciones sin errores de consola; JSON-LD parseado y válido; sin números de licencia en el texto renderizado. `/nosotros` muestra el nuevo link con `href="/nosotros/nancy-nieto"` correcto.
+- **`npm run test:visual`:** 2 tests nuevos agregados (`Nancy Nieto Bio Page - Viewport`, `Nosotros Page - Founder Cross-link`) con baselines generadas, ambos pasan. Suite completa: 21 passed, 11 failed — los 11 fallos confirmados preexistentes (páginas Home/Contacto/PRP/Postoperatorios/Hidrofacial/FAQ, ninguna tocada por este cambio — ver `git diff HEAD~4 --stat` de la sesión).
+- **Fuera de alcance:** ítem 5.3 (manualChunks/compresión de build), bios de staff médico adicional.
+
 ## 2026-08-20 — SEO backlog ítem 5.2: `.webp` para las 126 imágenes vía componente `Picture`
 - **Contexto:** segundo ítem de Alta severidad del bloque de performance/imágenes, tras 5.1. Diseño y plan vía `superpowers:brainstorming`/`writing-plans` (spec `docs/superpowers/specs/2026-08-20-item-5.2-webp-avif-design.md`, plan `docs/superpowers/plans/2026-08-20-item-5.2-webp-avif.md`), ejecutado inline con `superpowers:executing-plans`, directo en `main` (decisión del usuario).
 - **Cambio 1 (generación):** nuevo script [generate-webp.js](.agents/skills/assets-optimizer/scripts/generate-webp.js) (usa `sharp`, ya devDependency) — genera un `.webp` hermano (calidad 80) por cada `.jpg` en `public/assets/images`, sin borrar los `.jpg` originales. Corrido una vez: 126 `.webp` creados.

@@ -22,6 +22,9 @@ Derma.M — marketing/booking website for a clinic (facial, corporal, dental, l�
 ## Project status
 Near-final. Treat as a finished, working site — not a blank canvas. Every change requires explicit user request + explicit approval, one change at a time, no scope creep. Full rules in `CLAUDE.md` under "Mandatory: project is near-final — protect it" and "Mandatory: one change at a time, close it out fully".
 
+## Founder bio page
+`/nosotros/nancy-nieto` (2026-08-20, item 4.2) — dedicated E-E-A-T bio page for Nancy Nieto, template `src/components/templates/FounderBioPage/FounderBioPage.jsx`, data `founderBioPage` export in `src/data/aboutPage.js` (reuses `aboutPage.founderSpotlight`/`founderPhilosophy`/`quote`/`cta` by reference, doesn't duplicate copy). **No license numbers or credential IDs anywhere on this page or its JSON-LD** — explicit, standing instruction from Nancy (see [[decisions]] 2026-08-20). Cross-linked from `/nosotros`'s founder spotlight section.
+
 ## Team member cards (About page)
 - Data: `src/data/aboutPage.js`, grouped by specialty (`teamGroups` array of `{ specialty, members[] }`). Rendered by `TeamBySpecialty` → `TeamMemberCard.jsx` → `MediaBlock.jsx`.
 - All team vCards (`public/team/vcards/*.vcf`) intentionally share one clinic phone (`+15612535384`) — only `FN`/`TITLE` differ per person. This is the established pattern, not a bug (see [[decisions]] 2026-08-20).

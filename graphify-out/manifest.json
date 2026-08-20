@@ -1,382 +1,2947 @@
 {
-  "App.jsx": {
+  ".agents/skills/ai-seo/evals/evals.json": {
+    "mtime": 1786937924.1394124,
+    "ast_hash": "8a1b4b5db32e877ab88568781454e3c6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/assets-optimizer/scripts/generate-webp.js": {
+    "mtime": 1787224467.2284412,
+    "ast_hash": "99af5d31bd87c3bade703ecc5e610ba1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/assets-optimizer/scripts/optimize.js": {
+    "mtime": 1787192971.4670405,
+    "ast_hash": "736e17e6f1bc1c7ac0718020863d0602",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cro/evals/evals.json": {
+    "mtime": 1786937924.165409,
+    "ast_hash": "64a8cb9d464f5e21a01bcae3ebad7a60",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/command-metadata.json": {
+    "mtime": 1787192971.4805408,
+    "ast_hash": "ec8e37ba5bfcd024131836bdc1d32a4b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/context-signals.mjs": {
+    "mtime": 1787192971.48104,
+    "ast_hash": "46416ea89369e3aaaa766b696fd5fd35",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/context.mjs": {
+    "mtime": 1787192971.4815404,
+    "ast_hash": "dbd6c7a86a37e9630339d3e44a314995",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/critique-storage.mjs": {
+    "mtime": 1787192971.4820397,
+    "ast_hash": "b8b109ac96b73b8b0e2d2e71936c95d8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detect-csp.mjs": {
+    "mtime": 1787192971.4820397,
+    "ast_hash": "0d3243060e66ba0d0a64684f9684ecc7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detect.mjs": {
+    "mtime": 1787192971.4825418,
+    "ast_hash": "db2157bcff7ab1b222d68cf96cb8643c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/browser/injected/index.mjs": {
+    "mtime": 1787192971.4840417,
+    "ast_hash": "74e9d76c837d06a917c1f223fe0ef144",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/cli/main.mjs": {
+    "mtime": 1787192971.4845407,
+    "ast_hash": "a7af8f6926acc8d8c0d685830551978f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/detect-antipatterns-browser.js": {
+    "mtime": 1787192971.485539,
+    "ast_hash": "b589bef206a3c81481d904ff05c591fd",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/detect-antipatterns.mjs": {
+    "mtime": 1787192971.4860408,
+    "ast_hash": "6e104a47779c0469e873a4f914deea5a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/engines/browser/detect-url.mjs": {
+    "mtime": 1787192971.4865427,
+    "ast_hash": "735b0d580ef19a1be9b8ea88519d5950",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/engines/regex/detect-text.mjs": {
+    "mtime": 1787192971.4870415,
+    "ast_hash": "3f98d4cc0004ad4c9ec8d56a77f7cedb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/engines/static-html/css-cascade.mjs": {
+    "mtime": 1787192971.4880412,
+    "ast_hash": "da2f4fdba6ef4c7096adcefeae8bc1cc",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/engines/static-html/detect-html.mjs": {
+    "mtime": 1787192971.4880412,
+    "ast_hash": "c131cef952be6554dcb582a8276b7416",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/engines/visual/screenshot-contrast.mjs": {
+    "mtime": 1787192971.488541,
+    "ast_hash": "136f756b3cc7cab36af45530ac6280d5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/findings.mjs": {
+    "mtime": 1787192971.4890392,
+    "ast_hash": "6ddf10dbbbd45e66bfd24146ebecf276",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/node/file-system.mjs": {
+    "mtime": 1787192971.4895399,
+    "ast_hash": "1a42e1fcc487e885443d855ddde1fb7e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/profile/profiler.mjs": {
+    "mtime": 1787192971.4900408,
+    "ast_hash": "59f176f3d3c19ad42d3f805fbec35dcf",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/registry/antipatterns.mjs": {
+    "mtime": 1787192971.4905412,
+    "ast_hash": "35e857614317dd827063dbfc17f6873e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/rules/checks.mjs": {
+    "mtime": 1787192971.4915392,
+    "ast_hash": "0e8d8d0ff3d273b963ac29ddf91dab66",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/shared/color.mjs": {
+    "mtime": 1787192971.4920418,
+    "ast_hash": "314ef3951c3c749c87db398c6b1650ad",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/shared/constants.mjs": {
+    "mtime": 1787192971.4925413,
+    "ast_hash": "559e573c975217656ea0d23f80021b5f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/detector/shared/page.mjs": {
+    "mtime": 1787192971.4925413,
+    "ast_hash": "7d121e7fa277cc7d9ed6cae6b585fad5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/lib/design-parser.mjs": {
+    "mtime": 1787192971.4930403,
+    "ast_hash": "7661fd0eb4f7b801c21503d030aeb7cf",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/lib/impeccable-paths.mjs": {
+    "mtime": 1787192971.4935417,
+    "ast_hash": "4df1bf4b8de9750d597283faa0b12844",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/lib/is-generated.mjs": {
+    "mtime": 1787192971.4940403,
+    "ast_hash": "81ada1894b5f562b0993fdff1756d82c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-accept.mjs": {
+    "mtime": 1787192971.4940403,
+    "ast_hash": "0b2df9e98d67b6f362a66c6ce9b0a214",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-browser-dom.js": {
+    "mtime": 1787192971.4945407,
+    "ast_hash": "656396b407de7a87e8504534205c22a8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-browser-session.js": {
+    "mtime": 1787192971.4945407,
+    "ast_hash": "e54c01fe1a8287f757161759beaab916",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-browser.js": {
+    "mtime": 1787192971.4970393,
+    "ast_hash": "572423abf845792466c24f3d47b1c4e3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-commit-manual-edits.mjs": {
+    "mtime": 1787192971.4975424,
+    "ast_hash": "badee66fcbf49e9f4d78c6f2134c4488",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-complete.mjs": {
+    "mtime": 1787192971.498042,
+    "ast_hash": "a2f91c3e7472a780140f53c2f302732b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-copy-edit-agent.mjs": {
+    "mtime": 1787192971.498042,
+    "ast_hash": "842c2d638c2b19f4d3e5d66910cec96d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-discard-manual-edits.mjs": {
+    "mtime": 1787192971.4985414,
+    "ast_hash": "2b0dccb3508c68f81c5d904b35b63f2e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-inject.mjs": {
+    "mtime": 1787192971.4990406,
+    "ast_hash": "f95895efe0699b5f85bfaba362c395d4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-insert.mjs": {
+    "mtime": 1787192971.4990406,
+    "ast_hash": "6bb36de3540d8818f830b07869567f00",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-manual-edit-evidence.mjs": {
+    "mtime": 1787192971.499541,
+    "ast_hash": "30513ce6a4527b74b3c6708226bfbb55",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-poll.mjs": {
+    "mtime": 1787192971.50054,
+    "ast_hash": "6aff77d65b8e92cee54229ed2fbc8d14",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-resume.mjs": {
+    "mtime": 1787192971.5010417,
+    "ast_hash": "4eec0ec754244e0cfbbc3c21992fc951",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-server.mjs": {
+    "mtime": 1787192971.5015419,
+    "ast_hash": "e71cc1ca6af8da02786c5eb00200b35b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-status.mjs": {
+    "mtime": 1787192971.5015419,
+    "ast_hash": "c75c5985d694d7c2ada6b868b62034da",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live-wrap.mjs": {
+    "mtime": 1787192971.502041,
+    "ast_hash": "bb6f764bc943b611561ede337b5302bb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live.mjs": {
+    "mtime": 1787192971.5025406,
+    "ast_hash": "e096c56dc98ff6bbe53ad12a3d5416c1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/browser-script-parts.mjs": {
+    "mtime": 1787192971.503042,
+    "ast_hash": "9367db367e8e3e7d016cf6d963c4b195",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/completion.mjs": {
+    "mtime": 1787192971.503042,
+    "ast_hash": "589efb4189dfe3e674f668dc703c5697",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/event-validation.mjs": {
+    "mtime": 1787192971.5035427,
+    "ast_hash": "c5886c183b1b228d9cff2d484a861b02",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/insert-ui.mjs": {
+    "mtime": 1787192971.5035427,
+    "ast_hash": "5188117fb81c573c6a3fb76edb0adb82",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/manual-apply.mjs": {
+    "mtime": 1787192971.5040395,
+    "ast_hash": "a4ddf358a24befc0817af447b7c85e89",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/manual-edit-routes.mjs": {
+    "mtime": 1787192971.5045419,
+    "ast_hash": "ec1bfbcf0fb307d73f5618ef65defb83",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/manual-edits-buffer.mjs": {
+    "mtime": 1787192971.5045419,
+    "ast_hash": "4872d613fa18ce4d95fdba872ff625f0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/session-store.mjs": {
+    "mtime": 1787192971.5050414,
+    "ast_hash": "a93b5aece773d163fc29e8667903a0ea",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/svelte-component.mjs": {
+    "mtime": 1787192971.505541,
+    "ast_hash": "47c6dbaa11d4e13a7b86cb81dffce756",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/sveltekit-adapter.mjs": {
+    "mtime": 1787192971.505541,
+    "ast_hash": "9670ee70a95b9501eccde7c279686894",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/ui-core.mjs": {
+    "mtime": 1787192971.5060425,
+    "ast_hash": "6c899e42f730d3b83e29235958149bc3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/live/vocabulary.mjs": {
+    "mtime": 1787192971.5060425,
+    "ast_hash": "4138f17e588cf9d940b635347006fbc5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/modern-screenshot.umd.js": {
+    "mtime": 1787192971.5065417,
+    "ast_hash": "c6afaf6ebceb162206f6a2e5b0ed653c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/palette.mjs": {
+    "mtime": 1787192971.50704,
+    "ast_hash": "401a1a8c822cd75d9c6e09114eb4dc5a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/scripts/pin.mjs": {
+    "mtime": 1787192971.5075407,
+    "ast_hash": "a110cd41953e77316974a9be05a92be9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/local-browser-validator/scripts/capture.mjs": {
+    "mtime": 1787192971.5095417,
+    "ast_hash": "203bbe98be8d6b403a52317c203b0560",
+    "semantic_hash": ""
+  },
+  ".agents/skills/programmatic-seo/evals/evals.json": {
+    "mtime": 1787201787.3578148,
+    "ast_hash": "3237f46d04ed894d3068c065866d7e40",
+    "semantic_hash": ""
+  },
+  ".agents/skills/schema/evals/evals.json": {
+    "mtime": 1786937924.218418,
+    "ast_hash": "b65037108b0ab1dcb6440e62c66e63bc",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-audit/evals/evals.json": {
+    "mtime": 1787201781.2571938,
+    "ast_hash": "48b9d32264f29f64cef6654b5e56fa02",
+    "semantic_hash": ""
+  },
+  ".agents/skills/site-architecture/evals/evals.json": {
+    "mtime": 1786937924.222916,
+    "ast_hash": "7ee53933b60dcd3589c269c92557c48b",
+    "semantic_hash": ""
+  },
+  ".claude/launch.json": {
+    "mtime": 1787193176.7243488,
+    "ast_hash": "42a846b9106440df0615f40b6178a557",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1787193986.019161,
+    "ast_hash": "f3dec58b0d2b352a6130fc84fbd9b0b3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/evals/evals.json": {
+    "mtime": 1786937924.1394124,
+    "ast_hash": "8a1b4b5db32e877ab88568781454e3c6",
+    "semantic_hash": ""
+  },
+  ".claude/skills/cro/evals/evals.json": {
+    "mtime": 1786937924.165409,
+    "ast_hash": "64a8cb9d464f5e21a01bcae3ebad7a60",
+    "semantic_hash": ""
+  },
+  ".claude/skills/programmatic-seo/evals/evals.json": {
+    "mtime": 1787201787.3578148,
+    "ast_hash": "3237f46d04ed894d3068c065866d7e40",
+    "semantic_hash": ""
+  },
+  ".claude/skills/schema/evals/evals.json": {
+    "mtime": 1786937924.218418,
+    "ast_hash": "b65037108b0ab1dcb6440e62c66e63bc",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-audit/evals/evals.json": {
+    "mtime": 1787201781.2571938,
+    "ast_hash": "48b9d32264f29f64cef6654b5e56fa02",
+    "semantic_hash": ""
+  },
+  ".claude/skills/site-architecture/evals/evals.json": {
+    "mtime": 1786937924.222916,
+    "ast_hash": "7ee53933b60dcd3589c269c92557c48b",
+    "semantic_hash": ""
+  },
+  "metadata.json": {
+    "mtime": 1787192971.5285418,
+    "ast_hash": "9535101bc9902838f5925d60d885a76b",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1787192971.5300405,
+    "ast_hash": "e3798fd8b6cab49021dd228fe5a279f1",
+    "semantic_hash": ""
+  },
+  "playwright.config.js": {
+    "mtime": 1787192971.5300405,
+    "ast_hash": "e51031b89d54967984174b4c87248904",
+    "semantic_hash": ""
+  },
+  "reviews_extracted.json": {
+    "mtime": 1787192971.6816235,
+    "ast_hash": "6e7f1c9a6253851e13adc2291eb7d92a",
+    "semantic_hash": ""
+  },
+  "scrape_reviews.js": {
+    "mtime": 1787192971.6816235,
+    "ast_hash": "ca73c6ec1bf8372e1dba1c4f22d0ef2f",
+    "semantic_hash": ""
+  },
+  "skills-lock.json": {
+    "mtime": 1787214403.2571507,
+    "ast_hash": "1a6358f4f5de7d359af9df542b20e1b4",
+    "semantic_hash": ""
+  },
+  "src/App.jsx": {
     "mtime": 1787192971.6821246,
     "ast_hash": "8f65823e405b2e6bbb3b4e8bbcb9afb0",
-    "semantic_hash": "8f65823e405b2e6bbb3b4e8bbcb9afb0"
+    "semantic_hash": ""
   },
-  "components/layout/Footer/Footer.jsx": {
+  "src/components/layout/Footer/Footer.jsx": {
     "mtime": 1787192971.682624,
     "ast_hash": "0ad160fe3b95c52ba92e9069b4226457",
-    "semantic_hash": "0ad160fe3b95c52ba92e9069b4226457"
+    "semantic_hash": ""
   },
-  "components/layout/LegalContent.jsx": {
+  "src/components/layout/LegalContent.jsx": {
     "mtime": 1787192971.6831248,
     "ast_hash": "7b13665deb8a4909e9a5ad261395bb3b",
-    "semantic_hash": "7b13665deb8a4909e9a5ad261395bb3b"
+    "semantic_hash": ""
   },
-  "components/layout/LegalPageLayout.jsx": {
+  "src/components/layout/LegalPageLayout.jsx": {
     "mtime": 1787192971.683625,
     "ast_hash": "941fad4cf9eba2db72201ef1e785ccd4",
-    "semantic_hash": "941fad4cf9eba2db72201ef1e785ccd4"
+    "semantic_hash": ""
   },
-  "components/layout/Navbar/Navbar.jsx": {
-    "mtime": 1787192971.6841252,
-    "ast_hash": "7f727546dcefaa2723f6c93d7c99e18a",
-    "semantic_hash": "7f727546dcefaa2723f6c93d7c99e18a"
+  "src/components/layout/Navbar/Navbar.jsx": {
+    "mtime": 1787208054.319527,
+    "ast_hash": "06bbe246ca3afbdd5dd0bd5d3294d096",
+    "semantic_hash": ""
   },
-  "components/sections/ClinicalPositioning/ClinicalPositioning.jsx": {
+  "src/components/sections/ClinicalPositioning/ClinicalPositioning.jsx": {
     "mtime": 1787192971.6846275,
     "ast_hash": "4373205759cc83bc9746bbc9da393186",
-    "semantic_hash": "4373205759cc83bc9746bbc9da393186"
+    "semantic_hash": ""
   },
-  "components/sections/FeaturedServices/FeaturedServices.jsx": {
-    "mtime": 1787192971.6856325,
-    "ast_hash": "891dcfa68c81236e31b5eaaa632e06d8",
-    "semantic_hash": "891dcfa68c81236e31b5eaaa632e06d8"
+  "src/components/sections/FeaturedServices/FeaturedServices.jsx": {
+    "mtime": 1787224731.2655299,
+    "ast_hash": "d0179b524f8b32fe9ffc25f11dd5f658",
+    "semantic_hash": ""
   },
-  "components/sections/FinalCTA/FinalCTA.jsx": {
-    "mtime": 1787192971.6861353,
-    "ast_hash": "d031e24db93585f37d6c90dd3fc8e039",
-    "semantic_hash": "d031e24db93585f37d6c90dd3fc8e039"
+  "src/components/sections/FinalCTA/FinalCTA.jsx": {
+    "mtime": 1787208055.5305014,
+    "ast_hash": "e45488aaf40e6938730c1e3813054776",
+    "semantic_hash": ""
   },
-  "components/sections/FounderSection/FounderSection.jsx": {
+  "src/components/sections/FounderSection/FounderSection.jsx": {
     "mtime": 1787192971.6866338,
     "ast_hash": "0a65ea2f59a04d94d61dfa278171f692",
-    "semantic_hash": "0a65ea2f59a04d94d61dfa278171f692"
+    "semantic_hash": ""
   },
-  "components/sections/Hero/Hero.jsx": {
+  "src/components/sections/Hero/Hero.jsx": {
     "mtime": 1787192971.6876345,
     "ast_hash": "1e0f32ea61e874d33ae75c20882bd2d6",
-    "semantic_hash": "1e0f32ea61e874d33ae75c20882bd2d6"
+    "semantic_hash": ""
   },
-  "components/sections/MethodProcess/MethodProcess.jsx": {
+  "src/components/sections/MethodProcess/MethodProcess.jsx": {
     "mtime": 1787192971.6881328,
     "ast_hash": "6c3d8cff5ab0e9ea08d21d5c1c4288ee",
-    "semantic_hash": "6c3d8cff5ab0e9ea08d21d5c1c4288ee"
+    "semantic_hash": ""
   },
-  "components/sections/PageHero/PageHero.jsx": {
+  "src/components/sections/PageHero/PageHero.jsx": {
     "mtime": 1787192971.688633,
     "ast_hash": "b4d956eb4c94cb9e44ebed4d8b75d32b",
-    "semantic_hash": "b4d956eb4c94cb9e44ebed4d8b75d32b"
+    "semantic_hash": ""
   },
-  "components/sections/Testimonials/Testimonials.jsx": {
+  "src/components/sections/Testimonials/Testimonials.jsx": {
     "mtime": 1787192971.6896336,
     "ast_hash": "897a956a92a0e6a5a13c08806c4bc239",
-    "semantic_hash": "897a956a92a0e6a5a13c08806c4bc239"
+    "semantic_hash": ""
   },
-  "components/sections/TreatmentCategories/TreatmentCategories.jsx": {
+  "src/components/sections/TreatmentCategories/TreatmentCategories.jsx": {
     "mtime": 1787192971.6906333,
     "ast_hash": "96766421428d73bafc2b570496684770",
-    "semantic_hash": "96766421428d73bafc2b570496684770"
+    "semantic_hash": ""
   },
-  "components/sections/TrustBar/TrustBar.jsx": {
+  "src/components/sections/TrustBar/TrustBar.jsx": {
     "mtime": 1787192971.6911345,
     "ast_hash": "dff3384ee5f019ff5246eee0ccca73de",
-    "semantic_hash": "dff3384ee5f019ff5246eee0ccca73de"
+    "semantic_hash": ""
   },
-  "components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
-    "mtime": 1787192971.691634,
-    "ast_hash": "6796949014288b30043d6f0c52aa26f8",
-    "semantic_hash": "6796949014288b30043d6f0c52aa26f8"
+  "src/components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
+    "mtime": 1787224769.1920009,
+    "ast_hash": "93f273c3b307eb78c5e5a17694d7a73c",
+    "semantic_hash": ""
   },
-  "components/shared/BenefitColumns/BenefitColumns.jsx": {
+  "src/components/shared/BenefitColumns/BenefitColumns.jsx": {
     "mtime": 1787192971.6926348,
     "ast_hash": "2e892b8529009052c72c4547d7f7b369",
-    "semantic_hash": "2e892b8529009052c72c4547d7f7b369"
+    "semantic_hash": ""
   },
-  "components/shared/BrandDivider/BrandDivider.jsx": {
+  "src/components/shared/BrandDivider/BrandDivider.jsx": {
     "mtime": 1787192971.6931324,
     "ast_hash": "ad51c1ac8e3c45ca96ec9e8799a4c1a3",
-    "semantic_hash": "ad51c1ac8e3c45ca96ec9e8799a4c1a3"
+    "semantic_hash": ""
   },
-  "components/shared/Breadcrumb/Breadcrumb.jsx": {
+  "src/components/shared/Breadcrumb/Breadcrumb.jsx": {
     "mtime": 1787192971.6936324,
     "ast_hash": "07f849776100a13c3cd5e9ed133a4746",
-    "semantic_hash": "07f849776100a13c3cd5e9ed133a4746"
+    "semantic_hash": ""
   },
-  "components/shared/FAQAccordion/FAQAccordion.jsx": {
+  "src/components/shared/FAQAccordion/FAQAccordion.jsx": {
     "mtime": 1787192971.6941335,
     "ast_hash": "bbd8f821f128124d601f4525e51386f9",
-    "semantic_hash": "bbd8f821f128124d601f4525e51386f9"
+    "semantic_hash": ""
   },
-  "components/shared/FinalCTA/FinalCTA.jsx": {
+  "src/components/shared/FinalCTA/FinalCTA.jsx": {
     "mtime": 1787192971.6946344,
     "ast_hash": "b477b6520d33d7b6217c74a58af561ca",
-    "semantic_hash": "b477b6520d33d7b6217c74a58af561ca"
+    "semantic_hash": ""
   },
-  "components/shared/FloatingWhatsApp/FloatingWhatsApp.jsx": {
-    "mtime": 1787192971.6956356,
-    "ast_hash": "bc67653cbe5dc75a604970cbfcebd603",
-    "semantic_hash": "bc67653cbe5dc75a604970cbfcebd603"
+  "src/components/shared/FloatingWhatsApp/FloatingWhatsApp.jsx": {
+    "mtime": 1787209011.7171755,
+    "ast_hash": "7ea619f5a3d0846fc0a31839f89b2299",
+    "semantic_hash": ""
   },
-  "components/shared/ListSparkle/ListSparkle.jsx": {
+  "src/components/shared/ListSparkle/ListSparkle.jsx": {
     "mtime": 1787192971.696134,
     "ast_hash": "6d2a7a69a4f87c511e47184205ea3458",
-    "semantic_hash": "6d2a7a69a4f87c511e47184205ea3458"
+    "semantic_hash": ""
   },
-  "components/shared/MediaBlock/MediaBlock.jsx": {
-    "mtime": 1787192971.6966372,
-    "ast_hash": "769f00e17f46e94d62b10604e4aa01db",
-    "semantic_hash": "769f00e17f46e94d62b10604e4aa01db"
+  "src/components/shared/MediaBlock/MediaBlock.jsx": {
+    "mtime": 1787224520.140252,
+    "ast_hash": "816c3acd2872f349fd3a6df8ec0ea6d8",
+    "semantic_hash": ""
   },
-  "components/shared/ProcessTimeline/ProcessTimeline.jsx": {
+  "src/components/shared/Picture/Picture.jsx": {
+    "mtime": 1787224505.8056467,
+    "ast_hash": "6895fb401cf5a3945ed40dfe830dd7df",
+    "semantic_hash": ""
+  },
+  "src/components/shared/ProcessTimeline/ProcessTimeline.jsx": {
     "mtime": 1787192971.6976376,
     "ast_hash": "a0f2b133ecdb99a386d98d1a3fcd3dee",
-    "semantic_hash": "a0f2b133ecdb99a386d98d1a3fcd3dee"
+    "semantic_hash": ""
   },
-  "components/shared/RelatedTreatments/RelatedTreatments.jsx": {
+  "src/components/shared/RelatedTreatments/RelatedTreatments.jsx": {
     "mtime": 1787192971.6981366,
     "ast_hash": "d21e612de84aeffa13c30f58913b18b2",
-    "semantic_hash": "d21e612de84aeffa13c30f58913b18b2"
+    "semantic_hash": ""
   },
-  "components/shared/SectionHeader/SectionHeader.jsx": {
+  "src/components/shared/SectionHeader/SectionHeader.jsx": {
     "mtime": 1787192971.698637,
     "ast_hash": "8f6bc04202d079f84e2901be875c3ddb",
-    "semantic_hash": "8f6bc04202d079f84e2901be875c3ddb"
+    "semantic_hash": ""
   },
-  "components/shared/SpecsGrid/SpecsGrid.jsx": {
+  "src/components/shared/SpecsGrid/SpecsGrid.jsx": {
     "mtime": 1787192971.6991372,
     "ast_hash": "8342accc74b6ece1ebe9a253622b83b1",
-    "semantic_hash": "8342accc74b6ece1ebe9a253622b83b1"
+    "semantic_hash": ""
   },
-  "components/shared/TeamBySpecialty/TeamBySpecialty.jsx": {
+  "src/components/shared/TeamBySpecialty/TeamBySpecialty.jsx": {
     "mtime": 1787192971.7001429,
     "ast_hash": "df53cbb2a3c3183a9cf3f0765f0211ce",
-    "semantic_hash": "df53cbb2a3c3183a9cf3f0765f0211ce"
+    "semantic_hash": ""
   },
-  "components/shared/TeamMemberCard/TeamMemberCard.jsx": {
+  "src/components/shared/TeamMemberCard/TeamMemberCard.jsx": {
     "mtime": 1787192971.7006521,
     "ast_hash": "784e54e745903844b69401a6793885e4",
-    "semantic_hash": "784e54e745903844b69401a6793885e4"
+    "semantic_hash": ""
   },
-  "components/shared/TestimonialsSection/TestimonialsSection.jsx": {
+  "src/components/shared/TestimonialsSection/TestimonialsSection.jsx": {
     "mtime": 1787192971.7011497,
     "ast_hash": "10efbefda982baa859516d351bf1c87e",
-    "semantic_hash": "10efbefda982baa859516d351bf1c87e"
+    "semantic_hash": ""
   },
-  "components/shared/TreatmentCard/TreatmentCard.jsx": {
+  "src/components/shared/TreatmentCard/TreatmentCard.jsx": {
     "mtime": 1787192971.7021506,
     "ast_hash": "1158c9870e462e73c9747cac5faeec0f",
-    "semantic_hash": "1158c9870e462e73c9747cac5faeec0f"
+    "semantic_hash": ""
   },
-  "components/shared/TreatmentGrid/TreatmentGrid.jsx": {
+  "src/components/shared/TreatmentGrid/TreatmentGrid.jsx": {
     "mtime": 1787192971.7031488,
     "ast_hash": "e2e89a7cbc8958ba0d41d0c2e53e7573",
-    "semantic_hash": "e2e89a7cbc8958ba0d41d0c2e53e7573"
+    "semantic_hash": ""
   },
-  "components/shared/TreatmentHero/TreatmentHero.jsx": {
+  "src/components/shared/TreatmentHero/TreatmentHero.jsx": {
     "mtime": 1787192971.7036483,
     "ast_hash": "302668e0fb24a6eadd304394df192a74",
-    "semantic_hash": "302668e0fb24a6eadd304394df192a74"
+    "semantic_hash": ""
   },
-  "components/shared/TreatmentQuickFacts/TreatmentQuickFacts.jsx": {
+  "src/components/shared/TreatmentQuickFacts/TreatmentQuickFacts.jsx": {
     "mtime": 1787192971.7046494,
     "ast_hash": "ab2aec4eb2b42d15ebd25ce180ed2710",
-    "semantic_hash": "ab2aec4eb2b42d15ebd25ce180ed2710"
+    "semantic_hash": ""
   },
-  "components/shared/TrustSafetyBar/TrustSafetyBar.jsx": {
+  "src/components/shared/TrustSafetyBar/TrustSafetyBar.jsx": {
     "mtime": 1787192971.7056544,
     "ast_hash": "c9e657f62c1507e29e8a29df6c6af315",
-    "semantic_hash": "c9e657f62c1507e29e8a29df6c6af315"
+    "semantic_hash": ""
   },
-  "components/shared/WarningBox/WarningBox.jsx": {
+  "src/components/shared/WarningBox/WarningBox.jsx": {
     "mtime": 1787192971.7061498,
     "ast_hash": "7227961682b57bb9968886992b1cb852",
-    "semantic_hash": "7227961682b57bb9968886992b1cb852"
+    "semantic_hash": ""
   },
-  "components/templates/AboutPage/AboutPage.jsx": {
-    "mtime": 1787192971.7071493,
-    "ast_hash": "df28752e3bd8983fbee98973bce5968b",
-    "semantic_hash": "df28752e3bd8983fbee98973bce5968b"
+  "src/components/templates/AboutPage/AboutPage.jsx": {
+    "mtime": 1787226285.9553125,
+    "ast_hash": "fcba39c36d55e78e442e4117cacd7568",
+    "semantic_hash": ""
   },
-  "components/templates/CategoryPage/CategoryPage.jsx": {
-    "mtime": 1787192971.7081494,
-    "ast_hash": "8f71ed2f6623c9f100821a3f33c269ec",
-    "semantic_hash": "8f71ed2f6623c9f100821a3f33c269ec"
+  "src/components/templates/CategoryPage/CategoryPage.jsx": {
+    "mtime": 1787224699.5135465,
+    "ast_hash": "668e7e47bb7cabe0d548305c3de91dd8",
+    "semantic_hash": ""
   },
-  "components/templates/LandingPage/LandingPage.jsx": {
-    "mtime": 1787192971.7086499,
-    "ast_hash": "f74fdcd42f329dfc9db2fd72df8904db",
-    "semantic_hash": "f74fdcd42f329dfc9db2fd72df8904db"
+  "src/components/templates/FounderBioPage/FounderBioPage.jsx": {
+    "mtime": 1787226233.3160377,
+    "ast_hash": "66898d447ad3695078d3918322338311",
+    "semantic_hash": ""
   },
-  "components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
-    "mtime": 1787192971.7096493,
-    "ast_hash": "2b66681ca4860a0cde37df77e1ed8f6b",
-    "semantic_hash": "2b66681ca4860a0cde37df77e1ed8f6b"
+  "src/components/templates/LandingPage/LandingPage.jsx": {
+    "mtime": 1787224660.0579882,
+    "ast_hash": "882d5f630cdd088d0c847fcbcb81ce0e",
+    "semantic_hash": ""
   },
-  "components/utils/HeroMedia.jsx": {
-    "mtime": 1787192971.7101483,
-    "ast_hash": "c815d4be1070d1cc7ad98fb140daa150",
-    "semantic_hash": "c815d4be1070d1cc7ad98fb140daa150"
+  "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
+    "mtime": 1787224625.9387624,
+    "ast_hash": "0f5f44c0904aaa96f6c8ebe967e79431",
+    "semantic_hash": ""
   },
-  "components/utils/ScrollToTop.jsx": {
+  "src/components/utils/HeroMedia.jsx": {
+    "mtime": 1787224569.5608158,
+    "ast_hash": "9f9e98a389d1d276d9e2771348197520",
+    "semantic_hash": ""
+  },
+  "src/components/utils/ScrollToTop.jsx": {
     "mtime": 1787192971.7101483,
     "ast_hash": "ca26f7a83ca3e7d58a0911897fd580d5",
-    "semantic_hash": "ca26f7a83ca3e7d58a0911897fd580d5"
+    "semantic_hash": ""
   },
-  "components/utils/motion.js": {
+  "src/components/utils/motion.js": {
     "mtime": 1787192971.7106514,
     "ast_hash": "a4d768ba9333599e10b2395296a58944",
-    "semantic_hash": "a4d768ba9333599e10b2395296a58944"
+    "semantic_hash": ""
   },
-  "data/aboutPage.js": {
-    "mtime": 1787192971.7111506,
-    "ast_hash": "704af6eee684c49ff84628af96247e69",
-    "semantic_hash": "704af6eee684c49ff84628af96247e69"
+  "src/data/aboutPage.js": {
+    "mtime": 1787226191.3503852,
+    "ast_hash": "68680c98da4ce464b2f371dc391a8b3b",
+    "semantic_hash": ""
   },
-  "data/categoryPages.js": {
-    "mtime": 1787192971.7111506,
-    "ast_hash": "574276dec7a3477addfe8c519fe4fc35",
-    "semantic_hash": "574276dec7a3477addfe8c519fe4fc35"
+  "src/data/categoryPages.js": {
+    "mtime": 1787211226.71435,
+    "ast_hash": "50cbd1590fc1c1b685fcabac1619ec00",
+    "semantic_hash": ""
   },
-  "data/contactPage.js": {
-    "mtime": 1787192971.7116492,
-    "ast_hash": "8d90efaae61010741737b6769ef9c7d9",
-    "semantic_hash": "8d90efaae61010741737b6769ef9c7d9"
+  "src/data/contactPage.js": {
+    "mtime": 1787208061.0905979,
+    "ast_hash": "0422053732605d1ee1160a9c6be69546",
+    "semantic_hash": ""
   },
-  "data/landingPages.js": {
-    "mtime": 1787192971.7121491,
-    "ast_hash": "9fcb3c0d8930c1881a57c8377924ffd1",
-    "semantic_hash": "9fcb3c0d8930c1881a57c8377924ffd1"
+  "src/data/landingPages.js": {
+    "mtime": 1787222190.0479262,
+    "ast_hash": "32b3825fc132287abf89a8015c686ba3",
+    "semantic_hash": ""
   },
-  "data/legalPages.js": {
-    "mtime": 1787192971.7126496,
-    "ast_hash": "a4883aed92fa77ab92d8fefe05fcc844",
-    "semantic_hash": "a4883aed92fa77ab92d8fefe05fcc844"
+  "src/data/legalPages.js": {
+    "mtime": 1787208071.48253,
+    "ast_hash": "3deb47be590e56444164237895430183",
+    "semantic_hash": ""
   },
-  "data/treatmentPages.js": {
-    "mtime": 1787192971.7131495,
-    "ast_hash": "e24d0a49658ac650cd4ceb4f50f062e4",
-    "semantic_hash": "e24d0a49658ac650cd4ceb4f50f062e4"
+  "src/data/treatmentPages.js": {
+    "mtime": 1787211223.9854884,
+    "ast_hash": "3422f369f7b6b4ebb37913f55e146fca",
+    "semantic_hash": ""
   },
-  "main.jsx": {
+  "src/main.jsx": {
     "mtime": 1787192971.7141507,
     "ast_hash": "2d18e3dc028d8fd2f846ba1c5de99dba",
-    "semantic_hash": "2d18e3dc028d8fd2f846ba1c5de99dba"
+    "semantic_hash": ""
   },
-  "pages/Accessibility.jsx": {
+  "src/pages/Accessibility.jsx": {
     "mtime": 1787192971.7141507,
     "ast_hash": "d71a5eeaaf2bee2e81850661fd1ffc66",
-    "semantic_hash": "d71a5eeaaf2bee2e81850661fd1ffc66"
+    "semantic_hash": ""
   },
-  "pages/BookingPolicy.jsx": {
+  "src/pages/BookingPolicy.jsx": {
     "mtime": 1787192971.714652,
     "ast_hash": "00cbc1af0397d03937d95fcfe1c60dd2",
-    "semantic_hash": "00cbc1af0397d03937d95fcfe1c60dd2"
+    "semantic_hash": ""
   },
-  "pages/Contacto.jsx": {
-    "mtime": 1787192971.715149,
-    "ast_hash": "d6440e6c5ecc2b8605d402a781d7eba3",
-    "semantic_hash": "d6440e6c5ecc2b8605d402a781d7eba3"
+  "src/pages/Contacto.jsx": {
+    "mtime": 1787222970.1423762,
+    "ast_hash": "d719ab93f227364be19e3f1ab6f981f7",
+    "semantic_hash": ""
   },
-  "pages/Home.jsx": {
-    "mtime": 1787192971.7156496,
-    "ast_hash": "ec7b388a4d5553f6620db0fe77aaee02",
-    "semantic_hash": "ec7b388a4d5553f6620db0fe77aaee02"
+  "src/pages/Home.jsx": {
+    "mtime": 1787219202.1375294,
+    "ast_hash": "5224a78b45e3d8a1476b6fdd0924d2cf",
+    "semantic_hash": ""
   },
-  "pages/LegalResources.jsx": {
-    "mtime": 1787192971.7156496,
-    "ast_hash": "4b4d51c80b9ad22c1811c1868dd9ea63",
-    "semantic_hash": "4b4d51c80b9ad22c1811c1868dd9ea63"
+  "src/pages/LegalResources.jsx": {
+    "mtime": 1787218064.4647233,
+    "ast_hash": "a7b126a60b1f2444b882519c80b90e35",
+    "semantic_hash": ""
   },
-  "pages/Nosotros.jsx": {
-    "mtime": 1787192971.7161505,
-    "ast_hash": "5054694beb082d873c15ffa771455e0c",
-    "semantic_hash": "5054694beb082d873c15ffa771455e0c"
+  "src/pages/NancyNieto.jsx": {
+    "mtime": 1787226247.53713,
+    "ast_hash": "69ec867a0f2f7a848319d05ad05da340",
+    "semantic_hash": ""
   },
-  "pages/NoticePrivacyPractices.jsx": {
+  "src/pages/Nosotros.jsx": {
+    "mtime": 1787215542.5302434,
+    "ast_hash": "ad9adbf74a291780d5ea1250fe9a3604",
+    "semantic_hash": ""
+  },
+  "src/pages/NoticePrivacyPractices.jsx": {
     "mtime": 1787192971.7161505,
     "ast_hash": "1bd21b85e0eb57ddb9af04798c137eea",
-    "semantic_hash": "1bd21b85e0eb57ddb9af04798c137eea"
+    "semantic_hash": ""
   },
-  "pages/PrivacyPolicy.jsx": {
+  "src/pages/PrivacyPolicy.jsx": {
     "mtime": 1787192971.7166495,
     "ast_hash": "58983cfbadd0de8b8375a5ee5126184d",
-    "semantic_hash": "58983cfbadd0de8b8375a5ee5126184d"
+    "semantic_hash": ""
   },
-  "pages/TermsOfUse.jsx": {
+  "src/pages/TermsOfUse.jsx": {
     "mtime": 1787192971.7171512,
     "ast_hash": "accc6c272a7941a4de69182cc8903bd3",
-    "semantic_hash": "accc6c272a7941a4de69182cc8903bd3"
+    "semantic_hash": ""
   },
-  "pages/TreatmentDisclaimer.jsx": {
+  "src/pages/TreatmentDisclaimer.jsx": {
     "mtime": 1787192971.7171512,
     "ast_hash": "253736fd9fbf1c0fbb2e97bb2e18a9ec",
-    "semantic_hash": "253736fd9fbf1c0fbb2e97bb2e18a9ec"
+    "semantic_hash": ""
   },
-  "pages/hubs/Capilar.jsx": {
-    "mtime": 1787192971.7176487,
-    "ast_hash": "dc8bc17dbd927dbd2e97480efa4a4c6f",
-    "semantic_hash": "dc8bc17dbd927dbd2e97480efa4a4c6f"
+  "src/pages/hubs/Capilar.jsx": {
+    "mtime": 1787208039.7077718,
+    "ast_hash": "922a1119b23cc97787c86b2b940295ab",
+    "semantic_hash": ""
   },
-  "pages/hubs/Corporales.jsx": {
-    "mtime": 1787192971.7176487,
-    "ast_hash": "392e024fb612fb84ffa60a9ed936eb9c",
-    "semantic_hash": "392e024fb612fb84ffa60a9ed936eb9c"
+  "src/pages/hubs/Corporales.jsx": {
+    "mtime": 1787208038.8481126,
+    "ast_hash": "85bb136439b7432fcdab45d7d95489de",
+    "semantic_hash": ""
   },
-  "pages/hubs/DentalEstetico.jsx": {
-    "mtime": 1787192971.7181492,
-    "ast_hash": "0865b5247d05da96e57a07c8b6bcb722",
-    "semantic_hash": "0865b5247d05da96e57a07c8b6bcb722"
+  "src/pages/hubs/DentalEstetico.jsx": {
+    "mtime": 1787208036.113599,
+    "ast_hash": "62bcb257d2d7ddd9fbc70bb5614e3008",
+    "semantic_hash": ""
   },
-  "pages/hubs/Faciales.jsx": {
-    "mtime": 1787192971.7186525,
-    "ast_hash": "a17c7d5ddad7886ac5d1b5c0b757cd68",
-    "semantic_hash": "a17c7d5ddad7886ac5d1b5c0b757cd68"
+  "src/pages/hubs/Faciales.jsx": {
+    "mtime": 1787208037.206236,
+    "ast_hash": "483e4bb64adde5d091924eabbbb0d294",
+    "semantic_hash": ""
   },
-  "pages/hubs/IvTherapy.jsx": {
-    "mtime": 1787192971.7186525,
-    "ast_hash": "ecaf8caededdd378f26a96b2720821e6",
-    "semantic_hash": "ecaf8caededdd378f26a96b2720821e6"
+  "src/pages/hubs/IvTherapy.jsx": {
+    "mtime": 1787217942.423565,
+    "ast_hash": "d8f5fde4bc285a48434e2d045f470e2e",
+    "semantic_hash": ""
   },
-  "pages/hubs/LaserYLuz.jsx": {
-    "mtime": 1787192971.7186525,
-    "ast_hash": "18618fde70e61e64bcc0e4a7b7162248",
-    "semantic_hash": "18618fde70e61e64bcc0e4a7b7162248"
+  "src/pages/hubs/LaserYLuz.jsx": {
+    "mtime": 1787211228.5779953,
+    "ast_hash": "1a104c31a8783483d87733c2736f2640",
+    "semantic_hash": ""
   },
-  "pages/landings/LimpiezaFacial.jsx": {
-    "mtime": 1787192971.7191484,
-    "ast_hash": "e50db2d8abdb26ea2e25edc631e39d0a",
-    "semantic_hash": "e50db2d8abdb26ea2e25edc631e39d0a"
+  "src/pages/landings/LimpiezaFacial.jsx": {
+    "mtime": 1787222215.3050086,
+    "ast_hash": "9cf05f9cec108c4acf0a177fe64d7d1f",
+    "semantic_hash": ""
   },
-  "pages/landings/Postoperatorios.jsx": {
-    "mtime": 1787192971.7191484,
-    "ast_hash": "fe717d948157828d00ad33ce214d07d0",
-    "semantic_hash": "fe717d948157828d00ad33ce214d07d0"
+  "src/pages/landings/Postoperatorios.jsx": {
+    "mtime": 1787222268.612992,
+    "ast_hash": "88bf611334e165e93954bc7acbd20f8a",
+    "semantic_hash": ""
   },
-  "pages/landings/PrfYFibrina.jsx": {
-    "mtime": 1787192971.719648,
-    "ast_hash": "e99982ff6312325123d55f581d83a6cc",
-    "semantic_hash": "e99982ff6312325123d55f581d83a6cc"
+  "src/pages/landings/PrfYFibrina.jsx": {
+    "mtime": 1787222237.0862098,
+    "ast_hash": "9146adb64d0d44c6aec4a79bbe5d963c",
+    "semantic_hash": ""
   },
-  "pages/treatments/capilar/[treatment].jsx": {
-    "mtime": 1787192971.7201488,
-    "ast_hash": "bceb44d645542629bd4f96df186fdb1b",
-    "semantic_hash": "bceb44d645542629bd4f96df186fdb1b"
+  "src/pages/treatments/capilar/[treatment].jsx": {
+    "mtime": 1787217991.2987876,
+    "ast_hash": "e7064f71939ebb7c1fbfd67b73a7a5cc",
+    "semantic_hash": ""
   },
-  "pages/treatments/corporales/[treatment].jsx": {
-    "mtime": 1787192971.7206495,
-    "ast_hash": "86f9296f023d0ef2b155b9460c4e2b1f",
-    "semantic_hash": "86f9296f023d0ef2b155b9460c4e2b1f"
+  "src/pages/treatments/corporales/[treatment].jsx": {
+    "mtime": 1787217990.7126584,
+    "ast_hash": "c25c401112e1f4a4e4e5a97fd52ea2b3",
+    "semantic_hash": ""
   },
-  "pages/treatments/dental/[treatment].jsx": {
-    "mtime": 1787192971.7211492,
-    "ast_hash": "c8a8eb333d2c7c7c8171fef5ed24e3b1",
-    "semantic_hash": "c8a8eb333d2c7c7c8171fef5ed24e3b1"
+  "src/pages/treatments/dental/[treatment].jsx": {
+    "mtime": 1787217989.6233864,
+    "ast_hash": "0ac12b6b757034ba2b801f4c4f2793a8",
+    "semantic_hash": ""
   },
-  "pages/treatments/faciales/[treatment].jsx": {
-    "mtime": 1787192971.7216527,
-    "ast_hash": "e818ac3872c3b4e9cb3f409ae7da7a2a",
-    "semantic_hash": "e818ac3872c3b4e9cb3f409ae7da7a2a"
+  "src/pages/treatments/faciales/[treatment].jsx": {
+    "mtime": 1787217986.893551,
+    "ast_hash": "71d1740ff85ae9d188700ad6205a811b",
+    "semantic_hash": ""
   },
-  "pages/treatments/laser/[treatment].jsx": {
-    "mtime": 1787192971.7216527,
-    "ast_hash": "ff98f78b5aca34fdde7dfe1cab8187c2",
-    "semantic_hash": "ff98f78b5aca34fdde7dfe1cab8187c2"
+  "src/pages/treatments/laser/[treatment].jsx": {
+    "mtime": 1787217988.530727,
+    "ast_hash": "422a884862d3dcfe01c490f7ca3d3969",
+    "semantic_hash": ""
   },
-  "routes.jsx": {
-    "mtime": 1787192971.7221506,
-    "ast_hash": "40e623bb4b6598be51da4415988783f6",
-    "semantic_hash": "40e623bb4b6598be51da4415988783f6"
+  "src/routes.jsx": {
+    "mtime": 1787226252.1448576,
+    "ast_hash": "574281192c281b610f7f8ef21fb07441",
+    "semantic_hash": ""
+  },
+  "tests/faq-consistency.spec.js": {
+    "mtime": 1787222449.674269,
+    "ast_hash": "e72056a95ba550a837f0ab762a0cab2d",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js": {
+    "mtime": 1787226327.1384652,
+    "ast_hash": "f9c38c7c25a2180ca079d91a95572383",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1787192971.7676525,
+    "ast_hash": "cfc596836379397756c305b60b69ba06",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/SKILL.md": {
+    "mtime": 1787202849.3989193,
+    "ast_hash": "a8d1c083377b4491cc173625ede98517",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/references/citations-vs-recommendations.md": {
+    "mtime": 1786937924.1399095,
+    "ast_hash": "10da2ecb537674b126ba6e1872ec4509",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/references/content-patterns.md": {
+    "mtime": 1786937924.1404092,
+    "ast_hash": "367985811805e6d3c8c3a1d885b28506",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/references/content-types.md": {
+    "mtime": 1787202622.145961,
+    "ast_hash": "5da9a50d4b357a608e64671f1ba58ae4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/references/okf.md": {
+    "mtime": 1786937924.141409,
+    "ast_hash": "ba5be49b9a1c3445b5d18c1ae008589b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-seo/references/platform-ranking-factors.md": {
+    "mtime": 1786937924.141409,
+    "ast_hash": "deb43b5f2b97d422295adbb2ef539752",
+    "semantic_hash": ""
+  },
+  ".agents/skills/assets-optimizer/SKILL.md": {
+    "mtime": 1787192971.4665418,
+    "ast_hash": "08dfa889d4984590937b31020a0a4036",
+    "semantic_hash": ""
+  },
+  ".agents/skills/bencium-aeo/CLAUDE.md": {
+    "mtime": 1787214394.85264,
+    "ast_hash": "6376e767e57584ffb12f31d96d6c0263",
+    "semantic_hash": ""
+  },
+  ".agents/skills/bencium-aeo/README.md": {
+    "mtime": 1787214394.8536384,
+    "ast_hash": "11ed3e7e0168fff9bbb59c15c8c218b5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/bencium-aeo/SKILL.md": {
+    "mtime": 1787214394.8536384,
+    "ast_hash": "34eaa25840aba3ec4626e71ba8454b59",
+    "semantic_hash": ""
+  },
+  ".agents/skills/bencium-aeo/prd.md": {
+    "mtime": 1787214394.85464,
+    "ast_hash": "aef4047b6a001f5323328f42fe408f00",
+    "semantic_hash": ""
+  },
+  ".agents/skills/bencium-aeo/story-structured.md": {
+    "mtime": 1787214394.855141,
+    "ast_hash": "640f0d2dcbaaa2baebc504fc24a1f772",
+    "semantic_hash": ""
+  },
+  ".agents/skills/create-skill/SKILL.md": {
+    "mtime": 1787192971.4675407,
+    "ast_hash": "347ba57e6137cb7d8899b762d007d91d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cro/SKILL.md": {
+    "mtime": 1787202587.428468,
+    "ast_hash": "061704ac1e8d3de69e2f0856cb605264",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cro/references/experiments.md": {
+    "mtime": 1786937924.165409,
+    "ast_hash": "e2ab36d280622b496311882374993f3e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cro/references/form.md": {
+    "mtime": 1787202622.0959427,
+    "ast_hash": "c5252613138ff4c75564dc7fac95eb8d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/engram/SKILL.md": {
+    "mtime": 1787192971.4675407,
+    "ast_hash": "19ca93a6820b0bba99ce60659b8a4b12",
+    "semantic_hash": ""
+  },
+  ".agents/skills/engram/agents/openai.yaml": {
+    "mtime": 1787192971.4680424,
+    "ast_hash": "6ca698efcad405318b6ef1db1c03ccd1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/SKILL.md": {
+    "mtime": 1787192971.468541,
+    "ast_hash": "21e9e978d5df38ef27c582b68056b92e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/agents/openai.yaml": {
+    "mtime": 1787192971.4695406,
+    "ast_hash": "7b0c955694fc8b2b320c03ada2080d00",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/adapt.md": {
+    "mtime": 1787192971.4705398,
+    "ast_hash": "7f09fdec5a24ff77e81ae5f08fbadbe3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/animate.md": {
+    "mtime": 1787192971.4710398,
+    "ast_hash": "ebbf70a374bd675d8d2ef74b4a707f26",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/audit.md": {
+    "mtime": 1787192971.4710398,
+    "ast_hash": "8dcaf7ba38f036393193467f5aad03c0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/bolder.md": {
+    "mtime": 1787192971.471542,
+    "ast_hash": "2aedd5cd29a48d09b79d54073facd547",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/brand.md": {
+    "mtime": 1787192971.4720428,
+    "ast_hash": "b1c06d0bd6ddbb0440e41c6cd89800e7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/clarify.md": {
+    "mtime": 1787192971.472542,
+    "ast_hash": "c939d61e568a196dd2eb7afbdfb9e8e1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/codex.md": {
+    "mtime": 1787192971.473042,
+    "ast_hash": "8a1dae470d56bad952d6c27e0b976667",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/colorize.md": {
+    "mtime": 1787192971.473042,
+    "ast_hash": "ab3840ac9fac5d7e8d58678bad949da4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/craft.md": {
+    "mtime": 1787192971.473541,
+    "ast_hash": "66ef1b6222e8b326f4615189c3d797cf",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/critique.md": {
+    "mtime": 1787192971.4740405,
+    "ast_hash": "009665c31c4cb27b6ca2bf98e215ad2c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/delight.md": {
+    "mtime": 1787192971.4745405,
+    "ast_hash": "7c6e23a9a5280c8d58222f6e9ded5fb9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/distill.md": {
+    "mtime": 1787192971.4745405,
+    "ast_hash": "572e8eb25abfebfbf6d1c4ad7c4e98b2",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/document.md": {
+    "mtime": 1787192971.4750433,
+    "ast_hash": "d6914f6b4ba8e2d1c495709a2199a686",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/extract.md": {
+    "mtime": 1787192971.4755394,
+    "ast_hash": "4a604a2960fd1f13a0ba5bc76c286294",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/harden.md": {
+    "mtime": 1787192971.4760396,
+    "ast_hash": "794fbb12dcc3789211d75ae8df1bbff7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/init.md": {
+    "mtime": 1787192971.4760396,
+    "ast_hash": "bc3366b849d76614ac6b6d621311621e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/interaction-design.md": {
+    "mtime": 1787192971.476542,
+    "ast_hash": "7efe6b89e89a4117ae1d9fdf35f610ea",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/layout.md": {
+    "mtime": 1787192971.4770393,
+    "ast_hash": "b3ef3ba4b83ec4e4b49fbf3ad43c2c4a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/live.md": {
+    "mtime": 1787192971.4775417,
+    "ast_hash": "dce8127f6cc7b741765175af18f7740c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/onboard.md": {
+    "mtime": 1787192971.4780402,
+    "ast_hash": "6f0bbcfebe2ab4f18f83994e9d7613e5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/optimize.md": {
+    "mtime": 1787192971.4780402,
+    "ast_hash": "4ed13d4168ab26be4bd9f57bda15a61e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/overdrive.md": {
+    "mtime": 1787192971.4785426,
+    "ast_hash": "a850f9052d9c913a016e41eac9ff00a0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/polish.md": {
+    "mtime": 1787192971.4790404,
+    "ast_hash": "97e551295ae47d046f718ee98742a338",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/product.md": {
+    "mtime": 1787192971.4790404,
+    "ast_hash": "3e48497f27dc0056894338a15f22b65e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/quieter.md": {
+    "mtime": 1787192971.479541,
+    "ast_hash": "63c7a87649e853bf1fd1c865e0f512c9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/shape.md": {
+    "mtime": 1787192971.4800415,
+    "ast_hash": "500a40c71164719c69028d15a4ab0d72",
+    "semantic_hash": ""
+  },
+  ".agents/skills/impeccable/reference/typeset.md": {
+    "mtime": 1787192971.4800415,
+    "ast_hash": "d3567179c353907196ea6ec39ab7a9d7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/interaction-design/SKILL.md": {
+    "mtime": 1787192971.5080419,
+    "ast_hash": "1a9086d9bcf3dd80c8789c495d6db2b1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/interaction-design/references/animation-libraries.md": {
+    "mtime": 1787192971.5080419,
+    "ast_hash": "e9e69d974f209cce2b330c5a91912421",
+    "semantic_hash": ""
+  },
+  ".agents/skills/interaction-design/references/microinteraction-patterns.md": {
+    "mtime": 1787192971.5085409,
+    "ast_hash": "af6271413b3a1dd6c4935ec15de7203f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/interaction-design/references/scroll-animations.md": {
+    "mtime": 1787192971.50904,
+    "ast_hash": "56c9b593999150a01db65ca7288ad387",
+    "semantic_hash": ""
+  },
+  ".agents/skills/keyword-research/SKILL.md": {
+    "mtime": 1787214402.4344294,
+    "ast_hash": "1ce8f1b1d54ae3a5582f0255f8b690bc",
+    "semantic_hash": ""
+  },
+  ".agents/skills/local-browser-validator/SKILL.md": {
+    "mtime": 1787192971.50904,
+    "ast_hash": "17da0dc9863ba5e89c70ff14bf6a0663",
+    "semantic_hash": ""
+  },
+  ".agents/skills/magicpath/SKILL.md": {
+    "mtime": 1787192971.510541,
+    "ast_hash": "b678fed69f2ad9e00c1dad1ff94e5210",
+    "semantic_hash": ""
+  },
+  ".agents/skills/magicpath/references/cli-reference.md": {
+    "mtime": 1787192971.5110395,
+    "ast_hash": "424fa939d54e511e0bfbb81e683e9ed0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/magicpath/references/working-with-embedded-browsers.md": {
+    "mtime": 1787192971.5110395,
+    "ast_hash": "272d825fde360ce4ff5d6faef45224ab",
+    "semantic_hash": ""
+  },
+  ".agents/skills/magicpath/references/working-with-repositories.md": {
+    "mtime": 1787192971.5115414,
+    "ast_hash": "d0f79a50d8c1524c81cc1bf2cab7a0a7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/programmatic-seo/SKILL.md": {
+    "mtime": 1787202587.4024396,
+    "ast_hash": "e29d636a6e8c1850a90f1a96fc54fbbb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/programmatic-seo/references/playbooks.md": {
+    "mtime": 1787202622.1209626,
+    "ast_hash": "93945bdc533023ee0b0c7ff79d136c7e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/schema/SKILL.md": {
+    "mtime": 1786937924.2179184,
+    "ast_hash": "0ffff0f67407232221704886b4cf43df",
+    "semantic_hash": ""
+  },
+  ".agents/skills/schema/references/schema-examples.md": {
+    "mtime": 1786937924.2189164,
+    "ast_hash": "824f6ddd8ac68ff7b17fe997a79d2928",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-audit/SKILL.md": {
+    "mtime": 1787202587.3514223,
+    "ast_hash": "e014483e89fa5b670f968dd8873a9cd8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-audit/references/ai-writing-detection.md": {
+    "mtime": 1787201781.2581933,
+    "ast_hash": "a5489f71fca1525b35d5822d3426fc90",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-audit/references/international-seo.md": {
+    "mtime": 1787201781.2586951,
+    "ast_hash": "f98a2faff322c07b79ac99546e7cf523",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-checklist-65/SKILL.md": {
+    "mtime": 1787201810.4354577,
+    "ast_hash": "1fa304934d4a2f15189f9c2540162f56",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/SKILL.md": {
+    "mtime": 1787201810.4344587,
+    "ast_hash": "3fef8a53482e92b662058f5df50dca1c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/references/local-schema-types.md": {
+    "mtime": 1787196290.85136,
+    "ast_hash": "89bc41d939888c8c611af8ff17419e21",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/references/local-seo-signals.md": {
+    "mtime": 1787196290.797623,
+    "ast_hash": "50f52ccdf99294d4efcbabe2b378200b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/references/maps-free-apis.md": {
+    "mtime": 1787202587.4689665,
+    "ast_hash": "e10091c06b7536e4c1b7ec4355adac97",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/references/maps-gbp-checklist.md": {
+    "mtime": 1787196290.7900736,
+    "ast_hash": "260d6622d52adaa6765dd30c501807f8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/seo-local/references/maps-geo-grid.md": {
+    "mtime": 1787196290.8297737,
+    "ast_hash": "43593b8ad3e5c8bf7d8c2ed95f565781",
+    "semantic_hash": ""
+  },
+  ".agents/skills/site-architecture/SKILL.md": {
+    "mtime": 1787202587.3769286,
+    "ast_hash": "7c6f1a4c3d96f5401c4c2c5637306657",
+    "semantic_hash": ""
+  },
+  ".agents/skills/site-architecture/references/mermaid-templates.md": {
+    "mtime": 1786937924.223417,
+    "ast_hash": "8eaecb02fb9288bfcde35ade1e174535",
+    "semantic_hash": ""
+  },
+  ".agents/skills/site-architecture/references/navigation-patterns.md": {
+    "mtime": 1786937924.223919,
+    "ast_hash": "0a170e183b1240d436aaa430d59bb554",
+    "semantic_hash": ""
+  },
+  ".agents/skills/site-architecture/references/site-type-templates.md": {
+    "mtime": 1786937924.2244167,
+    "ast_hash": "361004fcc86cc2583d44a0f02ff3fe47",
+    "semantic_hash": ""
+  },
+  ".agents/skills/writing-for-agents/SKILL-MECHANICS.md": {
+    "mtime": 1787151963.0060868,
+    "ast_hash": "e6eb86bfd014f95c56173bbd67186cc0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/writing-for-agents/SKILL.md": {
+    "mtime": 1787151963.0065863,
+    "ast_hash": "845b293aec151f545e465943ba8d6762",
+    "semantic_hash": ""
+  },
+  ".agents/skills/writing-for-agents/agents/openai.yaml": {
+    "mtime": 1787151963.0070858,
+    "ast_hash": "8b9eefd59ad0e810c0bbefac18897e6e",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1787193605.3635716,
+    "ast_hash": "817fe671013b35ae0bc9301dfe449a87",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/SKILL.md": {
+    "mtime": 1787202836.3440216,
+    "ast_hash": "a8d1c083377b4491cc173625ede98517",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/references/citations-vs-recommendations.md": {
+    "mtime": 1786937924.1399095,
+    "ast_hash": "10da2ecb537674b126ba6e1872ec4509",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/references/content-patterns.md": {
+    "mtime": 1786937924.1404092,
+    "ast_hash": "367985811805e6d3c8c3a1d885b28506",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/references/content-types.md": {
+    "mtime": 1787202612.671371,
+    "ast_hash": "5da9a50d4b357a608e64671f1ba58ae4",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/references/okf.md": {
+    "mtime": 1786937924.141409,
+    "ast_hash": "ba5be49b9a1c3445b5d18c1ae008589b",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ai-seo/references/platform-ranking-factors.md": {
+    "mtime": 1786937924.141409,
+    "ast_hash": "deb43b5f2b97d422295adbb2ef539752",
+    "semantic_hash": ""
+  },
+  ".claude/skills/bencium-aeo/CLAUDE.md": {
+    "mtime": 1787214394.85264,
+    "ast_hash": "6376e767e57584ffb12f31d96d6c0263",
+    "semantic_hash": ""
+  },
+  ".claude/skills/bencium-aeo/README.md": {
+    "mtime": 1787214394.8536384,
+    "ast_hash": "11ed3e7e0168fff9bbb59c15c8c218b5",
+    "semantic_hash": ""
+  },
+  ".claude/skills/bencium-aeo/SKILL.md": {
+    "mtime": 1787214394.8536384,
+    "ast_hash": "34eaa25840aba3ec4626e71ba8454b59",
+    "semantic_hash": ""
+  },
+  ".claude/skills/bencium-aeo/prd.md": {
+    "mtime": 1787214394.85464,
+    "ast_hash": "aef4047b6a001f5323328f42fe408f00",
+    "semantic_hash": ""
+  },
+  ".claude/skills/bencium-aeo/story-structured.md": {
+    "mtime": 1787214394.855141,
+    "ast_hash": "640f0d2dcbaaa2baebc504fc24a1f772",
+    "semantic_hash": ""
+  },
+  ".claude/skills/cro/SKILL.md": {
+    "mtime": 1787202578.4713285,
+    "ast_hash": "061704ac1e8d3de69e2f0856cb605264",
+    "semantic_hash": ""
+  },
+  ".claude/skills/cro/references/experiments.md": {
+    "mtime": 1786937924.165409,
+    "ast_hash": "e2ab36d280622b496311882374993f3e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/cro/references/form.md": {
+    "mtime": 1787202607.2144165,
+    "ast_hash": "c5252613138ff4c75564dc7fac95eb8d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/find-skills/SKILL.md": {
+    "mtime": 1787214100.8709123,
+    "ast_hash": "62b297abdee9aea84c577ab2e04e1974",
+    "semantic_hash": ""
+  },
+  ".claude/skills/geo-aeo-playbook/SKILL.md": {
+    "mtime": 1787223529.627683,
+    "ast_hash": "46802648e1b969fa3f073ede74f28de9",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1787193605.3625705,
+    "ast_hash": "41f700d6535cc2f2b6b6d0a9eecc7525",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1781270553.1464121,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1781270553.1469176,
+    "ast_hash": "7fb1a81aca17a462db70684a324fcfb0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1781270553.147923,
+    "ast_hash": "24808b03abfeaf5f6435bb69c0125b2c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1781270553.1524549,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1781270553.1534543,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1781270553.158454,
+    "ast_hash": "8b40ed8c9e9060fc215219a8fc964091",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1781270553.1609688,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1781270553.166492,
+    "ast_hash": "0dad167a95bdb389f02fecffb60b1bc8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/keyword-research/SKILL.md": {
+    "mtime": 1787214402.4344294,
+    "ast_hash": "1ce8f1b1d54ae3a5582f0255f8b690bc",
+    "semantic_hash": ""
+  },
+  ".claude/skills/programmatic-seo/SKILL.md": {
+    "mtime": 1787202571.215477,
+    "ast_hash": "e29d636a6e8c1850a90f1a96fc54fbbb",
+    "semantic_hash": ""
+  },
+  ".claude/skills/programmatic-seo/references/playbooks.md": {
+    "mtime": 1787202609.845661,
+    "ast_hash": "93945bdc533023ee0b0c7ff79d136c7e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/schema/SKILL.md": {
+    "mtime": 1786937924.2179184,
+    "ast_hash": "0ffff0f67407232221704886b4cf43df",
+    "semantic_hash": ""
+  },
+  ".claude/skills/schema/references/schema-examples.md": {
+    "mtime": 1786937924.2189164,
+    "ast_hash": "824f6ddd8ac68ff7b17fe997a79d2928",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-audit/SKILL.md": {
+    "mtime": 1787202565.8052688,
+    "ast_hash": "e014483e89fa5b670f968dd8873a9cd8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-audit/references/ai-writing-detection.md": {
+    "mtime": 1787201781.2581933,
+    "ast_hash": "a5489f71fca1525b35d5822d3426fc90",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-audit/references/international-seo.md": {
+    "mtime": 1787201781.2586951,
+    "ast_hash": "f98a2faff322c07b79ac99546e7cf523",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-checklist-65/SKILL.md": {
+    "mtime": 1787201810.4354577,
+    "ast_hash": "1fa304934d4a2f15189f9c2540162f56",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/SKILL.md": {
+    "mtime": 1787201810.4344587,
+    "ast_hash": "3fef8a53482e92b662058f5df50dca1c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/references/local-schema-types.md": {
+    "mtime": 1787196290.85136,
+    "ast_hash": "89bc41d939888c8c611af8ff17419e21",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/references/local-seo-signals.md": {
+    "mtime": 1787196290.797623,
+    "ast_hash": "50f52ccdf99294d4efcbabe2b378200b",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/references/maps-free-apis.md": {
+    "mtime": 1787202561.8967886,
+    "ast_hash": "e10091c06b7536e4c1b7ec4355adac97",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/references/maps-gbp-checklist.md": {
+    "mtime": 1787196290.7900736,
+    "ast_hash": "260d6622d52adaa6765dd30c501807f8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/seo-local/references/maps-geo-grid.md": {
+    "mtime": 1787196290.8297737,
+    "ast_hash": "43593b8ad3e5c8bf7d8c2ed95f565781",
+    "semantic_hash": ""
+  },
+  ".claude/skills/site-architecture/SKILL.md": {
+    "mtime": 1787202568.460508,
+    "ast_hash": "7c6f1a4c3d96f5401c4c2c5637306657",
+    "semantic_hash": ""
+  },
+  ".claude/skills/site-architecture/references/mermaid-templates.md": {
+    "mtime": 1786937924.223417,
+    "ast_hash": "8eaecb02fb9288bfcde35ade1e174535",
+    "semantic_hash": ""
+  },
+  ".claude/skills/site-architecture/references/navigation-patterns.md": {
+    "mtime": 1786937924.223919,
+    "ast_hash": "0a170e183b1240d436aaa430d59bb554",
+    "semantic_hash": ""
+  },
+  ".claude/skills/site-architecture/references/site-type-templates.md": {
+    "mtime": 1786937924.2244167,
+    "ast_hash": "361004fcc86cc2583d44a0f02ff3fe47",
+    "semantic_hash": ""
+  },
+  ".claude/skills/writing-for-agents/SKILL-MECHANICS.md": {
+    "mtime": 1787151963.0060868,
+    "ast_hash": "e6eb86bfd014f95c56173bbd67186cc0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/writing-for-agents/SKILL.md": {
+    "mtime": 1787151963.0065863,
+    "ast_hash": "845b293aec151f545e465943ba8d6762",
+    "semantic_hash": ""
+  },
+  ".claude/skills/writing-for-agents/agents/openai.yaml": {
+    "mtime": 1787151963.0070858,
+    "ast_hash": "8b9eefd59ad0e810c0bbefac18897e6e",
+    "semantic_hash": ""
+  },
+  ".impeccable/critique/2026-06-25T15-57-11Z__nts-sections-featuredservices-featuredservices-jsx.md": {
+    "mtime": 1787192971.512541,
+    "ast_hash": "0ab6a7764c30fdf8d9f18f689c16fe14",
+    "semantic_hash": ""
+  },
+  ".impeccable/critique/2026-06-25T16-13-07Z__src-components-sections-hero-hero-jsx.md": {
+    "mtime": 1787192971.512541,
+    "ast_hash": "b8ab137c8588ea44929b5dba144ff993",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1787203806.6289725,
+    "ast_hash": "4c48b249c91ccc70e4883757b41dc0f0",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1787212235.484756,
+    "ast_hash": "aae0f39f537f0ccf86b3b21fc81ae643",
+    "semantic_hash": ""
+  },
+  "DECISIONS.md": {
+    "mtime": 1787226654.8255274,
+    "ast_hash": "4b4bbcd1b3e9ec9b3eed3978e20e37e1",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1787192971.5145414,
+    "ast_hash": "cd04b51b0ff54f1114e7c08b9bbf7e74",
+    "semantic_hash": ""
+  },
+  "MEMORY.md": {
+    "mtime": 1787226663.770848,
+    "ast_hash": "5bf49a5ed0b5f4883bb0926d93de3e0e",
+    "semantic_hash": ""
+  },
+  "PRODUCT.md": {
+    "mtime": 1787192971.5145414,
+    "ast_hash": "d5fa9044b8a5f48e45dba27752ec0db9",
+    "semantic_hash": ""
+  },
+  "PROGRESS.md": {
+    "mtime": 1787226639.3845387,
+    "ast_hash": "cad8266b2f4277ed09cdd71502a91a18",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1787192971.5150402,
+    "ast_hash": "553bf1ad91c3407b552746cabe975abe",
+    "semantic_hash": ""
+  },
+  "_audit/AUDIT.md": {
+    "mtime": 1787192971.515542,
+    "ast_hash": "61c41981a2d68f1f9e16656379da2e10",
+    "semantic_hash": ""
+  },
+  "_audit/IMG_AUDIT.md": {
+    "mtime": 1787192971.5160418,
+    "ast_hash": "b9d8de19d3b31ecd86de98c89075298f",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1787217896.5288968,
+    "ast_hash": "1dfb469591bac18c10c47373be1348e7",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1787211240.494223,
+    "ast_hash": "6a15de0931e821318c5001e312a64801",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1787192971.6791258,
+    "ast_hash": "c792e8081370f363be72a228127265d6",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/cta.jpg": {
+    "mtime": 1787192971.5320425,
+    "ast_hash": "be608faf6b3916d91764db1ea638ef6f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/cta.webp": {
+    "mtime": 1787224472.506,
+    "ast_hash": "be9da67399ba211d369fbfc56a348739",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/dermam-academy.jpg": {
+    "mtime": 1787192971.5325418,
+    "ast_hash": "a0ab16200b395cbe2b74973a0b1ef007",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/dermam-academy.webp": {
+    "mtime": 1787224472.636,
+    "ast_hash": "3320a3bf0af8571ddd7bcc7fb6ffa308",
+    "semantic_hash": ""
+  },
+  "public/assets/images/contact/cta.jpg": {
+    "mtime": 1787192971.5395403,
+    "ast_hash": "a384027166a765f26e853e6070dddc74",
+    "semantic_hash": ""
+  },
+  "public/assets/images/contact/cta.webp": {
+    "mtime": 1787224472.754,
+    "ast_hash": "45cceb0d730afe8347c4f5200649fd6c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/contact/hero.jpg": {
+    "mtime": 1787192971.5405402,
+    "ast_hash": "69d044222f498e8cde11c335f682f432",
+    "semantic_hash": ""
+  },
+  "public/assets/images/contact/hero.webp": {
+    "mtime": 1787224472.91,
+    "ast_hash": "818e3c75401af532e76489dc72783360",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/logo.jpg": {
+    "mtime": 1787192971.5415423,
+    "ast_hash": "e4b17854880a01f07012d583338cdac6",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/logo.png": {
+    "mtime": 1787192971.5420399,
+    "ast_hash": "c75a9bd63b5f304a7d782e151598ef66",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/logo.webp": {
+    "mtime": 1787224472.926,
+    "ast_hash": "743c452e1ec300a9ae5f0565b5de8886",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/logo_dermam_footer.svg": {
+    "mtime": 1787192971.5435388,
+    "ast_hash": "28e6fa7175b2e39f3998a9a8f8ec6b88",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/logo_dermam_nav.svg": {
+    "mtime": 1787192971.546039,
+    "ast_hash": "ca655bdc92008a7c8ca2517689380d0c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/og-default.jpg": {
+    "mtime": 1787192971.54704,
+    "ast_hash": "f8a1e8edbe0f799e97339c18b84fbb25",
+    "semantic_hash": ""
+  },
+  "public/assets/images/global/og-default.webp": {
+    "mtime": 1787224473.07,
+    "ast_hash": "89238a076a02104b9976106c82eba465",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/capilar.jpg": {
+    "mtime": 1787192971.5480416,
+    "ast_hash": "00084143058451ad5a4ca82525fb36cc",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/capilar.webp": {
+    "mtime": 1787224473.123,
+    "ast_hash": "f8d19d471e3df0e2a19559052bc4172d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/corporales.jpg": {
+    "mtime": 1787192971.5485406,
+    "ast_hash": "57aab9826b1f76141414e56e3abb7205",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/corporales.webp": {
+    "mtime": 1787224473.168,
+    "ast_hash": "c6df4a0fca5a0d415bf251f65f37ec30",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/dental-estetico.jpg": {
+    "mtime": 1787192971.5490413,
+    "ast_hash": "284c2fda3eda916d8b0737daab9d8415",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/dental-estetico.webp": {
+    "mtime": 1787224473.215,
+    "ast_hash": "1eb31f5da599129de283e17d003949f5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/faciales.jpg": {
+    "mtime": 1787192971.549542,
+    "ast_hash": "6f6b4eaabef06b5f1d5ed3041831a89f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/faciales.webp": {
+    "mtime": 1787224473.259,
+    "ast_hash": "12366222a7a541731366e0a2cbb1b27e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/iv-therapy.jpg": {
+    "mtime": 1787192971.5505412,
+    "ast_hash": "a7cfcc0c01e3bf40d49a145af372057c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/iv-therapy.webp": {
+    "mtime": 1787224473.304,
+    "ast_hash": "7096a5dfe2b58879f4f950967f38d49e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/laser-y-luz.jpg": {
+    "mtime": 1787192971.5510397,
+    "ast_hash": "a77ad78d5bb559140a0964ca178f498c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/categories/laser-y-luz.webp": {
+    "mtime": 1787224473.344,
+    "ast_hash": "d66986bcf58fedce854039081ddb333b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/cta.jpg": {
+    "mtime": 1787192971.5520391,
+    "ast_hash": "047245b0d7858336fe0b6b94506fa51c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/cta.webp": {
+    "mtime": 1787224473.483,
+    "ast_hash": "f3ea54e540421969f34bfa1fbc50c33e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-limpieza.jpg": {
+    "mtime": 1787192971.5530393,
+    "ast_hash": "11350687487b03d397646e0b02676f91",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-limpieza.webp": {
+    "mtime": 1787224473.648,
+    "ast_hash": "8bf7b2df4fb583140770e08faddeb81d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-postoperatorios.jpg": {
+    "mtime": 1787192971.5540402,
+    "ast_hash": "ec84f9197f9a5dc253d07bc40eee23cb",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-postoperatorios.webp": {
+    "mtime": 1787224473.81,
+    "ast_hash": "e0480e1f6134ca8f610cb2a5db2e8155",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-prf.jpg": {
+    "mtime": 1787192971.5550401,
+    "ast_hash": "e146ea2be390798efa9f6702c4de344c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/featured-prf.webp": {
+    "mtime": 1787224473.958,
+    "ast_hash": "96dd1aad19146e50d638f39260bc35e3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/founder.jpg": {
+    "mtime": 1787192971.556042,
+    "ast_hash": "c28fb3b5ad917d341242d4ecce6f10e5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/founder.webp": {
+    "mtime": 1787224474.074,
+    "ast_hash": "af5a8dcc7447250b5c9224201142d056",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/founder_logo.png": {
+    "mtime": 1787192971.5565398,
+    "ast_hash": "821287c8e2023a67298b1e8c61062f50",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/hero.jpg": {
+    "mtime": 1787192971.5575404,
+    "ast_hash": "f8a1e8edbe0f799e97339c18b84fbb25",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/hero.webp": {
+    "mtime": 1787224474.223,
+    "ast_hash": "89238a076a02104b9976106c82eba465",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/method.jpg": {
+    "mtime": 1787192971.56804,
+    "ast_hash": "f1f2509f0db67f9520d25eaab95b15bc",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/method.webp": {
+    "mtime": 1787224474.345,
+    "ast_hash": "e87a68a697de5a2a57e3985b40dbc950",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/cta.jpg": {
+    "mtime": 1787192971.5695417,
+    "ast_hash": "047245b0d7858336fe0b6b94506fa51c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/cta.webp": {
+    "mtime": 1787224474.485,
+    "ast_hash": "f3ea54e540421969f34bfa1fbc50c33e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/hero.jpg": {
+    "mtime": 1787192971.5700417,
+    "ast_hash": "f73526e59c270e401a8b676f87c8fc8b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/hero.webp": {
+    "mtime": 1787224474.601,
+    "ast_hash": "1e9e7c0b4e88bb0bc6a3b1c0b034fc46",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/overview.jpg": {
+    "mtime": 1787192971.57104,
+    "ast_hash": "ba62955718aff891fca40d7da96202f5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/capilar/overview.webp": {
+    "mtime": 1787224474.756,
+    "ast_hash": "ff1e421be3ba2dbf064fca7e2efc32ab",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/cta.jpg": {
+    "mtime": 1787192971.572539,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/cta.webp": {
+    "mtime": 1787224474.883,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/hero.jpg": {
+    "mtime": 1787192971.5730407,
+    "ast_hash": "42168a62f7a1468d3a14f1b3e1f14ad1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/hero.webp": {
+    "mtime": 1787224475.001,
+    "ast_hash": "5d05a49e2bce913fe85c1b6ab8fdd9fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/overview.jpg": {
+    "mtime": 1787192971.5735404,
+    "ast_hash": "ed05433736be1adec434cb6f4f9f959e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/corporales/overview.webp": {
+    "mtime": 1787224475.111,
+    "ast_hash": "5ade5d8feaf018cfc331e6e9936d19b5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/cta.jpg": {
+    "mtime": 1787192971.5750408,
+    "ast_hash": "1d069b671c42801cee223b231f6963f9",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/cta.webp": {
+    "mtime": 1787224475.232,
+    "ast_hash": "d8d1f2edc38c3f5b37ed124087b92722",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/hero.jpg": {
+    "mtime": 1787192971.5760396,
+    "ast_hash": "9bbb6699d6b409ee4474b91bb94bb83d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/hero.webp": {
+    "mtime": 1787224475.382,
+    "ast_hash": "214fd5547d25e23df152bd48b8eae92e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/overview.jpg": {
+    "mtime": 1787192971.5770397,
+    "ast_hash": "2080d25687b1d248393433f533bb681a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/dental-estetico/overview.webp": {
+    "mtime": 1787224475.536,
+    "ast_hash": "e39a5b92efa0d02bf70daea550a357ce",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/cta.jpg": {
+    "mtime": 1787192971.5785406,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/cta.webp": {
+    "mtime": 1787224475.663,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/hero.jpg": {
+    "mtime": 1787192971.5795388,
+    "ast_hash": "424b067fcdd43cfb625a9cff58c46c3e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/hero.webp": {
+    "mtime": 1787224475.809,
+    "ast_hash": "444f391e91f8eb1ed5857a9a524698ed",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/limpieza-facial-profunda.jpg": {
+    "mtime": 1787192971.5805423,
+    "ast_hash": "11350687487b03d397646e0b02676f91",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/limpieza-facial-profunda.webp": {
+    "mtime": 1787224475.972,
+    "ast_hash": "8bf7b2df4fb583140770e08faddeb81d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/overview.jpg": {
+    "mtime": 1787192971.581542,
+    "ast_hash": "fd8f46c7c083440cb875f8159ba74813",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/faciales/overview.webp": {
+    "mtime": 1787224476.118,
+    "ast_hash": "03cf9b2ccd0113583e4cb43c2d6b4de3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/cta.jpg": {
+    "mtime": 1787192971.5825398,
+    "ast_hash": "850670d2157285e0d091f242c9563fc7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/cta.webp": {
+    "mtime": 1787224476.239,
+    "ast_hash": "ed6b31f6973d9706fe9bab479497a4b1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/hero.jpg": {
+    "mtime": 1787192971.58354,
+    "ast_hash": "0f8dcb3b3dd50d7950df1d5371ad27af",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/hero.webp": {
+    "mtime": 1787224476.39,
+    "ast_hash": "9ff1fdca68e303e16f1041eaefce1987",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/overview.jpg": {
+    "mtime": 1787192971.58454,
+    "ast_hash": "32a00f2ca20e8ffaf14ef99d64765aa3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/iv-therapy/overview.webp": {
+    "mtime": 1787224476.521,
+    "ast_hash": "c18888c812be6fb500c09fd7168b3de0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/cta.jpg": {
+    "mtime": 1787192971.5860398,
+    "ast_hash": "75a598bf720eace3fb3e0079662cfaef",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/cta.webp": {
+    "mtime": 1787224476.64,
+    "ast_hash": "283451584dc9c79ec50f0a917e0d2253",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/hero.jpg": {
+    "mtime": 1787192971.586541,
+    "ast_hash": "c45813ae8582276aafed0ee4d3afaf92",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/hero.webp": {
+    "mtime": 1787224476.755,
+    "ast_hash": "a4639987db6bb83717f6ba340fe7b7c0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/overview.jpg": {
+    "mtime": 1787192971.5875404,
+    "ast_hash": "e2d2072d210c6de017b0f635b5157993",
+    "semantic_hash": ""
+  },
+  "public/assets/images/hubs/laser-y-luz/overview.webp": {
+    "mtime": 1787224476.898,
+    "ast_hash": "a3d31f81371c730dbba8a087633c604a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/cta.jpg": {
+    "mtime": 1787192971.58904,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/cta.webp": {
+    "mtime": 1787224477.028,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/hero.jpg": {
+    "mtime": 1787192971.59004,
+    "ast_hash": "11350687487b03d397646e0b02676f91",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/hero.webp": {
+    "mtime": 1787224477.193,
+    "ast_hash": "8bf7b2df4fb583140770e08faddeb81d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/how-it-works.jpg": {
+    "mtime": 1787192971.5910397,
+    "ast_hash": "fd8f46c7c083440cb875f8159ba74813",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/how-it-works.webp": {
+    "mtime": 1787224477.331,
+    "ast_hash": "03cf9b2ccd0113583e4cb43c2d6b4de3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/cta.jpg": {
+    "mtime": 1787192971.592548,
+    "ast_hash": "ae604b7b173f1bdd95bc2c33929df059",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/cta.webp": {
+    "mtime": 1787224477.471,
+    "ast_hash": "e7291ef26b6498843d9980cbe63e12a8",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/hero.jpg": {
+    "mtime": 1787192971.5935454,
+    "ast_hash": "e146ea2be390798efa9f6702c4de344c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/hero.webp": {
+    "mtime": 1787224477.621,
+    "ast_hash": "96dd1aad19146e50d638f39260bc35e3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/how-it-works.jpg": {
+    "mtime": 1787192971.5945437,
+    "ast_hash": "5a459f7b5c062b7b92b1bfb5d05e5cbd",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/how-it-works.webp": {
+    "mtime": 1787224477.743,
+    "ast_hash": "16b6ac3aa6a8ba5a00bbc77863b8b55d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/cta.jpg": {
+    "mtime": 1787192971.5960429,
+    "ast_hash": "3e23ebf8a6f8c83a1a4cfa990e7b3257",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/cta.webp": {
+    "mtime": 1787224477.868,
+    "ast_hash": "708f1a85a58df28ab977826538c9b40d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/hero.jpg": {
+    "mtime": 1787192971.5970435,
+    "ast_hash": "ec84f9197f9a5dc253d07bc40eee23cb",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/hero.webp": {
+    "mtime": 1787224478.03,
+    "ast_hash": "e0480e1f6134ca8f610cb2a5db2e8155",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/how-it-works.jpg": {
+    "mtime": 1787192971.598044,
+    "ast_hash": "9ff1359cce4ee858780452e4ac80e358",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/how-it-works.webp": {
+    "mtime": 1787224478.157,
+    "ast_hash": "3eea7753ff45e16dc0cdd8c77ec11b69",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/cta.jpg": {
+    "mtime": 1787192971.5995445,
+    "ast_hash": "afd25e06e7ca5fd0a43c6b2b0e4aec55",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/cta.webp": {
+    "mtime": 1787224478.265,
+    "ast_hash": "3ac75b4b054d9d8df779d053e6bf1057",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/hero.jpg": {
+    "mtime": 1787192971.6005435,
+    "ast_hash": "4bdea7b55f6a0f5465bc42b83ab03dab",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/hero.webp": {
+    "mtime": 1787224478.387,
+    "ast_hash": "0ab5d2263df69dca9ba766571dd8e528",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/protocol.jpg": {
+    "mtime": 1787192971.6010442,
+    "ast_hash": "0e8a600dae5fb0b625b56f5d15aa8bbf",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/protocol.webp": {
+    "mtime": 1787224478.52,
+    "ast_hash": "0f73382f7c005bdc29c9e7c928414e73",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/whatis.jpg": {
+    "mtime": 1787192971.602044,
+    "ast_hash": "b4b0bf930531acef2d9307c8e2ce5906",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/capilar/tratamiento-capilar/whatis.webp": {
+    "mtime": 1787224478.667,
+    "ast_hash": "e85bb4d009550ceee25325347201f615",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/cta.jpg": {
+    "mtime": 1787192971.603593,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/cta.webp": {
+    "mtime": 1787224478.81,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/hero.jpg": {
+    "mtime": 1787192971.6045463,
+    "ast_hash": "aeb9fd4ef85c10d55ca9666184b7c7a6",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/hero.webp": {
+    "mtime": 1787224478.948,
+    "ast_hash": "d13109f9615edacb6fcb37738037b7f1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/protocol.jpg": {
+    "mtime": 1787192971.6055453,
+    "ast_hash": "b3c2ca5d6519c853204e2bb33d22f702",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/protocol.webp": {
+    "mtime": 1787224479.082,
+    "ast_hash": "fdf79a033e2e10afe9f1dfa12d04371e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/whatis.jpg": {
+    "mtime": 1787192971.606045,
+    "ast_hash": "505cfd2d90c671cb4b5683ad1dcc84db",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/carboxiterapia-corporal/whatis.webp": {
+    "mtime": 1787224479.219,
+    "ast_hash": "1076c6cb7ff79d2b20818f74333c9216",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/cta.jpg": {
+    "mtime": 1787192971.607548,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/cta.webp": {
+    "mtime": 1787224479.351,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/hero.jpg": {
+    "mtime": 1787192971.608055,
+    "ast_hash": "4e9f9cd4707c7dc1fdc85a6cf4fccbdf",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/hero.webp": {
+    "mtime": 1787224479.48,
+    "ast_hash": "d9f0c9dbaeb122353701a6a173e5288c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/whatis.jpg": {
+    "mtime": 1787192971.6090598,
+    "ast_hash": "50b273ab659ffc75df9ced81b5672151",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/corrientes-rusas/whatis.webp": {
+    "mtime": 1787224479.614,
+    "ast_hash": "a22c5c1b8bbce9c9fb051f46bd932b0c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/cta.jpg": {
+    "mtime": 1787192971.6100674,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/cta.webp": {
+    "mtime": 1787224479.744,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/hero.jpg": {
+    "mtime": 1787192971.6110647,
+    "ast_hash": "013c8bd9442485d574fbad9f0545690d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/hero.webp": {
+    "mtime": 1787224479.858,
+    "ast_hash": "350dc3d413d5903c2e53cfaedc0268a2",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/protocol.jpg": {
+    "mtime": 1787192971.6115675,
+    "ast_hash": "6f394e0cd2ff146ae12b4b728dac6703",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/protocol.webp": {
+    "mtime": 1787224479.988,
+    "ast_hash": "b3f3ae240cc120c76cd22337a7789d55",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/whatis.jpg": {
+    "mtime": 1787192971.6125662,
+    "ast_hash": "85bd584bdbdfd2e4f91327105ed833f0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/estrias-celulitis/whatis.webp": {
+    "mtime": 1787224480.129,
+    "ast_hash": "2934a81e543d29726aeffe13506c2fd8",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/cta.jpg": {
+    "mtime": 1787192971.6140642,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/cta.webp": {
+    "mtime": 1787224480.261,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/hero.jpg": {
+    "mtime": 1787192971.6145658,
+    "ast_hash": "bb6b9bda40b7fa2fc7c8271cc0307176",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/hero.webp": {
+    "mtime": 1787224480.378,
+    "ast_hash": "2c3c8c4ef21642e5ac78848ac9beaf7e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/whatis.jpg": {
+    "mtime": 1787192971.6155646,
+    "ast_hash": "67220c14eaf6009a91370adf310280b0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/hifu-corporal/whatis.webp": {
+    "mtime": 1787224480.532,
+    "ast_hash": "34dd341d9cd9a1d36410490fedc39006",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/cta.jpg": {
+    "mtime": 1787192971.6165643,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/cta.webp": {
+    "mtime": 1787224480.66,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/hero.jpg": {
+    "mtime": 1787192971.6170704,
+    "ast_hash": "468da65ecc3566ce65a9c31854767417",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/hero.webp": {
+    "mtime": 1787224480.766,
+    "ast_hash": "710822bd69f65e5b33cff08b74963061",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/whatis.jpg": {
+    "mtime": 1787192971.6180646,
+    "ast_hash": "803baf627ae7e1be343c9daa84c0a702",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/levantamiento-gluteos/whatis.webp": {
+    "mtime": 1787224480.922,
+    "ast_hash": "f543a2ec6c33923c987c6f4db462ad0d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/cta.jpg": {
+    "mtime": 1787192971.619564,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/cta.webp": {
+    "mtime": 1787224481.054,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/hero.jpg": {
+    "mtime": 1787192971.6205647,
+    "ast_hash": "1d1ffc7cea399443f8cac040afbfd9f4",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/hero.webp": {
+    "mtime": 1787224481.181,
+    "ast_hash": "c992756dfc148015a4e9fb2297644f14",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/whatis.jpg": {
+    "mtime": 1787192971.6210659,
+    "ast_hash": "4fea3976642d7522aa8430349882d73a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/lipo-360/whatis.webp": {
+    "mtime": 1787224481.313,
+    "ast_hash": "8c4d13a9e4957191f849fc3843f16a22",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/maderoterapia-corporal/cta.jpg": {
+    "mtime": 1787192971.6225643,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/maderoterapia-corporal/cta.webp": {
+    "mtime": 1787224481.441,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/cta.jpg": {
+    "mtime": 1787192971.6240659,
+    "ast_hash": "e32f5def10de1d2db4eebf97b84167d7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/cta.webp": {
+    "mtime": 1787224481.574,
+    "ast_hash": "620318e3855c15a9c78c20d410f09e86",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/hero.jpg": {
+    "mtime": 1787192971.6245654,
+    "ast_hash": "1dbfc510148b2184ad7719d9411e401a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/hero.webp": {
+    "mtime": 1787224481.683,
+    "ast_hash": "ded0993311c492e5fd6a71478c7feaa3",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/whatis.jpg": {
+    "mtime": 1787192971.6255682,
+    "ast_hash": "0d1fe0582e59d3248e77ffcbda3fd96a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/corporales/marcacion-abdominal/whatis.webp": {
+    "mtime": 1787224481.82,
+    "ast_hash": "818135786103d6d31d9b6deb1ee2db29",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/cta.jpg": {
+    "mtime": 1787192971.626565,
+    "ast_hash": "288aa58e48f2746e0ccce7c5f04ee67c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/cta.webp": {
+    "mtime": 1787224481.928,
+    "ast_hash": "44c70266b9dd96e80968356fc577ca06",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/hero.jpg": {
+    "mtime": 1787192971.627066,
+    "ast_hash": "6231888061a4ea6b733e65d925f1cb09",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/hero.webp": {
+    "mtime": 1787224482.055,
+    "ast_hash": "3fa20c0a80c0894d0f760d0b35a333b7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/protocol.jpg": {
+    "mtime": 1787192971.6275656,
+    "ast_hash": "2fa5d5bb532c13f16100b3d934b702ca",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/protocol.webp": {
+    "mtime": 1787224482.179,
+    "ast_hash": "2155a9eb088f1ef1862568a5b6e77171",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/whatis.jpg": {
+    "mtime": 1787192971.6285653,
+    "ast_hash": "2cd91192ca0616afa1e97d7c72612c48",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/whatis.webp": {
+    "mtime": 1787224482.315,
+    "ast_hash": "8a8f4346ace000d12d43e092628b81c0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/cta.jpg": {
+    "mtime": 1787192971.6295662,
+    "ast_hash": "da0df4949c5ba1b02ab6b90dfdacd973",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/cta.webp": {
+    "mtime": 1787224482.431,
+    "ast_hash": "21a6cb1823766e4054f88ee9ce230cb7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/hero.jpg": {
+    "mtime": 1787192971.6300664,
+    "ast_hash": "0f95e35e0b1b7b225545acb0583e9c39",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/hero.webp": {
+    "mtime": 1787224482.542,
+    "ast_hash": "488251045c46ea8d2ffd6f2545bdc634",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/protocol.jpg": {
+    "mtime": 1787192971.6310673,
+    "ast_hash": "703b94c9a58cdf92dfe21e5c49e8d80a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/protocol.webp": {
+    "mtime": 1787224482.671,
+    "ast_hash": "b8e869c72954f022b3e801586029a17d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/whatis.jpg": {
+    "mtime": 1787192971.632064,
+    "ast_hash": "916457e3b06a3a6c7e9e90a3dfd6b74b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/whatis.webp": {
+    "mtime": 1787224482.804,
+    "ast_hash": "3e9d9989415b3a290e74e17bd09e3195",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/cta.jpg": {
+    "mtime": 1787192971.6330667,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/cta.webp": {
+    "mtime": 1787224482.926,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/hero.jpg": {
+    "mtime": 1787192971.6340666,
+    "ast_hash": "7e73092d98d4125c0748eee2689eab02",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/hero.webp": {
+    "mtime": 1787224483.066,
+    "ast_hash": "ec30826460433b61b556d0fee6f70dc7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/whatis.jpg": {
+    "mtime": 1787192971.6350658,
+    "ast_hash": "3dca01b1f7310231a8bd0ea5d43b0ec8",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/carboxiterapia-facial/whatis.webp": {
+    "mtime": 1787224483.212,
+    "ast_hash": "4786f4fd0ef5acbddde35b1b1fc92dea",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/cta.jpg": {
+    "mtime": 1787192971.6365645,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/cta.webp": {
+    "mtime": 1787224483.335,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/hero.jpg": {
+    "mtime": 1787192971.6370664,
+    "ast_hash": "10e9ec55742d6baff024f1de79d5c055",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/hero.webp": {
+    "mtime": 1787224483.461,
+    "ast_hash": "c33e4d763da0b7f1666dea1fe58afa62",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/whatis.jpg": {
+    "mtime": 1787192971.6380653,
+    "ast_hash": "633fbd496e135ec1bd43332015349484",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/dermabracion-facial/whatis.webp": {
+    "mtime": 1787224483.611,
+    "ast_hash": "f81ecf761b9615dc2e0dc59583bc84da",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/cta.jpg": {
+    "mtime": 1787192971.6390674,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/cta.webp": {
+    "mtime": 1787224483.748,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/hero.jpg": {
+    "mtime": 1787192971.6400657,
+    "ast_hash": "86c129f3e7e95610370cf2fad8f06062",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/hero.webp": {
+    "mtime": 1787224483.914,
+    "ast_hash": "cb27b50220c1da534d8d9812a665bf43",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/whatis.jpg": {
+    "mtime": 1787192971.641066,
+    "ast_hash": "c713ad480790a361fd9dccffb87df001",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hidrofacial/whatis.webp": {
+    "mtime": 1787224484.026,
+    "ast_hash": "2194593bcbf33bd0a4cdd6b72ccbb917",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/cta.jpg": {
+    "mtime": 1787192971.6430647,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/cta.webp": {
+    "mtime": 1787224484.152,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/hero.jpg": {
+    "mtime": 1787192971.6440644,
+    "ast_hash": "a40f548297dfb334a55c28eaee371b4f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/hero.webp": {
+    "mtime": 1787224484.319,
+    "ast_hash": "1adff035b7c32f793046b512f8561275",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/whatis.jpg": {
+    "mtime": 1787192971.6450672,
+    "ast_hash": "5fe626674d9eb5f1fe324f579a892104",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/hifu-facial/whatis.webp": {
+    "mtime": 1787224484.424,
+    "ast_hash": "e00ba18bd89e3ccf5f021e2e11d129b9",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/cta.jpg": {
+    "mtime": 1787192971.6460688,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/cta.webp": {
+    "mtime": 1787224484.55,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/hero.jpg": {
+    "mtime": 1787192971.6465704,
+    "ast_hash": "9646803c63736ae12707a91394731a9e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/hero.webp": {
+    "mtime": 1787224484.662,
+    "ast_hash": "40fc540df735c3a9184a7daefc61b29b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/whatis.jpg": {
+    "mtime": 1787192971.647573,
+    "ast_hash": "881f30ab099e358b75e80078e5701cd1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/manchas-cicatrices/whatis.webp": {
+    "mtime": 1787224484.802,
+    "ast_hash": "1bf144d0f354a143b9788869ba789725",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/cta.jpg": {
+    "mtime": 1787192971.6490705,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/cta.webp": {
+    "mtime": 1787224484.925,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/hero.jpg": {
+    "mtime": 1787192971.6500692,
+    "ast_hash": "82d2f8ec0f74696eaec830faa21d2365",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/hero.webp": {
+    "mtime": 1787224485.076,
+    "ast_hash": "83ff46f55b638e847e8c732d5b0cf46d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/whatis.jpg": {
+    "mtime": 1787192971.6505704,
+    "ast_hash": "8abcb88b3f3b42ef4196b0b0c814d4c1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/microneedling/whatis.webp": {
+    "mtime": 1787224485.185,
+    "ast_hash": "20d2d1ec83109aef2de55dcc62cef70a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/cta.jpg": {
+    "mtime": 1787192971.651572,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/cta.webp": {
+    "mtime": 1787224485.306,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/hero.jpg": {
+    "mtime": 1787192971.6530702,
+    "ast_hash": "a952bf65c8bd7d379112d02cdb9e7a9f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/hero.webp": {
+    "mtime": 1787224485.469,
+    "ast_hash": "4e82066721e01ab21e72ee43e24844c6",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/whatis.jpg": {
+    "mtime": 1787192971.6540716,
+    "ast_hash": "1ef868e65a7170bd17838a79becd8430",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/oxigenoterapia-facial/whatis.webp": {
+    "mtime": 1787224485.612,
+    "ast_hash": "8a7ad0c542435dc59248421fc36e3d3e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/cta.jpg": {
+    "mtime": 1787192971.6550717,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/cta.webp": {
+    "mtime": 1787224485.734,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/hero.jpg": {
+    "mtime": 1787192971.6565714,
+    "ast_hash": "e871eed2f0facf8bd7751318213a46c2",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/hero.webp": {
+    "mtime": 1787224485.904,
+    "ast_hash": "161def85079c737127ed71e6a67e99b1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/whatis.jpg": {
+    "mtime": 1787192971.6570704,
+    "ast_hash": "414d0b692c5b5db173129ded5d6272aa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/peel-coreano/whatis.webp": {
+    "mtime": 1787224486.016,
+    "ast_hash": "d4d5da6266e34cc01690b7b04b0cf46f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/cta.jpg": {
+    "mtime": 1787192971.6580703,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/cta.webp": {
+    "mtime": 1787224486.163,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/hero.jpg": {
+    "mtime": 1787192971.6590705,
+    "ast_hash": "853c88a1b2b5e1bb1b75a27e66418030",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/hero.webp": {
+    "mtime": 1787224486.281,
+    "ast_hash": "9e161307c89c9a31a743c7993004d74c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/whatis.jpg": {
+    "mtime": 1787192971.66007,
+    "ast_hash": "415abbc1c7160cc2b615345ccaa7fb7a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/plasma-frio/whatis.webp": {
+    "mtime": 1787224486.421,
+    "ast_hash": "a64f086e63405aaedd2c821b328ce290",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/cta.jpg": {
+    "mtime": 1787192971.6605735,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/cta.webp": {
+    "mtime": 1787224486.542,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/hero.jpg": {
+    "mtime": 1787192971.6620858,
+    "ast_hash": "13e96c8797f023ba35f068c6823ab1d0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/hero.webp": {
+    "mtime": 1787224486.698,
+    "ast_hash": "8eab467c288605bff7865a96ef193f0c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/whatis.jpg": {
+    "mtime": 1787192971.6630912,
+    "ast_hash": "2591f51606d2b33951cd430481deac42",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/radiofrecuencia-facial/whatis.webp": {
+    "mtime": 1787224486.828,
+    "ast_hash": "d140402c7cf62a007904f6d668da67ea",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/cta.jpg": {
+    "mtime": 1787192971.6635978,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/cta.webp": {
+    "mtime": 1787224486.95,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/hero.jpg": {
+    "mtime": 1787192971.6651113,
+    "ast_hash": "7e3bd4df8230d60f5f9c654e3dd9f916",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/hero.webp": {
+    "mtime": 1787224487.061,
+    "ast_hash": "e1d52bf7f49a18985142eb409d911e37",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/how-it-works.jpg": {
+    "mtime": 1787192971.6651113,
+    "ast_hash": "c976df2b83fbc008e851a5e5c71fb38b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/how-it-works.webp": {
+    "mtime": 1787224487.19,
+    "ast_hash": "da2f2f7563d03d7437e900f9e1fefac1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/whatis.jpg": {
+    "mtime": 1787192971.666626,
+    "ast_hash": "d352a18cca2ac32d9b02f61cbda109b5",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/rejuvenecimiento-facial/whatis.webp": {
+    "mtime": 1787224487.323,
+    "ast_hash": "b3d6e2fcb8c43df6edb614f35acb48e9",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/cta.jpg": {
+    "mtime": 1787192971.6681237,
+    "ast_hash": "a1ef1a2c49871608e0e51d926c8f28fa",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/cta.webp": {
+    "mtime": 1787224487.444,
+    "ast_hash": "2054864160cee151c700fa24a7203dae",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/hero.jpg": {
+    "mtime": 1787192971.6691232,
+    "ast_hash": "de2ae73c1ce322474bb104a1fd1dad7e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/hero.webp": {
+    "mtime": 1787224487.601,
+    "ast_hash": "225f22c74dbee6568413527734ca38cb",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/whatis.jpg": {
+    "mtime": 1787192971.6696248,
+    "ast_hash": "4162f7c65146445fa4fadcf59b7f0fc9",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/faciales/tratamiento-acne/whatis.webp": {
+    "mtime": 1787224487.716,
+    "ast_hash": "7220b2ab1a36de6fb51aa21daf3ace0e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/cta.jpg": {
+    "mtime": 1787192971.6741235,
+    "ast_hash": "75a598bf720eace3fb3e0079662cfaef",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/cta.webp": {
+    "mtime": 1787224487.837,
+    "ast_hash": "283451584dc9c79ec50f0a917e0d2253",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/hero.jpg": {
+    "mtime": 1787192971.6746254,
+    "ast_hash": "ba24d6edd68d92905acc8fd979985107",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/hero.webp": {
+    "mtime": 1787224487.969,
+    "ast_hash": "df564aff4ae3587651960fa6aa48dc82",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/whatis.jpg": {
+    "mtime": 1787192971.6756246,
+    "ast_hash": "cbd85978dac8c15d9e6b77abf56ac73f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/depilacion-laser/whatis.webp": {
+    "mtime": 1787224488.104,
+    "ast_hash": "d23764a39b416e68d16a1fe15978c8a0",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/cta.jpg": {
+    "mtime": 1787192971.6766264,
+    "ast_hash": "75a598bf720eace3fb3e0079662cfaef",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/cta.webp": {
+    "mtime": 1787224488.225,
+    "ast_hash": "283451584dc9c79ec50f0a917e0d2253",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/hero.jpg": {
+    "mtime": 1787192971.6776254,
+    "ast_hash": "991eb7007b26dbd7edd983218f808e55",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/hero.webp": {
+    "mtime": 1787224488.341,
+    "ast_hash": "1f8a6e14e7c13cee2f488732517a7187",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/whatis.jpg": {
+    "mtime": 1787192971.6786253,
+    "ast_hash": "b6e05295fcd0c35d7d32dff1010a5bea",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/laser-y-luz/ipl/whatis.webp": {
+    "mtime": 1787224488.459,
+    "ast_hash": "1a5e1694b52874df4ac439fd6e8bbd31",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/contacto-viewport-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7236485,
+    "ast_hash": "5815e49ce4546a3a3054f12ca64da286",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-problem-desktop-chrome-win32.png": {
+    "mtime": 1787192971.72415,
+    "ast_hash": "734ab82a318bf4d4602c203dd1ad33bd",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-problem-mobile-safari-win32.png": {
+    "mtime": 1787192971.7246509,
+    "ast_hash": "bd76ba1e5e7ad2665939f54a06b2a8c3",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-whatis-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7301476,
+    "ast_hash": "93fc3e952b17bdd5eb75373acf3a3c0b",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-whatis-mobile-safari-win32.png": {
+    "mtime": 1787192971.7311478,
+    "ast_hash": "6668e4b93b7750eb8c7653acbed7942f",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-whofor-desktop-chrome-win32.png": {
+    "mtime": 1787192971.73165,
+    "ast_hash": "0fb60cb812ac5dc60fda0eaf9dcee97d",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/hidrofacial-whofor-mobile-safari-win32.png": {
+    "mtime": 1787192971.73215,
+    "ast_hash": "96bfe59f841e2c39731918f4965f1358",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-featured-services-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7381492,
+    "ast_hash": "7b83cf2bf054f9133739bdd29482139a",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-featured-services-mobile-safari-win32.png": {
+    "mtime": 1787192971.739149,
+    "ast_hash": "860d41225eddbfa3e00895ea92428d4b",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-founder-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7421474,
+    "ast_hash": "0b360f25020b3a1cbb55428f5f7c4443",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-founder-mobile-safari-win32.png": {
+    "mtime": 1787192971.7431495,
+    "ast_hash": "411be9013b6ea52265ee875ace0d3b0b",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-hero-desktop-chrome-win32.png": {
+    "mtime": 1787192971.747652,
+    "ast_hash": "8b9ad9c4b48aacec19f7e71a4413ba3e",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/home-hero-mobile-safari-win32.png": {
+    "mtime": 1787192971.7486482,
+    "ast_hash": "5feb290027630c725f507f47548be504",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/limpieza-problem-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7526474,
+    "ast_hash": "2f3b0242b8d59035087878834846465d",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/limpieza-problem-mobile-safari-win32.png": {
+    "mtime": 1787192971.753649,
+    "ast_hash": "78705e82b30f61addd6d57259b0e3798",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/nancy-nieto-viewport-desktop-chrome-win32.png": {
+    "mtime": 1787226393.6195686,
+    "ast_hash": "5ce8541be49f9be6d3d4101b7b5818de",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/nosotros-founder-with-link-desktop-chrome-win32.png": {
+    "mtime": 1787226411.0216687,
+    "ast_hash": "8b34d56c4f133a6c831ccd75f42a646e",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/nosotros-founder-with-link-mobile-safari-win32.png": {
+    "mtime": 1787226418.1501057,
+    "ast_hash": "35d522e7d92fbf6d4a315fa889476fd7",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/nosotros-viewport-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7576506,
+    "ast_hash": "3571c4f0ac18219a9ceaa739f3ecc17d",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/postoperatorios-problem-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7616508,
+    "ast_hash": "4158117bb49e9277e6f755a941abcc95",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/postoperatorios-problem-mobile-safari-win32.png": {
+    "mtime": 1787192971.7626534,
+    "ast_hash": "317697613cecaaede8addd44b8d47752",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/prf-problem-desktop-chrome-win32.png": {
+    "mtime": 1787192971.7666545,
+    "ast_hash": "d2dd48919e78e3f2f5f880908ff6cef5",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/prf-problem-mobile-safari-win32.png": {
+    "mtime": 1787192971.7671535,
+    "ast_hash": "02a27c019d13e229c7dad8e9f064b6ed",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/team/daniela-parra.mp4": {
+    "mtime": 1787192971.534039,
+    "ast_hash": "3a94bd09cf5faf5cf94c7451469dceb7",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/team/elianne-trujillo.mp4": {
+    "mtime": 1787192971.53504,
+    "ast_hash": "9e870c983dfafaedd141808f80f3bf1c",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/team/josey-gonzalez.mp4": {
+    "mtime": 1787192971.53604,
+    "ast_hash": "9532365d81407d4a354f9aca39982f2b",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/team/melisa-rios.mp4": {
+    "mtime": 1787192971.5375395,
+    "ast_hash": "aee50998a56c79e30aa15c260264f3ff",
+    "semantic_hash": ""
+  },
+  "public/assets/images/about/team/mikaela-guajardo.mp4": {
+    "mtime": 1787192971.5385406,
+    "ast_hash": "bc67ac82a9c4d1407847a2942ecf5076",
+    "semantic_hash": ""
+  },
+  "public/assets/images/home/hero.mp4": {
+    "mtime": 1787192971.5670414,
+    "ast_hash": "08b9842ac6722e11c64ff6a201baf147",
+    "semantic_hash": ""
   }
 }

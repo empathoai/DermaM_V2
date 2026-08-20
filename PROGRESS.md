@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-20 — Nota: auditoría de redirecciones 301 queda para el final, antes de publicar
+- Usuario preguntó si el remapeo de URLs del sitio anterior (redirecciones 301) está contemplado. Confirmado: `public/.htaccess` (protegido) ya tiene un bloque completo de redirects WordPress→sitio nuevo (páginas core, 3 landings, hubs Faciales/Corporales, patrones genéricos de WP). No hay redirects para Láser y Luz, Dental Estético, Capilar ni IV Therapy — confirmado por el usuario que es porque esas secciones no existían en el sitio anterior, no un olvido.
+- **Acción diferida a propósito:** re-auditar el `.htaccess` contra el sitemap/lista real de URLs del sitio anterior como último paso antes de publicar el rediseño (no ahora, no es parte del ciclo actual de ítems del backlog SEO). Detalle completo en `docs/SEO_AUDIT_2026.md` sección 5 (gitignoreado, no versionado).
+- No se modificó `.htaccess` ni ningún otro archivo de código en este intercambio.
+
 ## 2026-08-20 — SEO backlog ítem 8.1: eliminado `<link rel="canonical">` duplicado (Contacto + 5 páginas de tratamiento)
 - **Contexto:** primer ítem aplicado del backlog en `docs/SEO_AUDIT_2026.md` (auditoría de la sesión anterior). En `Contacto.jsx` y los 5 `src/pages/treatments/*/[treatment].jsx`, cada `<Helmet>` renderizaba **dos** `<link rel="canonical">` a la vez: uno calculado desde `VITE_SITE_URL` (condicional, con fallback a un dominio distinto — `https://dermam.com` en los 5 de tratamiento, string vacío en Contacto) y otro hardcodeado apuntando al dominio correcto (`dermamskinhealth.com`). Con `VITE_SITE_URL` seteada, ambos tags se renderizaban simultáneamente — señal ambigua para Google sobre cuál URL es la canónica.
 - **Cambio:** eliminada la línea `{canonicalUrl && <link rel="canonical" .../>}` y las declaraciones `siteUrl`/`canonicalUrl` (que quedaron sin otro uso) en los 6 archivos: `Contacto.jsx`, `treatments/faciales/[treatment].jsx`, `laser/[treatment].jsx`, `dental/[treatment].jsx`, `corporales/[treatment].jsx`, `capilar/[treatment].jsx`. Queda un único `<link rel="canonical">` hardcodeado por página, ya apuntando al dominio correcto.

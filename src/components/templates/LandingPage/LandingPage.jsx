@@ -84,6 +84,8 @@ export default function LandingPage({ data }) {
                 alt={problem.imageAlt || problem.headline}
                 className={styles.problemImage}
                 loading="lazy"
+                width={800}
+                height={1000}
               />
             </div>
           </div>

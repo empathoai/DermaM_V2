@@ -81,7 +81,9 @@ export default function BeforeAfterCarousel({ eyebrow, headline, items, disclaim
                 src={item.src}
                 alt={item.alt}
                 className={styles.image}
-                loading={idx === 0 ? undefined : 'lazy'}
+                loading="lazy"
+                width={1000}
+                height={1250}
                 onError={(e) => { e.target.style.display = 'none'; }}
               />
               {item.type === 'result' ? (

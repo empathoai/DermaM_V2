@@ -44,6 +44,9 @@ export default function HeroMedia({ src, alt = '', className = '', onReady, styl
       src={imgSrc}
       alt={alt}
       loading="eager"
+      fetchPriority="high"
+      width={1920}
+      height={1080}
       onLoad={onReady}
       onError={handleError}
       className={className}

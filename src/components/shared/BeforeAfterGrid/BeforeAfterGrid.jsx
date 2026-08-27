@@ -32,6 +32,9 @@ function SlotMedia({ src, alt, fallbackAlt }) {
       src={src}
       alt={alt || fallbackAlt}
       className={styles.image}
+      loading="lazy"
+      width={1000}
+      height={1250}
       onError={(e) => {
         e.target.style.display = 'none';
       }}

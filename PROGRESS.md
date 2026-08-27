@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Sub-proyecto B: tune de LCP (re-scopeado, sin impacto de UI)
+- Spec: `docs/superpowers/specs/2026-08-27-lcp-tune-design.md`. **B se re-scopeó**: al verificar, el CLS por imágenes ya está cubierto en todo el sitio por CSS (`min-height:70vh` + media absoluta en heroes; `aspect-ratio:4/5` en B/A y `.problemImage`; `1/1` en `TreatmentCard`; `16/9` en `FeaturedServices`). CLS medido = 0. Agregar `width/height` masivamente no tenía impacto. B pasa a ser un tune de LCP verificable.
+- **B1 — `HeroMedia.jsx`:** `fetchPriority="high"` + `width={1920} height={1080}` en el `<Picture>` de la rama imagen. Lo usan `PageHero` (landings) y `TreatmentHero` (tratamientos) → un cambio, las 2 superficies. `fetchPriority` (camelCase — con `fetchpriority` en minúscula React tira warning `Invalid DOM property`).
+- **B2 — bajo el fold no `eager`:** `BeforeAfterGrid` (`SlotMedia`) → `loading="lazy"` (antes sin atributo = eager). `BeforeAfterCarousel` → `loading="lazy"` para todos los slides (antes el slide 0 era eager). La sección B/A está siempre muy por debajo del fold; nada ahí es LCP.
+- **B3 — `width/height` solo en contenedores de ratio fijo conocido:** `BeforeAfterGrid` + `BeforeAfterCarousel` `1000×1250` (4:5, ratio real de todos los assets B/A); `LandingPage` problema `<Picture>` `800×1000` (4:5). Son pistas de ratio — el CSS ya controla el render. **Excluido `MediaBlock`** (ratios variables) y el hero (cubierto en B1).
+- **Verificado:** `test:visual` **22/22 sin diffs** (guardrail de UI). DOM: hero con `fetchpriority="high"` + `1920×1080` + `eager` en landing y tratamiento; B/A con `loading="lazy"` + `1000×1250`; problema con `800×1000`. En la carga inicial de `/tratamientos-postoperatorios` las primeras imágenes son `hero/how-it-works/cta` — las B/A quedan diferidas (`baDeferred: true`). Sin warnings de `fetchpriority` tras usar camelCase. (Los `TreatmentSEO is not defined` en el buffer de consola son stale del estado intermedio roto del sub-proyecto A — las páginas renderizan completas y el visual test de Hidrofacial pasa.)
+
 ## 2026-08-27 — Sub-proyecto A: SEO head de páginas de tratamiento (24 páginas, 100% background)
 - Spec: `docs/superpowers/specs/2026-08-27-treatment-seo-head-design.md`. Del audit `seo-checklist-65` (63/100). Descomposición: A (head/schema, hecho) → B (CLS width/height) → D (pulido alt + relatedLinks prf/limpieza + enlaces autoridad) → C (bloques de respuesta directa/GEO).
 - **Nuevo `src/utils/text.js`:** `titleCase()` (movido desde `TreatmentDetailPage.jsx`, que ahora lo importa) + `clampWords(s, max)`.

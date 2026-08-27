@@ -111,6 +111,7 @@ const customDetails = {
     ]
   },
   microneedling: {
+    contentUpdated: '2026-08-27',
     whatIsHeadline: 'Microneedling con Dermapen: qué es y para qué sirve',
     whatIsBody: 'El microneedling con Dermapen es un tratamiento estético facial que crea micro-canales controlados en la piel con agujas ultrafinas para estimular su renovación natural. Puede ayudar a mejorar la textura, la firmeza y la apariencia de marcas y poros dilatados. En Derma.M (West Palm Beach) se realiza por sesiones, con valoración médica previa.',
     problemContextHeadline: 'LA PERDIDA PROGRESIVA DE SOPORTE ESTRUCTURAL DE LA PIEL',
@@ -1250,6 +1251,7 @@ const compileTreatments = () => {
         description,
         metaTitle: base.metaTitle || null,
         metaDescription: base.metaDescription || null,
+        contentUpdated: custom.contentUpdated || null,
         image,
         protocolImage: custom.protocolImage || null,
         beforeAfter: custom.beforeAfter || null,

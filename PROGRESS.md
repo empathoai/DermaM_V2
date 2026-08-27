@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Sub-proyecto C, Task 1: cableado `contentUpdated` + nodo `MedicalWebPage`
+- Plan: `docs/superpowers/plans/2026-08-27-sub-c-respuesta-directa-geo.md` (6 tareas). Esta es la Task 1 (cableado de código, sin copy).
+- **`TreatmentSEO.jsx`:** nodo `Service` gana `'@id': \`${url}#service\``. Nuevo bloque `if (data.contentUpdated) { graph['@graph'].push({ '@type':'MedicalWebPage', '@id': \`${url}#webpage\`, url, name: title, inLanguage:'es', isPartOf:{'@id':\`${SITE}/#website\`}, about:{'@id':\`${url}#service\`}, dateModified: data.contentUpdated }) }`. `#website` confirmado en `Home.jsx:97`.
+- **`treatmentPages.js`:** builder → `contentUpdated: custom.contentUpdated || null` (junto a `metaTitle`/`metaDescription`). `customDetails.microneedling` retro-completado con `contentUpdated: '2026-08-27'`.
+- **Verificado:** `test:visual` 22/22 sin diffs. DOM: microneedling `@graph` = `[Service(#service), BreadcrumbList, MedicalWebPage]` con `dateModified:'2026-08-27'`, `about→#service`, `isPartOf→#website`; `FAQPage` sigue en `<script>` aparte. hidrofacial (sin `contentUpdated`) = `[Service(#service), BreadcrumbList]`, sin `MedicalWebPage` — el condicional funciona. 0 errores de consola.
+- **Pendiente:** Tasks 2-6 — reescritura GEO del `whatIsBody` + `whatIsHeadline` + `contentUpdated` por categoría (faciales 11 → corporales 8 → láser 2 → dental 2 → capilar 1).
+
 ## 2026-08-27 — Sub-proyecto C1: piloto de "respuesta directa" GEO (solo microneedling)
 - Piloto de C1 (bloques de respuesta directa / GEO del sub-proyecto SEO A→B→C→D). **Sin spec formal** — brainstorming conversacional largo, aprobado. Alcance: **1 sola página** para medir impacto antes de escalar.
 - **`src/data/treatmentPages.js` — `customDetails.microneedling`:** reescrito `whatIsBody` (sección 4 "EL PROTOCOLO" de `TreatmentDetailPage`) a forma de respuesta directa: 1ª oración = definición autónoma citable ("es un tratamiento estético facial que crea micro-canales… para estimular su renovación natural"), 2ª = beneficios en lenguaje compliant ("puede ayudar a mejorar la textura, la firmeza…"), 3ª = señal local + "valoración médica previa". ~55 palabras. + nuevo campo override `whatIsHeadline: 'Microneedling con Dermapen: qué es y para qué sirve'`.

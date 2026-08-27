@@ -39,6 +39,7 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
     '@graph': [
       {
         '@type': 'Service',
+        '@id': `${url}#service`,
         name,
         description,
         url,
@@ -61,6 +62,19 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       },
     ],
   };
+
+  if (data.contentUpdated) {
+    graph['@graph'].push({
+      '@type': 'MedicalWebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: title,
+      inLanguage: 'es',
+      isPartOf: { '@id': `${SITE}/#website` },
+      about: { '@id': `${url}#service` },
+      dateModified: data.contentUpdated,
+    });
+  }
 
   return (
     <Helmet>

@@ -230,7 +230,15 @@ const customDetails = {
         question: '¿Se puede aplicar este peeling en verano?',
         answer: 'Sí, es totalmente seguro. Al no contener ácidos fotosensibilizantes fuertes, se puede realizar durante todo el año, siempre aplicando protector solar como cuidado general diario.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes.jpg',
+        after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues.jpg',
+        beforeAlt: 'Rostro con enrojecimiento, textura irregular y aspecto opaco antes de un peel coreano en Derma.M, West Palm Beach',
+        afterAlt: 'Rostro con piel más uniforme, luminosa e hidratada tras un peel coreano en Derma.M, West Palm Beach'
+      }]
+    }
   },
   'radiofrecuencia-facial': {
     whatIsBody: 'La Radiofrecuencia Facial es un protocolo de estimulación térmica superficial que utiliza ondas electromagnéticas controladas. Su objetivo es generar una contracción inmediata del colágeno existente y promover la producción progresiva de nuevas fibras para suavizar líneas de expresión y atenuar la flacidez de forma cómoda.',

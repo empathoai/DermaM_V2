@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — `/faciales/peel-coreano`: antes/después reales (cierra su parte de 7.3)
+- **Contexto:** la sección "EVOLUCIÓN Y RESULTADOS ASISTIDOS" mostraba 2 cajas negras — `before-after-1/2.jpg` no existen para peel-coreano y `TreatmentDetailPage.jsx:63` los genera por convención igual. El usuario cargó 2 fotos reales (close-up 3/4 de rostro bajo luz LED azul, misma clienta: antes con enrojecimiento/textura/opacidad, después piel más uniforme y luminosa "glass skin").
+- **Assets:** `peel-coreano-antes.jpg` / `peel-coreano-despues.jpg` (1000×1250, 4:5) + `.webp` q78 (54–56 KB) en `public/assets/images/treatments/faciales/peel-coreano/`. Nombre = convención del proyecto (`<slug>-antes/despues`, igual que `limpieza-dental`).
+- **`treatmentPages.js`:** `customDetails['peel-coreano'].beforeAfter` con las 2 rutas + `beforeAlt`/`afterAlt` descriptivos en español. Sin `beforeLabel`/`afterLabel` → defaults `ANTES`/`DESPUÉS`. Mismo mecanismo de override que `limpieza-dental` (2026-08-26); cero cambio de template.
+- **Verificado** en `/faciales/peel-coreano`: ambas sirviendo webp (`natW` 1000), `alt` descriptivo, labels `ANTES`/`DESPUÉS`, disclaimer visible, sin cajas negras, sin errores de consola. `npm run test:visual` **22/22 verde** (la sección no está snapshoteada).
+- **NO tocado (sigue en backlog, del "mapa" de peel-coreano):** `hero.jpg`/`whatis.jpg`/`cta.jpg` con nombre genérico (decisión de convención pendiente, afecta ~30 páginas); `hero` con `alt=""` y `whatis` con `alt="PEEL COREANO"` (bug de `TreatmentDetailPage.jsx:139`, nivel template); `protocol.jpg` referenciado por `treatmentPages.js:1241` pero inexistente (cae a `hero.jpg`); las otras ~17 páginas de tratamiento con la sección B/A rota por convención.
+
 ## 2026-08-27 — Rename SEO de las 8 imágenes del carrousel de postoperatorios
 - `postoperatorio-caso-1..7.{jpg,webp}` → `drenaje-linfatico-postoperatorio-antes-despues-1..7.{jpg,webp}`; `postoperatorio-caso-resultado.{jpg,webp}` → `resultado-postoperatorio-abdomen.{jpg,webp}`. `git mv` (16 archivos) + `src` actualizados en `landingPages.js` (`sed`).
 - **Motivo:** los nombres originales (`-caso-N`) los propuse priorizando "secuencia prolija" sobre el estándar SEO de filename; "caso" es palabra vacía para Google Imágenes. Feedback del usuario: cada sugerencia debe ir bien a la primera, no generar retrabajo. Se corrigió ahora porque la página aún no está indexada con esos nombres → costo ~0. Ver `DECISIONS.md` / feedback en memoria.

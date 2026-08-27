@@ -94,6 +94,16 @@ test.describe('Visual Regression Tests', () => {
     await expect(problemSection).toHaveScreenshot('postoperatorios-problem.png');
   });
 
+  test('Postoperatorios Landing - Resultados carrousel', async ({ page }) => {
+    await page.goto('/tratamientos-postoperatorios');
+    await page.waitForTimeout(3000);
+
+    const carousel = page.locator('section[class*="beforeAfter"]');
+    await carousel.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1500);
+    await expect(carousel).toHaveScreenshot('postoperatorios-resultados-carrousel.png');
+  });
+
   test('Hidrofacial Detail Page - Viewport', async ({ page }) => {
     await page.goto('/faciales/hidrofacial');
     await page.waitForTimeout(3000);

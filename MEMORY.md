@@ -51,6 +51,14 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - Para dar nombres SEO + labels a un tratamiento: agregar `beforeAfter: { items:[{before,after,beforeAlt,afterAlt}], beforeLabel, afterLabel, disclaimer? }` en su `customDetails[slug]` (`src/data/treatmentPages.js`) — ya se cablea al objeto compilado con `beforeAfter: custom.beforeAfter || null`. Casos: `blanqueamiento-dental` (izq procedimiento / der secuencia, labels custom) y `limpieza-dental` (antes/después estándar, labels default).
 - Bug abierto (backlog): `TreatmentDetailPage.jsx:59` `categoryFolder` no mapea `dentalEstetico → dental-estetico`, solo `laserYLuz`. Afecta a tratamientos dentales SIN override `beforeAfter`. Registrado en `docs/SEO_AUDIT_2026.md`.
 
+## BeforeAfterCarousel — carrousel de resultados en landings (2026-08-27)
+- Componente `src/components/shared/BeforeAfterCarousel/` (jsx + module.css propio). **Distinto de `BeforeAfterGrid`**; este NO se importó, sus valores de marco/chip/disclaimer están **copiados** (comentados "mirrored from BeforeAfterGrid"). Ver [[decisions]] 2026-08-27.
+- `LandingPage.jsx`: si `beforeAfter.layout === 'carousel'` renderiza `<BeforeAfterCarousel>` en vez de `<BeforeAfterGrid>`. Ninguna otra landing lo usa hoy. `TreatmentDetailPage` NO tiene esta rama.
+- Data en `landingPages.js`: `beforeAfter: { layout:'carousel', variant:'light', eyebrow, headline, items:[{src, alt, type}], disclaimer }`. `type` ∈ `'comparison'` (chips ANTES top-left + DESPUÉS top-right) | `'result'` (chip RESULTADO). 1 imagen por slide (las composites ya traen antes+después en el mismo archivo).
+- Carrousel: CSS `scroll-snap` (sin librería), flechas circulares 44px (`ChevronLeft/Right` de `lucide-react`, `disabled` en extremos, sin loop), 8 dots `<button>` sincronizados con el scroll. `role="region"`/`aria-roledescription="carousel"`, `prefers-reduced-motion` → scroll sin animar. `viewport` `max-width:620px` centrado en desktop, `100%` + flechas sobre el marco en <768px.
+- Primer uso: `/tratamientos-postoperatorios` → `postoperatorio-caso-1..7.jpg` + `postoperatorio-caso-resultado.jpg` (todas 1000×1250, 4:5) + `.webp` q78.
+- Test: `Postoperatorios Landing - Resultados carrousel` en `tests/visual.spec.js` (baselines `postoperatorios-resultados-carrousel-*`).
+
 ## Known constraints / do-nots
 - Don't introduce Next.js, styled-components, Framer Motion, or another CSS framework (per `AGENTS.md`).
 - Don't modify `public/.htaccess`, `robots.txt`, `sitemap.xml`, `llms.txt` without explicit step-by-step instruction.

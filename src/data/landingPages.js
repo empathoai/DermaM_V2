@@ -365,15 +365,53 @@ export const landingPages = {
       ]
     },
     beforeAfter: {
+      layout: 'carousel',
+      variant: 'light',
       eyebrow: 'RESULTADOS',
       headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN',
       items: [
         {
-          before: '/assets/images/landings/tratamientos-postoperatorios/before-after-1.jpg',
-          after: '/assets/images/landings/tratamientos-postoperatorios/before-after-2.jpg'
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.jpg',
+          alt: 'Abdomen de paciente antes y después de acompañamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.jpg',
+          alt: 'Contorno corporal de paciente antes y después de tratamiento postoperatorio con masaje reductor en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.jpg',
+          alt: 'Zona abdominal de paciente antes y después de sesiones de drenaje linfático postoperatorio en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.jpg',
+          alt: 'Perfil corporal de paciente antes y después de acompañamiento postoperatorio en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg',
+          alt: 'Abdomen y cintura de paciente antes y después de tratamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg',
+          alt: 'Contorno abdominal de paciente antes y después de sesiones de recuperación postoperatoria en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg',
+          alt: 'Zona corporal tratada de paciente antes y después de acompañamiento postoperatorio en Derma.M, West Palm Beach',
+          type: 'comparison'
+        },
+        {
+          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg',
+          alt: 'Abdomen definido de paciente tras acompañamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          type: 'result'
         }
       ],
-      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+      disclaimer: 'Fotografías de casos reales de pacientes de Derma.M. Cada proceso postoperatorio es individual: los resultados varían según el procedimiento previo realizado, las características de cada persona y el seguimiento de las indicaciones. Ningún contenido de este sitio garantiza resultados específicos.'
     },
     brandPromise: 'CUIDADO PROFESIONAL EN CADA ETAPA DE TU RECUPERACIÓN',
     testimonials: {

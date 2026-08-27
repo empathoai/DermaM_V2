@@ -8,6 +8,7 @@ import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
 import BrandDivider from '../../shared/BrandDivider/BrandDivider';
 import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
 import BeforeAfterGrid from '../../shared/BeforeAfterGrid/BeforeAfterGrid';
+import BeforeAfterCarousel from '../../shared/BeforeAfterCarousel/BeforeAfterCarousel';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
@@ -124,15 +125,25 @@ export default function LandingPage({ data }) {
       {beforeAfter && (
         <section className={styles.beforeAfter}>
           <div className={styles.container}>
-            <BeforeAfterGrid
-              eyebrow={beforeAfter.eyebrow}
-              headline={beforeAfter.headline}
-              items={beforeAfter.items}
-              disclaimer={beforeAfter.disclaimer}
-              beforeLabel={beforeAfter.beforeLabel}
-              afterLabel={beforeAfter.afterLabel}
-              variant="light"
-            />
+            {beforeAfter.layout === 'carousel' ? (
+              <BeforeAfterCarousel
+                eyebrow={beforeAfter.eyebrow}
+                headline={beforeAfter.headline}
+                items={beforeAfter.items}
+                disclaimer={beforeAfter.disclaimer}
+                variant={beforeAfter.variant || 'light'}
+              />
+            ) : (
+              <BeforeAfterGrid
+                eyebrow={beforeAfter.eyebrow}
+                headline={beforeAfter.headline}
+                items={beforeAfter.items}
+                disclaimer={beforeAfter.disclaimer}
+                beforeLabel={beforeAfter.beforeLabel}
+                afterLabel={beforeAfter.afterLabel}
+                variant="light"
+              />
+            )}
           </div>
         </section>
       )}

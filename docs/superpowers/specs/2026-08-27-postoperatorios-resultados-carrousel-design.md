@@ -64,11 +64,10 @@ BeforeAfterCarousel({ eyebrow, headline, items, disclaimer, variant = 'light' })
 - Track horizontal: `display:flex`, `overflow-x:auto`, `scroll-snap-type:x mandatory`,
   scrollbar oculta (`scrollbar-width:none` + `::-webkit-scrollbar{display:none}`).
 - Cada slide: `flex:0 0 100%`, `scroll-snap-align:center`.
-- El slide `result` usa `object-fit:contain` (no recortar la foto vertical suelta); los
-  `comparison` usan `object-fit:cover`.
-- **Proporción del marco (`aspect-ratio`)**: se fija al medir los archivos reales de las
-  composites durante la implementación. Valor a confirmar contra los assets; se documenta
-  en PROGRESS al cerrar.
+- Todos los slides usan `object-fit:cover`. Las 8 imágenes son 1000×1250 (4:5), la misma
+  proporción del marco → no hay recorte; no se necesita caso especial para `result`.
+- **Proporción del marco (`aspect-ratio`)**: `4 / 5` (idéntico al `.imageContainer` actual
+  de `BeforeAfterGrid`). Resuelto: los 8 assets ya son 1000×1250.
 - Swipe nativo en touch (no se intercepta).
 - Estado `activeIndex` derivado del scroll (listener `scroll` con `Math.round(scrollLeft / slideWidth)`),
   o actualizado directamente al clickear flecha/dot. `IntersectionObserver` por slide es la
@@ -159,7 +158,7 @@ beforeAfter: {
     { src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg', alt: '…', type: 'comparison' },
     { src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg', alt: '…', type: 'comparison' },
     { src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg', alt: '…', type: 'comparison' },
-    { src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-resultado-8.jpg', alt: '…', type: 'result' },
+    { src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg', alt: '…', type: 'result' },
   ],
   disclaimer:
     'Fotografías de casos reales de pacientes de Derma.M. Cada proceso postoperatorio es individual: los resultados varían según el procedimiento previo realizado, las características de cada persona y el seguimiento de las indicaciones. Ningún contenido de este sitio garantiza resultados específicos.',
@@ -175,16 +174,16 @@ número 8 describe solo el resultado).
 
 Origen: 8 archivos que aporta el usuario.
 
-Procesamiento (base skill `assets-optimizer`):
-- Generar `.webp` q78 + conservar `.jpg` como fallback (el componente usa `Picture`, que
-  ya sirve webp con fallback).
-- Nombres: `postoperatorio-caso-1.{jpg,webp}` … `postoperatorio-caso-7.{jpg,webp}`,
-  `postoperatorio-resultado-8.{jpg,webp}`.
-- Carpeta existente: `public/assets/images/landings/tratamientos-postoperatorios/`.
-- Medir proporción de las composites → fijar `aspect-ratio` del marco.
-- Originales respaldados en el scratchpad de la sesión.
-- Borrar del repo los `.gitkeep`/`card.jpg.placeholder`/rutas muertas SOLO si quedan sin
-  usar tras el cambio y no los referencia nada (verificar con grep antes).
+**Hecho** (2026-08-27):
+- 8 `.jpg` cargados por el usuario en
+  `public/assets/images/landings/tratamientos-postoperatorios/`:
+  `postoperatorio-caso-1..7.jpg` + `postoperatorio-caso-resultado.jpg`. Todos 1000×1250 (4:5).
+- `.webp` q78 generados con `sharp` (41–70 KB c/u). El componente usa `Picture` → sirve
+  webp con fallback jpg automáticamente.
+
+Pendiente:
+- `alt` descriptivo por imagen (al implementar, según lo que muestre cada foto).
+- `card.jpg.placeholder` y `.gitkeep` de esa carpeta: NO tocar (fuera de alcance).
 
 ## Tests / verificación
 
@@ -200,7 +199,7 @@ Procesamiento (base skill `assets-optimizer`):
   - Flechas: avanzan/retroceden, `disabled` en extremos, sin loop.
   - Dots: 8, el activo sigue al slide, click navega.
   - Swipe en viewport mobile (375px) mueve de a 1; flechas sobre el marco, sin overflow-x.
-  - Slide 8 (`result`) muestra la foto completa (`contain`), un solo chip `RESULTADO`.
+  - Slide 8 (`result`, `postoperatorio-caso-resultado`) muestra un solo chip `RESULTADO`.
   - Slides 1–7: chips `ANTES` / `DESPUÉS` a la misma altura.
   - `prefers-reduced-motion`: el scroll no anima.
   - Sin errores de consola.

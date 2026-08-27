@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Cierre de 2 tests en rojo preexistentes (fuera de 8.9/8.10)
+- Spec: `docs/superpowers/specs/2026-08-27-contacto-faq-bilingue-y-hero-mask-design.md`. Brainstorming corrido, ambos aprobados.
+- **Cambio 1 — FAQ bilingüe en `/contacto`:** 5º item en `contactFaq.items` (`src/data/contactPage.js`) → *"¿Atienden en español e inglés? / Sí. Nuestro equipo te atiende en español e inglés, tanto en la clínica en West Palm Beach como por WhatsApp y teléfono."* Alinea `faq-consistency.spec.js` (esperaba 5 desde `6a17f67`), suma nodo al `FAQPage` JSON-LD y fila al acordeón. Cero cambio de componente. SEO local/AEO para el mercado bilingüe de WPB, respuesta verificable, sin palabras prohibidas. Verificado en dev: 5 botones `aria-expanded`, 5 `mainEntity`, la nueva abre/cierra con su respuesta, sin errores de consola. `Contacto Page - Viewport` (visual) sin cambio (FAQ va bajo el fold).
+- **Cambio 2 — hero visual test flaky:** `tests/visual.spec.js` (`Home Page - Hero Viewport`) → `addStyleTag` con `section:first-of-type video, section:first-of-type img { visibility:hidden !important }` antes del screenshot; baselines `home-hero-*` (desktop+mobile) regenerados. El fondo del hero es `<video>`, frame no determinista → fallaba ~50% de las corridas. Se descartó `mask` (el `<video>` cubre toda la sección → taparía H1 + CTAs) y `maxDiffPixelRatio` (global). `visibility:hidden` conserva layout: headline, CTAs, topbar, navbar, TrustBar y popup siguen comparándose. Ver [[decisions]] 2026-08-27. Verificado: 3 corridas seguidas verdes; suite completa **32/32**.
+- **Nada de 8.9/8.10 se tocó.** El slug `/prf-y-fibrina` sigue igual.
+
 ## 2026-08-27 — `npm run test:visual` reconciliado (cierra el pendiente de 8.9/8.10)
 - **Contexto:** los baselines de Playwright venían atrasados varios commits intencionales (8.9/8.10 naming + trabajo 8-27: BeforeAfterGrid labels en LandingPage, RelatedTreatments, y además el retiro de "Miami" del topbar de `6a17f67` que nunca se snapshoteó).
 - **`--update-snapshots`** sobre `tests/visual.spec.js`. 9 PNG regenerados: `contacto-viewport-desktop`, `home-featured-services` (desktop+mobile), `home-hero-mobile-safari`, `hidrofacial-problem-mobile`, `limpieza-problem-mobile`, `postoperatorios-problem-mobile`, `prf-problem` (desktop+mobile). Todos los diffs verificados = reflow por texto más largo ("PLASMA RICO EN PLAQUETAS Y FIBRINA") + topbar sin Miami. Ningún cambio de layout/estilo no intencional.

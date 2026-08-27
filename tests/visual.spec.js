@@ -5,7 +5,13 @@ test.describe('Visual Regression Tests', () => {
     await page.goto('/');
     // Wait 3 seconds to let video and layout render fully
     await page.waitForTimeout(3000);
-    // Take viewport screenshot for above-the-fold verification
+    // Hide the hero background media before capturing: it's a <video> whose
+    // painted frame differs run-to-run (non-deterministic), which made this
+    // snapshot flaky. visibility:hidden keeps layout intact, so the hero
+    // headline, CTAs and all page chrome are still compared.
+    await page.addStyleTag({
+      content: 'section:first-of-type video, section:first-of-type img { visibility: hidden !important; }',
+    });
     await expect(page).toHaveScreenshot('home-hero.png');
   });
 

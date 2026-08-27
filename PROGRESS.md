@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Fix: cards de "Te puede interesar" ya no se estiran con <3 relacionados
+- **Síntoma:** en `/dental-estetico/*` y `/laser-y-luz/*` la sección "Te puede interesar" mostraba 1 sola card estirada a todo el ancho con imagen cuadrada gigante (hasta 1315px).
+- **Causa (preexistente, no de esta sesión):** `RelatedTreatments.jsx:26` pasaba `columns={items.length >= 3 ? 3 : items.length}`. `dentalEstetico` y `laserYLuz` tienen 2 tratamientos → lista de relacionados = 1 item → `columns={1}` → clase `cols1` que **no existe** en `TreatmentGrid.module.css` (solo `.cols2`/`.cols3`) → card sin `flex-basis` estirada. Bug desde `34bdffd` (jun 2026), expuesto al reducir tratamientos por categoría.
+- **Fix:** `columns={3}` fijo en `RelatedTreatments.jsx`. Toda card usa `.cols3` (~426px, tamaño estándar); `justify-content: center` de `.grid` centra 1-2 cards.
+- **Verificado:** `/laser-y-luz/depilacion-laser` y `/dental-estetico/blanqueamiento-dental` → 1 card 426×426 centrada. `/faciales/hidrofacial` (regresión) → 3×426px sin cambio. Sin errores de consola.
+- **Nota:** cards quedan centradas; alinear a la izquierda sería ajuste en `.grid` de `TreatmentGrid.module.css` (afecta todas las grillas), no pedido.
+
 ## 2026-08-26 — blanqueamiento-dental: 2 slots del BeforeAfterGrid (procedimiento + antes/después) con labels custom
 - **Contexto:** la clienta solo aportó 2 fotos para dental — una de la secuencia antes/después (tira de 3 paneles del mismo paciente, el usuario la reencuadró a 1000×1250) y otra del procedimiento en cabina. Decisión del usuario: slot izq = procedimiento, slot der = secuencia. Spec: `docs/superpowers/specs/2026-08-26-blanqueamiento-dental-before-after-slots-design.md`. Brainstorming corrido, enfoque A aprobado.
 - **`BeforeAfterGrid.jsx`:** props nuevas `beforeLabel='ANTES'` / `afterLabel='DESPUÉS'` (retrocompatibles); `alt` pasa de `"Before"`/`"After"` fijo a `item.beforeAlt || 'Before'` / `item.afterAlt || 'After'`. Las landings no pasan nada nuevo → sin cambios (verificado en `/limpieza-facial-profunda`).

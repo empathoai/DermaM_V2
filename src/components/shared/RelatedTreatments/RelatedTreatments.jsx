@@ -24,7 +24,7 @@ export default function RelatedTreatments({
             image: t.image
           }))}
           variant="light"
-          columns={items.length >= 3 ? 3 : items.length}
+          columns={3}
           showMedia={true}
           sectionHeader={{
             eyebrow: 'TE PUEDE INTERESAR',

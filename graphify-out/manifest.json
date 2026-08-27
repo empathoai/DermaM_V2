@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/RelatedTreatments/RelatedTreatments.jsx": {
-    "mtime": 1787192971.6981366,
-    "ast_hash": "d21e612de84aeffa13c30f58913b18b2",
+    "mtime": 1787806837.3263984,
+    "ast_hash": "8a706c9f4fea49adaa346d20d5e6a344",
     "semantic_hash": ""
   },
   "src/components/shared/SectionHeader/SectionHeader.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787806440.9355967,
-    "ast_hash": "2cfafb137fe2f18a36b55c378fd0d887",
+    "mtime": 1787807085.9719923,
+    "ast_hash": "991fc68e972f41b20f3786f8a9dd767f",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787806426.9505382,
-    "ast_hash": "a0f47f1ee01f4b155a01d48e460ada73",
+    "mtime": 1787807096.0783515,
+    "ast_hash": "9879b93ae3321ebc01c25bfb8928aeeb",
     "semantic_hash": ""
   },
   "README.md": {

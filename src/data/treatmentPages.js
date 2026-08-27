@@ -111,7 +111,8 @@ const customDetails = {
     ]
   },
   microneedling: {
-    whatIsBody: 'El microneedling con Dermapen es un protocolo avanzado de renovación y firmeza cutánea. Utiliza micro-perforaciones superficiales de alta precisión mediante aplicadores estériles ultrafinos de velocidad regulada. Estos micro-canales activan los mecanismos naturales de renovación de la piel y maximizan la asimilación de sueros tensores de alta calidad.',
+    whatIsHeadline: 'Microneedling con Dermapen: qué es y para qué sirve',
+    whatIsBody: 'El microneedling con Dermapen es un tratamiento estético facial que crea micro-canales controlados en la piel con agujas ultrafinas para estimular su renovación natural. Puede ayudar a mejorar la textura, la firmeza y la apariencia de marcas y poros dilatados. En Derma.M (West Palm Beach) se realiza por sesiones, con valoración médica previa.',
     problemContextHeadline: 'LA PERDIDA PROGRESIVA DE SOPORTE ESTRUCTURAL DE LA PIEL',
     problemContextBody: 'Con los años y el daño ambiental, la producción interna de colágeno disminuye, abriendo paso a poros dilatados, líneas finas visibles y marcas resistentes de acné. El microneedling despierta de forma mecánica la capacidad de renovación de la estructura cutánea para restaurar la firmeza y suavizar imperfecciones de relieve.',
     duration: '45 - 60 min',
@@ -1263,7 +1264,7 @@ const compileTreatments = () => {
         related,
         whatIs: {
           eyebrow: 'EL PROTOCOLO',
-          headline: `TRATAMIENTO DE ${title}`,
+          headline: custom.whatIsHeadline || `TRATAMIENTO DE ${title}`,
           body: custom.whatIsBody || `El tratamiento de ${title} en Derma.M es un protocolo diseñado estratégicamente para abordar ${description.toLowerCase()} utilizando aparatología y activos avanzados. Buscamos restaurar la luminosidad, equilibrio y vitalidad de la zona mediante un cuidado integral.`,
           image: `${treatmentAssetBase}/whatis.jpg`
         },

@@ -22,6 +22,12 @@ Derma.M — marketing/booking website for a clinic (facial, corporal, dental, l�
 ## Project status
 Near-final. Treat as a finished, working site — not a blank canvas. Every change requires explicit user request + explicit approval, one change at a time, no scope creep. Full rules in `CLAUDE.md` under "Mandatory: project is near-final — protect it" and "Mandatory: one change at a time, close it out fully".
 
+## SEO / GEO / AEO — documentos
+- **`docs/TECHNICAL_SEO_GEO_AUDIT_2026.md`** (forzado a git, creado 2026-08-26) = **fuente de verdad técnica**: consolida 7 fuentes de research (2 deep-research reports, doc primaria de Google Search Central, spec `llmstxt.org` v2, scan de Cloudflare `isitagentready.com`, `Estrategias SEO AEO GEO 2026`, framework RASTRO). Análisis + best practices + auditoría del sitio real.
+- **`docs/SEO_AUDIT_2026.md`** (gitignored) = **backlog operativo**: ítems 8.x accionables, estados `Hecho`/`Pendiente`, un cambio por ciclo.
+- Conclusión durable del cruce: **no hay palanca técnica de "AI Search"**. Lo que mueve la aguja = indexable + snippet-eligible en Google (base literal de AI Overviews), HTML semántico, structured data que coincide con texto visible, autoridad/señales locales verificables, medición (GSC + Bing WT). Todo lo "agéntico" (`llms.txt` como señal de ranking, MCP, WebMCP, DNS-AID, Content Signals, Markdown negotiation, pagos agénticos) = experimental o sin efecto probado — no invertir. Google **ignora `llms.txt`** para Search; `Google-Extended` **no afecta** ranking.
+- Prioridad de ejecución: 8.12 (robots.txt directivas IA, riesgo cero) → 8.14 (`sameAs` real) → 8.18 (decidir `aggregateRating` 4.9/117 sin reviews visibles) → 8.17 (GSC + GA4 + Bing WT, desbloquea 8.11/8.13/8.15/8.16).
+
 ## Founder bio page
 `/nosotros/nancy-nieto` (2026-08-20, item 4.2) — dedicated E-E-A-T bio page for Nancy Nieto, template `src/components/templates/FounderBioPage/FounderBioPage.jsx`, data `founderBioPage` export in `src/data/aboutPage.js` (reuses `aboutPage.founderSpotlight`/`founderPhilosophy`/`quote`/`cta` by reference, doesn't duplicate copy). **No license numbers or credential IDs anywhere on this page or its JSON-LD** — explicit, standing instruction from Nancy (see [[decisions]] 2026-08-20). Cross-linked from `/nosotros`'s founder spotlight section.
 

@@ -460,8 +460,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/PageHero/PageHero.jsx": {
-    "mtime": 1787192971.688633,
-    "ast_hash": "b4d956eb4c94cb9e44ebed4d8b75d32b",
+    "mtime": 1787824096.1306503,
+    "ast_hash": "f7e95dacf9291480c770e3f8deb71b1d",
     "semantic_hash": ""
   },
   "src/components/sections/Testimonials/Testimonials.jsx": {
@@ -610,8 +610,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/LandingPage/LandingPage.jsx": {
-    "mtime": 1787810935.6829424,
-    "ast_hash": "16e6f25c771ac194632a9aafaf2cc016",
+    "mtime": 1787824304.4985318,
+    "ast_hash": "24c0c1c3132e075f9b9f392dbecd1d42",
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
@@ -645,13 +645,13 @@
     "semantic_hash": ""
   },
   "src/data/contactPage.js": {
-    "mtime": 1787208061.0905979,
-    "ast_hash": "0422053732605d1ee1160a9c6be69546",
+    "mtime": 1787815261.6508682,
+    "ast_hash": "b3eaec328421bdfc456e8dca9f68ae7a",
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787813155.317312,
-    "ast_hash": "d00769af0e42193290ea2a1864ba60a3",
+    "mtime": 1787824283.1596475,
+    "ast_hash": "ddb861614b095ab256b8e7684813a1d9",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -755,18 +755,18 @@
     "semantic_hash": ""
   },
   "src/pages/landings/LimpiezaFacial.jsx": {
-    "mtime": 1787222215.3050086,
-    "ast_hash": "9cf05f9cec108c4acf0a177fe64d7d1f",
+    "mtime": 1787824088.8754468,
+    "ast_hash": "eac9dd6f75cb516716edbe0a3513e896",
     "semantic_hash": ""
   },
   "src/pages/landings/Postoperatorios.jsx": {
-    "mtime": 1787222268.612992,
-    "ast_hash": "88bf611334e165e93954bc7acbd20f8a",
+    "mtime": 1787824067.346236,
+    "ast_hash": "3c44e97bfdbf2fa5012c8a339a38346b",
     "semantic_hash": ""
   },
   "src/pages/landings/PrfYFibrina.jsx": {
-    "mtime": 1787813093.0574038,
-    "ast_hash": "088a9327945215da6ce3696a12d5fd9a",
+    "mtime": 1787824078.6439703,
+    "ast_hash": "83cebbc005496c9b2427e0f468cf875f",
     "semantic_hash": ""
   },
   "src/pages/treatments/capilar/[treatment].jsx": {
@@ -805,8 +805,8 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js": {
-    "mtime": 1787226327.1384652,
-    "ast_hash": "f9c38c7c25a2180ca079d91a95572383",
+    "mtime": 1787821388.0941858,
+    "ast_hash": "c90b58f2af891df6865b7f8463a7d49a",
     "semantic_hash": ""
   },
   "vite.config.js": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787813295.2535894,
-    "ast_hash": "fd0b7124ba11effeac4b4a509ce429d6",
+    "mtime": 1787824557.194136,
+    "ast_hash": "137372c858619a3ca9991bb8660c4883",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787813331.2505727,
-    "ast_hash": "c993925162103a50a28ffcf1184c887a",
+    "mtime": 1787824573.824746,
+    "ast_hash": "b15863e3a37fd9a13a3c86370fc0b7de",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787813278.8144083,
-    "ast_hash": "c7ec4e1302fbcd955b973b76bd5f58fa",
+    "mtime": 1787824531.3296072,
+    "ast_hash": "dec8d661b18fd088ad2c7cc7a0504bbf",
     "semantic_hash": ""
   },
   "README.md": {
@@ -2800,8 +2800,8 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/contacto-viewport-desktop-chrome-win32.png": {
-    "mtime": 1787192971.7236485,
-    "ast_hash": "5815e49ce4546a3a3054f12ca64da286",
+    "mtime": 1787814056.7544067,
+    "ast_hash": "671ccaf9b84c947ae432b84d6b138072",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/hidrofacial-problem-desktop-chrome-win32.png": {
@@ -2810,8 +2810,8 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/hidrofacial-problem-mobile-safari-win32.png": {
-    "mtime": 1787192971.7246509,
-    "ast_hash": "bd76ba1e5e7ad2665939f54a06b2a8c3",
+    "mtime": 1787814145.7912788,
+    "ast_hash": "f1c5b50422e2ad6f7978cb5fdd5bf45f",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/hidrofacial-whatis-desktop-chrome-win32.png": {
@@ -2835,13 +2835,13 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/home-featured-services-desktop-chrome-win32.png": {
-    "mtime": 1787192971.7381492,
-    "ast_hash": "7b83cf2bf054f9133739bdd29482139a",
+    "mtime": 1787814034.9665658,
+    "ast_hash": "de4c93d70b5f3115c801af674ff9c94b",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/home-featured-services-mobile-safari-win32.png": {
-    "mtime": 1787192971.739149,
-    "ast_hash": "860d41225eddbfa3e00895ea92428d4b",
+    "mtime": 1787814106.681877,
+    "ast_hash": "515fbd7d10a764f4f5f19893c6254959",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/home-founder-desktop-chrome-win32.png": {
@@ -2855,13 +2855,13 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/home-hero-desktop-chrome-win32.png": {
-    "mtime": 1787192971.747652,
-    "ast_hash": "8b9ad9c4b48aacec19f7e71a4413ba3e",
+    "mtime": 1787815609.258919,
+    "ast_hash": "87c840abfecab94dfe5e41738c9267e6",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/home-hero-mobile-safari-win32.png": {
-    "mtime": 1787192971.7486482,
-    "ast_hash": "5feb290027630c725f507f47548be504",
+    "mtime": 1787815617.2007332,
+    "ast_hash": "7fdedc808225dff8d36a67861d17a8b0",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/limpieza-problem-desktop-chrome-win32.png": {
@@ -2870,8 +2870,8 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/limpieza-problem-mobile-safari-win32.png": {
-    "mtime": 1787192971.753649,
-    "ast_hash": "78705e82b30f61addd6d57259b0e3798",
+    "mtime": 1787814122.6206808,
+    "ast_hash": "916a538fb85a13fb557056eeb1dea6f6",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/nancy-nieto-viewport-desktop-chrome-win32.png": {
@@ -2900,18 +2900,18 @@
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/postoperatorios-problem-mobile-safari-win32.png": {
-    "mtime": 1787192971.7626534,
-    "ast_hash": "317697613cecaaede8addd44b8d47752",
+    "mtime": 1787814138.3136945,
+    "ast_hash": "8d03d959e75138f87153f8c370708bb6",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/prf-problem-desktop-chrome-win32.png": {
-    "mtime": 1787192971.7666545,
-    "ast_hash": "d2dd48919e78e3f2f5f880908ff6cef5",
+    "mtime": 1787814069.0760946,
+    "ast_hash": "51f31453a88d116e71f560d844907bee",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/prf-problem-mobile-safari-win32.png": {
-    "mtime": 1787192971.7671535,
-    "ast_hash": "02a27c019d13e229c7dad8e9f064b6ed",
+    "mtime": 1787814131.644572,
+    "ast_hash": "58f37ce78319520cecbf9d09cfeb5a72",
     "semantic_hash": ""
   },
   "public/assets/images/about/team/daniela-parra.mp4": {
@@ -3022,6 +3022,101 @@
   "public/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.mp4": {
     "mtime": 1787810858.2539454,
     "ast_hash": "1fbe16995a21eca7db0adef08fef8a93",
+    "semantic_hash": ""
+  },
+  "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx": {
+    "mtime": 1787821170.9280736,
+    "ast_hash": "0ca132aca22eaa40748e1749d0149bfd",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.jpg": {
+    "mtime": 1787820800.6672137,
+    "ast_hash": "8347bf403ffc2ba4f9cfb829afb090ff",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.webp": {
+    "mtime": 1787821001.692,
+    "ast_hash": "ffb01ca36691856e64fa01b2c30c1d65",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.jpg": {
+    "mtime": 1787820950.692791,
+    "ast_hash": "4507bd587b1124e39baae4996d565395",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.webp": {
+    "mtime": 1787821001.797,
+    "ast_hash": "d77df644e7dd7a80475f9f1aaf66141e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.jpg": {
+    "mtime": 1787820830.175665,
+    "ast_hash": "272fad9c8c9a86031066a56855851a9e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.webp": {
+    "mtime": 1787821001.9,
+    "ast_hash": "ed573693ea035908a423c924133f0436",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.jpg": {
+    "mtime": 1787820845.9905534,
+    "ast_hash": "77fe8bc143c5c5689fe486c94da3a8b8",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.webp": {
+    "mtime": 1787821002.007,
+    "ast_hash": "22b32644f094df761d124526bd2a6acc",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg": {
+    "mtime": 1787820860.0608108,
+    "ast_hash": "18abde1b04d0efb544b8448b03883ef4",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.webp": {
+    "mtime": 1787821002.114,
+    "ast_hash": "bb6d470ca71b9f951181f5b8ac22b02a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg": {
+    "mtime": 1787820874.0343444,
+    "ast_hash": "36c8de5aeb813db0572eadf1d80a9c9d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.webp": {
+    "mtime": 1787821002.218,
+    "ast_hash": "932222a5aa8cdac56af8651d4b4fd610",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg": {
+    "mtime": 1787820888.2262278,
+    "ast_hash": "58e6c7ee1a6c79df30a482d3dc946739",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.webp": {
+    "mtime": 1787821002.317,
+    "ast_hash": "9b5a76a8777a4cbc647927bed66169ea",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg": {
+    "mtime": 1787820902.1573713,
+    "ast_hash": "5ca0b49d5f09697c00a703a8ee1f7070",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.webp": {
+    "mtime": 1787821002.428,
+    "ast_hash": "bfea8d822fd17c1ddc34bbf2f9e1acdf",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/postoperatorios-resultados-carrousel-desktop-chrome-win32.png": {
+    "mtime": 1787821419.2507696,
+    "ast_hash": "f3395f78269688938476e8572d815439",
+    "semantic_hash": ""
+  },
+  "tests/visual.spec.js-snapshots/postoperatorios-resultados-carrousel-mobile-safari-win32.png": {
+    "mtime": 1787821431.456243,
+    "ast_hash": "3be80c42a998b307b609b2de1cd3beb1",
     "semantic_hash": ""
   }
 }

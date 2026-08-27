@@ -100,7 +100,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_context_signals",
-      "community": 143,
+      "community": 99,
       "norm_label": "context-signals.mjs"
     },
     {
@@ -110,7 +110,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "scripts_context_signals_hascode",
-      "community": 143,
+      "community": 99,
       "norm_label": "hascode()"
     },
     {
@@ -120,7 +120,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "scripts_context_signals_latestcritique",
-      "community": 143,
+      "community": 99,
       "norm_label": "latestcritique()"
     },
     {
@@ -130,7 +130,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "scripts_context_signals_gitsignals",
-      "community": 143,
+      "community": 99,
       "norm_label": "gitsignals()"
     },
     {
@@ -140,7 +140,7 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "scripts_context_signals_common_dev_ports",
-      "community": 143,
+      "community": 99,
       "norm_label": "common_dev_ports"
     },
     {
@@ -150,7 +150,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "scripts_context_signals_probeport",
-      "community": 143,
+      "community": 99,
       "norm_label": "probeport()"
     },
     {
@@ -160,7 +160,7 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "scripts_context_signals_devserversignals",
-      "community": 143,
+      "community": 99,
       "norm_label": "devserversignals()"
     },
     {
@@ -170,7 +170,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "scripts_context_signals_scannable_ext",
-      "community": 143,
+      "community": 99,
       "norm_label": "scannable_ext"
     },
     {
@@ -180,7 +180,7 @@
       "source_location": "L160",
       "_origin": "ast",
       "id": "scripts_context_signals_source_dirs",
-      "community": 143,
+      "community": 99,
       "norm_label": "source_dirs"
     },
     {
@@ -190,7 +190,7 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "scripts_context_signals_scantargets",
-      "community": 143,
+      "community": 99,
       "norm_label": "scantargets()"
     },
     {
@@ -200,7 +200,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "scripts_context_signals_gathersignals",
-      "community": 143,
+      "community": 99,
       "norm_label": "gathersignals()"
     },
     {
@@ -210,7 +210,7 @@
       "source_location": "L208",
       "_origin": "ast",
       "id": "scripts_context_signals_cli",
-      "community": 143,
+      "community": 99,
       "norm_label": "cli()"
     },
     {
@@ -220,7 +220,7 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "scripts_context_signals_invokedasscript",
-      "community": 143,
+      "community": 99,
       "norm_label": "invokedasscript()"
     },
     {
@@ -1460,7 +1460,7 @@
       "source_location": "L730",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlikefromprops",
-      "community": 192,
+      "community": 23,
       "norm_label": "iscardlikefromprops()"
     },
     {
@@ -1590,7 +1590,7 @@
       "source_location": "L1297",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_parseradiustopx",
-      "community": 192,
+      "community": 23,
       "norm_label": "parseradiustopx()"
     },
     {
@@ -1600,7 +1600,7 @@
       "source_location": "L1311",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_resolveborderradiuspx",
-      "community": 192,
+      "community": 23,
       "norm_label": "resolveborderradiuspx()"
     },
     {
@@ -2010,7 +2010,7 @@
       "source_location": "L2534",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlikedom",
-      "community": 192,
+      "community": 23,
       "norm_label": "iscardlikedom()"
     },
     {
@@ -2020,7 +2020,7 @@
       "source_location": "L2546",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_checklayout",
-      "community": 192,
+      "community": 23,
       "norm_label": "checklayout()"
     },
     {
@@ -2040,7 +2040,7 @@
       "source_location": "L2658",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlike",
-      "community": 192,
+      "community": 23,
       "norm_label": "iscardlike()"
     },
     {
@@ -2050,7 +2050,7 @@
       "source_location": "L2678",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_checkpagelayout",
-      "community": 192,
+      "community": 23,
       "norm_label": "checkpagelayout()"
     },
     {
@@ -2460,7 +2460,7 @@
       "source_location": "L3400",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_detachoverlay",
-      "community": 23,
+      "community": 132,
       "norm_label": "detachoverlay()"
     },
     {
@@ -2500,7 +2500,7 @@
       "source_location": "L3665",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_buildselectorsegment",
-      "community": 144,
+      "community": 23,
       "norm_label": "buildselectorsegment()"
     },
     {
@@ -2510,7 +2510,7 @@
       "source_location": "L3696",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_generateselector",
-      "community": 144,
+      "community": 23,
       "norm_label": "generateselector()"
     },
     {
@@ -2780,7 +2780,7 @@
       "source_location": "L4418",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addbrowserfindings",
-      "community": 23,
+      "community": 132,
       "norm_label": "addbrowserfindings()"
     },
     {
@@ -2810,7 +2810,7 @@
       "source_location": "L4536",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_shouldrunvisualcontrast",
-      "community": 23,
+      "community": 132,
       "norm_label": "shouldrunvisualcontrast()"
     },
     {
@@ -2820,7 +2820,7 @@
       "source_location": "L4540",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_visualcontrastoptions",
-      "community": 23,
+      "community": 132,
       "norm_label": "visualcontrastoptions()"
     },
     {
@@ -2840,7 +2840,7 @@
       "source_location": "L4578",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_disconnectlazyvisualcontrastobserver",
-      "community": 23,
+      "community": 132,
       "norm_label": "disconnectlazyvisualcontrastobserver()"
     },
     {
@@ -2850,7 +2850,7 @@
       "source_location": "L4586",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addvisualcontrastresult",
-      "community": 23,
+      "community": 132,
       "norm_label": "addvisualcontrastresult()"
     },
     {
@@ -2900,7 +2900,7 @@
       "source_location": "L4647",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_schedulelazyvisualcontrast",
-      "community": 23,
+      "community": 132,
       "norm_label": "schedulelazyvisualcontrast()"
     },
     {
@@ -2910,7 +2910,7 @@
       "source_location": "L4707",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addvisualcontrastfindings",
-      "community": 23,
+      "community": 132,
       "norm_label": "addvisualcontrastfindings()"
     },
     {
@@ -2930,7 +2930,7 @@
       "source_location": "L4734",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_clearoverlays",
-      "community": 23,
+      "community": 132,
       "norm_label": "clearoverlays()"
     },
     {
@@ -5820,7 +5820,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "lib_impeccable_paths_readliveserverinfo",
-      "community": 91,
+      "community": 63,
       "norm_label": "readliveserverinfo()"
     },
     {
@@ -5830,7 +5830,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "lib_impeccable_paths_isliveserverpidreachable",
-      "community": 91,
+      "community": 63,
       "norm_label": "isliveserverpidreachable()"
     },
     {
@@ -5860,7 +5860,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "lib_impeccable_paths_getlivesessionsdir",
-      "community": 63,
+      "community": 91,
       "norm_label": "getlivesessionsdir()"
     },
     {
@@ -5870,7 +5870,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "lib_impeccable_paths_getlegacylivesessionsdir",
-      "community": 63,
+      "community": 119,
       "norm_label": "getlegacylivesessionsdir()"
     },
     {
@@ -6440,7 +6440,7 @@
       "source_location": "L440",
       "_origin": "ast",
       "id": "scripts_live_browser_updateclearchip",
-      "community": 5,
+      "community": 8,
       "norm_label": "updateclearchip()"
     },
     {
@@ -6490,7 +6490,7 @@
       "source_location": "L488",
       "_origin": "ast",
       "id": "scripts_live_browser_redrawstrokes",
-      "community": 5,
+      "community": 8,
       "norm_label": "redrawstrokes()"
     },
     {
@@ -6500,7 +6500,7 @@
       "source_location": "L516",
       "_origin": "ast",
       "id": "scripts_live_browser_localcoords",
-      "community": 5,
+      "community": 8,
       "norm_label": "localcoords()"
     },
     {
@@ -6510,7 +6510,7 @@
       "source_location": "L521",
       "_origin": "ast",
       "id": "scripts_live_browser_onannotdown",
-      "community": 5,
+      "community": 8,
       "norm_label": "onannotdown()"
     },
     {
@@ -6520,7 +6520,7 @@
       "source_location": "L599",
       "_origin": "ast",
       "id": "scripts_live_browser_onannotmove",
-      "community": 5,
+      "community": 8,
       "norm_label": "onannotmove()"
     },
     {
@@ -6540,7 +6540,7 @@
       "source_location": "L665",
       "_origin": "ast",
       "id": "scripts_live_browser_onannotup",
-      "community": 5,
+      "community": 8,
       "norm_label": "onannotup()"
     },
     {
@@ -6550,7 +6550,7 @@
       "source_location": "L708",
       "_origin": "ast",
       "id": "scripts_live_browser_renderallpins",
-      "community": 5,
+      "community": 8,
       "norm_label": "renderallpins()"
     },
     {
@@ -6570,7 +6570,7 @@
       "source_location": "L753",
       "_origin": "ast",
       "id": "scripts_live_browser_begineditpin",
-      "community": 5,
+      "community": 8,
       "norm_label": "begineditpin()"
     },
     {
@@ -6580,7 +6580,7 @@
       "source_location": "L786",
       "_origin": "ast",
       "id": "scripts_live_browser_onannotinputkey",
-      "community": 5,
+      "community": 8,
       "norm_label": "onannotinputkey()"
     },
     {
@@ -6590,7 +6590,7 @@
       "source_location": "L799",
       "_origin": "ast",
       "id": "scripts_live_browser_finalizeeditingpin",
-      "community": 5,
+      "community": 8,
       "norm_label": "finalizeeditingpin()"
     },
     {
@@ -6600,7 +6600,7 @@
       "source_location": "L809",
       "_origin": "ast",
       "id": "scripts_live_browser_canceleditingpin",
-      "community": 5,
+      "community": 8,
       "norm_label": "canceleditingpin()"
     },
     {
@@ -6640,7 +6640,7 @@
       "source_location": "L897",
       "_origin": "ast",
       "id": "scripts_live_browser_extractcontext",
-      "community": 51,
+      "community": 30,
       "norm_label": "extractcontext()"
     },
     {
@@ -6720,7 +6720,7 @@
       "source_location": "L1045",
       "_origin": "ast",
       "id": "scripts_live_browser_positionbar",
-      "community": 30,
+      "community": 37,
       "norm_label": "positionbar()"
     },
     {
@@ -6730,7 +6730,7 @@
       "source_location": "L1090",
       "_origin": "ast",
       "id": "scripts_live_browser_showbar",
-      "community": 19,
+      "community": 30,
       "norm_label": "showbar()"
     },
     {
@@ -7170,7 +7170,7 @@
       "source_location": "L1806",
       "_origin": "ast",
       "id": "scripts_live_browser_cancreateinsert",
-      "community": 19,
+      "community": 8,
       "norm_label": "cancreateinsert()"
     },
     {
@@ -7180,7 +7180,7 @@
       "source_location": "L1815",
       "_origin": "ast",
       "id": "scripts_live_browser_insertcreatedisabledreason",
-      "community": 19,
+      "community": 8,
       "norm_label": "insertcreatedisabledreason()"
     },
     {
@@ -7190,7 +7190,7 @@
       "source_location": "L1820",
       "_origin": "ast",
       "id": "scripts_live_browser_clampplaceholdersize",
-      "community": 5,
+      "community": 8,
       "norm_label": "clampplaceholdersize()"
     },
     {
@@ -7210,7 +7210,7 @@
       "source_location": "L1834",
       "_origin": "ast",
       "id": "scripts_live_browser_resizeplaceholderfromedge",
-      "community": 5,
+      "community": 8,
       "norm_label": "resizeplaceholderfromedge()"
     },
     {
@@ -7280,7 +7280,7 @@
       "source_location": "L1970",
       "_origin": "ast",
       "id": "scripts_live_browser_resolvebaranchor",
-      "community": 30,
+      "community": 37,
       "norm_label": "resolvebaranchor()"
     },
     {
@@ -7320,7 +7320,7 @@
       "source_location": "L2028",
       "_origin": "ast",
       "id": "scripts_live_browser_findinsertanchorindom",
-      "community": 30,
+      "community": 182,
       "norm_label": "findinsertanchorindom()"
     },
     {
@@ -7330,7 +7330,7 @@
       "source_location": "L2045",
       "_origin": "ast",
       "id": "scripts_live_browser_isinsertgeneratingsession",
-      "community": 30,
+      "community": 37,
       "norm_label": "isinsertgeneratingsession()"
     },
     {
@@ -7340,7 +7340,7 @@
       "source_location": "L2052",
       "_origin": "ast",
       "id": "scripts_live_browser_ensureinsertplaceholder",
-      "community": 30,
+      "community": 37,
       "norm_label": "ensureinsertplaceholder()"
     },
     {
@@ -7350,7 +7350,7 @@
       "source_location": "L2080",
       "_origin": "ast",
       "id": "scripts_live_browser_applyplaceholderdimensions",
-      "community": 30,
+      "community": 37,
       "norm_label": "applyplaceholderdimensions()"
     },
     {
@@ -7360,7 +7360,7 @@
       "source_location": "L2092",
       "_origin": "ast",
       "id": "scripts_live_browser_showorupdatecyclingbar",
-      "community": 19,
+      "community": 37,
       "norm_label": "showorupdatecyclingbar()"
     },
     {
@@ -7450,7 +7450,7 @@
       "source_location": "L2249",
       "_origin": "ast",
       "id": "scripts_live_browser_hideinsertcreatetooltip",
-      "community": 19,
+      "community": 8,
       "norm_label": "hideinsertcreatetooltip()"
     },
     {
@@ -7460,7 +7460,7 @@
       "source_location": "L2254",
       "_origin": "ast",
       "id": "scripts_live_browser_insertcreategatestate",
-      "community": 19,
+      "community": 8,
       "norm_label": "insertcreategatestate()"
     },
     {
@@ -7470,7 +7470,7 @@
       "source_location": "L2262",
       "_origin": "ast",
       "id": "scripts_live_browser_syncinsertcreatebutton",
-      "community": 19,
+      "community": 8,
       "norm_label": "syncinsertcreatebutton()"
     },
     {
@@ -7630,7 +7630,7 @@
       "source_location": "L2888",
       "_origin": "ast",
       "id": "scripts_live_browser_recoveremptycycling",
-      "community": 12,
+      "community": 19,
       "norm_label": "recoveremptycycling()"
     },
     {
@@ -7650,7 +7650,7 @@
       "source_location": "L2988",
       "_origin": "ast",
       "id": "scripts_live_browser_getmountedsveltecomponentanchor",
-      "community": 30,
+      "community": 182,
       "norm_label": "getmountedsveltecomponentanchor()"
     },
     {
@@ -7660,7 +7660,7 @@
       "source_location": "L2994",
       "_origin": "ast",
       "id": "scripts_live_browser_resolvesveltecomponentanchor",
-      "community": 30,
+      "community": 37,
       "norm_label": "resolvesveltecomponentanchor()"
     },
     {
@@ -7670,7 +7670,7 @@
       "source_location": "L3000",
       "_origin": "ast",
       "id": "scripts_live_browser_getvisiblevariantel",
-      "community": 30,
+      "community": 37,
       "norm_label": "getvisiblevariantel()"
     },
     {
@@ -7680,7 +7680,7 @@
       "source_location": "L3012",
       "_origin": "ast",
       "id": "scripts_live_browser_parsevariantparams",
-      "community": 37,
+      "community": 19,
       "norm_label": "parsevariantparams()"
     },
     {
@@ -8030,7 +8030,7 @@
       "source_location": "L3699",
       "_origin": "ast",
       "id": "scripts_live_browser_ensurespinkeyframes",
-      "community": 31,
+      "community": 19,
       "norm_label": "ensurespinkeyframes()"
     },
     {
@@ -8160,7 +8160,7 @@
       "source_location": "L3831",
       "_origin": "ast",
       "id": "scripts_live_browser_refreshlivecontrolsformanualapply",
-      "community": 44,
+      "community": 12,
       "norm_label": "refreshlivecontrolsformanualapply()"
     },
     {
@@ -8630,7 +8630,7 @@
       "source_location": "L4778",
       "_origin": "ast",
       "id": "scripts_live_browser_setvariantshown",
-      "community": 30,
+      "community": 37,
       "norm_label": "setvariantshown()"
     },
     {
@@ -8640,7 +8640,7 @@
       "source_location": "L4789",
       "_origin": "ast",
       "id": "scripts_live_browser_schedulecyclingbarsync",
-      "community": 30,
+      "community": 37,
       "norm_label": "schedulecyclingbarsync()"
     },
     {
@@ -8650,7 +8650,7 @@
       "source_location": "L4800",
       "_origin": "ast",
       "id": "scripts_live_browser_synccyclingcontrols",
-      "community": 30,
+      "community": 182,
       "norm_label": "synccyclingcontrols()"
     },
     {
@@ -8660,7 +8660,7 @@
       "source_location": "L4813",
       "_origin": "ast",
       "id": "scripts_live_browser_showvariantindom",
-      "community": 30,
+      "community": 37,
       "norm_label": "showvariantindom()"
     },
     {
@@ -8680,7 +8680,7 @@
       "source_location": "L4841",
       "_origin": "ast",
       "id": "scripts_live_browser_parseoriginalmarkupelement",
-      "community": 30,
+      "community": 182,
       "norm_label": "parseoriginalmarkupelement()"
     },
     {
@@ -8690,7 +8690,7 @@
       "source_location": "L4847",
       "_origin": "ast",
       "id": "scripts_live_browser_normalizeelementclassname",
-      "community": 30,
+      "community": 182,
       "norm_label": "normalizeelementclassname()"
     },
     {
@@ -8700,7 +8700,7 @@
       "source_location": "L4859",
       "_origin": "ast",
       "id": "scripts_live_browser_buildpickedanchorsnapshot",
-      "community": 12,
+      "community": 30,
       "norm_label": "buildpickedanchorsnapshot()"
     },
     {
@@ -8710,7 +8710,7 @@
       "source_location": "L4869",
       "_origin": "ast",
       "id": "scripts_live_browser_isusableinjectionanchor",
-      "community": 30,
+      "community": 182,
       "norm_label": "isusableinjectionanchor()"
     },
     {
@@ -8720,7 +8720,7 @@
       "source_location": "L4877",
       "_origin": "ast",
       "id": "scripts_live_browser_elementmatchesoriginalmarkup",
-      "community": 30,
+      "community": 182,
       "norm_label": "elementmatchesoriginalmarkup()"
     },
     {
@@ -8730,7 +8730,7 @@
       "source_location": "L4898",
       "_origin": "ast",
       "id": "scripts_live_browser_findliveelementfromanchorsnapshot",
-      "community": 30,
+      "community": 182,
       "norm_label": "findliveelementfromanchorsnapshot()"
     },
     {
@@ -8740,7 +8740,7 @@
       "source_location": "L4921",
       "_origin": "ast",
       "id": "scripts_live_browser_findliveelementfororiginalmarkup",
-      "community": 30,
+      "community": 182,
       "norm_label": "findliveelementfororiginalmarkup()"
     },
     {
@@ -8750,7 +8750,7 @@
       "source_location": "L4961",
       "_origin": "ast",
       "id": "scripts_live_browser_resolveliveinjectionanchor",
-      "community": 30,
+      "community": 182,
       "norm_label": "resolveliveinjectionanchor()"
     },
     {
@@ -8760,7 +8760,7 @@
       "source_location": "L4985",
       "_origin": "ast",
       "id": "scripts_live_browser_issvelteinsertmanifest",
-      "community": 30,
+      "community": 182,
       "norm_label": "issvelteinsertmanifest()"
     },
     {
@@ -8770,7 +8770,7 @@
       "source_location": "L4989",
       "_origin": "ast",
       "id": "scripts_live_browser_findliveelementforsveltemanifest",
-      "community": 30,
+      "community": 182,
       "norm_label": "findliveelementforsveltemanifest()"
     },
     {
@@ -8800,7 +8800,7 @@
       "source_location": "L5035",
       "_origin": "ast",
       "id": "scripts_live_browser_loadsvelteruntime",
-      "community": 30,
+      "community": 182,
       "norm_label": "loadsvelteruntime()"
     },
     {
@@ -8830,7 +8830,7 @@
       "source_location": "L5082",
       "_origin": "ast",
       "id": "scripts_live_browser_mountsveltecomponentvariant",
-      "community": 30,
+      "community": 182,
       "norm_label": "mountsveltecomponentvariant()"
     },
     {
@@ -8840,7 +8840,7 @@
       "source_location": "L5134",
       "_origin": "ast",
       "id": "scripts_live_browser_teardownsveltecomponentsession",
-      "community": 12,
+      "community": 30,
       "norm_label": "teardownsveltecomponentsession()"
     },
     {
@@ -8850,7 +8850,7 @@
       "source_location": "L5149",
       "_origin": "ast",
       "id": "scripts_live_browser_applyoriginalattrstosvelteanchor",
-      "community": 30,
+      "community": 182,
       "norm_label": "applyoriginalattrstosvelteanchor()"
     },
     {
@@ -8860,7 +8860,7 @@
       "source_location": "L5164",
       "_origin": "ast",
       "id": "scripts_live_browser_commitacceptedsveltecomponenttodom",
-      "community": 30,
+      "community": 182,
       "norm_label": "commitacceptedsveltecomponenttodom()"
     },
     {
@@ -8890,7 +8890,7 @@
       "source_location": "L5324",
       "_origin": "ast",
       "id": "scripts_live_browser_abortsveltecomponentinjection",
-      "community": 12,
+      "community": 30,
       "norm_label": "abortsveltecomponentinjection()"
     },
     {
@@ -9010,7 +9010,7 @@
       "source_location": "L5607",
       "_origin": "ast",
       "id": "scripts_live_browser_updateselectedelement",
-      "community": 30,
+      "community": 37,
       "norm_label": "updateselectedelement()"
     },
     {
@@ -9030,7 +9030,7 @@
       "source_location": "L5641",
       "_origin": "ast",
       "id": "scripts_live_browser_pickvariantcontent",
-      "community": 30,
+      "community": 37,
       "norm_label": "pickvariantcontent()"
     },
     {
@@ -9120,7 +9120,7 @@
       "source_location": "L6079",
       "_origin": "ast",
       "id": "scripts_live_browser_checkpointpayload",
-      "community": 56,
+      "community": 30,
       "norm_label": "checkpointpayload()"
     },
     {
@@ -9130,7 +9130,7 @@
       "source_location": "L6098",
       "_origin": "ast",
       "id": "scripts_live_browser_sendcheckpoint",
-      "community": 56,
+      "community": 30,
       "norm_label": "sendcheckpoint()"
     },
     {
@@ -9220,7 +9220,7 @@
       "source_location": "L6441",
       "_origin": "ast",
       "id": "scripts_live_browser_handlego",
-      "community": 12,
+      "community": 30,
       "norm_label": "handlego()"
     },
     {
@@ -9380,7 +9380,7 @@
       "source_location": "L6879",
       "_origin": "ast",
       "id": "scripts_live_browser_captureandemit",
-      "community": 56,
+      "community": 30,
       "norm_label": "captureandemit()"
     },
     {
@@ -9470,7 +9470,7 @@
       "source_location": "L7137",
       "_origin": "ast",
       "id": "scripts_live_browser_positionshaderoverlay",
-      "community": 30,
+      "community": 37,
       "norm_label": "positionshaderoverlay()"
     },
     {
@@ -9480,7 +9480,7 @@
       "source_location": "L7148",
       "_origin": "ast",
       "id": "scripts_live_browser_hideshaderoverlay",
-      "community": 12,
+      "community": 30,
       "norm_label": "hideshaderoverlay()"
     },
     {
@@ -9650,7 +9650,7 @@
       "source_location": "L7525",
       "_origin": "ast",
       "id": "scripts_live_browser_resetsessionfilemeta",
-      "community": 12,
+      "community": 30,
       "norm_label": "resetsessionfilemeta()"
     },
     {
@@ -10020,7 +10020,7 @@
       "source_location": "L8259",
       "_origin": "ast",
       "id": "scripts_live_browser_steerfocusdebugenabled",
-      "community": 56,
+      "community": 31,
       "norm_label": "steerfocusdebugenabled()"
     },
     {
@@ -10040,7 +10040,7 @@
       "source_location": "L8276",
       "_origin": "ast",
       "id": "scripts_live_browser_attachsteerfocusdebug",
-      "community": 56,
+      "community": 31,
       "norm_label": "attachsteerfocusdebug()"
     },
     {
@@ -10570,7 +10570,7 @@
       "source_location": "L10124",
       "_origin": "ast",
       "id": "scripts_live_browser_renderdesignchrome",
-      "community": 31,
+      "community": 5,
       "norm_label": "renderdesignchrome()"
     },
     {
@@ -10580,7 +10580,7 @@
       "source_location": "L10143",
       "_origin": "ast",
       "id": "scripts_live_browser_builddesignheader",
-      "community": 31,
+      "community": 5,
       "norm_label": "builddesignheader()"
     },
     {
@@ -10590,7 +10590,7 @@
       "source_location": "L10182",
       "_origin": "ast",
       "id": "scripts_live_browser_toggledesignpanel",
-      "community": 31,
+      "community": 5,
       "norm_label": "toggledesignpanel()"
     },
     {
@@ -10600,7 +10600,7 @@
       "source_location": "L10192",
       "_origin": "ast",
       "id": "scripts_live_browser_fetchdesignsystem",
-      "community": 31,
+      "community": 5,
       "norm_label": "fetchdesignsystem()"
     },
     {
@@ -10610,7 +10610,7 @@
       "source_location": "L10218",
       "_origin": "ast",
       "id": "scripts_live_browser_renderdesignbody",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderdesignbody()"
     },
     {
@@ -10620,7 +10620,7 @@
       "source_location": "L10252",
       "_origin": "ast",
       "id": "scripts_live_browser_msgdiv",
-      "community": 8,
+      "community": 5,
       "norm_label": "msgdiv()"
     },
     {
@@ -10630,7 +10630,7 @@
       "source_location": "L10259",
       "_origin": "ast",
       "id": "scripts_live_browser_renderstalehint",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderstalehint()"
     },
     {
@@ -10640,7 +10640,7 @@
       "source_location": "L10269",
       "_origin": "ast",
       "id": "scripts_live_browser_renderparsedmdcta",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderparsedmdcta()"
     },
     {
@@ -10650,7 +10650,7 @@
       "source_location": "L10278",
       "_origin": "ast",
       "id": "scripts_live_browser_renderdesignvisual",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderdesignvisual()"
     },
     {
@@ -10660,7 +10660,7 @@
       "source_location": "L10314",
       "_origin": "ast",
       "id": "scripts_live_browser_buildcolormodels",
-      "community": 8,
+      "community": 5,
       "norm_label": "buildcolormodels()"
     },
     {
@@ -10670,7 +10670,7 @@
       "source_location": "L10330",
       "_origin": "ast",
       "id": "scripts_live_browser_buildtypographymodels",
-      "community": 8,
+      "community": 5,
       "norm_label": "buildtypographymodels()"
     },
     {
@@ -10680,7 +10680,7 @@
       "source_location": "L10353",
       "_origin": "ast",
       "id": "scripts_live_browser_buildradiimodels",
-      "community": 8,
+      "community": 5,
       "norm_label": "buildradiimodels()"
     },
     {
@@ -10720,7 +10720,7 @@
       "source_location": "L10382",
       "_origin": "ast",
       "id": "scripts_live_browser_synthesizenarrative",
-      "community": 8,
+      "community": 5,
       "norm_label": "synthesizenarrative()"
     },
     {
@@ -10730,7 +10730,7 @@
       "source_location": "L10399",
       "_origin": "ast",
       "id": "scripts_live_browser_rendercolortiles",
-      "community": 8,
+      "community": 5,
       "norm_label": "rendercolortiles()"
     },
     {
@@ -10740,7 +10740,7 @@
       "source_location": "L10434",
       "_origin": "ast",
       "id": "scripts_live_browser_synthesizeramp",
-      "community": 8,
+      "community": 5,
       "norm_label": "synthesizeramp()"
     },
     {
@@ -10750,7 +10750,7 @@
       "source_location": "L10444",
       "_origin": "ast",
       "id": "scripts_live_browser_rendertypetiles",
-      "community": 8,
+      "community": 5,
       "norm_label": "rendertypetiles()"
     },
     {
@@ -10760,7 +10760,7 @@
       "source_location": "L10488",
       "_origin": "ast",
       "id": "scripts_live_browser_fontstack",
-      "community": 8,
+      "community": 5,
       "norm_label": "fontstack()"
     },
     {
@@ -10770,7 +10770,7 @@
       "source_location": "L10497",
       "_origin": "ast",
       "id": "scripts_live_browser_renderradiitile",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderradiitile()"
     },
     {
@@ -10780,7 +10780,7 @@
       "source_location": "L10528",
       "_origin": "ast",
       "id": "scripts_live_browser_rendershadowtiles",
-      "community": 8,
+      "community": 5,
       "norm_label": "rendershadowtiles()"
     },
     {
@@ -10790,7 +10790,7 @@
       "source_location": "L10558",
       "_origin": "ast",
       "id": "scripts_live_browser_rendercomponenttiles",
-      "community": 8,
+      "community": 5,
       "norm_label": "rendercomponenttiles()"
     },
     {
@@ -10800,7 +10800,7 @@
       "source_location": "L10615",
       "_origin": "ast",
       "id": "scripts_live_browser_groupbykind",
-      "community": 8,
+      "community": 5,
       "norm_label": "groupbykind()"
     },
     {
@@ -10810,7 +10810,7 @@
       "source_location": "L10628",
       "_origin": "ast",
       "id": "scripts_live_browser_titleforkind",
-      "community": 8,
+      "community": 5,
       "norm_label": "titleforkind()"
     },
     {
@@ -10820,7 +10820,7 @@
       "source_location": "L10642",
       "_origin": "ast",
       "id": "scripts_live_browser_buildcollapsible",
-      "community": 8,
+      "community": 5,
       "norm_label": "buildcollapsible()"
     },
     {
@@ -10830,7 +10830,7 @@
       "source_location": "L10667",
       "_origin": "ast",
       "id": "scripts_live_browser_renderrulescollapsible",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderrulescollapsible()"
     },
     {
@@ -10840,7 +10840,7 @@
       "source_location": "L10685",
       "_origin": "ast",
       "id": "scripts_live_browser_renderdosdontscollapsible",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderdosdontscollapsible()"
     },
     {
@@ -10850,7 +10850,7 @@
       "source_location": "L10706",
       "_origin": "ast",
       "id": "scripts_live_browser_renderoverviewcollapsible",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderoverviewcollapsible()"
     },
     {
@@ -10860,7 +10860,7 @@
       "source_location": "L10730",
       "_origin": "ast",
       "id": "scripts_live_browser_csssafe",
-      "community": 8,
+      "community": 5,
       "norm_label": "csssafe()"
     },
     {
@@ -10880,7 +10880,7 @@
       "source_location": "L10750",
       "_origin": "ast",
       "id": "scripts_live_browser_renderrawtab",
-      "community": 8,
+      "community": 5,
       "norm_label": "renderrawtab()"
     },
     {
@@ -10890,7 +10890,7 @@
       "source_location": "L10757",
       "_origin": "ast",
       "id": "scripts_live_browser_rendermarkdown",
-      "community": 8,
+      "community": 5,
       "norm_label": "rendermarkdown()"
     },
     {
@@ -10910,7 +10910,7 @@
       "source_location": "L10846",
       "_origin": "ast",
       "id": "scripts_live_browser_inlinemd",
-      "community": 8,
+      "community": 5,
       "norm_label": "inlinemd()"
     },
     {
@@ -10920,7 +10920,7 @@
       "source_location": "L10860",
       "_origin": "ast",
       "id": "scripts_live_browser_highlightbold",
-      "community": 8,
+      "community": 5,
       "norm_label": "highlightbold()"
     },
     {
@@ -10930,7 +10930,7 @@
       "source_location": "L10864",
       "_origin": "ast",
       "id": "scripts_live_browser_escapehtml",
-      "community": 8,
+      "community": 5,
       "norm_label": "escapehtml()"
     },
     {
@@ -11460,7 +11460,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_live_complete",
-      "community": 91,
+      "community": 63,
       "norm_label": "live-complete.mjs"
     },
     {
@@ -11470,7 +11470,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "scripts_live_complete_parseargs",
-      "community": 91,
+      "community": 63,
       "norm_label": "parseargs()"
     },
     {
@@ -11480,7 +11480,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "scripts_live_complete_completecli",
-      "community": 91,
+      "community": 63,
       "norm_label": "completecli()"
     },
     {
@@ -11490,7 +11490,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "scripts_live_complete_readserverinfo",
-      "community": 91,
+      "community": 63,
       "norm_label": "readserverinfo()"
     },
     {
@@ -11500,7 +11500,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "scripts_live_complete_completethroughserver",
-      "community": 91,
+      "community": 63,
       "norm_label": "completethroughserver()"
     },
     {
@@ -11950,7 +11950,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "scripts_live_inject_injectcli",
-      "community": 119,
+      "community": 79,
       "norm_label": "injectcli()"
     },
     {
@@ -13700,7 +13700,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "live_event_validation",
-      "community": 78,
+      "community": 58,
       "norm_label": "event-validation.mjs"
     },
     {
@@ -13710,7 +13710,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "live_event_validation_insert_positions",
-      "community": 78,
+      "community": 58,
       "norm_label": "insert_positions"
     },
     {
@@ -13720,7 +13720,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "live_event_validation_forbidden_manual_edit_text_chars",
-      "community": 78,
+      "community": 58,
       "norm_label": "forbidden_manual_edit_text_chars"
     },
     {
@@ -13730,7 +13730,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "live_event_validation_isvalidid",
-      "community": 78,
+      "community": 58,
       "norm_label": "isvalidid()"
     },
     {
@@ -13740,7 +13740,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "live_event_validation_isvalidvariantid",
-      "community": 78,
+      "community": 58,
       "norm_label": "isvalidvariantid()"
     },
     {
@@ -13750,7 +13750,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "live_event_validation_validatemanualedittext",
-      "community": 78,
+      "community": 58,
       "norm_label": "validatemanualedittext()"
     },
     {
@@ -13760,7 +13760,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "live_event_validation_validateannotationfields",
-      "community": 78,
+      "community": 58,
       "norm_label": "validateannotationfields()"
     },
     {
@@ -13770,7 +13770,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "live_event_validation_validateinsertgenerate",
-      "community": 78,
+      "community": 58,
       "norm_label": "validateinsertgenerate()"
     },
     {
@@ -13780,7 +13780,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "live_event_validation_validatereplacegenerate",
-      "community": 78,
+      "community": 58,
       "norm_label": "validatereplacegenerate()"
     },
     {
@@ -13790,7 +13790,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "live_event_validation_validatemanualeditevent",
-      "community": 78,
+      "community": 58,
       "norm_label": "validatemanualeditevent()"
     },
     {
@@ -13800,7 +13800,7 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "live_event_validation_validateevent",
-      "community": 78,
+      "community": 58,
       "norm_label": "validateevent()"
     },
     {
@@ -14640,7 +14640,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "live_session_store",
-      "community": 63,
+      "community": 119,
       "norm_label": "session-store.mjs"
     },
     {
@@ -14650,7 +14650,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "live_session_store_completed_phases",
-      "community": 63,
+      "community": 119,
       "norm_label": "completed_phases"
     },
     {
@@ -14670,7 +14670,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "live_session_store_normalizeevent",
-      "community": 63,
+      "community": 119,
       "norm_label": "normalizeevent()"
     },
     {
@@ -14680,7 +14680,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "live_session_store_getjournalpath",
-      "community": 63,
+      "community": 119,
       "norm_label": "getjournalpath()"
     },
     {
@@ -14690,7 +14690,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "live_session_store_getsnapshotpath",
-      "community": 63,
+      "community": 119,
       "norm_label": "getsnapshotpath()"
     },
     {
@@ -14700,7 +14700,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "live_session_store_safesessionid",
-      "community": 63,
+      "community": 119,
       "norm_label": "safesessionid()"
     },
     {
@@ -14710,7 +14710,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "live_session_store_basesnapshot",
-      "community": 63,
+      "community": 119,
       "norm_label": "basesnapshot()"
     },
     {
@@ -14720,7 +14720,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "live_session_store_rebuildsnapshotfromjournal",
-      "community": 63,
+      "community": 119,
       "norm_label": "rebuildsnapshotfromjournal()"
     },
     {
@@ -14730,7 +14730,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "live_session_store_applyevent",
-      "community": 63,
+      "community": 119,
       "norm_label": "applyevent()"
     },
     {
@@ -14740,7 +14740,7 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "live_session_store_topendingevent",
-      "community": 63,
+      "community": 119,
       "norm_label": "topendingevent()"
     },
     {
@@ -14750,7 +14750,7 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "live_session_store_upsertartifact",
-      "community": 63,
+      "community": 119,
       "norm_label": "upsertartifact()"
     },
     {
@@ -14760,7 +14760,7 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "live_session_store_writesnapshot",
-      "community": 63,
+      "community": 119,
       "norm_label": "writesnapshot()"
     },
     {
@@ -15240,7 +15240,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "live_sveltekit_adapter",
-      "community": 119,
+      "community": 79,
       "norm_label": "sveltekit-adapter.mjs"
     },
     {
@@ -15250,7 +15250,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_detectsveltekitproject",
-      "community": 119,
+      "community": 79,
       "norm_label": "detectsveltekitproject()"
     },
     {
@@ -15260,7 +15260,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_applysveltekitliveadapter",
-      "community": 119,
+      "community": 79,
       "norm_label": "applysveltekitliveadapter()"
     },
     {
@@ -15270,7 +15270,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_removesveltekitliveadapter",
-      "community": 119,
+      "community": 79,
       "norm_label": "removesveltekitliveadapter()"
     },
     {
@@ -15280,7 +15280,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_patchsveltelayout",
-      "community": 119,
+      "community": 79,
       "norm_label": "patchsveltelayout()"
     },
     {
@@ -15290,7 +15290,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_unpatchsveltelayout",
-      "community": 119,
+      "community": 79,
       "norm_label": "unpatchsveltelayout()"
     },
     {
@@ -15300,7 +15300,7 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_ensuresvelteliverootcomponent",
-      "community": 119,
+      "community": 79,
       "norm_label": "ensuresvelteliverootcomponent()"
     },
     {
@@ -15310,7 +15310,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_buildsvelteliverootcomponent",
-      "community": 119,
+      "community": 79,
       "norm_label": "buildsvelteliverootcomponent()"
     },
     {
@@ -15320,7 +15320,7 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_findsveltekitapphtml",
-      "community": 119,
+      "community": 79,
       "norm_label": "findsveltekitapphtml()"
     },
     {
@@ -15330,7 +15330,7 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_findsveltekitlayout",
-      "community": 119,
+      "community": 79,
       "norm_label": "findsveltekitlayout()"
     },
     {
@@ -15340,7 +15340,7 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_defaultsveltelayout",
-      "community": 119,
+      "community": 79,
       "norm_label": "defaultsveltelayout()"
     },
     {
@@ -15350,7 +15350,7 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_packagehassveltekit",
-      "community": 119,
+      "community": 79,
       "norm_label": "packagehassveltekit()"
     },
     {
@@ -15360,7 +15360,7 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_fileincludes",
-      "community": 119,
+      "community": 79,
       "norm_label": "fileincludes()"
     },
     {
@@ -15370,7 +15370,7 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_pruneemptydir",
-      "community": 119,
+      "community": 79,
       "norm_label": "pruneemptydir()"
     },
     {
@@ -15380,7 +15380,7 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "live_sveltekit_adapter_escaperegexp",
-      "community": 119,
+      "community": 79,
       "norm_label": "escaperegexp()"
     },
     {
@@ -15490,7 +15490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "live_vocabulary",
-      "community": 78,
+      "community": 58,
       "norm_label": "vocabulary.mjs"
     },
     {
@@ -15500,7 +15500,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "live_vocabulary_live_commands",
-      "community": 78,
+      "community": 58,
       "norm_label": "live_commands"
     },
     {
@@ -15510,7 +15510,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "live_vocabulary_visual_actions",
-      "community": 78,
+      "community": 58,
       "norm_label": "visual_actions"
     },
     {
@@ -16780,7 +16780,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "footer_footer",
-      "community": 1,
+      "community": 3,
       "norm_label": "footer.jsx"
     },
     {
@@ -16790,7 +16790,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "footer_footer_footer",
-      "community": 1,
+      "community": 3,
       "norm_label": "footer()"
     },
     {
@@ -16860,7 +16860,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "navbar_navbar",
-      "community": 1,
+      "community": 3,
       "norm_label": "navbar.jsx"
     },
     {
@@ -16870,7 +16870,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "navbar_navbar_navbar",
-      "community": 1,
+      "community": 3,
       "norm_label": "navbar()"
     },
     {
@@ -17000,7 +17000,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pagehero_pagehero",
-      "community": 0,
+      "community": 2,
       "norm_label": "pagehero.jsx"
     },
     {
@@ -17010,7 +17010,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "pagehero_pagehero_pagehero",
-      "community": 0,
+      "community": 2,
       "norm_label": "pagehero()"
     },
     {
@@ -17072,6 +17072,36 @@
       "id": "trustbar_trustbar_trustbar",
       "community": 2,
       "norm_label": "trustbar()"
+    },
+    {
+      "label": "BeforeAfterCarousel.jsx",
+      "file_type": "code",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "beforeaftercarousel_beforeaftercarousel",
+      "community": 0,
+      "norm_label": "beforeaftercarousel.jsx"
+    },
+    {
+      "label": "prefersReducedMotion()",
+      "file_type": "code",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "beforeaftercarousel_beforeaftercarousel_prefersreducedmotion",
+      "community": 0,
+      "norm_label": "prefersreducedmotion()"
+    },
+    {
+      "label": "BeforeAfterCarousel()",
+      "file_type": "code",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "beforeaftercarousel_beforeaftercarousel_beforeaftercarousel",
+      "community": 0,
+      "norm_label": "beforeaftercarousel()"
     },
     {
       "label": "BeforeAfterGrid.jsx",
@@ -17180,7 +17210,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "faqaccordion_faqaccordion",
-      "community": 0,
+      "community": 4,
       "norm_label": "faqaccordion.jsx"
     },
     {
@@ -17190,7 +17220,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "faqaccordion_faqaccordion_faqaccordion",
-      "community": 0,
+      "community": 4,
       "norm_label": "faqaccordion()"
     },
     {
@@ -17540,7 +17570,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "trustsafetybar_trustsafetybar",
-      "community": 3,
+      "community": 0,
       "norm_label": "trustsafetybar.jsx"
     },
     {
@@ -17550,7 +17580,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "trustsafetybar_trustsafetybar_defaulticons",
-      "community": 3,
+      "community": 0,
       "norm_label": "defaulticons"
     },
     {
@@ -17560,7 +17590,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "trustsafetybar_trustsafetybar_trustsafetybar",
-      "community": 3,
+      "community": 0,
       "norm_label": "trustsafetybar()"
     },
     {
@@ -17610,7 +17640,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "categorypage_categorypage",
-      "community": 3,
+      "community": 0,
       "norm_label": "categorypage.jsx"
     },
     {
@@ -17630,7 +17660,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "founderbiopage_founderbiopage",
-      "community": 0,
+      "community": 2,
       "norm_label": "founderbiopage.jsx"
     },
     {
@@ -17657,10 +17687,10 @@
       "label": "LandingPage()",
       "file_type": "code",
       "source_file": "src/components/templates/LandingPage/LandingPage.jsx",
-      "source_location": "L17",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "landingpage_landingpage_landingpage",
-      "community": 132,
+      "community": 3,
       "norm_label": "landingpage()"
     },
     {
@@ -17680,7 +17710,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "treatmentdetailpage_treatmentdetailpage_treatmentdetailpage",
-      "community": 1,
+      "community": 3,
       "norm_label": "treatmentdetailpage()"
     },
     {
@@ -17850,7 +17880,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_landingpages",
-      "community": 132,
+      "community": 3,
       "norm_label": "landingpages.js"
     },
     {
@@ -17860,7 +17890,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_landingpages_landingpages",
-      "community": 132,
+      "community": 3,
       "norm_label": "landingpages"
     },
     {
@@ -17890,7 +17920,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "data_legalpages_contactconsentcopy",
-      "community": 1,
+      "community": 4,
       "norm_label": "contactconsentcopy"
     },
     {
@@ -17940,7 +17970,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_treatmentpages",
-      "community": 1,
+      "community": 3,
       "norm_label": "treatmentpages.js"
     },
     {
@@ -17950,7 +17980,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "data_treatmentpages_gettreatmentassetfolder",
-      "community": 1,
+      "community": 3,
       "norm_label": "gettreatmentassetfolder()"
     },
     {
@@ -17960,7 +17990,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "data_treatmentpages_getbasetreatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "getbasetreatment()"
     },
     {
@@ -17970,7 +18000,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "data_treatmentpages_categorylabels",
-      "community": 1,
+      "community": 3,
       "norm_label": "categorylabels"
     },
     {
@@ -17980,7 +18010,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "data_treatmentpages_customdetails",
-      "community": 1,
+      "community": 3,
       "norm_label": "customdetails"
     },
     {
@@ -17990,7 +18020,7 @@
       "source_location": "L1123",
       "_origin": "ast",
       "id": "data_treatmentpages_compiletreatments",
-      "community": 1,
+      "community": 3,
       "norm_label": "compiletreatments()"
     },
     {
@@ -18000,7 +18030,7 @@
       "source_location": "L1279",
       "_origin": "ast",
       "id": "data_treatmentpages_treatmentpages",
-      "community": 1,
+      "community": 3,
       "norm_label": "treatmentpages"
     },
     {
@@ -18020,7 +18050,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pages_accessibility",
-      "community": 1,
+      "community": 3,
       "norm_label": "accessibility.jsx"
     },
     {
@@ -18100,7 +18130,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pages_legalresources",
-      "community": 1,
+      "community": 3,
       "norm_label": "legalresources.jsx"
     },
     {
@@ -18160,7 +18190,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pages_noticeprivacypractices",
-      "community": 1,
+      "community": 3,
       "norm_label": "noticeprivacypractices.jsx"
     },
     {
@@ -18220,7 +18250,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pages_treatmentdisclaimer",
-      "community": 1,
+      "community": 3,
       "norm_label": "treatmentdisclaimer.jsx"
     },
     {
@@ -18360,7 +18390,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "landings_limpiezafacial",
-      "community": 132,
+      "community": 3,
       "norm_label": "limpiezafacial.jsx"
     },
     {
@@ -18370,7 +18400,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "landings_limpiezafacial_limpiezafacialpage",
-      "community": 132,
+      "community": 3,
       "norm_label": "limpiezafacialpage()"
     },
     {
@@ -18380,7 +18410,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "landings_postoperatorios",
-      "community": 132,
+      "community": 3,
       "norm_label": "postoperatorios.jsx"
     },
     {
@@ -18390,7 +18420,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "landings_postoperatorios_postoperatoriospage",
-      "community": 132,
+      "community": 3,
       "norm_label": "postoperatoriospage()"
     },
     {
@@ -18400,7 +18430,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "landings_prfyfibrina",
-      "community": 132,
+      "community": 3,
       "norm_label": "prfyfibrina.jsx"
     },
     {
@@ -18410,7 +18440,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "landings_prfyfibrina_prfyfibrinapage",
-      "community": 132,
+      "community": 3,
       "norm_label": "prfyfibrinapage()"
     },
     {
@@ -18420,7 +18450,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "capilar_treatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "[treatment].jsx"
     },
     {
@@ -18440,7 +18470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "corporales_treatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "[treatment].jsx"
     },
     {
@@ -18460,7 +18490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "dental_treatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "[treatment].jsx"
     },
     {
@@ -18480,7 +18510,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "faciales_treatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "[treatment].jsx"
     },
     {
@@ -18500,7 +18530,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "laser_treatment",
-      "community": 1,
+      "community": 3,
       "norm_label": "[treatment].jsx"
     },
     {
@@ -43084,6 +43114,56 @@
       "norm_label": "2026-08-27 \u2014 nombre publico canonico \"plasma rico en plaquetas y fibrina\" (backlog 8.9/8.10)"
     },
     {
+      "label": "2026-08-27 \u2014 Hero visual test: ocultar la media, no `mask` ni `maxDiffPixelRatio`",
+      "file_type": "document",
+      "source_file": "DECISIONS.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "decisions_2026_08_27_hero_visual_test_ocultar_la_media_no_mask_ni_maxdiffpixelratio",
+      "community": 112,
+      "norm_label": "2026-08-27 \u2014 hero visual test: ocultar la media, no `mask` ni `maxdiffpixelratio`"
+    },
+    {
+      "label": "2026-08-27 \u2014 Carrousel propio (`BeforeAfterCarousel`) en vez de extender `BeforeAfterGrid`; sin autoplay",
+      "file_type": "document",
+      "source_file": "DECISIONS.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "decisions_2026_08_27_carrousel_propio_beforeaftercarousel_en_vez_de_extender_beforeaftergrid_sin_autoplay",
+      "community": 112,
+      "norm_label": "2026-08-27 \u2014 carrousel propio (`beforeaftercarousel`) en vez de extender `beforeaftergrid`; sin autoplay"
+    },
+    {
+      "label": "2026-08-27 \u2014 `FAQPage` schema: fuente \u00fanica = `FAQAccordion`; las landings NO lo declaran a nivel Helmet",
+      "file_type": "document",
+      "source_file": "DECISIONS.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "decisions_2026_08_27_faqpage_schema_fuente_\u00fanica_faqaccordion_las_landings_no_lo_declaran_a_nivel_helmet",
+      "community": 112,
+      "norm_label": "2026-08-27 \u2014 `faqpage` schema: fuente unica = `faqaccordion`; las landings no lo declaran a nivel helmet"
+    },
+    {
+      "label": "2026-08-27 \u2014 `Service` schema de landings referencia `#organization` por `@id`",
+      "file_type": "document",
+      "source_file": "DECISIONS.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "decisions_2026_08_27_service_schema_de_landings_referencia_organization_por_id",
+      "community": 112,
+      "norm_label": "2026-08-27 \u2014 `service` schema de landings referencia `#organization` por `@id`"
+    },
+    {
+      "label": "2026-08-27 \u2014 `PageHero` prop `imageAlt`; `relatedLinks` en landing data",
+      "file_type": "document",
+      "source_file": "DECISIONS.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "decisions_2026_08_27_pagehero_prop_imagealt_relatedlinks_en_landing_data",
+      "community": 112,
+      "norm_label": "2026-08-27 \u2014 `pagehero` prop `imagealt`; `relatedlinks` en landing data"
+    },
+    {
       "label": "DESIGN.md",
       "file_type": "document",
       "source_file": "DESIGN.md",
@@ -43574,10 +43654,30 @@
       "norm_label": "beforeaftergrid \u2014 labels, override por tratamiento y video (2026-08-26 / 27)"
     },
     {
-      "label": "Known constraints / do-nots",
+      "label": "BeforeAfterCarousel \u2014 carrousel de resultados en landings (2026-08-27)",
       "file_type": "document",
       "source_file": "MEMORY.md",
       "source_location": "L54",
+      "_origin": "ast",
+      "id": "memory_beforeaftercarousel_carrousel_de_resultados_en_landings_2026_08_27",
+      "community": 150,
+      "norm_label": "beforeaftercarousel \u2014 carrousel de resultados en landings (2026-08-27)"
+    },
+    {
+      "label": "Landings \u2014 schema y campos SEO (2026-08-27, endurecimiento SEO)",
+      "file_type": "document",
+      "source_file": "MEMORY.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "memory_landings_schema_y_campos_seo_2026_08_27_endurecimiento_seo",
+      "community": 150,
+      "norm_label": "landings \u2014 schema y campos seo (2026-08-27, endurecimiento seo)"
+    },
+    {
+      "label": "Known constraints / do-nots",
+      "file_type": "document",
+      "source_file": "MEMORY.md",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "memory_known_constraints_do_nots",
       "community": 150,
@@ -43587,7 +43687,7 @@
       "label": "Open questions / things to verify later",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L62",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "memory_open_questions_things_to_verify_later",
       "community": 150,
@@ -43597,7 +43697,7 @@
       "label": "Medical compliance rules (docs/MEDICAL_COMPLIANCE.md)",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L66",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "memory_medical_compliance_rules_docs_medical_compliance_md",
       "community": 150,
@@ -43794,10 +43894,50 @@
       "norm_label": "progress.md"
     },
     {
-      "label": "2026-08-27 \u2014 Backlog 8.9/8.10: nombre p\u00fablico unificado a \"Plasma Rico en Plaquetas y Fibrina\"",
+      "label": "2026-08-27 \u2014 Endurecimiento SEO de las 3 landings (auditor\u00eda `/tratamientos-postoperatorios`)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
       "source_location": "L5",
+      "_origin": "ast",
+      "id": "progress_2026_08_27_endurecimiento_seo_de_las_3_landings_auditor\u00eda_tratamientos_postoperatorios",
+      "community": 35,
+      "norm_label": "2026-08-27 \u2014 endurecimiento seo de las 3 landings (auditoria `/tratamientos-postoperatorios`)"
+    },
+    {
+      "label": "2026-08-27 \u2014 `/tratamientos-postoperatorios` secci\u00f3n RESULTADOS \u2192 carrousel antes/despu\u00e9s",
+      "file_type": "document",
+      "source_file": "PROGRESS.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "progress_2026_08_27_tratamientos_postoperatorios_secci\u00f3n_resultados_carrousel_antes_despu\u00e9s",
+      "community": 35,
+      "norm_label": "2026-08-27 \u2014 `/tratamientos-postoperatorios` seccion resultados \u2192 carrousel antes/despues"
+    },
+    {
+      "label": "2026-08-27 \u2014 Cierre de 2 tests en rojo preexistentes (fuera de 8.9/8.10)",
+      "file_type": "document",
+      "source_file": "PROGRESS.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "progress_2026_08_27_cierre_de_2_tests_en_rojo_preexistentes_fuera_de_8_9_8_10",
+      "community": 35,
+      "norm_label": "2026-08-27 \u2014 cierre de 2 tests en rojo preexistentes (fuera de 8.9/8.10)"
+    },
+    {
+      "label": "2026-08-27 \u2014 `npm run test:visual` reconciliado (cierra el pendiente de 8.9/8.10)",
+      "file_type": "document",
+      "source_file": "PROGRESS.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "progress_2026_08_27_npm_run_test_visual_reconciliado_cierra_el_pendiente_de_8_9_8_10",
+      "community": 35,
+      "norm_label": "2026-08-27 \u2014 `npm run test:visual` reconciliado (cierra el pendiente de 8.9/8.10)"
+    },
+    {
+      "label": "2026-08-27 \u2014 Backlog 8.9/8.10: nombre p\u00fablico unificado a \"Plasma Rico en Plaquetas y Fibrina\"",
+      "file_type": "document",
+      "source_file": "PROGRESS.md",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "progress_2026_08_27_backlog_8_9_8_10_nombre_p\u00fablico_unificado_a_plasma_rico_en_plaquetas_y_fibrina",
       "community": 35,
@@ -43807,7 +43947,7 @@
       "label": "2026-08-27 \u2014 prf-y-fibrina \"RESULTADOS\": video de procedimiento + imagen de resultado",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L14",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "progress_2026_08_27_prf_y_fibrina_resultados_video_de_procedimiento_imagen_de_resultado",
       "community": 35,
@@ -43817,7 +43957,7 @@
       "label": "2026-08-27 \u2014 `imagePosition` de las cards ahora tambi\u00e9n llega a \"Te puede interesar\"",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L26",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "progress_2026_08_27_imageposition_de_las_cards_ahora_tambi\u00e9n_llega_a_te_puede_interesar",
       "community": 35,
@@ -43827,7 +43967,7 @@
       "label": "2026-08-27 \u2014 limpieza-dental: antes/despu\u00e9s reales (layout est\u00e1ndar) + webp + alt",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L34",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "progress_2026_08_27_limpieza_dental_antes_despu\u00e9s_reales_layout_est\u00e1ndar_webp_alt",
       "community": 35,
@@ -43837,7 +43977,7 @@
       "label": "2026-08-27 \u2014 alt descriptivo en el antes/despu\u00e9s de limpieza-facial-profunda (cierra parte de 7.2)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L41",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "progress_2026_08_27_alt_descriptivo_en_el_antes_despu\u00e9s_de_limpieza_facial_profunda_cierra_parte_de_7_2",
       "community": 35,
@@ -43847,7 +43987,7 @@
       "label": "2026-08-27 \u2014 Fix: cards de \"Te puede interesar\" ya no se estiran con <3 relacionados",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L46",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "progress_2026_08_27_fix_cards_de_te_puede_interesar_ya_no_se_estiran_con_3_relacionados",
       "community": 35,
@@ -43857,7 +43997,7 @@
       "label": "2026-08-26 \u2014 blanqueamiento-dental: 2 slots del BeforeAfterGrid (procedimiento + antes/despu\u00e9s) con labels custom",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L53",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "progress_2026_08_26_blanqueamiento_dental_2_slots_del_beforeaftergrid_procedimiento_antes_despu\u00e9s_con_labels_custom",
       "community": 35,
@@ -43867,7 +44007,7 @@
       "label": "2026-08-26 \u2014 Landing limpieza-facial-profunda: im\u00e1genes antes/despu\u00e9s reales + disclaimer",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L63",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "progress_2026_08_26_landing_limpieza_facial_profunda_im\u00e1genes_antes_despu\u00e9s_reales_disclaimer",
       "community": 35,
@@ -43877,7 +44017,7 @@
       "label": "2026-08-26 \u2014 Consolidaci\u00f3n de research SEO/GEO/AEO (7 fuentes) en un doc oficial; sin c\u00f3digo",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L73",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "progress_2026_08_26_consolidaci\u00f3n_de_research_seo_geo_aeo_7_fuentes_en_un_doc_oficial_sin_c\u00f3digo",
       "community": 35,
@@ -43887,7 +44027,7 @@
       "label": "2026-08-20 \u2014 Research GEO/AEO 2026 cruzado contra el backlog; council sobre priorizaci\u00f3n; sesi\u00f3n cerrada sin c\u00f3digo",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L82",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "progress_2026_08_20_research_geo_aeo_2026_cruzado_contra_el_backlog_council_sobre_priorizaci\u00f3n_sesi\u00f3n_cerrada_sin_c\u00f3digo",
       "community": 35,
@@ -43897,7 +44037,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.4 cerrado sin implementar (preconnect/preload/font-display)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L90",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_4_cerrado_sin_implementar_preconnect_preload_font_display",
       "community": 35,
@@ -43907,7 +44047,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 2.3 cerrado: no hace falta `hreflang`",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L96",
+      "source_location": "L130",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_2_3_cerrado_no_hace_falta_hreflang",
       "community": 35,
@@ -43917,7 +44057,7 @@
       "label": "2026-08-20 \u2014 Fix: hueco vac\u00edo bajo las im\u00e1genes en FeaturedServices (regresi\u00f3n de SEO 5.2)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L103",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "progress_2026_08_20_fix_hueco_vac\u00edo_bajo_las_im\u00e1genes_en_featuredservices_regresi\u00f3n_de_seo_5_2",
       "community": 35,
@@ -43927,7 +44067,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 4.2: p\u00e1gina de bio del fundador (E-E-A-T)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L110",
+      "source_location": "L144",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_4_2_p\u00e1gina_de_bio_del_fundador_e_e_a_t",
       "community": 35,
@@ -43937,7 +44077,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.2: `.webp` para las 126 im\u00e1genes v\u00eda componente `Picture`",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L122",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_2_webp_para_las_126_im\u00e1genes_v\u00eda_componente_picture",
       "community": 35,
@@ -43947,7 +44087,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.1 (parcial): `loading=\"lazy\"`/`decoding=\"async\"` en MediaBlock.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L133",
+      "source_location": "L167",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_1_parcial_loading_lazy_decoding_async_en_mediablock_jsx",
       "community": 35,
@@ -43957,7 +44097,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7 (cierre): `geo`/`openingHoursSpecification` tambi\u00e9n en Contacto.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L140",
+      "source_location": "L174",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_cierre_geo_openinghoursspecification_tambi\u00e9n_en_contacto_jsx",
       "community": 35,
@@ -43967,7 +44107,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.4: JSON-LD `Service`+`FAQPage` en las 3 landing pages destacadas",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L147",
+      "source_location": "L181",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_4_json_ld_service_faqpage_en_las_3_landing_pages_destacadas",
       "community": 35,
@@ -43977,7 +44117,7 @@
       "label": "2026-08-20 \u2014 Horario real visible en la card de contacto (Contacto.jsx)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L158",
+      "source_location": "L192",
       "_origin": "ast",
       "id": "progress_2026_08_20_horario_real_visible_en_la_card_de_contacto_contacto_jsx",
       "community": 35,
@@ -43987,7 +44127,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7: `geo`/`openingHoursSpecification` en el JSON-LD principal",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L164",
+      "source_location": "L198",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_geo_openinghoursspecification_en_el_json_ld_principal",
       "community": 35,
@@ -43997,7 +44137,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.8: metadatos completos en LegalResources.jsx \u2014 cierre del \"Cubo 1\"",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L171",
+      "source_location": "L205",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_8_metadatos_completos_en_legalresources_jsx_cierre_del_cubo_1",
       "community": 35,
@@ -44007,7 +44147,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.6: `Service.url` determin\u00edstico en las 5 p\u00e1ginas de tratamiento",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L177",
+      "source_location": "L211",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_6_service_url_determin\u00edstico_en_las_5_p\u00e1ginas_de_tratamiento",
       "community": 35,
@@ -44017,7 +44157,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.5: poblado `itemListElement` en el JSON-LD de IvTherapy.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L183",
+      "source_location": "L217",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_5_poblado_itemlistelement_en_el_json_ld_de_ivtherapy_jsx",
       "community": 35,
@@ -44027,7 +44167,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtems 2.1/2.2: `html lang=\"es\"` y reemplazo del t\u00edtulo placeholder de AI Studio",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L191",
+      "source_location": "L225",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtems_2_1_2_2_html_lang_es_y_reemplazo_del_t\u00edtulo_placeholder_de_ai_studio",
       "community": 35,
@@ -44037,7 +44177,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7 (parcial): agregado aggregateRating al JSON-LD principal",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L197",
+      "source_location": "L231",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_parcial_agregado_aggregaterating_al_json_ld_principal",
       "community": 35,
@@ -44047,7 +44187,7 @@
       "label": "2026-08-20 \u2014 docs/MEDICAL_COMPLIANCE.md: sumada secci\u00f3n complementaria de reglas legales de Florida (wiki)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L204",
+      "source_location": "L238",
       "_origin": "ast",
       "id": "progress_2026_08_20_docs_medical_compliance_md_sumada_secci\u00f3n_complementaria_de_reglas_legales_de_florida_wiki",
       "community": 35,
@@ -44057,7 +44197,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 4.1: creado docs/MEDICAL_COMPLIANCE.md (copiado del research existente del usuario, no generado)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L209",
+      "source_location": "L243",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_4_1_creado_docs_medical_compliance_md_copiado_del_research_existente_del_usuario_no_generado",
       "community": 35,
@@ -44067,7 +44207,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtems 8.2/8.3: canonical faltante en Nosotros.jsx, resto de p\u00e1ginas legales OK",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L216",
+      "source_location": "L250",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtems_8_2_8_3_canonical_faltante_en_nosotros_jsx_resto_de_p\u00e1ginas_legales_ok",
       "community": 35,
@@ -44077,7 +44217,7 @@
       "label": "2026-08-20 \u2014 Nota: auditor\u00eda de redirecciones 301 queda para el final, antes de publicar",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L223",
+      "source_location": "L257",
       "_origin": "ast",
       "id": "progress_2026_08_20_nota_auditor\u00eda_de_redirecciones_301_queda_para_el_final_antes_de_publicar",
       "community": 35,
@@ -44087,7 +44227,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.1: eliminado `<link rel=\"canonical\">` duplicado (Contacto + 5 p\u00e1ginas de tratamiento)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L228",
+      "source_location": "L262",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_1_eliminado_link_rel_canonical_duplicado_contacto_5_p\u00e1ginas_de_tratamiento",
       "community": 35,
@@ -44097,7 +44237,7 @@
       "label": "2026-08-20 \u2014 Auditor\u00eda SEO/GEO/AEO + skills externas de AEO/keyword research",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L234",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "progress_2026_08_20_auditor\u00eda_seo_geo_aeo_skills_externas_de_aeo_keyword_research",
       "community": 35,
@@ -44107,7 +44247,7 @@
       "label": "2026-08-20 \u2014 CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L239",
+      "source_location": "L273",
       "_origin": "ast",
       "id": "progress_2026_08_20_claude_md_referencia_a_wiki_secondbrain_para_seo_aeo_geo",
       "community": 35,
@@ -44117,7 +44257,7 @@
       "label": "2026-08-20 \u2014 Eliminado tratamiento CO2 L\u00e1ser (L\u00e1ser y Luz) y todas sus dependencias",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L242",
+      "source_location": "L276",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminado_tratamiento_co2_l\u00e1ser_l\u00e1ser_y_luz_y_todas_sus_dependencias",
       "community": 35,
@@ -44127,7 +44267,7 @@
       "label": "2026-08-20 \u2014 Home FounderSection: quitar fondo logo watermark, dejar Clinical Canvas s\u00f3lido",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L252",
+      "source_location": "L286",
       "_origin": "ast",
       "id": "progress_2026_08_20_home_foundersection_quitar_fondo_logo_watermark_dejar_clinical_canvas_s\u00f3lido",
       "community": 35,
@@ -44137,7 +44277,7 @@
       "label": "2026-08-20 \u2014 Formulario de Contacto: menos scroll en mobile (acorde\u00f3n de aviso legal + Nombre/Tel\u00e9fono en fila)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L257",
+      "source_location": "L291",
       "_origin": "ast",
       "id": "progress_2026_08_20_formulario_de_contacto_menos_scroll_en_mobile_acorde\u00f3n_de_aviso_legal_nombre_tel\u00e9fono_en_fila",
       "community": 35,
@@ -44147,7 +44287,7 @@
       "label": "2026-08-20 \u2014 Popup de WhatsApp ya no tapa contenido al hacer scroll (fix del pendiente de la auditor\u00eda UX)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L265",
+      "source_location": "L299",
       "_origin": "ast",
       "id": "progress_2026_08_20_popup_de_whatsapp_ya_no_tapa_contenido_al_hacer_scroll_fix_del_pendiente_de_la_auditor\u00eda_ux",
       "community": 35,
@@ -44157,7 +44297,7 @@
       "label": "2026-08-20 \u2014 Eliminada secci\u00f3n \"Nuestra sede\" duplicada en Contacto (UX audit post-Miami)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L271",
+      "source_location": "L305",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminada_secci\u00f3n_nuestra_sede_duplicada_en_contacto_ux_audit_post_miami",
       "community": 35,
@@ -44167,7 +44307,7 @@
       "label": "2026-08-20 \u2014 Eliminada la sede de Miami en todo el sitio (nunca se abri\u00f3, cerrada/cancelada)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L277",
+      "source_location": "L311",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminada_la_sede_de_miami_en_todo_el_sitio_nunca_se_abri\u00f3_cerrada_cancelada",
       "community": 35,
@@ -44177,7 +44317,7 @@
       "label": "2026-08-20 \u2014 Navbar mega menu order: Limpieza Facial Profunda moved to last",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L286",
+      "source_location": "L320",
       "_origin": "ast",
       "id": "progress_2026_08_20_navbar_mega_menu_order_limpieza_facial_profunda_moved_to_last",
       "community": 35,
@@ -44187,7 +44327,7 @@
       "label": "2026-08-20 \u2014 Copy edits (3 landings) + About page: removed founder background image, dropped Josey Gonz\u00e1lez, added Est\u00e9tica Dental team member",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L289",
+      "source_location": "L323",
       "_origin": "ast",
       "id": "progress_2026_08_20_copy_edits_3_landings_about_page_removed_founder_background_image_dropped_josey_gonz\u00e1lez_added_est\u00e9tica_dental_team_member",
       "community": 35,
@@ -44197,7 +44337,7 @@
       "label": "2026-08-20 \u2014 Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L304",
+      "source_location": "L338",
       "_origin": "ast",
       "id": "progress_2026_08_20_applied_writing_for_agents_principles_to_claude_md_agents_md_reduced_to_a_pointer",
       "community": 35,
@@ -44207,7 +44347,7 @@
       "label": "2026-08-20 \u2014 Saneamiento fino de la Suite Can\u00f3nica (post-reset)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L313",
+      "source_location": "L347",
       "_origin": "ast",
       "id": "progress_2026_08_20_saneamiento_fino_de_la_suite_can\u00f3nica_post_reset",
       "community": 35,
@@ -44217,7 +44357,7 @@
       "label": "2026-08-20 \u2014 Reset completo: suite SEO reemplazada por la \"Suite Can\u00f3nica\" sanitizada",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L322",
+      "source_location": "L356",
       "_origin": "ast",
       "id": "progress_2026_08_20_reset_completo_suite_seo_reemplazada_por_la_suite_can\u00f3nica_sanitizada",
       "community": 35,
@@ -44227,7 +44367,7 @@
       "label": "2026-08-19 \u2014 Saneamiento de la suite SEO/AEO (\"Palo Seco\" + modo heur\u00edstico)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L331",
+      "source_location": "L365",
       "_origin": "ast",
       "id": "progress_2026_08_19_saneamiento_de_la_suite_seo_aeo_palo_seco_modo_heur\u00edstico",
       "community": 35,
@@ -44237,7 +44377,7 @@
       "label": "2026-08-19 \u2014 Imported SEO/AEO/Local skill suite",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L341",
+      "source_location": "L375",
       "_origin": "ast",
       "id": "progress_2026_08_19_imported_seo_aeo_local_skill_suite",
       "community": 35,
@@ -44247,7 +44387,7 @@
       "label": "2026-08-19 \u2014 Guardrails: superpowers mandatory, project protection, one-change-at-a-time",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L349",
+      "source_location": "L383",
       "_origin": "ast",
       "id": "progress_2026_08_19_guardrails_superpowers_mandatory_project_protection_one_change_at_a_time",
       "community": 35,
@@ -44257,7 +44397,7 @@
       "label": "2026-08-19 \u2014 Repo setup",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L358",
+      "source_location": "L392",
       "_origin": "ast",
       "id": "progress_2026_08_19_repo_setup",
       "community": 35,
@@ -91088,6 +91228,92 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "beforeaftercarousel_beforeaftercarousel_beforeaftercarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "beforeaftercarousel_beforeaftercarousel_prefersreducedmotion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "picture_picture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "picture_picture_picture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "beforeaftercarousel_beforeaftercarousel",
+      "target": "sectionheader_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/templates/LandingPage/LandingPage.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "landingpage_landingpage",
+      "target": "beforeaftercarousel_beforeaftercarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/templates/LandingPage/LandingPage.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "landingpage_landingpage",
+      "target": "beforeaftercarousel_beforeaftercarousel_beforeaftercarousel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -117885,6 +118111,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "DECISIONS.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "decisions_decisions_md",
+      "target": "decisions_2026_08_27_carrousel_propio_beforeaftercarousel_en_vez_de_extender_beforeaftergrid_sin_autoplay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DECISIONS.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "decisions_decisions_md",
+      "target": "decisions_2026_08_27_faqpage_schema_fuente_\u00fanica_faqaccordion_las_landings_no_lo_declaran_a_nivel_helmet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DECISIONS.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "decisions_decisions_md",
+      "target": "decisions_2026_08_27_hero_visual_test_ocultar_la_media_no_mask_ni_maxdiffpixelratio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DECISIONS.md",
       "source_location": "L112",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -117897,8 +118153,18 @@
       "source_file": "DECISIONS.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_decisions_md",
-      "target": "decisions_2026_08_27_nombre_p\u00fablico_can\u00f3nico_plasma_rico_en_plaquetas_y_fibrina_backlog_8_9_8_10",
+      "target": "decisions_2026_08_27_nombre_p\u00fablico_can\u00f3nico_plasma_rico_en_plaquetas_y_fibrina_backlog_8_9_8_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DECISIONS.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "decisions_decisions_md",
+      "target": "decisions_2026_08_27_pagehero_prop_imagealt_relatedlinks_en_landing_data",
       "confidence_score": 1.0
     },
     {
@@ -117910,6 +118176,16 @@
       "confidence_score": 1.0,
       "source": "decisions_decisions_md",
       "target": "decisions_2026_08_27_relatedtreatments_fuerza_columns_3_siempre_no_items_length"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DECISIONS.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "decisions_decisions_md",
+      "target": "decisions_2026_08_27_service_schema_de_landings_referencia_organization_por_id",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -118305,6 +118581,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "MEMORY.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "memory_memory_md",
+      "target": "memory_beforeaftercarousel_carrousel_de_resultados_en_landings_2026_08_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MEMORY.md",
       "source_location": "L44",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -118340,6 +118626,16 @@
       "confidence_score": 1.0,
       "source": "memory_memory_md",
       "target": "memory_known_constraints_do_nots"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MEMORY.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "memory_memory_md",
+      "target": "memory_landings_schema_y_campos_seo_2026_08_27_endurecimiento_seo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -119017,8 +119313,28 @@
       "source_file": "PROGRESS.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "progress_progress_md",
-      "target": "progress_2026_08_27_backlog_8_9_8_10_nombre_p\u00fablico_unificado_a_plasma_rico_en_plaquetas_y_fibrina",
+      "target": "progress_2026_08_27_backlog_8_9_8_10_nombre_p\u00fablico_unificado_a_plasma_rico_en_plaquetas_y_fibrina"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PROGRESS.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "progress_progress_md",
+      "target": "progress_2026_08_27_cierre_de_2_tests_en_rojo_preexistentes_fuera_de_8_9_8_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PROGRESS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "progress_progress_md",
+      "target": "progress_2026_08_27_endurecimiento_seo_de_las_3_landings_auditor\u00eda_tratamientos_postoperatorios",
       "confidence_score": 1.0
     },
     {
@@ -119055,11 +119371,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PROGRESS.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "progress_progress_md",
+      "target": "progress_2026_08_27_npm_run_test_visual_reconciliado_cierra_el_pendiente_de_8_9_8_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PROGRESS.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "progress_progress_md",
       "target": "progress_2026_08_27_prf_y_fibrina_resultados_video_de_procedimiento_imagen_de_resultado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PROGRESS.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "progress_progress_md",
+      "target": "progress_2026_08_27_tratamientos_postoperatorios_secci\u00f3n_resultados_carrousel_antes_despu\u00e9s",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -120563,5 +120899,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8eb5e2ac65fe786371fd8bc4b908efa179a3817c"
+  "built_at_commit": "7c43254f26da2867e82ed20b0c4be5f889c44798"
 }

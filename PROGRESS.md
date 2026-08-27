@@ -2,6 +2,16 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-26 — blanqueamiento-dental: 2 slots del BeforeAfterGrid (procedimiento + antes/después) con labels custom
+- **Contexto:** la clienta solo aportó 2 fotos para dental — una de la secuencia antes/después (tira de 3 paneles del mismo paciente, el usuario la reencuadró a 1000×1250) y otra del procedimiento en cabina. Decisión del usuario: slot izq = procedimiento, slot der = secuencia. Spec: `docs/superpowers/specs/2026-08-26-blanqueamiento-dental-before-after-slots-design.md`. Brainstorming corrido, enfoque A aprobado.
+- **`BeforeAfterGrid.jsx`:** props nuevas `beforeLabel='ANTES'` / `afterLabel='DESPUÉS'` (retrocompatibles); `alt` pasa de `"Before"`/`"After"` fijo a `item.beforeAlt || 'Before'` / `item.afterAlt || 'After'`. Las landings no pasan nada nuevo → sin cambios (verificado en `/limpieza-facial-profunda`).
+- **`TreatmentDetailPage.jsx`:** lee `data.beforeAfter`; si existe usa `items` + labels + `disclaimer`, sino mantiene la ruta generada `before-after-1/2.jpg` de siempre. Verificado en `/dental-estetico/limpieza-dental` (sin override): idéntico a antes.
+- **`treatmentPages.js`:** `customDetails['blanqueamiento-dental'].beforeAfter` con las 2 rutas SEO (`blanqueamiento-dental-procedimiento.jpg` / `blanqueamiento-dental-antes-despues.jpg`), `beforeAlt`/`afterAlt` descriptivos, labels `PROCEDIMIENTO` / `ANTES Y DESPUÉS`. Wire en el objeto compilado: `beforeAfter: custom.beforeAfter || null`.
+- **Imágenes:** 4 archivos (jpg 1000×1250 + webp q78: procedimiento 71 KB, antes-despues 50 KB) en `public/assets/images/treatments/dental-estetico/blanqueamiento-dental/`. Committeadas con el spec en `cc8f88c`.
+- **Verificado** en dev server: `/dental-estetico/blanqueamiento-dental` — izq foto procedimiento + "PROCEDIMIENTO", der compuesto antes/después + "ANTES Y DESPUÉS", ambos sirviendo webp a 1000×1250, `alt` correctos, sin errores de consola. Regresión landing + tratamiento sin override OK.
+- **Backlog nuevo** (`docs/SEO_AUDIT_2026.md`): (a) ocultar sección `BeforeAfterGrid` en tratamientos sin imágenes reales; (b) bug `categoryFolder` en `TreatmentDetailPage.jsx:59` (no mapea `dentalEstetico → dental-estetico`).
+- **Pendiente:** `npm run test:visual --update-snapshots` para blanqueamiento-dental (y limpieza-facial-profunda, ya sabido).
+
 ## 2026-08-26 — Landing limpieza-facial-profunda: imágenes antes/después reales + disclaimer
 - **Contexto:** el bloque `BeforeAfterGrid` de `/limpieza-facial-profunda` mostraba placeholders negros (nunca hubo imágenes antes/después en el proyecto). El usuario subió fotos reales y pidió cablearlas con nombres SEO-friendly.
 - **Imágenes:** subidas por el usuario a `public/assets/images/landings/limpieza-facial-profunda/` como `limpieza-facial-profunda-antes.jpg` y `-despues.jpg` (1000×1250, 4:5, ~110 KB). Generé los `.webp` hermanos con `sharp` q78 (~44–46 KB) — necesario, no opcional: `Picture.jsx` siempre emite `<source type="image/webp">` y si el `<source>` da 404 el navegador NO cae al `<img>` jpg. Rutas actualizadas en `src/data/landingPages.js` (bloque `beforeAfter.items` de `limpieza-facial-profunda`).

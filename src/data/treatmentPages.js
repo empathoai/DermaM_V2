@@ -1012,7 +1012,17 @@ const customDetails = {
         question: '¿Qué es la dieta blanca y cuánto dura?',
         answer: 'Consiste en evitar alimentos y bebidas oscuras (vino tinto, salsas de tomate, café) durante las 48 horas posteriores para no teñir el poro del diente.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-procedimiento.jpg',
+        after: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-antes-despues.jpg',
+        beforeAlt: 'Blanqueamiento dental estético en cabina en Derma.M, West Palm Beach',
+        afterAlt: 'Antes y después de blanqueamiento dental estético en Derma.M'
+      }],
+      beforeLabel: 'PROCEDIMIENTO',
+      afterLabel: 'ANTES Y DESPUÉS'
+    }
   },
   'limpieza-dental': {
     whatIsBody: 'La Limpieza Dental Estética es un protocolo de mantenimiento e higiene profunda. Consiste en la remoción de placa y sarro acumulados para recuperar un esmalte limpio, pulido y fresco mediante instrumental ultrasónico suave y copas de pulido estético.',
@@ -1219,6 +1229,7 @@ const compileTreatments = () => {
         description,
         image,
         protocolImage: `${treatmentAssetBase}/protocol.jpg`,
+        beforeAfter: custom.beforeAfter || null,
         quickFacts,
         benefits,
         ideal,

@@ -39,7 +39,8 @@ export default function TreatmentDetailPage({ data }) {
     problemContext,
     cta,
     whoForList,
-    safetyPrecautions
+    safetyPrecautions,
+    beforeAfter
   } = data;
 
   // 1. Map breadcrumbs safely (supporting link or to properties)
@@ -57,7 +58,7 @@ export default function TreatmentDetailPage({ data }) {
 
   // 3. Format Before & After item paths safely
   const categoryFolder = category === 'laserYLuz' ? 'laser-y-luz' : category;
-  const beforeAfterItems = [
+  const beforeAfterItems = beforeAfter?.items ?? [
     {
       before: `/assets/images/treatments/${categoryFolder}/${slug}/before-after-1.jpg`,
       after: `/assets/images/treatments/${categoryFolder}/${slug}/before-after-2.jpg`
@@ -251,11 +252,13 @@ export default function TreatmentDetailPage({ data }) {
       {/* 11. Before & After (Dark Authority Surface: #141313) */}
       <section className={styles.beforeAfterSection}>
         <div className={styles.container}>
-          <BeforeAfterGrid 
+          <BeforeAfterGrid
             eyebrow="EVIDENCIA DE APOYO"
             headline="EVOLUCIÓN Y RESULTADOS ASISTIDOS"
             items={beforeAfterItems}
-            disclaimer={beforeAfterDisclaimer}
+            disclaimer={beforeAfter?.disclaimer ?? beforeAfterDisclaimer}
+            beforeLabel={beforeAfter?.beforeLabel}
+            afterLabel={beforeAfter?.afterLabel}
           />
         </div>
       </section>

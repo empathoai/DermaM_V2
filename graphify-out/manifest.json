@@ -480,8 +480,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
-    "mtime": 1787224769.1920009,
-    "ast_hash": "93f273c3b307eb78c5e5a17694d7a73c",
+    "mtime": 1787806228.930926,
+    "ast_hash": "2bb23bd9afdcec5a7bb96c77711085b1",
     "semantic_hash": ""
   },
   "src/components/shared/BenefitColumns/BenefitColumns.jsx": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
-    "mtime": 1787224625.9387624,
-    "ast_hash": "0f5f44c0904aaa96f6c8ebe967e79431",
+    "mtime": 1787806249.438864,
+    "ast_hash": "071fe6523352922074e2fe7d203d8be7",
     "semantic_hash": ""
   },
   "src/components/utils/HeroMedia.jsx": {
@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/data/treatmentPages.js": {
-    "mtime": 1787211223.9854884,
-    "ast_hash": "3422f369f7b6b4ebb37913f55e146fca",
+    "mtime": 1787806268.0246515,
+    "ast_hash": "4b132ecc25b973ca35ac7091d4f4d4a6",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787804193.49418,
-    "ast_hash": "3e1b1993f1dc57b21a49b9b8d5f540d9",
+    "mtime": 1787806440.9355967,
+    "ast_hash": "2cfafb137fe2f18a36b55c378fd0d887",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787804207.3203828,
-    "ast_hash": "ed2845f01794c224ab917fcd6884b9b5",
+    "mtime": 1787806455.6064835,
+    "ast_hash": "575241e32ffe26adfe3df336264f6f69",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787804173.7475576,
-    "ast_hash": "27e3a72b637c90f4ec30f35046ea1800",
+    "mtime": 1787806426.9505382,
+    "ast_hash": "a0f47f1ee01f4b155a01d48e460ada73",
     "semantic_hash": ""
   },
   "README.md": {
@@ -2945,23 +2945,43 @@
     "semantic_hash": ""
   },
   "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg": {
-    "mtime": 1787803934.4766405,
-    "ast_hash": "859cd83a1dc8f6b9282556864e4a5560",
+    "mtime": 1787804355.5044346,
+    "ast_hash": "e4bb01cd2b20abe49cdee88b3f790b05",
     "semantic_hash": ""
   },
   "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.webp": {
-    "mtime": 1787804046.564,
-    "ast_hash": "c79ea8ec87f00fd01f57e3cd3c57c593",
+    "mtime": 1787804682.698,
+    "ast_hash": "7409adb5ecc44a7b5fd2ceaaeddf38b1",
     "semantic_hash": ""
   },
   "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg": {
-    "mtime": 1787803956.922266,
-    "ast_hash": "4daa82752e1df78e3c519625877b9b1f",
+    "mtime": 1787804417.0677562,
+    "ast_hash": "04f0fa6d9c6e73659566f7a8fd78f6da",
     "semantic_hash": ""
   },
   "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.webp": {
-    "mtime": 1787804046.675,
-    "ast_hash": "da142e123d715b648da1b56329270a20",
+    "mtime": 1787804682.811,
+    "ast_hash": "ee472fcc24f37810958e715f38d6f243",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-antes-despues.jpg": {
+    "mtime": 1787805759.3316455,
+    "ast_hash": "4c9baf526fb9f4130a91f12abb25df5e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-antes-despues.webp": {
+    "mtime": 1787805831.662,
+    "ast_hash": "2b808d3407776e0834898d3aa10d8951",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-procedimiento.jpg": {
+    "mtime": 1787805741.1633868,
+    "ast_hash": "47a8105060881645e3684572fb386cdf",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-procedimiento.webp": {
+    "mtime": 1787805831.78,
+    "ast_hash": "c29af931b6eb44a17818be0ee401ddb6",
     "semantic_hash": ""
   }
 }

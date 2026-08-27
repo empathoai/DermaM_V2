@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Auditoría "clínica"→"medical spa" en páginas legales/políticas
+- A pedido del usuario: barrido de todas las páginas legales/policy por "clínica"/"consultorio"/"centro médico" en contexto de lugar.
+- **Páginas publicadas limpias:** `PrivacyPolicy`, `TermsOfUse`, `Accessibility`, `BookingPolicy`, `LegalResources` — 0 referencias de contexto-lugar ("Clinical Disclosure" en LegalResources es adjetivo, correcto).
+- **`NoticePrivacyPractices.jsx`** (borrador HIPAA, ya `Disallow` en `robots.txt` + sin link en footer + fuera de sitemap): L53 "tomadas en el consultorio… conservada por nuestro centro" → "…en el medical spa… por nuestras instalaciones". L107 "disponible físicamente en la clínica West Palm Beach" → "…en el medical spa de West Palm Beach".
+- **NO tocado (a propósito):** los `attorneyCalloutText` de `NoticePrivacyPractices.jsx:166` y `TreatmentDisclaimer.jsx:180` — son notas dirigidas al abogado ("[REQUIERE REVISIÓN LEGAL]"), no voz del sitio; usan "consultorio" como concepto legal genérico. Y el testimonial `categoryPages.js:621`. El banner del propio borrador HIPAA dice esperar al asesor legal: swap de términos ahí no reduce el riesgo de fondo (si Derma.M no es "covered entity", la página no debería existir) — se hizo solo el cambio terminológico pedido, la revisión legal sigue pendiente.
+- **Verificado:** `grep` 0 "clínica/consultorio/centro" de contexto-lugar en voz del sitio; `test:visual` 22/22.
+
 ## 2026-08-27 — Sub-proyecto C1 COMPLETO (25/25) — Tasks 4-6: láser + dental + capilar
 - Plan Tasks 4-6. Reescritos `whatIsBody` + `whatIsHeadline` + `contentUpdated: '2026-08-27'` en: `depilacion-laser`, `ipl` (láser), `blanqueamiento-dental`, `limpieza-dental` (dental), `tratamiento-capilar` (capilar). Patrón C1.3 + señal local "medical spa" desde el arranque. Aprobado por el usuario.
 - **Compliance en la reescritura:** `depilacion-laser` — el material viejo (FAQ + whatIsBody "eliminación progresiva del vello", FAQ "¿definitiva para siempre?") → reescrito a "reducción progresiva y duradera del vello", sin "para siempre"/"definitiva"/"permanente". `tratamiento-capilar` — límite honesto explícito: "no recupera folículos que ya han dejado de crecer". `blanqueamiento`/`limpieza` dental: enmarcado estético/higiénico, "no reemplaza los tratamientos periodontales".

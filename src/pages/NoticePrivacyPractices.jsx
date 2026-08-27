@@ -50,7 +50,7 @@ export default function NoticePrivacyPractices() {
       content: (
         <>
           <p>
-            Bajo las directrices federales, la Información de Salud Protegida (PHI) incluye datos demográficos, antecedentes médicos, informes diagnósticos de la dermis, fotografías clínicas de historial de tratamiento tomadas en el consultorio e información de facturación médica asociada a su perfil que sea transmitida o conservada físicamente por nuestro centro.
+            Bajo las directrices federales, la Información de Salud Protegida (PHI) incluye datos demográficos, antecedentes médicos, informes diagnósticos de la dermis, fotografías clínicas de historial de tratamiento tomadas en el medical spa e información de facturación médica asociada a su perfil que sea transmitida o conservada físicamente por nuestras instalaciones.
           </p>
         </>
       )
@@ -104,7 +104,7 @@ export default function NoticePrivacyPractices() {
           </p>
           <ul className="list-disc pl-6 space-y-2 mt-2">
             <li>Mantener el resguardo y privacidad estricta de cualquier PHI en sus servidores físicos y virtuales.</li>
-            <li>Proporcionar este aviso en su portal web y tenerlo disponible físicamente en la clínica West Palm Beach.</li>
+            <li>Proporcionar este aviso en su portal web y tenerlo disponible físicamente en el medical spa de West Palm Beach.</li>
             <li>Cumplir estrictamente las políticas legales detalladas en la versión activa del aviso.</li>
           </ul>
         </>

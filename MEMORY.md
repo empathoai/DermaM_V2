@@ -36,6 +36,11 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - All team vCards (`public/team/vcards/*.vcf`) intentionally share one clinic phone (`+15612535384`) — only `FN`/`TITLE` differ per person. This is the established pattern, not a bug (see [[decisions]] 2026-08-20).
 - `MediaBlock.jsx` already renders a clean fallback block when `mediaSrc`/`src` is undefined or fails to load — safe to add a team member before their photo/video asset is ready (see [[decisions]] 2026-08-20). `member.status === 'comingSoon'` is a different, unrelated path (generic "nuevos especialistas" card) — don't use it for "real person, pending asset."
 
+## Card `imagePosition` (encuadre de heros recortados a cuadrado)
+- Mecanismo desde commit `ecbff32`: `TreatmentCard` → `MediaBlock` prop `imagePosition` → `style={{objectPosition}}` sobre el `<img>`. Default CSS `center center`.
+- Fuente única: `imagePosition` en `categoryPages.js` `featuredTreatments`. Formato `'NN% center'`. Lo tienen 8 corporales + los 2 dentales (`74% center`).
+- Desde 2026-08-27 fluye a **dos** contextos: hub (`CategoryPage`, ya funcionaba) **y** "Te puede interesar" (`RelatedTreatments` vía `getBaseTreatment` → `related` → `items.map`). Editar el valor en `categoryPages.js` afecta ambos. Faciales/capilar sin valor → `center`. Ver [[decisions]] 2026-08-27.
+
 ## BeforeAfterGrid — labels y override por tratamiento (2026-08-26)
 - `BeforeAfterGrid.jsx` acepta props opcionales `beforeLabel` / `afterLabel` (default `'ANTES'` / `'DESPUÉS'`) y por item `beforeAlt` / `afterAlt` (default `'Before'` / `'After'`). Las landings no las pasan → sin cambios.
 - Las páginas de tratamiento (`TreatmentDetailPage`) leen `data.beforeAfter`. Si existe, usa sus `items` + labels + `disclaimer`; si no, arma la ruta `.../{slug}/before-after-1|2.jpg` como siempre.

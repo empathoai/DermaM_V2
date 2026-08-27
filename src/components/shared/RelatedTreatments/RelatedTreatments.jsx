@@ -21,7 +21,8 @@ export default function RelatedTreatments({
             disclaimer: t.disclaimer,
             ctaLabel: 'VER TRATAMIENTO',
             to: t.to || t.link || t.route,
-            image: t.image
+            image: t.image,
+            imagePosition: t.imagePosition
           }))}
           variant="light"
           columns={3}

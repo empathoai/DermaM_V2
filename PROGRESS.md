@@ -2,6 +2,14 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — `imagePosition` de las cards ahora también llega a "Te puede interesar"
+- **Contexto:** las cards de la sección "Te puede interesar" (`RelatedTreatments`) usan el `hero.jpg` de cada tratamiento recortado a cuadrado. Los heros dentales tienen el sujeto en el ~55% derecho → recorte centrado mostraba pared vacía. Spec: `docs/superpowers/specs/2026-08-27-dental-card-imageposition-design.md`. Brainstorming corrido, enfoque A aprobado.
+- **Descubrimiento:** las entradas dentales en `categoryPages.js` (líneas 853, 868) **ya tenían** `imagePosition: '74% center'` — el hub `/dental-estetico` ya lo aplicaba. Solo faltaba cablearlo a "Te puede interesar". El paso 1 del spec (agregar el valor) quedó anulado; se conserva `74% center` como fuente única.
+- **`treatmentPages.js`:** `getBaseTreatment()` devuelve `imagePosition: found.imagePosition`; el mapeo de `related` lo incluye.
+- **`RelatedTreatments.jsx`:** el `items.map` agrega `imagePosition: t.imagePosition`. `TreatmentGrid` ya hace `{...item}` → llega a `TreatmentCard` → `MediaBlock` → `object-position` inline.
+- **Efecto colateral (esperado):** las cards de "Te puede interesar" de **corporales** ahora honran su `imagePosition` existente (72/70/82% según tratamiento), igual que el hub de corporales. Verificado: mejora de consistencia, sin recortes raros.
+- **Verificado:** dental "Te puede interesar" + hub = `74% center`; corporales "Te puede interesar" honra sus valores; faciales sin `imagePosition` sigue `center` sin cambio; sin errores de consola. Fix previo de `columns={3}` intacto (3×426).
+
 ## 2026-08-27 — limpieza-dental: antes/después reales (layout estándar) + webp + alt
 - **Imágenes:** usuario cargó `limpieza-dental-antes.jpg` / `limpieza-dental-despues.jpg` (1000×1250, 4:5, ~123–130 KB) en `public/assets/images/treatments/dental-estetico/limpieza-dental/`. Fotos intraorales reales del mismo caso: antes con sarro en la línea de las encías + leve inflamación gingival, después con dientes limpios/pulidos y encías más sanas.
 - **WebP q78** generados: antes 54 KB, después 58 KB.

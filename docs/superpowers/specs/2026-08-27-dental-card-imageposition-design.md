@@ -41,14 +41,12 @@ Descartados:
 
 ## Cambios
 
-### 1. `src/data/categoryPages.js`
+### 1. `src/data/categoryPages.js` — SIN CAMBIO
 
-En `dentalEstetico.featuredTreatments.treatments`, agregar a las entradas de
-`blanqueamiento-dental` y `limpieza-dental`:
-```js
-imagePosition: '70% center'
-```
-Mismo criterio y formato que las 8 cards de corporales que ya lo usan.
+Descubierto al implementar: `dentalEstetico.featuredTreatments.treatments` **ya tiene**
+`imagePosition: '74% center'` en `blanqueamiento-dental` (línea 853) y `limpieza-dental`
+(línea 868). El hub `/dental-estetico` ya lo aplica. Se conserva `74% center` como fuente
+única — no se toca el valor (cambiarlo a 70% movería también el hub por ~4%).
 
 ### 2. `src/data/treatmentPages.js`
 

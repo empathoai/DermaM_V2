@@ -37,6 +37,7 @@ function getBaseTreatment(categoryKey, slug) {
       benefits: found.benefits || [],
       ideal: found.ideal || '',
       image: found.image || `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
+      imagePosition: found.imagePosition,
       route: found.to || found.link || `/${getTreatmentAssetFolder(categoryKey)}/${slug}`,
       disclaimer: found.disclaimer || 'Requiere valoración previa para garantizar tu seguridad y resultados.'
     };
@@ -1221,6 +1222,7 @@ const compileTreatments = () => {
           ideal: rBase.ideal,
           to: rBase.route,
           image: rBase.image,
+          imagePosition: rBase.imagePosition,
           disclaimer: rBase.disclaimer
         };
       });

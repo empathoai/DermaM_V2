@@ -645,13 +645,13 @@
     "semantic_hash": ""
   },
   "src/data/contactPage.js": {
-    "mtime": 1787815261.6508682,
-    "ast_hash": "b3eaec328421bdfc456e8dca9f68ae7a",
+    "mtime": 1787842628.172422,
+    "ast_hash": "bb9e19e2cbd5318b72e38aecc3906a00",
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787832565.3751726,
-    "ast_hash": "7e14d373733ac2fb093af3a1c68dd265",
+    "mtime": 1787842621.56563,
+    "ast_hash": "24ca4f4c4748861874620306a50906d3",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/data/treatmentPages.js": {
-    "mtime": 1787842210.8081574,
-    "ast_hash": "c62788e8b9620739690abb2359438926",
+    "mtime": 1787842829.9223363,
+    "ast_hash": "dfbd7631a32b802ea27ed01050380d2d",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -695,8 +695,8 @@
     "semantic_hash": ""
   },
   "src/pages/NancyNieto.jsx": {
-    "mtime": 1787226247.53713,
-    "ast_hash": "69ec867a0f2f7a848319d05ad05da340",
+    "mtime": 1787842829.9213393,
+    "ast_hash": "b7c5224798ce000fd6ccf6f88bbe39b1",
     "semantic_hash": ""
   },
   "src/pages/Nosotros.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787841588.6533356,
-    "ast_hash": "f81bc058a3dad5e2fbc53c11657ead52",
+    "mtime": 1787843026.8203588,
+    "ast_hash": "f3ad29974479e82e6096149a94a968fe",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787840491.429105,
-    "ast_hash": "ed720b324eb9d4d8a825c16f78cf7666",
+    "mtime": 1787843011.4007409,
+    "ast_hash": "4b37c6a7748f71ef77a7e9cde0f6605d",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787842489.4879923,
-    "ast_hash": "25c6e6bd8922eefe020c5a17660ea55f",
+    "mtime": 1787843004.1940076,
+    "ast_hash": "c8d07adee672e6e440d88c52ac2f1dbf",
     "semantic_hash": ""
   },
   "README.md": {

@@ -314,7 +314,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
-      body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestra clínica de West Palm Beach.',
+      body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestro medical spa de West Palm Beach.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
       imageAlt: 'Especialista con guantes realiza un masaje de drenaje manual en el abdomen de una clienta recostada en la camilla de Derma.M, West Palm Beach'
     },

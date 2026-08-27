@@ -19,7 +19,7 @@ export const contactFaq = {
     },
     {
       question: '¿Atienden en español e inglés?',
-      answer: 'Sí. Nuestro equipo te atiende en español e inglés, tanto en la clínica en West Palm Beach como por WhatsApp y teléfono.'
+      answer: 'Sí. Nuestro equipo te atiende en español e inglés, tanto en nuestro medical spa en West Palm Beach como por WhatsApp y teléfono.'
     }
   ]
 };

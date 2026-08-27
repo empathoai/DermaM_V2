@@ -2,6 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — `npm run test:visual` reconciliado (cierra el pendiente de 8.9/8.10)
+- **Contexto:** los baselines de Playwright venían atrasados varios commits intencionales (8.9/8.10 naming + trabajo 8-27: BeforeAfterGrid labels en LandingPage, RelatedTreatments, y además el retiro de "Miami" del topbar de `6a17f67` que nunca se snapshoteó).
+- **`--update-snapshots`** sobre `tests/visual.spec.js`. 9 PNG regenerados: `contacto-viewport-desktop`, `home-featured-services` (desktop+mobile), `home-hero-mobile-safari`, `hidrofacial-problem-mobile`, `limpieza-problem-mobile`, `postoperatorios-problem-mobile`, `prf-problem` (desktop+mobile). Todos los diffs verificados = reflow por texto más largo ("PLASMA RICO EN PLAQUETAS Y FIBRINA") + topbar sin Miami. Ningún cambio de layout/estilo no intencional.
+- **Re-run:** 19/20 verde. `Home Page - Hero Viewport` (mobile-safari) queda **flaky** — el diff es 100% sobre la foto del hero (ruido de decode WebKit), texto/chrome idénticos; no es regresión y no lo tocó nuestro trabajo.
+- **Fuera de alcance, NO tocado (para backlog):** `tests/faq-consistency.spec.js` → `/contacto` espera 5 FAQ, `contactPage` tiene 4. Drift preexistente de `6a17f67` ("Remove Miami location"), sin relación con 8.9/8.10.
+
 ## 2026-08-27 — Backlog 8.9/8.10: nombre público unificado a "Plasma Rico en Plaquetas y Fibrina"
 - **Contexto:** el tratamiento se llamaba "PRP y Fibrina" / "PRP Y FIBRINA" en 9 lugares de nombre público mientras el H1/body/schema ya decían "Plasma Rico en Plaquetas y Fibrina" → señal de entidad partida. "PRF" no tiene volumen de búsqueda. Spec: `docs/superpowers/specs/2026-08-27-item-8.9-plasma-rico-en-plaquetas-naming-design.md`. Brainstorming corrido, aprobado.
 - **Cambios (todos texto):** `Navbar.jsx` ×2 (desktop + mobile), `Footer.jsx`, `FeaturedServices.jsx` (`<h3>` home), `categoryPages.js:55` (`title`), `landingPages.js:147` (CTA headline), `Faciales.jsx:33` (`name` en BreadcrumbList schema), `PrfYFibrina.jsx` (`<title>` + `og:title` + `twitter:title` → `Plasma Rico en Plaquetas y Fibrina | Derma.M`, se soltó "en West Palm Beach" del title para no pasar ~60 chars; + fallback de `description` en schema).

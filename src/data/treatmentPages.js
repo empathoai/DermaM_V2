@@ -34,6 +34,8 @@ function getBaseTreatment(categoryKey, slug) {
     return {
       title: found.title,
       description: found.description,
+      metaTitle: found.metaTitle || null,
+      metaDescription: found.metaDescription || null,
       benefits: found.benefits || [],
       ideal: found.ideal || '',
       image: found.image || `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
@@ -1245,6 +1247,8 @@ const compileTreatments = () => {
         route,
         title,
         description,
+        metaTitle: base.metaTitle || null,
+        metaDescription: base.metaDescription || null,
         image,
         protocolImage: custom.protocolImage || null,
         beforeAfter: custom.beforeAfter || null,

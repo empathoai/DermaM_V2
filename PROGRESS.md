@@ -2,6 +2,18 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Sub-proyecto A: SEO head de páginas de tratamiento (24 páginas, 100% background)
+- Spec: `docs/superpowers/specs/2026-08-27-treatment-seo-head-design.md`. Del audit `seo-checklist-65` (63/100). Descomposición: A (head/schema, hecho) → B (CLS width/height) → D (pulido alt + relatedLinks prf/limpieza + enlaces autoridad) → C (bloques de respuesta directa/GEO).
+- **Nuevo `src/utils/text.js`:** `titleCase()` (movido desde `TreatmentDetailPage.jsx`, que ahora lo importa) + `clampWords(s, max)`.
+- **Nuevo `src/components/shared/TreatmentSEO/TreatmentSEO.jsx`:** owner único del `<head>` de páginas de tratamiento. Props `data`, `categorySlug`, `slug`. Emite `<title>`, `description`, `canonical`, `robots`, OG/Twitter y `@graph` JSON-LD (`Service` + `BreadcrumbList`). NO emite `FAQPage` (lo sigue haciendo `FAQAccordion`).
+- **Los 5 `[treatment].jsx`** (`faciales`, `corporales`, `laser`→`laser-y-luz`, `dental`→`dental-estetico`, `capilar`): el `<Helmet>` inline de la rama de éxito (con su `ld+json` de `Service` con address inline) reemplazado por `<TreatmentSEO … />`. La rama "Tratamiento no encontrado" intacta (`noindex, nofollow`).
+- **`<title>`:** `PEEL COREANO | Derma.M` → `Peel Coreano en West Palm Beach | Derma.M` (Title Case + geo; si supera 60 char cae a `Nombre | Derma.M`). Verificado 41-48 char en las 5 categorías.
+- **`<meta description>`:** de ~40 char (`treatmentData.description`, que sigue siendo el tagline visible) → compuesta: `` `${description} ${Nombre} en Derma.M, West Palm Beach. Requiere valoración profesional previa.` `` recortada a ≤155 en límite de palabra. Verificado 123-152 char.
+- **Schema:** `Service` con `name` Title Case + `provider {@id: #organization}` + `areaServed` (City WPB) + `image` absoluta; **`BreadcrumbList` nuevo** (Inicio › Hub › Tratamiento, nombres de hub: "Tratamientos Faciales/Corporales/Láser y Luz", "Estética Dental", "Tratamientos Capilares"). Paridad con landings.
+- **OG/Twitter:** antes **ausentes** en páginas de tratamiento; ahora completos (`og:image` = hero.jpg del tratamiento, absoluta).
+- **Campos opcionales `metaTitle` / `metaDescription`** en entradas de `categoryPages.js` (cableados por `getBaseTreatment` + objeto compilado en `treatmentPages.js`). Sin llenar — el fallback cubre las 24; quedan para hand-tuning.
+- **Verificado** en 5 rutas reales (1 por categoría) + ruta inexistente: title/desc/canonical/robots/OG/schema OK, `ldCount: 2` (TreatmentSEO + FAQAccordion), `BreadcrumbList` de 3 niveles, 404 sigue `noindex`. Página renderiza completa (12 secciones, sin error boundary). `npm run test:visual` **22/22 sin diffs**.
+
 ## 2026-08-27 — Limpieza de integridad de `TreatmentDetailPage` (25 páginas de tratamiento)
 - Spec: `docs/superpowers/specs/2026-08-27-treatmentdetailpage-integrity-cleanup-design.md`. Brainstorming corrido, aprobado. 3 cambios, 3 archivos, 1 pasada.
 - **1 — Sección antes/después opt-in:** `TreatmentDetailPage.jsx` — se quitó el fallback de convención (`beforeAfter?.items ?? [before-after-1/2.jpg]` → `?? []`) y la `<section>` va envuelta en `{beforeAfterItems.length > 0 && …}`. Variable `categoryFolder` eliminada (quedaba sin uso). Antes: **22 de 25** páginas mostraban 2 cajas negras + `alt="Before"/"After"` (inglés). Ahora la sección solo aparece con `customDetails.beforeAfter` real → hoy solo `blanqueamiento-dental`, `limpieza-dental`, `peel-coreano`. Reactivar cualquiera = 2 fotos `<slug>-antes/despues.jpg` + 5 líneas de `customDetails`.

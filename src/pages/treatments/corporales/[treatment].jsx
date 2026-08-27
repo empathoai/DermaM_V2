@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import TreatmentSEO from '../../../components/shared/TreatmentSEO/TreatmentSEO';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../../../components/layout/Navbar/Navbar';
 import Footer from '../../../components/layout/Footer/Footer';
@@ -50,35 +51,7 @@ export default function CorporalesTreatmentPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
-      <Helmet>
-        <title>{treatmentData.title} | Derma.M</title>
-        <meta name="description" content={treatmentData.description} />
-        <link rel="canonical" href={`https://dermamskinhealth.com/corporales/${treatment}`} />
-        <meta name="robots" content="index, follow" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": treatmentData?.hero?.title || treatmentData?.title || "Tratamiento Estético",
-          "description": treatmentData?.hero?.body || treatmentData?.description || "Tratamiento estético profesional en Derma.M.",
-          "url": `https://dermamskinhealth.com/corporales/${treatment}`,
-          "serviceType": "Aesthetic Treatment",
-          "provider": {
-            "@type": "HealthAndBeautyBusiness",
-            "name": "Derma.M",
-            "url": "https://dermamskinhealth.com",
-            "address": [
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "5707 S Dixie Hwy UNIT D",
-                "addressLocality": "West Palm Beach",
-                "addressRegion": "FL",
-                "postalCode": "33405",
-                "addressCountry": "US"
-              }
-            ]
-          }
-        })}</script>
-      </Helmet>
+      <TreatmentSEO data={treatmentData} categorySlug="corporales" slug={treatment} />
       
       <Navbar />
       

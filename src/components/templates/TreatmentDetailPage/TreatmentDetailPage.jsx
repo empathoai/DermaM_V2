@@ -14,6 +14,7 @@ import RelatedTreatments from '../../shared/RelatedTreatments/RelatedTreatments'
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
 import ListSparkle from '../../shared/ListSparkle/ListSparkle';
+import { titleCase } from '../../../utils/text';
 import styles from './TreatmentDetailPage.module.css';
 
 export default function TreatmentDetailPage({ data }) {
@@ -46,8 +47,6 @@ export default function TreatmentDetailPage({ data }) {
   } = data;
 
   // Treatment names live in data as UPPERCASE — Title Case them for image alt text
-  const titleCase = (s = '') =>
-    s.toLowerCase().replace(/(^|\s|\/)([a-záéíóúñ])/g, (_, p, c) => p + c.toUpperCase());
   const treatmentName = titleCase(title);
   const heroAlt = heroImageAlt || `${treatmentName} en Derma.M, West Palm Beach`;
   const whatIsAlt = whatIsImageAlt || `Aplicación de ${treatmentName} en Derma.M`;

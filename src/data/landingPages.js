@@ -377,42 +377,42 @@ export const landingPages = {
       headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN',
       items: [
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-1.jpg',
           alt: 'Vista lateral de torso y cadera: izquierda con hematomas e inflamación postoperatorios; derecha con el contorno más liso tras el acompañamiento en Derma.M',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-2.jpg',
           alt: 'Costado y espalda baja de una paciente antes y después del drenaje postoperatorio: menos hematomas y flanco más uniforme, Derma.M, West Palm Beach',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-3.jpg',
           alt: 'Vista posterior de espalda baja y glúteos: antes con hematomas y marcas de faja, después con la piel más pareja tras las sesiones postoperatorias',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-4.jpg',
           alt: 'Costado de una paciente antes y después del acompañamiento postoperatorio: menos hematomas en las costillas y cintura más definida, Derma.M',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-5.jpg',
           alt: 'Cadera y muslo vistos de lado: antes con un hematoma amplio e inflamación, después con la zona más lisa tras el drenaje linfático postoperatorio en Derma.M',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-6.jpg',
           alt: 'Abdomen de frente antes y después del acompañamiento postoperatorio: menos inflamación y hematomas en la parte baja, Derma.M, West Palm Beach',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-7.jpg',
           alt: 'Torso de perfil en piel morena: antes con hematoma oscuro e hinchazón, después con el área más uniforme tras las sesiones postoperatorias, Derma.M',
           type: 'comparison'
         },
         {
-          src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg',
+          src: '/assets/images/landings/tratamientos-postoperatorios/resultado-postoperatorio-abdomen.jpg',
           alt: 'Primer plano del abdomen liso y tonificado de una paciente recostada tras completar su acompañamiento postoperatorio en Derma.M, West Palm Beach',
           type: 'result'
         }

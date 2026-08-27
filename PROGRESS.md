@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Rename SEO de las 8 imágenes del carrousel de postoperatorios
+- `postoperatorio-caso-1..7.{jpg,webp}` → `drenaje-linfatico-postoperatorio-antes-despues-1..7.{jpg,webp}`; `postoperatorio-caso-resultado.{jpg,webp}` → `resultado-postoperatorio-abdomen.{jpg,webp}`. `git mv` (16 archivos) + `src` actualizados en `landingPages.js` (`sed`).
+- **Motivo:** los nombres originales (`-caso-N`) los propuse priorizando "secuencia prolija" sobre el estándar SEO de filename; "caso" es palabra vacía para Google Imágenes. Feedback del usuario: cada sugerencia debe ir bien a la primera, no generar retrabajo. Se corrigió ahora porque la página aún no está indexada con esos nombres → costo ~0. Ver `DECISIONS.md` / feedback en memoria.
+- **Verificado:** las 8 slides sirven el `.webp` nuevo (`currentSrc`), 0 imágenes rotas, sin errores de consola, `test:visual` Postoperatorios 4/4 pixel-idéntico.
+
 ## 2026-08-27 — Endurecimiento SEO de las 3 landings (auditoría `/tratamientos-postoperatorios`)
 - Spec: `docs/superpowers/specs/2026-08-27-landings-seo-hardening-design.md`. Brainstorming corrido, alcance + spec aprobados. 7 ítems (1–4 transversales a las 3 landings `prfYFibrina`/`limpiezaFacial`/`postoperatorios`; 5–7 solo postoperatorios).
 - **1 — Dedupe `FAQPage`:** quitado el nodo `FAQPage` del `@graph` en `Postoperatorios.jsx`, `PrfYFibrina.jsx`, `LimpiezaFacial.jsx`. `FAQAccordion.jsx` queda como **única** fuente del `FAQPage` (ya lo emite en las 3 + `TreatmentDetailPage` + `Contacto`). Antes había 2 `FAQPage` idénticos por landing. Verificado: `faqCount === 1` en las 3.

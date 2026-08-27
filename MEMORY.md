@@ -56,7 +56,7 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - `LandingPage.jsx`: si `beforeAfter.layout === 'carousel'` renderiza `<BeforeAfterCarousel>` en vez de `<BeforeAfterGrid>`. Ninguna otra landing lo usa hoy. `TreatmentDetailPage` NO tiene esta rama.
 - Data en `landingPages.js`: `beforeAfter: { layout:'carousel', variant:'light', eyebrow, headline, items:[{src, alt, type}], disclaimer }`. `type` ∈ `'comparison'` (chips ANTES top-left + DESPUÉS top-right) | `'result'` (chip RESULTADO). 1 imagen por slide (las composites ya traen antes+después en el mismo archivo).
 - Carrousel: CSS `scroll-snap` (sin librería), flechas circulares 44px (`ChevronLeft/Right` de `lucide-react`, `disabled` en extremos, sin loop), 8 dots `<button>` sincronizados con el scroll. `role="region"`/`aria-roledescription="carousel"`, `prefers-reduced-motion` → scroll sin animar. `viewport` `max-width:620px` centrado en desktop, `100%` + flechas sobre el marco en <768px.
-- Primer uso: `/tratamientos-postoperatorios` → `postoperatorio-caso-1..7.jpg` + `postoperatorio-caso-resultado.jpg` (todas 1000×1250, 4:5) + `.webp` q78.
+- Primer uso: `/tratamientos-postoperatorios` → `drenaje-linfatico-postoperatorio-antes-despues-1..7.jpg` + `resultado-postoperatorio-abdomen.jpg` (todas 1000×1250, 4:5) + `.webp` q78. (Renombradas 2026-08-27 desde `postoperatorio-caso-*` por criterio SEO de filename — ver [[feedback_asset_naming_seo_first_time]].)
 - Test: `Postoperatorios Landing - Resultados carrousel` en `tests/visual.spec.js` (baselines `postoperatorios-resultados-carrousel-*`).
 
 ## Landings — schema y campos SEO (2026-08-27, endurecimiento SEO)

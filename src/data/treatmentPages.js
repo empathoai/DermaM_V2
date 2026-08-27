@@ -1063,7 +1063,15 @@ const customDetails = {
         question: '¿Puedo comer inmediatamente después de la limpieza?',
         answer: 'Sí. Puedes comer inmediatamente después de tu visita, a menos que el especialista aplique un sellador protector de flúor en el esmalte.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-antes.jpg',
+        after: '/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-despues.jpg',
+        beforeAlt: 'Dientes con acumulación de sarro en la línea de las encías antes de una limpieza dental estética en Derma.M, West Palm Beach',
+        afterAlt: 'Dientes limpios y pulidos tras una limpieza dental estética en Derma.M, West Palm Beach'
+      }]
+    }
   },
 
   // --- CAPILAR ---

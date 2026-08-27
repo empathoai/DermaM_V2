@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — limpieza-dental: antes/después reales (layout estándar) + webp + alt
+- **Imágenes:** usuario cargó `limpieza-dental-antes.jpg` / `limpieza-dental-despues.jpg` (1000×1250, 4:5, ~123–130 KB) en `public/assets/images/treatments/dental-estetico/limpieza-dental/`. Fotos intraorales reales del mismo caso: antes con sarro en la línea de las encías + leve inflamación gingival, después con dientes limpios/pulidos y encías más sanas.
+- **WebP q78** generados: antes 54 KB, después 58 KB.
+- **`treatmentPages.js`:** `customDetails['limpieza-dental'].beforeAfter` con las 2 rutas SEO + `beforeAlt`/`afterAlt` descriptivos en español. **Sin `beforeLabel`/`afterLabel`** → labels default `ANTES`/`DESPUÉS`. Usa el mismo mecanismo de override ya existente (cambio de 2026-08-26); cero cambio de componente/template.
+- **Verificado** en `/dental-estetico/limpieza-dental`: ANTES = sarro, DESPUÉS = limpio, 1000×1250 sirviendo webp, `alt` descriptivo, labels `ANTES`/`DESPUÉS`, disclaimer visible, sin errores de consola. Regresión OK: `/dental-estetico/blanqueamiento-dental` mantiene `PROCEDIMIENTO`/`ANTES Y DESPUÉS` + related card 426×426.
+- **Backlog 7.3** sigue abierto para los ~18 tratamientos restantes sin imágenes; `limpieza-dental` y `blanqueamiento-dental` ya no aplican.
+
 ## 2026-08-27 — alt descriptivo en el antes/después de limpieza-facial-profunda (cierra parte de 7.2)
 - Agregado `beforeAlt` / `afterAlt` al `beforeAfter.items[0]` de `limpieza-facial-profunda` en `landingPages.js` ("Piel del rostro antes/después de una limpieza facial profunda en Derma.M, West Palm Beach"). El componente ya soportaba el campo (cambio dental 2026-08-26); cero cambio de componente/template.
 - Verificado en `/limpieza-facial-profunda`: `alt` descriptivo en ambas imágenes, labels `ANTES`/`DESPUÉS` intactos, webp servido, sin errores de consola.

@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/data/treatmentPages.js": {
-    "mtime": 1787806268.0246515,
-    "ast_hash": "4b132ecc25b973ca35ac7091d4f4d4a6",
+    "mtime": 1787808439.5492659,
+    "ast_hash": "161d0b8f2a35eda5558cd74cce999919",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787806455.6064835,
-    "ast_hash": "575241e32ffe26adfe3df336264f6f69",
+    "mtime": 1787808491.9334888,
+    "ast_hash": "75f7d9b8e1f1e5d809c5d1491a30b161",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787807377.0587518,
-    "ast_hash": "4b6e959942eccde89ad13230ad2861c0",
+    "mtime": 1787808486.4782884,
+    "ast_hash": "febdb40d1255a7c10101dae78f974e9d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -2982,6 +2982,26 @@
   "public/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-procedimiento.webp": {
     "mtime": 1787805831.78,
     "ast_hash": "c29af931b6eb44a17818be0ee401ddb6",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-antes.jpg": {
+    "mtime": 1787808351.90426,
+    "ast_hash": "9e21c49638db3f175d86d33055404f35",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-antes.webp": {
+    "mtime": 1787808426.876,
+    "ast_hash": "1a04d1114d6419ebea6cf76ee2bef25e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-despues.jpg": {
+    "mtime": 1787808370.298612,
+    "ast_hash": "6202d1acc1e7592c0583df261cc65100",
+    "semantic_hash": ""
+  },
+  "public/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-despues.webp": {
+    "mtime": 1787808426.987,
+    "ast_hash": "fafdd1e9d3a28ab3b2eb2bf739b5e9ba",
     "semantic_hash": ""
   }
 }

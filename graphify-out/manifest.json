@@ -480,8 +480,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
-    "mtime": 1787810929.953367,
-    "ast_hash": "5b17c1341ba6ccd19f85406a789b3e2b",
+    "mtime": 1787831969.27113,
+    "ast_hash": "d1c0c6547ffe3382fc48a0e526bc1fce",
     "semantic_hash": ""
   },
   "src/components/shared/BenefitColumns/BenefitColumns.jsx": {
@@ -610,8 +610,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/LandingPage/LandingPage.jsx": {
-    "mtime": 1787824304.4985318,
-    "ast_hash": "24c0c1c3132e075f9b9f392dbecd1d42",
+    "mtime": 1787831978.1051834,
+    "ast_hash": "fee6107a4247ef567246d95ae1dd264c",
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
@@ -620,8 +620,8 @@
     "semantic_hash": ""
   },
   "src/components/utils/HeroMedia.jsx": {
-    "mtime": 1787224569.5608158,
-    "ast_hash": "9f9e98a389d1d276d9e2771348197520",
+    "mtime": 1787832154.5652814,
+    "ast_hash": "4877241cf02d7e4d53d16431629e3d53",
     "semantic_hash": ""
   },
   "src/components/utils/ScrollToTop.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787830842.2659328,
-    "ast_hash": "60d4785a06efbc8a4262a39b6dcb9f11",
+    "mtime": 1787832221.927168,
+    "ast_hash": "5c32f5f65d344976e9d64a279fd27c7d",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787830855.2176197,
-    "ast_hash": "4aed2db1de402f203f1c8b5486dd00e2",
+    "mtime": 1787832229.9921484,
+    "ast_hash": "65bbf3e87d720f6ab8d7f03cf112500f",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787830827.0805757,
-    "ast_hash": "4c7aab0b908077fc891a09c72484808a",
+    "mtime": 1787832206.3058577,
+    "ast_hash": "d7ee9385050cae2951df44921f6a1dd4",
     "semantic_hash": ""
   },
   "README.md": {
@@ -3025,8 +3025,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/BeforeAfterCarousel/BeforeAfterCarousel.jsx": {
-    "mtime": 1787821170.9280736,
-    "ast_hash": "0ca132aca22eaa40748e1749d0149bfd",
+    "mtime": 1787831973.7562833,
+    "ast_hash": "376db38c53bf58e8fa4f6f2ac8b08690",
     "semantic_hash": ""
   },
   "tests/visual.spec.js-snapshots/postoperatorios-resultados-carrousel-desktop-chrome-win32.png": {

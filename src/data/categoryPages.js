@@ -52,7 +52,7 @@ export const categoryPages = {
           image: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
         },
         {
-          title: 'PRP Y FIBRINA',
+          title: 'PLASMA RICO EN PLAQUETAS Y FIBRINA',
           description: 'Bioestimulación autóloga para firmeza y textura.',
           benefits: [
             'Bioestimulación natural',

@@ -76,7 +76,7 @@ export default function FeaturedServices() {
           <div className={styles.contentColDark}>
             <p className={styles.editorialLabelDark}>Bioestimulación</p>
             <div className={styles.dividerDark}></div>
-            <h3 className={styles.treatmentNameDark}>PRP y Fibrina</h3>
+            <h3 className={styles.treatmentNameDark}>Plasma Rico en Plaquetas y Fibrina</h3>
             <p className={styles.outcomeDark}>Bioestimulación cutánea natural y progresiva.</p>
             <ul className={styles.benefitsListDark}>
               <li><span className={styles.bulletDark}></span>Apoyo a la firmeza</li>

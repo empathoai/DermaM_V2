@@ -36,7 +36,7 @@ export default function Footer() {
             <h3 className={styles.colHeading}>Tratamientos</h3>
             <ul className={styles.linkList}>
               <li><Link to="/limpieza-facial-profunda" className={styles.link}>Limpieza Facial Profunda</Link></li>
-              <li><Link to="/prf-y-fibrina" className={styles.link}>PRP y Fibrina</Link></li>
+              <li><Link to="/prf-y-fibrina" className={styles.link}>Plasma Rico en Plaquetas y Fibrina</Link></li>
               <li><Link to="/tratamientos-postoperatorios" className={styles.link}>Postoperatorios</Link></li>
               <li><Link to="/faciales" className={styles.link}>Faciales</Link></li>
               <li><Link to="/corporales" className={styles.link}>Corporales</Link></li>

@@ -30,7 +30,7 @@ export default function FacialesPage() {
           "description": "Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en Derma.M.",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Limpieza Facial Profunda", "url": "https://dermamskinhealth.com/limpieza-facial-profunda" },
-            { "@type": "ListItem", "position": 2, "name": "PRP y Fibrina", "url": "https://dermamskinhealth.com/prf-y-fibrina" },
+            { "@type": "ListItem", "position": 2, "name": "Plasma Rico en Plaquetas y Fibrina", "url": "https://dermamskinhealth.com/prf-y-fibrina" },
             { "@type": "ListItem", "position": 3, "name": "Hidrofacial", "url": "https://dermamskinhealth.com/faciales/hidrofacial" },
             { "@type": "ListItem", "position": 4, "name": "Microneedling / Dermapen", "url": "https://dermamskinhealth.com/faciales/microneedling" },
             { "@type": "ListItem", "position": 5, "name": "HIFU Facial", "url": "https://dermamskinhealth.com/faciales/hifu-facial" },

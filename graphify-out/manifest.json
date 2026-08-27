@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   "src/components/layout/Footer/Footer.jsx": {
-    "mtime": 1787192971.682624,
-    "ast_hash": "0ad160fe3b95c52ba92e9069b4226457",
+    "mtime": 1787813106.4866445,
+    "ast_hash": "5877f9417f1dc1e4a1ec39824c08fc2c",
     "semantic_hash": ""
   },
   "src/components/layout/LegalContent.jsx": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "src/components/layout/Navbar/Navbar.jsx": {
-    "mtime": 1787208054.319527,
-    "ast_hash": "06bbe246ca3afbdd5dd0bd5d3294d096",
+    "mtime": 1787813101.8140082,
+    "ast_hash": "5bff28bd49d9597c918f6bf4590065d9",
     "semantic_hash": ""
   },
   "src/components/sections/ClinicalPositioning/ClinicalPositioning.jsx": {
@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/FeaturedServices/FeaturedServices.jsx": {
-    "mtime": 1787224731.2655299,
-    "ast_hash": "d0179b524f8b32fe9ffc25f11dd5f658",
+    "mtime": 1787813110.7753532,
+    "ast_hash": "809e7671a7709c6b7f776ceab081724b",
     "semantic_hash": ""
   },
   "src/components/sections/FinalCTA/FinalCTA.jsx": {
@@ -640,8 +640,8 @@
     "semantic_hash": ""
   },
   "src/data/categoryPages.js": {
-    "mtime": 1787211226.71435,
-    "ast_hash": "50cbd1590fc1c1b685fcabac1619ec00",
+    "mtime": 1787813115.5714421,
+    "ast_hash": "3c9ad20c840ef0f539d565d5af6a1044",
     "semantic_hash": ""
   },
   "src/data/contactPage.js": {
@@ -650,8 +650,8 @@
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787810947.060547,
-    "ast_hash": "481d672290023ce73a7a50f250b84a2e",
+    "mtime": 1787813155.317312,
+    "ast_hash": "d00769af0e42193290ea2a1864ba60a3",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -740,8 +740,8 @@
     "semantic_hash": ""
   },
   "src/pages/hubs/Faciales.jsx": {
-    "mtime": 1787208037.206236,
-    "ast_hash": "483e4bb64adde5d091924eabbbb0d294",
+    "mtime": 1787813124.5867994,
+    "ast_hash": "b244f56b124b5fbbb392e7f679c15191",
     "semantic_hash": ""
   },
   "src/pages/hubs/IvTherapy.jsx": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "src/pages/landings/PrfYFibrina.jsx": {
-    "mtime": 1787222237.0862098,
-    "ast_hash": "9146adb64d0d44c6aec4a79bbe5d963c",
+    "mtime": 1787813093.0574038,
+    "ast_hash": "088a9327945215da6ce3696a12d5fd9a",
     "semantic_hash": ""
   },
   "src/pages/treatments/capilar/[treatment].jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787811079.8691697,
-    "ast_hash": "3831063866d5de75219e7e625588f3cb",
+    "mtime": 1787813295.2535894,
+    "ast_hash": "fd0b7124ba11effeac4b4a509ce429d6",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787811093.887828,
-    "ast_hash": "fd5a433982e3b246b9e1594ccdaf82a0",
+    "mtime": 1787813331.2505727,
+    "ast_hash": "c993925162103a50a28ffcf1184c887a",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787811055.7239041,
-    "ast_hash": "933a994b978f9e2fcbfac7784c96b193",
+    "mtime": 1787813278.8144083,
+    "ast_hash": "c7ec4e1302fbcd955b973b76bd5f58fa",
     "semantic_hash": ""
   },
   "README.md": {

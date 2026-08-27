@@ -2,6 +2,15 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Backlog 8.9/8.10: nombre público unificado a "Plasma Rico en Plaquetas y Fibrina"
+- **Contexto:** el tratamiento se llamaba "PRP y Fibrina" / "PRP Y FIBRINA" en 9 lugares de nombre público mientras el H1/body/schema ya decían "Plasma Rico en Plaquetas y Fibrina" → señal de entidad partida. "PRF" no tiene volumen de búsqueda. Spec: `docs/superpowers/specs/2026-08-27-item-8.9-plasma-rico-en-plaquetas-naming-design.md`. Brainstorming corrido, aprobado.
+- **Cambios (todos texto):** `Navbar.jsx` ×2 (desktop + mobile), `Footer.jsx`, `FeaturedServices.jsx` (`<h3>` home), `categoryPages.js:55` (`title`), `landingPages.js:147` (CTA headline), `Faciales.jsx:33` (`name` en BreadcrumbList schema), `PrfYFibrina.jsx` (`<title>` + `og:title` + `twitter:title` → `Plasma Rico en Plaquetas y Fibrina | Derma.M`, se soltó "en West Palm Beach" del title para no pasar ~60 chars; + fallback de `description` en schema).
+- **Extra sobre el spec (justificado):** también se cambiaron 2 preguntas de FAQ que **nombran** el tratamiento (`landingPages.js:116,120`), no que explican la diferencia. Las FAQ 136/137/141 que explican "PRP vs PRF" **se conservan con las siglas** — ahí son correctas.
+- **8.10 cerrado sin código:** las FAQ ya diferencian PRP/PRF (protocolo tópico combinado con Dermapen, no inyección); el sitio no usa "Vampire Facial®" (marca registrada); transparencia de precio = decisión de negocio, no código.
+- **No se tocó:** el slug `/prf-y-fibrina` (señal on-page débil; cambiarlo obliga a `sitemap.xml` + 301 en `.htaccess` protegidos + todos los `to=`).
+- **Verificado:** `/prf-y-fibrina` title/og/twitter nuevos, H1 sin cambio, CTA headline OK; mega-menú desktop 1 línea; mobile 375px 1 línea sin overflow-x; `<h3>` home 2 líneas OK; footer link OK; schema de `/faciales` con nombre nuevo, sin el viejo; sin errores de consola. `grep "PRP y Fibrina"` en src → solo las 2 FAQ explicativas restantes (esperado).
+- **Pendiente:** `npm run test:visual` — diffs esperados en home, `/prf-y-fibrina`, `/faciales`, navbar/footer.
+
 ## 2026-08-27 — prf-y-fibrina "RESULTADOS": video de procedimiento + imagen de resultado
 - **Contexto:** no hay antes/después de PRF; el usuario aportó 1 imagen de resultado + 1 video 4:5 del procedimiento. Layout: izq = PROCEDIMIENTO (video), der = RESULTADO (imagen). Spec: `docs/superpowers/specs/2026-08-27-prf-y-fibrina-resultados-video-design.md`. Brainstorming corrido, enfoque aprobado.
 - **`BeforeAfterGrid.jsx`:** refactor a sub-render `SlotMedia` con helper `isVideo(src)` (`.mp4`). Si el slot es video → `<video autoPlay muted loop playsInline preload="metadata" poster={src→.jpg} aria-label={alt}>`; si no → `<Picture>` como antes. `fallbackAlt="Before"/"After"` conserva el default previo para las landings/tratamientos sin `alt`. Cero props nuevas. El branch de video solo se activa con un src `.mp4` → sin impacto para el resto de callers (verificado en limpieza-facial-profunda, tratamientos-postoperatorios, blanqueamiento-dental).

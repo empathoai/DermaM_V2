@@ -113,11 +113,11 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿Qué es el protocolo de PRP y Fibrina y cómo se diferencia de las inyecciones tradicionales?',
+          question: '¿Qué es el protocolo de Plasma Rico en Plaquetas y Fibrina y cómo se diferencia de las inyecciones tradicionales?',
           answer: 'Nuestro protocolo combina el Plasma Rico en Plaquetas (PRP) con Fibrina Rica en Plaquetas (PRF) y se aplica únicamente de forma tópica mediante micro-infusión con Dermapen. A diferencia de las inyecciones de PRP convencional, este método no invasivo distribuye los factores naturales de forma uniforme sobre la superficie del rostro para mejorar la textura y firmeza sin pinchazos profundos ni hematomas severos.'
         },
         {
-          question: '¿Es dolorosa la aplicación de PRP y Fibrina?',
+          question: '¿Es dolorosa la aplicación de Plasma Rico en Plaquetas y Fibrina?',
           answer: 'Para garantizar tu comodidad, aplicamos un gel calmante de alta potencia antes de la sesión. Los micro-pinchazos se realizan de forma muy suave y rápida, haciéndolo sumamente tolerable.'
         },
         {
@@ -144,7 +144,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE SI PRP Y FIBRINA ES ADECUADO PARA TU PIEL',
+      headline: 'DESCUBRE SI PLASMA RICO EN PLAQUETAS Y FIBRINA ES ADECUADO PARA TU PIEL',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo puede acompañar tus objetivos de firmeza, textura y luminosidad.',
       primaryCta: 'RESERVAR',
       secondaryCta: 'WHATSAPP',

@@ -4,7 +4,8 @@ export const landingPages = {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA',
       body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
-      backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg'
+      backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg',
+      imageAlt: 'Manos con guantes extrayendo con pinzas el coágulo de fibrina de un tubo con plasma separado, junto a la centrífuga en Derma.M'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Progresivo", icon: "result" },
@@ -27,7 +28,8 @@ export const landingPages = {
         'Interés en bioestimulación natural',
         'Búsqueda de resultados graduales'
       ],
-      image: '/assets/images/landings/prf-y-fibrina/how-it-works.jpg'
+      image: '/assets/images/landings/prf-y-fibrina/how-it-works.jpg',
+      imageAlt: 'Profesional retirando la membrana de fibrina de un tubo de sangre centrifugada con pinzas, con centrífuga y gradilla de tubos al fondo'
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
@@ -157,7 +159,8 @@ export const landingPages = {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'LIMPIEZA FACIAL PROFUNDA',
       body: 'Preparamos la piel para que tus productos en casa funcionen perfectamente, te asesoramos y guiamos en el proceso.',
-      backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
+      backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg',
+      imageAlt: 'Clienta recostada con una mascarilla facial purificante blanca y banda de spa durante una limpieza facial profunda en Derma.M, West Palm Beach'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Inmediato", icon: "result" },
@@ -177,7 +180,8 @@ export const landingPages = {
         'Sensación de piel pesada',
         'Necesidad de preparación para otros tratamientos'
       ],
-      image: '/assets/images/landings/limpieza-facial-profunda/how-it-works.jpg'
+      image: '/assets/images/landings/limpieza-facial-profunda/how-it-works.jpg',
+      imageAlt: 'Esteticista retirando producto del rostro de una clienta con algodón, junto al vapor facial y la bandeja de instrumentos en Derma.M'
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
@@ -296,8 +300,9 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTO DESTACADO',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
-      body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético.',
-      backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg'
+      body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestra clínica de West Palm Beach.',
+      backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
+      imageAlt: 'Especialista con guantes realiza un masaje de drenaje manual en el abdomen de una clienta recostada en la camilla de Derma.M, West Palm Beach'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Primera sesión", icon: "result" },
@@ -317,7 +322,8 @@ export const landingPages = {
         'Recuperación después de procedimiento corporal',
         'Búsqueda de seguimiento profesional'
       ],
-      image: '/assets/images/landings/tratamientos-postoperatorios/how-it-works.jpg'
+      image: '/assets/images/landings/tratamientos-postoperatorios/how-it-works.jpg',
+      imageAlt: 'Terapeuta de Derma.M aplicando drenaje linfático manual sobre el abdomen de una clienta durante una sesión postoperatoria'
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
@@ -372,46 +378,53 @@ export const landingPages = {
       items: [
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.jpg',
-          alt: 'Abdomen de paciente antes y después de acompañamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          alt: 'Vista lateral de torso y cadera: izquierda con hematomas e inflamación postoperatorios; derecha con el contorno más liso tras el acompañamiento en Derma.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.jpg',
-          alt: 'Contorno corporal de paciente antes y después de tratamiento postoperatorio con masaje reductor en Derma.M, West Palm Beach',
+          alt: 'Costado y espalda baja de una paciente antes y después del drenaje postoperatorio: menos hematomas y flanco más uniforme, Derma.M, West Palm Beach',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.jpg',
-          alt: 'Zona abdominal de paciente antes y después de sesiones de drenaje linfático postoperatorio en Derma.M, West Palm Beach',
+          alt: 'Vista posterior de espalda baja y glúteos: antes con hematomas y marcas de faja, después con la piel más pareja tras las sesiones postoperatorias',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.jpg',
-          alt: 'Perfil corporal de paciente antes y después de acompañamiento postoperatorio en Derma.M, West Palm Beach',
+          alt: 'Costado de una paciente antes y después del acompañamiento postoperatorio: menos hematomas en las costillas y cintura más definida, Derma.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg',
-          alt: 'Abdomen y cintura de paciente antes y después de tratamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          alt: 'Cadera y muslo vistos de lado: antes con un hematoma amplio e inflamación, después con la zona más lisa tras el drenaje linfático postoperatorio en Derma.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg',
-          alt: 'Contorno abdominal de paciente antes y después de sesiones de recuperación postoperatoria en Derma.M, West Palm Beach',
+          alt: 'Abdomen de frente antes y después del acompañamiento postoperatorio: menos inflamación y hematomas en la parte baja, Derma.M, West Palm Beach',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg',
-          alt: 'Zona corporal tratada de paciente antes y después de acompañamiento postoperatorio en Derma.M, West Palm Beach',
+          alt: 'Torso de perfil en piel morena: antes con hematoma oscuro e hinchazón, después con el área más uniforme tras las sesiones postoperatorias, Derma.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg',
-          alt: 'Abdomen definido de paciente tras acompañamiento postoperatorio con drenaje linfático en Derma.M, West Palm Beach',
+          alt: 'Primer plano del abdomen liso y tonificado de una paciente recostada tras completar su acompañamiento postoperatorio en Derma.M, West Palm Beach',
           type: 'result'
         }
       ],
       disclaimer: 'Fotografías de casos reales de pacientes de Derma.M. Cada proceso postoperatorio es individual: los resultados varían según el procedimiento previo realizado, las características de cada persona y el seguimiento de las indicaciones. Ningún contenido de este sitio garantiza resultados específicos.'
+    },
+    relatedLinks: {
+      label: 'Explora también',
+      links: [
+        { text: 'Tratamientos corporales', to: '/corporales' },
+        { text: 'Agenda una valoración', to: '/contacto' }
+      ]
     },
     brandPromise: 'CUIDADO PROFESIONAL EN CADA ETAPA DE TU RECUPERACIÓN',
     testimonials: {

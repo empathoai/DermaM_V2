@@ -59,6 +59,13 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - Primer uso: `/tratamientos-postoperatorios` → `postoperatorio-caso-1..7.jpg` + `postoperatorio-caso-resultado.jpg` (todas 1000×1250, 4:5) + `.webp` q78.
 - Test: `Postoperatorios Landing - Resultados carrousel` en `tests/visual.spec.js` (baselines `postoperatorios-resultados-carrousel-*`).
 
+## Landings — schema y campos SEO (2026-08-27, endurecimiento SEO)
+- Las 3 landings (`prfYFibrina`, `limpiezaFacial`, `postoperatorios`) tienen en el `@graph` de su Helmet: `Service` + `BreadcrumbList`. **Ya NO** llevan `FAQPage` a nivel Helmet — ese lo emite `FAQAccordion.jsx` (fuente única). Ver [[decisions]] 2026-08-27.
+- `Service.provider` = `{ "@id": "https://dermamskinhealth.com/#organization" }` (nodo canónico en `Home.jsx`), nunca redeclarar address. `Service` lleva `areaServed` (City WPB) + `image` (hero.jpg absoluto) + `name` Title Case literal.
+- `BreadcrumbList` de 3 niveles: Inicio (`https://dermamskinhealth.com/`) › Hub › Tratamiento. Hubs canónicos: `/corporales`, `/faciales` (sin prefijo `tratamientos-`).
+- `PageHero.jsx` tiene prop opcional `imageAlt` (`alt={imageAlt || title}`). Solo `LandingPage` la pasa (`hero.imageAlt`). Data de landing: `hero.imageAlt` y `problem.imageAlt` opcionales; si faltan, el alt cae al `title`/`headline` (MAYÚSCULAS, evitar).
+- Campo opcional `relatedLinks: { label, links:[{text,to}] }` en landing data → bloque `7b` en `LandingPage.jsx` (`<Link>` react-router, clase `.relatedLinks`), solo renderiza si hay links. Hoy solo `postoperatorios` (→ `/corporales`, `/contacto`).
+
 ## Known constraints / do-nots
 - Don't introduce Next.js, styled-components, Framer Motion, or another CSS framework (per `AGENTS.md`).
 - Don't modify `public/.htaccess`, `robots.txt`, `sitemap.xml`, `llms.txt` without explicit step-by-step instruction.

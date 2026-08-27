@@ -27,36 +27,25 @@ export default function LimpiezaFacialPage() {
           "@graph": [
             {
               "@type": "Service",
-              "name": landingPages.limpiezaFacial?.hero?.title || "Limpieza Facial Profunda",
+              "name": "Limpieza Facial Profunda",
               "description": landingPages.limpiezaFacial?.hero?.body || "Limpieza facial profunda en Derma.M.",
               "url": "https://dermamskinhealth.com/limpieza-facial-profunda",
               "serviceType": "Aesthetic Treatment",
+              "image": "https://dermamskinhealth.com/assets/images/landings/limpieza-facial-profunda/hero.jpg",
+              "areaServed": { "@type": "City", "name": "West Palm Beach" },
               "provider": {
                 "@type": "HealthAndBeautyBusiness",
-                "name": "Derma.M",
-                "url": "https://dermamskinhealth.com",
-                "address": [
-                  {
-                    "@type": "PostalAddress",
-                    "streetAddress": "5707 S Dixie Hwy UNIT D",
-                    "addressLocality": "West Palm Beach",
-                    "addressRegion": "FL",
-                    "postalCode": "33405",
-                    "addressCountry": "US"
-                  }
-                ]
+                "@id": "https://dermamskinhealth.com/#organization",
+                "name": "Derma.M"
               }
             },
             {
-              "@type": "FAQPage",
-              "mainEntity": (landingPages.limpiezaFacial?.faq?.items || []).map((item) => ({
-                "@type": "Question",
-                "name": item.question,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": item.answer
-                }
-              }))
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Tratamientos Faciales", "item": "https://dermamskinhealth.com/faciales" },
+                { "@type": "ListItem", "position": 3, "name": "Limpieza Facial Profunda", "item": "https://dermamskinhealth.com/limpieza-facial-profunda" }
+              ]
             }
           ]
         })}</script>

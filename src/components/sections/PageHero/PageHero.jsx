@@ -10,6 +10,7 @@ export default function PageHero({
   title,
   body,
   backgroundImage,
+  imageAlt,
   variant = 'default',
   primaryCta,
   secondaryCta,
@@ -36,9 +37,9 @@ export default function PageHero({
       className={`${styles.pageHero} ${isLanding ? styles.landingHeight : ''} ${!hasTrustBar ? styles.fullViewport : ''}`}
     >
       <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
-        <HeroMedia 
-          src={backgroundImage} 
-          alt={title} 
+        <HeroMedia
+          src={backgroundImage}
+          alt={imageAlt || title}
           onReady={() => setMediaReady(true)}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />

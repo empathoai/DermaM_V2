@@ -27,36 +27,25 @@ export default function PostoperatoriosPage() {
           "@graph": [
             {
               "@type": "Service",
-              "name": landingPages.postoperatorios?.hero?.title || "Tratamientos Postoperatorios",
+              "name": "Tratamientos Postoperatorios",
               "description": landingPages.postoperatorios?.hero?.body || "Acompañamiento postoperatorio en Derma.M.",
               "url": "https://dermamskinhealth.com/tratamientos-postoperatorios",
               "serviceType": "Aesthetic Treatment",
+              "image": "https://dermamskinhealth.com/assets/images/landings/tratamientos-postoperatorios/hero.jpg",
+              "areaServed": { "@type": "City", "name": "West Palm Beach" },
               "provider": {
                 "@type": "HealthAndBeautyBusiness",
-                "name": "Derma.M",
-                "url": "https://dermamskinhealth.com",
-                "address": [
-                  {
-                    "@type": "PostalAddress",
-                    "streetAddress": "5707 S Dixie Hwy UNIT D",
-                    "addressLocality": "West Palm Beach",
-                    "addressRegion": "FL",
-                    "postalCode": "33405",
-                    "addressCountry": "US"
-                  }
-                ]
+                "@id": "https://dermamskinhealth.com/#organization",
+                "name": "Derma.M"
               }
             },
             {
-              "@type": "FAQPage",
-              "mainEntity": (landingPages.postoperatorios?.faq?.items || []).map((item) => ({
-                "@type": "Question",
-                "name": item.question,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": item.answer
-                }
-              }))
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Tratamientos Corporales", "item": "https://dermamskinhealth.com/corporales" },
+                { "@type": "ListItem", "position": 3, "name": "Tratamientos Postoperatorios", "item": "https://dermamskinhealth.com/tratamientos-postoperatorios" }
+              ]
             }
           ]
         })}</script>

@@ -27,36 +27,25 @@ export default function PrfYFibrinaPage() {
           "@graph": [
             {
               "@type": "Service",
-              "name": landingPages.prfYFibrina?.hero?.title?.replace(/\n/g, ' ') || "Plasma Rico en Plaquetas y Fibrina",
+              "name": "Plasma Rico en Plaquetas y Fibrina",
               "description": landingPages.prfYFibrina?.hero?.body || "Bioestimulación cutánea con Plasma Rico en Plaquetas y Fibrina en Derma.M.",
               "url": "https://dermamskinhealth.com/prf-y-fibrina",
               "serviceType": "Aesthetic Treatment",
+              "image": "https://dermamskinhealth.com/assets/images/landings/prf-y-fibrina/hero.jpg",
+              "areaServed": { "@type": "City", "name": "West Palm Beach" },
               "provider": {
                 "@type": "HealthAndBeautyBusiness",
-                "name": "Derma.M",
-                "url": "https://dermamskinhealth.com",
-                "address": [
-                  {
-                    "@type": "PostalAddress",
-                    "streetAddress": "5707 S Dixie Hwy UNIT D",
-                    "addressLocality": "West Palm Beach",
-                    "addressRegion": "FL",
-                    "postalCode": "33405",
-                    "addressCountry": "US"
-                  }
-                ]
+                "@id": "https://dermamskinhealth.com/#organization",
+                "name": "Derma.M"
               }
             },
             {
-              "@type": "FAQPage",
-              "mainEntity": (landingPages.prfYFibrina?.faq?.items || []).map((item) => ({
-                "@type": "Question",
-                "name": item.question,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": item.answer
-                }
-              }))
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Tratamientos Faciales", "item": "https://dermamskinhealth.com/faciales" },
+                { "@type": "ListItem", "position": 3, "name": "Plasma Rico en Plaquetas y Fibrina", "item": "https://dermamskinhealth.com/prf-y-fibrina" }
+              ]
             }
           ]
         })}</script>

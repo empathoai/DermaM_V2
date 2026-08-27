@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHero from '../../sections/PageHero/PageHero';
 import TreatmentQuickFacts from '../../shared/TreatmentQuickFacts/TreatmentQuickFacts';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
@@ -26,6 +27,7 @@ export default function LandingPage({ data }) {
     benefits,
     howItWorks,
     beforeAfter,
+    relatedLinks,
     brandPromise,
     testimonials,
     faq,
@@ -44,6 +46,7 @@ export default function LandingPage({ data }) {
           title={hero.title}
           body={hero.body}
           backgroundImage={hero.backgroundImage}
+          imageAlt={hero.imageAlt}
           variant="landing"
           primaryCta={hero.primaryCta || 'AGENDA TU VALORACIÓN'}
           secondaryCta={hero.secondaryCta || 'WHATSAPP'}
@@ -78,7 +81,7 @@ export default function LandingPage({ data }) {
             <div className={styles.problemMedia}>
               <Picture
                 src={problem.image}
-                alt={problem.headline}
+                alt={problem.imageAlt || problem.headline}
                 className={styles.problemImage}
                 loading="lazy"
               />
@@ -144,6 +147,22 @@ export default function LandingPage({ data }) {
                 variant="light"
               />
             )}
+          </div>
+        </section>
+      )}
+
+      {/* 7b. Related internal links */}
+      {relatedLinks?.links?.length > 0 && (
+        <section className={styles.relatedLinks}>
+          <div className={styles.container}>
+            <p className={styles.relatedLinksLabel}>{relatedLinks.label}</p>
+            <ul className={styles.relatedLinksList}>
+              {relatedLinks.links.map((link) => (
+                <li key={link.to}>
+                  <Link to={link.to} className={styles.relatedLinksLink}>{link.text}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}

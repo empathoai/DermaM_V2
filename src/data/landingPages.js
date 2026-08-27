@@ -226,7 +226,9 @@ export const landingPages = {
       items: [
         {
           before: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg',
-          after: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg'
+          after: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg',
+          beforeAlt: 'Piel del rostro antes de una limpieza facial profunda en Derma.M, West Palm Beach',
+          afterAlt: 'Piel del rostro después de una limpieza facial profunda en Derma.M, West Palm Beach'
         }
       ],
       disclaimer: 'Imágenes de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'

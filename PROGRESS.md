@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — alt descriptivo en el antes/después de limpieza-facial-profunda (cierra parte de 7.2)
+- Agregado `beforeAlt` / `afterAlt` al `beforeAfter.items[0]` de `limpieza-facial-profunda` en `landingPages.js` ("Piel del rostro antes/después de una limpieza facial profunda en Derma.M, West Palm Beach"). El componente ya soportaba el campo (cambio dental 2026-08-26); cero cambio de componente/template.
+- Verificado en `/limpieza-facial-profunda`: `alt` descriptivo en ambas imágenes, labels `ANTES`/`DESPUÉS` intactos, webp servido, sin errores de consola.
+- Backlog 7.2 baja a "casi cerrado": faltan `prf-y-fibrina` y `tratamientos-postoperatorios` (sin imágenes reales — el `alt` va en el mismo edit cuando se agreguen).
+
 ## 2026-08-27 — Fix: cards de "Te puede interesar" ya no se estiran con <3 relacionados
 - **Síntoma:** en `/dental-estetico/*` y `/laser-y-luz/*` la sección "Te puede interesar" mostraba 1 sola card estirada a todo el ancho con imagen cuadrada gigante (hasta 1315px).
 - **Causa (preexistente, no de esta sesión):** `RelatedTreatments.jsx:26` pasaba `columns={items.length >= 3 ? 3 : items.length}`. `dentalEstetico` y `laserYLuz` tienen 2 tratamientos → lista de relacionados = 1 item → `columns={1}` → clase `cols1` que **no existe** en `TreatmentGrid.module.css` (solo `.cols2`/`.cols3`) → card sin `flex-basis` estirada. Bug desde `34bdffd` (jun 2026), expuesto al reducir tratamientos por categoría.

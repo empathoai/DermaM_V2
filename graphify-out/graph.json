@@ -1300,7 +1300,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "cli_main_confirm",
-      "community": 34,
+      "community": 44,
       "norm_label": "confirm()"
     },
     {
@@ -1460,7 +1460,7 @@
       "source_location": "L730",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlikefromprops",
-      "community": 37,
+      "community": 23,
       "norm_label": "iscardlikefromprops()"
     },
     {
@@ -1590,7 +1590,7 @@
       "source_location": "L1297",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_parseradiustopx",
-      "community": 37,
+      "community": 23,
       "norm_label": "parseradiustopx()"
     },
     {
@@ -1600,7 +1600,7 @@
       "source_location": "L1311",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_resolveborderradiuspx",
-      "community": 37,
+      "community": 23,
       "norm_label": "resolveborderradiuspx()"
     },
     {
@@ -2010,7 +2010,7 @@
       "source_location": "L2534",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlikedom",
-      "community": 37,
+      "community": 23,
       "norm_label": "iscardlikedom()"
     },
     {
@@ -2020,7 +2020,7 @@
       "source_location": "L2546",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_checklayout",
-      "community": 37,
+      "community": 23,
       "norm_label": "checklayout()"
     },
     {
@@ -2040,7 +2040,7 @@
       "source_location": "L2658",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_iscardlike",
-      "community": 37,
+      "community": 23,
       "norm_label": "iscardlike()"
     },
     {
@@ -2050,7 +2050,7 @@
       "source_location": "L2678",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_checkpagelayout",
-      "community": 37,
+      "community": 23,
       "norm_label": "checkpagelayout()"
     },
     {
@@ -2460,7 +2460,7 @@
       "source_location": "L3400",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_detachoverlay",
-      "community": 23,
+      "community": 132,
       "norm_label": "detachoverlay()"
     },
     {
@@ -2500,7 +2500,7 @@
       "source_location": "L3665",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_buildselectorsegment",
-      "community": 58,
+      "community": 23,
       "norm_label": "buildselectorsegment()"
     },
     {
@@ -2510,7 +2510,7 @@
       "source_location": "L3696",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_generateselector",
-      "community": 58,
+      "community": 23,
       "norm_label": "generateselector()"
     },
     {
@@ -2780,7 +2780,7 @@
       "source_location": "L4418",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addbrowserfindings",
-      "community": 23,
+      "community": 132,
       "norm_label": "addbrowserfindings()"
     },
     {
@@ -2810,7 +2810,7 @@
       "source_location": "L4536",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_shouldrunvisualcontrast",
-      "community": 23,
+      "community": 132,
       "norm_label": "shouldrunvisualcontrast()"
     },
     {
@@ -2820,7 +2820,7 @@
       "source_location": "L4540",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_visualcontrastoptions",
-      "community": 23,
+      "community": 132,
       "norm_label": "visualcontrastoptions()"
     },
     {
@@ -2840,7 +2840,7 @@
       "source_location": "L4578",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_disconnectlazyvisualcontrastobserver",
-      "community": 23,
+      "community": 132,
       "norm_label": "disconnectlazyvisualcontrastobserver()"
     },
     {
@@ -2850,7 +2850,7 @@
       "source_location": "L4586",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addvisualcontrastresult",
-      "community": 23,
+      "community": 132,
       "norm_label": "addvisualcontrastresult()"
     },
     {
@@ -2900,7 +2900,7 @@
       "source_location": "L4647",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_schedulelazyvisualcontrast",
-      "community": 23,
+      "community": 132,
       "norm_label": "schedulelazyvisualcontrast()"
     },
     {
@@ -2910,7 +2910,7 @@
       "source_location": "L4707",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_addvisualcontrastfindings",
-      "community": 23,
+      "community": 132,
       "norm_label": "addvisualcontrastfindings()"
     },
     {
@@ -2930,7 +2930,7 @@
       "source_location": "L4734",
       "_origin": "ast",
       "id": "detector_detect_antipatterns_browser_clearoverlays",
-      "community": 23,
+      "community": 132,
       "norm_label": "clearoverlays()"
     },
     {
@@ -4630,7 +4630,7 @@
       "source_location": "L1674",
       "_origin": "ast",
       "id": "rules_checks_checkpagequalityfromdoc",
-      "community": 14,
+      "community": 9,
       "norm_label": "checkpagequalityfromdoc()"
     },
     {
@@ -4640,7 +4640,7 @@
       "source_location": "L1695",
       "_origin": "ast",
       "id": "rules_checks_checkpagequalitydom",
-      "community": 14,
+      "community": 9,
       "norm_label": "checkpagequalitydom()"
     },
     {
@@ -4770,7 +4770,7 @@
       "source_location": "L2010",
       "_origin": "ast",
       "id": "rules_checks_checkpagetypography",
-      "community": 9,
+      "community": 34,
       "norm_label": "checkpagetypography()"
     },
     {
@@ -5870,7 +5870,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "lib_impeccable_paths_getlegacylivesessionsdir",
-      "community": 63,
+      "community": 37,
       "norm_label": "getlegacylivesessionsdir()"
     },
     {
@@ -6350,7 +6350,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "scripts_live_browser_writescrolly",
-      "community": 12,
+      "community": 30,
       "norm_label": "writescrolly()"
     },
     {
@@ -6530,7 +6530,7 @@
       "source_location": "L656",
       "_origin": "ast",
       "id": "scripts_live_browser_pointstopath",
-      "community": 123,
+      "community": 8,
       "norm_label": "pointstopath()"
     },
     {
@@ -6560,7 +6560,7 @@
       "source_location": "L716",
       "_origin": "ast",
       "id": "scripts_live_browser_buildpinelement",
-      "community": 123,
+      "community": 8,
       "norm_label": "buildpinelement()"
     },
     {
@@ -6610,7 +6610,7 @@
       "source_location": "L827",
       "_origin": "ast",
       "id": "scripts_live_browser_buildannotationsforcapture",
-      "community": 123,
+      "community": 8,
       "norm_label": "buildannotationsforcapture()"
     },
     {
@@ -7120,7 +7120,7 @@
       "source_location": "L1750",
       "_origin": "ast",
       "id": "scripts_live_browser_cursorforinsertaxis",
-      "community": 8,
+      "community": 31,
       "norm_label": "cursorforinsertaxis()"
     },
     {
@@ -7200,7 +7200,7 @@
       "source_location": "L1828",
       "_origin": "ast",
       "id": "scripts_live_browser_cursorforplaceholderedge",
-      "community": 19,
+      "community": 8,
       "norm_label": "cursorforplaceholderedge()"
     },
     {
@@ -7250,7 +7250,7 @@
       "source_location": "L1920",
       "_origin": "ast",
       "id": "scripts_live_browser_ensurepickcursorstyle",
-      "community": 8,
+      "community": 31,
       "norm_label": "ensurepickcursorstyle()"
     },
     {
@@ -7260,7 +7260,7 @@
       "source_location": "L1934",
       "_origin": "ast",
       "id": "scripts_live_browser_syncpageinteractioncursor",
-      "community": 8,
+      "community": 31,
       "norm_label": "syncpageinteractioncursor()"
     },
     {
@@ -7280,7 +7280,7 @@
       "source_location": "L1970",
       "_origin": "ast",
       "id": "scripts_live_browser_resolvebaranchor",
-      "community": 123,
+      "community": 30,
       "norm_label": "resolvebaranchor()"
     },
     {
@@ -7310,7 +7310,7 @@
       "source_location": "L2014",
       "_origin": "ast",
       "id": "scripts_live_browser_buildinsertplaceholdersnapshotfromdom",
-      "community": 12,
+      "community": 30,
       "norm_label": "buildinsertplaceholdersnapshotfromdom()"
     },
     {
@@ -7330,7 +7330,7 @@
       "source_location": "L2045",
       "_origin": "ast",
       "id": "scripts_live_browser_isinsertgeneratingsession",
-      "community": 123,
+      "community": 30,
       "norm_label": "isinsertgeneratingsession()"
     },
     {
@@ -7340,7 +7340,7 @@
       "source_location": "L2052",
       "_origin": "ast",
       "id": "scripts_live_browser_ensureinsertplaceholder",
-      "community": 123,
+      "community": 30,
       "norm_label": "ensureinsertplaceholder()"
     },
     {
@@ -7370,7 +7370,7 @@
       "source_location": "L2097",
       "_origin": "ast",
       "id": "scripts_live_browser_buildplaceholderresizehandles",
-      "community": 19,
+      "community": 8,
       "norm_label": "buildplaceholderresizehandles()"
     },
     {
@@ -7680,7 +7680,7 @@
       "source_location": "L3012",
       "_origin": "ast",
       "id": "scripts_live_browser_parsevariantparams",
-      "community": 30,
+      "community": 119,
       "norm_label": "parsevariantparams()"
     },
     {
@@ -7690,7 +7690,7 @@
       "source_location": "L3034",
       "_origin": "ast",
       "id": "scripts_live_browser_applyparamvalue",
-      "community": 30,
+      "community": 119,
       "norm_label": "applyparamvalue()"
     },
     {
@@ -7700,7 +7700,7 @@
       "source_location": "L3049",
       "_origin": "ast",
       "id": "scripts_live_browser_applyparamdefaults",
-      "community": 30,
+      "community": 119,
       "norm_label": "applyparamdefaults()"
     },
     {
@@ -8160,7 +8160,7 @@
       "source_location": "L3831",
       "_origin": "ast",
       "id": "scripts_live_browser_refreshlivecontrolsformanualapply",
-      "community": 12,
+      "community": 44,
       "norm_label": "refreshlivecontrolsformanualapply()"
     },
     {
@@ -8200,7 +8200,7 @@
       "source_location": "L3929",
       "_origin": "ast",
       "id": "scripts_live_browser_maybeshowfirstsavetoast",
-      "community": 44,
+      "community": 51,
       "norm_label": "maybeshowfirstsavetoast()"
     },
     {
@@ -8210,7 +8210,7 @@
       "source_location": "L3935",
       "_origin": "ast",
       "id": "scripts_live_browser_fetchpendingcount",
-      "community": 31,
+      "community": 44,
       "norm_label": "fetchpendingcount()"
     },
     {
@@ -8230,7 +8230,7 @@
       "source_location": "L3995",
       "_origin": "ast",
       "id": "scripts_live_browser_onpendingtrashclick",
-      "community": 51,
+      "community": 44,
       "norm_label": "onpendingtrashclick()"
     },
     {
@@ -8490,7 +8490,7 @@
       "source_location": "L4483",
       "_origin": "ast",
       "id": "scripts_live_browser_initeditbadge",
-      "community": 136,
+      "community": 31,
       "norm_label": "initeditbadge()"
     },
     {
@@ -8520,7 +8520,7 @@
       "source_location": "L4621",
       "_origin": "ast",
       "id": "scripts_live_browser_popoverdirection",
-      "community": 30,
+      "community": 119,
       "norm_label": "popoverdirection()"
     },
     {
@@ -8530,7 +8530,7 @@
       "source_location": "L4637",
       "_origin": "ast",
       "id": "scripts_live_browser_closedclippath",
-      "community": 30,
+      "community": 119,
       "norm_label": "closedclippath()"
     },
     {
@@ -8540,7 +8540,7 @@
       "source_location": "L4641",
       "_origin": "ast",
       "id": "scripts_live_browser_setclippath",
-      "community": 30,
+      "community": 119,
       "norm_label": "setclippath()"
     },
     {
@@ -8550,7 +8550,7 @@
       "source_location": "L4651",
       "_origin": "ast",
       "id": "scripts_live_browser_positionparamspanel",
-      "community": 30,
+      "community": 119,
       "norm_label": "positionparamspanel()"
     },
     {
@@ -8560,7 +8560,7 @@
       "source_location": "L4683",
       "_origin": "ast",
       "id": "scripts_live_browser_showparamspanel",
-      "community": 30,
+      "community": 119,
       "norm_label": "showparamspanel()"
     },
     {
@@ -8570,7 +8570,7 @@
       "source_location": "L4693",
       "_origin": "ast",
       "id": "scripts_live_browser_hideparamspanel",
-      "community": 30,
+      "community": 119,
       "norm_label": "hideparamspanel()"
     },
     {
@@ -8580,7 +8580,7 @@
       "source_location": "L4703",
       "_origin": "ast",
       "id": "scripts_live_browser_refreshparamspanel",
-      "community": 30,
+      "community": 119,
       "norm_label": "refreshparamspanel()"
     },
     {
@@ -8600,7 +8600,7 @@
       "source_location": "L4738",
       "_origin": "ast",
       "id": "scripts_live_browser_opentunepopover",
-      "community": 30,
+      "community": 119,
       "norm_label": "opentunepopover()"
     },
     {
@@ -8700,7 +8700,7 @@
       "source_location": "L4859",
       "_origin": "ast",
       "id": "scripts_live_browser_buildpickedanchorsnapshot",
-      "community": 8,
+      "community": 12,
       "norm_label": "buildpickedanchorsnapshot()"
     },
     {
@@ -8820,7 +8820,7 @@
       "source_location": "L5068",
       "_origin": "ast",
       "id": "scripts_live_browser_buildsveltepropvaluesfromliveelement",
-      "community": 30,
+      "community": 8,
       "norm_label": "buildsveltepropvaluesfromliveelement()"
     },
     {
@@ -9040,7 +9040,7 @@
       "source_location": "L5656",
       "_origin": "ast",
       "id": "scripts_live_browser_startscrolllock",
-      "community": 12,
+      "community": 30,
       "norm_label": "startscrolllock()"
     },
     {
@@ -9120,7 +9120,7 @@
       "source_location": "L6079",
       "_origin": "ast",
       "id": "scripts_live_browser_checkpointpayload",
-      "community": 12,
+      "community": 56,
       "norm_label": "checkpointpayload()"
     },
     {
@@ -9130,7 +9130,7 @@
       "source_location": "L6098",
       "_origin": "ast",
       "id": "scripts_live_browser_sendcheckpoint",
-      "community": 12,
+      "community": 56,
       "norm_label": "sendcheckpoint()"
     },
     {
@@ -9240,7 +9240,7 @@
       "source_location": "L6517",
       "_origin": "ast",
       "id": "scripts_live_browser_handleinsertcreate",
-      "community": 12,
+      "community": 30,
       "norm_label": "handleinsertcreate()"
     },
     {
@@ -9380,7 +9380,7 @@
       "source_location": "L6879",
       "_origin": "ast",
       "id": "scripts_live_browser_captureandemit",
-      "community": 8,
+      "community": 56,
       "norm_label": "captureandemit()"
     },
     {
@@ -9470,7 +9470,7 @@
       "source_location": "L7137",
       "_origin": "ast",
       "id": "scripts_live_browser_positionshaderoverlay",
-      "community": 123,
+      "community": 30,
       "norm_label": "positionshaderoverlay()"
     },
     {
@@ -9480,7 +9480,7 @@
       "source_location": "L7148",
       "_origin": "ast",
       "id": "scripts_live_browser_hideshaderoverlay",
-      "community": 8,
+      "community": 12,
       "norm_label": "hideshaderoverlay()"
     },
     {
@@ -9750,7 +9750,7 @@
       "source_location": "L7651",
       "_origin": "ast",
       "id": "scripts_live_browser_savesession",
-      "community": 12,
+      "community": 30,
       "norm_label": "savesession()"
     },
     {
@@ -9800,7 +9800,7 @@
       "source_location": "L7693",
       "_origin": "ast",
       "id": "scripts_live_browser_clearhandled",
-      "community": 12,
+      "community": 30,
       "norm_label": "clearhandled()"
     },
     {
@@ -9950,7 +9950,7 @@
       "source_location": "L8161",
       "_origin": "ast",
       "id": "scripts_live_browser_pagehashosttextselection",
-      "community": 8,
+      "community": 12,
       "norm_label": "pagehashosttextselection()"
     },
     {
@@ -10020,7 +10020,7 @@
       "source_location": "L8259",
       "_origin": "ast",
       "id": "scripts_live_browser_steerfocusdebugenabled",
-      "community": 31,
+      "community": 56,
       "norm_label": "steerfocusdebugenabled()"
     },
     {
@@ -10040,7 +10040,7 @@
       "source_location": "L8276",
       "_origin": "ast",
       "id": "scripts_live_browser_attachsteerfocusdebug",
-      "community": 31,
+      "community": 56,
       "norm_label": "attachsteerfocusdebug()"
     },
     {
@@ -10080,7 +10080,7 @@
       "source_location": "L8375",
       "_origin": "ast",
       "id": "scripts_live_browser_syncpagechatfocus",
-      "community": 12,
+      "community": 56,
       "norm_label": "syncpagechatfocus()"
     },
     {
@@ -10350,7 +10350,7 @@
       "source_location": "L8835",
       "_origin": "ast",
       "id": "scripts_live_browser_initpagechat",
-      "community": 56,
+      "community": 31,
       "norm_label": "initpagechat()"
     },
     {
@@ -10450,7 +10450,7 @@
       "source_location": "L9520",
       "_origin": "ast",
       "id": "scripts_live_browser_updateglobalbarstate",
-      "community": 12,
+      "community": 31,
       "norm_label": "updateglobalbarstate()"
     },
     {
@@ -10460,7 +10460,7 @@
       "source_location": "L9573",
       "_origin": "ast",
       "id": "scripts_live_browser_requestdetectscan",
-      "community": 8,
+      "community": 31,
       "norm_label": "requestdetectscan()"
     },
     {
@@ -10470,7 +10470,7 @@
       "source_location": "L9584",
       "_origin": "ast",
       "id": "scripts_live_browser_toggledetect",
-      "community": 8,
+      "community": 31,
       "norm_label": "toggledetect()"
     },
     {
@@ -10500,7 +10500,7 @@
       "source_location": "L9656",
       "_origin": "ast",
       "id": "scripts_live_browser_loaddetectscript",
-      "community": 8,
+      "community": 31,
       "norm_label": "loaddetectscript()"
     },
     {
@@ -10510,7 +10510,7 @@
       "source_location": "L9665",
       "_origin": "ast",
       "id": "scripts_live_browser_ondetectmessage",
-      "community": 8,
+      "community": 31,
       "norm_label": "ondetectmessage()"
     },
     {
@@ -10530,7 +10530,7 @@
       "source_location": "L9776",
       "_origin": "ast",
       "id": "scripts_live_browser_loaddesignprefs",
-      "community": 8,
+      "community": 31,
       "norm_label": "loaddesignprefs()"
     },
     {
@@ -10550,7 +10550,7 @@
       "source_location": "L9799",
       "_origin": "ast",
       "id": "scripts_live_browser_initdesignpanel",
-      "community": 8,
+      "community": 31,
       "norm_label": "initdesignpanel()"
     },
     {
@@ -10560,7 +10560,7 @@
       "source_location": "L9849",
       "_origin": "ast",
       "id": "scripts_live_browser_designpanelcss",
-      "community": 8,
+      "community": 31,
       "norm_label": "designpanelcss()"
     },
     {
@@ -12000,7 +12000,7 @@
       "source_location": "L241",
       "_origin": "ast",
       "id": "scripts_live_inject_resolvefiles",
-      "community": 155,
+      "community": 143,
       "norm_label": "resolvefiles()"
     },
     {
@@ -13530,7 +13530,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_live",
-      "community": 155,
+      "community": 143,
       "norm_label": "live.mjs"
     },
     {
@@ -13540,7 +13540,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "scripts_live_dirname",
-      "community": 155,
+      "community": 143,
       "norm_label": "__dirname"
     },
     {
@@ -13550,7 +13550,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "scripts_live_livecli",
-      "community": 155,
+      "community": 143,
       "norm_label": "livecli()"
     },
     {
@@ -13560,7 +13560,7 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "scripts_live_scanfordrift",
-      "community": 155,
+      "community": 143,
       "norm_label": "scanfordrift()"
     },
     {
@@ -13570,7 +13570,7 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "scripts_live_globtoregex",
-      "community": 155,
+      "community": 143,
       "norm_label": "globtoregex()"
     },
     {
@@ -13580,7 +13580,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "scripts_live_runscript",
-      "community": 155,
+      "community": 143,
       "norm_label": "runscript()"
     },
     {
@@ -13590,7 +13590,7 @@
       "source_location": "L215",
       "_origin": "ast",
       "id": "scripts_live_safeparse",
-      "community": 155,
+      "community": 143,
       "norm_label": "safeparse()"
     },
     {
@@ -13600,7 +13600,7 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "scripts_live_ensureserverrunning",
-      "community": 155,
+      "community": 143,
       "norm_label": "ensureserverrunning()"
     },
     {
@@ -14640,7 +14640,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "live_session_store",
-      "community": 63,
+      "community": 37,
       "norm_label": "session-store.mjs"
     },
     {
@@ -14650,7 +14650,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "live_session_store_completed_phases",
-      "community": 63,
+      "community": 37,
       "norm_label": "completed_phases"
     },
     {
@@ -14670,7 +14670,7 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "live_session_store_normalizeevent",
-      "community": 63,
+      "community": 37,
       "norm_label": "normalizeevent()"
     },
     {
@@ -14680,7 +14680,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "live_session_store_getjournalpath",
-      "community": 63,
+      "community": 37,
       "norm_label": "getjournalpath()"
     },
     {
@@ -14690,7 +14690,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "live_session_store_getsnapshotpath",
-      "community": 63,
+      "community": 37,
       "norm_label": "getsnapshotpath()"
     },
     {
@@ -14700,7 +14700,7 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "live_session_store_safesessionid",
-      "community": 63,
+      "community": 37,
       "norm_label": "safesessionid()"
     },
     {
@@ -14710,7 +14710,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "live_session_store_basesnapshot",
-      "community": 63,
+      "community": 37,
       "norm_label": "basesnapshot()"
     },
     {
@@ -14720,7 +14720,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "live_session_store_rebuildsnapshotfromjournal",
-      "community": 63,
+      "community": 37,
       "norm_label": "rebuildsnapshotfromjournal()"
     },
     {
@@ -14730,7 +14730,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "live_session_store_applyevent",
-      "community": 63,
+      "community": 37,
       "norm_label": "applyevent()"
     },
     {
@@ -14740,7 +14740,7 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "live_session_store_topendingevent",
-      "community": 63,
+      "community": 37,
       "norm_label": "topendingevent()"
     },
     {
@@ -14750,7 +14750,7 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "live_session_store_upsertartifact",
-      "community": 63,
+      "community": 37,
       "norm_label": "upsertartifact()"
     },
     {
@@ -14760,7 +14760,7 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "live_session_store_writesnapshot",
-      "community": 63,
+      "community": 37,
       "norm_label": "writesnapshot()"
     },
     {
@@ -14930,7 +14930,7 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "live_svelte_component_findsveltecomponentmanifest",
-      "community": 45,
+      "community": 28,
       "norm_label": "findsveltecomponentmanifest()"
     },
     {
@@ -14940,7 +14940,7 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "live_svelte_component_readmanifest",
-      "community": 45,
+      "community": 28,
       "norm_label": "readmanifest()"
     },
     {
@@ -17000,7 +17000,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pagehero_pagehero",
-      "community": 0,
+      "community": 2,
       "norm_label": "pagehero.jsx"
     },
     {
@@ -17010,7 +17010,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "pagehero_pagehero_pagehero",
-      "community": 0,
+      "community": 2,
       "norm_label": "pagehero()"
     },
     {
@@ -17690,7 +17690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "founderbiopage_founderbiopage",
-      "community": 0,
+      "community": 2,
       "norm_label": "founderbiopage.jsx"
     },
     {
@@ -18047,7 +18047,7 @@
       "label": "compileTreatments()",
       "file_type": "code",
       "source_file": "src/data/treatmentPages.js",
-      "source_location": "L1157",
+      "source_location": "L1173",
       "_origin": "ast",
       "id": "data_treatmentpages_compiletreatments",
       "community": 3,
@@ -18057,7 +18057,7 @@
       "label": "treatmentPages",
       "file_type": "code",
       "source_file": "src/data/treatmentPages.js",
-      "source_location": "L1318",
+      "source_location": "L1334",
       "_origin": "ast",
       "id": "data_treatmentpages_treatmentpages",
       "community": 3,
@@ -44014,10 +44014,20 @@
       "norm_label": "progress.md"
     },
     {
-      "label": "2026-08-27 \u2014 Sub-proyecto C, Task 2: respuesta directa GEO \u2014 11 faciales",
+      "label": "2026-08-27 \u2014 Sub-proyecto C, Task 3: respuesta directa GEO \u2014 8 corporales (+ fix \"cl\u00ednica\"\u2192\"medical spa\")",
       "file_type": "document",
       "source_file": "PROGRESS.md",
       "source_location": "L5",
+      "_origin": "ast",
+      "id": "progress_2026_08_27_sub_proyecto_c_task_3_respuesta_directa_geo_8_corporales_fix_cl\u00ednica_medical_spa",
+      "community": 35,
+      "norm_label": "2026-08-27 \u2014 sub-proyecto c, task 3: respuesta directa geo \u2014 8 corporales (+ fix \"clinica\"\u2192\"medical spa\")"
+    },
+    {
+      "label": "2026-08-27 \u2014 Sub-proyecto C, Task 2: respuesta directa GEO \u2014 11 faciales",
+      "file_type": "document",
+      "source_file": "PROGRESS.md",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_c_task_2_respuesta_directa_geo_11_faciales",
       "community": 35,
@@ -44027,7 +44037,7 @@
       "label": "2026-08-27 \u2014 Sub-proyecto C, Task 1: cableado `contentUpdated` + nodo `MedicalWebPage`",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L12",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_c_task_1_cableado_contentupdated_nodo_medicalwebpage",
       "community": 35,
@@ -44037,7 +44047,7 @@
       "label": "2026-08-27 \u2014 Sub-proyecto C1: piloto de \"respuesta directa\" GEO (solo microneedling)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L19",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_c1_piloto_de_respuesta_directa_geo_solo_microneedling",
       "community": 35,
@@ -44047,7 +44057,7 @@
       "label": "2026-08-27 \u2014 Sub-proyecto D: pulido (alt de cards + relatedLinks en 2 landings)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L30",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_d_pulido_alt_de_cards_relatedlinks_en_2_landings",
       "community": 35,
@@ -44057,7 +44067,7 @@
       "label": "2026-08-27 \u2014 Sub-proyecto B: tune de LCP (re-scopeado, sin impacto de UI)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L37",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_b_tune_de_lcp_re_scopeado_sin_impacto_de_ui",
       "community": 35,
@@ -44067,7 +44077,7 @@
       "label": "2026-08-27 \u2014 Sub-proyecto A: SEO head de p\u00e1ginas de tratamiento (24 p\u00e1ginas, 100% background)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L44",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "progress_2026_08_27_sub_proyecto_a_seo_head_de_p\u00e1ginas_de_tratamiento_24_p\u00e1ginas_100_background",
       "community": 35,
@@ -44077,7 +44087,7 @@
       "label": "2026-08-27 \u2014 Limpieza de integridad de `TreatmentDetailPage` (25 p\u00e1ginas de tratamiento)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L56",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "progress_2026_08_27_limpieza_de_integridad_de_treatmentdetailpage_25_p\u00e1ginas_de_tratamiento",
       "community": 35,
@@ -44087,7 +44097,7 @@
       "label": "2026-08-27 \u2014 `/faciales/peel-coreano`: antes/despu\u00e9s reales (cierra su parte de 7.3)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L64",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "progress_2026_08_27_faciales_peel_coreano_antes_despu\u00e9s_reales_cierra_su_parte_de_7_3",
       "community": 35,
@@ -44097,7 +44107,7 @@
       "label": "2026-08-27 \u2014 Rename SEO de las 8 im\u00e1genes del carrousel de postoperatorios",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L71",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "progress_2026_08_27_rename_seo_de_las_8_im\u00e1genes_del_carrousel_de_postoperatorios",
       "community": 35,
@@ -44107,7 +44117,7 @@
       "label": "2026-08-27 \u2014 Endurecimiento SEO de las 3 landings (auditor\u00eda `/tratamientos-postoperatorios`)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L76",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "progress_2026_08_27_endurecimiento_seo_de_las_3_landings_auditor\u00eda_tratamientos_postoperatorios",
       "community": 35,
@@ -44117,7 +44127,7 @@
       "label": "2026-08-27 \u2014 `/tratamientos-postoperatorios` secci\u00f3n RESULTADOS \u2192 carrousel antes/despu\u00e9s",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L88",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "progress_2026_08_27_tratamientos_postoperatorios_secci\u00f3n_resultados_carrousel_antes_despu\u00e9s",
       "community": 35,
@@ -44127,7 +44137,7 @@
       "label": "2026-08-27 \u2014 Cierre de 2 tests en rojo preexistentes (fuera de 8.9/8.10)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L98",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "progress_2026_08_27_cierre_de_2_tests_en_rojo_preexistentes_fuera_de_8_9_8_10",
       "community": 35,
@@ -44137,7 +44147,7 @@
       "label": "2026-08-27 \u2014 `npm run test:visual` reconciliado (cierra el pendiente de 8.9/8.10)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L104",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "progress_2026_08_27_npm_run_test_visual_reconciliado_cierra_el_pendiente_de_8_9_8_10",
       "community": 35,
@@ -44147,7 +44157,7 @@
       "label": "2026-08-27 \u2014 Backlog 8.9/8.10: nombre p\u00fablico unificado a \"Plasma Rico en Plaquetas y Fibrina\"",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L110",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "progress_2026_08_27_backlog_8_9_8_10_nombre_p\u00fablico_unificado_a_plasma_rico_en_plaquetas_y_fibrina",
       "community": 35,
@@ -44157,7 +44167,7 @@
       "label": "2026-08-27 \u2014 prf-y-fibrina \"RESULTADOS\": video de procedimiento + imagen de resultado",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L119",
+      "source_location": "L127",
       "_origin": "ast",
       "id": "progress_2026_08_27_prf_y_fibrina_resultados_video_de_procedimiento_imagen_de_resultado",
       "community": 35,
@@ -44167,7 +44177,7 @@
       "label": "2026-08-27 \u2014 `imagePosition` de las cards ahora tambi\u00e9n llega a \"Te puede interesar\"",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L131",
+      "source_location": "L139",
       "_origin": "ast",
       "id": "progress_2026_08_27_imageposition_de_las_cards_ahora_tambi\u00e9n_llega_a_te_puede_interesar",
       "community": 35,
@@ -44177,7 +44187,7 @@
       "label": "2026-08-27 \u2014 limpieza-dental: antes/despu\u00e9s reales (layout est\u00e1ndar) + webp + alt",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L139",
+      "source_location": "L147",
       "_origin": "ast",
       "id": "progress_2026_08_27_limpieza_dental_antes_despu\u00e9s_reales_layout_est\u00e1ndar_webp_alt",
       "community": 35,
@@ -44187,7 +44197,7 @@
       "label": "2026-08-27 \u2014 alt descriptivo en el antes/despu\u00e9s de limpieza-facial-profunda (cierra parte de 7.2)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L146",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "progress_2026_08_27_alt_descriptivo_en_el_antes_despu\u00e9s_de_limpieza_facial_profunda_cierra_parte_de_7_2",
       "community": 35,
@@ -44197,7 +44207,7 @@
       "label": "2026-08-27 \u2014 Fix: cards de \"Te puede interesar\" ya no se estiran con <3 relacionados",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L151",
+      "source_location": "L159",
       "_origin": "ast",
       "id": "progress_2026_08_27_fix_cards_de_te_puede_interesar_ya_no_se_estiran_con_3_relacionados",
       "community": 35,
@@ -44207,7 +44217,7 @@
       "label": "2026-08-26 \u2014 blanqueamiento-dental: 2 slots del BeforeAfterGrid (procedimiento + antes/despu\u00e9s) con labels custom",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L158",
+      "source_location": "L166",
       "_origin": "ast",
       "id": "progress_2026_08_26_blanqueamiento_dental_2_slots_del_beforeaftergrid_procedimiento_antes_despu\u00e9s_con_labels_custom",
       "community": 35,
@@ -44217,7 +44227,7 @@
       "label": "2026-08-26 \u2014 Landing limpieza-facial-profunda: im\u00e1genes antes/despu\u00e9s reales + disclaimer",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L168",
+      "source_location": "L176",
       "_origin": "ast",
       "id": "progress_2026_08_26_landing_limpieza_facial_profunda_im\u00e1genes_antes_despu\u00e9s_reales_disclaimer",
       "community": 35,
@@ -44227,7 +44237,7 @@
       "label": "2026-08-26 \u2014 Consolidaci\u00f3n de research SEO/GEO/AEO (7 fuentes) en un doc oficial; sin c\u00f3digo",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L178",
+      "source_location": "L186",
       "_origin": "ast",
       "id": "progress_2026_08_26_consolidaci\u00f3n_de_research_seo_geo_aeo_7_fuentes_en_un_doc_oficial_sin_c\u00f3digo",
       "community": 35,
@@ -44237,7 +44247,7 @@
       "label": "2026-08-20 \u2014 Research GEO/AEO 2026 cruzado contra el backlog; council sobre priorizaci\u00f3n; sesi\u00f3n cerrada sin c\u00f3digo",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L187",
+      "source_location": "L195",
       "_origin": "ast",
       "id": "progress_2026_08_20_research_geo_aeo_2026_cruzado_contra_el_backlog_council_sobre_priorizaci\u00f3n_sesi\u00f3n_cerrada_sin_c\u00f3digo",
       "community": 35,
@@ -44247,7 +44257,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.4 cerrado sin implementar (preconnect/preload/font-display)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L195",
+      "source_location": "L203",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_4_cerrado_sin_implementar_preconnect_preload_font_display",
       "community": 35,
@@ -44257,7 +44267,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 2.3 cerrado: no hace falta `hreflang`",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L201",
+      "source_location": "L209",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_2_3_cerrado_no_hace_falta_hreflang",
       "community": 35,
@@ -44267,7 +44277,7 @@
       "label": "2026-08-20 \u2014 Fix: hueco vac\u00edo bajo las im\u00e1genes en FeaturedServices (regresi\u00f3n de SEO 5.2)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L208",
+      "source_location": "L216",
       "_origin": "ast",
       "id": "progress_2026_08_20_fix_hueco_vac\u00edo_bajo_las_im\u00e1genes_en_featuredservices_regresi\u00f3n_de_seo_5_2",
       "community": 35,
@@ -44277,7 +44287,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 4.2: p\u00e1gina de bio del fundador (E-E-A-T)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L215",
+      "source_location": "L223",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_4_2_p\u00e1gina_de_bio_del_fundador_e_e_a_t",
       "community": 35,
@@ -44287,7 +44297,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.2: `.webp` para las 126 im\u00e1genes v\u00eda componente `Picture`",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L227",
+      "source_location": "L235",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_2_webp_para_las_126_im\u00e1genes_v\u00eda_componente_picture",
       "community": 35,
@@ -44297,7 +44307,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 5.1 (parcial): `loading=\"lazy\"`/`decoding=\"async\"` en MediaBlock.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L238",
+      "source_location": "L246",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_5_1_parcial_loading_lazy_decoding_async_en_mediablock_jsx",
       "community": 35,
@@ -44307,7 +44317,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7 (cierre): `geo`/`openingHoursSpecification` tambi\u00e9n en Contacto.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L245",
+      "source_location": "L253",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_cierre_geo_openinghoursspecification_tambi\u00e9n_en_contacto_jsx",
       "community": 35,
@@ -44317,7 +44327,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.4: JSON-LD `Service`+`FAQPage` en las 3 landing pages destacadas",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L252",
+      "source_location": "L260",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_4_json_ld_service_faqpage_en_las_3_landing_pages_destacadas",
       "community": 35,
@@ -44327,7 +44337,7 @@
       "label": "2026-08-20 \u2014 Horario real visible en la card de contacto (Contacto.jsx)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L263",
+      "source_location": "L271",
       "_origin": "ast",
       "id": "progress_2026_08_20_horario_real_visible_en_la_card_de_contacto_contacto_jsx",
       "community": 35,
@@ -44337,7 +44347,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7: `geo`/`openingHoursSpecification` en el JSON-LD principal",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L269",
+      "source_location": "L277",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_geo_openinghoursspecification_en_el_json_ld_principal",
       "community": 35,
@@ -44347,7 +44357,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.8: metadatos completos en LegalResources.jsx \u2014 cierre del \"Cubo 1\"",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L276",
+      "source_location": "L284",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_8_metadatos_completos_en_legalresources_jsx_cierre_del_cubo_1",
       "community": 35,
@@ -44357,7 +44367,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.6: `Service.url` determin\u00edstico en las 5 p\u00e1ginas de tratamiento",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L282",
+      "source_location": "L290",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_6_service_url_determin\u00edstico_en_las_5_p\u00e1ginas_de_tratamiento",
       "community": 35,
@@ -44367,7 +44377,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.5: poblado `itemListElement` en el JSON-LD de IvTherapy.jsx",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L288",
+      "source_location": "L296",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_5_poblado_itemlistelement_en_el_json_ld_de_ivtherapy_jsx",
       "community": 35,
@@ -44377,7 +44387,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtems 2.1/2.2: `html lang=\"es\"` y reemplazo del t\u00edtulo placeholder de AI Studio",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L296",
+      "source_location": "L304",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtems_2_1_2_2_html_lang_es_y_reemplazo_del_t\u00edtulo_placeholder_de_ai_studio",
       "community": 35,
@@ -44387,7 +44397,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.7 (parcial): agregado aggregateRating al JSON-LD principal",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L302",
+      "source_location": "L310",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_7_parcial_agregado_aggregaterating_al_json_ld_principal",
       "community": 35,
@@ -44397,7 +44407,7 @@
       "label": "2026-08-20 \u2014 docs/MEDICAL_COMPLIANCE.md: sumada secci\u00f3n complementaria de reglas legales de Florida (wiki)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L309",
+      "source_location": "L317",
       "_origin": "ast",
       "id": "progress_2026_08_20_docs_medical_compliance_md_sumada_secci\u00f3n_complementaria_de_reglas_legales_de_florida_wiki",
       "community": 35,
@@ -44407,7 +44417,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 4.1: creado docs/MEDICAL_COMPLIANCE.md (copiado del research existente del usuario, no generado)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L314",
+      "source_location": "L322",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_4_1_creado_docs_medical_compliance_md_copiado_del_research_existente_del_usuario_no_generado",
       "community": 35,
@@ -44417,7 +44427,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtems 8.2/8.3: canonical faltante en Nosotros.jsx, resto de p\u00e1ginas legales OK",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L321",
+      "source_location": "L329",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtems_8_2_8_3_canonical_faltante_en_nosotros_jsx_resto_de_p\u00e1ginas_legales_ok",
       "community": 35,
@@ -44427,7 +44437,7 @@
       "label": "2026-08-20 \u2014 Nota: auditor\u00eda de redirecciones 301 queda para el final, antes de publicar",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L328",
+      "source_location": "L336",
       "_origin": "ast",
       "id": "progress_2026_08_20_nota_auditor\u00eda_de_redirecciones_301_queda_para_el_final_antes_de_publicar",
       "community": 35,
@@ -44437,7 +44447,7 @@
       "label": "2026-08-20 \u2014 SEO backlog \u00edtem 8.1: eliminado `<link rel=\"canonical\">` duplicado (Contacto + 5 p\u00e1ginas de tratamiento)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L333",
+      "source_location": "L341",
       "_origin": "ast",
       "id": "progress_2026_08_20_seo_backlog_\u00edtem_8_1_eliminado_link_rel_canonical_duplicado_contacto_5_p\u00e1ginas_de_tratamiento",
       "community": 35,
@@ -44447,7 +44457,7 @@
       "label": "2026-08-20 \u2014 Auditor\u00eda SEO/GEO/AEO + skills externas de AEO/keyword research",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L339",
+      "source_location": "L347",
       "_origin": "ast",
       "id": "progress_2026_08_20_auditor\u00eda_seo_geo_aeo_skills_externas_de_aeo_keyword_research",
       "community": 35,
@@ -44457,7 +44467,7 @@
       "label": "2026-08-20 \u2014 CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L344",
+      "source_location": "L352",
       "_origin": "ast",
       "id": "progress_2026_08_20_claude_md_referencia_a_wiki_secondbrain_para_seo_aeo_geo",
       "community": 35,
@@ -44467,7 +44477,7 @@
       "label": "2026-08-20 \u2014 Eliminado tratamiento CO2 L\u00e1ser (L\u00e1ser y Luz) y todas sus dependencias",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L347",
+      "source_location": "L355",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminado_tratamiento_co2_l\u00e1ser_l\u00e1ser_y_luz_y_todas_sus_dependencias",
       "community": 35,
@@ -44477,7 +44487,7 @@
       "label": "2026-08-20 \u2014 Home FounderSection: quitar fondo logo watermark, dejar Clinical Canvas s\u00f3lido",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L357",
+      "source_location": "L365",
       "_origin": "ast",
       "id": "progress_2026_08_20_home_foundersection_quitar_fondo_logo_watermark_dejar_clinical_canvas_s\u00f3lido",
       "community": 35,
@@ -44487,7 +44497,7 @@
       "label": "2026-08-20 \u2014 Formulario de Contacto: menos scroll en mobile (acorde\u00f3n de aviso legal + Nombre/Tel\u00e9fono en fila)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L362",
+      "source_location": "L370",
       "_origin": "ast",
       "id": "progress_2026_08_20_formulario_de_contacto_menos_scroll_en_mobile_acorde\u00f3n_de_aviso_legal_nombre_tel\u00e9fono_en_fila",
       "community": 35,
@@ -44497,7 +44507,7 @@
       "label": "2026-08-20 \u2014 Popup de WhatsApp ya no tapa contenido al hacer scroll (fix del pendiente de la auditor\u00eda UX)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L370",
+      "source_location": "L378",
       "_origin": "ast",
       "id": "progress_2026_08_20_popup_de_whatsapp_ya_no_tapa_contenido_al_hacer_scroll_fix_del_pendiente_de_la_auditor\u00eda_ux",
       "community": 35,
@@ -44507,7 +44517,7 @@
       "label": "2026-08-20 \u2014 Eliminada secci\u00f3n \"Nuestra sede\" duplicada en Contacto (UX audit post-Miami)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L376",
+      "source_location": "L384",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminada_secci\u00f3n_nuestra_sede_duplicada_en_contacto_ux_audit_post_miami",
       "community": 35,
@@ -44517,7 +44527,7 @@
       "label": "2026-08-20 \u2014 Eliminada la sede de Miami en todo el sitio (nunca se abri\u00f3, cerrada/cancelada)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L382",
+      "source_location": "L390",
       "_origin": "ast",
       "id": "progress_2026_08_20_eliminada_la_sede_de_miami_en_todo_el_sitio_nunca_se_abri\u00f3_cerrada_cancelada",
       "community": 35,
@@ -44527,7 +44537,7 @@
       "label": "2026-08-20 \u2014 Navbar mega menu order: Limpieza Facial Profunda moved to last",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L391",
+      "source_location": "L399",
       "_origin": "ast",
       "id": "progress_2026_08_20_navbar_mega_menu_order_limpieza_facial_profunda_moved_to_last",
       "community": 35,
@@ -44537,7 +44547,7 @@
       "label": "2026-08-20 \u2014 Copy edits (3 landings) + About page: removed founder background image, dropped Josey Gonz\u00e1lez, added Est\u00e9tica Dental team member",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L394",
+      "source_location": "L402",
       "_origin": "ast",
       "id": "progress_2026_08_20_copy_edits_3_landings_about_page_removed_founder_background_image_dropped_josey_gonz\u00e1lez_added_est\u00e9tica_dental_team_member",
       "community": 35,
@@ -44547,7 +44557,7 @@
       "label": "2026-08-20 \u2014 Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L409",
+      "source_location": "L417",
       "_origin": "ast",
       "id": "progress_2026_08_20_applied_writing_for_agents_principles_to_claude_md_agents_md_reduced_to_a_pointer",
       "community": 35,
@@ -44557,7 +44567,7 @@
       "label": "2026-08-20 \u2014 Saneamiento fino de la Suite Can\u00f3nica (post-reset)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L418",
+      "source_location": "L426",
       "_origin": "ast",
       "id": "progress_2026_08_20_saneamiento_fino_de_la_suite_can\u00f3nica_post_reset",
       "community": 35,
@@ -44567,7 +44577,7 @@
       "label": "2026-08-20 \u2014 Reset completo: suite SEO reemplazada por la \"Suite Can\u00f3nica\" sanitizada",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L427",
+      "source_location": "L435",
       "_origin": "ast",
       "id": "progress_2026_08_20_reset_completo_suite_seo_reemplazada_por_la_suite_can\u00f3nica_sanitizada",
       "community": 35,
@@ -44577,7 +44587,7 @@
       "label": "2026-08-19 \u2014 Saneamiento de la suite SEO/AEO (\"Palo Seco\" + modo heur\u00edstico)",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L436",
+      "source_location": "L444",
       "_origin": "ast",
       "id": "progress_2026_08_19_saneamiento_de_la_suite_seo_aeo_palo_seco_modo_heur\u00edstico",
       "community": 35,
@@ -44587,7 +44597,7 @@
       "label": "2026-08-19 \u2014 Imported SEO/AEO/Local skill suite",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L446",
+      "source_location": "L454",
       "_origin": "ast",
       "id": "progress_2026_08_19_imported_seo_aeo_local_skill_suite",
       "community": 35,
@@ -44597,7 +44607,7 @@
       "label": "2026-08-19 \u2014 Guardrails: superpowers mandatory, project protection, one-change-at-a-time",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L454",
+      "source_location": "L462",
       "_origin": "ast",
       "id": "progress_2026_08_19_guardrails_superpowers_mandatory_project_protection_one_change_at_a_time",
       "community": 35,
@@ -44607,7 +44617,7 @@
       "label": "2026-08-19 \u2014 Repo setup",
       "file_type": "document",
       "source_file": "PROGRESS.md",
-      "source_location": "L463",
+      "source_location": "L471",
       "_origin": "ast",
       "id": "progress_2026_08_19_repo_setup",
       "community": 35,
@@ -118734,9 +118744,9 @@
       "source_file": "DECISIONS.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "decisions_decisions_md",
-      "target": "decisions_2026_08_27_whatissection_de_hidrofacial_s\u00ed_est\u00e1_en_el_visual_test_corrige_el_spec_de_c",
-      "confidence_score": 1.0
+      "target": "decisions_2026_08_27_whatissection_de_hidrofacial_s\u00ed_est\u00e1_en_el_visual_test_corrige_el_spec_de_c"
     },
     {
       "relation": "contains",
@@ -120004,8 +120014,18 @@
       "source_file": "PROGRESS.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "progress_progress_md",
-      "target": "progress_2026_08_27_sub_proyecto_c_task_2_respuesta_directa_geo_11_faciales",
+      "target": "progress_2026_08_27_sub_proyecto_c_task_2_respuesta_directa_geo_11_faciales"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PROGRESS.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "progress_progress_md",
+      "target": "progress_2026_08_27_sub_proyecto_c_task_3_respuesta_directa_geo_8_corporales_fix_cl\u00ednica_medical_spa",
       "confidence_score": 1.0
     },
     {
@@ -121530,5 +121550,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e8daa15a1524be94c24b02f5477e299ff9dbbd55"
+  "built_at_commit": "b68dcfdc7e7837947fe4d5533f3aa340652744eb"
 }

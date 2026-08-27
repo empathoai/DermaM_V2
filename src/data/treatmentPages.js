@@ -338,7 +338,7 @@ const customDetails = {
   'rejuvenecimiento-facial': {
     contentUpdated: '2026-08-27',
     whatIsHeadline: 'Rejuvenecimiento facial: qué es y para qué sirve',
-    whatIsBody: 'El rejuvenecimiento facial en Derma.M es un protocolo estético personalizado que combina varias técnicas —bioestimulación de tejidos y aparatología avanzada— para mejorar de forma global la calidad de la piel del rostro. Busca favorecer la elasticidad, unificar el tono y suavizar la textura y las líneas finas. Se define y se aplica en nuestra clínica de West Palm Beach a partir de una valoración profesional previa.',
+    whatIsBody: 'El rejuvenecimiento facial en Derma.M es un protocolo estético personalizado que combina varias técnicas —bioestimulación de tejidos y aparatología avanzada— para mejorar de forma global la calidad de la piel del rostro. Busca favorecer la elasticidad, unificar el tono y suavizar la textura y las líneas finas. En Derma.M, medical spa en West Palm Beach, se define y se aplica a partir de una valoración profesional previa.',
     problemContextHeadline: 'SIGNOS GLOBALES DE ENVEJECIMIENTO CRÓNICO Y SOLAR',
     problemContextBody: 'La combinación de fotoenvejecimiento y desgaste genético no afecta solo una zona del rostro, sino que se manifiesta en flacidez media, líneas finas extendidas y pérdida generalizada del brillo. Un enfoque integrado permite abordar múltiples necesidades simultáneamente para un aspecto armónico y muy natural.',
     duration: '60 - 75 min',
@@ -510,7 +510,7 @@ const customDetails = {
   'plasma-frio': {
     contentUpdated: '2026-08-27',
     whatIsHeadline: 'Plasma frío: qué es y para qué sirve',
-    whatIsBody: 'El plasma frío es un tratamiento estético facial que usa gas ionizado a temperatura ambiente para purificar y desinfectar la piel sin aplicar calor, a la vez que abre micro-canales temporales que favorecen la recuperación de la barrera cutánea. Está pensado sobre todo para pieles sensibles o reactivas que no toleran bien los ácidos fuertes o el láser. En nuestra clínica de West Palm Beach se realiza por sesiones tras una valoración previa.',
+    whatIsBody: 'El plasma frío es un tratamiento estético facial que usa gas ionizado a temperatura ambiente para purificar y desinfectar la piel sin aplicar calor, a la vez que abre micro-canales temporales que favorecen la recuperación de la barrera cutánea. Está pensado sobre todo para pieles sensibles o reactivas que no toleran bien los ácidos fuertes o el láser. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones tras una valoración previa.',
     problemContextHeadline: 'SENSIBILIDAD, INFLAMACIÓN O BROTES RECURRENTES',
     problemContextBody: 'Muchas pieles reactivas no toleran las exfoliaciones ácidas fuertes o el calor de ciertos láseres, lo que dificulta tratar impurezas o acné. El plasma frío proporciona una alternativa libre de calor que equilibra, desinfecta y estimula la barrera protectora de la piel con total confort.',
     duration: '30 - 45 min',
@@ -596,7 +596,9 @@ const customDetails = {
 
   // --- CORPORALES ---
   'lipo-360': {
-    whatIsBody: 'El protocolo estético de Lipo 360 es un sistema de acompañamiento manual y moldeo del contorno de la cintura, abdomen y espalda. Combina técnicas de masaje suave y drenaje linfático superficial diseñadas para promover la firmeza de la piel y facilitar la desinflamación corporal tras variaciones de peso.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Lipo 360: qué es y para qué sirve',
+    whatIsBody: 'El Lipo 360 estético en Derma.M es un protocolo de masaje corporal y drenaje linfático manual sobre cintura, abdomen y espalda, pensado como acompañamiento tras cambios de peso o procedimientos. Está diseñado para favorecer la desinflamación, apoyar la firmeza de la piel y ayudar a moldear el contorno. Se realiza por sesiones en West Palm Beach y parte de una valoración previa; no reemplaza las indicaciones de tu cirujano.',
     problemContextHeadline: 'IRREGULARIDAD DE CONTORNOS Y PÉRDIDA DE ARMONÍA CORPORAL',
     problemContextBody: 'La acumulación de líquidos transitorios y la pérdida de elasticidad en la zona media y espalda dificultan lucir un contorno definido. El estímulo manual continuo promueve la retracción cutánea y la circulación de líquidos para un contorno más firme.',
     duration: '60 - 90 min',
@@ -637,7 +639,9 @@ const customDetails = {
     ]
   },
   'levantamiento-gluteos': {
-    whatIsBody: 'Este protocolo combina técnicas manuales y copas de succión pulsada para realzar y reafirmar la silueta glútea. Nuestro estándar de vacío intermitente estimula la microcirculación local y tonifica los tejidos de forma cómoda, garantizando una piel firme y libre de marcas o hematomas molestos.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Levantamiento de glúteos: qué es y para qué sirve',
+    whatIsBody: 'El levantamiento de glúteos sin cirugía es un protocolo estético que combina masaje manual con copas de succión pulsada para estimular la microcirculación y tonificar los tejidos de la zona. Puede ayudar a mejorar la firmeza y el aspecto de la piel glútea de forma progresiva. En Derma.M (West Palm Beach) se trabaja en ciclos de sesiones definidos tras una valoración previa.',
     problemContextHeadline: 'PÉRDIDA DE VOLUMEN Y FLACIDEZ EN LA ZONA POSTERIOR',
     problemContextBody: 'La falta de tono cutáneo y la ralentización circulatoria local aplanan la silueta y opacan la textura de la piel glútea. La tecnología de succión rítmica y pulsada oxigena las células en profundidad, devolviendo volumen visual, firmeza y suavidad al tejido.',
     duration: '60 min',
@@ -678,7 +682,9 @@ const customDetails = {
     ]
   },
   'marcacion-abdominal': {
-    whatIsBody: 'Nuestro protocolo de marcación abdominal combina electroestimulación muscular de alta intensidad para tonificar las fibras del abdomen con radiofrecuencia superficial que tensa la piel. Esta doble acción ayuda a definir los contornos musculares y evitar la flacidez de forma 100% no invasiva y cómoda.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Marcación abdominal: qué es y para qué sirve',
+    whatIsBody: 'La marcación abdominal no invasiva es un protocolo estético que combina electroestimulación muscular de alta intensidad con radiofrecuencia para trabajar el tono de la musculatura del abdomen y la firmeza de la piel. Suele buscarse para acentuar la definición en personas que ya tienen un porcentaje de grasa bajo. En Derma.M, en West Palm Beach, se realiza por sesiones y requiere una valoración previa.',
     problemContextHeadline: 'DIFICULTAD PARA VISUALIZAR EL TONO RECTO ABDOMINAL',
     problemContextBody: 'A pesar del ejercicio, a veces la piel abdominal pierde turgencia y las fibras musculares carecen de la estimulación necesaria para marcar definición. El enfoque de doble acción fortalece las fibras y tensa la piel de forma simultánea.',
     duration: '50 - 75 min',
@@ -719,7 +725,9 @@ const customDetails = {
     ]
   },
   'hifu-corporal': {
-    whatIsBody: 'El HIFU Corporal es un protocolo estético avanzado que utiliza energía de ultrasonido focalizada de alta intensidad. Actúa de forma controlada sobre los tejidos corporales profundos para promover la tensión y firmeza de la piel de forma progresiva, ideal para modelar contornos sin procesos quirúrgicos.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'HIFU corporal: qué es y para qué sirve',
+    whatIsBody: 'El HIFU corporal es un protocolo estético que aplica ultrasonido focalizado de alta intensidad sobre los tejidos profundos del cuerpo para generar calor controlado y estimular la producción de colágeno. Está diseñado para favorecer la firmeza y el soporte de la piel en abdomen, brazos o muslos de forma progresiva, sin cirugía. En Derma.M, medical spa en West Palm Beach, parte de una medición del pliegue graso en la valoración inicial.',
     problemContextHeadline: 'FLACIDEZ INSTALADA EN ABDOMEN, MUSLOS O BRAZOS',
     problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo desde adentro, sin reposo posoperatorio.',
     duration: '60 - 90 min',
@@ -760,7 +768,9 @@ const customDetails = {
     ]
   },
   'corrientes-rusas': {
-    whatIsBody: 'El tratamiento de Corrientes Rusas emplea electroestimulación de frecuencia media regulable. Emite impulsos controlados dirigidos a grupos musculares seleccionados para generar contracciones rítmicas. Esto asiste en la definición del contorno, tonificación y drenaje estético del músculo de forma cómoda.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Corrientes rusas: qué son y para qué sirven',
+    whatIsBody: 'Las corrientes rusas son un protocolo estético de electroestimulación de frecuencia media que envía impulsos controlados a grupos musculares concretos para provocar contracciones rítmicas. Se usan como complemento del ejercicio para apoyar la tonificación y el drenaje en zonas como glúteos o abdomen. En Derma.M (West Palm Beach) se programan 2 o 3 sesiones semanales por zona, siempre tras una valoración previa.',
     problemContextHeadline: 'FALTA DE TONO MUSCULAR Y ASISTENCIA REAFIRMANTE',
     problemContextBody: 'La inactividad o debilidad en grupos musculares específicos, como glúteos o abdomen, complica obtener una apariencia tónica o firme mediante ejercicio regular únicamente. Las corrientes rusas incrementan el trabajo de la fibra muscular, complementando tu rutina.',
     duration: '45 min',
@@ -801,7 +811,9 @@ const customDetails = {
     ]
   },
   'estrias-celulitis': {
-    whatIsBody: 'Este protocolo multidimensional asocia tecnologías de estimulación térmica, técnicas de masaje y activos de renovación cutánea. Su finalidad es combatir de forma sinérgica la apariencia de la celulitis (piel de naranja) y estimular la elasticidad natural en zonas con estrías para recuperar una textura suave.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Tratamiento de estrías y celulitis: qué es y cómo funciona',
+    whatIsBody: 'El tratamiento de estrías y celulitis es un protocolo estético corporal que combina estimulación térmica, masaje y activos de renovación cutánea para actuar sobre la circulación superficial y la elasticidad de la piel. Puede ayudar a suavizar el aspecto de la piel de naranja y a atenuar la textura de las estrías, sin eliminarlas por completo. En Derma.M, en West Palm Beach, se planifica por sesiones tras una valoración previa.',
     problemContextHeadline: 'TEXTURA IRREGULAR Y MARCAS DE ESTIRAMIENTO DÉRMICO',
     problemContextBody: 'La acumulación localizada de líquidos o el estiramiento rápido de los tejidos dejan relieves con aspecto de piel de naranja o líneas delgadas visibles (estrías). Abordar este desafío desde la circulación superficial y reestructuración cutánea es clave para alisar la zona.',
     duration: '60 min',
@@ -842,7 +854,9 @@ const customDetails = {
     ]
   },
   'carboxiterapia-corporal': {
-    whatIsBody: 'La Carboxiterapia Corporal utiliza la aplicación controlada de CO2 cosmético para mejorar la apariencia de la piel de naranja, la pesadez en las extremidades y la falta de firmeza corporal. Al activar la oxigenación y el flujo circulatorio superficial, asiste al cuerpo en sus procesos naturales de drenaje.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Carboxiterapia corporal: qué es y para qué sirve',
+    whatIsBody: 'La carboxiterapia corporal es un protocolo estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Suele usarse para mejorar el aspecto de la piel de naranja, la sensación de pesadez en las piernas y la firmeza corporal. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones y requiere una valoración circulatoria previa.',
     problemContextHeadline: 'CONGESTIÓN EN TEJIDOS Y GRASA FOCALIZADA',
     problemContextBody: 'Una microcirculación deficiente favorece la retención de agua y la falta de tono en zonas rebeldes. El suministro estético de CO2 reactiva de inmediato la oxigenación para dar mayor tersura y alisar relieves.',
     duration: '35 - 50 min',
@@ -883,7 +897,9 @@ const customDetails = {
     ]
   },
   'maderoterapia-corporal': {
-    whatIsBody: 'La maderoterapia corporal es una técnica manual depurada basada en masajes con instrumentos esculpidos en madera noble de pino. Trabaja a través de deslizamientos rítmicos controlados que ejercen presiones anatómicas capaces de favorecer la circulación, drenar la retención de líquidos y asistir al moldeo de contornos.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Maderoterapia corporal: qué es y para qué sirve',
+    whatIsBody: 'La maderoterapia corporal es una técnica de masaje que utiliza instrumentos de madera de pino para aplicar deslizamientos y presiones rítmicas sobre cintura, caderas y piernas. Está pensada para favorecer la circulación, ayudar a drenar la retención de líquidos y acompañar el moldeo del contorno, con un efecto también relajante. En Derma.M (West Palm Beach) se ofrece por sesiones y parte de una valoración previa.',
     problemContextHeadline: 'RETENCIÓN DE LÍQUIDOS Y TENSIÓN ACUMULADA',
     problemContextBody: 'La pesadez y las irregularidades en la textura del cuerpo derivan habitualmente de una acumulación excesiva de líquidos o cansancio circulatorio. Los estímulos anatómicos de madera liberan la tensión del tejido, dinamizan el flujo de drenaje corporal y aportan contornos fluidos.',
     duration: '50 - 60 min',

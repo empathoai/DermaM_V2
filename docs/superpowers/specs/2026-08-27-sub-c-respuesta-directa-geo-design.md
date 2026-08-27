@@ -6,25 +6,28 @@ Estado: aprobado en brainstorming, pendiente de revisión de spec.
 ## Origen
 
 Auditoría `seo-checklist-65` (score global 63/100) → descomposición A → B → C → D.
-A (head/schema de las 24 páginas de tratamiento), B (tune de LCP) y D (pulido de alt +
+A (head/schema de las páginas de tratamiento; contó 24, en realidad son 25), B (tune de LCP) y D (pulido de alt +
 relatedLinks) están cerrados. **C** es el tramo de contenido: dar a cada página de
 tratamiento una superficie de "respuesta directa" extraíble por motores de IA
 (ChatGPT, Perplexity, Google AI Overviews), que hoy no existe.
 
 **Piloto ya hecho y commiteado** (`c972ea8`, 2026-08-27): `whatIsBody` +
 `whatIsHeadline` de `microneedling` reescritos con el patrón de respuesta directa.
-`test:visual` 22/22 sin diffs. Este spec **escala ese patrón a los 23 tratamientos
+`test:visual` 22/22 sin diffs. Este spec **escala ese patrón a los 24 tratamientos
 restantes** y agrega `dateModified` al schema.
 
 ## Alcance
 
 **En alcance:**
 
-- **C1** — reescribir `whatIsBody` + agregar `whatIsHeadline` a los **23 tratamientos
+- **C1** — reescribir `whatIsBody` + agregar `whatIsHeadline` a los **24 tratamientos
   restantes** (todos menos `microneedling`), con el patrón de respuesta directa GEO.
+  El total de páginas de tratamiento es **25** — la lista autoritativa es
+  `slugsByCategory` en `src/data/treatmentPages.js` (incluye `maderoterapia-corporal`,
+  que el spec de A no contó).
 - **`dateModified`** — campo `contentUpdated` por tratamiento + nodo `MedicalWebPage`
   nuevo en el `@graph` de `TreatmentSEO`.
-- Ejecución en **5 tandas por categoría**: faciales (12) → corporales (8) →
+- Ejecución en **5 tandas por categoría**: faciales (11 restantes) → corporales (8) →
   láser-y-luz (2) → dental-estético (2) → capilar (1). Cada tanda: reescritura →
   `test:visual` → revisión del usuario → commit, antes de la siguiente.
 
@@ -68,7 +71,7 @@ restantes** y agrega `dateModified` al schema.
 - `TreatmentDetailPage.jsx` sección 4 "EL PROTOCOLO" renderiza
   `whatIs.eyebrow` / `whatIs.headline` (`<h2>`) / `whatIs.body` (`<p>`) +
   `whatIs.image` al lado. El `<h2>` tiene `text-transform: uppercase` por CSS.
-- Los 23 tratamientos restantes muestran el H2 default `TRATAMIENTO DE <NOMBRE>`
+- Los 24 tratamientos restantes muestran el H2 default `TRATAMIENTO DE <NOMBRE>`
   (con `<NOMBRE>` en MAYÚSCULAS desde `categoryPages.js`).
 - `test:visual` (`tests/visual.spec.js`, 22 tests): la única página de tratamiento
   snapshoteada es Hidrofacial, y sólo su viewport superior — la sección 4 **no** entra
@@ -79,7 +82,7 @@ restantes** y agrega `dateModified` al schema.
 
 ### C1.1 — Campos por tratamiento (`src/data/treatmentPages.js`)
 
-En cada `customDetails['<slug>']` de los 23 restantes:
+En cada `customDetails['<slug>']` de los 24 restantes:
 
 - **`whatIsHeadline`** — string. H2 declarativo. Patrón:
   `<Nombre en Title Case>: qué es y para qué sirve`.
@@ -90,7 +93,7 @@ En cada `customDetails['<slug>']` de los 23 restantes:
     → se usa el nombre a secas + sufijo.
   El nombre se toma del `title` del tratamiento pasado a Title Case (los `title` están
   en MAYÚSCULAS en `categoryPages.js`; `titleCase()` vive en `src/utils/text.js`).
-  La normalización final de cada uno de los 23 se resuelve al redactar la tanda y se
+  La normalización final de cada uno de los 24 se resuelve al redactar la tanda y se
   lista en la revisión.
 
 - **`whatIsBody`** — se **reescribe** el string existente con el patrón C1.3.
@@ -123,7 +126,7 @@ Se entiende sin ningún contexto previo (sin "este protocolo", "el mismo", etc.)
   "está diseñado para favorecer", "suele" — nunca "elimina", "borra", "garantiza".
 - Una mención **orgánica** de "West Palm Beach" (no un pegote al final).
 - Una señal de valoración / indicación profesional previa.
-- **Redacción variada entre tratamientos** — está prohibido que las 24 páginas
+- **Redacción variada entre tratamientos** — está prohibido que las 25 páginas
   terminen con la misma oración textual (huella de boilerplate / contenido duplicado).
 
 **Base factual (Q3 → opción B):** se redacta a partir del material que ya vive en el
@@ -180,16 +183,19 @@ es truthy**:
 
 ## Ejecución por tandas
 
-| # | Categoría (`categorySlug`) | Tratamientos | Toca `TreatmentSEO`/builder |
-|---|---|---|---|
-| 1 | `faciales` | 12 (todos menos microneedling) | **Sí** (C1.2 + C1.4) |
-| 2 | `corporales` | 8 | No |
-| 3 | `laser-y-luz` | 2 | No |
-| 4 | `dental-estetico` | 2 | No |
-| 5 | `capilar` | 1 | No |
+| # | Categoría (`categorySlug` de la ruta) | key en `slugsByCategory` | Tratamientos | Toca `TreatmentSEO`/builder |
+|---|---|---|---|---|
+| 1 | `faciales` | `faciales` | 11 (los 12 menos `microneedling`) | **Sí** (C1.2 + C1.4) |
+| 2 | `corporales` | `corporales` | 8 (incluye `maderoterapia-corporal`) | No |
+| 3 | `laser-y-luz` | `laserYLuz` | 2 | No |
+| 4 | `dental-estetico` | `dentalEstetico` | 2 | No |
+| 5 | `capilar` | `capilar` | 1 | No |
 
-Recuento exacto de slugs por categoría se toma de `slugsByCategory` /
-`categoryPages.js` al arrancar cada tanda.
+Total reescrito por C1 = 24 (+ `microneedling` ya hecho = 25). Los slugs exactos
+salen de `slugsByCategory` en `src/data/treatmentPages.js` (bloque en ~L1145). Ojo:
+la key del objeto (`laserYLuz`, `dentalEstetico`) difiere del segmento de URL
+(`laser-y-luz`, `dental-estetico`); `categorySlug` que recibe `TreatmentSEO` es el
+segmento de URL.
 
 **Por tanda, en orden:**
 1. Reescribir `whatIsHeadline` + `whatIsBody` + setear `contentUpdated` de cada
@@ -210,7 +216,7 @@ Recuento exacto de slugs por categoría se toma de `slugsByCategory` /
 
 ## Verificación (definición de done — global)
 
-- Las 24 páginas de tratamiento con `whatIsHeadline` declarativo y `whatIsBody` en
+- Las 25 páginas de tratamiento con `whatIsHeadline` declarativo y `whatIsBody` en
   forma de respuesta directa (1ª oración autónoma citable).
 - `npm run test:visual` **22/22 sin diffs** tras cada tanda y al final.
 - 0 errores de consola en páginas tocadas.
@@ -219,13 +225,13 @@ Recuento exacto de slugs por categoría se toma de `slugsByCategory` /
 - `@graph` de tratamiento: `[Service(#service), BreadcrumbList, MedicalWebPage]`
   cuando hay `contentUpdated`; `[Service, BreadcrumbList]` cuando no. `FAQPage` de
   `FAQAccordion` sigue como script aparte.
-- `grep`: los strings de `whatIsBody` originales de los 23 ya no están en el repo.
+- `grep`: los strings de `whatIsBody` originales de los 24 ya no están en el repo.
 - Sin cambios en archivos protegidos, componentes de layout, CSS, rutas ni baselines.
 
 ## Riesgos
 
 - **UI / wireframe:** nulo. Sólo cambia el texto de un `<h2>` y un `<p>` ya
-  renderizados, en 24 páginas. `test:visual` es el guardrail; cualquier diff en la
+  renderizados, en 25 páginas. `test:visual` es el guardrail; cualquier diff en la
   suite es señal de alarma y frena la tanda.
 - **Schema:** bajo. `MedicalWebPage` es aditivo y condicional; el `@id` en `Service`
   es inerte salvo para la referencia `about`. Riesgo: `isPartOf` apuntando a un `@id`
@@ -233,7 +239,7 @@ Recuento exacto de slugs por categoría se toma de `slugsByCategory` /
 - **Compliance:** es el riesgo real. Mitigación: revisión del usuario por tanda +
   cruce explícito de cada párrafo contra `MEDICAL_COMPLIANCE.md` + lista de
   correcciones preexistentes detectadas.
-- **Contenido duplicado:** 24 párrafos con la misma estructura podrían leerse como
+- **Contenido duplicado:** 25 párrafos con la misma estructura podrían leerse como
   boilerplate. Mitigación: regla de redacción variada (C1.3) — sólo la 1ª oración
   sigue una forma fija; el resto se redacta distinto por tratamiento.
 - **Reversibilidad:** cada tanda es su propio commit → `git revert` de una categoría

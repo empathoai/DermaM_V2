@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/TreatmentHero/TreatmentHero.jsx": {
-    "mtime": 1787192971.7036483,
-    "ast_hash": "302668e0fb24a6eadd304394df192a74",
+    "mtime": 1787826836.4663382,
+    "ast_hash": "b9e2ed2c79e05ccd70a5c70deb4cdcf5",
     "semantic_hash": ""
   },
   "src/components/shared/TreatmentQuickFacts/TreatmentQuickFacts.jsx": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
-    "mtime": 1787806249.438864,
-    "ast_hash": "071fe6523352922074e2fe7d203d8be7",
+    "mtime": 1787826828.195516,
+    "ast_hash": "693797467fc4d64de0630a3d0172a854",
     "semantic_hash": ""
   },
   "src/components/utils/HeroMedia.jsx": {
@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/data/treatmentPages.js": {
-    "mtime": 1787825849.4883704,
-    "ast_hash": "433789da42aa6038228be48dd098794d",
+    "mtime": 1787826844.612893,
+    "ast_hash": "063e7079ed66a71c8b3dd349cd188ce0",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787824557.194136,
-    "ast_hash": "137372c858619a3ca9991bb8660c4883",
+    "mtime": 1787827056.4588041,
+    "ast_hash": "ac98edfe94d20df9ed97e420598cec62",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787825287.9932055,
-    "ast_hash": "1c85ecd8fb3f5e26488ad311d51a16b3",
+    "mtime": 1787827068.147331,
+    "ast_hash": "e766f218184458a6e329a428f5e1f5e3",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787826017.7082949,
-    "ast_hash": "3f656e2b6087a85c4c095480b0b921fb",
+    "mtime": 1787827035.599352,
+    "ast_hash": "f9f5a781b5e04a4f28231fa90b3d55e3",
     "semantic_hash": ""
   },
   "README.md": {

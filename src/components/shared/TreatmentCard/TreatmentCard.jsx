@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MediaBlock from '../MediaBlock/MediaBlock';
+import { titleCase } from '../../../utils/text';
 import styles from './TreatmentCard.module.css';
 
 export default function TreatmentCard({
@@ -42,7 +43,7 @@ export default function TreatmentCard({
     <CardWrapper {...wrapperProps}>
       {showMedia && image && (
         <div className={styles.imageWrapper}>
-          <MediaBlock src={image} alt={title} variant={variant} imagePosition={imagePosition} />
+          <MediaBlock src={image} alt={titleCase(title)} variant={variant} imagePosition={imagePosition} />
         </div>
       )}
       <div className={styles.content}>

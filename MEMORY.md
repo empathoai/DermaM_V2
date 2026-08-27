@@ -69,7 +69,9 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - `Service.provider` = `{ "@id": "https://dermamskinhealth.com/#organization" }` (nodo canónico en `Home.jsx`), nunca redeclarar address. `Service` lleva `areaServed` (City WPB) + `image` (hero.jpg absoluto) + `name` Title Case literal.
 - `BreadcrumbList` de 3 niveles: Inicio (`https://dermamskinhealth.com/`) › Hub › Tratamiento. Hubs canónicos: `/corporales`, `/faciales` (sin prefijo `tratamientos-`).
 - `PageHero.jsx` tiene prop opcional `imageAlt` (`alt={imageAlt || title}`). Solo `LandingPage` la pasa (`hero.imageAlt`). Data de landing: `hero.imageAlt` y `problem.imageAlt` opcionales; si faltan, el alt cae al `title`/`headline` (MAYÚSCULAS, evitar).
-- Campo opcional `relatedLinks: { label, links:[{text,to}] }` en landing data → bloque `7b` en `LandingPage.jsx` (`<Link>` react-router, clase `.relatedLinks`), solo renderiza si hay links. Hoy solo `postoperatorios` (→ `/corporales`, `/contacto`).
+- Campo opcional `relatedLinks: { label, links:[{text,to}] }` en landing data → bloque `7b` en `LandingPage.jsx` (`<Link>` react-router, clase `.relatedLinks`), solo renderiza si hay links. **Las 3 landings lo tienen** (2026-08-27): postoperatorios → `/corporales` + `/contacto`; prf-y-fibrina y limpieza-facial → `/faciales` + `/contacto`.
+- **`TreatmentCard` (2026-08-27):** el `alt` del `<MediaBlock>` usa `titleCase(title)` (los `title` de card están en MAYÚSCULAS). Cubre grillas de hub (`CategoryPage`) y "Te puede interesar" (`RelatedTreatments`).
+- **Backlog:** `CategoryPage` (6 hubs) usa `alt={headline}` en MAYÚSCULAS para su imagen propia — mismo anti-patrón, pendiente para cuando se toquen los hubs.
 
 ## Known constraints / do-nots
 - Don't introduce Next.js, styled-components, Framer Motion, or another CSS framework (per `AGENTS.md`).

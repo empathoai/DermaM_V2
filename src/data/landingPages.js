@@ -91,6 +91,13 @@ export const landingPages = {
       afterLabel: 'RESULTADO',
       disclaimer: 'Contenido de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
+    relatedLinks: {
+      label: 'Explora también',
+      links: [
+        { text: 'Tratamientos faciales', to: '/faciales' },
+        { text: 'Agenda una valoración', to: '/contacto' }
+      ]
+    },
     brandPromise: 'RENOVACIÓN PROGRESIVA DESDE TUS PROPIOS COMPONENTES NATURALES',
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
@@ -240,6 +247,13 @@ export const landingPages = {
         }
       ],
       disclaimer: 'Imágenes de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+    },
+    relatedLinks: {
+      label: 'Explora también',
+      links: [
+        { text: 'Tratamientos faciales', to: '/faciales' },
+        { text: 'Agenda una valoración', to: '/contacto' }
+      ]
     },
     brandPromise: 'PURIFICACIÓN PROFUNDA QUE RESPETA EL EQUILIBRIO DE TU PIEL',
     testimonials: {

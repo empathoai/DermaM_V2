@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Sub-proyecto D: pulido (alt de cards + relatedLinks en 2 landings)
+- Spec: `docs/superpowers/specs/2026-08-27-sub-d-pulido-design.md`. 2 ítems mecánicos. El 3º candidato (enlaces externos de autoridad) se movió a C — requiere curar fuentes por tratamiento + compliance.
+- **D1 — `TreatmentCard.jsx`:** `alt={title}` → `alt={titleCase(title)}` (import de `src/utils/text.js`). `TreatmentCard` lo usan `CategoryPage` (grillas de hub) y `RelatedTreatments` ("Te puede interesar"). Antes `alt="HIDROFACIAL"` (duplicaba el `<h3>` en MAYÚSCULAS) → `"Hidrofacial"`. Verificado en `/faciales` y en el "Te puede interesar" de `/faciales/hidrofacial`: `"Limpieza Facial Profunda"`, `"Peel Coreano"`, `"Microneedling / Dermapen"`, etc. — Title Case, sin MAYÚSCULAS.
+- **D2 — `landingPages.js`:** `relatedLinks` agregado a `prfYFibrina` y `limpiezaFacial` (mismo bloque que `postoperatorios`: `label: 'Explora también'`, links a `/faciales` y `/contacto`). `LandingPage` block 7b ya lo renderiza → cero cambio de template. Verificado: `/prf-y-fibrina` y `/limpieza-facial-profunda` ahora con `<a href="/faciales">` + `<a href="/contacto">` en `<main>` y bloque "EXPLORA TAMBIÉN" visible. Las 3 landings consistentes.
+- **Verificado:** `npm run test:visual` **22/22 sin diffs**. Sin errores de consola.
+- **Backlog nuevo detectado:** en las páginas de hub (`CategoryPage`, 6 páginas) la imagen propia del hub usa `alt={headline}` en MAYÚSCULAS (mismo anti-patrón que tenían landings/tratamientos). No es de `TreatmentCard` → fuera de D. Anotar para cuando se toquen los hubs.
+
 ## 2026-08-27 — Sub-proyecto B: tune de LCP (re-scopeado, sin impacto de UI)
 - Spec: `docs/superpowers/specs/2026-08-27-lcp-tune-design.md`. **B se re-scopeó**: al verificar, el CLS por imágenes ya está cubierto en todo el sitio por CSS (`min-height:70vh` + media absoluta en heroes; `aspect-ratio:4/5` en B/A y `.problemImage`; `1/1` en `TreatmentCard`; `16/9` en `FeaturedServices`). CLS medido = 0. Agregar `width/height` masivamente no tenía impacto. B pasa a ser un tune de LCP verificable.
 - **B1 — `HeroMedia.jsx`:** `fetchPriority="high"` + `width={1920} height={1080}` en el `<Picture>` de la rama imagen. Lo usan `PageHero` (landings) y `TreatmentHero` (tratamientos) → un cambio, las 2 superficies. `fetchPriority` (camelCase — con `fetchpriority` en minúscula React tira warning `Invalid DOM property`).

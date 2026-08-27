@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
-    "mtime": 1787826828.195516,
-    "ast_hash": "693797467fc4d64de0630a3d0172a854",
+    "mtime": 1787830306.6227527,
+    "ast_hash": "6055ec38d05dd16744c32066a15177cc",
     "semantic_hash": ""
   },
   "src/components/utils/HeroMedia.jsx": {
@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "src/data/treatmentPages.js": {
-    "mtime": 1787826844.612893,
-    "ast_hash": "063e7079ed66a71c8b3dd349cd188ce0",
+    "mtime": 1787830386.1879532,
+    "ast_hash": "d4f9b00dc7d69b31e6b475e3e84b29d2",
     "semantic_hash": ""
   },
   "src/main.jsx": {
@@ -770,28 +770,28 @@
     "semantic_hash": ""
   },
   "src/pages/treatments/capilar/[treatment].jsx": {
-    "mtime": 1787217991.2987876,
-    "ast_hash": "e7064f71939ebb7c1fbfd67b73a7a5cc",
+    "mtime": 1787830470.0430183,
+    "ast_hash": "dcd6630f6f024ddb301c6dfe36b9b6c3",
     "semantic_hash": ""
   },
   "src/pages/treatments/corporales/[treatment].jsx": {
-    "mtime": 1787217990.7126584,
-    "ast_hash": "c25c401112e1f4a4e4e5a97fd52ea2b3",
+    "mtime": 1787830469.8343773,
+    "ast_hash": "23cb86f097970c466adef9818e52096b",
     "semantic_hash": ""
   },
   "src/pages/treatments/dental/[treatment].jsx": {
-    "mtime": 1787217989.6233864,
-    "ast_hash": "0ac12b6b757034ba2b801f4c4f2793a8",
+    "mtime": 1787830469.973992,
+    "ast_hash": "6b53a4131a9e06933c89f2c1d92d46d7",
     "semantic_hash": ""
   },
   "src/pages/treatments/faciales/[treatment].jsx": {
-    "mtime": 1787217986.893551,
-    "ast_hash": "71d1740ff85ae9d188700ad6205a811b",
+    "mtime": 1787830469.7652378,
+    "ast_hash": "3342d4a187bc88da8abd3ed66dcecb90",
     "semantic_hash": ""
   },
   "src/pages/treatments/laser/[treatment].jsx": {
-    "mtime": 1787217988.530727,
-    "ast_hash": "422a884862d3dcfe01c490f7ca3d3969",
+    "mtime": 1787830469.901403,
+    "ast_hash": "b8cc829131a7191378d2b318874e12ec",
     "semantic_hash": ""
   },
   "src/routes.jsx": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787827056.4588041,
-    "ast_hash": "ac98edfe94d20df9ed97e420598cec62",
+    "mtime": 1787830842.2659328,
+    "ast_hash": "60d4785a06efbc8a4262a39b6dcb9f11",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787827068.147331,
-    "ast_hash": "e766f218184458a6e329a428f5e1f5e3",
+    "mtime": 1787830855.2176197,
+    "ast_hash": "4aed2db1de402f203f1c8b5486dd00e2",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787827035.599352,
-    "ast_hash": "f9f5a781b5e04a4f28231fa90b3d55e3",
+    "mtime": 1787830827.0805757,
+    "ast_hash": "4c7aab0b908077fc891a09c72484808a",
     "semantic_hash": ""
   },
   "README.md": {
@@ -3137,6 +3137,16 @@
   "public/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues.webp": {
     "mtime": 1787825831.44,
     "ast_hash": "b2a1b171b9aac3e02b3f1a8f621faa9d",
+    "semantic_hash": ""
+  },
+  "src/components/shared/TreatmentSEO/TreatmentSEO.jsx": {
+    "mtime": 1787830319.8285258,
+    "ast_hash": "ffa7a04e83f433acfd4adddd8f17367f",
+    "semantic_hash": ""
+  },
+  "src/utils/text.js": {
+    "mtime": 1787830297.9186532,
+    "ast_hash": "a74b5fe25ce18decaaf3b2fd9dd28947",
     "semantic_hash": ""
   }
 }

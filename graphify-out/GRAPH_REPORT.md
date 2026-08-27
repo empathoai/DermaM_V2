@@ -1,16 +1,16 @@
 # Graph Report - DermaM_Website  (2026-08-27)
 
 ## Corpus Check
-- 298 files · ~1,726,513 words
+- 300 files · ~1,727,286 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4598 nodes · 7212 edges · 261 communities (255 shown, 6 thin omitted)
+- 4606 nodes · 7236 edges · 262 communities (256 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e632d48f`
+- Built from commit: `48c47510`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -183,6 +183,7 @@
 - [[_COMMUNITY_Community 166|Community 166]]
 - [[_COMMUNITY_Community 167|Community 167]]
 - [[_COMMUNITY_Community 168|Community 168]]
+- [[_COMMUNITY_Community 169|Community 169]]
 - [[_COMMUNITY_Community 170|Community 170]]
 - [[_COMMUNITY_Community 171|Community 171]]
 - [[_COMMUNITY_Community 172|Community 172]]
@@ -296,27 +297,27 @@
 ## Import Cycles
 - None detected.
 
-## Communities (261 total, 6 thin omitted)
+## Communities (262 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
-Nodes (23): BeforeAfterCarousel(), BeforeAfterGrid(), isVideo(), SlotMedia(), BenefitColumns(), BrandDivider(), Breadcrumb(), ListSparkle() (+15 more)
+Nodes (25): BeforeAfterCarousel(), BeforeAfterGrid(), isVideo(), SlotMedia(), BenefitColumns(), BrandDivider(), Breadcrumb(), FAQAccordion() (+17 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.23
 Nodes (10): bookingPolicyData, legalUiCopy, privacyContact, privacyPolicyData, termsOfUseData, renderLegalSections(), LegalPageLayout(), BookingPolicy() (+2 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.13
-Nodes (19): AboutPage(), ClinicalPositioning(), aboutPage, founderBioPage, FeaturedServices(), FounderBioPage(), FounderSection(), MethodProcess() (+11 more)
+Cohesion: 0.15
+Nodes (17): ClinicalPositioning(), aboutPage, founderBioPage, FeaturedServices(), FounderBioPage(), FounderSection(), MethodProcess(), Home() (+9 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.12
-Nodes (31): CapilarTreatmentPage(), CategoryPage(), CorporalesTreatmentPage(), categoryPages, landingPages, categoryLabels, customDetails, getBaseTreatment() (+23 more)
+Cohesion: 0.14
+Nodes (26): AboutPage(), CapilarTreatmentPage(), CategoryPage(), CorporalesTreatmentPage(), categoryPages, landingPages, DentalTreatmentPage(), FacialesTreatmentPage() (+18 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.22
-Nodes (7): contactFaq, contactConsentCopy, FAQAccordion(), Hero(), ContactoPage(), TreatmentHero(), HeroMedia()
+Cohesion: 0.25
+Nodes (6): contactFaq, contactConsentCopy, Hero(), ContactoPage(), TreatmentHero(), HeroMedia()
 
 ### Community 5 - "Community 5"
 Cohesion: 0.10
@@ -356,7 +357,7 @@ Nodes (35): detectUrl(), runVisualContrastFallback(), finding(), getAP(), create
 
 ### Community 15 - "Community 15"
 Cohesion: 0.07
-Nodes (37): assembleLiveBrowserScript(), assertLiveBrowserScriptParts(), LIVE_BROWSER_SCRIPT_PARTS, readLiveBrowserScriptParts(), resolveLiveBrowserScriptParts(), summarizeManualApplyFailures(), removeAllSvelteComponentSessions(), acknowledgePendingEvent() (+29 more)
+Nodes (36): assembleLiveBrowserScript(), assertLiveBrowserScriptParts(), LIVE_BROWSER_SCRIPT_PARTS, readLiveBrowserScriptParts(), resolveLiveBrowserScriptParts(), summarizeManualApplyFailures(), removeAllSvelteComponentSessions(), acknowledgePendingEvent() (+28 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.05
@@ -408,11 +409,11 @@ Nodes (37): 10. Anti-Patterns, 11. Builder Instructions, 1. Core Visual Principl
 
 ### Community 28 - "Community 28"
 Cohesion: 0.10
-Nodes (41): appendCssToSvelteStyle(), appendSanitizedCssRule(), applyDeferredSvelteComponentAccepts(), bakeParamValuesInCss(), buildInsertVariantStub(), buildPropContract(), buildPropsScript(), buildVariantStub() (+33 more)
+Nodes (43): appendCssToSvelteStyle(), appendSanitizedCssRule(), applyDeferredSvelteComponentAccepts(), bakeParamValuesInCss(), buildInsertVariantStub(), buildPropContract(), buildPropsScript(), buildVariantStub() (+35 more)
 
 ### Community 29 - "Community 29"
 Cohesion: 0.13
-Nodes (36): buildSvelteComponentCssAuthoring(), scaffoldSvelteComponentInsertSession(), shouldUseSvelteComponentInjection(), argVal(), buildInsertWrapperLines(), computeInsertLine(), INSERT_POSITIONS, insertCli() (+28 more)
+Nodes (35): buildSvelteComponentCssAuthoring(), shouldUseSvelteComponentInjection(), argVal(), buildInsertWrapperLines(), computeInsertLine(), INSERT_POSITIONS, insertCli(), isInsertPosition() (+27 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.06
@@ -436,7 +437,7 @@ Nodes (29): createBrowserDetector(), confirm(), detectCli(), formatFindings(), h
 
 ### Community 35 - "Community 35"
 Cohesion: 0.04
-Nodes (54): 2026-08-19 — Guardrails: superpowers mandatory, project protection, one-change-at-a-time, 2026-08-19 — Imported SEO/AEO/Local skill suite, 2026-08-19 — Repo setup, 2026-08-19 — Saneamiento de la suite SEO/AEO ("Palo Seco" + modo heurístico), 2026-08-20 — Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer, 2026-08-20 — Auditoría SEO/GEO/AEO + skills externas de AEO/keyword research, 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO, 2026-08-20 — Copy edits (3 landings) + About page: removed founder background image, dropped Josey González, added Estética Dental team member (+46 more)
+Nodes (55): 2026-08-19 — Guardrails: superpowers mandatory, project protection, one-change-at-a-time, 2026-08-19 — Imported SEO/AEO/Local skill suite, 2026-08-19 — Repo setup, 2026-08-19 — Saneamiento de la suite SEO/AEO ("Palo Seco" + modo heurístico), 2026-08-20 — Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer, 2026-08-20 — Auditoría SEO/GEO/AEO + skills externas de AEO/keyword research, 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO, 2026-08-20 — Copy edits (3 landings) + About page: removed founder background image, dropped Josey González, added Estética Dental team member (+47 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.15
@@ -744,7 +745,7 @@ Nodes (16): Ajustes de Peso Específicos por Sector, Automoción, Campos Complem
 
 ### Community 112 - "Community 112"
 Cohesion: 0.06
-Nodes (32): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+24 more)
+Nodes (33): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+25 more)
 
 ### Community 113 - "Community 113"
 Cohesion: 0.12
@@ -969,6 +970,10 @@ Nodes (9): Checkboxes (Multi-select), Company/Organization, Dropdown Selects, Em
 ### Community 168 - "Community 168"
 Cohesion: 0.22
 Nodes (8): Basic Hierarchy, Before/After Restructuring, Color-Coding Conventions, Hierarchy with Navigation Zones, Hierarchy with URL Labels, Hub-and-Spoke Content Model, Internal Linking Flow, Mermaid Diagram Templates
+
+### Community 169 - "Community 169"
+Cohesion: 0.25
+Nodes (10): categoryLabels, customDetails, getBaseTreatment(), getTreatmentAssetFolder(), treatmentPages, TreatmentDetailPage(), HUB, TreatmentSEO() (+2 more)
 
 ### Community 170 - "Community 170"
 Cohesion: 0.33
@@ -1287,7 +1292,7 @@ Cohesion: 0.67
 Nodes (3): Content Refresh Cadence, Quick Refresh Checklist, Update Schedule
 
 ## Knowledge Gaps
-- **2293 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2288 more)
+- **2296 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2291 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1299,12 +1304,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `pickVariantContent()` connect `Community 30` to `Community 8`, `Community 78`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `resolveInsertSessionAnchor()` connect `Community 78` to `Community 30`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
 - **What connects `__dirname`, `ROOT`, `COMMON_DEV_PORTS` to the rest of the system?**
-  _2293 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2296 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09948979591836735 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09764309764309764 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.13445378151260504 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1477832512315271 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.11818181818181818 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13636363636363635 - nodes in this community are weakly interconnected._

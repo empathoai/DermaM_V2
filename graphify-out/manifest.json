@@ -650,8 +650,8 @@
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787824283.1596475,
-    "ast_hash": "ddb861614b095ab256b8e7684813a1d9",
+    "mtime": 1787825209.4110398,
+    "ast_hash": "352a0ea5f5ad0351734b7358e54f877d",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787824573.824746,
-    "ast_hash": "b15863e3a37fd9a13a3c86370fc0b7de",
+    "mtime": 1787825287.9932055,
+    "ast_hash": "1c85ecd8fb3f5e26488ad311d51a16b3",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787824531.3296072,
-    "ast_hash": "dec8d661b18fd088ad2c7cc7a0504bbf",
+    "mtime": 1787825297.2833717,
+    "ast_hash": "59f1051ffb0cf16603c5b3d6ae44d1f7",
     "semantic_hash": ""
   },
   "README.md": {
@@ -3029,86 +3029,6 @@
     "ast_hash": "0ca132aca22eaa40748e1749d0149bfd",
     "semantic_hash": ""
   },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.jpg": {
-    "mtime": 1787820800.6672137,
-    "ast_hash": "8347bf403ffc2ba4f9cfb829afb090ff",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-1.webp": {
-    "mtime": 1787821001.692,
-    "ast_hash": "ffb01ca36691856e64fa01b2c30c1d65",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.jpg": {
-    "mtime": 1787820950.692791,
-    "ast_hash": "4507bd587b1124e39baae4996d565395",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-2.webp": {
-    "mtime": 1787821001.797,
-    "ast_hash": "d77df644e7dd7a80475f9f1aaf66141e",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.jpg": {
-    "mtime": 1787820830.175665,
-    "ast_hash": "272fad9c8c9a86031066a56855851a9e",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-3.webp": {
-    "mtime": 1787821001.9,
-    "ast_hash": "ed573693ea035908a423c924133f0436",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.jpg": {
-    "mtime": 1787820845.9905534,
-    "ast_hash": "77fe8bc143c5c5689fe486c94da3a8b8",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-4.webp": {
-    "mtime": 1787821002.007,
-    "ast_hash": "22b32644f094df761d124526bd2a6acc",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.jpg": {
-    "mtime": 1787820860.0608108,
-    "ast_hash": "18abde1b04d0efb544b8448b03883ef4",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-5.webp": {
-    "mtime": 1787821002.114,
-    "ast_hash": "bb6d470ca71b9f951181f5b8ac22b02a",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.jpg": {
-    "mtime": 1787820874.0343444,
-    "ast_hash": "36c8de5aeb813db0572eadf1d80a9c9d",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-6.webp": {
-    "mtime": 1787821002.218,
-    "ast_hash": "932222a5aa8cdac56af8651d4b4fd610",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.jpg": {
-    "mtime": 1787820888.2262278,
-    "ast_hash": "58e6c7ee1a6c79df30a482d3dc946739",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-7.webp": {
-    "mtime": 1787821002.317,
-    "ast_hash": "9b5a76a8777a4cbc647927bed66169ea",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.jpg": {
-    "mtime": 1787820902.1573713,
-    "ast_hash": "5ca0b49d5f09697c00a703a8ee1f7070",
-    "semantic_hash": ""
-  },
-  "public/assets/images/landings/tratamientos-postoperatorios/postoperatorio-caso-resultado.webp": {
-    "mtime": 1787821002.428,
-    "ast_hash": "bfea8d822fd17c1ddc34bbf2f9e1acdf",
-    "semantic_hash": ""
-  },
   "tests/visual.spec.js-snapshots/postoperatorios-resultados-carrousel-desktop-chrome-win32.png": {
     "mtime": 1787821419.2507696,
     "ast_hash": "f3395f78269688938476e8572d815439",
@@ -3117,6 +3037,86 @@
   "tests/visual.spec.js-snapshots/postoperatorios-resultados-carrousel-mobile-safari-win32.png": {
     "mtime": 1787821431.456243,
     "ast_hash": "3be80c42a998b307b609b2de1cd3beb1",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-1.jpg": {
+    "mtime": 1787820800.6672137,
+    "ast_hash": "8347bf403ffc2ba4f9cfb829afb090ff",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-1.webp": {
+    "mtime": 1787821001.692,
+    "ast_hash": "ffb01ca36691856e64fa01b2c30c1d65",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-2.jpg": {
+    "mtime": 1787820950.692791,
+    "ast_hash": "4507bd587b1124e39baae4996d565395",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-2.webp": {
+    "mtime": 1787821001.797,
+    "ast_hash": "d77df644e7dd7a80475f9f1aaf66141e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-3.jpg": {
+    "mtime": 1787820830.175665,
+    "ast_hash": "272fad9c8c9a86031066a56855851a9e",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-3.webp": {
+    "mtime": 1787821001.9,
+    "ast_hash": "ed573693ea035908a423c924133f0436",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-4.jpg": {
+    "mtime": 1787820845.9905534,
+    "ast_hash": "77fe8bc143c5c5689fe486c94da3a8b8",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-4.webp": {
+    "mtime": 1787821002.007,
+    "ast_hash": "22b32644f094df761d124526bd2a6acc",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-5.jpg": {
+    "mtime": 1787820860.0608108,
+    "ast_hash": "18abde1b04d0efb544b8448b03883ef4",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-5.webp": {
+    "mtime": 1787821002.114,
+    "ast_hash": "bb6d470ca71b9f951181f5b8ac22b02a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-6.jpg": {
+    "mtime": 1787820874.0343444,
+    "ast_hash": "36c8de5aeb813db0572eadf1d80a9c9d",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-6.webp": {
+    "mtime": 1787821002.218,
+    "ast_hash": "932222a5aa8cdac56af8651d4b4fd610",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-7.jpg": {
+    "mtime": 1787820888.2262278,
+    "ast_hash": "58e6c7ee1a6c79df30a482d3dc946739",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-7.webp": {
+    "mtime": 1787821002.317,
+    "ast_hash": "9b5a76a8777a4cbc647927bed66169ea",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/resultado-postoperatorio-abdomen.jpg": {
+    "mtime": 1787820902.1573713,
+    "ast_hash": "5ca0b49d5f09697c00a703a8ee1f7070",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/tratamientos-postoperatorios/resultado-postoperatorio-abdomen.webp": {
+    "mtime": 1787821002.428,
+    "ast_hash": "bfea8d822fd17c1ddc34bbf2f9e1acdf",
     "semantic_hash": ""
   }
 }

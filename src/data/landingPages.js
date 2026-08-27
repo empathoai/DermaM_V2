@@ -79,11 +79,15 @@ export const landingPages = {
       headline: 'EVOLUCIÓN VISIBLE, PROGRESIVA Y PERSONALIZADA',
       items: [
         {
-          before: '/assets/images/landings/prf-y-fibrina/before-after-1.jpg',
-          after: '/assets/images/landings/prf-y-fibrina/before-after-2.jpg'
+          before: '/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.mp4',
+          after: '/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-resultado.jpg',
+          beforeAlt: 'Aplicación de plasma rico en plaquetas y fibrina con microneedling en el rostro en Derma.M, West Palm Beach',
+          afterAlt: 'Piel del rostro con aspecto luminoso tras una sesión de plasma rico en plaquetas y fibrina en Derma.M, West Palm Beach'
         }
       ],
-      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+      beforeLabel: 'PROCEDIMIENTO',
+      afterLabel: 'RESULTADO',
+      disclaimer: 'Contenido de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
     brandPromise: 'RENOVACIÓN PROGRESIVA DESDE TUS PROPIOS COMPONENTES NATURALES',
     testimonials: {

@@ -480,8 +480,8 @@
     "semantic_hash": ""
   },
   "src/components/shared/BeforeAfterGrid/BeforeAfterGrid.jsx": {
-    "mtime": 1787806228.930926,
-    "ast_hash": "2bb23bd9afdcec5a7bb96c77711085b1",
+    "mtime": 1787810929.953367,
+    "ast_hash": "5b17c1341ba6ccd19f85406a789b3e2b",
     "semantic_hash": ""
   },
   "src/components/shared/BenefitColumns/BenefitColumns.jsx": {
@@ -610,8 +610,8 @@
     "semantic_hash": ""
   },
   "src/components/templates/LandingPage/LandingPage.jsx": {
-    "mtime": 1787224660.0579882,
-    "ast_hash": "882d5f630cdd088d0c847fcbcb81ce0e",
+    "mtime": 1787810935.6829424,
+    "ast_hash": "16e6f25c771ac194632a9aafaf2cc016",
     "semantic_hash": ""
   },
   "src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx": {
@@ -650,8 +650,8 @@
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787807330.675992,
-    "ast_hash": "deb97d33dddcc03eed0d6aaef54270a4",
+    "mtime": 1787810947.060547,
+    "ast_hash": "481d672290023ce73a7a50f250b84a2e",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787809198.9994192,
-    "ast_hash": "294ebaa0850e33f2b3cb0950117de6c5",
+    "mtime": 1787811079.8691697,
+    "ast_hash": "3831063866d5de75219e7e625588f3cb",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787809209.818971,
-    "ast_hash": "73c9b462fe73719ca623b912c24f962c",
+    "mtime": 1787811093.887828,
+    "ast_hash": "fd5a433982e3b246b9e1594ccdaf82a0",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787809185.3854153,
-    "ast_hash": "9ec3524fab5891077b63ee588b837d67",
+    "mtime": 1787811055.7239041,
+    "ast_hash": "933a994b978f9e2fcbfac7784c96b193",
     "semantic_hash": ""
   },
   "README.md": {
@@ -3002,6 +3002,26 @@
   "public/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-despues.webp": {
     "mtime": 1787808426.987,
     "ast_hash": "fafdd1e9d3a28ab3b2eb2bf739b5e9ba",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.jpg": {
+    "mtime": 1787810892.756,
+    "ast_hash": "94d9ea3864efbbf40b41df32c10b614f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-resultado.jpg": {
+    "mtime": 1787810725.921203,
+    "ast_hash": "305b724b5bef8033cecbbc7675cd4a9a",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-resultado.webp": {
+    "mtime": 1787810892.867,
+    "ast_hash": "9934ae91afa3fd0ce9e2be73b15c4532",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.mp4": {
+    "mtime": 1787810858.2539454,
+    "ast_hash": "1fbe16995a21eca7db0adef08fef8a93",
     "semantic_hash": ""
   }
 }

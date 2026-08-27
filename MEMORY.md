@@ -41,9 +41,12 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - Fuente única: `imagePosition` en `categoryPages.js` `featuredTreatments`. Formato `'NN% center'`. Lo tienen 8 corporales + los 2 dentales (`74% center`).
 - Desde 2026-08-27 fluye a **dos** contextos: hub (`CategoryPage`, ya funcionaba) **y** "Te puede interesar" (`RelatedTreatments` vía `getBaseTreatment` → `related` → `items.map`). Editar el valor en `categoryPages.js` afecta ambos. Faciales/capilar sin valor → `center`. Ver [[decisions]] 2026-08-27.
 
-## BeforeAfterGrid — labels y override por tratamiento (2026-08-26)
-- `BeforeAfterGrid.jsx` acepta props opcionales `beforeLabel` / `afterLabel` (default `'ANTES'` / `'DESPUÉS'`) y por item `beforeAlt` / `afterAlt` (default `'Before'` / `'After'`). Las landings no las pasan → sin cambios.
+## BeforeAfterGrid — labels, override por tratamiento y video (2026-08-26 / 27)
+- `BeforeAfterGrid.jsx` acepta props opcionales `beforeLabel` / `afterLabel` (default `'ANTES'` / `'DESPUÉS'`) y por item `beforeAlt` / `afterAlt` (fallback `'Before'` / `'After'`).
+- **Video (2026-08-27):** si `item.before` / `item.after` termina en `.mp4`, el sub-render `SlotMedia` renderiza `<video autoPlay muted loop playsInline preload="metadata" poster={src→.jpg}>` en vez de `<Picture>`. Necesita un `.jpg` con el mismo basename al lado (poster). Primer uso: `prf-y-fibrina` (`plasma-rico-en-plaquetas-procedimiento.mp4`). El branch solo se activa con `.mp4` → resto de callers sin cambio.
+- `LandingPage` **y** `TreatmentDetailPage` pasan `beforeLabel`/`afterLabel` al grid (LandingPage se agregó 2026-08-27).
 - Las páginas de tratamiento (`TreatmentDetailPage`) leen `data.beforeAfter`. Si existe, usa sus `items` + labels + `disclaimer`; si no, arma la ruta `.../{slug}/before-after-1|2.jpg` como siempre.
+- **Video para web:** transcodificar SIEMPRE a H.264 (`libx264 -crf 28 -an -pix_fmt yuv420p -movflags +faststart`, downscale al ancho del slot ×1.5), no dejar HEVC de teléfono. Ver [[decisions]] 2026-08-27. La skill `assets-optimizer` es la base pero le faltan `yuv420p`/`faststart`.
 - Para dar nombres SEO + labels a un tratamiento: agregar `beforeAfter: { items:[{before,after,beforeAlt,afterAlt}], beforeLabel, afterLabel, disclaimer? }` en su `customDetails[slug]` (`src/data/treatmentPages.js`) — ya se cablea al objeto compilado con `beforeAfter: custom.beforeAfter || null`. Casos: `blanqueamiento-dental` (izq procedimiento / der secuencia, labels custom) y `limpieza-dental` (antes/después estándar, labels default).
 - Bug abierto (backlog): `TreatmentDetailPage.jsx:59` `categoryFolder` no mapea `dentalEstetico → dental-estetico`, solo `laserYLuz`. Afecta a tratamientos dentales SIN override `beforeAfter`. Registrado en `docs/SEO_AUDIT_2026.md`.
 

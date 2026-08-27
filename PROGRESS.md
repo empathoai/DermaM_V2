@@ -2,6 +2,18 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — prf-y-fibrina "RESULTADOS": video de procedimiento + imagen de resultado
+- **Contexto:** no hay antes/después de PRF; el usuario aportó 1 imagen de resultado + 1 video 4:5 del procedimiento. Layout: izq = PROCEDIMIENTO (video), der = RESULTADO (imagen). Spec: `docs/superpowers/specs/2026-08-27-prf-y-fibrina-resultados-video-design.md`. Brainstorming corrido, enfoque aprobado.
+- **`BeforeAfterGrid.jsx`:** refactor a sub-render `SlotMedia` con helper `isVideo(src)` (`.mp4`). Si el slot es video → `<video autoPlay muted loop playsInline preload="metadata" poster={src→.jpg} aria-label={alt}>`; si no → `<Picture>` como antes. `fallbackAlt="Before"/"After"` conserva el default previo para las landings/tratamientos sin `alt`. Cero props nuevas. El branch de video solo se activa con un src `.mp4` → sin impacto para el resto de callers (verificado en limpieza-facial-profunda, tratamientos-postoperatorios, blanqueamiento-dental).
+- **`LandingPage.jsx`:** ahora pasa `beforeLabel`/`afterLabel` al `<BeforeAfterGrid>` (antes solo lo hacía `TreatmentDetailPage`).
+- **`landingPages.js`:** `prfYFibrina.beforeAfter` → items con `.mp4` + `.jpg`, `beforeAlt`/`afterAlt` descriptivos (video: microneedling + plasma; imagen: piel luminosa post-sesión), labels `PROCEDIMIENTO`/`RESULTADO`, disclaimer corregido (sin "cuando estén disponibles").
+- **Assets** en `public/assets/images/landings/prf-y-fibrina/` (nombres SEO base `plasma-rico-en-plaquetas`, no `prf-*`):
+  - `plasma-rico-en-plaquetas-procedimiento.mp4` — el original era HEVC 15.8 MB 1080×1440. Transcodificado a **H.264 900×1200, 2.1 MB**, `-crf 28 -an -pix_fmt yuv420p -movflags +faststart` (base de la skill `assets-optimizer` + flags web-críticos). Original respaldado en scratchpad.
+  - `plasma-rico-en-plaquetas-procedimiento.jpg` — poster (frame ~2s), 70 KB, 900×1200.
+  - `plasma-rico-en-plaquetas-resultado.jpg` (110 KB) + `.webp` q78 (42 KB), 1000×1250.
+- **Verificado:** `/prf-y-fibrina` — video reproduciéndose (loop/muted), labels correctos, imagen sirviendo webp, disclaimer nuevo, mp4 vía HTTP 206, sin errores de consola, sin 404 a `before-after-*`.
+- **Backlog 7.2:** `prf-y-fibrina` ya tiene `alt` real. Queda solo `tratamientos-postoperatorios` (sin media).
+
 ## 2026-08-27 — `imagePosition` de las cards ahora también llega a "Te puede interesar"
 - **Contexto:** las cards de la sección "Te puede interesar" (`RelatedTreatments`) usan el `hero.jpg` de cada tratamiento recortado a cuadrado. Los heros dentales tienen el sujeto en el ~55% derecho → recorte centrado mostraba pared vacía. Spec: `docs/superpowers/specs/2026-08-27-dental-card-imageposition-design.md`. Brainstorming corrido, enfoque A aprobado.
 - **Descubrimiento:** las entradas dentales en `categoryPages.js` (líneas 853, 868) **ya tenían** `imagePosition: '74% center'` — el hub `/dental-estetico` ya lo aplicaba. Solo faltaba cablearlo a "Te puede interesar". El paso 1 del spec (agregar el valor) quedó anulado; se conserva `74% center` como fuente única.

@@ -124,11 +124,13 @@ export default function LandingPage({ data }) {
       {beforeAfter && (
         <section className={styles.beforeAfter}>
           <div className={styles.container}>
-            <BeforeAfterGrid 
-              eyebrow={beforeAfter.eyebrow} 
-              headline={beforeAfter.headline} 
-              items={beforeAfter.items} 
+            <BeforeAfterGrid
+              eyebrow={beforeAfter.eyebrow}
+              headline={beforeAfter.headline}
+              items={beforeAfter.items}
               disclaimer={beforeAfter.disclaimer}
+              beforeLabel={beforeAfter.beforeLabel}
+              afterLabel={beforeAfter.afterLabel}
               variant="light"
             />
           </div>

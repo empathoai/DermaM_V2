@@ -3,6 +3,42 @@ import styles from './BeforeAfterGrid.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Picture from '../Picture/Picture';
 
+const isVideo = (src) => typeof src === 'string' && src.toLowerCase().endsWith('.mp4');
+
+function SlotMedia({ src, alt, fallbackAlt }) {
+  if (!src) return <div className={styles.fallbackImage} />;
+
+  if (isVideo(src)) {
+    return (
+      <video
+        className={styles.image}
+        src={src}
+        poster={src.replace(/\.mp4$/i, '.jpg')}
+        aria-label={alt || fallbackAlt}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        onError={(e) => {
+          e.target.style.display = 'none';
+        }}
+      />
+    );
+  }
+
+  return (
+    <Picture
+      src={src}
+      alt={alt || fallbackAlt}
+      className={styles.image}
+      onError={(e) => {
+        e.target.style.display = 'none';
+      }}
+    />
+  );
+}
+
 export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, variant = 'dark', beforeLabel = 'ANTES', afterLabel = 'DESPUÉS' }) {
   if (!items || items.length === 0) return null;
 
@@ -16,33 +52,11 @@ export default function BeforeAfterGrid({ eyebrow, headline, items, disclaimer, 
           <div key={idx} className={styles.gridItem}>
             <div className={styles.imagePair}>
               <div className={styles.imageContainer}>
-                {item.before ? (
-                  <Picture
-                    src={item.before}
-                    alt={item.beforeAlt || 'Before'}
-                    className={styles.image}
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                ) : (
-                  <div className={styles.fallbackImage} />
-                )}
+                <SlotMedia src={item.before} alt={item.beforeAlt} fallbackAlt="Before" />
                 <div className={`${styles.imageLabel} ${variant === 'light' ? styles.lightLabel : ''}`}>{beforeLabel}</div>
               </div>
               <div className={styles.imageContainer}>
-                {item.after ? (
-                  <Picture
-                    src={item.after}
-                    alt={item.afterAlt || 'After'}
-                    className={styles.image}
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                ) : (
-                  <div className={styles.fallbackImage} />
-                )}
+                <SlotMedia src={item.after} alt={item.afterAlt} fallbackAlt="After" />
                 <div className={`${styles.imageLabel} ${variant === 'light' ? styles.lightLabel : ''}`}>{afterLabel}</div>
               </div>
             </div>

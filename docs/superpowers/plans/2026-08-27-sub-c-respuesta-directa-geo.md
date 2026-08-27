@@ -15,7 +15,7 @@ Copiado verbatim del spec `docs/superpowers/specs/2026-08-27-sub-c-respuesta-dir
 - **Proyecto near-final.** No modificar nada que no pida este plan. Sin refactors, sin "de paso", sin cambios de layout / componente / CSS / ruta.
 - **Una cosa a la vez.** Una tarea (= una categoría, o el cableado) se cierra por completo — con aprobación del usuario y registro en `PROGRESS.md`/`DECISIONS.md`/`MEMORY.md` — antes de empezar la siguiente.
 - **Archivos protegidos, no tocar:** `public/.htaccess`, `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt`. Tampoco baselines de Playwright (`tests/**/*.png`).
-- **`npm run test:visual` debe dar 22/22 sin diffs** tras cada tarea. Cualquier diff en la suite = alarma, se frena la tarea y se investiga. La sección 4 "EL PROTOCOLO" no está en ningún baseline, así que el resultado esperado es 0 diffs.
+- **`npm run test:visual` debe dar 22/22 sin diffs** tras cada tarea. Cualquier diff en la suite = alarma, se frena la tarea y se investiga. Sólo `hidrofacial` tiene su `whatIsSection` snapshoteada (`tests/visual.spec.js:107`); reescribir su `whatIsBody` obliga a `--update-snapshots` de `hidrofacial-whatis-mobile-safari` (verificando que el diff sea sólo texto). Los otros 24 tratamientos no están snapshoteados → 0 diffs esperados.
 - **Compliance de copy médico** (`docs/MEDICAL_COMPLIANCE.md`). Palabras/expresiones **prohibidas** en cualquier `whatIsBody` nuevo: `"sin efectos secundarios"`, `"indoloro"` / `"sin dolor"`, `"permanente"`, `"sin tiempo de recuperación"` / `"sin downtime"`, `"garantizado"` / "resultados garantizados", `"aprobado por la FDA"` / `"FDA-approved"`, `"clínicamente probado"` / `"clinically proven"`. Nada de diagnosticar, prescribir ni afirmar que se "cura" una condición. Beneficios siempre con lenguaje atenuado: "puede ayudar a mejorar", "está diseñado para favorecer", "suele", "busca".
 - **Patrón `whatIsBody` (C1.3):**
   - **Regla 1 (no negociable):** la 1ª oración es una definición autónoma citable — *qué es* + *mecanismo* + *para qué sirve* — que arranca con el nombre del tratamiento y se entiende sin contexto previo (sin "este protocolo", "el mismo", pronombres colgados).
@@ -238,7 +238,7 @@ Run:
 ```bash
 npx playwright test tests/visual.spec.js
 ```
-Expected: `22 passed`, sin diffs. (Si aparece un diff en `hidrofacial-*` u otro baseline → PARAR, investigar: la sección 4 no debería estar snapshoteada.)
+Expected: `22 passed`. El baseline `hidrofacial-whatis-mobile-safari` diffea por el cambio de copy → verificar en el diff que es SÓLO texto (H2 + párrafo, sin cambio de layout) y regenerar con `npx playwright test tests/visual.spec.js -g "Hidrofacial Detail Page" --update-snapshots`, luego re-correr la suite completa → 22/22. Un diff en cualquier OTRO baseline → PARAR e investigar.
 
 - [ ] **Step 5: Check de DOM + consola (2-3 rutas)**
 

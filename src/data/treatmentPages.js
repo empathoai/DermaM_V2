@@ -70,7 +70,9 @@ const categoryLabels = {
 const customDetails = {
   // --- FACIALES ---
   hidrofacial: {
-    whatIsBody: 'Hidrofacial es un protocolo estético avanzado de renovación dérmica que limpia, extrae impurezas e hidrata profundamente de forma simultánea. Utilizando un sistema de succión de vacío suave combinado con la infusión activa de sueros ricos en antioxidantes, péptidos y ácido hialurónico, limpia los poros meticulosamente sin dejar marcas ni irritaciones en la piel.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Hidrofacial: qué es y para qué sirve',
+    whatIsBody: 'El hidrofacial es un tratamiento estético facial que limpia los poros, extrae impurezas e infunde sueros hidratantes en una sola sesión, mediante un sistema de succión al vacío suave. Puede ayudar a mejorar la luminosidad, la textura y el nivel de hidratación de la piel. En Derma.M, en West Palm Beach, se realiza en cabina y requiere una valoración previa para adaptar los sueros a cada tipo de piel.',
     problemContextHeadline: 'LA CONGESTIÓN DIARIA DISMINUYE LA LUMINOSIDAD DE TU ROSTRO',
     problemContextBody: 'El sebo acumulado, la exposición solar continua y la polución crean una película que obstruye los folículos y ralentiza el proceso de renovación de la piel. Esto da como resultado un rostro apagado, deshidratación profunda y una textura áspera que no responde a la rutina habitual de cuidado en casa.',
     duration: '45 - 60 min',
@@ -155,7 +157,9 @@ const customDetails = {
     ]
   },
   'hifu-facial': {
-    whatIsBody: 'El HIFU Facial (Ultrasonido Focalizado de Alta Intensidad) es un protocolo estético de soporte profundo que trabaja mediante energía ultrasónica concentrada. Estimula las capas estructurales internas de la piel del rostro para generar un calor controlado que promueve la firmeza y elasticidad natural, logrando un aspecto más definido y firme sin procesos invasivos.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'HIFU facial: qué es y para qué sirve',
+    whatIsBody: 'El HIFU facial es un tratamiento estético que emplea ultrasonido focalizado de alta intensidad para llevar calor controlado a las capas profundas de la piel del rostro y estimular la producción natural de colágeno. Está diseñado para favorecer la firmeza y la definición del óvalo facial y el cuello de forma progresiva, sin cirugía. En Derma.M (West Palm Beach) se realiza tras una valoración que define la energía adecuada para cada caso.',
     problemContextHeadline: 'LA FLACIDEZ CUTÁNEA EN EL ÓVALO FACIAL Y CUELLO',
     problemContextBody: 'El envejecimiento de la piel debilita las fibras elásticas que sostienen las facciones del rostro, provocando descolgamiento visible en la línea mandibular, mejillas y cuello. HIFU actúa en zonas profundas sin dañar la superficie externa de la piel, ideal para quienes buscan firmeza sin pasar por procesos quirúrgicos.',
     duration: '60 - 90 min',
@@ -196,7 +200,9 @@ const customDetails = {
     ]
   },
   'peel-coreano': {
-    whatIsBody: 'El peel coreano es un protocolo de renovación celular selectiva que asocia exfoliación enzimática e infusión botánica avanzada. Inspirado en los altos estándares de luminosidad orientales, este protocolo favorece el desprendimiento suave de células muertas sin indicar descamación agresiva, protegiendo en todo momento la barrera de humedad cutánea.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Peel coreano: qué es y para qué sirve',
+    whatIsBody: 'El peel coreano es un tratamiento estético facial de renovación superficial que combina exfoliación enzimática e infusión de activos botánicos para retirar células muertas de forma suave y cuidar la barrera de hidratación. Suele usarse para aportar luminosidad y un aspecto más terso, el conocido efecto "glass skin". En Derma.M, en West Palm Beach, se ofrece durante todo el año como protocolo de cabina, siempre con valoración previa.',
     problemContextHeadline: 'LA OPACIDAD FACIAL POR ACUMULACIÓN DE IMPUREZAS',
     problemContextBody: 'Muchos exfoliantes convencionales dañan el manto hidrolipídico natural, generando enrojecimiento y descamación molesta. El tratamiento de piel coreano ofrece una renovación controlada para devolver el aspecto fresco y el característico efecto de "piel de vidrio" (glass skin) sin agresión y con una recuperación inmediata.',
     duration: '45 - 60 min',
@@ -245,7 +251,9 @@ const customDetails = {
     }
   },
   'radiofrecuencia-facial': {
-    whatIsBody: 'La Radiofrecuencia Facial es un protocolo de estimulación térmica superficial que utiliza ondas electromagnéticas controladas. Su objetivo es generar una contracción inmediata del colágeno existente y promover la producción progresiva de nuevas fibras para suavizar líneas de expresión y atenuar la flacidez de forma cómoda.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Radiofrecuencia facial: qué es y para qué sirve',
+    whatIsBody: 'La radiofrecuencia facial es un tratamiento estético que aplica ondas electromagnéticas para generar calor controlado en la piel, contraer el colágeno existente y favorecer la formación de fibras nuevas. Puede ayudar a suavizar líneas de expresión y a mejorar la sensación de firmeza en mejillas, óvalo y cuello. En Derma.M, en West Palm Beach, se trabaja en ciclos de sesiones definidos en la valoración inicial.',
     problemContextHeadline: 'CANSANCIO VISIBLE Y PÉRDIDA DE TONO EPIDÉRMICO',
     problemContextBody: 'Con el tiempo, la pérdida de firmeza se hace evidente en zonas como las mejillas, el óvalo facial y el cuello debido a la disminución del colágeno interno. El calor controlado reactiva los procesos tensores naturales, devolviendo turgencia y elasticidad a los tejidos.',
     duration: '40 - 50 min',
@@ -286,7 +294,9 @@ const customDetails = {
     ]
   },
   'oxigenoterapia-facial': {
-    whatIsBody: 'La Oxigenoterapia Facial es una bruma de hidratación y revitalización superficial. El protocolo consiste en la proyección de oxígeno de alta pureza combinado con principios activos nebulizados (vitaminas, péptidos y ácido hialurónico). Permite humectar la barrera protectora y devolver frescura al rostro de forma inmediata.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Oxigenoterapia facial: qué es y para qué sirve',
+    whatIsBody: 'La oxigenoterapia facial es un tratamiento estético que proyecta oxígeno de alta pureza junto con activos nebulizados —vitaminas, péptidos y ácido hialurónico— sobre la superficie de la piel. Está pensada para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata, sin exfoliación física. En Derma.M (West Palm Beach) es un protocolo de cabina y se recomienda una valoración previa, sobre todo en pieles sensibles.',
     problemContextHeadline: 'PIEL DESHIDRATADA Y ESTRESADA POR FACTORES URBANOS',
     problemContextBody: 'El aire acondicionado, la falta de descanso y los hábitos cotidianos saturan y apagan las células de la piel, haciéndola lucir opaca y deshidratada. Este protocolo calma el rostro sensible, aporta oxigenación superficial profunda y restaura un aspecto descansado y fresco al instante.',
     duration: '45 min',
@@ -326,7 +336,9 @@ const customDetails = {
     ]
   },
   'rejuvenecimiento-facial': {
-    whatIsBody: 'El Rejuvenecimiento Facial en Derma.M es un protocolo integral personalizado concebido para mejorar la calidad global del rostro. Combina técnicas de vanguardia, como la bioestimulación de tejidos y la aparatología avanzada, para mejorar parámetros esenciales: elasticidad, textura, unificación del tono y soporte cutáneo.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Rejuvenecimiento facial: qué es y para qué sirve',
+    whatIsBody: 'El rejuvenecimiento facial en Derma.M es un protocolo estético personalizado que combina varias técnicas —bioestimulación de tejidos y aparatología avanzada— para mejorar de forma global la calidad de la piel del rostro. Busca favorecer la elasticidad, unificar el tono y suavizar la textura y las líneas finas. Se define y se aplica en nuestra clínica de West Palm Beach a partir de una valoración profesional previa.',
     problemContextHeadline: 'SIGNOS GLOBALES DE ENVEJECIMIENTO CRÓNICO Y SOLAR',
     problemContextBody: 'La combinación de fotoenvejecimiento y desgaste genético no afecta solo una zona del rostro, sino que se manifiesta en flacidez media, líneas finas extendidas y pérdida generalizada del brillo. Un enfoque integrado permite abordar múltiples necesidades simultáneamente para un aspecto armónico y muy natural.',
     duration: '60 - 75 min',
@@ -367,7 +379,9 @@ const customDetails = {
     ]
   },
   'tratamiento-acne': {
-    whatIsBody: 'El Tratamiento de Acné es un protocolo higiénico y calmante diseñado específicamente para equilibrar las pieles propensas a brotes o imperfecciones constantes. Integra agentes purificantes, activos seborreguladores y tecnologías de luz estimulante para limpiar en profundidad los poros obstruidos, atenuar la apariencia irritada y prevenir marcas residuales.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Tratamiento de acné: en qué consiste y para quién es',
+    whatIsBody: 'El tratamiento de acné en Derma.M es un protocolo estético de higiene y equilibrio para pieles con brotes frecuentes: combina limpieza profunda de los poros, activos seborreguladores y luz estimulante. Puede ayudar a controlar el exceso de grasa, calmar el aspecto inflamado y prevenir marcas. Se realiza por sesiones en West Palm Beach y parte de una valoración previa; no sustituye el tratamiento médico del acné.',
     problemContextHeadline: 'EL CICLO INFLAMATORIO Y CONGESTIÓN SEBÁCEA',
     problemContextBody: 'La sobreproducción de grasa natural, unida a la acumulación de células muertas en la entrada del poro, crea el entorno propicio para brotes recurrentes e inflamaciones cutáneas incómodas. Tratar la piel con delicadeza pero con gran precisión ayuda a despejar impurezas, controlar el brillo graso y restaurar la claridad cutánea.',
     duration: '60 min',
@@ -408,7 +422,9 @@ const customDetails = {
     ]
   },
   'manchas-cicatrices': {
-    whatIsBody: 'El tratamiento para Manchas y Cicatrices es un protocolo especializado que asocia agentes exfoliantes suaves, activos unificadores del tono y técnicas de estimulación de relieve. Su finalidad es suavizar la apariencia estética de las cicatrices residuales y atenuar las manchas causadas por el sol, devolviendo la uniformidad al rostro.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Tratamiento de manchas y cicatrices: qué es y cómo funciona',
+    whatIsBody: 'El tratamiento de manchas y cicatrices es un protocolo estético facial que combina exfoliación suave, activos que unifican el tono y técnicas de estimulación del relieve cutáneo. Su objetivo es atenuar la apariencia de las manchas solares y suavizar la textura de marcas superficiales para lograr un rostro más uniforme. En Derma.M (West Palm Beach) se planifica por sesiones tras una valoración y exige fotoprotección estricta durante todo el ciclo.',
     problemContextHeadline: 'DISCROMÍAS Y TEXTURA CRATERIFORME EN LA PIEL',
     problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas permanentes tras imperfecciones alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación renovadora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
     duration: '50 - 60 min',
@@ -449,7 +465,9 @@ const customDetails = {
     ]
   },
   'dermabracion-facial': {
-    whatIsBody: 'La Dermabrasión Facial (o Microdermoabrasión con punta de diamante) consiste en una exfoliación física calibrada de las capas más superficiales de la piel. Remueve células muertas adheridas de forma precisa al tiempo que realiza una micro-succión que activa el flujo de drenaje local, favoreciendo suavidad y vitalidad cutáneas.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Dermabrasión facial: qué es y para qué sirve',
+    whatIsBody: 'La dermabrasión facial, o microdermoabrasión con punta de diamante, es un tratamiento estético que pule de forma mecánica y calibrada la capa más superficial de la piel mientras aplica una micro-succión que activa el drenaje local. Suele usarse para alisar la textura, refinar el aspecto de los poros y preparar la piel para asimilar mejor los activos. En Derma.M, en West Palm Beach, es un protocolo de cabina que suele agendarse cada 3 o 4 semanas y parte de una valoración inicial.',
     problemContextHeadline: 'LA REMOCIÓN CUTÁNEA DE LAS CÉLULAS ENVEJECIDAS',
     problemContextBody: 'El proceso natural de recambio de la piel va perdiendo velocidad, lo que genera que las células muertas se apilen en la capa superficial, obstruyendo tratamientos y apagando el rostro. Un pulido mecánico controlado deja la superficie libre de asperezas y lista para asimilar nutrientes en plenitud.',
     duration: '45 min',
@@ -490,7 +508,9 @@ const customDetails = {
     ]
   },
   'plasma-frio': {
-    whatIsBody: 'El Plasma Frío es un innovador protocolo que utiliza energía gaseosa ionizada a temperatura ambiente. Al entrar en contacto con el rostro, el plasma ejerce una potente acción purificante y desinfectante del tejido, al tiempo que abre micro-canales provisionales e impulsa la restauración de pieles sensibilizadas o con desequilibrios.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Plasma frío: qué es y para qué sirve',
+    whatIsBody: 'El plasma frío es un tratamiento estético facial que usa gas ionizado a temperatura ambiente para purificar y desinfectar la piel sin aplicar calor, a la vez que abre micro-canales temporales que favorecen la recuperación de la barrera cutánea. Está pensado sobre todo para pieles sensibles o reactivas que no toleran bien los ácidos fuertes o el láser. En nuestra clínica de West Palm Beach se realiza por sesiones tras una valoración previa.',
     problemContextHeadline: 'SENSIBILIDAD, INFLAMACIÓN O BROTES RECURRENTES',
     problemContextBody: 'Muchas pieles reactivas no toleran las exfoliaciones ácidas fuertes o el calor de ciertos láseres, lo que dificulta tratar impurezas o acné. El plasma frío proporciona una alternativa libre de calor que equilibra, desinfecta y estimula la barrera protectora de la piel con total confort.',
     duration: '30 - 45 min',
@@ -531,7 +551,9 @@ const customDetails = {
     ]
   },
   'carboxiterapia-facial': {
-    whatIsBody: 'La Carboxiterapia Facial es un protocolo avanzado que utiliza la aplicación controlada de dióxido de carbono de grado cosmético. Este proceso activa la oxigenación natural de la piel desde el interior, aumentando de forma inmediata la microcirculación local, facilitando la desinflamación del rostro y aportando un aspecto visiblemente fresco y descansado.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Carboxiterapia facial: qué es y para qué sirve',
+    whatIsBody: 'La carboxiterapia facial es un tratamiento estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Puede ayudar a mejorar el aspecto de las ojeras, a desinflamar el rostro y a dar una apariencia más descansada. En Derma.M (West Palm Beach) se aplica por sesiones y requiere una valoración previa para descartar contraindicaciones circulatorias.',
     problemContextHeadline: 'MICROCIRCULACIÓN DEFICIENTE Y ASPECTO CONGESTIONADO',
     problemContextBody: 'La mala oxigenación en áreas frágiles del rostro, como la órbita ocular u óvalo de la mandíbula, produce ojeras marcadas, retención de líquidos y pérdida de brillo saludable. Este protocolo estimula de forma activa la red vascular del cutis para un drenaje y revitalización inmediatos.',
     duration: '30 - 40 min',

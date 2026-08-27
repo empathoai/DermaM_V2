@@ -74,8 +74,11 @@ restantes** y agrega `dateModified` al schema.
 - Los 24 tratamientos restantes muestran el H2 default `TRATAMIENTO DE <NOMBRE>`
   (con `<NOMBRE>` en MAYÚSCULAS desde `categoryPages.js`).
 - `test:visual` (`tests/visual.spec.js`, 22 tests): la única página de tratamiento
-  snapshoteada es Hidrofacial, y sólo su viewport superior — la sección 4 **no** entra
-  en ningún baseline. baseURL `http://localhost:3003` (arrancar `vite --port 3003`
+  snapshoteada es Hidrofacial, y sólo su viewport superior — OJO: `tests/visual.spec.js:107` ("Hidrofacial Detail Page - Viewport") SÍ
+  snapshotea `whatIsSection` **de hidrofacial** (`hidrofacial-whatis-*.png`, desktop +
+  mobile). Es el único tratamiento con test de secciones. Reescribir el `whatIsBody` de
+  hidrofacial obliga a regenerar `hidrofacial-whatis-mobile-safari` con `--update-snapshots`
+  (verificando que el diff sea solo texto). Los otros 24 no están snapshoteados. baseURL `http://localhost:3003` (arrancar `vite --port 3003`
   a mano; no hay `webServer` en la config).
 
 ## Cambios

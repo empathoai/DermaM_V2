@@ -225,11 +225,11 @@ export const landingPages = {
       headline: 'UNA PIEL VISUALMENTE MÁS LIMPIA Y RENOVADA',
       items: [
         {
-          before: '/assets/images/landings/limpieza-facial-profunda/before-after-1.jpg',
-          after: '/assets/images/landings/limpieza-facial-profunda/before-after-2.jpg'
+          before: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg',
+          after: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg'
         }
       ],
-      disclaimer: 'Las imágenes de resultados, cuando estén disponibles, serán ejemplos informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
+      disclaimer: 'Imágenes de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
     },
     brandPromise: 'PURIFICACIÓN PROFUNDA QUE RESPETA EL EQUILIBRIO DE TU PIEL',
     testimonials: {

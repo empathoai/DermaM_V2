@@ -1,16 +1,16 @@
-# Graph Report - DermaM_Website  (2026-08-20)
+# Graph Report - DermaM_Website  (2026-08-26)
 
 ## Corpus Check
-- 297 files · ~1,550,770 words
+- 297 files · ~1,564,864 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4553 nodes · 7161 edges · 262 communities (256 shown, 6 thin omitted)
+- 4562 nodes · 7170 edges · 262 communities (256 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2793c40b`
+- Built from commit: `c16a2600`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -389,7 +389,7 @@ Nodes (41): 1. Read the screenshot (if present), 2. Wrap the element, 3. Load th
 
 ### Community 23 - "Community 23"
 Cohesion: 0.07
-Nodes (38): addBrowserFindings(), addVisualContrastFindings(), addVisualContrastResult(), checkBorders(), checkClippedOverflow(), checkElementBorders(), checkElementBordersDOM(), checkElementClippedOverflow() (+30 more)
+Nodes (38): buildSelectorSegment(), checkBorders(), checkClippedOverflow(), checkElementBorders(), checkElementBordersDOM(), checkElementClippedOverflow(), checkElementClippedOverflowDOM(), checkElementItalicSerif() (+30 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.05
@@ -437,7 +437,7 @@ Nodes (26): createBrowserDetector(), detectCli(), formatFindings(), handleStdin(
 
 ### Community 35 - "Community 35"
 Cohesion: 0.05
-Nodes (35): 2026-08-19 — Guardrails: superpowers mandatory, project protection, one-change-at-a-time, 2026-08-19 — Imported SEO/AEO/Local skill suite, 2026-08-19 — Repo setup, 2026-08-19 — Saneamiento de la suite SEO/AEO ("Palo Seco" + modo heurístico), 2026-08-20 — Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer, 2026-08-20 — Auditoría SEO/GEO/AEO + skills externas de AEO/keyword research, 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO, 2026-08-20 — Copy edits (3 landings) + About page: removed founder background image, dropped Josey González, added Estética Dental team member (+27 more)
+Nodes (40): 2026-08-19 — Guardrails: superpowers mandatory, project protection, one-change-at-a-time, 2026-08-19 — Imported SEO/AEO/Local skill suite, 2026-08-19 — Repo setup, 2026-08-19 — Saneamiento de la suite SEO/AEO ("Palo Seco" + modo heurístico), 2026-08-20 — Applied writing-for-agents principles to CLAUDE.md; AGENTS.md reduced to a pointer, 2026-08-20 — Auditoría SEO/GEO/AEO + skills externas de AEO/keyword research, 2026-08-20 — CLAUDE.md: referencia a wiki SecondBrain para SEO/AEO/GEO, 2026-08-20 — Copy edits (3 landings) + About page: removed founder background image, dropped Josey González, added Estética Dental team member (+32 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.15
@@ -744,8 +744,8 @@ Cohesion: 0.12
 Nodes (16): Ajustes de Peso Específicos por Sector, Automoción, Campos Complementarios (Señales de Apoyo), Campos Críticos (Impacto Directo en el Ranking), Campos Importantes (Influencia Significativa), Checklist de Completitud del Perfil de GBP (Vía API), Fuentes, Inmobiliaria (+8 more)
 
 ### Community 112 - "Community 112"
-Cohesion: 0.11
-Nodes (16): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+8 more)
+Cohesion: 0.10
+Nodes (19): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+11 more)
 
 ### Community 113 - "Community 113"
 Cohesion: 0.12
@@ -788,8 +788,8 @@ Cohesion: 0.13
 Nodes (14): Article / BlogPosting, BreadcrumbList, Contents, Event, FAQPage, HowTo, Implementation Example (Next.js), LocalBusiness (+6 more)
 
 ### Community 123 - "Community 123"
-Cohesion: 0.29
-Nodes (8): analyzeVisualContrast(), buildSelectorSegment(), collectVisualContrastCandidates(), collectVisualContrastReasons(), generateSelector(), getDirectText(), getDirectTextRect(), waitForVisualPaint()
+Cohesion: 0.40
+Nodes (6): analyzeVisualContrast(), collectVisualContrastCandidates(), collectVisualContrastReasons(), getDirectText(), getDirectTextRect(), waitForVisualPaint()
 
 ### Community 124 - "Community 124"
 Cohesion: 0.16
@@ -872,8 +872,8 @@ Cohesion: 0.23
 Nodes (11): extractRegister(), cli(), COMMON_DEV_PORTS, devServerSignals(), gatherSignals(), gitSignals(), hasCode(), latestCritique() (+3 more)
 
 ### Community 144 - "Community 144"
-Cohesion: 0.29
-Nodes (7): checkLayout(), checkPageLayout(), isCardLike(), isCardLikeDOM(), isCardLikeFromProps(), parseRadiusToPx(), resolveBorderRadiusPx()
+Cohesion: 0.25
+Nodes (9): addBrowserFindings(), addVisualContrastFindings(), addVisualContrastResult(), clearOverlays(), detachOverlay(), disconnectLazyVisualContrastObserver(), scheduleLazyVisualContrast(), shouldRunVisualContrast() (+1 more)
 
 ### Community 145 - "Community 145"
 Cohesion: 0.17
@@ -896,8 +896,8 @@ Cohesion: 0.18
 Nodes (11): 1. Extraction Score (0-10), 2. Focus Score (0-10), 3. Authority Score (0-10), 4. Freshness Score (0-10), AI Visibility Assessment Framework, Assessment Dimensions, Content Evaluation Checklist, Optimization Level Assessment (+3 more)
 
 ### Community 150 - "Community 150"
-Cohesion: 0.18
-Nodes (9): Founder bio page, Known constraints / do-nots, Medical compliance rules (docs/MEDICAL_COMPLIANCE.md), Open questions / things to verify later, Project status, Stack snapshot, Team member cards (About page), Tooling installed in this repo (+1 more)
+Cohesion: 0.17
+Nodes (10): Founder bio page, Known constraints / do-nots, Medical compliance rules (docs/MEDICAL_COMPLIANCE.md), Open questions / things to verify later, Project status, SEO / GEO / AEO — documentos, Stack snapshot, Team member cards (About page) (+2 more)
 
 ### Community 151 - "Community 151"
 Cohesion: 0.18
@@ -1292,7 +1292,7 @@ Cohesion: 0.67
 Nodes (3): Content Refresh Cadence, Quick Refresh Checklist, Update Schedule
 
 ## Knowledge Gaps
-- **2253 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2248 more)
+- **2262 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2257 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1306,7 +1306,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `resolveInsertSessionAnchor()` connect `Community 78` to `Community 30`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **What connects `__dirname`, `ROOT`, `COMMON_DEV_PORTS` to the rest of the system?**
-  _2253 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2262 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.11594202898550725 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

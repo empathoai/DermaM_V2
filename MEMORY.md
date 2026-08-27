@@ -42,6 +42,7 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - Don't touch `~/.codex/config.toml` or any Codex-global config from this project — user keeps those separate ("no lo consideres en este proyecto").
 - Don't make unrequested changes, refactors, or "while I'm in here" cleanup — user must approve each change explicitly, even after a superpowers plan is written.
 - Don't bundle multiple changes into one working pass — one requested item at a time, registered (PROGRESS/DECISIONS/MEMORY) before starting the next.
+- Any image rendered via `Picture.jsx` (incl. `BeforeAfterGrid`, `MediaBlock`, `FeaturedServices`) needs BOTH `<name>.jpg` and `<name>.webp` in the same folder, kept in sync. `Picture` always emits a `<source>.webp` which the browser prefers: a missing webp → black placeholder; a STALE webp → old image shown even after the jpg is replaced. Whenever a jpg is added or swapped, (re)generate its webp with `sharp` q78. See DECISIONS.md 2026-08-26.
 
 ## Open questions / things to verify later
 - `docs/` (gitignored) has grown since the initial checkout: `LEGAL_VISUAL_AUDIT_2026.md`, `SEO_AUDIT_2026.md`, `MEDICAL_COMPLIANCE.md` (added 2026-08-20, see below). Most other topic docs referenced in `CLAUDE.md`'s task-routing list (SITE_ARCHITECTURE.md, SECURITY.md, etc.) still don't exist in this checkout — confirm before relying on them.

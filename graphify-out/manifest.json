@@ -650,8 +650,8 @@
     "semantic_hash": ""
   },
   "src/data/landingPages.js": {
-    "mtime": 1787222190.0479262,
-    "ast_hash": "32b3825fc132287abf89a8015c686ba3",
+    "mtime": 1787804147.9291186,
+    "ast_hash": "21426437944601827431e35c65c0bb1d",
     "semantic_hash": ""
   },
   "src/data/legalPages.js": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1787227594.981223,
-    "ast_hash": "af9f5bdf5a4de568e6a4d8d77d3bcbec",
+    "mtime": 1787804193.49418,
+    "ast_hash": "3e1b1993f1dc57b21a49b9b8d5f540d9",
     "semantic_hash": ""
   },
   "DESIGN.md": {
@@ -1475,8 +1475,8 @@
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1787226663.770848,
-    "ast_hash": "5bf49a5ed0b5f4883bb0926d93de3e0e",
+    "mtime": 1787804207.3203828,
+    "ast_hash": "ed2845f01794c224ab917fcd6884b9b5",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -1485,8 +1485,8 @@
     "semantic_hash": ""
   },
   "PROGRESS.md": {
-    "mtime": 1787227583.894096,
-    "ast_hash": "4a1f6b9a9dc92251b6a245434fb1b9c5",
+    "mtime": 1787804173.7475576,
+    "ast_hash": "27e3a72b637c90f4ec30f35046ea1800",
     "semantic_hash": ""
   },
   "README.md": {
@@ -2942,6 +2942,26 @@
   "public/assets/images/home/hero.mp4": {
     "mtime": 1787192971.5670414,
     "ast_hash": "08b9842ac6722e11c64ff6a201baf147",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg": {
+    "mtime": 1787803934.4766405,
+    "ast_hash": "859cd83a1dc8f6b9282556864e4a5560",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.webp": {
+    "mtime": 1787804046.564,
+    "ast_hash": "c79ea8ec87f00fd01f57e3cd3c57c593",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg": {
+    "mtime": 1787803956.922266,
+    "ast_hash": "4daa82752e1df78e3c519625877b9b1f",
+    "semantic_hash": ""
+  },
+  "public/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.webp": {
+    "mtime": 1787804046.675,
+    "ast_hash": "da142e123d715b648da1b56329270a20",
     "semantic_hash": ""
   }
 }

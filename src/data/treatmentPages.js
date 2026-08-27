@@ -942,7 +942,9 @@ const customDetails = {
 
   // --- LÁSER Y LUZ ---
   'depilacion-laser': {
-    whatIsBody: 'La Depilación Láser es un procedimiento de eliminación progresiva del vello corporal y facial fundado en el principio de fototermólisis selectiva. La luz emitida por el cabezal viaja canalizada por el pigmento del vello hasta atenuar el folículo de forma gradual, logrando una piel suave y libre de vello sin alterar los tejidos circundantes.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Depilación láser: qué es y cómo funciona',
+    whatIsBody: 'La depilación láser es un procedimiento estético que emite luz sobre el pigmento del vello para calentar y debilitar el folículo de forma gradual, según el principio de fototermólisis selectiva. Está orientada a lograr una reducción progresiva y duradera del vello facial o corporal, sesión tras sesión. En Derma.M, medical spa en West Palm Beach, se realiza en ciclos de varias sesiones y parte de una valoración del fototipo.',
     problemContextHeadline: 'EL DESAFÍO DEL VELLO CORPORAL NO DESEADO Y LA IRRITACIÓN',
     problemContextBody: 'El afeitado tradicional o la cera convencional irritan repetidamente los poros, provocando vellos encarnados, aspereza crónica y manchas oscuras. El láser ofrece una vía de cuidado que refina la textura de la piel volviéndola sedosa y libre de vello de forma gradual.',
     duration: '20 - 60 min (según zona)',
@@ -983,7 +985,9 @@ const customDetails = {
     ]
   },
   ipl: {
-    whatIsBody: 'El IPL (Luz Pulsada Intensa) es una terapia lumínica versátil encargada de acompañar la unificación general del tono del rostro y cuerpo. Trabaja emitiendo un espectro amplio de longitudes de onda capaces de atenuar de forma selectiva enrojecimientos superficiales y acumulaciones irregulares de pigmento (manchas solares), además de incentivar la luminosidad de la piel.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'IPL (luz pulsada intensa): qué es y para qué sirve',
+    whatIsBody: 'El IPL, o luz pulsada intensa, es un tratamiento estético que aplica un espectro amplio de luz sobre la piel para actuar de forma selectiva sobre pigmentos y rojeces superficiales. Suele usarse para atenuar manchas solares, unificar el tono y aportar luminosidad al rostro, el cuello o el escote. En Derma.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración previa y exige fotoprotección estricta.',
     problemContextHeadline: 'DAÑO SOLAR, MANCHAS EN LA EDAD Y TONO DISCRÓMICO',
     problemContextBody: 'La acumulación de radiación UV da paso a pecas solares marcadas, rojeces superficiales finas y opacidad en la piel. El tratamiento por pulsación lumínica rompe los pigmentos focales oscuros y promueve una unificación global en pocas sesiones.',
     duration: '40 - 50 min',
@@ -1025,7 +1029,9 @@ const customDetails = {
   },
   // --- DENTAL ESTÉTICO ---
   'blanqueamiento-dental': {
-    whatIsBody: 'El Blanqueamiento Dental Estético consiste en un protocolo destinado a aclarar de forma segura la tonalidad de las piezas dentales. Empleamos geles aclaradores certificados que actúan diluyendo manchas superficiales y pigmentaciones acumuladas en el esmalte sin desgastar ni alterar la estructura dental.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Blanqueamiento dental: qué es y para qué sirve',
+    whatIsBody: 'El blanqueamiento dental estético es un protocolo que aplica geles aclaradores certificados sobre el esmalte para disolver manchas superficiales y pigmentaciones adquiridas, sin desgastar la estructura del diente. Puede ayudar a aclarar el tono de la sonrisa de forma visible, con una duración que depende de los hábitos de cada persona. En Derma.M, medical spa en West Palm Beach, parte de una valoración previa del esmalte.',
     problemContextHeadline: 'OPACIDAD Y PIGMENTACIÓN ADQUIRIDA EN LAS PIEZAS DENTALES',
     problemContextBody: 'El tabaco, café, té y ciertos pigmentos de alimentos van creando una película opaca sobre el esmalte, oscureciendo la sonrisa. El blanqueamiento te devuelve un tono más brillante, blanco y armónico compatible con tu simetría facial.',
     duration: '45 - 60 min',
@@ -1076,7 +1082,9 @@ const customDetails = {
     }
   },
   'limpieza-dental': {
-    whatIsBody: 'La Limpieza Dental Estética es un protocolo de mantenimiento e higiene profunda. Consiste en la remoción de placa y sarro acumulados para recuperar un esmalte limpio, pulido y fresco mediante instrumental ultrasónico suave y copas de pulido estético.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Limpieza dental: qué es y para qué sirve',
+    whatIsBody: 'La limpieza dental estética es un protocolo de higiene profesional que retira placa y sarro acumulados con instrumental ultrasónico suave y copas de pulido. Está pensada para mantener el esmalte limpio y las encías sanas, y no reemplaza los tratamientos periodontales. En nuestro medical spa de West Palm Beach, Derma.M, se recomienda cada seis meses y parte de una valoración previa.',
     problemContextHeadline: 'ACUMULO DE CÁLCULO E INFLAMACIÓN GINGIVAL DISCRETA',
     problemContextBody: 'El cepillado doméstico regular no logra retirar por completo el sarro calcificado en el cuello de las piezas dentales o entre espacios interproximales. Una limpieza experta remueve estas acumulaciones, puliendo la sonrisa y regalando una profunda sensación de ligereza y frescor bucal.',
     duration: '45 min',
@@ -1127,7 +1135,9 @@ const customDetails = {
 
   // --- CAPILAR ---
   'tratamiento-capilar': {
-    whatIsBody: 'El Tratamiento Capilar es un protocolo avanzado de bioestimulación y nutrición del cuero cabelludo. Ofrece la aplicación e infusión de péptidos enriquecedores, aminoácidos estructurales y nutrientes en la raíz folicular para fortalecer el bulbo capilar y atenuar la fragilidad y pérdida progresiva de densidad del cabello.',
+    contentUpdated: '2026-08-27',
+    whatIsHeadline: 'Tratamiento capilar: qué es y para qué sirve',
+    whatIsBody: 'El tratamiento capilar es un protocolo de bioestimulación que infunde péptidos, aminoácidos y nutrientes en el cuero cabelludo mediante aplicadores superficiales para nutrir la raíz del cabello. Puede ayudar a fortalecer el cabello frágil y a reducir la sensación de caída, aunque no recupera folículos que ya han dejado de crecer. En Derma.M, medical spa en West Palm Beach, se realiza en ciclos de sesiones tras una valoración previa.',
     problemContextHeadline: 'CABELLO DEBILITADO, CAÍDA ESTACIONAL Y PÉRDIDA DE VOLUMEN',
     problemContextBody: 'El estrés, el cansancio y agentes ambientales agresivos debilitan el folículo, haciendo que el vello capilar nazca más delgado, frágil o se desprenda prematuramente. El aporte localizado nutre y oxigena en profundidad la base para prolongar la calidad y resistencia del cabello.',
     duration: '45 - 60 min',

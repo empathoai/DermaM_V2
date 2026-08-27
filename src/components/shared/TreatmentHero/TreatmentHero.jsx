@@ -7,6 +7,7 @@ export default function TreatmentHero({
   title,
   description,
   image,
+  imageAlt,
   primaryCta = 'AGENDA TU VALORACIÓN',
   secondaryCta = 'WHATSAPP',
   disclaimer
@@ -33,7 +34,7 @@ export default function TreatmentHero({
       <div className={styles.mediaBackground}>
         <HeroMedia
           src={image}
-          alt=""
+          alt={imageAlt || ''}
           onReady={() => setMediaReady(true)}
           className={styles.mediaAsset}
         />

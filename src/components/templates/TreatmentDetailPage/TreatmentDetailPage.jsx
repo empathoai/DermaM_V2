@@ -40,8 +40,17 @@ export default function TreatmentDetailPage({ data }) {
     cta,
     whoForList,
     safetyPrecautions,
-    beforeAfter
+    beforeAfter,
+    heroImageAlt,
+    whatIsImageAlt
   } = data;
+
+  // Treatment names live in data as UPPERCASE — Title Case them for image alt text
+  const titleCase = (s = '') =>
+    s.toLowerCase().replace(/(^|\s|\/)([a-záéíóúñ])/g, (_, p, c) => p + c.toUpperCase());
+  const treatmentName = titleCase(title);
+  const heroAlt = heroImageAlt || `${treatmentName} en Derma.M, West Palm Beach`;
+  const whatIsAlt = whatIsImageAlt || `Aplicación de ${treatmentName} en Derma.M`;
 
   // 1. Map breadcrumbs safely (supporting link or to properties)
   const breadcrumbItems = [
@@ -56,14 +65,8 @@ export default function TreatmentDetailPage({ data }) {
     body: typeof b === 'string' ? '' : b.body
   }));
 
-  // 3. Format Before & After item paths safely
-  const categoryFolder = category === 'laserYLuz' ? 'laser-y-luz' : category;
-  const beforeAfterItems = beforeAfter?.items ?? [
-    {
-      before: `/assets/images/treatments/${categoryFolder}/${slug}/before-after-1.jpg`,
-      after: `/assets/images/treatments/${categoryFolder}/${slug}/before-after-2.jpg`
-    }
-  ];
+  // 3. Before & After: only render when a real customDetails.beforeAfter is provided
+  const beforeAfterItems = beforeAfter?.items ?? [];
 
   const beforeAfterDisclaimer = "Las fotografías de antes y después son ejemplos informativos de experiencias individuales reales. Los resultados varían según las características de cada persona, el protocolo aplicado y el seguimiento de las indicaciones pre y post-tratamiento. Ningún contenido de este sitio garantiza resultados específicos.";
 
@@ -109,11 +112,12 @@ export default function TreatmentDetailPage({ data }) {
       </div>
 
       {/* 2. Treatment Hero (Clinical Canvas Surface: #F2F0F1) */}
-      <TreatmentHero 
+      <TreatmentHero
         categoryLabel={categoryLabel}
         title={title}
         description={description}
         image={image}
+        imageAlt={heroAlt}
         disclaimer={cta.disclaimer}
       />
 
@@ -136,7 +140,7 @@ export default function TreatmentDetailPage({ data }) {
           <div className={styles.whatIsMedia}>
             <Picture
               src={whatIs.image || image}
-              alt={title}
+              alt={whatIsAlt}
               className={styles.whatIsImage}
               loading="lazy"
               width="960"
@@ -249,19 +253,21 @@ export default function TreatmentDetailPage({ data }) {
         </div>
       </section>
 
-      {/* 11. Before & After (Dark Authority Surface: #141313) */}
-      <section className={styles.beforeAfterSection}>
-        <div className={styles.container}>
-          <BeforeAfterGrid
-            eyebrow="EVIDENCIA DE APOYO"
-            headline="EVOLUCIÓN Y RESULTADOS ASISTIDOS"
-            items={beforeAfterItems}
-            disclaimer={beforeAfter?.disclaimer ?? beforeAfterDisclaimer}
-            beforeLabel={beforeAfter?.beforeLabel}
-            afterLabel={beforeAfter?.afterLabel}
-          />
-        </div>
-      </section>
+      {/* 11. Before & After (Dark Authority Surface: #141313) — only with real images */}
+      {beforeAfterItems.length > 0 && (
+        <section className={styles.beforeAfterSection}>
+          <div className={styles.container}>
+            <BeforeAfterGrid
+              eyebrow="EVIDENCIA DE APOYO"
+              headline="EVOLUCIÓN Y RESULTADOS ASISTIDOS"
+              items={beforeAfterItems}
+              disclaimer={beforeAfter?.disclaimer ?? beforeAfterDisclaimer}
+              beforeLabel={beforeAfter?.beforeLabel}
+              afterLabel={beforeAfter?.afterLabel}
+            />
+          </div>
+        </section>
+      )}
 
       {/* 12. Related Treatments (Clinical Canvas Surface: #F2F0F1) */}
       <RelatedTreatments 

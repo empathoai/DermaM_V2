@@ -16,6 +16,10 @@ export const contactFaq = {
     {
       question: '¿Qué servicios puedo consultar?',
       answer: 'Puedes consultar sobre valoración facial, acné, manchas, cicatrices, rejuvenecimiento facial, limpiezas faciales y otros tratamientos personalizados.'
+    },
+    {
+      question: '¿Atienden en español e inglés?',
+      answer: 'Sí. Nuestro equipo te atiende en español e inglés, tanto en la clínica en West Palm Beach como por WhatsApp y teléfono.'
     }
   ]
 };

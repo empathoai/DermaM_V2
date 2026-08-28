@@ -17,17 +17,17 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#141313] text-[#F2F0F1] font-sans selection:bg-[#CCC9C1] selection:text-[#141313] flex flex-col">
       <Helmet>
-        <title>Derma.M — Tratamientos Estéticos en West Palm Beach, FL</title>
+        <title>Derma.M | Medical Spa en West Palm Beach, FL</title>
         <meta name="description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <link rel="canonical" href="https://dermamskinhealth.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Derma.M — Tratamientos Estéticos en West Palm Beach, FL" />
+        <meta property="og:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
         <meta property="og:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta property="og:url" content="https://dermamskinhealth.com/" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta property="og:locale" content="es_US" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Derma.M — Tratamientos Estéticos en West Palm Beach, FL" />
+        <meta name="twitter:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
         <meta name="twitter:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
         <meta name="robots" content="index, follow" />

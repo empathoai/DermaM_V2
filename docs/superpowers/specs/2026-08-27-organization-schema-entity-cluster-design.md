@@ -35,10 +35,37 @@ dirección real (`26.6627718, -80.0558883`, verificada en Google Maps para
 `5707 S Dixie Hwy Ste D, West Palm Beach, FL 33405`). El `geo` del **schema ya es correcto**
 — el que está mal es el embed del mapa.
 
+## Arquitectura — fuente única
+
+Hoy el nodo `#organization` está triplicado y de forma inconsistente:
+- `Home.jsx`: `@graph` con `#organization` **completo** (`@id`, todos los campos) + `#website`.
+- `Contacto.jsx`: **no** es `@graph`. Es un `ContactPage` cuyo `mainEntity` es una **copia
+  parcial** del negocio (sin `@id`, `url`, `logo`, `sameAs`, `description`) que vuelve a
+  declarar `address`/`geo`/`openingHoursSpecification`. Riesgo: Google lo lee como un
+  segundo negocio mal descrito.
+- `NancyNieto.jsx`: el `Person.worksFor` **también** re-declara un `HealthAndBeautyBusiness`
+  parcial.
+
+**Solución:** una sola fuente de verdad.
+
+- **Crear `src/data/organizationSchema.js`** → `export const organizationNode = { … }` con el
+  nodo `#organization` canónico completo (ya con todos los cambios C1–C7 de abajo).
+- `Home.jsx`: importar → `"@graph": [organizationNode, websiteNode]`.
+- `Contacto.jsx`: importar → `"@graph": [organizationNode, contactPageNode]`, donde
+  `contactPageNode` es el `ContactPage` actual pero con
+  `"mainEntity": { "@id": "https://dermamskinhealth.com/#organization" }` (referencia, no
+  copia). Se elimina la copia parcial del negocio.
+- `NancyNieto.jsx`: `Person.worksFor` pasa a `{ "@id":
+  "https://dermamskinhealth.com/#organization" }` (referencia cross-page, Google la
+  resuelve); + `Person.sameAs` gana la URL de LinkedIn.
+
 ## Alcance
 
-**Archivos:** `src/pages/Home.jsx`, `src/pages/Contacto.jsx`, `src/pages/NancyNieto.jsx`.
-Sin componentes, sin CSS, sin `src/data`.
+**Archivos:**
+- **Crear:** `src/data/organizationSchema.js`
+- **Modificar:** `src/pages/Home.jsx`, `src/pages/Contacto.jsx`, `src/pages/NancyNieto.jsx`
+
+Sin componentes, sin CSS.
 
 **Fuera de alcance** (ciclos propios, ya en backlog `docs/SEO_AUDIT_2026.md`):
 - #5 H1 con intención local (Home + 6 hubs) — toca `Hero`, `PageHero`, `categoryPages.js`.
@@ -51,21 +78,24 @@ Sin componentes, sin CSS, sin `src/data`.
 
 ## Cambios
 
+Todos los cambios de campo (C1–C7) se aplican **una sola vez** en `organizationNode`
+(`src/data/organizationSchema.js`), que Home y Contacto importan. Las referencias `~Lxx` son
+a la ubicación actual en `Home.jsx` (de donde sale el objeto base).
+
 ### C1 — Quitar `aggregateRating`
-`Home.jsx` (~L51-55) y `Contacto.jsx` (~L98-101): eliminar el bloque
-`"aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "117" }`.
+Eliminar el bloque
+`"aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "117" }`
+(hoy en `Home.jsx` ~L51-55 y `Contacto.jsx` ~L98-101).
 Ningún componente lo lee (`grep` confirma: solo aparece en esos 2 `<script>` JSON-LD).
 Se reintroducirá respaldado por reseñas visibles en el ítem 8.20.
 
 ### C2 — `@type` / `medicalSpecialty`
 - `@type` queda `"HealthAndBeautyBusiness"` (sin cambio).
-- Eliminar `"medicalSpecialty": "Dermatology"` de `Home.jsx` (~L50) y `Contacto.jsx`.
+- Eliminar `"medicalSpecialty": "Dermatology"`.
 - `additionalType` ("Medical spa"): **solo si** se verifica el ID de Wikidata correcto
   durante la implementación. Si no se verifica con certeza, **no se agrega**.
 
 ### C3 — `description`
-Reemplazar en `Home.jsx` (~L44) y `Contacto.jsx` (mismo string):
-
 Antes:
 > `Derma.M es una clínica de medicina estética con tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida.`
 
@@ -73,7 +103,7 @@ Después:
 > `Derma.M es un medical spa en West Palm Beach, Florida, con tratamientos estéticos faciales, corporales, de láser y luz, dental estético, IV therapy y capilar. Todos los servicios requieren una valoración profesional previa.`
 
 ### C4 — `sameAs`
-`Home.jsx` (~L91-93) y `Contacto.jsx` `#organization`:
+En `organizationNode` (`src/data/organizationSchema.js`):
 ```json
 "sameAs": [
   "https://www.instagram.com/dermamskinhealth",
@@ -81,37 +111,72 @@ Después:
   "https://www.yelp.com/biz/derma-m-west-palm-beach"
 ]
 ```
-`NancyNieto.jsx` — en el nodo `Person` de su JSON-LD, agregar a `sameAs` (crear el array si
-no existe): `"https://www.linkedin.com/in/nancy-nieto-581160144"`.
+`NancyNieto.jsx` — en el nodo `Person`, agregar `sameAs` (crear el array; hoy no tiene):
+`["https://www.linkedin.com/in/nancy-nieto-581160144"]`.
 
-El GBP se agregará a los `sameAs` de `#organization` cuando se resuelva 8.19 — dejar
+El GBP se agregará a `sameAs` de `organizationNode` cuando se resuelva 8.19 — dejar
 comentario `// TODO(8.19): añadir URL de Google Maps del GBP cuando esté verificado`.
 
 ### C5 — `alternateName` + `knowsAbout` + `keywords`
-Agregar al `#organization` en `Home.jsx` y `Contacto.jsx`:
+Agregar a `organizationNode`:
 ```json
 "alternateName": ["Derma.M Med Spa", "DERMA.M", "Derma M", "DermaM"],
 "knowsAbout": [
-  "Medical spa", "Aesthetic medicine", "Skin care",
-  "Facial treatments", "Hydrafacial", "Microneedling", "Chemical peel",
-  "Facial radiofrequency", "High-intensity focused ultrasound (HIFU)",
-  "Oxygen facial therapy", "Acne treatment", "Hyperpigmentation treatment",
-  "Microdermabrasion", "Cold plasma therapy",
-  "Body contouring", "Manual lymphatic drainage", "Post-operative recovery care",
-  "Cellulite treatment", "Carboxytherapy", "Wood therapy (maderoterapia)",
-  "Laser hair removal", "Intense pulsed light (IPL)",
-  "Esthetic dentistry", "Teeth whitening",
-  "IV therapy", "Scalp and hair treatments"
+  "Medical spa",
+  "Medicina estética",
+  "Cuidado de la piel",
+  "Plasma rico en plaquetas y fibrina (PRP y PRF)",
+  "Bioestimulación cutánea",
+  "Tratamientos faciales",
+  "Hidrofacial",
+  "Microneedling con Dermapen",
+  "HIFU facial (ultrasonido focalizado de alta intensidad)",
+  "Peel coreano",
+  "Radiofrecuencia facial",
+  "Oxigenoterapia facial",
+  "Rejuvenecimiento facial",
+  "Tratamiento del acné",
+  "Tratamiento de manchas y cicatrices",
+  "Dermabrasión facial (microdermoabrasión)",
+  "Plasma frío",
+  "Carboxiterapia facial",
+  "Limpieza facial profunda",
+  "Tratamientos corporales",
+  "Lipo 360 no quirúrgico",
+  "Levantamiento de glúteos sin cirugía",
+  "Marcación abdominal no invasiva",
+  "HIFU corporal",
+  "Corrientes rusas (electroestimulación)",
+  "Tratamiento de estrías y celulitis",
+  "Carboxiterapia corporal",
+  "Maderoterapia",
+  "Drenaje linfático manual",
+  "Cuidados postoperatorios estéticos",
+  "Depilación láser",
+  "Luz pulsada intensa (IPL)",
+  "Odontología estética",
+  "Blanqueamiento dental",
+  "Limpieza dental estética",
+  "Tratamiento capilar (bioestimulación del cuero cabelludo)",
+  "IV therapy (sueroterapia intravenosa)"
 ],
 "keywords": "medical spa West Palm Beach, med spa West Palm Beach, medspa WPB, skin care clinic West Palm Beach, facial spa, laser hair removal West Palm Beach"
 ```
-Las variantes "med spa" / "medspa" viven **solo** en `alternateName`/`keywords` — el `name`
-sigue siendo `"Derma.M"` y no se introduce ningún lockup de marca (respeta `MEMORY.md` /
-`DECISIONS.md` 2026-08-27). `knowsAbout`: strings ahora; convertir entidades fuertes a
-`DefinedTerm` con `sameAs` a Wikipedia/Wikidata queda como mejora futura opcional.
+- `knowsAbout` (37) = espejo 1:1 del contenido del sitio (6 hubs + 25 tratamientos + 3
+  landings). Español primero (mercado hispano WPB, la búsqueda es en español), término
+  técnico/inglés entre paréntesis donde también se busca así. **Plasma rico en plaquetas y
+  fibrina en posición #4** (prioridad de negocio del usuario). Nombres de suero IV
+  individuales NO van (son SKU, no competencias). `DefinedTerm` + `sameAs` Wikipedia/Wikidata
+  = mejora futura opcional.
+- Variantes "med spa"/"medspa" viven **solo** en `alternateName`/`keywords` — el `name`
+  sigue siendo `"Derma.M"`, sin lockup de marca (respeta `MEMORY.md`/`DECISIONS.md`
+  2026-08-27).
+- Impacto de tamaño: el array suma ~1.5 KB al `<script>` JSON-LD inline. Al estar en el
+  módulo compartido, se declara una sola vez en el código (aunque se serializa en cada
+  página que lo usa). Aceptable.
 
 ### C6 — `areaServed` a nivel org
-Agregar al `#organization`:
+Agregar a `organizationNode`:
 ```json
 "areaServed": [
   { "@type": "City", "name": "West Palm Beach" },
@@ -121,11 +186,11 @@ Agregar al `#organization`:
 Modesto a propósito (no inflar cobertura — "test del dolor").
 
 ### C7 — Aplanar el `location` anidado
-En `Home.jsx` y `Contacto.jsx`: mover `address`, `geo`, `openingHoursSpecification` desde el
-objeto anidado `location: [{ "@type": "HealthAndBeautyBusiness", … }]` **directamente** al
-nodo `#organization`, y eliminar el wrapper `location` y su `name` redundante
-("Derma.M — West Palm Beach"). Es una sola ubicación → sin pérdida de información. Los
-valores no cambian (incl. `geo: 26.6627718, -80.0558881` — correcto).
+En `organizationNode`: mover `address`, `geo`, `openingHoursSpecification` desde el objeto
+anidado `location: [{ "@type": "HealthAndBeautyBusiness", … }]` **directamente** al nodo, y
+eliminar el wrapper `location` y su `name` redundante ("Derma.M — West Palm Beach"). Es una
+sola ubicación → sin pérdida de información. Los valores no cambian (incl.
+`geo: 26.6627718, -80.0558881` — verificado correcto contra Google Maps).
 
 ### C8 — Embed del mapa en `/contacto`
 `Contacto.jsx` (~L465-473): regenerar el código de inserción desde Google Maps (Share →
@@ -134,28 +199,38 @@ Embed) para `5707 S Dixie Hwy Ste D, West Palm Beach, FL 33405` y reemplazar el 
 `loading="lazy"` si está, `referrerpolicy`, `title`/`aria-label`). Obtener el embed nuevo
 con el browser durante la implementación.
 
-## Orden de aplicación
+## Orden de aplicación (commits)
 
-C1–C7 son ediciones al mismo nodo JSON-LD en 2 archivos (+ C4 en un 3º) → **una sola
-tanda**, un commit. C8 (mapa) es un segundo commit en el plan (concern distinto, mismo
-archivo).
+1. **Crear `organizationNode`** (`src/data/organizationSchema.js`) ya con C1–C7 aplicados +
+   cablearlo en `Home.jsx` (`@graph: [organizationNode, websiteNode]`).
+2. **`Contacto.jsx`**: importar `organizationNode`, pasar a `@graph: [organizationNode,
+   contactPageNode]`, `contactPageNode.mainEntity` → `{ "@id": ".../#organization" }`.
+   Eliminar la copia parcial.
+3. **`NancyNieto.jsx`**: `Person.worksFor` → `{ "@id": ".../#organization" }`; `Person.sameAs`
+   += LinkedIn.
+4. **C8 — mapa `/contacto`**: regenerar el `<iframe src>` (commit aparte, concern distinto).
 
 ## Verificación (definition of done)
 
 1. `npm run test:visual` → sin diffs nuevos (baseline actual: 34/34). El JSON-LD no se
    renderiza; el `<iframe>` cambia de `src` pero `/contacto` no está en baseline — confirmar.
-2. DOM en `/` y `/contacto`: el `@graph` tiene `#organization` con `@type
-   "HealthAndBeautyBusiness"`, `description` con "medical spa" (sin "clínica"), `sameAs` con
-   las 3 URLs externas, `alternateName`/`knowsAbout`/`keywords`/`areaServed` presentes,
-   `address`/`geo`/`openingHoursSpecification` **directo** en `#organization` (sin `location`
-   anidado), **sin** `aggregateRating`, **sin** `medicalSpecialty`. 0 errores de consola.
-3. DOM en `/nosotros/nancy-nieto`: `Person.sameAs` incluye la URL de LinkedIn.
-4. Validar el JSON-LD de `/` y `/contacto` con el validador de Schema.org
-   (https://validator.schema.org/) — 0 errores, 0 warnings nuevos.
+2. DOM en `/` y `/contacto`: el `@graph` tiene **un solo** nodo `HealthAndBeautyBusiness`
+   (`@id …#organization`) — no dos, no copias parciales — con: `description` con "medical
+   spa" (sin "clínica"), `sameAs` con las 3 URLs externas, `alternateName` (4),
+   `knowsAbout` (37, "Plasma rico en plaquetas y fibrina" presente), `keywords`,
+   `areaServed`, `address`/`geo`/`openingHoursSpecification` **directo** en el nodo (sin
+   `location` anidado), **sin** `aggregateRating`, **sin** `medicalSpecialty`. En `/contacto`
+   el `ContactPage.mainEntity` es `{ "@id": ".../#organization" }`. 0 errores de consola.
+3. DOM en `/nosotros/nancy-nieto`: `Person.worksFor` = `{ "@id": ".../#organization" }`;
+   `Person.sameAs` incluye la URL de LinkedIn.
+4. Validar el JSON-LD de `/`, `/contacto` y `/nosotros/nancy-nieto` con
+   https://validator.schema.org/ — 0 errores, 0 warnings nuevos. (`@id` cross-page sin nodo
+   local en NancyNieto es aceptable — Google lo resuelve; si el validador se queja, dejar un
+   stub `{ "@id": …, "@type": "HealthAndBeautyBusiness", "name": "Derma.M" }`.)
 5. `/contacto`: el mapa carga y el pin cae en `5707 S Dixie Hwy Ste D` (verificación visual
    en el browser).
-6. `grep`: 0 ocurrencias de `medicalSpecialty`, `aggregateRating`, `"clínica de medicina
-   estética"` en `src/pages/`.
+6. `grep` en `src/`: 0 ocurrencias de `medicalSpecialty`, `aggregateRating`, `"clínica de
+   medicina estética"`; `organizationNode` importado en `Home.jsx` y `Contacto.jsx`.
 
 ## Registro al cerrar
 
@@ -164,6 +239,8 @@ archivo).
   del `#organization` (aplanado, `sameAs` real, sin `aggregateRating`/`medicalSpecialty`).
 - `DECISIONS.md` — (a) por qué `HealthAndBeautyBusiness` solo y no `MedicalBusiness`;
   (b) por qué se quitó `aggregateRating` en vez de mostrar reseñas ahora (→ 8.20 / APIFY);
-  (c) variantes "med spa"/"medspa" solo en `alternateName`/`keywords`, nunca en `name`.
+  (c) variantes "med spa"/"medspa" solo en `alternateName`/`keywords`, nunca en `name`;
+  (d) `#organization` extraído a `src/data/organizationSchema.js` como fuente única; Contacto
+  y NancyNieto lo referencian por `@id` en vez de re-declarar copias parciales.
 - `docs/SEO_AUDIT_2026.md` — marcar 8.14 y 8.18 como Hecho; 8.19 sigue Pendiente (sesión B);
   8.20 Pendiente.

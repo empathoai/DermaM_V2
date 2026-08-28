@@ -23,6 +23,7 @@ import HeroMedia from '../components/utils/HeroMedia';
 import styles from './Contacto.module.css';
 import { contactConsentCopy } from '../data/legalPages';
 import { contactFaq } from '../data/contactPage';
+import { organizationNode } from '../data/organizationSchema';
 
 export default function ContactoPage() {
   const [mapInteractive, setMapInteractive] = useState(false);
@@ -86,56 +87,17 @@ export default function ContactoPage() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "name": "Contacto | Derma.M",
-          "url": "https://dermamskinhealth.com/contacto",
-          "description": "Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida.",
-          "mainEntity": {
-            "@type": "HealthAndBeautyBusiness",
-            "name": "Derma.M",
-            "telephone": "+15612535384",
-            "email": "info@dermamskinhealth.com",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "117"
-            },
-            "location": [
-              {
-                "@type": "HealthAndBeautyBusiness",
-                "name": "Derma.M — West Palm Beach",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "5707 S Dixie Hwy UNIT D",
-                  "addressLocality": "West Palm Beach",
-                  "addressRegion": "FL",
-                  "postalCode": "33405",
-                  "addressCountry": "US"
-                },
-                "telephone": "+15612535384",
-                "url": "https://dermamskinhealth.com/contacto",
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 26.6627718,
-                  "longitude": -80.0558881
-                },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                    "opens": "09:00",
-                    "closes": "17:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Sunday",
-                    "opens": "09:00",
-                    "closes": "13:00"
-                  }
-                ]
-              }
-            ]
-          }
+          "@graph": [
+            organizationNode,
+            {
+              "@type": "ContactPage",
+              "@id": "https://dermamskinhealth.com/contacto#contactpage",
+              "name": "Contacto | Derma.M",
+              "url": "https://dermamskinhealth.com/contacto",
+              "description": "Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida.",
+              "mainEntity": { "@id": "https://dermamskinhealth.com/#organization" }
+            }
+          ]
         })}</script>
       </Helmet>
       

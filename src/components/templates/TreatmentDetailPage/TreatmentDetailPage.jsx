@@ -27,6 +27,7 @@ export default function TreatmentDetailPage({ data }) {
     route,
     title,
     description,
+    heroDescription,
     image,
     protocolImage,
     quickFacts,
@@ -115,7 +116,7 @@ export default function TreatmentDetailPage({ data }) {
         categoryLabel={categoryLabel}
         title={title}
         localTag="Medical Spa · West Palm Beach"
-        description={description}
+        description={heroDescription}
         image={image}
         imageAlt={heroAlt}
         disclaimer={cta.disclaimer}

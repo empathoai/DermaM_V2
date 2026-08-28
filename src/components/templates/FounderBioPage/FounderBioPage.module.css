@@ -192,6 +192,66 @@
   font-size: 10px;
 }
 
+/* 4. DERMA.M & Academy Section */
+.academySection {
+  background-color: #EFEFEB; /* Off-White */
+  color: #363633;
+  padding: 96px 0;
+}
+
+.academyContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+}
+
+.academyEyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #8A8783;
+  margin: 0 0 16px 0;
+}
+
+.academyEyebrowLine {
+  width: 64px;
+  height: 1px;
+  background-color: rgba(54, 54, 51, 0.18);
+  margin-bottom: 32px;
+}
+
+.academyTitle {
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #363633;
+  margin: 0 0 32px 0;
+  line-height: 1.15;
+  max-width: 780px;
+}
+
+.academyBody {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4E4D4D;
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0 0 20px 0;
+}
+
+.academyBodySecondary {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #5C5B5B;
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0;
+  padding-left: 20px;
+  border-left: 1px solid rgba(54, 54, 51, 0.18);
+}
+
 /* Responsive Grids & Spacing Scaling */
 @media (min-width: 640px) and (max-width: 1023px) {
   .spotlightMedia {
@@ -234,7 +294,8 @@
     font-size: 56px;
   }
 
-  .philosophySection {
+  .philosophySection,
+  .academySection {
     padding: 120px 0;
   }
 

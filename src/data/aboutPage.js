@@ -202,19 +202,42 @@ export const founderBioPage = {
   hero: {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     title: "NANCY NIETO",
-    body: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Conoce su formación, filosofía de cuidado y la visión detrás de DERMA.M.",
+    body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Hoy dirige el medical spa en West Palm Beach con esa misma visión.",
     primaryCta: "AGENDAR VALORACIÓN",
     secondaryCta: "HABLAR POR WHATSAPP",
     backgroundImage: "/assets/images/about/hero.jpg",
     variant: "default"
   },
-  founderSpotlight: aboutPage.founderSpotlight,
-  founderPhilosophy: {
-    eyebrow: "FILOSOFÍA",
-    headline: "ESCUCHAR ANTES DE RECOMENDAR",
-    body: "Cada piel, cada objetivo y cada momento personal requieren una conversación distinta. Por eso empezamos por comprender tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
-    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas."
+  historia: {
+    eyebrow: "FORMACIÓN Y TRAYECTORIA",
+    headline: "UNA PROFESIONAL FORMADA EN DOS PAÍSES",
+    body: "Nancy es Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida. Cuenta además con formación como Cosmetóloga, Cosmiatra y Dermocosmiatra en Ecuador, y complementa sus conocimientos con capacitación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel.",
+    secondaryBody: "Más allá de sus títulos y certificaciones, Nancy se define como una profesional apasionada por transformar vidas a través del cuidado de la piel. Para ella, cada tratamiento es una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada."
   },
-  quote: aboutPage.quote,
-  cta: aboutPage.cta
+  filosofia: {
+    eyebrow: "FILOSOFÍA",
+    headline: "ESCUCHAR, EDUCAR Y ACOMPAÑAR",
+    body: "Su forma de trabajar parte de escuchar, educar y acompañar a cada cliente de manera personalizada, entendiendo que detrás de cada piel existe una historia única.",
+    secondaryBody: "Para Nancy, la estética va mucho más allá de la apariencia: se trata de bienestar, autoestima y calidad de vida."
+  },
+  dermamYAcademy: {
+    eyebrow: "DERMA.M Y DERMA.M ACADEMY",
+    headline: "UN ESPACIO PARA CUIDAR Y UN PROYECTO PARA FORMAR",
+    body: "Con esa visión, Nancy creó DERMA.M: un espacio donde la ciencia, la experiencia y la atención humana se unen para ofrecer tratamientos seguros, éticos y orientados a resultados reales. De su mano nació también DERMA.M Academy, un proyecto que refleja su compromiso con la excelencia, la educación continua y el crecimiento profesional dentro de la industria de la estética.",
+    secondaryBody: "Hoy continúa preparándose con el mismo entusiasmo que la impulsó desde el primer día. Su meta es seguir haciendo crecer DERMA.M para generar oportunidades a otras mujeres profesionales e inspirarlas a creer en su potencial."
+  },
+  quote: {
+    text: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso. Cuando ayudamos a alguien a sentirse mejor consigo mismo, también estamos cambiando su día, su confianza y, muchas veces, una parte importante de su vida.",
+    author: "Nancy Nieto",
+    title: "Fundadora y Directora de DERMA.M"
+  },
+  cta: {
+    eyebrow: "TU PRIMER PASO",
+    headline: "AGENDA UNA VALORACIÓN PERSONALIZADA",
+    body: "Conversemos sobre tus objetivos y revisemos qué opciones pueden ajustarse a ti después de una valoración profesional.",
+    primaryCta: "AGENDAR VALORACIÓN",
+    secondaryCta: "CONSULTAR POR WHATSAPP",
+    disclaimer: "La recomendación final depende de una valoración profesional. Los resultados y la respuesta a cada tratamiento pueden variar.",
+    backgroundImage: "/assets/images/about/cta.jpg"
+  }
 };

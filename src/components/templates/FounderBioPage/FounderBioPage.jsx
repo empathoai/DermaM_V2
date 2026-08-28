@@ -12,7 +12,7 @@ export default function FounderBioPage({ data }) {
 
   if (!data) return null;
 
-  const { hero, founderSpotlight, founderPhilosophy, quote, cta } = data;
+  const { hero, historia, filosofia, dermamYAcademy, quote, cta } = data;
 
   return (
     <div className={styles.founderBioPage}>
@@ -28,7 +28,7 @@ export default function FounderBioPage({ data }) {
         hasTrustBar={false}
       />
 
-      {/* 2. Founder Spotlight (Clinical Canvas #F2F0F1) */}
+      {/* 2. Historia y formación (Clinical Canvas #F2F0F1) */}
       <motion.section
         className={styles.spotlightSection}
         id="founder-spotlight"
@@ -46,8 +46,8 @@ export default function FounderBioPage({ data }) {
               <div className={styles.spotlightMediaFrame}>
                 <motion.div className={styles.spotlightMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
                   <MediaBlock
-                    src={founderSpotlight.image}
-                    alt={founderSpotlight.imageAlt}
+                    src="/assets/images/home/founder.jpg"
+                    alt="Nancy Nieto, fundadora y directora de DERMA.M"
                     variant="light"
                     className={styles.spotlightImage}
                   />
@@ -61,40 +61,41 @@ export default function FounderBioPage({ data }) {
               viewport={viewportConfig}
               variants={sectionReveal}
             >
-              <p className={styles.spotlightEyebrow}>{founderSpotlight.eyebrow}</p>
+              <p className={styles.spotlightEyebrow}>{historia.eyebrow}</p>
               <div className={styles.spotlightEyebrowLine} aria-hidden="true"></div>
-              <h2 id="founder-heading" className={styles.spotlightTitle}>{founderSpotlight.name}</h2>
-              <p className={styles.spotlightSubheadline}>{founderSpotlight.subheadline}</p>
-              <p className={styles.spotlightBody}>{founderSpotlight.body}</p>
-              {founderSpotlight.secondaryBody && (
-                <p className={styles.spotlightBodySecondary}>{founderSpotlight.secondaryBody}</p>
+              <h2 id="founder-heading" className={styles.spotlightTitle}>{historia.headline}</h2>
+              <p className={styles.spotlightBody}>{historia.body}</p>
+              {historia.secondaryBody && (
+                <p className={styles.spotlightBodySecondary}>{historia.secondaryBody}</p>
               )}
             </motion.div>
           </div>
         </div>
       </motion.section>
 
-      {/* 3. Founder Philosophy + Quote (Dark Authority #141313) */}
+      {/* 3. Filosofía + Quote (Dark Authority #141313) */}
       <motion.section
         className={styles.philosophySection}
         initial="hidden"
         whileInView="visible"
         viewport={viewportConfig}
         variants={sectionReveal}
+        aria-labelledby="filosofia-heading"
       >
         <div className={styles.philosophyContainer}>
           <div className={styles.philosophyHeader}>
             <SectionHeader
-              eyebrow={founderPhilosophy.eyebrow}
-              title={founderPhilosophy.headline}
+              eyebrow={filosofia.eyebrow}
+              title={filosofia.headline}
+              titleId="filosofia-heading"
               variant="dark"
               align="left"
             />
           </div>
           <div className={styles.philosophyContent}>
-            <p className={styles.philosophyBody}>{founderPhilosophy.body}</p>
-            {founderPhilosophy.supportingText && (
-              <p className={styles.philosophySupport}>{founderPhilosophy.supportingText}</p>
+            <p className={styles.philosophyBody}>{filosofia.body}</p>
+            {filosofia.secondaryBody && (
+              <p className={styles.philosophySupport}>{filosofia.secondaryBody}</p>
             )}
             <blockquote className={styles.philosophyQuote}>
               <p>“{quote.text}”</p>
@@ -107,7 +108,27 @@ export default function FounderBioPage({ data }) {
         </div>
       </motion.section>
 
-      {/* 4. Final CTA (Dark Authority #141313) */}
+      {/* 4. DERMA.M y DERMA.M Academy (Off-White #EFEFEB) */}
+      <motion.section
+        className={styles.academySection}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportConfig}
+        variants={sectionReveal}
+        aria-labelledby="academy-heading"
+      >
+        <div className={styles.academyContainer}>
+          <p className={styles.academyEyebrow}>{dermamYAcademy.eyebrow}</p>
+          <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
+          <h2 id="academy-heading" className={styles.academyTitle}>{dermamYAcademy.headline}</h2>
+          <p className={styles.academyBody}>{dermamYAcademy.body}</p>
+          {dermamYAcademy.secondaryBody && (
+            <p className={styles.academyBodySecondary}>{dermamYAcademy.secondaryBody}</p>
+          )}
+        </div>
+      </motion.section>
+
+      {/* 5. Final CTA (Dark Authority #141313) */}
       <FinalCTA
         eyebrow={cta.eyebrow}
         title={cta.headline}

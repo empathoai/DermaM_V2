@@ -2,6 +2,9 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-28 — A11y: `alt` del overview de los 6 hubs → Title Case
+- `CategoryPage.jsx:61` `alt={overview.headline}` (MAYÚSCULAS crudas de `categoryPages.js`) → `alt={titleCase(overview.headline)}` + import de `src/utils/text`. Mismo helper que `TreatmentSEO`/`CategorySEO`. `<h2>` visible intacto (uppercase por CSS). Verif: alt Title Case en `/faciales` + `/iv-therapy`, console limpia, `playwright` 34/34 sin diffs.
+
 ## 2026-08-28 — Workflow lean: `NEXT.md` + reglas de arranque/cierre en `CLAUDE.md` (principios Musk + writing-for-agents)
 - **Problema:** arranque de sesión ~40k tok en re-leer PROGRESS/DECISIONS/INTAKE enteros + CLAUDE.md/MEMORY.md ya inyectados; handover prompt duplicaba PROGRESS. Análisis con el algoritmo de 5 pasos de Musk (cuestionar requisito → borrar → simplificar → acelerar → automatizar) y la skill `writing-for-agents`.
 - **Nuevo `NEXT.md` (raíz):** lista ordenada de próximos pasos + HEAD esperado + estado del árbol + bloqueos + infra resuelta. ~25 líneas. **Único read de planificación al arrancar.** Reemplaza el "handover prompt" como artefacto.

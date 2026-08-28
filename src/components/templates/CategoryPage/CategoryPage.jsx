@@ -6,6 +6,7 @@ import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
 import Picture from '../../shared/Picture/Picture';
+import { titleCase } from '../../../utils/text';
 import styles from './CategoryPage.module.css';
 
 export default function CategoryPage({ data }) {
@@ -58,7 +59,7 @@ export default function CategoryPage({ data }) {
             <div className={styles.overviewMedia}>
               <Picture
                 src={overview.image}
-                alt={overview.headline}
+                alt={titleCase(overview.headline)}
                 className={styles.overviewImage}
                 loading="lazy"
               />

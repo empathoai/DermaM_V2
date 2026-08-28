@@ -1,15 +1,13 @@
 # NEXT
 
-Estado: todo pusheado a origin/main · árbol limpio · dev server detenido
+Estado: paso 1 hecho y pusheado · árbol limpio · dev server `:3000` levantado
 
 ## Próximo (en orden)
-1. `CategoryPage.jsx:62` → `alt={titleCase(overview.headline)}` + import. A11y: mata el
-   alt EN MAYÚSCULAS de la imagen de overview de los 6 hubs. Sin cambio visual.
-2. (opcional) Hero de `/contacto`: Title case, hardcodeado aparte del sistema MAYÚSCULAS
+1. (opcional) Hero de `/contacto`: Title case, hardcodeado aparte del sistema MAYÚSCULAS
    del resto de heros. SEO-neutro, pulido.
-3. Track B — sesión GBP (usuario logueado en el browser): website field a la forma
+2. Track B — sesión GBP (usuario logueado en el browser): website field a la forma
    canónica, service area, profile strength, categorías secundarias. Desbloquea 8.19 → 8.20.
-4. Estrategia PRF (Tema 4 intake, must-win): apropiarse del término PRF. Content strategy
+3. Estrategia PRF (Tema 4 intake, must-win): apropiarse del término PRF. Content strategy
    propia, con brainstorming.
 
 ## Bloqueado (espera al usuario)

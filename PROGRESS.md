@@ -2,6 +2,34 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-28 — GA4: property creada + snippet gtag.js en index.html
+
+**Browser (usuario logueado, empathoai@gmail.com):**
+- **GA4 property "Derma.M"** creada en la cuenta "Default Account for Firebase" (356181125).
+  Zona Eastern (New York Time), USD, industria "Beauty & Fitness", tamaño Small, objetivos
+  "Generate leads" + "Understand web/app traffic".
+- **Data stream "Derma.M Web"** → `https://dermamskinhealth.com`, Stream ID `15515945803`,
+  **Measurement ID `G-9272VHFT03`**, Enhanced measurement ON.
+- Property vieja de Firebase (`emphatoai-payroll` / `G-NV1WD4F9BN`) **intacta, sin usar**.
+- **Bing Webmaster Tools DIFERIDO** — el login de Microsoft bloquea el browser automatizado.
+  Post-deploy se importa desde el GSC verificado (1 clic).
+
+**Cambio de código (Track A):**
+- **`index.html`** — agregado el snippet estándar `gtag.js` de GA4 (`G-9272VHFT03`) en `<head>`,
+  justo después del `<title>`. 9 líneas, additivo. No hay CSP en el repo (deploy Vercel, sin
+  `vercel.json`/`_headers`), no había ningún GA/GTM previo.
+- **SPA page_view:** NO se agregó código de router. El Enhanced measurement de GA4 captura
+  "page changes based on browser history events" por default → los cambios de ruta de React
+  Router se trackean solos. Snippet-only es lo correcto y mínimo.
+- **Verificado en dev (`localhost:3000`, browser pane):** `window.gtag` = function; `gtag.js`
+  carga (15ms); `page_view` enviado a `google-analytics.com/g/collect` con `tid=G-9272VHFT03`;
+  evento `scroll` de enhanced measurement tambien dispara; **0 errores de consola**.
+  `vite build` → `dist/index.html` contiene el tag ×2. `dist/` borrado post-check.
+- **NO tocado:** nada mas. `robots.txt`/`sitemap.xml`/`llms.txt` intactos.
+
+**PENDIENTE:** ver datos reales en GA4 tras el deploy (48h para "get started"). GA4 tambien
+habilita verificar GSC por el metodo "Google Analytics" (ademas del archivo HTML ya en el repo).
+
 ## 2026-08-28 — GSC: propiedad creada + archivo de verificación en el repo
 
 **Contexto:** sesión de intake SEO local (ver `docs/seo-setrategies/INTAKE.md`, Temas 1–5 respondidos).

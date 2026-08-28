@@ -200,9 +200,24 @@ Palm Beach), ese sí se evalúa.
     (método archivo HTML alternativo: `google2f0ede1a410e8a22.html`).
   - **PENDIENTE (cambio Track A, ciclo propio):** agregar ese `<meta>` al `<head>` de
     `index.html` del repo. Verificación real = después del deploy (darle a "Verify" en GSC).
-  - Ídem Bing Webmaster (su propio meta tag) cuando se llegue a esa parte.
+  - **Bing Webmaster Tools — DIFERIDO (2026-08-28):** el login de Microsoft/Bing bloquea el
+    browser automatizado ("Microsoft account is unavailable from this site"). No se puede hacer
+    en la sesión. Se hace **post-deploy importando desde el GSC verificado** (1 clic) — es el
+    de menor valor de los tres, no se pelea ahora.
   - **Ruta alternativa mejor:** quien deploya a Vercel controla el DNS → puede hacer la
     propiedad de **Dominio**. Ligado al punto "quién deploya" (PENDIENTE, sección Deploy).
+- **GA4 — HECHO (browser, 2026-08-28):** property **"Derma.M"** creada en la cuenta
+  `empathoai@gmail.com` (cuenta "Default Account for Firebase", ID 356181125). Zona Eastern
+  (New York Time), USD, industria "Beauty & Fitness", tamaño Small, objetivos "Generate leads"
+  + "Understand web/app traffic". Data stream **"Derma.M Web"** → `https://dermamskinhealth.com`,
+  Stream ID `15515945803`, **Measurement ID `G-9272VHFT03`**, Enhanced measurement ON.
+  La property vieja de Firebase (`emphatoai-payroll`, `G-NV1WD4F9BN`) queda **intacta, sin usar**.
+  - **PENDIENTE (cambio Track A, ciclo propio):** instalar el snippet `gtag.js` de `G-9272VHFT03`.
+    Considerar SPA page_view en cambios de ruta (React Router) — el Enhanced measurement de GA4
+    captura "page changes based on browser history events" por default, así que puede alcanzar
+    con el snippet en `index.html`; a evaluar en el ciclo.
+  - **Bonus:** con GA4 en el sitio live, GSC se puede verificar también por el método "Google
+    Analytics" (además del archivo HTML).
 - **Herramientas de datos — DECIDIDO: sin herramienta paga.** Método = browser pane (manual:
   autocomplete, PAA, local pack, GMBspy, ver-código en Maps) + skills SEO/GEO/Local ya
   instaladas + `docs/pedro-seo/` y `docs/open-seo/` como referencia. **Descartados:**

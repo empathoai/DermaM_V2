@@ -99,7 +99,7 @@ herramienta paga; browser + skills actuales**.
 - Schema que matchee texto visible; `llms.txt`; internal linking.
 - Formato **respuesta directa + Q&A** en páginas de tratamiento/landings; bloques FAQ
   sembrados desde **query fan-out**.
-- **Limpieza de residuos de Miami** (Tema 1 del intake).
+- Consolidación a sede única West Palm Beach (Tema 1 del intake) — HECHA 2026-08-28, repo limpio.
 
 **Entregables de research/preparación (docs, sin tocar el sitio):**
 - Recomendación de **categoría primaria + secundarias** del GBP, derivada de inspección de

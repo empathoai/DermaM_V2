@@ -111,12 +111,8 @@ Palm Beach), ese sí se evalúa.
 - **Derma M Institute** (`dermaminstitute.com`, productos skincare) — **NO es de Derma.M.**
   Tercero que comparte el nombre. → NO enlazar, NO `sameAs`. Riesgo de confusión de entidad;
   vigilar que el sitio no lo referencie ni sugiera relación.
-- **Miami** (`4960 SW Ave Ste 203, Miami`, `dermamskinhealthmiami@gmail.com`,
-  WhatsApp `786 734-3748`) — era una **sucursal que abrió y se cerró**. **Debe desaparecer
-  del sitio.** Ya se hizo una pasada antes pero **quedó algo residual**. El sitio nuevo es
-  **100% West Palm Beach.** → **ACCIÓN Track A:** barrer el repo por referencias residuales a
-  Miami (dirección, email `...miami@gmail.com`, WhatsApp `786 734-3748`, la palabra "Miami" en
-  contexto de sede) y eliminarlas. Ciclo propio con aprobación.
+- **Sede única: West Palm Beach.** El sitio es 100% WPB. Repo verificado limpio
+  (`src/` + `public/` + `PRODUCT.md`, 2026-08-28) — no reintroducir ninguna segunda ubicación.
 - **Razón social:** `DERMA.M, LLC` — **confirmada como correcta.**
 
 ### 2. Google Business Profile — RESPONDIDO 2026-08-27
@@ -151,9 +147,6 @@ Palm Beach), ese sí se evalúa.
   - **Redes en la ficha:** Instagram `/dermamskinhealth/`, TikTok `@derma.m`, Facebook
     `/DermaMskinhealth`.
   - **Special hours** (feriados) cargados: Labor Day, Thanksgiving, Christmas Eve/Day — Closed.
-  - **Segunda ficha en la cuenta:** "Legacy MD Anti-Aging Medicine", `4960 SW 72nd Ave suite
-    203, Miami, FL 33155`, verificada, dominio `legacymd.org` (visto también en GSC). = la
-    operación de Miami del Tema 1. Ficha propia, entidad separada. No se toca desde acá.
   - **Validación del sitio público actual (curl, 2026-08-28):** todas las variantes
     (`http://`, `www.`) hacen **301 → `https://dermamskinhealth.com/`**. Canónico live:
     `<link rel="canonical" href="https://dermamskinhealth.com/">`. Servidor `LiteSpeed`
@@ -221,7 +214,7 @@ Palm Beach), ese sí se evalúa.
 - **Sesión GSC 2026-08-28 (browser):** el usuario se logueó. Estado:
   - Dominio confirmado por el repo: **`dermamskinhealth.com`** (237 ocurrencias, sin variantes).
     Hay una propiedad ajena sin verificar `dermamskinhelth.com` (typo) — ignorar.
-  - Propiedades verificadas existentes en la cuenta: `empathoai.com`, `legacymd.org` (ajenas).
+  - La cuenta tiene otras propiedades verificadas de negocios ajenos — no son de Derma.M, ignorar.
   - **El usuario NO tiene acceso al DNS del dominio** → no se puede hacer propiedad de Dominio.
   - Sitio nuevo **no deployado** → no se puede verificar hoy por ningún método.
   - **HECHO (browser, 2026-08-28):** propiedad de **prefijo de URL** `https://dermamskinhealth.com/`
@@ -308,7 +301,46 @@ del 3-pack puede variar, pero la identificación de players es sólida):**
 - Auditar el sitio web de 1–2 competidores fuertes (Élévation `elevationewestpalmbeach.com` en
   Squarespace, Beverly Hills) — H1 local, páginas de servicio, reseñas on-page.
 
-### 8. Compliance / legal
-- Director médico (nombre) — para un posible nodo `Physician` a futuro. Nancy pidió NO publicar
-  nº de licencia. → PENDIENTE
-- Registro del med spa en Florida → PENDIENTE
+### 8. Compliance / legal — RESPONDIDO (parcial) 2026-08-28
+
+- **Director médico: Tony Diaz, D.O.** (Doctor of Osteopathic Medicine). Es el mismo "Tony Díaz DO"
+  que ya figura como team member en `src/data/aboutPage.js`. Fuente que pasó el usuario:
+  `https://www.orthopedicsurgeonsouthflorida.com/our-providers/tony-diaz-do/`.
+  - Perfil en esa fuente: **Orthopedic Specialists of South Florida**, Hialeah FL — especialidad
+    **General Orthopedics / Orthopedic Surgery / Arthroscopic & Reconstructive Surgery**. Nova
+    Southeastern (med school), residencia en cirugía ortopédica (Michigan), ex Flight Surgeon US Navy.
+    Boards/membresías: American Osteopathic Academy of Orthopedic Surgeons, AOA, AMA. **Sin nº de
+    licencia FL en la página.** La página **no menciona Derma.M**.
+  - **⚠ Flag para el nodo `Physician` / `sameAs`:** esa URL es de otra práctica (ortopedia, otra
+    ciudad) y no corrobora el rol de director médico de un med spa ni la relación con Derma.M.
+    Usarla como `sameAs` del med spa es débil / potencialmente confuso para entidad y E-E-A-T.
+    Antes de publicar cualquier cosa sobre el director médico hace falta: (a) confirmar con
+    Nancy/Tony qué se puede decir públicamente, (b) idealmente una fuente que ligue a Tony Diaz DO
+    con Derma.M (no solo con la clínica de ortopedia). Nancy ya pidió **NO** publicar nº de licencia
+    — se respeta.
+- **Registro en Florida (Sunbiz) — DERMA.M, LLC:**
+  - Document Number **L21000435735** · FEI/EIN **87-3024328**
+  - Filed **10/05/2021** · Effective **10/10/2021** · State **FL** · Status **ACTIVE**
+  - Principal & Mailing Address: **5707 S Dixie Hwy, Unit D, West Palm Beach, FL 33405** (changed 06/20/2022)
+    → **coincide 100% con el NAP** de `organizationSchema.js` y del GBP.
+  - Registered Agent + Authorized Person (Title AMBR): **Nieto Vasconez, Nancy M**, misma dirección.
+  - Uso posible: número de documento / fecha de constitución / razón social como señal verificable
+    de legitimidad del negocio (p. ej. en `/nosotros` o footer legal). No expone datos sensibles.
+    A decidir en su propio ciclo si se muestra y dónde.
+- **Certificaciones / afiliaciones publicables (cámara de comercio WPB, BBB, asociación de med spas,
+  etc.):** el usuario **no sabe** hoy si existen. → PENDIENTE (revisar en la sesión Track B/GBP o
+  preguntar a Nancy).
+
+#### Preguntas abiertas para Nancy — director médico (NO re-mostrar cada sesión; solo si el usuario retoma el tema del director médico o el nodo `Physician`)
+Impacto evaluado: NO es palanca de ranking. Señal de confianza / E-E-A-T / citación IA. Con la
+info actual (perfil de ortopedista sin vínculo público con Derma.M) el costo/beneficio NO cierra
+para publicar todavía. Publicar solo si las respuestas 1–4 son sólidas.
+1. ¿Tony Diaz D.O. es hoy el director médico / physician of record de Derma.M? ¿Relación activa y
+   documentada (contrato de supervisión / delegación médica de FL)?
+2. ¿Hay autorización de él para nombrarlo públicamente como director médico en el sitio?
+3. ¿Qué exactamente se puede publicar? (solo nombre / + "D.O." / + título "Director Médico" / bio).
+   Confirmado: NO va nº de licencia. ¿Algo más fuera?
+4. ¿Existe página/directorio/prensa/listado oficial que vincule a Tony Diaz D.O. con Derma.M
+   específicamente (no con la clínica de ortopedia)? — requisito para un `sameAs` creíble.
+5. ¿Supervisa todos los servicios o algunos (inyectables / PRP-PRF / IV)? Define si se lo presenta
+   como director médico general o acotado.

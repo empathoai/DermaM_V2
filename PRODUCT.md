@@ -9,7 +9,7 @@
 - **Project:** Derma.M website
 - **URL:** https://dermamskinhealth.com (canonical — no www, no trailing slash)
 - **Business:** DERMA.M, LLC — med spa
-- **Locations:** West Palm Beach FL + Miami FL
+- **Location:** West Palm Beach FL
 - **Hosting:** Hostinger — Apache server
 - **Primary language:** Spanish. Legal pages: bilingual ES/EN.
 
@@ -240,13 +240,6 @@ locations: [
     addressLocality: "West Palm Beach",
     addressRegion: "FL",
     postalCode: "33405"
-  },
-  {
-    name: "Derma.M — Miami",
-    streetAddress: "4960 SW 72nd Ave Ste 203",
-    addressLocality: "Miami",
-    addressRegion: "FL",
-    postalCode: "33155"
   }
 ]
 ```

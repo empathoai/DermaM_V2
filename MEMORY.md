@@ -83,6 +83,12 @@ Near-final. Treat as a finished, working site — not a blank canvas. Every chan
 - **`TreatmentCard` (2026-08-27):** el `alt` del `<MediaBlock>` usa `titleCase(title)` (los `title` de card están en MAYÚSCULAS). Cubre grillas de hub (`CategoryPage`) y "Te puede interesar" (`RelatedTreatments`).
 - **Backlog:** `CategoryPage` (6 hubs) usa `alt={headline}` en MAYÚSCULAS para su imagen propia — mismo anti-patrón, pendiente para cuando se toquen los hubs.
 
+## Hero de Home + intención local en H1 (2026-08-28, #5 Fase 1)
+- **El hero de Home (`Hero.jsx`) ya NO tiene eyebrow.** Se quitó "Centro de estética, belleza y salud" + su rayita (commit `a0679f5`). Los 6 hubs (`PageHero`) sí conservan eyebrow (ahí es la categoría). No re-agregar un eyebrow genérico a Home.
+- **El `<h1>` del hero de Home tiene una sub-línea** `<span>` block al final: `Medical Spa · West Palm Beach` (~15–16px, `#CCC9C1`, `uppercase` heredado, `tracking-[0.12em]`). Es la señal de entidad+locale dentro del heading. El titular "Salud profesional para tu piel" no se toca. Ver [[decisions]] 2026-08-28.
+- **`home-hero-mobile-safari-win32.png`** se regeneró por estos 2 cambios. Al tocar el hero de Home contar con regenerarlo (verificar el `-diff.png` primero). desktop-chrome suele quedar bajo tolerancia.
+- **PENDIENTE Fase 2** (`docs/superpowers/plans/2026-08-28-h1-intencion-local-home-hubs.md`): prop opcional `localTag` en `PageHero` (render de `<span className={styles.localTag}>` dentro del `<h1>`, solo si viene) → la pasa solo `CategoryPage` desde `hero.localTag` en `categoryPages.js` (×6 hubs, mismo texto). + corregir `<title>`/`og:title`/`twitter:title` de `Home.jsx` a `Derma.M | Medical Spa en West Palm Beach, FL` (hoy "Tratamientos Estéticos"). Los `<title>` de los 6 hubs NO se tocan (ya tienen categoría+ciudad, "medical spa" los pasa de ~60 car.).
+
 ## Known constraints / do-nots
 - Don't introduce Next.js, styled-components, Framer Motion, or another CSS framework (per `AGENTS.md`).
 - Don't modify `public/.htaccess`, `robots.txt`, `sitemap.xml`, `llms.txt` without explicit step-by-step instruction.

@@ -1,20 +1,22 @@
 # NEXT
 
-Estado: Arquitectura de contenido del founder — Ciclo 1 (Home, `fd39a56`) y Ciclo 2 (`/nosotros`
-reestructurado, `5223f2d`) HECHOS. Queda Ciclo 3. Spec+plan en
-`docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` · Track B GBP cerrado
+Estado: Arquitectura de contenido del founder — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`/nosotros`
+reestructurado, `5223f2d`) y Ciclo 2b (`/nosotros` podado, `ad2be76`) HECHOS. Queda Ciclo 3.
+Spec+plan en `docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` · Track B GBP cerrado
 (12 servicios + `Skin care clinic` + descr., pending review) · cruce sitio↔GBP no-dental saldado
 (`DECISIONS.md:215-217`) — no re-abrir · árbol limpio · docs/ gitignored · dev server `:3000` +
 un `vite --port=3003` levantado esta sesión (para `test:visual`) — apagar ambos al cerrar
 
 ## Próximo (en orden)
 1. **Founder — Ciclo 3: `/nancy-nieto`.** `founderBioPage` standalone (hoy tiene el puente
-   temporal `founderPhilosophy: aboutPage.enfoque` — reescribir sin referencias a `aboutPage.*`)
-   + secciones Historia/Formación y DERMA.M & Academy (misión/visión completa: el sueño de Nancy,
-   oportunidades para mujeres profesionales, expansión) + cita larga. `FounderBioPage.jsx` +1-2
-   `<section>`. Actualizar `MEMORY.md` "Founder bio page". Texto real: mensaje de la clínica del
-   2026-08-28 (ver plan Task 3, copy verbatim). Cierra con `test:visual` + cross-check
-   `MEDICAL_COMPLIANCE.md` ("seguros"/"resultados reales" solo como filosofía de Nancy).
+   temporal `founderPhilosophy` inline con la copy `ESCUCHAR ANTES DE RECOMENDAR` — reescribir
+   sin referencias a `aboutPage.*`). Absorbe: visión, framing `ESCUCHAR ANTES DE RECOMENDAR`,
+   cita corta (se descarta a favor de la larga), + secciones Historia/Formación y DERMA.M &
+   Academy (misión/visión completa: el sueño de Nancy, oportunidades para mujeres profesionales,
+   expansión). `FounderBioPage.jsx` +1-2 `<section>`. Actualizar `MEMORY.md` "Founder bio page".
+   Texto real: mensaje de la clínica del 2026-08-28 (ver plan Task 3, copy verbatim). Cierra con
+   `test:visual` + cross-check `MEDICAL_COMPLIANCE.md` ("seguros"/"resultados reales" solo como
+   filosofía de Nancy en 1ª persona).
 2. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
    naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/`llms.txt`/metas;
    ciudad en el `<h1>` de las 3 landings; FAQ sembradas desde las PAA reales; "deep cleansing

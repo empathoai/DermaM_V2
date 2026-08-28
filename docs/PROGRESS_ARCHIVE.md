@@ -3,6 +3,10 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 2: `/nosotros` reestructurado
+- **Ciclo 2 re-scopeado** (tope de `/nosotros` = mezcla sin progresión): de "trim + sub-H1" a "reestructurar + reescribir".
+- Fusión "Founder Philosophy" + "Approach" (la tríada se decía 3×) → una sección oscura. Eliminado el bloque de conversión anidado + la sección `DERMA.M Academy`. Hero `body` reescrito + `localTag: "Medical Spa · West Palm Beach"`. `aboutPage.js` −127/+34. Commits `5223f2d` + `c1cf90a`.
+
 ## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 1: Home `FounderSection`
 - Spec + plan en `docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` — reparto de "beats" de Nancy en 3 superficies (Home = primer, `/nosotros` = puente, `/nancy-nieto` = persona completa), funnel de profundidad progresiva. 3 ciclos.
 - **Ciclo 1 (Home):** `FounderSection` de 3 párrafos hardcodeados → línea de credencial + 1 frase relacional + link de salida "Conoce a Nancy y al equipo →" a `/nosotros` (era dead-end en la 2ª sección). Copy movida a `src/data/aboutPage.js` (`founderPrimer`). Baseline `home-founder` (desktop+mobile) regenerado. Commits `fd39a56` + `c3421d5`.

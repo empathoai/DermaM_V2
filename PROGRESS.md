@@ -2,13 +2,14 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 2: `/nosotros` reestructurado
-- **Ciclo 2 re-scopeado** (el usuario marcó que el tope de `/nosotros` era una mezcla sin progresión): de "trim + sub-H1" a "reestructurar + reescribir" (sin replanteo estructural total).
-- **Fusión:** "Founder Philosophy" (`ESCUCHAR ANTES DE RECOMENDAR` + cita) + "Approach" (`CÓMO CUIDAMOS CADA DECISIÓN` + 3 columnas) decían la misma tríada 3× (con el hero) → una sola sección oscura: eyebrow `NUESTRO ENFOQUE`, heading `ESCUCHAR ANTES DE RECOMENDAR`, intro + 3 pilares (`BenefitColumns variant="dark"`) + cita de Nancy al cierre.
-- **Eliminado:** el bloque de conversión anidado en la lista de beneficios (página informativa, ya hay CTA en hero + FinalCTA). La sección `DERMA.M Academy` de `/nosotros` (Academy = capacitación para profesionales externas, no señal de equipo interno) → queda 1 línea de autoridad en la Founder Spotlight; el desarrollo completo va a `/nancy-nieto` (Ciclo 3).
-- Hero `body` reescrito (sin enumerar la tríada) + `localTag: "Medical Spa · West Palm Beach"` (sí en `/nosotros`, no en `/nancy-nieto`). Founder Spotlight `body`/`secondaryBody` trim. `aboutPage.js` −127/+34 líneas.
-- Baseline `nosotros-viewport` (desktop) regenerado. `test:visual` 34/34. Commit `5223f2d`.
-- **Pendiente:** Ciclo 3 (`/nancy-nieto` — `founderBioPage` standalone + secciones Historia/Formación y DERMA.M & Academy con misión/visión completa + cita larga, con el texto real que pasó la clínica).
+## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 2b: podar footprint de fundadora en `/nosotros`
+- Review en vivo del Ciclo 2: seguía recargado y con **dos** bloques de fundadora (Spotlight + sección "enfoque" con su cita). Steer del usuario: `/nosotros` = **el equipo y cómo trabaja**; todo lo de Nancy-persona va a `/nancy-nieto`.
+- **Founder Spotlight → mínima:** foto + `FUNDADORA Y DIRECTORA` + `NANCY NIETO` + línea de credenciales + **una** frase de origen ("DERMA.M nació de su visión de una estética responsable, cercana y guiada por la formación continua.") + `Conoce más sobre Nancy →`. Se quitan el párrafo de visión, la línea "Para Nancy…" y la mención de Academy (data + JSX).
+- **Sección enfoque → banda corta:** eyebrow `CÓMO TRABAJAMOS`, heading `TRES PASOS EN CADA PLAN DE CUIDADO`, solo los 3 pilares (`BenefitColumns variant="dark"`). Se quitan `body`, `supportingText` y el `<blockquote>` de Nancy.
+- `founderBioPage.founderPhilosophy` pasó a objeto inline (puente `ESCUCHAR ANTES DE RECOMENDAR` hasta que el Ciclo 3 reescriba el export). **Academy: sin mención en `/nosotros` en el interín** (decisión del usuario, opción 1) — aparece solo en `/nancy-nieto` en el Ciclo 3.
+- `test:visual` 34/34 (solo baseline `nosotros-founder-with-link-mobile-safari` regenerado). Commit `ad2be76`.
+- Orden final `/nosotros`: Hero → Founder Spotlight (mínima) → Cómo trabajamos (3 pasos) → Equipo → Testimonios → FinalCTA.
+- **Pendiente:** Ciclo 3 (`/nancy-nieto` — `founderBioPage` standalone; absorbe visión + `ESCUCHAR ANTES DE RECOMENDAR` + cita corta (que se descarta a favor de la larga) + secciones Historia/Formación y DERMA.M & Academy con misión/visión completa, con el texto real que pasó la clínica).
 
 ---
 

@@ -1,6 +1,7 @@
 # NEXT
 
-Estado: HEAD esperado `45e7a5c`, pusheado, árbol limpio, sin servers levantados.
+Estado: HEAD esperado `39a7f11`, pusheado, árbol limpio. Dev server `:3000` levantado
+(browser pane) — detener al cierre de sesión.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
 `founderBioPage` ya es objeto standalone (sin refs a `aboutPage.*`); `/nosotros` = página del equipo;
@@ -25,10 +26,15 @@ Escala: **XS** copy 1 sitio, 0 decisiones · **S** 1–3 archivos mecánico, qui
 capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+schema+compliance+baseline).
 
 ## Próximo (en orden de size — Track A, cada uno brainstorm→aprobación, findings doc §S5)
-1. **[XS–S]** "deep cleansing facial" como término EN en `/limpieza-facial-profunda`
-   (copy + meta, sin decisiones abiertas).
-2. **[S]** ciudad en el `<h1>` de las 3 landings (mecánico; necesita string exacto de ciudad +
-   dispara re-baseline `test:visual`).
+1. ~~**[XS–S]** "deep cleansing facial" como término EN en `/limpieza-facial-profunda`~~ ✅ HECHO
+   (Track A #1 commit `39a7f11`). 3 capas: meta description ×3 + `Service.alternateName` +
+   6º ítem FAQ español + `llms.txt` línea 38. `<title>` intacto. Spec:
+   `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
+2. **[S] ← PRÓXIMO** ciudad en el `<h1>` de las 3 landings (mecánico; necesita string exacto de
+   ciudad + dispara re-baseline `test:visual`). Landings: `/limpieza-facial-profunda`,
+   `/prf-y-fibrina`, `/tratamientos-postoperatorios` (o los 3 que confirme el findings doc §S5.2).
+   Nota: la landing de limpieza ya tiene sub-línea `localTag` "Medical Spa · West Palm Beach" bajo
+   el H1 — decidir si el bake-in reemplaza esa sub-línea o va dentro del H1 mismo.
 3. **[M]** naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/metas/`llms.txt`
    (canónico = "Plasma Rico en Plaquetas y Fibrina (PRF)", matar PRPF, no targetear PRP a secas —
    `MEMORY.md` project_seo_backlog_89_810_prf_positioning; `llms.txt` protegido → gate extra:
@@ -37,9 +43,9 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    fase 2 redactar FAQ + `FAQPage` schema por landing.
 5. **[XL]** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
    compliance+baseline visual; brainstorm largo).
-2. **Estrategia PRF (Tema 4, must-win)** — apropiarse de "Plasma Rico en Plaquetas y Fibrina (PRF)",
+6. **Estrategia PRF (Tema 4, must-win)** — apropiarse de "Plasma Rico en Plaquetas y Fibrina (PRF)",
    demand-gen vía ads (término real a nivel nacional, 0 competencia local). Content strategy con brainstorming.
-3. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
+7. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
    (pocos proveedores, cirujanos no lo recomiendan). Audiencia real existente.
 
 ## Bloqueado (espera al usuario / terceros)

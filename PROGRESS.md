@@ -2,14 +2,15 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 3: `/nosotros/nancy-nieto` standalone
-- `founderBioPage` en `src/data/aboutPage.js` reescrito como objeto **standalone** — sin referencias a `aboutPage.*` (se saca el puente inline `founderPhilosophy` de la Task 2b). Secciones propias: `hero` / `historia` / `filosofia` / `dermamYAcademy` / `quote` (solo la larga) / `cta`. Copy verbatim del mensaje de la clínica del 2026-08-28.
-- `FounderBioPage.jsx`: sección 2 pasa de "Founder Spotlight" a **Historia y formación** (mismo layout foto+texto, Clinical Canvas, `historia.*`, foto `/assets/images/home/founder.jpg`); sección 3 **Filosofía + cita larga** (`filosofia.*`, Dark Authority); nueva sección 4 **DERMA.M y DERMA.M Academy** (Off-White `#EFEFEB`, eyebrow + línea + `<h2>` + 2 párrafos, sin imagen); FinalCTA sin cambios.
-- `FounderBioPage.module.css`: clases `.academy*` nuevas al mismo type-scale que `.philosophy*`; `.academySection` sumada al bump de padding en `min-width:1024px`. Sin restyle de clases existentes.
-- `SectionHeader` acepta `titleId` → la Filosofía queda con `aria-labelledby`. Orden de headings limpio: 1×`<h1>` + `<h2>` por sección.
-- `MEMORY.md` "Founder bio page": la línea "reuses `aboutPage.founderSpotlight`… by reference" ya no aplica — actualizada a "standalone object".
-- `test:visual` 34/34 (incl. `nancy-nieto-viewport` — sin diff, el cambio de hero body queda dentro de tolerancia). Compliance OK: "tratamientos seguros, éticos y orientados a resultados reales" aparece 1× como visión fundacional de Nancy, sin números de licencia. Commit `45e7a5c`.
-- **Cierra el plan founder-content-architecture** (Ciclos 1 + 2 + 2b + 3, todos pusheados).
+## 2026-08-28 — Track A #1: "deep cleansing facial" como término target EN en `/limpieza-facial-profunda`
+- **Fuente:** `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S5.4 + Stage 3 (scrape Apify de webs de competencia). Hallazgo: "deep cleansing facial" es término de búsqueda real (variantes: with extraction / near me / price / for acne / for oily skin) y **ningún competidor de WPB titula una página con el término verbatim** → hueco competitivo. La página no tenía señal en inglés en ningún lado.
+- **3 capas, aditivo, footprint mínimo** (página español-first, no se toca copy español ni above-the-fold):
+  - `LimpiezaFacial.jsx`: `description`/`og:description`/`twitter:description` (×3) → "Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." (135c, término al frente). `<title>` **intacto** (agregar el paréntesis lo pasaba de ~60c → Google truncaría justo el término). `Service` schema: `"alternateName": "Deep Cleansing Facial"`.
+  - `landingPages.js`: 6º ítem de FAQ (español, puente de equivalencia) — cubre término EN + extracción + piel grasa + acné; entra al `FAQPage` schema vía `FAQAccordion`.
+  - `public/llms.txt` (protegido, 1 línea aprobada): línea 38 label `Deep Facial Cleansing` → `Deep Cleansing Facial`, URL intacta.
+  - `faq-consistency.spec.js`: count esperado `/limpieza-facial-profunda` 5 → 6.
+- **Verificación:** `test:visual` + `faq-consistency` **34/34** sin diffs (snapshot de la landing = solo `problemSection`). DOM renderizado: `<title>` sin cambios, 3 `description` = string nueva y coinciden, `Service.alternateName` OK, `FAQPage.mainEntity` = 6. Browser pane: 6º ítem de FAQ renderiza idéntico a los otros, expande limpio, sin overflow. Compliance OK (español, sin garantías, sin banned words, sin CTA nuevo). Commit `39a7f11`.
+- Spec: `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
 
 ---
 

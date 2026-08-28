@@ -10,16 +10,16 @@ export default function LimpiezaFacialPage() {
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
       <Helmet>
         <title>Limpieza Facial Profunda en West Palm Beach | Derma.M</title>
-        <meta name="description" content="Purificación profunda del rostro con protocolo profesional personalizado. Derma.M, West Palm Beach, Florida." />
+        <meta name="description" content="Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." />
         <link rel="canonical" href="https://dermamskinhealth.com/limpieza-facial-profunda" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Limpieza Facial Profunda en West Palm Beach | Derma.M" />
-        <meta property="og:description" content="Purificación profunda del rostro con protocolo profesional personalizado. Derma.M, West Palm Beach, Florida." />
+        <meta property="og:description" content="Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/limpieza-facial-profunda" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/landings/limpieza-facial-profunda/hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Limpieza Facial Profunda en West Palm Beach | Derma.M" />
-        <meta name="twitter:description" content="Purificación profunda del rostro con protocolo profesional personalizado. Derma.M, West Palm Beach, Florida." />
+        <meta name="twitter:description" content="Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/landings/limpieza-facial-profunda/hero.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
@@ -28,6 +28,7 @@ export default function LimpiezaFacialPage() {
             {
               "@type": "Service",
               "name": "Limpieza Facial Profunda",
+              "alternateName": "Deep Cleansing Facial",
               "description": landingPages.limpiezaFacial?.hero?.body || "Limpieza facial profunda en Derma.M.",
               "url": "https://dermamskinhealth.com/limpieza-facial-profunda",
               "serviceType": "Aesthetic Treatment",

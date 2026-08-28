@@ -297,6 +297,10 @@ export const landingPages = {
         {
           question: '¿Qué cuidados posteriores debo seguir al salir del spa?',
           answer: 'Es fundamental mantener la piel hidratada, evitar la exfoliación casera por 5 días y aplicar protector solar de amplio espectro SPF 30+ todos los días.'
+        },
+        {
+          question: '¿La limpieza facial profunda es lo mismo que un deep cleansing facial?',
+          answer: 'Sí. Deep cleansing facial es el nombre en inglés de la limpieza facial profunda. El protocolo incluye la extracción de impurezas y puntos negros, y se adapta a pieles grasas o con tendencia acneica ajustando los activos y la presión sobre la piel.'
         }
       ]
     },

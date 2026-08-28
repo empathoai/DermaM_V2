@@ -2,6 +2,63 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-28 — CIERRE DE SESIÓN / handoff (SEO local: infra de medición + intake parcial)
+
+**Hecho (todo pusheado a `main`, 4 commits: `5a821d3` `5770327` `5ff324e` `7b0d9a5`):**
+1. **Tooling decidido — SIN herramienta paga.** Analizados y descartados: OpenSEO/DataForSEO
+   (`docs/seo-setrategies/OPEN-SEO-ANALYSIS.md`), Semrush, pipeline con la API de Gemini.
+   Método = browser pane manual + skills SEO/GEO/Local instaladas + `docs/pedro-seo/` (5
+   transcripciones) y `docs/open-seo/` como referencia (`docs/seo-setrategies/PEDRO-SEO-VALIDACION-Y-ESTRATEGIA.md`).
+   Repos clonados en `docs/` (gitignored).
+2. **GSC** — propiedad prefijo de URL `https://dermamskinhealth.com/` creada (cuenta
+   `empathoai@gmail.com`), SIN verificar. **`public/google2f0ede1a410e8a22.html`** en el repo
+   (método HTML file). Verificar post-deploy. Token del `<meta>` alternativo en `INTAKE.md`.
+3. **GA4** — property "Derma.M" + stream "Derma.M Web" creados. **Measurement ID `G-9272VHFT03`**.
+   Snippet `gtag.js` en `index.html` `<head>` (sin código de router — Enhanced measurement
+   cubre la SPA). Verificado funcionando en dev. Datos reales post-deploy.
+4. **Bing Webmaster** — DIFERIDO (login MS bloquea el browser). Post-deploy se importa de GSC.
+5. **Auditoría read-only del GBP DERMA.M** — 4.9 ★ / ~130 reseñas (el `4.9/117` viejo NO era
+   inventado). Primaria "Medical spa" OK + 4 secundarias. NAP 100% consistente con
+   `organizationSchema.js`. 4 gaps anotados (website field http/www, service area vacío,
+   profile strength <100%, revisar secundarias). Segunda ficha "Legacy MD" (Miami) = entidad
+   separada.
+6. **Validado el sitio público actual** — todas las variantes 301 → `https://dermamskinhealth.com/`;
+   canónico live coincide; server LiteSpeed (rediseño no deployado). GSC/GA4 quedaron con la URL correcta.
+7. **Tema 7 competencia** — local pack "med spa west palm beach" mapeado (8 players). Primaria
+   "Medical spa" universal. DERMA.M último en volumen de reseñas (130 vs 149–810), rating 4.9
+   competitivo → **palanca nº1 = volumen + velocidad de reseñas**.
+
+**Intake — estado (`docs/seo-setrategies/INTAKE.md`, LEER AL INICIO):**
+Temas 1,2,3,4,5 = RESPONDIDOS. Tema 7 = PARCIAL. **Temas 6 y 8 = PENDIENTES de respuestas del usuario.**
+
+**Próxima sesión — pendientes en orden:**
+1. **Usuario: completar Tema 6** (sistema de captación de reseñas, cadencia, quién responde,
+   fotos reales del local) y **Tema 8** (nombre del director médico, registro del med spa en FL).
+2. **Usuario (opcional): GMBspy en su Chrome** sobre Élévation / Beverly Hills / MedClub →
+   pasar sus categorías secundarias (para decidir las de DERMA.M).
+3. **Track A código (ciclos propios, con aprobación):**
+   - Limpieza de **residuos de Miami** en el repo (dirección `4960 SW…Miami`, email
+     `...miami@gmail.com`, WhatsApp `786 734-3748`, "Miami" como sede). Ver Tema 1.
+   - **#5 H1 con intención local** (Home + 6 hubs — los `<title>` tienen ciudad, los `<h1>` no).
+   - Hubs → `CollectionPage` + `BreadcrumbList`.
+   - Horario visible en `/contacto` (hoy solo en schema).
+   - Task 4 (embed mapa `/contacto` vía Place ID `ChIJ85kuJaTX2IgRXPrdsU0jNRs`) — diferida.
+   - Corregir website field del GBP → `https://dermamskinhealth.com/` (cosmético).
+4. **8.20** — `ReviewsSection` con reseñas reales (fuente = GBP 4.9/~130, no curar ocultando
+   negativas). Depende de la sesión de optimización del GBP.
+5. **Sesión de optimización del GBP** (Track B, usuario logueado): website field, service
+   areas, secundarias, profile strength, plan de posts, plan de captación de reseñas.
+6. **Post-deploy:** verificar GSC (archivo ya en repo, o método "Google Analytics"), ver datos
+   GA4 (48h), importar Bing WT desde GSC, subir sitemap. Vercel debe mantener los 301
+   (www→no-www, http→https). "Quién deploya / fecha" = sigue PENDIENTE en el intake.
+
+**Deploy:** rediseño en Vercel, mismo dominio, reemplaza al sitio viejo (LiteSpeed/WordPress),
+inminente. Todo Track A tiene que entrar antes/con el deploy.
+
+**Estado:** árbol limpio, dev server y browser pane detenidos.
+
+---
+
 ## 2026-08-28 — GA4: property creada + snippet gtag.js en index.html
 
 **Browser (usuario logueado, empathoai@gmail.com):**

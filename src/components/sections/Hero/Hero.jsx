@@ -71,6 +71,9 @@ export default function Hero({ backgroundImage, image }) {
                 profesional <br />
                 para tu <br />
                 piel
+                <span className="block mt-4 lg:mt-5 text-[15px] lg:text-[16px] tracking-[0.12em] font-normal text-[#CCC9C1]">
+                  Medical Spa · West Palm Beach
+                </span>
               </h1>
 
               {/* Body */}

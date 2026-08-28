@@ -1,16 +1,16 @@
 # NEXT
 
-Estado: validación del mapa de redirects cerrada · Track B gaps 1-2 guardados (pending en Google) ·
-árbol limpio tras commit de cierre · docs/ gitignored, en disco · dev server `:3000` a apagar al cerrar
+Estado: Track B GBP cerrado (12 servicios + `Skin care clinic` + descripción del profile, todo
+pending review en Google) · árbol limpio tras commit de cierre · docs/ gitignored, en disco ·
+dev server `:3000` a apagar al cerrar
 
 ## Próximo (en orden)
-1. **Track B — sesión GBP** (usuario logueado, aprobación por guardado): cargar los 3 GBP Services
-   Tier 1 + reemplazar la descripción del profile. Drafts listos en
-   `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S2/S3. Agregar `Skin care clinic` como
-   categoría secundaria (4/4 líderes la tienen). Cierra 8.19 → desbloquea 8.20.
-2. **Batch-draft Tier 2 + Tier 3 GBP Services** (~22): descripción ≤300c derivada del `whatIsBody`
-   de cada tratamiento en `treatmentPages.js`, sin inventar, compliance-check. Tiers en el
-   findings doc §S2 / `DECISIONS.md` 2026-08-28 "GBP Services portafolio".
+1. **Batch Tier 2/3 GBP Services + dental** — el relevamiento (2026-08-28) mostró que el GBP ya
+   tiene ~80 servicios de Nancy; los 12 gaps sitio↔GBP ya se cargaron. Queda: (a) revisar si algún
+   tratamiento del sitio todavía no tiene entrada equivalente (cruce en `PROGRESS_ARCHIVE.md` /
+   `DECISIONS.md` 2026-08-28 "Track B rescope"); (b) blanqueamiento + limpieza dental → necesitan
+   **categoría dental nueva** → va con Tema 7 (no churnear categorías sin GMBspy). NO borrar ni
+   renombrar servicios que no cargamos nosotros.
 3. **`/nosotros` — coherencia de trato.** La página debe reflejar explícitamente el diferenciador
    relacional (te escuchan/explican/acompañan, en español, lugar seguro) — evidencia: 53/130
    reseñas. Cross-check contra `DECISIONS.md` 2026-08-28 "diferenciador relacional".

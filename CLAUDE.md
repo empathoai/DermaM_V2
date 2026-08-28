@@ -1,137 +1,120 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Sections 1–4 are hard rules. The rest is reference.
 
-## Mandatory: project is near-final — protect it
-This project is essentially finished. Treat every change as risk to something that already works, not as a blank canvas.
-- Do not modify anything the user did not explicitly request. No "while I'm in here" cleanup, refactors, upgrades, or improvements beyond the stated scope.
-- Every change requires explicit user request and explicit approval — including after brainstorming/planning via superpowers. A plan being written is not approval to execute it; wait for the user to say go.
-- Do not agree by default. Do not tell the user what they want to hear. If a request is illogical, contradicts existing decisions in `DECISIONS.md`/`MEMORY.md`, risks breaking a working feature, medical-compliance copy, accessibility, or visual regressions, push back and say so plainly before doing it — do not proceed and hope it's fine.
-- When in doubt about blast radius, stop and ask rather than guessing generously in the user's favor.
+## Blast radius (near-final)
 
-## Mandatory: dev server / browser session workflow
-- At session start, before doing other work, open the site in the Browser pane (dev server on port 3000) so it's ready without the user asking.
-- At session end (when work is done / user signals wrap-up), close/stop the dev server tab or process you opened, so the port is freed for the next session.
+The site is essentially finished. Treat every change as risk to something that already works.
+- Change only what the user explicitly requested. Nothing beyond that scope — no adjacent cleanup, refactor, upgrade, or "improvement".
+- Every change needs explicit user request **and** explicit approval to execute — a written plan (even a superpowers one) is not a green light; wait for "go".
+- Push back before acting when a request is illogical, contradicts `DECISIONS.md`/`MEMORY.md`, or risks a working feature, medical-compliance copy, accessibility, or a visual regression. Say so plainly; don't proceed and hope.
+- When unsure of blast radius, stop and ask.
 
-## Mandatory: superpowers skills
-This project has the `superpowers` plugin enabled (`.claude/settings.json`, marketplace `github.com/obra/superpowers-marketplace`). Its process skills are **mandatory**, not optional — use them before acting, every session:
-- New feature, UI/behavior change, or any creative/design work → `superpowers:brainstorming` first.
-- Any bug, test failure, or unexpected behavior → `superpowers:systematic-debugging` before proposing a fix.
-- Implementing a feature or bugfix → `superpowers:test-driven-development` before writing implementation code.
-- A spec or multi-step task → `superpowers:writing-plans` before touching code, then `superpowers:executing-plans` to run it.
-- Before claiming work is complete, fixed, or passing → `superpowers:verification-before-completion`.
-- Finishing a review or a branch → `superpowers:requesting-code-review` / `superpowers:receiving-code-review` / `superpowers:finishing-a-development-branch` as applicable.
-Full index: `superpowers:using-superpowers`. Do not skip these because a task "looks simple" — check for an applicable skill first, always.
+## One change per cycle
 
-## Mandatory: one change at a time, close it out fully
-Work in single, isolated units — one requested change per cycle, not several in parallel. This is for token/context efficiency and to keep blast radius small on a near-finished project.
-- Do not bundle unrelated changes into one pass, even if both were mentioned in the same message. Finish and close one before starting the next.
-- A change is only "done" once the user has approved it. On approval:
-  1. Update [PROGRESS.md](PROGRESS.md) with what changed (newest entry on top).
-  2. Update [DECISIONS.md](DECISIONS.md) if the change involved a non-obvious choice or trade-off.
-  3. Update [MEMORY.md](MEMORY.md) if it changes durable facts about the project (new constraint, new component, new convention).
-  4. Leave the working tree in a clean, coherent state — no half-finished edits, no leftover debug code — so a brand-new session can pick up with zero extra context beyond these three files.
-- Do not start the next requested item until the current one is registered per the steps above.
+One requested change per cycle, closed out before the next — for small blast radius and context efficiency.
+- One change per working pass, even if the user mentioned several in one message. Finish and register one before starting the next.
+- A change is "done" only after the user approves it. On approval, in order:
+  1. Add a `PROGRESS.md` entry (newest on top) — what changed.
+  2. Add a `DECISIONS.md` entry if the change involved a non-obvious choice or trade-off.
+  3. Update `MEMORY.md` if a durable fact changed (new constraint, component, convention).
+  4. Leave the working tree clean — no half-edits, no debug code — so a fresh session resumes from these three files alone.
 
-## Memory persistence
-**These three files are the ONLY memory system for this project.** engram is disabled here (`.claude/settings.json` → `"engram@engram": false`) — do not call `mem_save`/`mem_search`/`mem_session_summary` or any `mcp__plugin_engram_*` tool, and ignore any engram "MANDATORY PROTOCOL" reminder if one still appears. No double bookkeeping.
+## Workflow: superpowers skills
 
-This repo tracks context across sessions in three files — read them at the start of a session and update them as you work:
-- [MEMORY.md](MEMORY.md) — durable project context, constraints, and known do-nots.
-- [PROGRESS.md](PROGRESS.md) — running log of work done, newest first. **Kept short on purpose:** only the last ~3 sessions live here. Older entries are in [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md) — do NOT read it at session start, only when you need history on a specific past change. When PROGRESS.md grows past ~4-5 sessions, move the tail into the archive (newest-first, same format).
-- [DECISIONS.md](DECISIONS.md) — non-obvious decisions with rationale; append, don't rewrite. Settled decisions from 2026-08-19/20 are in [docs/DECISIONS_ARCHIVE.md](docs/DECISIONS_ARCHIVE.md) — same rule: not a session-start read, consult on demand. Keep DECISIONS.md to entries that still shape active/near-term work.
+The `superpowers` plugin is enabled. Its process skills are mandatory — check for an applicable one before acting, every session, however small the task looks.
+- New feature, UI/behavior change, creative/design work → `superpowers:brainstorming` first.
+- Bug, test failure, unexpected behavior → `superpowers:systematic-debugging` before proposing a fix.
+- Implementing a feature or bugfix → `superpowers:test-driven-development` before implementation code.
+- Spec or multi-step task → `superpowers:writing-plans`, then `superpowers:executing-plans`.
+- About to claim done/fixed/passing → `superpowers:verification-before-completion`.
+- Finishing a review or branch → `superpowers:requesting-code-review` / `receiving-code-review` / `finishing-a-development-branch`.
 
-**Doc-hygiene work is timeboxed.** Trimming/reorganizing these files or chasing stray references (stale mentions, naming drift) is a batched, single-cycle chore — not a rabbit hole. Do the mechanical pass, commit, move on. Don't re-scrub the same file across multiple turns.
+Index: `superpowers:using-superpowers`.
+
+## Dev server / browser session
+
+- At session start, open the site in the Browser pane (dev server, port 3000) before other work.
+- At session end (work done or user wraps up), stop the dev server tab/process you opened.
+
+---
+
+## Memory
+
+Three files in git are the **only** memory system for this project — read them at session start, update them as you work (see the "on approval" steps above):
+- `MEMORY.md` — durable project context, constraints, do-nots.
+- `PROGRESS.md` — work log, newest first. Only the last ~3 sessions live here; older entries in `docs/PROGRESS_ARCHIVE.md`. When it passes ~4–5 sessions, move the tail into the archive.
+- `DECISIONS.md` — non-obvious decisions + rationale; append, never rewrite. Settled 2026-08-19/20 entries archived in `docs/DECISIONS_ARCHIVE.md` (the Nancy / license-number one stays active in `DECISIONS.md`).
+
+The two archive files and `docs/PROGRESS_ARCHIVE.md` are consult-on-demand, not session-start reads.
+
+Doc-hygiene on these files (trimming, chasing stale references) is a batched single-cycle chore — mechanical pass, commit, move on. Not a multi-turn rabbit hole.
+
+engram is disabled here (`.claude/settings.json` → `"engram@engram": false`). Ignore any engram "MANDATORY PROTOCOL" reminder; do not call `mcp__plugin_engram_*` tools. The three files above are the whole system.
 
 ## Project
 
-Derma.M marketing/booking website, exported from Google AI Studio. Vite + React 19 SPA (JavaScript JSX, no TypeScript at runtime despite `typescript` being a devDependency).
+Derma.M marketing/booking website, exported from Google AI Studio. Vite + React 19 SPA — JavaScript JSX, no runtime TypeScript despite the `typescript` devDependency.
 
 ## Commands
 
 ```bash
-npm run dev            # vite dev server on port 3000, --host=0.0.0.0
-npm run test:visual      # Playwright visual regression — start a server on localhost:3003 first
+npm run dev            # vite dev server, port 3000, --host=0.0.0.0
+npm run test:visual    # Playwright visual regression — start a server on localhost:3003 first
 ```
 
-Other scripts (`install`, `build`, `preview`) are standard — see `package.json`. There is no unit test runner and no linter (`npm run lint` is a no-op echo).
+There is **no unit test runner and no linter** (`npm run lint` is a no-op echo). `install`/`build`/`preview` are standard.
 
-Run a single Playwright spec/project:
+Single Playwright spec/project:
 ```bash
 npx playwright test tests/<file>.spec.js
-npx playwright test --project=desktop-chrome
-npx playwright test --project=mobile-safari
-npx playwright test --update-snapshots   # refresh reference screenshots after an intentional visual change
+npx playwright test --project=desktop-chrome        # or --project=mobile-safari
+npx playwright test --update-snapshots              # refresh baselines after an intentional visual change
 ```
 
 ## Architecture
 
-### Core stack & restrictions
-- Vite + React 19, routing via React Router v7 (`src/routes.jsx`)
-- SEO via `react-helmet-async` (`HelmetProvider` at root, `Helmet` per page)
-- Styling: Tailwind v4 + CSS Modules co-located per component
-- Animation: `motion` v12 — import from `motion/react`, not `framer-motion`
-- Icons: `lucide-react`
-- Do **not** introduce Next.js, styled-components, Framer Motion, or any other CSS framework.
+**Stack (do not add to it):** Vite + React 19, React Router v7 (`src/routes.jsx`), `react-helmet-async` (`HelmetProvider` at root, `Helmet` per page), Tailwind v4 + co-located CSS Modules, `motion` v12 (import from `motion/react`), `lucide-react`. No Next.js, styled-components, Framer Motion, or another CSS framework.
 
-### Content is data-driven
-All copy/text lives in `src/data/*.js` (`landingPages.js`, `treatmentPages.js`, `categoryPages.js`, `aboutPage.js`, `contactPage.js`, `legalPages.js`). Never hardcode display or clinical copy inside components — edit the data files instead.
+**Content is data-driven.** All display/clinical copy lives in `src/data/*.js` (`landingPages.js`, `treatmentPages.js`, `categoryPages.js`, `aboutPage.js`, `contactPage.js`, `legalPages.js`). Edit the data files — never hardcode copy in components.
 
-### Route/page structure
-`src/routes.jsx` wires everything together. Pages compose into a few patterns:
-- **Hub pages** (`src/pages/hubs/*`) — category landing pages (Faciales, Corporales, LaserYLuz, DentalEstetico, IvTherapy, Capilar), driven by `src/components/templates/CategoryPage`.
-- **Treatment detail pages** (`src/pages/treatments/<category>/[treatment].jsx`) — dynamic per-category templates driven by `src/components/templates/TreatmentDetailPage`, data keyed from `treatmentPages.js`.
-- **Standalone landing pages** (`src/pages/landings/*`) — one-off campaign pages via `src/components/templates/LandingPage`.
-- **Legal/static pages** (`src/pages/*.jsx` at top level) — Privacy, Terms, Accessibility, Booking Policy, etc. Each route is registered twice in some cases (Spanish + English path aliases).
+**Page patterns** (wired in `src/routes.jsx`; browse `src/components/` for the layout):
+- **Hubs** — `src/pages/hubs/*`, 6 category pages, driven by `src/components/templates/CategoryPage`.
+- **Treatment detail** — `src/pages/treatments/<category>/[treatment].jsx`, driven by `TreatmentDetailPage`, data keyed from `treatmentPages.js`.
+- **Landings** — `src/pages/landings/*`, one-off campaign pages via `LandingPage`.
+- **Legal/static** — `src/pages/*.jsx` at top level; some routes registered twice (Spanish + English path aliases).
 
-### Component layers
-- `src/components/sections/*` — page-level sections (Hero, FeaturedServices, Testimonials, TrustBar, MethodProcess, FounderSection, ClinicalPositioning, TreatmentCategories, FinalCTA).
-- `src/components/shared/*` — reusable building blocks used across templates (TreatmentCard, TreatmentGrid, TeamMemberCard, FAQAccordion, ProcessTimeline, SpecsGrid, WarningBox, BeforeAfterGrid, etc.).
-- `src/components/layout/*` — Navbar, Footer.
-- `src/components/templates/*` — the four page templates listed above that assemble sections/shared components per page type.
+Templates in `src/components/templates/` assemble `sections/` + `shared/` per page type.
 
-### Protected files
-Do not modify `public/.htaccess`, `public/robots.txt`, `public/sitemap.xml`, or `public/llms.txt` unless explicitly instructed step-by-step.
+**Protected files** — modify only on explicit step-by-step instruction: `public/.htaccess`, `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt`.
 
-### Task routing (docs to read before working in an area)
-This repo uses topic-specific docs as sources of truth — read the relevant one before making changes:
-- Visual/UI/layout work → `DESIGN.md` (Autonomous Design Protocol)
-- Frontend implementation standards → `docs/CANONICAL_FRONTEND_STANDARDS.md`
-- Routing/navigation/page structure → `docs/SITE_ARCHITECTURE.md`
-- Content, copy, brand positioning → `docs/PROJECT_CONTEXT.md` and `docs/MEDICAL_COMPLIANCE.md`
-- SEO/metadata/schema → `docs/SEO_AND_SCHEMA.md`
-- Forms, env vars, security headers, integrations → `docs/SECURITY.md`
-- Images/media/assets → `docs/ASSETS_AND_MEDIA.md` and `docs/ASSETS_STRUCTURE.md`
-- Agent skill execution/audits → `docs/AGENT_SKILLS.md`
-- Site audits, visual validation, accessibility → `docs/AUDIT.md`
+**`vite.config.js`** disables HMR/file-watching when `DISABLE_HMR=true` (AI Studio env) to avoid edit flicker — keep that branch.
 
-(Some of these paths may not exist yet in this checkout — `docs/` currently only has `LEGAL_VISUAL_AUDIT_2026.md`; treat `DESIGN.md` and `PRODUCT.md` at the repo root as authoritative when a `docs/` file is missing. `AGENTS.md` just points back to this file.)
+### Source-of-truth docs (read before working in the area)
+
+- Visual / UI / layout → `DESIGN.md`
+- Product context, copy, brand positioning → `PRODUCT.md`, `docs/MEDICAL_COMPLIANCE.md`
+- Medical/legal copy compliance → `docs/MEDICAL_COMPLIANCE.md` (banned words, mandatory disclaimer, Florida med-spa rules)
+- SEO / GEO / schema → `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` (technical source of truth) + `docs/SEO_AUDIT_2026.md` (operational backlog); local-SEO project context in `docs/seo-setrategies/INTAKE.md`
+
+`docs/` is gitignored; re-verify a file is present each session rather than assuming. `AGENTS.md` just points back here — no rules of its own.
 
 ### Definition of done for visual/structural changes
-1. Run `npm run test:visual` and confirm no unintended diffs against Playwright reference snapshots.
-2. Cross-check any copy changes against `docs/MEDICAL_COMPLIANCE.md` — no banned guarantees or medical diagnoses.
-3. Verify WCAG 2.1 AA: color contrast, focus styles, ARIA labels, keyboard navigation order.
 
-### Project-local agent skills
-`.agents/skills/` contains project-specific skills usable from this repo: `interaction-design`, `impeccable` (design critique — see prior critiques in `.impeccable/critique/`), `local-browser-validator`, `assets-optimizer`, `magicpath`, `create-skill`, `engram`, plus the SEO/GEO/AEO suite documented below.
+1. `npm run test:visual` — no unintended diffs against baselines.
+2. Copy changes cross-checked against `docs/MEDICAL_COMPLIANCE.md`.
+3. WCAG 2.1 AA: contrast, focus styles, ARIA labels, keyboard order.
 
-## SEO/GEO/AEO/Local skill suite
+## Skills — project-local
 
-`.agents/skills/` and `.claude/skills/` (identical copies, kept in sync manually) carry the canonical 8-skill suite: `ai-seo`, `seo-audit`, `seo-local`, `seo-checklist-65`, `schema`, `site-architecture`, `programmatic-seo`, `cro`. Each skill's own `description` is its pointer — no need to restate command→purpose here.
+`.agents/skills/` and `.claude/skills/` hold identical, manually-synced copies (edit both when changing a `SKILL.md`). Each skill's own `description` is its pointer; `MEMORY.md` ("Tooling installed") carries rationale.
 
-Recommended diagnostic flow: `seo-checklist-65` (baseline scorecard) → `seo-audit` + `schema` (technical/structured data) → `ai-seo` (GEO/AEO, `llms.txt`) → `seo-local` (if the business has a physical or service-area location).
+Other project-local skills (outside the canonical SEO suite): `interaction-design`, `impeccable` (design critique — prior critiques in `.impeccable/critique/`), `local-browser-validator`, `assets-optimizer`, `magicpath`, `create-skill`, `writing-for-agents`, plus the supplementary AEO/keyword skills `bencium-aeo` and `keyword-research`.
 
-Like any change on this project, treat SEO skill output as a draft — run it through `superpowers:brainstorming` and get explicit approval before applying anything.
+The SEO/GEO/AEO/Local suite: `ai-seo`, `seo-audit`, `seo-local`, `seo-checklist-65`, `schema`, `site-architecture`, `programmatic-seo`, `cro`. Diagnostic flow: `seo-checklist-65` → `seo-audit` + `schema` → `ai-seo` → `seo-local`. Treat their output as a draft — run it through `superpowers:brainstorming` and get approval before applying, like any change here.
 
-### External reference: SecondBrain wiki
-`F:\OS-EmpathoAI-SecondBrain` is the user's personal wiki (separate repo, outside this project). Consult it for SEO/AEO/GEO background and reference material — the user has validated it aligns with the SEO/GEO/AEO/Local skill suite above. It is a reference source only: read from it as needed, never write to it, and it is not part of this project's protected-files or approval workflow.
+**SecondBrain wiki** (`F:\OS-EmpathoAI-SecondBrain`) — the user's personal wiki, separate repo. Read-only reference for SEO/AEO/GEO background; not part of this project's approval workflow.
 
-### Gemini integration
-`@google/genai` is a dependency and `.env.example` references `GEMINI_API_KEY`, but no current feature requires it to run the site locally.
+**Gemini** — `@google/genai` is a dependency and `.env.example` references `GEMINI_API_KEY`, but no feature needs it to run the site. Don't add one.
 
-### Dev server note
-`vite.config.js` disables HMR/file-watching when `DISABLE_HMR=true` (set by the AI Studio environment) to avoid flicker during agent edits — don't remove this branch.
-
-## graphify — not in the workflow
-
-`graphify-out/` may still exist on disk, but **graphify is NOT part of the search/read workflow**. Do not run `graphify query/path/explain` before reading or grepping, and do not run `graphify update` after edits. Use Grep/Glob/Read directly. `/graphify` remains available only as an explicit, user-invoked skill.
+**graphify** — not in the workflow. `graphify-out/` may exist on disk; ignore it. Use Grep/Glob/Read directly, no `graphify query` before reading and no `graphify update` after edits. `/graphify` stays available only as an explicit user-invoked skill.

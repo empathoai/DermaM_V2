@@ -114,6 +114,7 @@ export default function TreatmentDetailPage({ data }) {
       <TreatmentHero
         categoryLabel={categoryLabel}
         title={title}
+        localTag="Medical Spa · West Palm Beach"
         description={description}
         image={image}
         imageAlt={heroAlt}

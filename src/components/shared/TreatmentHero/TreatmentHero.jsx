@@ -5,6 +5,7 @@ import styles from './TreatmentHero.module.css';
 export default function TreatmentHero({
   categoryLabel,
   title,
+  localTag,
   description,
   image,
   imageAlt,
@@ -60,7 +61,10 @@ export default function TreatmentHero({
               <span className={styles.categoryName}>{categoryLabel}</span>
             </div>
           )}
-          <h1 className={styles.title}>{title}</h1>
+          <h1 className={styles.title}>
+            {title}
+            {localTag && <span className={styles.localTag}>{localTag}</span>}
+          </h1>
           {description && (
             <p className={styles.description}>{description}</p>
           )}

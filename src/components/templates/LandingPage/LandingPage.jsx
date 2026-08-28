@@ -44,6 +44,7 @@ export default function LandingPage({ data }) {
         <PageHero
           eyebrow={hero.eyebrow}
           title={hero.title}
+          localTag="Medical Spa · West Palm Beach"
           body={hero.body}
           backgroundImage={hero.backgroundImage}
           imageAlt={hero.imageAlt}

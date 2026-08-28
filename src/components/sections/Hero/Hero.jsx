@@ -57,14 +57,6 @@ export default function Hero({ backgroundImage, image }) {
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
-              {/* Eyebrow */}
-              <div className="flex items-center gap-6 mb-6 lg:mb-8">
-                <div className="w-12 h-[1px] bg-[#f2f0f1]/18"></div>
-                <p className="text-[#CCC9C1] text-[12px] tracking-[0.15em] uppercase font-medium m-0">
-                  Centro de estética, belleza y salud
-                </p>
-              </div>
-
               {/* Headline */}
               <h1 className="text-[clamp(2.5rem,5vw+1rem,4rem)] leading-[1.05] tracking-[0.05em] uppercase font-normal lg:font-medium text-[#F2F0F1] m-0 mb-6">
                 Salud <br />

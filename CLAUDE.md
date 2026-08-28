@@ -130,12 +130,6 @@ Like any change on this project, treat SEO skill output as a draft — run it th
 ### Dev server note
 `vite.config.js` disables HMR/file-watching when `DISABLE_HMR=true` (set by the AI Studio environment) to avoid flicker during agent edits — don't remove this branch.
 
-## graphify
+## graphify — not in the workflow
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
-
-Rules:
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+`graphify-out/` may still exist on disk, but **graphify is NOT part of the search/read workflow**. Do not run `graphify query/path/explain` before reading or grepping, and do not run `graphify update` after edits. Use Grep/Glob/Read directly. `/graphify` remains available only as an explicit, user-invoked skill.

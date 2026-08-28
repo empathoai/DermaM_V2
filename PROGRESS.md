@@ -9,6 +9,7 @@ Running log of work in this repo. Newest entries on top. One entry per session/t
 - **Spec/plan** (en `docs/`, gitignored): `docs/superpowers/specs/2026-08-28-h1-intencion-local-home-hubs-design.md`, `docs/superpowers/plans/2026-08-28-h1-intencion-local-home-hubs.md`.
 - **PENDIENTE — Fase 2 del plan** (ciclo propio, ya aprobado el enfoque): replicar la sub-línea a los 6 hubs vía prop opcional `localTag` en `PageHero` (+ `.localTag` en su module.css + `CategoryPage` pasa la prop + `categoryPages.js` `hero.localTag` ×6), y corregir `<title>`/`og:title`/`twitter:title` de `Home.jsx` → `Derma.M | Medical Spa en West Palm Beach, FL` (hoy dice "Tratamientos Estéticos").
 - **graphify sacado de la cadena de ejecución** (commit `c752ec6`): borrado el bloque `hooks` de `.claude/settings.json` (forzaba `graphify query` antes de cada Read/Grep — round-trip sin valor) y la sección de reglas de `CLAUDE.md`. `graphify-out/` queda en disco; `/graphify` sigue como skill manual. Grep/Glob/Read directo de ahora en más. (El hook ya cargado muere al reiniciar `claude`.)
+- **engram desactivado en este proyecto** (commit `8cb7c5f`): `.claude/settings.json` → `"engram@engram": false`. Correrlo junto con los 3 archivos era contabilidad doble. Los 3 archivos en git son la única memoria del proyecto de ahora en más. `CLAUDE.md` "Memory persistence" lo dice explícito. engram sigue activo a nivel global para otros proyectos.
 - Dev server `:3000` detenido al cierre.
 
 ## 2026-08-28 — Continuidad optimizada: archivado de PROGRESS/DECISIONS + Tema 8 + scrub Miami/Legacy MD

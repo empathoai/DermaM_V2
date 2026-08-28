@@ -15,10 +15,11 @@ The site is essentially finished. Treat every change as risk to something that a
 One requested change per cycle, closed out before the next — for small blast radius and context efficiency.
 - One change per working pass, even if the user mentioned several in one message. Finish and register one before starting the next.
 - A change is "done" only after the user approves it. On approval, in order:
-  1. Add a `PROGRESS.md` entry (newest on top) — what changed.
+  1. Add a `PROGRESS.md` entry (newest on top) — what changed. Trivial/mechanical change: one line, skip step 2.
   2. Add a `DECISIONS.md` entry if the change involved a non-obvious choice or trade-off.
-  3. Update `MEMORY.md` if a durable fact changed (new constraint, component, convention).
-  4. Leave the working tree clean — no half-edits, no debug code — so a fresh session resumes from these three files alone.
+  3. Update `MEMORY.md` if a durable do-not changed.
+  4. Refresh `NEXT.md` — mark this done, set the next step, update expected HEAD.
+  5. Leave the working tree clean — no half-edits, no debug code — so a fresh session resumes from `NEXT.md` alone.
 
 ## Workflow: superpowers skills
 
@@ -41,16 +42,19 @@ Index: `superpowers:using-superpowers`.
 
 ## Memory
 
-Three files in git are the **only** memory system for this project — read them at session start, update them as you work (see the "on approval" steps above):
-- `MEMORY.md` — durable project context, constraints, do-nots.
-- `PROGRESS.md` — work log, newest first. Only the last ~3 sessions live here; older entries in `docs/PROGRESS_ARCHIVE.md`. When it passes ~4–5 sessions, move the tail into the archive.
-- `DECISIONS.md` — non-obvious decisions + rationale; append, never rewrite. Settled 2026-08-19/20 entries archived in `docs/DECISIONS_ARCHIVE.md` (the Nancy / license-number one stays active in `DECISIONS.md`).
+Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file.
 
-The two archive files and `docs/PROGRESS_ARCHIVE.md` are consult-on-demand, not session-start reads.
+Four git files, each a single source of truth:
+- `NEXT.md` — ordered next steps + expected HEAD + tree state. The only planning read at session start.
+- `MEMORY.md` — durable constraints and do-nots. Auto-injected.
+- `PROGRESS.md` — work log, newest first. One entry per closed cycle, ≤4 bullets. Top entry stays live; the rest moves to `docs/PROGRESS_ARCHIVE.md` on close.
+- `DECISIONS.md` — the *why* archive, append-only. Grep the area you're touching; never a full read.
 
-Doc-hygiene on these files (trimming, chasing stale references) is a batched single-cycle chore — mechanical pass, commit, move on. Not a multi-turn rabbit hole.
+`docs/*_ARCHIVE.md` and `docs/seo-setrategies/INTAKE.md` — grep on demand.
 
-engram is disabled here (`.claude/settings.json` → `"engram@engram": false`). Ignore any engram "MANDATORY PROTOCOL" reminder; do not call `mcp__plugin_engram_*` tools. The three files above are the whole system.
+Doc-hygiene (trimming, stale refs) is one mechanical cycle: pass, commit, move on.
+
+engram is disabled (`.claude/settings.json` → `"engram@engram": false`); ignore its "MANDATORY PROTOCOL" reminder, don't call `mcp__plugin_engram_*`.
 
 ## Project
 

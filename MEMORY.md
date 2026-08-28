@@ -22,6 +22,11 @@ Derma.M — marketing/booking website for a clinic (facial, corporal, dental, l�
 ## Project status
 Near-final. Treat as a finished, working site — not a blank canvas. Every change requires explicit user request + explicit approval, one change at a time, no scope creep. Full rules in `CLAUDE.md` under "Mandatory: project is near-final — protect it" and "Mandatory: one change at a time, close it out fully".
 
+## Working protocol with the user (regla explícita 2026-08-28)
+- **Para CADA cambio que se evalúe**, antes de tocar nada, dar el **impacto de valor en SEO / GEO / AEO** por separado (qué señal mueve, en qué superficie, por qué es best practice). Sugerencias **acotadas a mejores prácticas** documentadas en el repo/skills, no opinión suelta.
+- **El agente tiene el conocimiento; el usuario decide.** Si el usuario pide algo que es mala práctica ("ponle X en el hero"), la respuesta correcta es **frenar y explicar**: por qué es mala práctica, a qué señal/superficie afecta (SEO/GEO/AEO/compliance/a11y/CWV/visual), y por qué NO le beneficia al cliente final (el med spa / Nancy). No ejecutar y ver qué pasa.
+- Objetivo del tono: trabajar alineado y **tranquilizar** — el usuario quiere ver el razonamiento de best practice explícito, no un "ok, hecho".
+
 ## SEO / GEO / AEO — documentos
 - **`docs/TECHNICAL_SEO_GEO_AUDIT_2026.md`** (forzado a git, creado 2026-08-26) = **fuente de verdad técnica**: consolida 7 fuentes de research (2 deep-research reports, doc primaria de Google Search Central, spec `llmstxt.org` v2, scan de Cloudflare `isitagentready.com`, `Estrategias SEO AEO GEO 2026`, framework RASTRO). Análisis + best practices + auditoría del sitio real.
 - **`docs/SEO_AUDIT_2026.md`** (gitignored) = **backlog operativo**: ítems 8.x accionables, estados `Hecho`/`Pendiente`, un cambio por ciclo.

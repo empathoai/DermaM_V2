@@ -193,11 +193,30 @@ sola ubicación → sin pérdida de información. Los valores no cambian (incl.
 `geo: 26.6627718, -80.0558881` — verificado correcto contra Google Maps).
 
 ### C8 — Embed del mapa en `/contacto`
-`Contacto.jsx` (~L465-473): regenerar el código de inserción desde Google Maps (Share →
-Embed) para `5707 S Dixie Hwy Ste D, West Palm Beach, FL 33405` y reemplazar el atributo
-`src` del `<iframe>`. Conservar los atributos existentes (`width`, `height`, `style`,
-`loading="lazy"` si está, `referrerpolicy`, `title`/`aria-label`). Obtener el embed nuevo
-con el browser durante la implementación.
+Datos confirmados (del export de Google Quick Builder que trajo el usuario, + verificación
+en Maps):
+- **Place ID:** `ChIJ85kuJaTX2IgRXPrdsU0jNRs`
+- **Coords:** `26.6627718, -80.0558883`
+
+`Contacto.jsx` (~L465-473): reemplazar el `src` del `<iframe>` por un embed **sin API key**
+basado en el Place ID:
+`https://www.google.com/maps?q=place_id:ChIJ85kuJaTX2IgRXPrdsU0jNRs&output=embed`
+(mantener `width`, `height`, `style`, `loading="lazy"`, `referrerpolicy`, `title`/`aria-label`
+actuales). **No** usar Locator Plus / `@googlemaps/extended-component-library` — requiere
+cuenta de billing de Google Cloud y un `<script>` externo; innecesario para una sola
+ubicación. El `?pb=` actual apunta a un feature ID/coords equivocados.
+
+Si el embed `q=place_id:…&output=embed` no renderiza bien en el `<iframe>`, fallback:
+regenerar el `?pb=` desde Maps (Share → Embed) para la dirección correcta, con el browser.
+
+### C8b — `hasMap` + Place ID en el schema
+En `organizationNode`, agregar:
+```json
+"hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ85kuJaTX2IgRXPrdsU0jNRs"
+```
+Guardar el Place ID en el spec para la sesión B (8.19): si el GBP se verifica, su URL de
+Maps (`https://www.google.com/maps/place/?q=place_id:ChIJ85kuJaTX2IgRXPrdsU0jNRs` o el
+`?cid=` de la ficha) entra en `sameAs`.
 
 ## Orden de aplicación (commits)
 

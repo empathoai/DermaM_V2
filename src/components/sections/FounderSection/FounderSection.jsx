@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
+import { founderPrimer } from '../../../data/aboutPage';
 import styles from './FounderSection.module.css';
 
 export default function FounderSection() {
@@ -52,20 +54,16 @@ export default function FounderSection() {
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 />
               </div>
-              <p className={styles.eyebrow}>FUNDADORA DE DERMA.M</p>
+              <p className={styles.eyebrow}>{founderPrimer.eyebrow}</p>
               <div className={styles.eyebrowLine}></div>
-              <h2 id="founder-heading" className={styles.headline}>NANCY NIETO</h2>
-              
+              <h2 id="founder-heading" className={styles.headline}>{founderPrimer.name}</h2>
+
               <div className={styles.introContent}>
-                <p className={styles.subheadline}>
-                  Especialista en estética facial con licencia aprobada por el Estado de Florida y Flebotomista Certificada en los Estados Unidos.
-                </p>
-                <p className={styles.bodyCopy}>
-                  DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Su enfoque combina formación profesional, experiencia estética y una atención cercana para ayudar a cada persona a sentirse más segura, más feliz y más confiada en su piel.
-                </p>
-                <p className={styles.bodyCopy}>
-                  Con formación en Cosmetología, Cosmiatría y Dermocosmiatría, Nancy continúa especializándose en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel.
-                </p>
+                <p className={styles.subheadline}>{founderPrimer.credentialLine}</p>
+                <p className={styles.bodyCopy}>{founderPrimer.relationalLine}</p>
+                <Link to={founderPrimer.linkTo} className={styles.founderLink}>
+                  {founderPrimer.linkLabel} <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </div>
           </motion.div>

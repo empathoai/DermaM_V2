@@ -209,6 +209,15 @@ export const aboutPage = {
   }
 };
 
+export const founderPrimer = {
+  eyebrow: 'FUNDADORA DE DERMA.M',
+  name: 'NANCY NIETO',
+  credentialLine: 'Flebotomista Certificada en EE.UU. y Especialista en Estética Facial con licencia del Estado de Florida.',
+  relationalLine: 'Su forma de trabajar parte de escuchar, educar y acompañar a cada persona — porque detrás de cada piel hay una historia única.',
+  linkLabel: 'Conoce a Nancy y al equipo',
+  linkTo: '/nosotros'
+};
+
 export const founderBioPage = {
   hero: {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",

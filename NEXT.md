@@ -15,15 +15,28 @@ Track B GBP cerrado · cruce sitio↔GBP no-dental saldado (`DECISIONS.md`) — 
    del usuario → un cambio por ciclo → `test:visual` + cross-check `MEDICAL_COMPLIANCE.md` + WCAG AA →
    commit → ritual de docs → push confirmado.
 
-## Próximo (en orden)
-1. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
-   - naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/`llms.txt`/metas
-     (canónico = "Plasma Rico en Plaquetas y Fibrina (PRF)", matar PRPF, no targetear PRP a secas —
-     `MEMORY.md` project_seo_backlog_89_810_prf_positioning);
-   - ciudad en el `<h1>` de las 3 landings;
-   - FAQ sembradas desde las PAA reales;
-   - "deep cleansing facial" como término EN en `/limpieza-facial-profunda`;
-   - página "mejores med spa de WPB".
+## Lógica de esfuerzo (t-shirt sizing)
+
+Cada ítem de la cola lleva size. **Se ataca en orden de size ascendente** (XS→XL) salvo que
+el usuario diga otra cosa. No re-preguntar "¿por dónde empezamos?": el próximo ítem es el de
+menor size no bloqueado. Igual cada ciclo mantiene su gate: brainstorm → aprobación → 1 cambio.
+Escala: **XS** copy 1 sitio, 0 decisiones · **S** 1–3 archivos mecánico, quizá re-baseline visual ·
+**M** multi-archivo con criterio + posible archivo protegido/schema · **L** multi-fase o necesita
+capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+schema+compliance+baseline).
+
+## Próximo (en orden de size — Track A, cada uno brainstorm→aprobación, findings doc §S5)
+1. **[XS–S]** "deep cleansing facial" como término EN en `/limpieza-facial-profunda`
+   (copy + meta, sin decisiones abiertas).
+2. **[S]** ciudad en el `<h1>` de las 3 landings (mecánico; necesita string exacto de ciudad +
+   dispara re-baseline `test:visual`).
+3. **[M]** naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/metas/`llms.txt`
+   (canónico = "Plasma Rico en Plaquetas y Fibrina (PRF)", matar PRPF, no targetear PRP a secas —
+   `MEMORY.md` project_seo_backlog_89_810_prf_positioning; `llms.txt` protegido → gate extra:
+   el usuario pasa el bloque paso a paso).
+4. **[L, bloqueado]** FAQ sembradas desde las PAA reales — fase 1 capturar PAA (S–M propio),
+   fase 2 redactar FAQ + `FAQPage` schema por landing.
+5. **[XL]** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
+   compliance+baseline visual; brainstorm largo).
 2. **Estrategia PRF (Tema 4, must-win)** — apropiarse de "Plasma Rico en Plaquetas y Fibrina (PRF)",
    demand-gen vía ads (término real a nivel nacional, 0 competencia local). Content strategy con brainstorming.
 3. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"

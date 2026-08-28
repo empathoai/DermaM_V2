@@ -3,8 +3,8 @@ import ListSparkle from '../ListSparkle/ListSparkle';
 import styles from './WarningBox.module.css';
 
 export default function WarningBox({
-  eyebrow = 'PRECAUCIONES DE SEGURIDAD',
-  title = 'CUÁNDO CONSULTAR ANTES',
+  eyebrow = 'ANTES DE RESERVAR',
+  title = 'PRECAUCIONES Y CONTRAINDICACIONES',
   body = 'Este tratamiento requiere valoración previa para confirmar si es adecuado para ti.',
   items = [
     'Si tienes condiciones activas en la zona a tratar',

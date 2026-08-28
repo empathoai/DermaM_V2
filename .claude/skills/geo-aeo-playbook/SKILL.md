@@ -59,10 +59,10 @@ LLMs prioritize text containing verifiable third-party claims, formal citations,
 Our treatment protocol is proven to increase patient retention significantly.
 
 <!-- ✅ GOOD: Empirical citation + quote -->
-According to a 2025 clinical evaluation published in the *Journal of Clinical Aesthetic Dermatology* (N=1,420), standardized post-treatment protocol adherence increases 12-month patient retention by **38.4%**. 
+According to a clinical evaluation published in *[Peer-Reviewed Journal]* ([Year], N=[sample size]), standardized post-treatment protocol adherence increases 12-month patient retention by **[X]%**. 
 
-> "Standardized post-treatment tracking eliminates the primary drop-off point in aesthetic patient lifecycles." 
-> — Dr. Elena Vance, Director of Clinical Protocol Research
+> "[Direct quotation stating the key finding in one sentence.]" 
+> — Dr. [Name], [Title], [Institution]
 ```
 
 ---
@@ -76,12 +76,12 @@ Replace all subjective qualifiers (*"very fast"*, *"extremely reliable"*, *"sign
 Re-rankers weight tabular Markdown structures up to **35% higher** than continuous prose:
 
 ```markdown
-| Attribute / Metric | Legacy Standard | EmpathoAI Precision Model | Performance Delta |
+| Attribute / Metric | Baseline / Vendor A | Solution / Vendor B | Performance Delta |
 | :--- | :--- | :--- | :--- |
-| **Median Setup Latency** | 21 business days | 5 business days | **-76.2%** |
-| **CAPI Match Quality Score** | 5.2 / 10 | 8.9 / 10 | **+71.1%** |
-| **Cost per Physical Show (USD)** | $124.50 | $48.20 | **-61.3%** |
-| **Attribution Confidence** | Last-Click (noisy) | 100% Deterministic Offline UUID | **Zero Data Loss** |
+| **[Metric 1, with unit]** | [value] | [value] | **[±%]** |
+| **[Metric 2, with unit]** | [value] | [value] | **[±%]** |
+| **[Metric 3, with unit]** | [value] | [value] | **[±%]** |
+| **[Qualitative attribute]** | [state] | [state] | **[outcome]** |
 ```
 
 ---
@@ -118,18 +118,18 @@ Every page must declare unambiguous entity identities linked to external knowled
     {
       "@type": "MedicalBusiness",
       "@id": "https://exampleclinic.com/#organization",
-      "name": "Derma M Aesthetic Clinic",
+      "name": "Example Aesthetic Clinic",
       "url": "https://exampleclinic.com",
       "logo": "https://exampleclinic.com/assets/logo.png",
-      "description": "Specialized aesthetic medicine and hormonal wellness clinic operating in Miami, Florida.",
-      "telephone": "+1-305-555-0199",
+      "description": "Specialized aesthetic medicine and hormonal wellness clinic operating in [City], [State].",
+      "telephone": "+1-000-000-0000",
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1200 Brickell Ave, Suite 400",
-        "addressLocality": "Miami",
-        "addressRegion": "FL",
-        "postalCode": "33131",
+        "streetAddress": "[Street Address]",
+        "addressLocality": "[City]",
+        "addressRegion": "[State]",
+        "postalCode": "[Postal Code]",
         "addressCountry": "US"
       },
       "sameAs": [
@@ -231,7 +231,7 @@ Sitemap: https://example.com/sitemap.xml
 ### 1. Healthcare, Med Spas & High-Trust Clinical Services
 - **E-E-A-T Enforcement:** Medical review badge (`Reviewed by Dr. [Name], Board-Certified [Specialty]`) with link to LinkedIn/NPI profile.
 - **Medical Schema:** `MedicalBusiness`, `MedicalCondition`, `MedicalProcedure`, `contraindication`, `preparation`.
-- **Pricing Transparence:** Hard ranges ($USD) to capture high-intent buyer queries ("cuánto cuesta X en Miami").
+- **Pricing Transparence:** Hard ranges ($USD) to capture high-intent buyer queries ("cuánto cuesta X en [ciudad]").
 
 ### 2. B2B SaaS & Enterprise Tech
 - **Comparison Pages:** Neutral, data-dense competitor breakdown tables (`X vs Y vs Z`).
@@ -248,7 +248,7 @@ Sitemap: https://example.com/sitemap.xml
 
 To verify if your GEO/AEO optimization succeeded:
 
-1. **Benchmarking Prompts:** Define 10 high-intent transactional prompts (e.g. *"Best medical spa for hormonal therapy in Brickell Miami"*).
+1. **Benchmarking Prompts:** Define 10 high-intent transactional prompts (e.g. *"Best [service] provider in [city]"*).
 2. **Multi-Model Sampling ($N \ge 10$ runs):** Run prompts across ChatGPT (with search), Perplexity Pro, and Claude.
 3. **Citation Extraction:** Verify if your domain URL appears in the numbered source list.
 4. **Sentiment & Position Audit:** Verify if your brand entity is recommended in the top 3 options.

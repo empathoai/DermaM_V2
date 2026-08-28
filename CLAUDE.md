@@ -36,8 +36,10 @@ Work in single, isolated units — one requested change per cycle, not several i
 ## Memory persistence
 This repo tracks context across sessions in three files — read them at the start of a session and update them as you work:
 - [MEMORY.md](MEMORY.md) — durable project context, constraints, and known do-nots.
-- [PROGRESS.md](PROGRESS.md) — running log of work done, newest first.
-- [DECISIONS.md](DECISIONS.md) — non-obvious decisions with rationale; append, don't rewrite.
+- [PROGRESS.md](PROGRESS.md) — running log of work done, newest first. **Kept short on purpose:** only the last ~3 sessions live here. Older entries are in [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md) — do NOT read it at session start, only when you need history on a specific past change. When PROGRESS.md grows past ~4-5 sessions, move the tail into the archive (newest-first, same format).
+- [DECISIONS.md](DECISIONS.md) — non-obvious decisions with rationale; append, don't rewrite. Settled decisions from 2026-08-19/20 are in [docs/DECISIONS_ARCHIVE.md](docs/DECISIONS_ARCHIVE.md) — same rule: not a session-start read, consult on demand. Keep DECISIONS.md to entries that still shape active/near-term work.
+
+**Doc-hygiene work is timeboxed.** Trimming/reorganizing these files or chasing stray references (stale mentions, naming drift) is a batched, single-cycle chore — not a rabbit hole. Do the mechanical pass, commit, move on. Don't re-scrub the same file across multiple turns.
 
 ## Project
 

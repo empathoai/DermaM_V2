@@ -1,6 +1,6 @@
 # NEXT
 
-HEAD esperado: a53a4fb  ·  árbol limpio
+HEAD esperado: bb0e357  ·  árbol limpio
 
 ## Próximo (en orden)
 1. `CategoryPage.jsx:62` → `alt={titleCase(overview.headline)}` + import. A11y: mata el

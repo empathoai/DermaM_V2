@@ -9,7 +9,7 @@ Running log of work in this repo. Newest entries on top. One entry per session/t
   - `landingPages.js`: 6º ítem de FAQ (español, puente de equivalencia) — cubre término EN + extracción + piel grasa + acné; entra al `FAQPage` schema vía `FAQAccordion`.
   - `public/llms.txt` (protegido, 1 línea aprobada): línea 38 label `Deep Facial Cleansing` → `Deep Cleansing Facial`, URL intacta.
   - `faq-consistency.spec.js`: count esperado `/limpieza-facial-profunda` 5 → 6.
-- **Verificación:** `test:visual` + `faq-consistency` **34/34** sin diffs (snapshot de la landing = solo `problemSection`). DOM renderizado: `<title>` sin cambios, 3 `description` = string nueva y coinciden, `Service.alternateName` OK, `FAQPage.mainEntity` = 6. Browser pane: 6º ítem de FAQ renderiza idéntico a los otros, expande limpio, sin overflow. Compliance OK (español, sin garantías, sin banned words, sin CTA nuevo). Commit `39a7f11`.
+- **Verificación:** `test:visual` + `faq-consistency` **34/34** sin diffs (snapshot de la landing = solo `problemSection`). DOM renderizado: `<title>` sin cambios, 3 `description` = string nueva y coinciden, `Service.alternateName` OK, `FAQPage.mainEntity` = 6. Browser pane: 6º ítem de FAQ renderiza idéntico a los otros, expande limpio, sin overflow. Compliance OK (español, sin garantías, sin banned words, sin CTA nuevo). Commit `91bed37`.
 - Spec: `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
 
 ---

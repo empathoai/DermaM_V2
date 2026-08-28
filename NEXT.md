@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado `39a7f11`, pusheado, árbol limpio. Dev server `:3000` levantado
+Estado: HEAD esperado `91bed37`, pusheado, árbol limpio. Dev server `:3000` levantado
 (browser pane) — detener al cierre de sesión.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
@@ -27,7 +27,7 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
 
 ## Próximo (en orden de size — Track A, cada uno brainstorm→aprobación, findings doc §S5)
 1. ~~**[XS–S]** "deep cleansing facial" como término EN en `/limpieza-facial-profunda`~~ ✅ HECHO
-   (Track A #1 commit `39a7f11`). 3 capas: meta description ×3 + `Service.alternateName` +
+   (Track A #1 commit `91bed37`). 3 capas: meta description ×3 + `Service.alternateName` +
    6º ítem FAQ español + `llms.txt` línea 38. `<title>` intacto. Spec:
    `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
 2. **[S] ← PRÓXIMO** ciudad en el `<h1>` de las 3 landings (mecánico; necesita string exacto de

@@ -45,7 +45,7 @@ Index: `superpowers:using-superpowers`.
 Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file.
 
 Four git files, each a single source of truth:
-- `NEXT.md` — ordered next steps + expected HEAD + tree state. The only planning read at session start.
+- `NEXT.md` — ordered next steps + blockers + tree/push state. The only planning read at session start.
 - `MEMORY.md` — durable constraints and do-nots. Auto-injected.
 - `PROGRESS.md` — work log, newest first. One entry per closed cycle, ≤4 bullets. Top entry stays live; the rest moves to `docs/PROGRESS_ARCHIVE.md` on close.
 - `DECISIONS.md` — the *why* archive, append-only. Grep the area you're touching; never a full read.

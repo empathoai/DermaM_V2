@@ -1,6 +1,6 @@
 # NEXT
 
-HEAD esperado: bb0e357  ·  árbol limpio
+Estado: todo pusheado a origin/main · árbol limpio · dev server detenido
 
 ## Próximo (en orden)
 1. `CategoryPage.jsx:62` → `alt={titleCase(overview.headline)}` + import. A11y: mata el

@@ -2,6 +2,8 @@ export const categoryPages = {
   faciales: {
     slug: 'faciales',
     route: '/faciales',
+    metaTitle: 'Tratamientos Faciales en West Palm Beach | Derma.M',
+    metaDescription: 'Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Faciales', link: '/faciales' }
@@ -382,6 +384,8 @@ export const categoryPages = {
   corporales: {
     slug: 'corporales',
     route: '/corporales',
+    metaTitle: 'Tratamientos Corporales en West Palm Beach | Derma.M',
+    metaDescription: 'Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Corporales', link: '/corporales' }
@@ -647,6 +651,8 @@ export const categoryPages = {
   laserYLuz: {
     slug: 'laser-y-luz',
     route: '/laser-y-luz',
+    metaTitle: 'Tratamientos Láser y Luz en West Palm Beach | Derma.M',
+    metaDescription: 'Tratamientos con tecnología estética para renovar y mejorar la piel en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Láser y Luz', link: '/laser-y-luz' }
@@ -699,6 +705,7 @@ export const categoryPages = {
         },
         {
           title: 'IPL',
+          listName: 'IPL',
           description: 'Luz pulsada intensa para apoyar tono, textura y apariencia de la piel.',
           benefits: [
             'Tono más uniforme',
@@ -805,6 +812,8 @@ export const categoryPages = {
   dentalEstetico: {
     slug: 'dental-estetico',
     route: '/dental-estetico',
+    metaTitle: 'Dental Estético en West Palm Beach | Derma.M',
+    metaDescription: 'Tratamientos para cuidar la apariencia visible de tu sonrisa en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Dental Estético', link: '/dental-estetico' }
@@ -965,6 +974,8 @@ export const categoryPages = {
   ivTherapy: {
     slug: 'iv-therapy',
     route: '/iv-therapy',
+    metaTitle: 'IV Therapy en West Palm Beach | Derma.M',
+    metaDescription: 'Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'IV Therapy', link: '/iv-therapy' }
@@ -1183,6 +1194,8 @@ export const categoryPages = {
   capilar: {
     slug: 'capilar',
     route: '/capilar',
+    metaTitle: 'Tratamientos Capilares en West Palm Beach | Derma.M',
+    metaDescription: 'Tratamientos para acompañar la salud y apariencia del cabello en Derma.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Capilar', link: '/capilar' }

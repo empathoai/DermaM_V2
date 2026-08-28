@@ -136,9 +136,34 @@ Palm Beach), ese sí se evalúa.
   `#organization`. Reintroducirlo exige: número real del GBP como fuente, reseñas mostradas sin
   filtrar negativas, y `aggregateRating` que matchee lo visible.
   → **PENDIENTE: recuento y rating reales del GBP hoy** (fuente de verdad para 8.20).
-- **Categoría primaria actual:** PENDIENTE — sale de la **auditoría completa del GBP** (sesión
-  B). Objetivo declarado por el usuario: que las **señales estén alineadas en todo internet**
-  (sitio ↔ GBP ↔ directorios).
+- **AUDITORÍA READ-ONLY DEL GBP — HECHA (browser, 2026-08-28), sin tocar nada:**
+  - **DERMA.M** — verificada. **Rating real: 4.9 ★ · ~130 reseñas** (panel lateral dice 128).
+    874 interacciones. Apertura 1 ago 2021. → **el `4.9/117` del schema viejo NO era inventado**,
+    reflejaba el GBP real de entonces (117→130). El tema de 8.20 es la *curación* de qué reseñas
+    se muestran on-page, no el número agregado.
+  - **Categorías:** `Medical spa` (PRIMARIA ✓, ya es la correcta) + 4 secundarias: `Facial spa`,
+    `Massage spa`, `Lymph drainage therapist`, `Laser hair removal service`.
+  - **NAP:** `5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405` · tel `(561) 253-5384` ·
+    chat `wa.me/15612535384`. **Consistente 100% con `src/data/organizationSchema.js`**
+    (dirección, tel, y horario: L–S 09:00–17:00, Dom 09:00–13:00 — matchea el schema).
+  - **Descripción:** ya escrita, ~700c, español, incluye West Palm Beach + servicios +
+    "PRP/PRF Plasma Rico en Plaquetas y Fibrina" + bilingüe. Bastante completa.
+  - **Redes en la ficha:** Instagram `/dermamskinhealth/`, TikTok `@derma.m`, Facebook
+    `/DermaMskinhealth`.
+  - **Special hours** (feriados) cargados: Labor Day, Thanksgiving, Christmas Eve/Day — Closed.
+  - **Segunda ficha en la cuenta:** "Legacy MD Anti-Aging Medicine", `4960 SW 72nd Ave suite
+    203, Miami, FL 33155`, verificada, dominio `legacymd.org` (visto también en GSC). = la
+    operación de Miami del Tema 1. Ficha propia, entidad separada. No se toca desde acá.
+  - **GAPS detectados (para la sesión B de optimización, con el audit de competencia del Tema 7):**
+    1. **Website field = `http://www.dermamskinhealth.com/`** → debería ser
+       `https://dermamskinhealth.com/` (protocolo + www; cohesión sitio↔GBP).
+    2. **Service area: vacío.** El schema del sitio tiene `areaServed` (WPB + Palm Beach County)
+       — el GBP debería espejarlo (barrios/áreas reales, "test del dolor" de Pedro).
+    3. **Profile strength no 100%** ("Complete info").
+    4. **Categorías secundarias:** revisar contra las del top-3 de competidores (Tema 7) antes
+       de agregar/cambiar — Pedro: no tocar categorías seguido.
+  - **NO se hizo ninguna edición.** Las ediciones van en una sesión B deliberada, con el audit
+    de competencia hecho y aprobación por cambio.
 
 ### 3. Keyword research del usuario — RESPONDIDO 2026-08-28
 - **No hay un doc formal de keywords.** El "research" fue un proceso de decisión de arquitectura,

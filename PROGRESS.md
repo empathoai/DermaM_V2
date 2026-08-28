@@ -2,11 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 1: Home `FounderSection`
-- **Spec + plan** en `docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` — reparto de "beats" de Nancy en 3 superficies (Home = primer, `/nosotros` = puente, `/nancy-nieto` = persona completa), funnel de profundidad progresiva. 3 ciclos, 1 por página.
-- **Ciclo 1 (Home) hecho:** `FounderSection` pasó de 3 párrafos hardcodeados a línea de credencial + 1 frase relacional + link de salida "Conoce a Nancy y al equipo →" a `/nosotros` (antes era un dead-end en la 2ª sección, la de mayor intención). Copy movida a `src/data/aboutPage.js` (`founderPrimer`).
-- Baseline visual `home-founder` (desktop + mobile) regenerado — cambio intencional. `home-featured-services` intacto → sin regresión adyacente. `test:visual` 34/34.
-- **Pendiente:** Ciclo 2 (`/nosotros` — trim spotlight + sub-H1 `Medical Spa · West Palm Beach`), Ciclo 3 (`/nancy-nieto` — data standalone + secciones Historia/Academy + cita larga, con el texto real que pasó la clínica).
+## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 2: `/nosotros` reestructurado
+- **Ciclo 2 re-scopeado** (el usuario marcó que el tope de `/nosotros` era una mezcla sin progresión): de "trim + sub-H1" a "reestructurar + reescribir" (sin replanteo estructural total).
+- **Fusión:** "Founder Philosophy" (`ESCUCHAR ANTES DE RECOMENDAR` + cita) + "Approach" (`CÓMO CUIDAMOS CADA DECISIÓN` + 3 columnas) decían la misma tríada 3× (con el hero) → una sola sección oscura: eyebrow `NUESTRO ENFOQUE`, heading `ESCUCHAR ANTES DE RECOMENDAR`, intro + 3 pilares (`BenefitColumns variant="dark"`) + cita de Nancy al cierre.
+- **Eliminado:** el bloque de conversión anidado en la lista de beneficios (página informativa, ya hay CTA en hero + FinalCTA). La sección `DERMA.M Academy` de `/nosotros` (Academy = capacitación para profesionales externas, no señal de equipo interno) → queda 1 línea de autoridad en la Founder Spotlight; el desarrollo completo va a `/nancy-nieto` (Ciclo 3).
+- Hero `body` reescrito (sin enumerar la tríada) + `localTag: "Medical Spa · West Palm Beach"` (sí en `/nosotros`, no en `/nancy-nieto`). Founder Spotlight `body`/`secondaryBody` trim. `aboutPage.js` −127/+34 líneas.
+- Baseline `nosotros-viewport` (desktop) regenerado. `test:visual` 34/34. Commit `5223f2d`.
+- **Pendiente:** Ciclo 3 (`/nancy-nieto` — `founderBioPage` standalone + secciones Historia/Formación y DERMA.M & Academy con misión/visión completa + cita larga, con el texto real que pasó la clínica).
 
 ---
 

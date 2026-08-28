@@ -3,6 +3,10 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 1: Home `FounderSection`
+- Spec + plan en `docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` — reparto de "beats" de Nancy en 3 superficies (Home = primer, `/nosotros` = puente, `/nancy-nieto` = persona completa), funnel de profundidad progresiva. 3 ciclos.
+- **Ciclo 1 (Home):** `FounderSection` de 3 párrafos hardcodeados → línea de credencial + 1 frase relacional + link de salida "Conoce a Nancy y al equipo →" a `/nosotros` (era dead-end en la 2ª sección). Copy movida a `src/data/aboutPage.js` (`founderPrimer`). Baseline `home-founder` (desktop+mobile) regenerado. Commits `fd39a56` + `c3421d5`.
+
 ## 2026-08-28 — Track B GBP: 12 servicios nuevos + categoría + descripción del profile
 - **Relevamiento:** la sección Services del GBP NO estaba flaca — ~80 entradas en 5 categorías, cargadas por Nancy (varias fuera del sitio: Ultherapy, exosomas, PDRN/salmón). Track B se re-scopeó de "agregar 3" a **"cruzar sitio↔GBP y agregar solo los gaps reales, sin borrar ni renombrar nada de Nancy"**.
 - **12 servicios nuevos** (cada uno con descripción ≤300c derivada del `whatIsBody`, compliance-check, todos pending review): Medical spa → IV therapy, Microneedling, Tratamiento capilar. Facial spa → Plasma frío facial, Carboxiterapia facial, Radiofrecuencia facial. Massage spa → Carboxiterapia corporal, Levantamiento de glúteos sin cirugía, Marcación abdominal no invasiva, HIFU corporal, Tratamiento de estrías y celulitis, Lipo 360 estético.

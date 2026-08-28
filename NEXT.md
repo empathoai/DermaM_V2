@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado `<Track A #2 commit>`, pusheado, árbol limpio. Dev server `:3000` levantado
+Estado: HEAD esperado `4a4603e`, pusheado, árbol limpio. Dev server `:3000` levantado
 (browser pane) — detener al cierre de sesión.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
@@ -30,7 +30,7 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    (Track A #1 commit `91bed37`). 3 capas: meta description ×3 + `Service.alternateName` +
    6º ítem FAQ español + `llms.txt` línea 38. `<title>` intacto. Spec:
    `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
-2. ~~**[S]** ciudad en el `<h1>` de las 3 landings~~ ✅ HECHO (Track A #2 commit `<pending>`).
+2. ~~**[S]** ciudad en el `<h1>` de las 3 landings~~ ✅ HECHO (Track A #2 commit `4a4603e`).
    Re-encuadrado: la ciudad ya estaba en el `<h1>` (localTag = `<span>` hijo del `<h1>`). Se hizo
    consistencia NAP: sub-tag de hero → `Medical Spa · West Palm Beach, FL` en fuente única
    `src/data/siteMeta.js` (`HERO_LOCAL_TAG`), ~10 call sites importan. §S5.2 del findings doc

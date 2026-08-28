@@ -5,12 +5,12 @@ pending review en Google) · árbol limpio tras commit de cierre · docs/ gitign
 dev server `:3000` a apagar al cerrar
 
 ## Próximo (en orden)
-1. **Batch Tier 2/3 GBP Services + dental** — el relevamiento (2026-08-28) mostró que el GBP ya
-   tiene ~80 servicios de Nancy; los 12 gaps sitio↔GBP ya se cargaron. Queda: (a) revisar si algún
-   tratamiento del sitio todavía no tiene entrada equivalente (cruce en `PROGRESS_ARCHIVE.md` /
-   `DECISIONS.md` 2026-08-28 "Track B rescope"); (b) blanqueamiento + limpieza dental → necesitan
-   **categoría dental nueva** → va con Tema 7 (no churnear categorías sin GMBspy). NO borrar ni
-   renombrar servicios que no cargamos nosotros.
+1. **Batch Tier 2/3 GBP Services (sin dental)** — el relevamiento (2026-08-28) mostró que el GBP ya
+   tiene ~80 servicios de Nancy; los 12 gaps sitio↔GBP ya se cargaron. Queda solo revisar si algún
+   tratamiento **no-dental** del sitio todavía no tiene entrada equivalente (cruce en
+   `PROGRESS_ARCHIVE.md` / `DECISIONS.md` 2026-08-28 "Track B rescope"). Dental (blanqueamiento +
+   limpieza) queda **fuera del GBP por completo** — riesgo regulatorio de odontología, ver
+   `DECISIONS.md` 2026-08-28 "Dental FUERA del GBP". NO borrar ni renombrar servicios de Nancy.
 3. **`/nosotros` — coherencia de trato.** La página debe reflejar explícitamente el diferenciador
    relacional (te escuchan/explican/acompañan, en español, lugar seguro) — evidencia: 53/130
    reseñas. Cross-check contra `DECISIONS.md` 2026-08-28 "diferenciador relacional".
@@ -31,6 +31,9 @@ dev server `:3000` a apagar al cerrar
 - Tema 7 / GMBspy sobre Élévatione / Beverly Hills / Pure Skin → secundarias de competencia
   (antes de tocar más categorías del GBP — Pedro: no churnear categorías).
 - C2: sign-off de compliance de la clínica por dato cuantitativo + enlace de autoridad.
+- **Dental en el sitio:** `/dental-estetico` hub + blanqueamiento + limpieza dental están en vivo.
+  Mismo riesgo regulatorio que motivó sacar dental del GBP — evaluar si las páginas deben salir/
+  reencuadrarse. Ciclo aparte con brainstorm; decisión del usuario. No tocar sin pedido explícito.
 - Deploy: fecha y quién deploya (Hostinger/Apache + DNS) — condiciona verificación GSC por Dominio.
   Al deployar: reemplazar `public/.htaccess` con el bloque de `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md`
   §8 (reordenado + 27 reglas nuevas), luego verificar con el script `curl -I` del mismo doc.

@@ -1,11 +1,7 @@
 # NEXT
 
-Estado: research competencia/servicios cerrado · Track B gaps 1-2 guardados (pending en Google) ·
-árbol: `CLAUDE.md` `DECISIONS.md` `PROGRESS.md` `PROGRESS_ARCHIVE.md` `NEXT.md` por commitear ·
-docs/ (findings doc, spec, MEDICAL_COMPLIANCE) gitignored, en disco · dev server `:3000` levantado
-
-## Pendiente del usuario para próxima sesión
-- Quiere que veamos algo de **"la página anterior"** (sitio viejo en producción).
+Estado: validación del mapa de redirects cerrada · Track B gaps 1-2 guardados (pending en Google) ·
+árbol limpio tras commit de cierre · docs/ gitignored, en disco · dev server `:3000` a apagar al cerrar
 
 ## Próximo (en orden)
 1. **Track B — sesión GBP** (usuario logueado, aprobación por guardado): cargar los 3 GBP Services
@@ -35,7 +31,10 @@ docs/ (findings doc, spec, MEDICAL_COMPLIANCE) gitignored, en disco · dev serve
 - Tema 7 / GMBspy sobre Élévatione / Beverly Hills / Pure Skin → secundarias de competencia
   (antes de tocar más categorías del GBP — Pedro: no churnear categorías).
 - C2: sign-off de compliance de la clínica por dato cuantitativo + enlace de autoridad.
-- Deploy: fecha y quién deploya (Vercel/DNS) — condiciona verificación GSC por Dominio.
+- Deploy: fecha y quién deploya (Hostinger/Apache + DNS) — condiciona verificación GSC por Dominio.
+  Al deployar: reemplazar `public/.htaccess` con el bloque de `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md`
+  §8 (reordenado + 27 reglas nuevas), luego verificar con el script `curl -I` del mismo doc.
+- Doc-hygiene: `docs/seo-setrategies/INTAKE.md:56` dice "deploy en Vercel" — es Hostinger/Apache, corregir.
 - Nota operativa para la clínica: servicio postop tiene punto débil documentado (ayuda con
   la faja + protección ocular en luz LED) — de las 2 reseñas negativas.
 

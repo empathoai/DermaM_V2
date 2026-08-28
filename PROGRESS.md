@@ -2,11 +2,11 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Research de competencia + servicios (Apify) + cross-análisis de reseñas · Track B parcial
-- **Track B GBP (parcial, sesión con usuario logueado):** gap 1 website field `http://www.` → `https://dermamskinhealth.com/` guardado (pending). Gap 2 service area (estaba vacío) → `West Palm Beach` + `Palm Beach County` guardado (pending). Gap 3 profile strength: "Botox" se mantiene (decisión — el médico sí hace inyectables; corregido `MEDICAL_COMPLIANCE.md` L20 + `DECISIONS.md`).
-- **Research Apify (~$5-6 one-off, 4 etapas):** 43 queries por-servicio → set de competidores fragmentado en 4 mercados (med spa / facial-spa studios / PRF-regen-med / postop-masajistas); 14 perfiles profundos + 14 sitios + capa AEO. Whitespace PRF confirmado (0 resultados en "que es prf/prpf", `PRPF` no lo parsea Google, DERMA.M ya #1 en "plasma rico en plaquetas y fibrina" sin geo). Doc: `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md`.
-- **Deliverable:** 3 GBP Services Tier 1 redactados (limpieza facial, postop, PRF) + descripción de profile reescrita (744c) + naming PRF canónico ("Plasma Rico en Plaquetas y Fibrina (PRF)", matar PRPF) + framework de tiering ROI+cultural para el portafolio completo + gap de categoría `Skin care clinic`.
-- **Cross-análisis 130 reseñas DERMA.M:** 4.9★/130 real (8.20). Tiering confirmado (faciales 22, postop/corporal 13+10, PRF solo 3). Hallazgo: diferenciador = **relacional** (trato/escuchan 41%, confianza 35%) > resultados (17%). Respuestas del dueño 85% (NO es gap). 2 negativas operativas (agenda + faja postop). Nancy nombrada en 15%.
+## 2026-08-28 — Validación del mapa de redirects viejo→nuevo contra el `.htaccess`
+- **Inventario autoritativo del sitio viejo:** `wp-sitemap.xml` (58 URLs) + `site:` de Google (~32 indexadas) + `curl -L` con `<title>` real (el WP sirve 200 en páginas inexistentes → soft-404, no se valida por status). Todas las indexadas resuelven.
+- **2 fallas en el `.htaccess` existente:** (1) el bloque de 301s legacy estaba **debajo** del fallback SPA `RewriteRule . /index.html [L]` → ningún 301 se ejecutaba; (2) 27 URLs vivas sin regla (23 páginas de tratamiento + 4 posts lorem ipsum).
+- **Deliverable:** `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` — inventario, mapa old→new reconciliado (§5), 7 decisiones de mapeo (§7), y el `.htaccess` **completo listo para aplicar** (§8, reordenado + 27 reglas nuevas) + script `curl -I` de verificación post-deploy. `public/.htaccess` NO se tocó (protegido, se aplica el día del deploy).
+- **Host confirmado:** Hostinger/Apache (no Vercel). `INTAKE.md:56` quedó stale → corregir en próximo pase de doc-hygiene. `DECISIONS.md` +1 entrada.
 
 ---
 

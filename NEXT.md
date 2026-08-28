@@ -1,22 +1,29 @@
 # NEXT
 
-Estado: Track B GBP cerrado (12 servicios + `Skin care clinic` + descripción del profile, todo
-pending review en Google) · cruce sitio↔GBP no-dental **saldado por completo** con esos 12 gaps
-(`DECISIONS.md:215-217`) — no re-abrir · árbol limpio tras commit de cierre · docs/ gitignored,
-en disco · dev server `:3000` a apagar al cerrar
+Estado: Arquitectura de contenido del founder en curso — Ciclo 1 (Home `FounderSection` → primer
++ link a `/nosotros`) HECHO, commit `fd39a56`. Quedan Ciclo 2 y 3. Spec+plan en
+`docs/superpowers/{specs,plans}/2026-08-28-founder-content-architecture*` · Track B GBP cerrado
+(12 servicios + `Skin care clinic` + descr., pending review) · cruce sitio↔GBP no-dental saldado
+(`DECISIONS.md:215-217`) — no re-abrir · árbol limpio · docs/ gitignored · dev server `:3000` +
+un `vite --port=3003` levantado esta sesión (para `test:visual`) — apagar ambos al cerrar
 
 ## Próximo (en orden)
-1. **`/nosotros` — coherencia de trato.** La página debe reflejar explícitamente el diferenciador
-   relacional (te escuchan/explican/acompañan, en español, lugar seguro) — evidencia: 53/130
-   reseñas. Cross-check contra `DECISIONS.md` 2026-08-28 "diferenciador relacional".
-2. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
+1. **Founder — Ciclo 2: `/nosotros`.** `src/data/aboutPage.js`: trim `founderSpotlight.body`/
+   `.secondaryBody` a copy-puente + `hero.localTag: 'Medical Spa · West Palm Beach'`.
+   `AboutPage.jsx`: pasar `localTag` a `<PageHero>`. Ver plan Task 2. Cierra con `test:visual`
+   (no está en baseline) + cross-check `MEDICAL_COMPLIANCE.md`. Esto además cubre el ítem viejo
+   "coherencia del diferenciador relacional" en `/nosotros`.
+2. **Founder — Ciclo 3: `/nancy-nieto`.** `founderBioPage` standalone (sin referenciar
+   `aboutPage.founderSpotlight`) + secciones Historia/Formación y DERMA.M & Academy + cita larga.
+   `FounderBioPage.jsx` +1-2 `<section>`. Actualizar `MEMORY.md` "Founder bio page". Ver plan Task 3.
+3. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
    naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/`llms.txt`/metas;
    ciudad en el `<h1>` de las 3 landings; FAQ sembradas desde las PAA reales; "deep cleansing
    facial" como término EN en `/limpieza-facial-profunda`; página "mejores med spa de WPB".
-3. **Estrategia PRF (Tema 4, must-win)** — ya informada por el research: apropiarse de
+4. **Estrategia PRF (Tema 4, must-win)** — ya informada por el research: apropiarse de
    "Plasma Rico en Plaquetas y Fibrina (PRF)", demand-gen vía ads (término real a nivel nacional,
    0 competencia local). Content strategy con brainstorming.
-4. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
+5. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
    (pocos proveedores, cirujanos no lo recomiendan). Audiencia real existente.
 
 ## Bloqueado (espera al usuario / terceros)

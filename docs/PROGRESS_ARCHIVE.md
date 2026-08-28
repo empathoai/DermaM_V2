@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-28 — Track B GBP: 12 servicios nuevos + categoría + descripción del profile
+- **Relevamiento:** la sección Services del GBP NO estaba flaca — ~80 entradas en 5 categorías, cargadas por Nancy (varias fuera del sitio: Ultherapy, exosomas, PDRN/salmón). Track B se re-scopeó de "agregar 3" a **"cruzar sitio↔GBP y agregar solo los gaps reales, sin borrar ni renombrar nada de Nancy"**.
+- **12 servicios nuevos** (cada uno con descripción ≤300c derivada del `whatIsBody`, compliance-check, todos pending review): Medical spa → IV therapy, Microneedling, Tratamiento capilar. Facial spa → Plasma frío facial, Carboxiterapia facial, Radiofrecuencia facial. Massage spa → Carboxiterapia corporal, Levantamiento de glúteos sin cirugía, Marcación abdominal no invasiva, HIFU corporal, Tratamiento de estrías y celulitis, Lipo 360 estético.
+- **Categoría secundaria `Skin care clinic`** agregada (pending). Las 5 previas intactas.
+- **Descripción del profile reemplazada** (pending). Verificada contra la guía de Google: ≤750c, sin URLs/tel/enlaces, sin promo/precios, +antigüedad ("desde 2021"), CTA suave sin nombrar canal, naming PRF canónico.
+
 ## 2026-08-28 — Validación del mapa de redirects viejo→nuevo contra el `.htaccess`
 - **Inventario autoritativo del sitio viejo:** `wp-sitemap.xml` (58 URLs) + `site:` de Google (~32 indexadas) + `curl -L` con `<title>` real (el WP sirve 200 en páginas inexistentes → soft-404, no se valida por status). Todas las indexadas resuelven.
 - **2 fallas en el `.htaccess` existente:** (1) el bloque de 301s legacy estaba **debajo** del fallback SPA `RewriteRule . /index.html [L]` → ningún 301 se ejecutaba; (2) 27 URLs vivas sin regla (23 páginas de tratamiento + 4 posts lorem ipsum).

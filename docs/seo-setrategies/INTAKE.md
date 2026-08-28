@@ -91,6 +91,16 @@ Palm Beach), ese sí se evalúa.
 
 ---
 
+## Entrante para la próxima sesión (2026-08-27)
+
+- El usuario va a pasar **un repo nuevo + una transcripción**, aislados en una carpeta propia,
+  para **evitar pagar por herramientas que podrían auto-hostearse**. → Analizarlo PRIMERO,
+  aislado, antes de integrarlo a nada.
+- El usuario completa los **8 temas de intake** de abajo por su cuenta; después el agente los
+  integra acá y devuelve repreguntas.
+
+---
+
 ## Temas de intake — PENDIENTE de completar
 
 ### 1. Panorama de entidades

@@ -2,6 +2,32 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — CIERRE DE SESIÓN / handoff (contexto muy grande, se continúa en otra sesión)
+
+**Hecho esta sesión (todo pusheado a `main`):**
+1. `WarningBox` — `title` default → "PRECAUCIONES Y CONTRAINDICACIONES", `eyebrow` → "ANTES DE RESERVAR" (25 páginas de tratamiento). Cerrado.
+2. **Cluster de schema `#organization`** (sub-proyecto A del SEO local) — `src/data/organizationSchema.js` fuente única, cableado en Home/Contacto/NancyNieto por `@id`. Sin `aggregateRating` (→8.20) ni `medicalSpecialty`. `sameAs` real, `knowsAbout` 37 (Plasma #4), `alternateName`, `keywords`, `areaServed`, `hasMap`. Validado 0/0 en validator.schema.org, `test:visual` 34/34. Cerrado. (entrada detallada abajo)
+3. **Arranque del proyecto de SEO local / GEO.** Objetivo confirmado con el usuario: **posicionar el nuevo sitio como el mejor med spa de West Palm Beach (sustanciado, no declarado) + servicios accesibles/citables desde buscadores e IA (ChatGPT/Perplexity/Gemini/Claude).**
+
+**Docs nuevos (en `docs/seo-setrategies/`, forzados a git):**
+- `LOCAL-SEO-ANALYSIS-dermam-redesign.md` — auditoría `seo-local` del rediseño. Score **48/100**. Top-10 partido en tracks A (código) / B (GBP) / C (off-site).
+- `INTAKE.md` — **contexto vivo del proyecto SEO. Leer al inicio de cada sesión de SEO/GEO.** Objetivo, 3 tracks, deploy, decisiones (BusinessRate descartado), y **8 temas de intake PENDIENTES** que el usuario va a completar él y después el agente complementa.
+- `repo/` + `El sistema de SEO Local con Claude...md` — skills pedro-seo (Palo Seco) + transcript de video. **La `seo-local` instalada = la misma, mejor copia.** Usar el repo solo como referencia (transcript + `thinking-framework.md`/`quality-gates.md`). NO instalar esas skills (sin `scripts/`, colisión de nombre).
+
+**Próxima sesión — pendientes en orden:**
+1. **El usuario va a pasar un repo nuevo + transcripción, aislados en una carpeta**, para evitar pagar por herramientas que se podrían auto-hostear. Analizar eso PRIMERO.
+2. **El usuario completa el INTAKE** (8 temas) → el agente lo integra a `docs/seo-setrategies/INTAKE.md` y devuelve repreguntas.
+3. Track A pendiente de código: **#5 H1 con intención local** (Home + 6 hubs — los `<title>` ya tienen ciudad, los `<h1>` no), hubs `CollectionPage`+`BreadcrumbList`, Task 4 (embed mapa `/contacto` vía Place ID `ChIJ85kuJaTX2IgRXPrdsU0jNRs`, diferida), horario visible en `/contacto`.
+4. **8.20** — `ReviewsSection` (Home+Contacto) con reseñas reales vía APIFY/scraper → reintroduce `aggregateRating` + `Review`. Depende de la sesión B.
+5. **Track B — sesión GBP** con el usuario logueado en el browser (verificar/crear ficha, categoría primaria "Medical spa" + 4-5 secundarias, descripción 700c, áreas, servicios, fotos, posts). = ítem 8.19. Palanca #1.
+6. **Track C** (usuario): GSC + GA4 + Bing Webmaster (8.17, desbloquea medición), Bing Places, Apple Maps, reclamar Yelp, cadencia de reseñas, corregir CareCredit (dominio `dermamskincare.com` erróneo).
+
+**3 desbloqueos de mayor impacto (dicho al usuario):** (a) configurar GSC/GA4/Bing WT — no toca código, desbloquea todo; (b) la sesión B (GBP); (c) decidir UNA herramienta de datos (conector Ahrefs — gratis de autorizar — o trial Semrush). Sin analítica ni datos de mercado, el agente prioriza por best-practice, no por dato.
+
+**Deploy:** rediseño en Vercel, mismo dominio `dermamskinhealth.com`, reemplaza al sitio viejo, inminente ("para ayer"). Todo Track A tiene que entrar antes/con el deploy. **Fecha concreta y quién deploya: PENDIENTE en el intake.**
+
+---
+
 ## 2026-08-27 — Cluster de schema `#organization` (sub-proyecto A del SEO local)
 - Spec `docs/superpowers/specs/2026-08-27-organization-schema-entity-cluster-design.md`, plan `docs/superpowers/plans/2026-08-27-organization-schema-entity-cluster.md`. Origen: `docs/seo-setrategies/LOCAL-SEO-ANALYSIS-dermam-redesign.md` (score 48/100; este cluster cubre Top-10 #2,3,4,6,8,9).
 - **Nuevo `src/data/organizationSchema.js`** — `export const organizationNode`, fuente única del nodo `HealthAndBeautyBusiness` (`@id …/#organization`). Lo importan `Home.jsx` (`@graph: [organizationNode, websiteNode]`) y `Contacto.jsx` (`@graph: [organizationNode, contactPageNode]`, con `ContactPage.mainEntity` → `{@id}`). `NancyNieto.jsx` `Person.worksFor` → `{@id}` + `Person.sameAs` = LinkedIn de Nancy.

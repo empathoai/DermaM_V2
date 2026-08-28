@@ -284,7 +284,7 @@ export const landingPages = {
         },
         {
           question: '¿La limpieza facial profunda es dolorosa?',
-          answer: 'No. En Derma.M aplicamos una técnica de ablandamiento previo que facilita la extracción de impurezas de forma sumamente suave, evitando molestias innecesarias y rojeces severas.'
+          answer: 'Es un procedimiento muy cómodo. En Derma.M aplicamos una técnica de ablandamiento previo que facilita la extracción de impurezas de forma sumamente suave, minimizando molestias y rojeces severas.'
         },
         {
           question: '¿Es la limpieza facial adecuada si tengo brotes activos?',
@@ -473,7 +473,7 @@ export const landingPages = {
         },
         {
           question: '¿El drenaje linfático manual postoperatorio debe ser doloroso?',
-          answer: 'No. En Derma.M seguimos pautas de suavidad absoluta. El drenaje postoperatorio consiste en presiones manuales sumamente sutiles y superficiales para aliviar el tejido inflamado sin causar dolor.'
+          answer: 'No. En Derma.M seguimos pautas de máxima suavidad. El drenaje postoperatorio consiste en presiones manuales sumamente sutiles y superficiales para aliviar el tejido inflamado de forma cómoda y tolerable.'
         },
         {
           question: '¿Cuántas sesiones del protocolo postoperatorio se recomiendan?',

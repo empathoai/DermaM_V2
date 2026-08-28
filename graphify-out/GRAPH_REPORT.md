@@ -1,16 +1,16 @@
 # Graph Report - DermaM_Website  (2026-08-27)
 
 ## Corpus Check
-- 300 files · ~1,733,489 words
+- 300 files · ~1,734,120 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4620 nodes · 7253 edges · 263 communities (255 shown, 8 thin omitted)
+- 4621 nodes · 7254 edges · 265 communities (257 shown, 8 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0ffa12a8`
+- Built from commit: `b640b00c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -206,6 +206,7 @@
 - [[_COMMUNITY_Community 189|Community 189]]
 - [[_COMMUNITY_Community 190|Community 190]]
 - [[_COMMUNITY_Community 191|Community 191]]
+- [[_COMMUNITY_Community 192|Community 192]]
 - [[_COMMUNITY_Community 193|Community 193]]
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
@@ -270,6 +271,7 @@
 - [[_COMMUNITY_Community 254|Community 254]]
 - [[_COMMUNITY_Community 256|Community 256]]
 - [[_COMMUNITY_Community 257|Community 257]]
+- [[_COMMUNITY_Community 264|Community 264]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `_()` - 55 edges
@@ -298,7 +300,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (263 total, 8 thin omitted)
+## Communities (265 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.12
@@ -334,7 +336,7 @@ Nodes (87): applyPlaceholderSizingStyles(), averageRgb01(), beginEditPin(), buil
 
 ### Community 9 - "Community 9"
 Cohesion: 0.05
-Nodes (72): borderColorsFromStyle(), borderWidthsFromStyle(), checkBorders(), checkClippedOverflow(), checkElementBorders(), checkElementBordersDOM(), checkElementClippedOverflow(), checkElementClippedOverflowDOM() (+64 more)
+Nodes (70): borderColorsFromStyle(), borderWidthsFromStyle(), checkBorders(), checkClippedOverflow(), checkElementBorders(), checkElementBordersDOM(), checkElementClippedOverflow(), checkElementClippedOverflowDOM() (+62 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.07
@@ -353,8 +355,8 @@ Cohesion: 0.09
 Nodes (48): allEntryIds(), argVal(), buildRepairBatch(), candidatesForEntry(), changedFilesSinceSnapshot(), collectApplyOwnedFiles(), collectRollbackFiles(), commitManualEdits() (+40 more)
 
 ### Community 14 - "Community 14"
-Cohesion: 0.10
-Nodes (33): detectUrl(), runVisualContrastFallback(), finding(), getAP(), extractFindingIds(), profileFindings(), profileFindingsAsync(), profileNow() (+25 more)
+Cohesion: 0.11
+Nodes (32): detectUrl(), runVisualContrastFallback(), finding(), getAP(), extractFindingIds(), profileFindings(), profileFindingsAsync(), profileNow() (+24 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.07
@@ -609,8 +611,8 @@ Cohesion: 0.18
 Nodes (22): completionAckForAcceptResult(), completionTypeForAcceptResult(), augmentEventWithAcceptHandling(), buildAcceptScriptArgs(), buildPollReplyPayload(), EVENT_TYPES_NEEDING_AGENT_REPLY, fetchNextEvent(), fetchServerStatus() (+14 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.08
-Nodes (23): FORBIDDEN_MANUAL_EDIT_TEXT_CHARS, INSERT_POSITIONS, isValidId(), isValidVariantId(), validateAnnotationFields(), validateEvent(), validateInsertGenerate(), validateManualEditEvent() (+15 more)
+Cohesion: 0.11
+Nodes (11): canCreateInsert(), clampPlaceholderSize(), computeInsertPosition(), groupSiblingRows(), hitSiblingInsertGap(), horizontalOverlap(), insertCreateDisabledReason(), insertLineCoords() (+3 more)
 
 ### Community 79 - "Community 79"
 Cohesion: 0.13
@@ -742,7 +744,7 @@ Nodes (16): Ajustes de Peso Específicos por Sector, Automoción, Campos Complem
 
 ### Community 112 - "Community 112"
 Cohesion: 0.05
-Nodes (37): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+29 more)
+Nodes (38): 2026-08-19 — `ai-visibility-checker`'s "never simulate an AI engine response" rule kept even though the user asked for non-blocking heuristic mode everywhere, 2026-08-19 — graphify scoped to `src/` only, output at project root, 2026-08-19 — Keep Codex global config untouched, 2026-08-19 — Project treated as near-final; strict change discipline enforced, 2026-08-20 — AGENTS.md reduced to a pointer at CLAUDE.md, instead of fixed in place, 2026-08-20 — CLAUDE.md's SEO suite section cut from a command table to workflow-order + gate rule only, 2026-08-20 — docs/MEDICAL_COMPLIANCE.md sourced from the user's older local checkout (`D:\Derma_Content\...`), not the SecondBrain wiki's Florida compliance matrix, 2026-08-20 — Installed `bencium-aeo` + `keyword-research` skills to supplement the wiki, instead of inventing a keyword strategy (+30 more)
 
 ### Community 113 - "Community 113"
 Cohesion: 0.12
@@ -1056,6 +1058,10 @@ Nodes (7): borderColorsFromStyle(), borderWidthsFromStyle(), checkElementGptBord
 Cohesion: 0.29
 Nodes (6): Engram Status Handoff, Output Format, Purpose, Rules, Trigger, Workflow
 
+### Community 192 - "Community 192"
+Cohesion: 0.25
+Nodes (12): FORBIDDEN_MANUAL_EDIT_TEXT_CHARS, INSERT_POSITIONS, isValidId(), isValidVariantId(), validateAnnotationFields(), validateEvent(), validateInsertGenerate(), validateManualEditEvent() (+4 more)
+
 ### Community 193 - "Community 193"
 Cohesion: 0.29
 Nodes (6): Configured Viewports, File Locations, Local Browser Validator (Playwright), Purpose, Trigger, Workflow
@@ -1288,8 +1294,12 @@ Nodes (3): Claude Will Generate:, Example Claude Code Session, You:
 Cohesion: 0.67
 Nodes (3): Content Refresh Cadence, Quick Refresh Checklist, Update Schedule
 
+### Community 264 - "Community 264"
+Cohesion: 0.83
+Nodes (3): captureVisualContrastCandidate(), compareScreenshotContrast(), sanitizeScreenshotClip()
+
 ## Knowledge Gaps
-- **2310 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2305 more)
+- **2311 isolated node(s):** `__dirname`, `ROOT`, `COMMON_DEV_PORTS`, `SCANNABLE_EXT`, `SOURCE_DIRS` (+2306 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1303,7 +1313,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `resolveInsertSessionAnchor()` connect `Community 78` to `Community 30`?**
   _High betweenness centrality (0.032) - this node is a cross-community bridge._
 - **What connects `__dirname`, `ROOT`, `COMMON_DEV_PORTS` to the rest of the system?**
-  _2310 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2311 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.1191919191919192 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

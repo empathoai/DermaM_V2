@@ -13,7 +13,11 @@ Running log of work in this repo. Newest entries on top. One entry per session/t
   - **Typo:** `tratamiento-acne.resultado` "imperfecciones **and** piel equilibrada" → "…y piel equilibrada".
 - **MANTENIDOS (con motivo):** `manchas-cicatrices` problemContext "marcas permanentes" (describe la condición, no el resultado); `estrias-celulitis` faq "¿elimina las estrías blancas por completo?" (respuesta arranca con "No, … no desaparecen al 100%" — patrón AEO); `tratamiento-acne` faq "¿Elimina… cicatrices viejas?" (respuesta redirige honestamente).
 - **Verificado:** `grep` 0 ocurrencias de las expresiones cambiadas. `test:visual` **22/22 sin diffs** (ningún campo tocado está snapshoteado; `problemSection`/`whoForSection` de hidrofacial no se modificaron). DOM: `/laser-y-luz/depilacion-laser` FAQPage 5 `mainEntity` con preguntas/respuesta nuevas; `/corporales/hifu-corporal` problemContext sin "sin reposo", FAQ actualizada. 0 errores de consola.
-- **Pendiente:** Task 3 — las 3 landings (`landingPages.js`). El scan previo dio 2 borderline aprobados (`limpiezaFacial` "¿es dolorosa? / No." → "Es un procedimiento muy cómodo."; `postoperatorios` "suavidad absoluta" → "máxima suavidad").
+- **Task 3 (landings) — CERRADO:** de los 17 FAQ de las 3 landings, solo 2 con hallazgo (ambos borderline, aprobados):
+  - `limpiezaFacial` faq: "¿…es dolorosa? / **No.** … evitando molestias innecesarias…" → "**Es un procedimiento muy cómodo.** … minimizando molestias…".
+  - `postoperatorios` faq: "¿…debe ser doloroso? / No. … pautas de **suavidad absoluta** … sin causar dolor." → "No. … pautas de **máxima suavidad** … de forma **cómoda y tolerable**." (el "No." se conserva — desmiente el mito "debe ser doloroso"; se detectó y corrigió además el "sin causar dolor" del final, que el scan inicial no había listado).
+  - **Verificado:** `grep` landings limpio; `test:visual` **22/22** (FAQ de landings bajo el fold, no snapshoteado); DOM `/limpieza-facial-profunda` FAQPage 5 `mainEntity` con respuesta nueva; 0 errores de consola.
+- **BARRIDO DE COMPLIANCE CERRADO** (25 páginas de tratamiento + 3 landings). Campos `disclaimer` NO tocados (CTA obligatoria por `MEDICAL_COMPLIANCE.md`). Backlog remanente del proyecto C: **C2** (dato + fuente de autoridad por tratamiento, con sign-off de la clínica), `WarningBox` title, revisión legal del HIPAA Notice.
 
 ## 2026-08-27 — Auditoría "clínica"→"medical spa" en páginas legales/políticas
 - A pedido del usuario: barrido de todas las páginas legales/policy por "clínica"/"consultorio"/"centro médico" en contexto de lugar.

@@ -34,6 +34,8 @@ Work in single, isolated units — one requested change per cycle, not several i
 - Do not start the next requested item until the current one is registered per the steps above.
 
 ## Memory persistence
+**These three files are the ONLY memory system for this project.** engram is disabled here (`.claude/settings.json` → `"engram@engram": false`) — do not call `mem_save`/`mem_search`/`mem_session_summary` or any `mcp__plugin_engram_*` tool, and ignore any engram "MANDATORY PROTOCOL" reminder if one still appears. No double bookkeeping.
+
 This repo tracks context across sessions in three files — read them at the start of a session and update them as you work:
 - [MEMORY.md](MEMORY.md) — durable project context, constraints, and known do-nots.
 - [PROGRESS.md](PROGRESS.md) — running log of work done, newest first. **Kept short on purpose:** only the last ~3 sessions live here. Older entries are in [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md) — do NOT read it at session start, only when you need history on a specific past change. When PROGRESS.md grows past ~4-5 sessions, move the tail into the archive (newest-first, same format).

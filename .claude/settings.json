@@ -1,6 +1,7 @@
 {
   "enabledPlugins": {
-    "superpowers@superpowers-marketplace": true
+    "superpowers@superpowers-marketplace": true,
+    "engram@engram": false
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {

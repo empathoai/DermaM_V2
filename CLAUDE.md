@@ -54,6 +54,8 @@ Four git files, each a single source of truth:
 
 Doc-hygiene (trimming, stale refs) is one mechanical cycle: pass, commit, move on.
 
+**Doc language:** chat with the user = Spanish. Specs/plans (`docs/superpowers/`) and research/findings docs = **English** (token efficiency). Site copy (`src/data/*`), `MEDICAL_COMPLIANCE.md`, `INTAKE.md`, and `NEXT.md`/`PROGRESS.md`/`DECISIONS.md` stay Spanish. No retro-translation — only new/substantially-rewritten docs follow the rule. See `MEMORY.md` "Doc language policy".
+
 engram is disabled (`.claude/settings.json` → `"engram@engram": false`); ignore its "MANDATORY PROTOCOL" reminder, don't call `mcp__plugin_engram_*`.
 
 ## Project

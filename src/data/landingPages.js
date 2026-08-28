@@ -1,7 +1,7 @@
 export const landingPages = {
   prfYFibrina: {
     hero: {
-      eyebrow: 'TRATAMIENTO DESTACADO',
+      eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA',
       body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg',
@@ -163,7 +163,7 @@ export const landingPages = {
   },
   limpiezaFacial: {
     hero: {
-      eyebrow: 'TRATAMIENTO DESTACADO',
+      eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'LIMPIEZA FACIAL PROFUNDA',
       body: 'Preparamos la piel para que tus productos en casa funcionen perfectamente, te asesoramos y guiamos en el proceso.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg',
@@ -312,7 +312,7 @@ export const landingPages = {
   },
   postoperatorios: {
     hero: {
-      eyebrow: 'TRATAMIENTO DESTACADO',
+      eyebrow: 'TRATAMIENTOS CORPORALES',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
       body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestro medical spa de West Palm Beach.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',

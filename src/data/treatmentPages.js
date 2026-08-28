@@ -92,7 +92,7 @@ const customDetails = {
     faq: [
       {
         question: '¿La extracción del Hidrofacial deja marcas rojas?',
-        answer: 'No. A diferencia de las limpiezas tradicionales agresivas, el Hidrofacial utiliza una tecnología de succión de vacío suave combinada con infusión líquida que ablanda los poros, facilitando una extracción sin dolor y previniendo la aparición de marcas o rojeces severas.'
+        answer: 'No. A diferencia de las limpiezas tradicionales agresivas, el Hidrofacial utiliza una tecnología de succión de vacío suave combinada con infusión líquida que ablanda los poros, facilitando una extracción suave y muy tolerable, y previniendo la aparición de marcas o rojeces severas.'
       },
       {
         question: '¿Se nota la piel seca o descamada después de la sesión?',
@@ -168,7 +168,7 @@ const customDetails = {
     resultado: 'Tensión cutánea y definición progresiva en 2 a 3 meses',
     whoForList: [
       'Personas con flacidez leve a moderada en el contorno del rostro, papada y cuello.',
-      'Quienes desean un efecto de soporte y definición de contornos sin tiempo de recuperación.',
+      'Quienes desean un efecto de soporte y definición de contornos con reincorporación inmediata a tu rutina.',
       'Quienes buscan estimular la síntesis natural de colágeno a largo plazo.'
     ],
     safetyPrecautions: [
@@ -195,7 +195,7 @@ const customDetails = {
       },
       {
         question: '¿Puedo volver a mi rutina diaria inmediatamente?',
-        answer: 'Sí. El HIFU facial no daña la epidermis externa, por lo que no requiere tiempo de recuperación ni cuidados especiales más allá de la hidratación y protección solar.'
+        answer: 'Sí. El HIFU facial no daña la epidermis externa, por lo que no requiere reposo; puedes retomar tu rutina el mismo día, manteniendo hidratación y protección solar.'
       }
     ]
   },
@@ -273,7 +273,7 @@ const customDetails = {
     faq: [
       {
         question: '¿Qué se siente durante la sesión de radiofrecuencia?',
-        answer: 'Sentirás un calor profundo muy agradable y relajante en las zonas tratadas, similar a un masaje con piedras calientes, sin dolor ni quemaduras.'
+        answer: 'Sentirás un calor profundo muy agradable y relajante en las zonas tratadas, similar a un masaje con piedras calientes, sin ardor ni quemaduras.'
       },
       {
         question: '¿Cuántas sesiones se necesitan para ver la piel más firme?',
@@ -315,7 +315,7 @@ const customDetails = {
     faq: [
       {
         question: '¿Qué es la bruma de oxígeno y qué se siente?',
-        answer: 'Es la aplicación de un chorro de oxígeno puro enriquecido con sueros a alta presión. Se percibe como una brisa de viento frío, sumamente relajante y refrescante sobre la cara, sin dolor.'
+        answer: 'Es la aplicación de un chorro de oxígeno puro enriquecido con sueros a alta presión. Se percibe como una brisa de viento frío, sumamente relajante y refrescante sobre la cara y muy cómoda.'
       },
       {
         question: '¿Es adecuado para pieles deshidratadas u opacas?',
@@ -327,7 +327,7 @@ const customDetails = {
       },
       {
         question: '¿Tiene algún tiempo de recuperación?',
-        answer: 'Ninguno. No causa descamación ni enrojecimiento, por lo que puedes maquillarte o realizar tus actividades habituales inmediatamente después.'
+        answer: 'No requiere reposo. No causa descamación ni enrojecimiento, así que puedes maquillarte o retomar tus actividades habituales el mismo día.'
       },
       {
         question: '¿Con qué frecuencia se aconseja realizarlo?',
@@ -387,7 +387,7 @@ const customDetails = {
     duration: '60 min',
     application: 'Cabina / Purificación',
     anesthesia: 'No requiere',
-    resultado: 'Reducción de imperfecciones and piel equilibrada',
+    resultado: 'Reducción de imperfecciones y piel equilibrada',
     whoForList: [
       'Personas con imperfecciones recurrentes, poros congestionados y brillo graso visible.',
       'Quienes buscan calmar la apariencia enrojecida e inflamada de su cutis.',
@@ -448,7 +448,7 @@ const customDetails = {
       },
       {
         question: '¿Se pueden eliminar las manchas de sol por completo?',
-        answer: 'Logramos una atenuación y aclarado visible muy significativo, unificando el tono del rostro. Para sostener el resultado, es obligatorio evitar el sol directo y usar bloqueador.'
+        answer: 'No por completo. Se logra una atenuación y un aclarado visibles y significativos, que unifican el tono del rostro. Para sostener el resultado, es obligatorio evitar el sol directo y usar bloqueador.'
       },
       {
         question: '¿Este tratamiento sirve para cicatrices de acné profundas?',
@@ -487,7 +487,7 @@ const customDetails = {
     faq: [
       {
         question: '¿La punta de diamante raspa la piel de forma dolorosa?',
-        answer: 'No. El pulido es físico pero sumamente suave. Sentirás un ligero roce raspante y un masaje de succión muy cómodo en el rostro, sin dolor ni sangrado.'
+        answer: 'No. El pulido es físico pero sumamente suave. Sentirás un ligero roce raspante y un masaje de succión muy cómodo en el rostro; no produce sangrado.'
       },
       {
         question: '¿Qué diferencia hay con un peeling químico facial?',
@@ -546,7 +546,7 @@ const customDetails = {
       },
       {
         question: '¿Tiene algún tiempo de inactividad o rojez?',
-        answer: 'Cero enrojecimiento prolongado. Tu piel se sentirá calmada y fresca inmediatamente, permitiéndote retornar a tu rutina al instante.'
+        answer: 'El enrojecimiento, si aparece, es leve y breve. Tu piel se siente calmada y fresca, y puedes retomar tu rutina el mismo día.'
       }
     ]
   },
@@ -622,7 +622,7 @@ const customDetails = {
       },
       {
         question: '¿Los masajes post-Lipo 360 deben ser dolorosos?',
-        answer: 'No. Nuestros masajes son de presión superficial suave (drenaje linfático manual) diseñados para desinflamar de forma confortable, sin dolor ni tracción.'
+        answer: 'No. Nuestros masajes son de presión superficial suave (drenaje linfático manual) diseñados para desinflamar de forma confortable y suave, sin tracción.'
       },
       {
         question: '¿El protocolo estético ayuda a evitar la fibrosis?',
@@ -676,7 +676,7 @@ const customDetails = {
         answer: 'No. El tratamiento con copas de succión está totalmente contraindicado sobre implantes de glúteos quirúrgicos o rellenos inyectables recientes.'
       },
       {
-        question: '¿El resultado de levantamiento es permanente?',
+        question: '¿Cuánto duran los resultados del levantamiento de glúteos?',
         answer: 'Los resultados se sostienen con hábitos activos y ejercicio en casa. Recomendamos realizar 1 sesión de mantenimiento mensual tras terminar el ciclo.'
       }
     ]
@@ -729,7 +729,7 @@ const customDetails = {
     whatIsHeadline: 'HIFU corporal: qué es y para qué sirve',
     whatIsBody: 'El HIFU corporal es un protocolo estético que aplica ultrasonido focalizado de alta intensidad sobre los tejidos profundos del cuerpo para generar calor controlado y estimular la producción de colágeno. Está diseñado para favorecer la firmeza y el soporte de la piel en abdomen, brazos o muslos de forma progresiva, sin cirugía. En Derma.M, medical spa en West Palm Beach, parte de una medición del pliegue graso en la valoración inicial.',
     problemContextHeadline: 'FLACIDEZ INSTALADA EN ABDOMEN, MUSLOS O BRAZOS',
-    problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo desde adentro, sin reposo posoperatorio.',
+    problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo de forma no invasiva.',
     duration: '60 - 90 min',
     application: 'Cabina / Ultrasonido profundo',
     anesthesia: 'No requiere',
@@ -763,7 +763,7 @@ const customDetails = {
       },
       {
         question: '¿Requiere tiempo de reposo después de la sesión?',
-        answer: 'Cero tiempo de reposo. Puedes regresar al trabajo o realizar actividades físicas inmediatamente después de tu visita.'
+        answer: 'No requiere reposo. Puedes regresar al trabajo o a tus actividades habituales el mismo día.'
       }
     ]
   },
@@ -967,7 +967,7 @@ const customDetails = {
         answer: 'Nuestro equipo cuenta con un sistema de frío integrado en el cabezal de metal, lo que adormece la zona al instante y hace la sesión muy cómoda.'
       },
       {
-        question: '¿Cuántas sesiones se necesitan para eliminar el vello?',
+        question: '¿Cuántas sesiones se necesitan para reducir el vello?',
         answer: 'Recomendamos un ciclo inicial de 6 a 8 sesiones, espaciadas cada 4 a 6 semanas, para tratar el vello en sus fases de crecimiento activo.'
       },
       {
@@ -975,8 +975,8 @@ const customDetails = {
         answer: 'Sí. Calibramos los parámetros del láser de forma personalizada según tu fototipo para proteger la piel y evitar alteraciones del pigmento.'
       },
       {
-        question: '¿Se elimina el vello de forma definitiva para siempre?',
-        answer: 'Logramos una reducción duradera del 85% al 90% del vello. Los folículos debilitados pueden requerir una sesión de retoque anual.'
+        question: '¿La depilación láser elimina el vello para siempre?',
+        answer: 'No de forma total. Se logra una reducción notable y duradera del vello; los folículos debilitados pueden requerir sesiones de retoque.'
       },
       {
         question: '¿Puedo rasurarme entre sesiones de láser?',
@@ -1157,7 +1157,7 @@ const customDetails = {
     faq: [
       {
         question: '¿El tratamiento capilar duele o se aplica con agujas?',
-        answer: 'Utilizamos aplicadores superficiales de precisión que realizan micro-aperturas sumamente tolerables y cómodas, sin dolor ni sangrado.'
+        answer: 'Utilizamos aplicadores superficiales de precisión que realizan micro-aperturas sumamente tolerables y cómodas; no producen sangrado.'
       },
       {
         question: '¿Cuándo se empieza a notar el cabello más fuerte?',

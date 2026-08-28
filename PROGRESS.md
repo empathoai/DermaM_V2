@@ -2,6 +2,19 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — Barrido de compliance en FAQ / problemContext / whoForList (treatmentPages)
+- Plan `docs/superpowers/plans/2026-08-27-compliance-faq-sweep.md`, Task 2. Spec `docs/superpowers/specs/2026-08-27-compliance-faq-sweep-design.md`. Lectura completa de los 125 FAQ + `problemContext`/`whoForList`/`resultado`; lista consolidada aprobada por el usuario (19 seguros + 4 borderline, todos aprobados).
+- **18 cambios en `src/data/treatmentPages.js`** (campos `faq`/`problemContextBody`/`whoForList`/`resultado`, `whatIsBody` NO tocado):
+  - **"sin dolor" → sensación real sin absoluto:** `hidrofacial` ("extracción sin dolor" → "suave y muy tolerable"), `radiofrecuencia-facial` ("sin dolor ni quemaduras" → "sin ardor ni quemaduras"), `oxigenoterapia-facial` ("sin dolor" → "muy cómoda"), `dermabracion-facial` + `tratamiento-capilar` ("sin dolor ni sangrado" → "no produce sangrado"), `lipo-360` ("sin dolor ni tracción" → "confortable y suave, sin tracción").
+  - **Negación de downtime → reincorporación:** `hifu-facial` whoForList + faq, `oxigenoterapia-facial` faq ("Ninguno." → "No requiere reposo."), `plasma-frio` faq ("Cero enrojecimiento prolongado… al instante" → "leve y breve… el mismo día"), `hifu-corporal` problemContext ("sin reposo posoperatorio" → "de forma no invasiva") + faq ("Cero tiempo de reposo… inmediatamente" → "No requiere reposo… el mismo día").
+  - **"permanente/para siempre/definitiva" en preguntas de resultado:** `levantamiento-gluteos` ("¿…es permanente?" → "¿Cuánto duran los resultados…?"), `depilacion-laser` ("¿…definitiva para siempre?" → "¿…elimina el vello para siempre?" — pregunta-mito, respuesta lo corrige).
+  - **Cifra de eficacia sin fuente:** `depilacion-laser` "reducción del 85% al 90%" → "No de forma total. Se logra una reducción notable y duradera…".
+  - **Borderline aprobados:** `manchas-cicatrices` faq ("por completo?" → respuesta abre con "No por completo."), `depilacion-laser` faq question ("para eliminar el vello" → "para reducir el vello").
+  - **Typo:** `tratamiento-acne.resultado` "imperfecciones **and** piel equilibrada" → "…y piel equilibrada".
+- **MANTENIDOS (con motivo):** `manchas-cicatrices` problemContext "marcas permanentes" (describe la condición, no el resultado); `estrias-celulitis` faq "¿elimina las estrías blancas por completo?" (respuesta arranca con "No, … no desaparecen al 100%" — patrón AEO); `tratamiento-acne` faq "¿Elimina… cicatrices viejas?" (respuesta redirige honestamente).
+- **Verificado:** `grep` 0 ocurrencias de las expresiones cambiadas. `test:visual` **22/22 sin diffs** (ningún campo tocado está snapshoteado; `problemSection`/`whoForSection` de hidrofacial no se modificaron). DOM: `/laser-y-luz/depilacion-laser` FAQPage 5 `mainEntity` con preguntas/respuesta nuevas; `/corporales/hifu-corporal` problemContext sin "sin reposo", FAQ actualizada. 0 errores de consola.
+- **Pendiente:** Task 3 — las 3 landings (`landingPages.js`). El scan previo dio 2 borderline aprobados (`limpiezaFacial` "¿es dolorosa? / No." → "Es un procedimiento muy cómodo."; `postoperatorios` "suavidad absoluta" → "máxima suavidad").
+
 ## 2026-08-27 — Auditoría "clínica"→"medical spa" en páginas legales/políticas
 - A pedido del usuario: barrido de todas las páginas legales/policy por "clínica"/"consultorio"/"centro médico" en contexto de lugar.
 - **Páginas publicadas limpias:** `PrivacyPolicy`, `TermsOfUse`, `Accessibility`, `BookingPolicy`, `LegalResources` — 0 referencias de contexto-lugar ("Clinical Disclosure" en LegalResources es adjetivo, correcto).

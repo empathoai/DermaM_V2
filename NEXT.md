@@ -1,27 +1,22 @@
 # NEXT
 
 Estado: Track B GBP cerrado (12 servicios + `Skin care clinic` + descripción del profile, todo
-pending review en Google) · árbol limpio tras commit de cierre · docs/ gitignored, en disco ·
-dev server `:3000` a apagar al cerrar
+pending review en Google) · cruce sitio↔GBP no-dental **saldado por completo** con esos 12 gaps
+(`DECISIONS.md:215-217`) — no re-abrir · árbol limpio tras commit de cierre · docs/ gitignored,
+en disco · dev server `:3000` a apagar al cerrar
 
 ## Próximo (en orden)
-1. **Batch Tier 2/3 GBP Services (sin dental)** — el relevamiento (2026-08-28) mostró que el GBP ya
-   tiene ~80 servicios de Nancy; los 12 gaps sitio↔GBP ya se cargaron. Queda solo revisar si algún
-   tratamiento **no-dental** del sitio todavía no tiene entrada equivalente (cruce en
-   `PROGRESS_ARCHIVE.md` / `DECISIONS.md` 2026-08-28 "Track B rescope"). Dental (blanqueamiento +
-   limpieza) queda **fuera del GBP por completo** — riesgo regulatorio de odontología, ver
-   `DECISIONS.md` 2026-08-28 "Dental FUERA del GBP". NO borrar ni renombrar servicios de Nancy.
-3. **`/nosotros` — coherencia de trato.** La página debe reflejar explícitamente el diferenciador
+1. **`/nosotros` — coherencia de trato.** La página debe reflejar explícitamente el diferenciador
    relacional (te escuchan/explican/acompañan, en español, lugar seguro) — evidencia: 53/130
    reseñas. Cross-check contra `DECISIONS.md` 2026-08-28 "diferenciador relacional".
-4. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
+2. **Track A — ciclos de código** (cada uno brainstorm→aprobación, ver findings doc §S5):
    naming PRF canónico en `landingPages.js`/`treatmentPages.js`/schema/`llms.txt`/metas;
    ciudad en el `<h1>` de las 3 landings; FAQ sembradas desde las PAA reales; "deep cleansing
    facial" como término EN en `/limpieza-facial-profunda`; página "mejores med spa de WPB".
-5. **Estrategia PRF (Tema 4, must-win)** — ya informada por el research: apropiarse de
+3. **Estrategia PRF (Tema 4, must-win)** — ya informada por el research: apropiarse de
    "Plasma Rico en Plaquetas y Fibrina (PRF)", demand-gen vía ads (término real a nivel nacional,
    0 competencia local). Content strategy con brainstorming.
-6. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
+4. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
    (pocos proveedores, cirujanos no lo recomiendan). Audiencia real existente.
 
 ## Bloqueado (espera al usuario / terceros)

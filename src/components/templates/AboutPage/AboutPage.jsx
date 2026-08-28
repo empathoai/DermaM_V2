@@ -18,9 +18,7 @@ export default function AboutPage({ data }) {
   const {
     hero,
     founderSpotlight,
-    founderPhilosophy,
-    approach,
-    academy,
+    enfoque,
     teamHeader,
     teamBySpecialty,
     quote,
@@ -28,10 +26,6 @@ export default function AboutPage({ data }) {
     testimonialsHeader,
     cta
   } = data;
-
-  const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
 
   return (
     <div className={styles.aboutPage}>
@@ -44,6 +38,7 @@ export default function AboutPage({ data }) {
         variant={hero.variant}
         primaryCta={hero.primaryCta}
         secondaryCta={hero.secondaryCta}
+        localTag={hero.localTag}
         hasTrustBar={false}
       />
 
@@ -88,6 +83,9 @@ export default function AboutPage({ data }) {
               {founderSpotlight.secondaryBody && (
                 <p className={styles.spotlightBodySecondary}>{founderSpotlight.secondaryBody}</p>
               )}
+              {founderSpotlight.academyLine && (
+                <p className={styles.spotlightBodySecondary}>{founderSpotlight.academyLine}</p>
+              )}
               <Link to="/nosotros/nancy-nieto" className={styles.spotlightLink}>
                 Conoce más sobre Nancy →
               </Link>
@@ -96,28 +94,36 @@ export default function AboutPage({ data }) {
         </div>
       </motion.section>
 
-      {/* 3. Founder Philosophy (Dark Authority #141313) */}
-      <motion.section 
+      {/* 3. Filosofía y enfoque — merged (Dark Authority #141313) */}
+      <motion.section
         className={styles.philosophySection}
         initial="hidden"
         whileInView="visible"
         viewport={viewportConfig}
         variants={sectionReveal}
+        aria-labelledby="enfoque-heading"
       >
         <div className={styles.philosophyContainer}>
           <div className={styles.philosophyHeader}>
             <SectionHeader
-              eyebrow={founderPhilosophy.eyebrow}
-              title={founderPhilosophy.headline}
+              eyebrow={enfoque.eyebrow}
+              title={enfoque.headline}
+              titleId="enfoque-heading"
               variant="dark"
               align="left"
             />
           </div>
           <div className={styles.philosophyContent}>
-            <p className={styles.philosophyBody}>{founderPhilosophy.body}</p>
-            {founderPhilosophy.supportingText && (
-              <p className={styles.philosophySupport}>{founderPhilosophy.supportingText}</p>
+            <p className={styles.philosophyBody}>{enfoque.body}</p>
+            {enfoque.supportingText && (
+              <p className={styles.philosophySupport}>{enfoque.supportingText}</p>
             )}
+            <BenefitColumns
+              items={enfoque.items}
+              variant="dark"
+              showNumbers={true}
+              layout="columns"
+            />
             <blockquote className={styles.philosophyQuote}>
               <p>“{quote.text}”</p>
               <footer>
@@ -129,93 +135,10 @@ export default function AboutPage({ data }) {
         </div>
       </motion.section>
 
-      {/* 4. Science / Experience / Human Care (Clinical Canvas #F2F0F1) */}
-      <motion.section 
-        className={styles.approachSection}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={sectionReveal}
-      >
-        <div className={styles.approachContainer}>
-          <BenefitColumns
-            items={approach.items}
-            variant="light"
-            showNumbers={true}
-            layout="columns"
-            sectionHeader={{
-              eyebrow: approach.eyebrow,
-              title: approach.headline,
-              align: "left"
-            }}
-          />
-          {approach.conversion && (
-            <div className={styles.approachConversion}>
-              <div className={styles.approachConversionCopy}>
-                <h3>{approach.conversion.headline}</h3>
-                <p>{approach.conversion.body}</p>
-              </div>
-              <div className={styles.approachConversionActions}>
-                <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.conversionPrimary}>
-                  {approach.conversion.primaryCta}
-                </a>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.conversionSecondary}>
-                  {approach.conversion.secondaryCta}
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
-      </motion.section>
-
-      {/* 5. DERMA.M Academy (Off White #EFEFEB) */}
-      <motion.section 
-        className={styles.academySection} 
-        aria-labelledby="academy-heading"
-      >
-        <div className={styles.academyContainer}>
-          <div className={styles.academyRow}>
-            <motion.div
-              className={styles.academyContent}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportConfig}
-              variants={sectionReveal}
-            >
-              <p className={styles.academyEyebrow}>{academy.eyebrow}</p>
-              <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
-              <h2 id="academy-heading" className={styles.academyTitle}>{academy.headline}</h2>
-              <p className={styles.academyBody}>{academy.body}</p>
-              {academy.secondaryBody && (
-                <p className={styles.academyBodySecondary}>{academy.secondaryBody}</p>
-              )}
-            </motion.div>
-            <motion.div
-              className={styles.academyMedia}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportConfig}
-              variants={sectionReveal}
-            >
-              <div className={styles.academyMediaFrame}>
-                <motion.div className={styles.academyMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
-                  <MediaBlock
-                    src={academy.image}
-                    alt={academy.imageAlt}
-                    variant="light"
-                    className={styles.academyImage}
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* 6. Team By Specialty (Clinical Canvas #F2F0F1) */}
+      {/* 4. Team By Specialty (Clinical Canvas #F2F0F1) */}
       <TeamBySpecialty groups={teamBySpecialty} header={teamHeader} />
 
-      {/* 7. Testimonials (Clinical Canvas #F2F0F1 layout, Off White #EFEFEB card background) */}
+      {/* 5. Testimonials (Clinical Canvas #F2F0F1 layout, Off White #EFEFEB card background) */}
       <section className={styles.testimonialsSection} aria-labelledby="testimonials-heading">
         <div className={styles.testimonialsContainer}>
           <div className={styles.layoutSplit}>
@@ -270,7 +193,7 @@ export default function AboutPage({ data }) {
         </div>
       </section>
 
-      {/* 8. Final CTA (Dark Authority #141313) */}
+      {/* 6. Final CTA (Dark Authority #141313) */}
       <FinalCTA 
         eyebrow={cta.eyebrow}
         title={cta.headline}

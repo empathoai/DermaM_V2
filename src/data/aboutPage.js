@@ -2,7 +2,8 @@ export const aboutPage = {
   hero: {
     eyebrow: "NOSOTROS",
     title: "CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL",
-    body: "En DERMA.M combinamos valoración profesional, formación continua y acompañamiento cercano para diseñar una experiencia de cuidado alineada con tus objetivos.",
+    body: "DERMA.M es un medical spa en West Palm Beach. Trabajamos la estética como una decisión de salud: informada, conversada y sostenida en el tiempo.",
+    localTag: "Medical Spa · West Palm Beach",
     primaryCta: "AGENDAR VALORACIÓN",
     secondaryCta: "HABLAR POR WHATSAPP",
     backgroundImage: "/assets/images/about/hero.jpg",
@@ -12,20 +13,17 @@ export const aboutPage = {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     name: "NANCY NIETO",
     subheadline: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
-    body: "DERMA.M nació de la visión de Nancy Nieto: ofrecer una atención estética responsable, cercana y guiada por la formación continua. Su preparación en Ecuador y Estados Unidos ha dado forma a un enfoque que prioriza la valoración, la educación del paciente y protocolos adaptados a cada persona.",
-    secondaryBody: "Para Nancy, cuidar también significa explicar, escuchar y acompañar con honestidad en cada etapa del proceso.",
+    body: "DERMA.M nació de la visión de Nancy Nieto: un espacio donde la ciencia, la experiencia y la atención humana se unen para ofrecer tratamientos seguros, éticos y orientados a resultados reales.",
+    secondaryBody: "Para Nancy, cuidar también significa escuchar, educar y acompañar en cada etapa del proceso.",
+    academyLine: "Además, Nancy forma a otras profesionales de la estética a través de DERMA.M Academy.",
     image: "/assets/images/home/founder.jpg",
     imageAlt: "Nancy Nieto, fundadora y directora de DERMA.M"
   },
-  founderPhilosophy: {
-    eyebrow: "FILOSOFÍA",
-    headline: "ESCUCHAR ANTES DE RECOMENDAR",
-    body: "Cada piel, objetivo y momento personal requiere una conversación distinta. Por eso comenzamos comprendiendo tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
-    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas."
-  },
-  approach: {
+  enfoque: {
     eyebrow: "NUESTRO ENFOQUE",
-    headline: "CÓMO CUIDAMOS CADA DECISIÓN",
+    headline: "ESCUCHAR ANTES DE RECOMENDAR",
+    body: "Cada piel, cada objetivo y cada momento personal requieren una conversación distinta. Por eso empezamos por comprender tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
+    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas.",
     items: [
       {
         title: "VALORACIÓN",
@@ -39,21 +37,7 @@ export const aboutPage = {
         title: "ACOMPAÑAMIENTO",
         body: "Explicamos cada etapa con claridad y damos seguimiento para que te sientas orientada durante el proceso."
       }
-    ],
-    conversion: {
-      headline: "TU CUIDADO COMIENZA CON UNA CONVERSACIÓN",
-      body: "Cuéntanos qué deseas mejorar y te orientaremos sobre el siguiente paso para agendar una valoración.",
-      primaryCta: "AGENDAR VALORACIÓN",
-      secondaryCta: "CONSULTAR POR WHATSAPP"
-    }
-  },
-  academy: {
-    eyebrow: "DERMA.M ACADEMY",
-    headline: "FORMACIÓN QUE ELEVA NUESTRO ESTÁNDAR DE ATENCIÓN",
-    body: "DERMA.M Academy representa el compromiso de Nancy con la actualización continua, el intercambio de conocimiento y la consistencia del equipo.",
-    secondaryBody: "Esta visión busca fortalecer la calidad de la atención y, al mismo tiempo, abrir oportunidades de desarrollo para otras mujeres profesionales dentro de la industria estética.",
-    image: "/assets/images/about/dermam-academy.jpg",
-    imageAlt: "Nancy Nieto durante una actividad educativa de DERMA.M Academy"
+    ]
   },
   teamHeader: {
     eyebrow: "EQUIPO Y ESPECIALIDADES",
@@ -229,7 +213,7 @@ export const founderBioPage = {
     variant: "default"
   },
   founderSpotlight: aboutPage.founderSpotlight,
-  founderPhilosophy: aboutPage.founderPhilosophy,
+  founderPhilosophy: aboutPage.enfoque,
   quote: aboutPage.quote,
   cta: aboutPage.cta
 };

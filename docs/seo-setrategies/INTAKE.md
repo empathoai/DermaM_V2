@@ -103,30 +103,121 @@ Palm Beach), ese sí se evalúa.
 
 ## Temas de intake — PENDIENTE de completar
 
-### 1. Panorama de entidades
-- Derma M Academy (`dermamacademy.com`, tel `+1 561 817-3932`) — ¿misma dueña? ¿misma
-  dirección? ¿GBP propio? → PENDIENTE
-- Derma M Institute (`dermaminstitute.com`, productos skincare) — ¿propia / línea de producto /
-  empresa ajena que comparte nombre? → PENDIENTE
-- Miami (`4960 SW Ave Ste 203, Miami`, `dermamskinhealthmiami@gmail.com`, WhatsApp `786 734-3748`) —
-  ¿operación real? ¿GBP propio? ¿el sitio nuevo la cubre o es 100% WPB? → PENDIENTE
-- Razón social exacta ("DERMA.M, LLC"?) + figura de registro en Florida → PENDIENTE
+### 1. Panorama de entidades — RESPONDIDO 2026-08-27
+- **Derma M Academy** (`dermamacademy.com`, tel `+1 561 817-3932`) — **misma dueña** (Nancy).
+  Hay una referencia a Academy en el sitio del med spa. **NO tiene GBP.** Está en la **misma
+  dirección** que el med spa, pero hoy se posiciona con **cursos online**. → entidad separada,
+  no confundir con el med spa; no entra en `sameAs`/`knowsAbout` del nodo `#organization`.
+- **Derma M Institute** (`dermaminstitute.com`, productos skincare) — **NO es de Derma.M.**
+  Tercero que comparte el nombre. → NO enlazar, NO `sameAs`. Riesgo de confusión de entidad;
+  vigilar que el sitio no lo referencie ni sugiera relación.
+- **Miami** (`4960 SW Ave Ste 203, Miami`, `dermamskinhealthmiami@gmail.com`,
+  WhatsApp `786 734-3748`) — era una **sucursal que abrió y se cerró**. **Debe desaparecer
+  del sitio.** Ya se hizo una pasada antes pero **quedó algo residual**. El sitio nuevo es
+  **100% West Palm Beach.** → **ACCIÓN Track A:** barrer el repo por referencias residuales a
+  Miami (dirección, email `...miami@gmail.com`, WhatsApp `786 734-3748`, la palabra "Miami" en
+  contexto de sede) y eliminarlas. Ciclo propio con aprobación.
+- **Razón social:** `DERMA.M, LLC` — **confirmada como correcta.**
 
-### 2. Google Business Profile
-- ¿Existe la ficha? ¿Verificada? ¿Quién tiene acceso? → PENDIENTE
-- Recuento y rating reales de reseñas (el `4.9/117` del schema viejo, ¿de dónde salió?) → PENDIENTE
-- Categoría primaria actual → PENDIENTE
+### 2. Google Business Profile — RESPONDIDO 2026-08-27
+- **La ficha existe y está verificada.**
+- **Acceso:** Nancy (dueña) + el usuario como **administrador temporal** hasta ordenar todo
+  esto. El usuario puede hacer **cualquier modificación** que haga falta. → **Track B (sesión
+  GBP / ítem 8.19) desbloqueado por acceso.**
+- **El `4.9/117` del schema viejo lo cargó el usuario a mano.** NO está conectado en vivo con
+  Google. Se hizo así a propósito: (a) para que las **reseñas negativas** (pocas) no aparezcan
+  al azar, (b) para que **cada página muestre reseñas relacionadas con su tratamiento**.
+  La extracción se hizo con **Apify**. → hay que **validar si ese enfoque es correcto y óptimo**
+  (es el ítem **8.20**, ciclo propio con brainstorming).
+  **Flag de compliance:** curar reseñas ocultando las negativas + fijar `aggregateRating` a
+  mano choca con las políticas de datos estructurados de Google (rating debe reflejar reseñas
+  genuinas y coincidir con lo que se muestra / con el GBP; selección sesgada = riesgo de acción
+  manual). Por eso la sesión anterior **quitó** `aggregateRating 4.9/117` del nodo
+  `#organization`. Reintroducirlo exige: número real del GBP como fuente, reseñas mostradas sin
+  filtrar negativas, y `aggregateRating` que matchee lo visible.
+  → **PENDIENTE: recuento y rating reales del GBP hoy** (fuente de verdad para 8.20).
+- **Categoría primaria actual:** PENDIENTE — sale de la **auditoría completa del GBP** (sesión
+  B). Objetivo declarado por el usuario: que las **señales estén alineadas en todo internet**
+  (sitio ↔ GBP ↔ directorios).
 
-### 3. Keyword research del usuario
-- El usuario armó el contenido del sitio "en base a un research de lo que más busca la gente".
-  ¿Tiene ese doc? ¿Se puede sumar al repo? Keywords/tratamientos prioritarios. → PENDIENTE
+### 3. Keyword research del usuario — RESPONDIDO 2026-08-28
+- **No hay un doc formal de keywords.** El "research" fue un proceso de decisión de arquitectura,
+  no una planilla exportable. Sirvió para definir **qué tratamientos van al sitio, con qué
+  profundidad y jerarquía**, y para construirlo.
+- **Criterios que guiaron la estructura (los tres, combinados):**
+  1. **Qué quiere posicionar Derma.M** como tratamientos prioritarios de **alto valor y
+     diferenciación** → de ahí salieron las **3 landings**.
+  2. **CRO** — mejor forma de convertir → de ahí se definieron los **hubs** y los tratamientos
+     "mejores"/destacados.
+  3. **Qué busca más la gente + qué atiende más Derma.M** → de ahí se definió **qué tratamiento
+     necesita página propia y cuál solo se refleja en el sitio** (swithout página dedicada).
+- **Método acordado para validar/afinar keywords:** **búsquedas manuales en el browser pane**
+  con el agente (autocomplete de Google, "People Also Ask", búsquedas relacionadas, composición
+  del local pack en Maps, páginas de competidores). Da señal **cualitativa** de intención y de
+  quién compite localmente; **no** da volumen numérico. Para un solo med spa local esto alcanza
+  — intención y local pack pesan más que el volumen exacto. **Sin costo, sin herramienta paga.**
+  → sustituye a Semrush/DataForSEO para este proyecto.
 
-### 4. Prioridades de negocio
-- Plasma = must-win (confirmado). ¿Qué otros tratamientos/categorías son los que facturan? → PENDIENTE
+### 4. Prioridades de negocio — RESPONDIDO 2026-08-28
+- **Limpiezas faciales** = el **enganche** / top del funnel. Siempre traen al cliente nuevo.
+- **Plasma (PRP / PRF)** = **tratamiento estrella y must-win.** Desafío de posicionamiento:
+  la gente conoce **PRP** pero **PRF poco**, y Derma.M es de los **pocos que hace PRF** → hay
+  que educar y **apropiarse del término PRF**. Buscar la estrategia correcta (no está resuelta).
+- **Post-operatorios** = **generan mucho dinero.** Alta prioridad comercial.
+- **Resto de tratamientos** = mucha competencia, pero **estratégicos**. La palanca para
+  posicionarlos es el **GBP** (categorías secundarias + servicios) más que páginas nuevas.
+- **Pedido explícito del usuario:** hacer el **ejercicio que sugiere Pedro SEO** para **validar
+  la competencia** — qué competidores del 3-pack rankean para lo que nosotros también hacemos,
+  y **qué keywords / categorías GBP usan** para posicionarlo. → esto es el **Tema 7** de este
+  intake; se ejecuta con búsquedas manuales en el browser + GMBspy / ver-código en Maps.
+- **Las 3 landings (verificado en `src/routes.jsx`)** — coinciden 1:1 con las 3 prioridades:
+  - `/limpieza-facial-profunda` (`LimpiezaFacial`) → el enganche
+  - `/prf-y-fibrina` (`PrfYFibrina`) → el must-win, y ya es **PRF-específica** (no PRP genérico)
+  - `/tratamientos-postoperatorios` (`Postoperatorios`) → el de mayor facturación
 
-### 5. Analítica y herramientas
-- GSC / GA4 / Bing WT — ¿configurados? ¿quién es dueño de las cuentas? → PENDIENTE
-- Presupuesto para herramientas de pago (Semrush / BrightLocal / APIFY / Ahrefs) → PENDIENTE
+### 5. Analítica y herramientas — PARCIAL 2026-08-28
+- GSC / GA4 / Bing WT — **NINGUNO configurado hoy** (respuesta usuario 2026-08-28).
+  → **ACCIÓN Track C (usuario):** al lanzar / antes de lanzar, dar de alta **GSC + GA4 + Bing
+  Webmaster a nombre del usuario**, sobre `dermamskinhealth.com` (sitio nuevo), y **subir el
+  sitemap**. Es el desbloqueo (a) del handoff: no toca código, habilita toda la medición
+  (queries, posición, striking distance, % de brand queries — acción nº1 de "Las nuevas
+  reglas" —, errores de indexación).
+  Nota: el usuario dudaba del valor "porque quiere borrar el rastro del sitio viejo" — aclarado:
+  GSC mide el sitio **nuevo**, no preserva el viejo. El **mapa de redirects 301** viejo→nuevo
+  (ya iniciado con el análisis de URLs actuales) es un tema aparte y también hay que cerrarlo
+  antes del deploy.
+- **Sesión GSC 2026-08-28 (browser):** el usuario se logueó. Estado:
+  - Dominio confirmado por el repo: **`dermamskinhealth.com`** (237 ocurrencias, sin variantes).
+    Hay una propiedad ajena sin verificar `dermamskinhelth.com` (typo) — ignorar.
+  - Propiedades verificadas existentes en la cuenta: `empathoai.com`, `legacymd.org` (ajenas).
+  - **El usuario NO tiene acceso al DNS del dominio** → no se puede hacer propiedad de Dominio.
+  - Sitio nuevo **no deployado** → no se puede verificar hoy por ningún método.
+  - **HECHO (browser, 2026-08-28):** propiedad de **prefijo de URL** `https://dermamskinhealth.com/`
+    creada en la cuenta `empathoai@gmail.com`, estado **sin verificar** (correcto: sitio nuevo
+    no deployado). Se retoma desde "Already started? finish verification".
+  - **Token de verificación capturado (método HTML tag):**
+    `<meta name="google-site-verification" content="M8yHH7yF8s5wO1AOTLzruE3HwjMiGW4hxeBgLlM9oIk" />`
+    (método archivo HTML alternativo: `google2f0ede1a410e8a22.html`).
+  - **PENDIENTE (cambio Track A, ciclo propio):** agregar ese `<meta>` al `<head>` de
+    `index.html` del repo. Verificación real = después del deploy (darle a "Verify" en GSC).
+  - Ídem Bing Webmaster (su propio meta tag) cuando se llegue a esa parte.
+  - **Ruta alternativa mejor:** quien deploya a Vercel controla el DNS → puede hacer la
+    propiedad de **Dominio**. Ligado al punto "quién deploya" (PENDIENTE, sección Deploy).
+- **Herramientas de datos — DECIDIDO: sin herramienta paga.** Método = browser pane (manual:
+  autocomplete, PAA, local pack, GMBspy, ver-código en Maps) + skills SEO/GEO/Local ya
+  instaladas + `docs/pedro-seo/` y `docs/open-seo/` como referencia. **Descartados:**
+  OpenSEO / DataForSEO (auto-host ahorra el $10/mes pero el piso es $50 de datos; prematuro
+  para un sitio no lanzado), Semrush (trial de 7 días o cuenta free posible más adelante para
+  el slice de keyword/competidores, pero no se activa ahora), pipeline de agente con la API de
+  Gemini (redundante: Claude Code ya tiene acceso al filesystem; Gemini no aporta datos que no
+  tenga yo — sin volumen, rank, backlinks, GSC/GA4/GBP nativos).
+- **Usos marginales de la API de Gemini reservados para la fase de medición (NO ahora):**
+  (a) **Search Grounding** — chequear si el grounding de Google cita nuestro dominio para
+  consultas del sector (~$0.014–0.035/consulta; solo Google, no ChatGPT/Perplexity);
+  (b) **embeddings** — similitud coseno entre las 40 URLs para detectar canibalización
+  semántica entre páginas de tratamiento (script de una pasada).
+- `@google/genai` ya es dependencia y `.env.example` referencia `GEMINI_API_KEY`, pero ninguna
+  feature del sitio lo usa en runtime. No se agrega ninguna.
 
 ### 6. Operación de reseñas y contenido
 - ¿Sistema para pedir reseñas? ¿Cadencia? ¿Quién responde? ¿Fotos reales del local disponibles? → PENDIENTE

@@ -2,6 +2,35 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-28 — GSC: propiedad creada + archivo de verificación en el repo
+
+**Contexto:** sesión de intake SEO local (ver `docs/seo-setrategies/INTAKE.md`, Temas 1–5 respondidos).
+Se analizó y descartó tooling externo (OpenSEO/DataForSEO, Semrush, pipeline con API de Gemini)
+— método definido = browser manual + skills instaladas + `docs/pedro-seo/` como referencia.
+Docs nuevos: `docs/seo-setrategies/OPEN-SEO-ANALYSIS.md`, `PEDRO-SEO-VALIDACION-Y-ESTRATEGIA.md`.
+Repos de referencia clonados en `docs/open-seo/` y `docs/pedro-seo/` (dentro de `docs/`, gitignored).
+
+**Cambio de código (Track A):**
+- **Nuevo `public/google2f0ede1a410e8a22.html`** — archivo de verificación de Google Search
+  Console (método "HTML file"). Contenido: `google-site-verification: google2f0ede1a410e8a22.html`.
+  Vite copia `public/` al build → se sirve en `https://dermamskinhealth.com/google2f0ede1a410e8a22.html`.
+- **Por qué el archivo y no el `<meta>` tag:** el usuario ya lo había descargado; método
+  recomendado por GSC; **no toca `index.html`** (menor blast radius en proyecto near-final).
+  Token alternativo del `<meta>` tag quedó guardado en `INTAKE.md` por si se cambia de método.
+- **NO tocado:** `index.html`, `robots.txt`, `sitemap.xml`, `llms.txt`, `.htaccess` — intactos.
+- **Verificado:** `curl http://localhost:3000/google2f0ede1a410e8a22.html` → 200 + contenido OK;
+  `vite build` emite `dist/google2f0ede1a410e8a22.html` con el contenido correcto. `dist/`
+  borrado post-check (gitignored). `git status`: solo el archivo nuevo + `INTAKE.md`.
+
+**Estado GSC:** propiedad **prefijo de URL** `https://dermamskinhealth.com/` creada en la cuenta
+`empathoai@gmail.com`, **sin verificar** (correcto — sitio nuevo aún no deployado).
+**PENDIENTE:** darle "Verify" en GSC **después del deploy**. Luego subir sitemap. Ídem alta de
+GA4 y Bing Webmaster (Track C, usuario). Ruta mejor para GSC: propiedad de **Dominio** vía quien
+controle el DNS de Vercel (ligado al punto "quién deploya", PENDIENTE en el intake).
+
+**Backlog del intake:** Temas 6 (operación de reseñas), 7 (competencia 3-pack), 8 (compliance/
+director médico) siguen PENDIENTE.
+
 ## 2026-08-27 — CIERRE DE SESIÓN / handoff (contexto muy grande, se continúa en otra sesión)
 
 **Hecho esta sesión (todo pusheado a `main`):**

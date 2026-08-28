@@ -154,9 +154,16 @@ Palm Beach), ese sí se evalúa.
   - **Segunda ficha en la cuenta:** "Legacy MD Anti-Aging Medicine", `4960 SW 72nd Ave suite
     203, Miami, FL 33155`, verificada, dominio `legacymd.org` (visto también en GSC). = la
     operación de Miami del Tema 1. Ficha propia, entidad separada. No se toca desde acá.
+  - **Validación del sitio público actual (curl, 2026-08-28):** todas las variantes
+    (`http://`, `www.`) hacen **301 → `https://dermamskinhealth.com/`**. Canónico live:
+    `<link rel="canonical" href="https://dermamskinhealth.com/">`. Servidor `LiteSpeed`
+    (WordPress) = rediseño NO deployado. → La propiedad de GSC (`https://dermamskinhealth.com`)
+    y el stream de GA4 quedaron con la URL correcta. **Deploy:** Vercel debe mantener los
+    mismos 301 (www→no-www, http→https) sobre el dominio.
   - **GAPS detectados (para la sesión B de optimización, con el audit de competencia del Tema 7):**
-    1. **Website field = `http://www.dermamskinhealth.com/`** → debería ser
-       `https://dermamskinhealth.com/` (protocolo + www; cohesión sitio↔GBP).
+    1. **Website field = `http://www.dermamskinhealth.com/`** → 301ea al canónico, así que
+       *funciona*; conviene ponerlo en la forma canónica `https://dermamskinhealth.com/`
+       (cosmético, prioridad baja).
     2. **Service area: vacío.** El schema del sitio tiene `areaServed` (WPB + Palm Beach County)
        — el GBP debería espejarlo (barrios/áreas reales, "test del dolor" de Pedro).
     3. **Profile strength no 100%** ("Complete info").
@@ -262,9 +269,44 @@ Palm Beach), ese sí se evalúa.
 ### 6. Operación de reseñas y contenido
 - ¿Sistema para pedir reseñas? ¿Cadencia? ¿Quién responde? ¿Fotos reales del local disponibles? → PENDIENTE
 
-### 7. Competencia
-- Competidores del 3-pack en WPB para los términos money (para auditar sus categorías GBP con
-  GMBspy / ver-código-fuente en Maps) → PENDIENTE
+### 7. Competencia — PARCIAL 2026-08-28
+
+**Local pack "med spa west palm beach" (Maps, browser; geo de sesión NO es WPB → orden exacto
+del 3-pack puede variar, pero la identificación de players es sólida):**
+
+| Negocio | Rating | Reseñas | Dirección |
+|---|---|---|---|
+| Élévation Med Spa & Beauty | 4.7 | 810 | 1515 N Flagler Dr Ste 100 |
+| Beverly Hills Wellness Center & Med Spa | 5.0 | 621 | 6905 S Dixie Hwy |
+| MedClub by Dr. Jenn | 4.9 | 413 | 333 President DJT Blvd #404 |
+| Beauty Within | 5.0 | 312 | 100 NE 6th St |
+| Bespoke Aesthetics | 5.0 | 266 | 625 N Flagler Dr #675 |
+| J&P Wellness and aesthetic | 4.9 | 184 | 2215 N Military Trl # M |
+| MD Beauty Labs | 4.7 | 149 | 320 S Quadrille Blvd |
+| **DERMA.M** | **4.9** | **~130** | 5707 S Dixie Hwy UNIT D |
+
+**Takeaways:**
+1. **Categoría primaria "Medical spa" es universal** en todos → la de DERMA.M está bien, NO se
+   cambia.
+2. **DERMA.M es el último en volumen de reseñas** (130 vs 149–810), con rating competitivo
+   (4.9). La palanca nº1 = **volumen + velocidad de reseñas** (coincide con Pedro y con el
+   Tema 6).
+3. **Beverly Hills Wellness Center & Med Spa** (6905 S Dixie Hwy) = competidor directo de
+   **proximidad** (misma calle que DERMA.M, 5707 S Dixie Hwy), 621 reseñas / 5.0.
+
+**PENDIENTE del Tema 7:**
+- **Categorías secundarias de los competidores:** la extracción confiable necesita **GMBspy**
+  (extensión de Chrome) — no se puede desde el browser pane (habría que parsear el protobuf de
+  Maps a mano). Opciones: (a) el usuario corre GMBspy en su Chrome sobre las fichas de
+  Élévation / Beverly Hills / MedClub y pasa la lista; (b) se decide "best effort" en la sesión
+  de optimización cruzando servicios reales del sitio + lo visible en 2–3 fichas.
+  DERMA.M hoy tiene 4 secundarias (Facial spa, Massage spa, Lymph drainage therapist, Laser
+  hair removal service); candidatas a evaluar según el mix real: "Skin care clinic",
+  "Medical clinic" (PRP/PRF/Botox/IV), "Weight loss service" (si hay body contouring),
+  "Tattoo removal service" (si IPL).
+- Geo-grid real (opcional, manual) para el orden del 3-pack desde WPB.
+- Auditar el sitio web de 1–2 competidores fuertes (Élévation `elevationewestpalmbeach.com` en
+  Squarespace, Beverly Hills) — H1 local, páginas de servicio, reseñas on-page.
 
 ### 8. Compliance / legal
 - Director médico (nombre) — para un posible nodo `Physician` a futuro. Nancy pidió NO publicar

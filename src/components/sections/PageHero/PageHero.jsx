@@ -8,6 +8,7 @@ import styles from './PageHero.module.css';
 export default function PageHero({
   eyebrow,
   title,
+  localTag,
   body,
   backgroundImage,
   imageAlt,
@@ -66,7 +67,10 @@ export default function PageHero({
               <p className={styles.eyebrow}>{eyebrow}</p>
             </div>
             
-            <h1 className={styles.title}>{title}</h1>
+            <h1 className={styles.title}>
+              {title}
+              {localTag && <span className={styles.localTag}>{localTag}</span>}
+            </h1>
             
             {body && <p className={styles.body}>{body}</p>}
             

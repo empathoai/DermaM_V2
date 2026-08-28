@@ -33,6 +33,7 @@ export default function CategoryPage({ data }) {
         <PageHero
           eyebrow={hero.eyebrow}
           title={hero.title}
+          localTag={hero.localTag}
           body={hero.body}
           backgroundImage={hero.backgroundImage}
           variant="default"

@@ -13,17 +13,13 @@ export const aboutPage = {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     name: "NANCY NIETO",
     subheadline: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
-    body: "DERMA.M nació de la visión de Nancy Nieto: un espacio donde la ciencia, la experiencia y la atención humana se unen para ofrecer tratamientos seguros, éticos y orientados a resultados reales.",
-    secondaryBody: "Para Nancy, cuidar también significa escuchar, educar y acompañar en cada etapa del proceso.",
-    academyLine: "Además, Nancy forma a otras profesionales de la estética a través de DERMA.M Academy.",
+    body: "DERMA.M nació de su visión de una estética responsable, cercana y guiada por la formación continua.",
     image: "/assets/images/home/founder.jpg",
     imageAlt: "Nancy Nieto, fundadora y directora de DERMA.M"
   },
   enfoque: {
-    eyebrow: "NUESTRO ENFOQUE",
-    headline: "ESCUCHAR ANTES DE RECOMENDAR",
-    body: "Cada piel, cada objetivo y cada momento personal requieren una conversación distinta. Por eso empezamos por comprender tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
-    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas.",
+    eyebrow: "CÓMO TRABAJAMOS",
+    headline: "TRES PASOS EN CADA PLAN DE CUIDADO",
     items: [
       {
         title: "VALORACIÓN",
@@ -213,7 +209,12 @@ export const founderBioPage = {
     variant: "default"
   },
   founderSpotlight: aboutPage.founderSpotlight,
-  founderPhilosophy: aboutPage.enfoque,
+  founderPhilosophy: {
+    eyebrow: "FILOSOFÍA",
+    headline: "ESCUCHAR ANTES DE RECOMENDAR",
+    body: "Cada piel, cada objetivo y cada momento personal requieren una conversación distinta. Por eso empezamos por comprender tus necesidades, explicamos las alternativas con claridad y definimos expectativas realistas antes de avanzar.",
+    supportingText: "La estética, para DERMA.M, es una experiencia de cuidado informada; no una solución idéntica para todas las personas."
+  },
   quote: aboutPage.quote,
   cta: aboutPage.cta
 };

@@ -21,7 +21,6 @@ export default function AboutPage({ data }) {
     enfoque,
     teamHeader,
     teamBySpecialty,
-    quote,
     testimonials,
     testimonialsHeader,
     cta
@@ -80,12 +79,6 @@ export default function AboutPage({ data }) {
               <h2 id="founder-heading" className={styles.spotlightTitle}>{founderSpotlight.name}</h2>
               <p className={styles.spotlightSubheadline}>{founderSpotlight.subheadline}</p>
               <p className={styles.spotlightBody}>{founderSpotlight.body}</p>
-              {founderSpotlight.secondaryBody && (
-                <p className={styles.spotlightBodySecondary}>{founderSpotlight.secondaryBody}</p>
-              )}
-              {founderSpotlight.academyLine && (
-                <p className={styles.spotlightBodySecondary}>{founderSpotlight.academyLine}</p>
-              )}
               <Link to="/nosotros/nancy-nieto" className={styles.spotlightLink}>
                 Conoce más sobre Nancy →
               </Link>
@@ -114,23 +107,12 @@ export default function AboutPage({ data }) {
             />
           </div>
           <div className={styles.philosophyContent}>
-            <p className={styles.philosophyBody}>{enfoque.body}</p>
-            {enfoque.supportingText && (
-              <p className={styles.philosophySupport}>{enfoque.supportingText}</p>
-            )}
             <BenefitColumns
               items={enfoque.items}
               variant="dark"
               showNumbers={true}
               layout="columns"
             />
-            <blockquote className={styles.philosophyQuote}>
-              <p>“{quote.text}”</p>
-              <footer>
-                <cite>{quote.author}</cite>
-                <span>{quote.title}</span>
-              </footer>
-            </blockquote>
           </div>
         </div>
       </motion.section>

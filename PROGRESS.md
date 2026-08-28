@@ -2,6 +2,15 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-27 — `WarningBox`: título por defecto en las 25 páginas de tratamiento
+- Spec `docs/superpowers/specs/2026-08-27-warningbox-title-design.md`, plan `docs/superpowers/plans/2026-08-27-warningbox-title.md`.
+- **`src/components/shared/WarningBox/WarningBox.jsx` (2 defaults de prop):** `title` `'CUÁNDO CONSULTAR ANTES'` → `'PRECAUCIONES Y CONTRAINDICACIONES'`; `eyebrow` `'PRECAUCIONES DE SEGURIDAD'` → `'ANTES DE RESERVAR'`.
+- **Por qué el eyebrow también:** se renderiza pegado arriba del título; sin cambiarlo quedaba "PRECAUCIONES … PRECAUCIONES" en dos líneas contiguas. `'ANTES DE RESERVAR'` reancla al CTA de reserva.
+- **Alcance:** único consumidor `TreatmentDetailPage.jsx:240` no pasa esas props → cambio en las 25 páginas de tratamiento (sección 9, `warningSection`). Ninguna landing usa `WarningBox`. Nada más tocado (ni `body`, ni `items`, ni CSS, ni datos).
+- **Compliance:** "precauciones"/"contraindicaciones" no están en la lista de `MEDICAL_COMPLIANCE.md`; refuerza el tono health-first.
+- **Verificado:** `grep` 0 de "CUÁNDO CONSULTAR ANTES" y "PRECAUCIONES DE SEGURIDAD" en `src/`. `test:visual` **34/34 sin diffs** (baseline previo 34/34; `warningSection` no está snapshoteada — el único snapshot de secciones, `hidrofacial-whatis.png`, captura `whatIsSection`). DOM en `/faciales/hidrofacial`, `/corporales/lipo-360`, `/laser-y-luz/depilacion-laser`: `<h2>` nuevo, eyebrow "ANTES DE RESERVAR", 0 overflow horizontal desktop (~1517px) + mobile (375px), 0 errores de consola. Screenshot mobile confirmó wrap limpio en 2 líneas sin repetición.
+- **Backlog del proyecto C remanente:** C2 (dato + fuente de autoridad por tratamiento, sign-off de la clínica), revisión legal del HIPAA Notice.
+
 ## 2026-08-27 — Barrido de compliance en FAQ / problemContext / whoForList (treatmentPages)
 - Plan `docs/superpowers/plans/2026-08-27-compliance-faq-sweep.md`, Task 2. Spec `docs/superpowers/specs/2026-08-27-compliance-faq-sweep-design.md`. Lectura completa de los 125 FAQ + `problemContext`/`whoForList`/`resultado`; lista consolidada aprobada por el usuario (19 seguros + 4 borderline, todos aprobados).
 - **18 cambios en `src/data/treatmentPages.js`** (campos `faq`/`problemContextBody`/`whoForList`/`resultado`, `whatIsBody` NO tocado):

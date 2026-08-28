@@ -11,6 +11,7 @@ import Testimonials from "../components/sections/Testimonials/Testimonials";
 import FounderSection from "../components/sections/FounderSection/FounderSection";
 import FinalCTA from "../components/sections/FinalCTA/FinalCTA";
 import Footer from "../components/layout/Footer/Footer";
+import { organizationNode } from "../data/organizationSchema";
 
 export default function Home() {
   return (
@@ -33,65 +34,7 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            {
-              "@type": "HealthAndBeautyBusiness",
-              "@id": "https://dermamskinhealth.com/#organization",
-              "name": "Derma.M",
-              "legalName": "DERMA.M, LLC",
-              "url": "https://dermamskinhealth.com",
-              "logo": "https://dermamskinhealth.com/assets/images/global/logo.jpg",
-              "image": "https://dermamskinhealth.com/assets/images/global/og-default.jpg",
-              "description": "Derma.M es una clínica de medicina estética con tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida.",
-              "telephone": "+15612535384",
-              "email": "info@dermamskinhealth.com",
-              "priceRange": "$$",
-              "currenciesAccepted": "USD",
-              "paymentAccepted": "Cash, Credit Card",
-              "medicalSpecialty": "Dermatology",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "117"
-              },
-              "location": [
-                {
-                  "@type": "HealthAndBeautyBusiness",
-                  "name": "Derma.M — West Palm Beach",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "5707 S Dixie Hwy UNIT D",
-                    "addressLocality": "West Palm Beach",
-                    "addressRegion": "FL",
-                    "postalCode": "33405",
-                    "addressCountry": "US"
-                  },
-                  "telephone": "+15612535384",
-                  "url": "https://dermamskinhealth.com/contacto",
-                  "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 26.6627718,
-                    "longitude": -80.0558881
-                  },
-                  "openingHoursSpecification": [
-                    {
-                      "@type": "OpeningHoursSpecification",
-                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                      "opens": "09:00",
-                      "closes": "17:00"
-                    },
-                    {
-                      "@type": "OpeningHoursSpecification",
-                      "dayOfWeek": "Sunday",
-                      "opens": "09:00",
-                      "closes": "13:00"
-                    }
-                  ]
-                }
-              ],
-              "sameAs": [
-                "https://dermamskinhealth.com"
-              ]
-            },
+            organizationNode,
             {
               "@type": "WebSite",
               "@id": "https://dermamskinhealth.com/#website",

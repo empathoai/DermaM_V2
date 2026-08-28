@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-28 — Track A #1: "deep cleansing facial" como término target EN en `/limpieza-facial-profunda`
+- **Fuente:** `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S5.4 + Stage 3 (scrape Apify de webs de competencia). "deep cleansing facial" es término de búsqueda real y ningún competidor de WPB titula una página con el término verbatim → hueco competitivo.
+- **3 capas, aditivo, footprint mínimo** (español-first, sin tocar copy español ni above-the-fold): `LimpiezaFacial.jsx` → `description`/`og`/`twitter` (×3) con el término al frente (135c) + `Service.alternateName: "Deep Cleansing Facial"`; `<title>` **intacto** (el paréntesis lo pasaba de ~60c → truncado en SERP). `landingPages.js` → 6º ítem de FAQ español (puente de equivalencia, sin comillas) → entra al `FAQPage` schema. `public/llms.txt` → línea 38 label `Deep Facial Cleansing` → `Deep Cleansing Facial`. `faq-consistency.spec.js` → count 5 → 6.
+- **Verificación:** `test:visual` + `faq-consistency` 34/34 sin diffs; DOM (title sin cambios, 3 description alineadas, `alternateName` OK, `FAQPage.mainEntity` = 6); browser pane OK; compliance OK. Commit `91bed37` (+ fix hash docs `47cb3b5`).
+- Spec: `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
+
 ## 2026-08-28 — Arquitectura de contenido del founder · Ciclo 3: `/nosotros/nancy-nieto` standalone
 - `founderBioPage` en `src/data/aboutPage.js` reescrito como objeto **standalone** — sin referencias a `aboutPage.*` (se saca el puente inline `founderPhilosophy` de la Task 2b). Secciones propias: `hero` / `historia` / `filosofia` / `dermamYAcademy` / `quote` (solo la larga) / `cta`. Copy verbatim del mensaje de la clínica del 2026-08-28.
 - `FounderBioPage.jsx`: sección 2 pasa de "Founder Spotlight" a **Historia y formación** (mismo layout foto+texto, Clinical Canvas, `historia.*`, foto `/assets/images/home/founder.jpg`); sección 3 **Filosofía + cita larga** (`filosofia.*`, Dark Authority); nueva sección 4 **DERMA.M y DERMA.M Academy** (Off-White `#EFEFEB`, eyebrow + línea + `<h2>` + 2 párrafos, sin imagen); FinalCTA sin cambios.

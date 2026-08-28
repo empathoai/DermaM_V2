@@ -2,15 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Track A #1: "deep cleansing facial" como término target EN en `/limpieza-facial-profunda`
-- **Fuente:** `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S5.4 + Stage 3 (scrape Apify de webs de competencia). Hallazgo: "deep cleansing facial" es término de búsqueda real (variantes: with extraction / near me / price / for acne / for oily skin) y **ningún competidor de WPB titula una página con el término verbatim** → hueco competitivo. La página no tenía señal en inglés en ningún lado.
-- **3 capas, aditivo, footprint mínimo** (página español-first, no se toca copy español ni above-the-fold):
-  - `LimpiezaFacial.jsx`: `description`/`og:description`/`twitter:description` (×3) → "Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." (135c, término al frente). `<title>` **intacto** (agregar el paréntesis lo pasaba de ~60c → Google truncaría justo el término). `Service` schema: `"alternateName": "Deep Cleansing Facial"`.
-  - `landingPages.js`: 6º ítem de FAQ (español, puente de equivalencia) — cubre término EN + extracción + piel grasa + acné; entra al `FAQPage` schema vía `FAQAccordion`.
-  - `public/llms.txt` (protegido, 1 línea aprobada): línea 38 label `Deep Facial Cleansing` → `Deep Cleansing Facial`, URL intacta.
-  - `faq-consistency.spec.js`: count esperado `/limpieza-facial-profunda` 5 → 6.
-- **Verificación:** `test:visual` + `faq-consistency` **34/34** sin diffs (snapshot de la landing = solo `problemSection`). DOM renderizado: `<title>` sin cambios, 3 `description` = string nueva y coinciden, `Service.alternateName` OK, `FAQPage.mainEntity` = 6. Browser pane: 6º ítem de FAQ renderiza idéntico a los otros, expande limpio, sin overflow. Compliance OK (español, sin garantías, sin banned words, sin CTA nuevo). Commit `91bed37`.
-- Spec: `docs/superpowers/specs/2026-08-28-deep-cleansing-facial-en-term-design.md`.
+## 2026-08-28 — Track A #2: sub-tag de hero `West Palm Beach, FL` con fuente única
+- **Hallazgo que re-encuadró el ítem:** la ciudad YA estaba dentro del `<h1>` en las 3 landings — `PageHero.jsx:70-73` renderiza `localTag` como `<span>` hijo del `<h1>`. §S5.2 del findings doc se escribió sobre un estado anterior (la landing no pasaba `localTag`). El trabajo real: consistencia NAP del string del sub-tag + fuente única para frenar el drift.
+- **Audit:** `"Medical Spa · West Palm Beach"` duplicado en ~10 call sites, 4 mecanismos (literal en `LandingPage.jsx` + `TreatmentDetailPage.jsx` + `Hero.jsx` de Home; dato en `categoryPages.js` ×6 hubs + `aboutPage.js`). Sin fuente común → causa raíz del drift.
+- **Cambio:** nuevo `src/data/siteMeta.js` → `export const HERO_LOCAL_TAG = 'Medical Spa · West Palm Beach, FL'`. Los ~10 call sites la importan. `FL` (no "Florida") alinea hero ↔ `<title>` de Home ↔ address GBP ↔ footer. Prosa / meta descriptions / schema (`addressLocality`, `areaServed` City name) **intactos** — solo el sub-tag del hero. `/nancy-nieto` sigue sin sub-tag.
+- **Verificación:** las 6 superficies de hero muestran `Medical Spa · West Palm Beach, FL`; `/nancy-nieto` sin tag. `grep "Medical Spa · West Palm Beach" src/` → solo `siteMeta.js`. `test:visual` **34/34 sin diffs** (el ", FL" cae dentro de la tolerancia del 2%, sin re-baseline). Screenshot Home hero: 1 línea, sin romper layout. Commit `<pending>`.
+- Spec: `docs/superpowers/specs/2026-08-28-hero-localtag-city-state-consistency-design.md`.
 
 ---
 

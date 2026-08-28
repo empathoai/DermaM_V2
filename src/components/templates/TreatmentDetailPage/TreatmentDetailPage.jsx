@@ -15,6 +15,7 @@ import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
 import ListSparkle from '../../shared/ListSparkle/ListSparkle';
 import { titleCase } from '../../../utils/text';
+import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './TreatmentDetailPage.module.css';
 
 export default function TreatmentDetailPage({ data }) {
@@ -115,7 +116,7 @@ export default function TreatmentDetailPage({ data }) {
       <TreatmentHero
         categoryLabel={categoryLabel}
         title={title}
-        localTag="Medical Spa · West Palm Beach"
+        localTag={HERO_LOCAL_TAG}
         description={heroDescription}
         image={image}
         imageAlt={heroAlt}

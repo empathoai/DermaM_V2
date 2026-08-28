@@ -1,3 +1,5 @@
+import { HERO_LOCAL_TAG } from './siteMeta';
+
 export const categoryPages = {
   faciales: {
     slug: 'faciales',
@@ -13,7 +15,7 @@ export const categoryPages = {
       title: 'CUIDADO AVANZADO PARA LA SALUD Y BELLEZA DE TU PIEL',
       body: 'Soluciones diseñadas para mejorar textura, luminosidad, equilibrio y apariencia facial.',
       backgroundImage: '/assets/images/hubs/faciales/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {
@@ -395,7 +397,7 @@ export const categoryPages = {
       title: 'PROTOCOLOS PARA CUIDAR, MOLDEAR Y ACOMPAÑAR TU CUERPO',
       body: 'Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados.',
       backgroundImage: '/assets/images/hubs/corporales/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {
@@ -662,7 +664,7 @@ export const categoryPages = {
       title: 'TECNOLOGÍA ESTÉTICA PARA RENOVAR Y MEJORAR LA PIEL',
       body: 'Soluciones con aparatología avanzada para acompañar distintos objetivos faciales y corporales.',
       backgroundImage: '/assets/images/hubs/laser-y-luz/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {
@@ -823,7 +825,7 @@ export const categoryPages = {
       title: 'CUIDADO ESTÉTICO PARA UNA SONRISA MÁS LUMINOSA',
       body: 'Tratamientos diseñados para apoyar la estética y el cuidado visible de tu sonrisa.',
       backgroundImage: '/assets/images/hubs/dental-estetico/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {
@@ -985,7 +987,7 @@ export const categoryPages = {
       title: 'BIENESTAR DESDE EL INTERIOR',
       body: 'Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado.',
       backgroundImage: '/assets/images/hubs/iv-therapy/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {
@@ -1205,7 +1207,7 @@ export const categoryPages = {
       title: 'CUIDADO CAPILAR CON ENFOQUE PROFESIONAL',
       body: 'Soluciones enfocadas en acompañar la salud, apariencia y fortaleza del cabello.',
       backgroundImage: '/assets/images/hubs/capilar/hero.jpg',
-      localTag: 'Medical Spa · West Palm Beach'
+      localTag: HERO_LOCAL_TAG
     },
     trustItems: [
       {

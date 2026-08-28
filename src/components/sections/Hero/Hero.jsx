@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "motion/react";
 import HeroMedia from '../../utils/HeroMedia';
+import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './Hero.module.css';
 
 export default function Hero({ backgroundImage, image }) {
@@ -64,7 +65,7 @@ export default function Hero({ backgroundImage, image }) {
                 para tu <br />
                 piel
                 <span className="block mt-4 lg:mt-5 text-[15px] lg:text-[16px] tracking-[0.12em] font-normal text-[#CCC9C1]">
-                  Medical Spa · West Palm Beach
+                  {HERO_LOCAL_TAG}
                 </span>
               </h1>
 

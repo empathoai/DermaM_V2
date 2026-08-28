@@ -14,6 +14,7 @@ import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSe
 import FAQAccordion from '../../shared/FAQAccordion/FAQAccordion';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
 import ListSparkle from '../../shared/ListSparkle/ListSparkle';
+import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './LandingPage.module.css';
 
 export default function LandingPage({ data }) {
@@ -44,7 +45,7 @@ export default function LandingPage({ data }) {
         <PageHero
           eyebrow={hero.eyebrow}
           title={hero.title}
-          localTag="Medical Spa · West Palm Beach"
+          localTag={HERO_LOCAL_TAG}
           body={hero.body}
           backgroundImage={hero.backgroundImage}
           imageAlt={hero.imageAlt}

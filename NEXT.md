@@ -34,8 +34,7 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 ## Próximo (en orden de size)
 
 **Cola de código no bloqueada: vacía.** Todo lo abierto es condicional o backlog off-site.
-Próxima sesión sin pedido nuevo del usuario: doc-hygiene (empezar por `INTAKE.md:56`
-"deploy en Vercel" → Hostinger/Apache, ver Bloqueado) como ciclo mecánico único.
+Sin ítem de doc-hygiene pendiente por ahora.
 
 Condicionales (no ejecutar sin que se cumpla la condición):
 - **Pieza/sección "por qué el postoperatorio importa"** — sección nueva en `LandingPage` (+ baseline visual)
@@ -58,10 +57,13 @@ con el usuario logueado, no toca `src/`. Sin prioridad asignada.
 - **Dental en el sitio:** `/dental-estetico` hub + blanqueamiento + limpieza dental en vivo. Mismo riesgo
   regulatorio que sacó dental del GBP — evaluar si las páginas deben salir/reencuadrarse. Ciclo aparte,
   decisión del usuario. No tocar sin pedido explícito.
-- Deploy: fecha y quién deploya (Hostinger/Apache + DNS) — condiciona verificación GSC por Dominio.
-  Al deployar: reemplazar `public/.htaccess` con el bloque de `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md`
-  §8, luego verificar con el script `curl -I` del mismo doc.
-- Doc-hygiene: `docs/seo-setrategies/INTAKE.md:56` dice "deploy en Vercel" — es Hostinger/Apache, corregir.
+- Deploy: **estado actual** = deploy automático en Vercel en cada push. Falta la subida a Hostinger/Apache;
+  no tocar nada de Hostinger (ni `.htaccess`, ni corregir refs de docs que digan "Vercel") hasta que el
+  usuario diga explícitamente "vamos a hacer el deploy en Hostinger".
+  Al deployar en Hostinger: reemplazar `public/.htaccess` con el bloque de
+  `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8, verificar con el script `curl -I` del mismo doc,
+  y recién ahí corregir `docs/seo-setrategies/INTAKE.md:56` ("deploy en Vercel" → Hostinger/Apache).
+  Condiciona la verificación GSC por Dominio.
 - Nota operativa para la clínica: servicio postop tiene punto débil documentado (ayuda con la faja +
   protección ocular en luz LED) — de las 2 reseñas negativas.
 

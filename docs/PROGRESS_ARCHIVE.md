@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Navbar top info bar: mobile-first (tap-to-call visible + número identificado)
+- `Navbar.jsx` + `Navbar.module.css`: mobile (<768px) oculta el label "West Palm Beach" (redundante) y muestra teléfono + WhatsApp (antes desktop-only). Ícono `Phone` (lucide, 12px, `aria-hidden`) + `aria-label="Llamar al 561 253 5384"` → el número se lee como teléfono, no nº de licencia. `.topInfoRight`/`.topInfoLink` estiran a 28px → tap target 15→27px (44px WCAG no entra en 28px). Desktop igual salvo el ícono.
+- Browser desktop+mobile ok, links `tel:`/WhatsApp clickeables. `test:visual` 34/34 (barra no está en snapshots). Commit `22507ae`. Ver DECISIONS 2026-08-29.
+
+
 ## 2026-08-29 — Fix: el botón flotante de WhatsApp tapaba el footer
 - `FloatingWhatsApp.jsx` + `.module.css` — el FAB (`position: fixed`) cubría el bloque legal/contacto del footer al llegar al fondo.
 - `IntersectionObserver` sobre `<footer>` (re-adquirido por ruta vía `useLocation`, el footer se monta por página) → clase `.hidden` (`opacity:0; translateY(24px); pointer-events:none`). Reaparece al scrollear arriba.

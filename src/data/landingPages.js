@@ -534,6 +534,18 @@ export const landingPages = {
         {
           question: '¿El drenaje linfático manual ayuda a prevenir la fibrosis?',
           answer: 'Es uno de sus objetivos. El drenaje linfático manual y el moldeo acompañan la desinflamación y buscan cuidar la textura del tejido durante la recuperación, lo que se asocia con una menor formación de fibrosis y adherencias. No sustituye el control de tu cirujano.'
+        },
+        {
+          question: '¿Son suficientes 6 u 8 sesiones de masajes postoperatorios?',
+          answer: 'Por lo general no. La recuperación pasa por etapas y la técnica cambia en cada una. Las primeras sesiones, durante los primeros días, se enfocan en el drenaje de líquidos y en acompañar la inflamación y las molestias. Luego el cuerpo entra en una fase de reparación del tejido, en la que el acompañamiento se orienta a cuidar la textura y a prevenir endurecimientos, fibrosis y adherencias. Por eso suele recomendarse un ciclo más largo, con sesiones frecuentes al inicio que después se espacian. Tu cirujano y tu especialista a cargo definen cuántas necesita tu proceso.'
+        },
+        {
+          question: '¿Por qué conviene continuar el acompañamiento después de que baja la inflamación?',
+          answer: 'Cuando la inflamación cede y las molestias casi desaparecen, muchas personas suspenden las sesiones. En ese momento el cuerpo todavía está reparando el tejido, y es la etapa en la que pueden aparecer endurecimientos, fibrosis y adherencias. Continuar con sesiones más espaciadas, una vez al mes o cada mes y medio durante varios meses, ayuda a acompañar esa reparación de forma más pareja. La duración la define tu cirujano según tu evolución.'
+        },
+        {
+          question: '¿Debo hacer drenaje postoperatorio si mi cirujano no me lo indicó?',
+          answer: 'Vale la pena consultarlo. No todos los procesos incluyen una indicación explícita de drenaje, y aun así muchas personas se benefician de un acompañamiento profesional durante la recuperación. Lo recomendable es ir a tu control y pedirle a tu cirujano su sugerencia sobre iniciar o continuar las sesiones. Nuestro acompañamiento es complementario y respeta sus indicaciones.'
         }
       ]
     },

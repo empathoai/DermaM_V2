@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styles from './FloatingWhatsApp.module.css';
 
 export default function FloatingWhatsApp() {
   const [showHelper, setShowHelper] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const [nearFooter, setNearFooter] = useState(false);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     // Check if user has already dismissed the helper bubble this session
@@ -30,6 +33,22 @@ export default function FloatingWhatsApp() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [showHelper]);
 
+  useEffect(() => {
+    // Hide the floating button once the footer scrolls into view — it would
+    // otherwise cover the footer's own content (legal links, contact).
+    // Re-acquire the footer on every route change (it re-mounts per page).
+    setNearFooter(false);
+    const footer = document.querySelector('footer');
+    if (!footer || typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setNearFooter(entry.isIntersecting),
+      { rootMargin: '0px 0px -24px 0px' }
+    );
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, [pathname]);
+
   const handleDismiss = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -41,7 +60,10 @@ export default function FloatingWhatsApp() {
   const whatsappUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
 
   return (
-    <div className={styles.container} id="derma-m-floating-whatsapp">
+    <div
+      className={`${styles.container} ${nearFooter ? styles.hidden : ''}`}
+      id="derma-m-floating-whatsapp"
+    >
       {/* Helper Bubble (Dismissible) */}
       {showHelper && !isDismissed && (
         <div className={styles.helperBubble}>

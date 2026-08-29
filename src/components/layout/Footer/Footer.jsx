@@ -121,6 +121,10 @@ export default function Footer() {
             <Link to="/politica-de-privacidad" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Política de privacidad</Link>
             <span className="text-[#F2F0F1]/20">|</span>
             <Link to="/terminos-de-uso" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Términos de uso</Link>
+            <span className="text-[#F2F0F1]/20">|</span>
+            <Link to="/accessibility" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Accesibilidad</Link>
+            <span className="text-[#F2F0F1]/20">|</span>
+            <Link to="/legal" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Recursos legales</Link>
           </div>
         </div>
       </div>

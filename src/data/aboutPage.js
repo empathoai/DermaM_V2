@@ -6,8 +6,8 @@ export const aboutPage = {
     title: "CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL",
     body: "DERMA.M es un medical spa en West Palm Beach. Trabajamos la estética como una decisión de salud: informada, conversada y sostenida en el tiempo.",
     localTag: HERO_LOCAL_TAG,
-    primaryCta: "AGENDAR VALORACIÓN",
-    secondaryCta: "HABLAR POR WHATSAPP",
+    primaryCta: "RESERVAR",
+    secondaryCta: "WHATSAPP",
     backgroundImage: "/assets/images/about/hero.jpg",
     variant: "default"
   },
@@ -205,8 +205,8 @@ export const founderBioPage = {
     eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     title: "NANCY NIETO",
     body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Hoy dirige el medical spa en West Palm Beach con esa misma visión.",
-    primaryCta: "AGENDAR VALORACIÓN",
-    secondaryCta: "HABLAR POR WHATSAPP",
+    primaryCta: "RESERVAR",
+    secondaryCta: "WHATSAPP",
     backgroundImage: "/assets/images/about/hero.jpg",
     variant: "default"
   },

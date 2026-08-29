@@ -130,8 +130,8 @@ export const landingPages = {
           answer: 'Están relacionados, pero no son lo mismo. El PRP es una fracción líquida de tu sangre concentrada en plaquetas; el PRF se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En Derma.M se combinan en un solo protocolo tópico con Dermapen, no como inyección.'
         },
         {
-          question: '¿En qué se diferencia del microneedling con plasma tradicional?',
-          answer: 'El microneedling con plasma tradicional suele usar solo PRP. Este protocolo combina PRP y PRF para aprovechar tanto la acción inicial del PRP como la liberación más gradual de factores de crecimiento del PRF, siempre de forma tópica con Dermapen.'
+          question: '¿En qué se diferencia de un PRP facial o microneedling con plasma tradicional?',
+          answer: 'Un PRP facial tradicional (microneedling con plasma) suele usar únicamente PRP. Este protocolo combina PRP y PRF para aprovechar tanto la acción inicial del PRP como la liberación más gradual de factores de crecimiento del PRF, siempre de forma tópica con Dermapen.'
         },
         {
           question: '¿El PRF es lo mismo que los rellenos (fillers)?',

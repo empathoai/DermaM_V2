@@ -1,7 +1,11 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `b30f01a` (`feat(footer): add Instagram /
-TikTok / Facebook social links`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `2269fd9` (`feat(footer): add business
+hours to the contact column`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 9) — CERRADO:
+- **Footer: horario en la columna Contacto** ("Lun–Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM",
+  = `Contacto.jsx` + schema). Cierra **ítem 1b**. Contenido de 1 componente, sin `test:visual`. `2269fd9`.
 
 Sesión 2026-08-29 (cont. 8) — CERRADO:
 - **Footer: fila de redes** (Instagram · TikTok · Facebook) en la columna de marca, debajo de la
@@ -123,7 +127,7 @@ antes de cada tanda.
 **Cola de código no bloqueada (en orden de size):**
 1. **Footer — hallazgos de auditoría restantes** (DECISIONS 2026-08-29). `1a` (redes) HECHO en `b30f01a`.
    El footer NO está en ningún snapshot de `test:visual` → verificar a ojo en `:3000`.
-   - **1b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
+   - ~~**1b** horario~~ HECHO en `2269fd9`.
    - **1c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
      y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.
    - **1d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad

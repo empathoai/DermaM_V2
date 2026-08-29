@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Footer: links de redes (Instagram / TikTok / Facebook) + `sameAs` alineado (auditoría 1a)
+- `Footer.jsx` — fila de 3 links (24px) en la columna de marca, debajo de la descripción. IG + FB desde `lucide-react`; **TikTok como `<svg>` inline** (lucide 0.546 no trae el glifo). `aria-label` por link, `aria-hidden` en SVG, `:focus-visible`.
+- `Footer.module.css` — `.socialBlock` +`margin-top: 28px`; nueva `.socialLink`.
+- `organizationSchema.js` — `sameAs` +`tiktok.com/@derma.m`. URLs de las 3 redes = ficha de GBP (`INTAKE.md:147`).
+- `test:visual` 34/34 — el footer no está en ningún snapshot (verificado 2×).
+
+
 ## 2026-08-29 — Home: link de la sección de fundadora → bio de Nancy (fix de orfandad)
 - `src/data/aboutPage.js` `founderPrimer`: `linkTo` `/nosotros` → **`/nosotros/nancy-nieto`**; `linkLabel` "Conoce a Nancy y al equipo" → **"Conoce a Nancy Nieto"**.
 - `FounderSection` del Home es 100% sobre Nancy → su bio es el destino natural. `/nosotros/nancy-nieto` pasa de 1 a 2 links internos entrantes, el 2º desde la Home con ancla de nombre completo (8.19). `/nosotros` sigue en navbar + footer.

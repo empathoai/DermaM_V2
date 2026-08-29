@@ -38,12 +38,12 @@ Condicionales (no ejecutar sin que se cumpla la condición):
 - PRF §8.3 página EN — solo si el tráfico EN de ads convierte.
 - PRF §8.4 guía pilar "Qué es el PRF" — solo si el landing enriquecido rankea para el cluster.
 
-## Track B del usuario (off-site, requiere login)
-- **Posts de GBP + copy base de Facebook ads para postop** — especificados en
-  `docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md` §"Specified, NOT executed".
-  3 drafts de post + 1 texto base de ad, mismo mensaje que la FAQ. Publicar en sesión con Nancy logueada
-  en GBP (aprobación por post).
-- **Servicios 1–3 + descripción de GBP** (de `COMPETENCIA-SERVICIOS-2026.md` §S1–S3) — pendiente Track B.
+## Backlog off-site (NO es parte del sitio — no consume ciclo de código)
+Trabajo de GBP / ads / listings. Vive en specs y research; se ejecuta en sesiones aparte
+con el usuario logueado, no toca `src/`. Sin prioridad asignada.
+- Posts de GBP + copy base de Facebook ads para postop — `docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md` §"Specified, NOT executed".
+- Servicios 1–3 + descripción de GBP — `COMPETENCIA-SERVICIOS-2026.md` §S1–S3.
+- Ads de PRF (canales/ángulos/términos) — `2026-08-28-prf-content-strategy-design.md`.
 
 ## Bloqueado (espera al usuario / terceros)
 - **Yelp:** reclamarlo lo hace Nancy (dueña). Rol del usuario: pasarle el NAP + descripción optimizados.

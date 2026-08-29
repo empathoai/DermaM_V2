@@ -1,7 +1,8 @@
 # NEXT
 
-Estado: HEAD esperado `cb53307`, pusheado, árbol limpio. Dev server `:3000` levantado
-(browser pane) — detener al cierre de sesión.
+Estado: HEAD esperado `620fa63`, pusheado, árbol limpio, sin servers levantados.
+Sesión 2026-08-28: Track A #1 (`91bed37`), #2 (`4a4603e`), #3 (`cb53307`) + follow-ups
+(hashes en PROGRESS) cerrados y pusheados.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
 `founderBioPage` ya es objeto standalone (sin refs a `aboutPage.*`); `/nosotros` = página del equipo;

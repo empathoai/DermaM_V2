@@ -81,6 +81,7 @@ export default function Footer() {
             <address className={styles.addressBlock}>
               <p className="font-semibold text-sm text-[#F2F0F1] uppercase mb-1">DERMA.M, LLC</p>
               <p className={styles.contactItem}>5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405</p>
+              <p className={styles.contactItem}>Horario: Lun–Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM</p>
               <p className={styles.contactItem}>
                 <a href="tel:+15612535384" className={styles.link}>561 253 5384</a>
               </p>

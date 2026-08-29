@@ -30,21 +30,37 @@
   }
 }
 
+/* Mobile: hide the (redundant) location label, surface tap-to-call + WhatsApp */
 .topInfoLeft {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
 .topInfoRight {
-  display: none;
+  display: flex;
   align-items: center;
-  gap: 1.5rem;
+  align-self: stretch; /* full bar height so links get a 28px tap target */
+  gap: 0.75rem;
 }
 
 @media (min-width: 768px) {
-  .topInfoRight {
+  .topInfoLeft {
     display: flex;
   }
+
+  .topInfoRight {
+    gap: 1.5rem;
+  }
+}
+
+.topInfoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: stretch; /* fill the 28px bar height → larger tap target */
+  padding-inline: 2px;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (hover: hover) {

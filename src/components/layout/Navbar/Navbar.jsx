@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -56,8 +56,13 @@ export default function Navbar() {
           <span>West Palm Beach</span>
         </div>
         <div className={styles.topInfoRight}>
-          <a href="tel:+15612535384" className={styles.topInfoLink}>
-            561 253 5384
+          <a
+            href="tel:+15612535384"
+            className={styles.topInfoLink}
+            aria-label="Llamar al 561 253 5384"
+          >
+            <Phone size={12} strokeWidth={1.5} aria-hidden="true" />
+            <span>561 253 5384</span>
           </a>
           <span className={styles.topInfoSeparator}>&middot;</span>
           <a

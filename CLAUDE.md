@@ -107,8 +107,11 @@ Templates in `src/components/templates/` assemble `sections/` + `shared/` per pa
 
 ### Definition of done for visual/structural changes
 
-1. `npm run test:visual` — no unintended diffs against baselines.
-2. Copy changes cross-checked against `docs/MEDICAL_COMPLIANCE.md`.
+1. `npm run test:visual` — no unintended diffs against baselines. **Gate:** run it for CSS, shared
+   component/template edits, layout/structure, or any class used in >1 place. **Skip** for data/copy
+   edits in `src/data/*`, single-component content edits, or changes provably outside every snapshot
+   viewport — browser verification covers those. See `DECISIONS.md` 2026-08-29.
+2. Copy changes cross-checked against `docs/MEDICAL_COMPLIANCE.md` (always, gate above doesn't apply).
 3. WCAG 2.1 AA: contrast, focus styles, ARIA labels, keyboard order.
 
 ## Skills — project-local

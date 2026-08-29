@@ -1,7 +1,14 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `8e499eb` (`fix(hero): wire up dead Home
-hero CTAs`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `43dc34b` (`feat(home): point founder
+section link to Nancy's bio page`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 7) — CERRADO:
+- **Home `FounderSection` → link a la bio de Nancy.** `founderPrimer` (`aboutPage.js`): `linkTo`
+  `/nosotros` → `/nosotros/nancy-nieto`, label "Conoce a Nancy y al equipo" → "Conoce a Nancy Nieto".
+  `/nosotros/nancy-nieto` pasa de 1 a 2 links internos entrantes. Data-only, sin `test:visual`.
+- **Workflow: `test:visual` ahora gateado por tipo de cambio** (CSS/compartido/layout → correr;
+  data/copy/1-componente ya visto en browser → skip). Registrado en `CLAUDE.md` §DoD + DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 6) — CERRADO:
 - **BUG fix — CTAs del hero del Home no navegaban.** `Hero.jsx`: "Reservar"/"Contacto" eran `<button>`
@@ -70,8 +77,10 @@ Contexto vigente de sesiones previas (no re-abrir):
 2. Para `test:visual`: en otra terminal `npx vite --port=3003 --host=0.0.0.0`, luego `npx playwright test`.
    (Git Bash: prefijar `MSYS_NO_PATHCONV=1` si se usa `-g` con un patrón que empiece por `/`.)
 3. Elegir el próximo ítem de la cola. Cada uno: brainstorm (`superpowers:brainstorming`) → aprobación
-   del usuario → un cambio por ciclo → `test:visual` + cross-check `MEDICAL_COMPLIANCE.md` + WCAG AA →
-   commit → ritual de docs → push confirmado.
+   del usuario → un cambio por ciclo → **verificación** → commit → ritual de docs → push confirmado.
+   Verificación: siempre cross-check `MEDICAL_COMPLIANCE.md` (copy) + WCAG AA + browser `:3000`.
+   `test:visual` **solo** si el cambio toca CSS / componente-template compartido / layout / clase
+   reusada; data/copy/1-componente ya visto en browser → skip. Ver `CLAUDE.md` §DoD + DECISIONS 2026-08-29.
 
 ## Lógica de esfuerzo (t-shirt sizing)
 
@@ -106,17 +115,14 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 antes de cada tanda.
 
 **Cola de código no bloqueada (en orden de size):**
-1. **Link contextual Home → `/nosotros/nancy-nieto`** — [XS/S]. Enlazar el bloque de fundadora de Home
-   (foto de Nancy en `FeaturedServices`/founder) a su bio. Fix parcial de orfandad; blast radius local
-   a Home. Ver DECISIONS 2026-08-29.
-2. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 2a → 2b → 2c; 2d agrupable.
-   - **2a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
+1. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 1a → 1b → 1c; 1d agrupable.
+   - **1a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
      **no renderiza redes**. Cablear links a IG/FB (URLs en `organizationSchema.js` `sameAs`) o borrar
      el código muerto. Footer entra en varios snapshots → `test:visual` completo.
-   - **2b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
-   - **2c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
+   - **1b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
+   - **1c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
      y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.
-   - **2d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
+   - **1d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
      consistente, keyword local); "Tratamientos" (col. Navegación) apunta a `/faciales` (label→destino
      incoherente); col. "Tratamientos" lista 3 de 6 hubs (falta IV Therapy + Capilar; Dental se omite
      a propósito por §Bloqueado dental); `© 2026` hardcodeado → año dinámico.

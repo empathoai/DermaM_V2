@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — BUG fix: los CTA del hero del Home no navegaban
+- `src/components/sections/Hero/Hero.jsx` — "Reservar" y "Contacto" eran `<button>` sin `onClick`/`href` (residuo del scaffold de AI Studio) → click sin efecto.
+- Fix (patrón de `PageHero`/`FinalCTA`): "Reservar" → `<a href={bookingUrl} target="_blank" rel="noopener noreferrer">`; "Contacto" → `<Link to="/contacto">`. Añadido `import { Link }` + const `bookingUrl`, clase `no-underline`.
+- **Verificación:** navegación real en `:3000` (`/` → click "Contacto" → `/contacto` por SPA ✓). `npm run test:visual` 34/34 sin diffs.
+- Debugging: `superpowers:systematic-debugging` — root cause = CTAs nunca cableados.
+
+
 ## 2026-08-29 — Heroes `/nosotros` + `/nancy-nieto`: CTAs estandarizados a `RESERVAR` / `WHATSAPP`
 - `src/data/aboutPage.js` — hero de `/nosotros` (9-10) y de `/nancy-nieto` (`founderBioPage.hero`, 208-209): `primaryCta`/`secondaryCta` de `"AGENDAR VALORACIÓN"` / `"HABLAR POR WHATSAPP"` → **`"RESERVAR"` / `"WHATSAPP"`**.
 - Motivo: eran los 2 únicos hero con labels largos; el texto los ensanchaba vs. los 10+ hero estándar. Padding CSS ya idéntico. Se mantienen los 2 botones (no eliminar CTA de reserva).

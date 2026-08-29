@@ -2,14 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-29 — Footer: pulido 1d (blurb, nav, hubs, año) — cierra la auditoría del footer
-- `Footer.jsx` (1 componente):
-  - **Blurb** "centro de estética, belleza y salud clínica" → "**medical spa en West Palm Beach, Florida**, enfocado en el cuidado integral de la piel, el cuerpo y el bienestar." Entidad consistente con hero tag / schema / `PRODUCT.md` + keyword local. Cross-check `MEDICAL_COMPLIANCE.md` OK.
-  - **Columna Navegación**: se quita "Tratamientos" (iba a `/faciales`, mal etiquetado y redundante con la columna de tratamientos al lado). Queda Inicio · Nosotros · Contacto (espeja el navbar top-level).
-  - **Columna Tratamientos**: +IV Therapy +Capilar (`/iv-therapy`, `/capilar`) — eran 6 de 8 hubs. Dental sigue afuera hasta la revisión regulatoria dental (`NEXT.md §Bloqueado`).
-  - **`© 2026`** → `{new Date().getFullYear()}`.
-- Verificado en `:3000`. Sin `test:visual` (1 componente, footer fuera de snapshots). Commit `6392595`.
-- **Auditoría del footer CERRADA** (ítems 1a→1d). Quedan pendientes solo cosas atadas al deploy (sitemap) o al hold dental.
+## 2026-08-29 — Fix: el botón flotante de WhatsApp tapaba el footer
+- `FloatingWhatsApp.jsx` + `.module.css` — el FAB (`position: fixed` abajo-derecha) cubría el bloque legal / contacto del footer al llegar al fondo.
+- Fix: `IntersectionObserver` sobre `<footer>` (re-adquirido en cada cambio de ruta vía `useLocation`, porque el footer se monta por página). Estado `nearFooter` → clase `.hidden` (`opacity: 0; translateY(24px); pointer-events: none` con transición). Reaparece al scrollear arriba.
+- Verificado en `/` y `/contacto`: se oculta al bajar, vuelve al subir, no queda pegado tras navegar. `npm run test:visual` 34/34 sin diffs (el FAB en estado top-of-page no cambia).
+- Commit `d357419`.
+- **Evaluación aparte (read-only, sin cambio):** el CTA del navbar ("AGENDA TU VALORACIÓN") NO es redundante — el navbar es `sticky`, así que es la única acción de reserva persistente en desktop cuando el CTA del hero sale de vista. Mantener. Hallazgo real: mobile tiene el booking primario detrás del hamburger → posible CTA sticky en mobile (ciclo aparte, no pedido).
 
 ---
 

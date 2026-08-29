@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Footer: pulido 1d (blurb, nav, hubs, año) — cierra la auditoría del footer
+- `Footer.jsx` (1 componente): blurb "centro de estética, belleza y salud clínica" → "medical spa en West Palm Beach, Florida…"; se quita "Tratamientos" (→`/faciales`) de la col. Navegación (queda Inicio·Nosotros·Contacto); +IV Therapy +Capilar en la col. Tratamientos (eran 6 de 8 hubs; Dental afuera por el hold regulatorio); `© {getFullYear()}`.
+- Cross-check `MEDICAL_COMPLIANCE.md` OK. Sin `test:visual` (1 componente). Commit `6392595`. Ver DECISIONS 2026-08-29.
+- **Auditoría del footer CERRADA** (1a redes, 1b horario, 1c legal, 1d pulido).
+
+
 ## 2026-08-29 — Footer: Accesibilidad + Recursos legales en el bottom bar (auditoría 1c)
 - `Footer.jsx` bottom bar — `Política de privacidad | Términos de uso` → `… | Accesibilidad | Recursos legales` (`/accessibility` postura ADA + `/legal` hub). Labels de los `<title>`.
 - 4 links: ok a ancho desktop, wrap a 2 filas en mobile. 1 componente, sin `test:visual`. Commit `ffc0e0f`.

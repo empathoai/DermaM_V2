@@ -1,7 +1,15 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `6392595` (`feat(footer): entity-consistent
-blurb, dedup nav, complete hub list, dynamic year`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `d357419` (`fix(floating-whatsapp): hide
+the FAB when the footer scrolls into view`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 12) — CERRADO:
+- **Fix: el botón flotante de WhatsApp tapaba el footer.** `FloatingWhatsApp` se oculta cuando el
+  `<footer>` entra en viewport (`IntersectionObserver`, re-adquirido por ruta) y reaparece al subir.
+  `test:visual` 34/34. `d357419`. Ver DECISIONS 2026-08-29.
+- **Evaluado (sin cambio):** el CTA del navbar ("AGENDA TU VALORACIÓN") NO es redundante — navbar
+  `sticky` = única acción de reserva persistente en desktop. Mantener. Posible mejora futura: CTA
+  sticky en mobile (el booking primario está detrás del hamburger). Ver DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 11) — CERRADO:
 - **Footer pulido (ítem 1d) — CIERRA la auditoría del footer.** `Footer.jsx`: blurb → "medical spa
@@ -134,7 +142,12 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada: vacía.**
+**Cola de código no bloqueada (ideas surgidas de evaluaciones, sin pedido explícito):**
+- **CTA sticky en mobile** — [S/M]. En mobile el booking primario está detrás del hamburger
+  (`Navbar.jsx` `mobileCtaPrimary`); el FAB persistente es solo WhatsApp. Un bottom bar sticky en
+  mobile con "Reservar" daría paridad de conversión con desktop (navbar `sticky`). Surgió de la
+  evaluación del CTA del navbar (DECISIONS 2026-08-29). Brainstorm antes de tocar — es UI nueva.
+
 - **Auditoría del footer: CERRADA** — 1a redes (`b30f01a`), 1b horario (`2269fd9`), 1c legal/accessibility
   (`ffc0e0f`), 1d pulido (`6392595`). Lo único de footer pendiente: link a Dental (condicional al hold
   regulatorio dental, §Bloqueado) y entrada de `/nancy-nieto` en `sitemap.xml` (atada al deploy Hostinger).

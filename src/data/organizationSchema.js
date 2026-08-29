@@ -54,7 +54,7 @@ export const organizationNode = {
     'Medical spa',
     'Medicina estética',
     'Cuidado de la piel',
-    'Plasma rico en plaquetas y fibrina (PRP y PRF)',
+    'Plasma rico en plaquetas y fibrina (PRF)',
     'Bioestimulación cutánea',
     'Tratamientos faciales',
     'Hidrofacial',

@@ -2,7 +2,7 @@ export const landingPages = {
   prfYFibrina: {
     hero: {
       eyebrow: 'TRATAMIENTOS FACIALES',
-      title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA',
+      title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA (PRF)',
       body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg',
       imageAlt: 'Manos con guantes extrayendo con pinzas el coágulo de fibrina de un tubo con plasma separado, junto a la centrífuga en Derma.M'
@@ -122,32 +122,36 @@ export const landingPages = {
       headline: 'PREGUNTAS FRECUENTES',
       items: [
         {
-          question: '¿Qué es el protocolo de Plasma Rico en Plaquetas y Fibrina y cómo se diferencia de las inyecciones tradicionales?',
-          answer: 'Nuestro protocolo combina el Plasma Rico en Plaquetas (PRP) con Fibrina Rica en Plaquetas (PRF) y se aplica únicamente de forma tópica mediante micro-infusión con Dermapen. A diferencia de las inyecciones de PRP convencional, este método no invasivo distribuye los factores naturales de forma uniforme sobre la superficie del rostro para mejorar la textura y firmeza sin pinchazos profundos ni hematomas severos.'
-        },
-        {
-          question: '¿Es dolorosa la aplicación de Plasma Rico en Plaquetas y Fibrina?',
-          answer: 'Para garantizar tu comodidad, aplicamos un gel calmante de alta potencia antes de la sesión. Los micro-pinchazos se realizan de forma muy suave y rápida, haciéndolo sumamente tolerable.'
-        },
-        {
-          question: '¿Cuántas sesiones se recomiendan para ver resultados firmes?',
-          answer: 'Se recomienda un ciclo inicial de 3 a 4 sesiones, espaciadas cada 30 días. Los cambios en la luminosidad y firmeza se aprecian de forma progresiva a partir del primer mes.'
-        },
-        {
-          question: '¿Es normal que aparezcan pequeños hematomas?',
-          answer: 'Sí, debido a las micro-aplicaciones locales pueden aparecer pequeños puntos o hematomas leves en zonas sensibles. Desaparecen de forma natural en pocos días y pueden disimularse con corrector cosmético.'
-        },
-        {
-          question: '¿Cuándo se aprecian los resultados finales de vitalidad?',
-          answer: 'Aunque notarás un brillo saludable a los pocos días por la hidratación dérmica, el tensado real y la reestructuración profunda de colágeno nuevo se consolidan a partir de los 60 a 90 días.'
+          question: '¿Qué es el Plasma Rico en Plaquetas y Fibrina (PRF)?',
+          answer: 'Es un protocolo de bioestimulación que utiliza componentes de tu propia sangre —plasma rico en plaquetas (PRP) y fibrina rica en plaquetas (PRF)— aplicados de forma tópica sobre el rostro mediante micro-infusión con Dermapen. Busca acompañar la textura, la firmeza y la luminosidad de la piel de forma progresiva, sin inyecciones profundas.'
         },
         {
           question: '¿Cuál es la diferencia entre PRP y PRF?',
-          answer: 'No son lo mismo, aunque están relacionados. El PRP (Plasma Rico en Plaquetas) es una fracción líquida de tu sangre concentrada en plaquetas. El PRF (Plasma/Fibrina Rica en Plaquetas) usa la misma extracción pero se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En Derma.M combinamos ambos en un solo protocolo, aplicado de forma tópica con Dermapen — no como inyección.'
+          answer: 'Están relacionados, pero no son lo mismo. El PRP es una fracción líquida de tu sangre concentrada en plaquetas; el PRF se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En Derma.M se combinan en un solo protocolo tópico con Dermapen, no como inyección.'
         },
         {
-          question: '¿Qué diferencia hay entre este protocolo y un facial de plasma con microagujado tradicional?',
-          answer: 'El microagujado con plasma tradicional utiliza únicamente PRP. En Derma.M combinamos PRP y PRF en un mismo protocolo tópico con Dermapen, buscando aprovechar tanto la acción inicial del PRP como la liberación más gradual de factores de crecimiento del PRF.'
+          question: '¿En qué se diferencia del microneedling con plasma tradicional?',
+          answer: 'El microneedling con plasma tradicional suele usar solo PRP. Este protocolo combina PRP y PRF para aprovechar tanto la acción inicial del PRP como la liberación más gradual de factores de crecimiento del PRF, siempre de forma tópica con Dermapen.'
+        },
+        {
+          question: '¿El PRF es lo mismo que los rellenos (fillers)?',
+          answer: 'No. Los rellenos añaden volumen de inmediato con una sustancia externa. El PRF no añade volumen: usa tus propios componentes para estimular la calidad de la piel de forma gradual. Son enfoques distintos y a veces complementarios; la valoración define qué conviene en cada caso.'
+        },
+        {
+          question: '¿Es dolorosa la aplicación?',
+          answer: 'Antes de la sesión se aplica un gel calmante de alta potencia. Las micro-aplicaciones se realizan de forma suave y rápida, lo que la hace muy tolerable para la mayoría de las personas. La sensación exacta varía según la sensibilidad de cada piel.'
+        },
+        {
+          question: '¿Cuántas sesiones se necesitan?',
+          answer: 'Se suele recomendar un ciclo inicial de 3 a 4 sesiones espaciadas cada 30 días. Después, la valoración profesional define si conviene un mantenimiento periódico según la respuesta de tu piel.'
+        },
+        {
+          question: '¿Cuánto tardan en verse los resultados y cuánto duran?',
+          answer: 'Los primeros cambios de luminosidad aparecen a los pocos días; el efecto de firmeza y la reestructuración de colágeno se consolidan entre los 60 y 90 días. Como es un proceso progresivo, los resultados se mantienen con sesiones de mantenimiento definidas por el profesional.'
+        },
+        {
+          question: '¿Qué efectos secundarios puede tener?',
+          answer: 'Lo más frecuente son pequeños puntos rojos, hematomas leves o algo de hinchazón en zonas sensibles, que ceden en pocos días y pueden disimularse con corrector. El protocolo requiere una valoración previa para descartar contraindicaciones.'
         }
       ]
     },

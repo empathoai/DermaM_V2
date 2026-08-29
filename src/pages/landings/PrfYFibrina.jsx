@@ -9,16 +9,16 @@ export default function PrfYFibrinaPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Plasma Rico en Plaquetas y Fibrina | Derma.M</title>
+        <title>Plasma Rico en Plaquetas y Fibrina (PRF) | Derma.M</title>
         <meta name="description" content="Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel en Derma.M." />
         <link rel="canonical" href="https://dermamskinhealth.com/prf-y-fibrina" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Plasma Rico en Plaquetas y Fibrina | Derma.M" />
+        <meta property="og:title" content="Plasma Rico en Plaquetas y Fibrina (PRF) | Derma.M" />
         <meta property="og:description" content="Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel. Derma.M, West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/prf-y-fibrina" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/landings/prf-y-fibrina/hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Plasma Rico en Plaquetas y Fibrina | Derma.M" />
+        <meta name="twitter:title" content="Plasma Rico en Plaquetas y Fibrina (PRF) | Derma.M" />
         <meta name="twitter:description" content="Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel. Derma.M, West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/landings/prf-y-fibrina/hero.jpg" />
         <meta name="robots" content="index, follow" />
@@ -27,7 +27,8 @@ export default function PrfYFibrinaPage() {
           "@graph": [
             {
               "@type": "Service",
-              "name": "Plasma Rico en Plaquetas y Fibrina",
+              "name": "Plasma Rico en Plaquetas y Fibrina (PRF)",
+              "alternateName": ["PRF", "Platelet-Rich Plasma & Fibrin (PRF)"],
               "description": landingPages.prfYFibrina?.hero?.body || "Bioestimulación cutánea con Plasma Rico en Plaquetas y Fibrina en Derma.M.",
               "url": "https://dermamskinhealth.com/prf-y-fibrina",
               "serviceType": "Aesthetic Treatment",
@@ -44,7 +45,7 @@ export default function PrfYFibrinaPage() {
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
                 { "@type": "ListItem", "position": 2, "name": "Tratamientos Faciales", "item": "https://dermamskinhealth.com/faciales" },
-                { "@type": "ListItem", "position": 3, "name": "Plasma Rico en Plaquetas y Fibrina", "item": "https://dermamskinhealth.com/prf-y-fibrina" }
+                { "@type": "ListItem", "position": 3, "name": "Plasma Rico en Plaquetas y Fibrina (PRF)", "item": "https://dermamskinhealth.com/prf-y-fibrina" }
               ]
             }
           ]

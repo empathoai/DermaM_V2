@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-28 — Track A #2: sub-tag de hero `West Palm Beach, FL` con fuente única
+- **Hallazgo:** la ciudad ya estaba dentro del `<h1>` (`PageHero.jsx:70-73`, `localTag` = `<span>` hijo). §S5.2 del findings doc quedó obsoleto. El trabajo real: consistencia NAP + fuente única.
+- **Audit:** `"Medical Spa · West Palm Beach"` duplicado en ~10 call sites (literal en `LandingPage.jsx` + `TreatmentDetailPage.jsx` + `Hero.jsx` de Home; dato en `categoryPages.js` ×6 + `aboutPage.js`).
+- **Cambio:** nuevo `src/data/siteMeta.js` → `HERO_LOCAL_TAG = 'Medical Spa · West Palm Beach, FL'`; ~10 call sites la importan. `FL` alinea hero ↔ `<title>` de Home ↔ GBP ↔ footer. Prosa/meta/schema (`addressLocality`, `areaServed`) intactos. `/nancy-nieto` sin sub-tag.
+- **Verificación:** 6 superficies muestran el string nuevo; `grep` → solo `siteMeta.js`; `test:visual` 34/34 sin diffs (", FL" dentro de la tolerancia del 2%). Commit `4a4603e` (+ fix hash `f6fb98b`).
+- Spec: `docs/superpowers/specs/2026-08-28-hero-localtag-city-state-consistency-design.md`.
+
 ## 2026-08-28 — Track A #1: "deep cleansing facial" como término target EN en `/limpieza-facial-profunda`
 - **Fuente:** `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S5.4 + Stage 3 (scrape Apify de webs de competencia). "deep cleansing facial" es término de búsqueda real y ningún competidor de WPB titula una página con el término verbatim → hueco competitivo.
 - **3 capas, aditivo, footprint mínimo** (español-first, sin tocar copy español ni above-the-fold): `LimpiezaFacial.jsx` → `description`/`og`/`twitter` (×3) con el término al frente (135c) + `Service.alternateName: "Deep Cleansing Facial"`; `<title>` **intacto** (el paréntesis lo pasaba de ~60c → truncado en SERP). `landingPages.js` → 6º ítem de FAQ español (puente de equivalencia, sin comillas) → entra al `FAQPage` schema. `public/llms.txt` → línea 38 label `Deep Facial Cleansing` → `Deep Cleansing Facial`. `faq-consistency.spec.js` → count 5 → 6.

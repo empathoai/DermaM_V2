@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Footer: Accesibilidad + Recursos legales en el bottom bar (auditoría 1c)
+- `Footer.jsx` bottom bar — `Política de privacidad | Términos de uso` → `… | Accesibilidad | Recursos legales` (`/accessibility` postura ADA + `/legal` hub). Labels de los `<title>`.
+- 4 links: ok a ancho desktop, wrap a 2 filas en mobile. 1 componente, sin `test:visual`. Commit `ffc0e0f`.
+
+
 ## 2026-08-29 — Footer: horario en la columna Contacto (auditoría 1b)
 - `Footer.jsx` — línea "Horario: Lun–Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM" después de la dirección. String = `Contacto.jsx:367` + `openingHoursSpecification`. Orden NAP: nombre → dirección → horario → tel → email → WhatsApp.
 - 1 componente → sin `test:visual`. Commit `2269fd9`.

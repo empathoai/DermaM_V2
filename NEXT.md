@@ -1,7 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `ffc0e0f` (`feat(footer): add Accessibility
-and Legal Resources to the bottom bar`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `6392595` (`feat(footer): entity-consistent
+blurb, dedup nav, complete hub list, dynamic year`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 11) — CERRADO:
+- **Footer pulido (ítem 1d) — CIERRA la auditoría del footer.** `Footer.jsx`: blurb → "medical spa
+  en West Palm Beach, Florida…"; se quita "Tratamientos" (→`/faciales`) de la col. Navegación; +IV
+  Therapy +Capilar en la col. Tratamientos; `© {getFullYear()}`. 1 componente, sin `test:visual`.
+  Compliance OK. `6392595`. Ver DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 10) — CERRADO:
 - **Footer bottom bar: +Accesibilidad + Recursos legales** (`/accessibility`, `/legal`). Cierra **ítem 1c**.
@@ -128,16 +134,11 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada (en orden de size):**
-1. **Footer — hallazgos de auditoría restantes** (DECISIONS 2026-08-29). `1a` (redes) HECHO en `b30f01a`.
-   El footer NO está en ningún snapshot de `test:visual` → verificar a ojo en `:3000`.
-   - ~~**1b** horario~~ HECHO en `2269fd9`.
-   - ~~**1c** legal/accessibility~~ HECHO en `ffc0e0f`.
-     y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.
-   - **1d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
-     consistente, keyword local); "Tratamientos" (col. Navegación) apunta a `/faciales` (label→destino
-     incoherente); col. "Tratamientos" lista 3 de 6 hubs (falta IV Therapy + Capilar; Dental se omite
-     a propósito por §Bloqueado dental); `© 2026` hardcodeado → año dinámico.
+**Cola de código no bloqueada: vacía.**
+- **Auditoría del footer: CERRADA** — 1a redes (`b30f01a`), 1b horario (`2269fd9`), 1c legal/accessibility
+  (`ffc0e0f`), 1d pulido (`6392595`). Lo único de footer pendiente: link a Dental (condicional al hold
+  regulatorio dental, §Bloqueado) y entrada de `/nancy-nieto` en `sitemap.xml` (atada al deploy Hostinger).
+- Fix de orfandad de `/nancy-nieto`: hecho el link contextual desde Home (`43dc34b`); falta el sitemap (deploy).
 
 Sin ítem de doc-hygiene pendiente por ahora.
 

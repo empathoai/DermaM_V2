@@ -502,6 +502,22 @@ export const landingPages = {
         {
           question: '¿Este protocolo sustituye las indicaciones de mi cirujano?',
           answer: 'No. Nuestro acompañamiento de drenaje estético es complementario y se realiza respetando estrictamente las indicaciones de tu especialista a cargo.'
+        },
+        {
+          question: '¿Qué pasa si no me hago los masajes de drenaje después de la cirugía?',
+          answer: 'Sin acompañamiento, la inflamación y la sensación de pesadez suelen tardar más en bajar y el tejido puede endurecerse, lo que se asocia con la fibrosis. El drenaje linfático manual busca favorecer una evolución más cómoda y pareja durante la recuperación. Tu cirujano y tu especialista a cargo definen qué necesita tu proceso.'
+        },
+        {
+          question: '¿Cuánto tiempo dura el proceso de acompañamiento postoperatorio?',
+          answer: 'Varía según el procedimiento realizado y tu evolución visible. Suele abarcar las primeras semanas del postoperatorio, con sesiones más seguidas al inicio que se van espaciando a medida que avanzas. En la valoración inicial estimamos un rango para tu caso.'
+        },
+        {
+          question: '¿Puedo hacerme el acompañamiento postoperatorio si me operé en otra clínica?',
+          answer: 'Sí. Recibimos a personas operadas en otras clínicas. En la valoración inicial revisamos tu etapa de recuperación y las indicaciones de tu cirujano para adaptar el protocolo. Nuestro acompañamiento es complementario y no reemplaza el seguimiento de tu especialista a cargo.'
+        },
+        {
+          question: '¿El drenaje linfático manual ayuda a prevenir la fibrosis?',
+          answer: 'Es uno de sus objetivos. El drenaje linfático manual y el moldeo acompañan la desinflamación y buscan cuidar la textura del tejido durante la recuperación, lo que se asocia con una menor formación de fibrosis y adherencias. No sustituye el control de tu cirujano.'
         }
       ]
     },

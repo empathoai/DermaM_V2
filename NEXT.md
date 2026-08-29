@@ -1,8 +1,7 @@
 # NEXT
 
-Estado: HEAD esperado = 1 commit encima de `d1d1dfc` — `contactFaq` 5→6 + `faq-consistency`
-count `/contacto` 5→6 + docs de cierre — pusheado, árbol limpio, sin servers levantados
-salvo el `:3000` del browser pane.
+Estado: HEAD esperado = `2b49029` (`contactFaq` 5→6 + `faq-consistency` count `/contacto` 5→6
++ docs de cierre) pusheado, árbol limpio, sin servers levantados salvo el `:3000` del browser pane.
 
 Sesión 2026-08-29 (3 ciclos):
 - **Ítem #5b CERRADO** (`293f8d2`) — 4 FAQ comparativas en `/prf-y-fibrina` (count 8→12). Ítem #5a DESCARTADO.

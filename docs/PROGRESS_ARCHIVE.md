@@ -3,6 +3,14 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Home CTA: contenedor alineado a `shared/FinalCTA` + línea WPB/teléfono fuera
+- **`sections/FinalCTA.module.css` `.container`**: se quitó `min-height: 75vh` y el override de padding de `120px 64px`; ahora `padding: clamp(80px,12vw,160px) clamp(24px,4vw,64px)` = mismo que `shared/FinalCTA`. Sección del Home **990px → 763px**, sin efecto "zoom" en la imagen de fondo.
+- **Línea `supportingInfo` eliminada** ("West Palm Beach · 561 253 5384") — JSX + regla CSS (muerta). Pedido explícito.
+- Sin tocar: tipografía, imagen `<img>` + animación, filtro, botones, disclaimer, overlay.
+- `npm run test:visual` 34/34 (el CTA del Home es below-the-fold en los snapshots).
+- **Auditoría del footer** (read-only): 7 hallazgos → `NEXT.md` cola de pulido (ítem 3). NAP exacto ✅, Aviso ES/EN compliant ✅.
+
+
 ## 2026-08-29 — `/nancy-nieto` sección Academy → 2 columnas (formato spotlight) + link saliente
 - **Sección 4 de `FounderBioPage` ("DERMA.M y DERMA.M Academy")** pasó de prosa a una sola columna al **patrón `.spotlight*` de la sección "Historia"**: panel de texto + imagen a sangre completa. Espejada → imagen a la **derecha** (Historia la tiene a la izquierda). Imagen: `public/assets/images/about/dermam-academy.jpg` (webp), alt español trazable.
 - **Link saliente seguido** "Conoce DERMA.M Academy ↗" a `https://dermamacademy.com` (`target=_blank rel="noopener noreferrer"`, sin `nofollow`) — refuerza desambiguación de entidad med spa ≠ academy (audit 8.19). Data: `href` + `linkLabel` nuevos en `dermamYAcademy` (`src/data/aboutPage.js`).

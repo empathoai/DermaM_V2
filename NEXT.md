@@ -1,8 +1,12 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `29e48aa`
-(`fix(home): align CTA container to shared FinalCTA, drop WPB/phone line`). Árbol limpio, sin
-servers salvo el `:3000` del browser pane.
+Estado: HEAD esperado = commit del ritual de docs sobre `0929998` (`fix(nancy): reduce .spotlightTitle
+to 44px on desktop`). Árbol limpio, sin servers salvo el `:3000` del browser pane.
+
+Sesión 2026-08-29 (cont. 4) — CERRADO:
+- **`.spotlightTitle` desktop 56px → 44px** en `FounderBioPage.module.css` — jerarquía vs H1 de hero
+  (64px), títulos largos de Historia/Academy pasan de 4 a 3 líneas. Base 40px intacto.
+  `test:visual` 34/34 (el H2 está fuera del viewport del snapshot). Ver DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 3) — CERRADO:
 - **Home CTA: contenedor alineado a `shared/FinalCTA`** — `.container` de `sections/FinalCTA.module.css`
@@ -92,22 +96,17 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 antes de cada tanda.
 
 **Cola de código no bloqueada (en orden de size):**
-1. **`.spotlightTitle` 56px en `/nancy-nieto`** — [XS]. El usuario observó que el H2 de la sección
-   "Historia" (`FounderBioPage.module.css:344`, `@media min-width:1024px`) se ve muy grande / rompe
-   en 4 líneas; jerarquía débil vs el H1 de hero (64px). Propuesta parkeada: bajar a ~44px. Cambio
-   visual → brainstorm → aprobación → re-baseline `nancy-nieto` (nota: el baseline solo captura
-   above-the-fold, y este H2 sí entra en viewport).
-2. **Link contextual Home → `/nosotros/nancy-nieto`** — [XS/S]. Enlazar el bloque de fundadora de Home
+1. **Link contextual Home → `/nosotros/nancy-nieto`** — [XS/S]. Enlazar el bloque de fundadora de Home
    (foto de Nancy en `FeaturedServices`/founder) a su bio. Fix parcial de orfandad; blast radius local
    a Home. Ver DECISIONS 2026-08-29.
-3. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 3a → 3b → 3c; 3d agrupable.
-   - **3a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
+2. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 2a → 2b → 2c; 2d agrupable.
+   - **2a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
      **no renderiza redes**. Cablear links a IG/FB (URLs en `organizationSchema.js` `sameAs`) o borrar
      el código muerto. Footer entra en varios snapshots → `test:visual` completo.
-   - **3b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
-   - **3c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
+   - **2b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
+   - **2c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
      y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.
-   - **3d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
+   - **2d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
      consistente, keyword local); "Tratamientos" (col. Navegación) apunta a `/faciales` (label→destino
      incoherente); col. "Tratamientos" lista 3 de 6 hubs (falta IV Therapy + Capilar; Dental se omite
      a propósito por §Bloqueado dental); `© 2026` hardcodeado → año dinámico.

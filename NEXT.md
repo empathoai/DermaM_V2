@@ -1,14 +1,23 @@
 # NEXT
 
-Estado: HEAD esperado = commit `feat(skills): add-media` sobre `323d7d8` (skill `add-media`;
-sin cambios de código de sitio). Árbol limpio, sin servers salvo el `:3000` del browser pane.
-**Push pendiente de confirmación.**
+Estado: HEAD esperado = commit `docs(specs): academy block + reviews 8.20 rescope` sobre
+`dec374c` (2 specs draft; sin cambios de código de sitio). Árbol limpio, sin servers salvo el
+`:3000` del browser pane.
 
 Sesión 2026-08-29 (cont.):
 - **Skill `add-media` creada** — `.agents/skills/add-media/SKILL.md` + copia en `.claude/skills/`.
   3 acciones: A (rellenar slot existente), B (slot nuevo, gate brainstorming), C (video de hero).
   Envuelve `assets-optimizer`. Handoff de archivos crudos = `scratchpad/media-in/`.
   Spec: `docs/superpowers/specs/2026-08-29-add-media-skill-design.md`.
+- **2 specs draft escritos, PENDIENTES de revisión del usuario** (no implementar sin "go"):
+  - `2026-08-29-nosotros-academy-link-block-design.md` — restaurar bloque Academy compacto en
+    `/nosotros` (imagen + link a `dermamacademy.com`), entre equipo y reseñas. **Revierte
+    decisión del 2026-08-28** (el usuario lo pidió explícito); mitigado con prosa mínima + link
+    followed explícito (ayuda a 8.19). CSS `.academy*` sigue intacto; `dermam-academy.jpg` en disco.
+  - `2026-08-29-reviews-alignment-8.20-rescope-design.md` — rescope de 8.20: sin integración
+    online (Apify descartado), reseñas curadas estáticas, relevancia por página (postop→postop),
+    link saliente a Google reviews para confianza, **sin `aggregateRating`**. Cycle 1 = link +
+    curación Opción A; Cycle 2 opcional = unificar en `src/data/reviews.js` con tags de tema.
 
 Sesión 2026-08-29 (3 ciclos previos):
 - **Ítem #5b CERRADO** (`293f8d2`) — 4 FAQ comparativas en `/prf-y-fibrina` (count 8→12). Ítem #5a DESCARTADO.
@@ -39,6 +48,15 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 **L** multi-fase o captura de data previa · **XL** página/feature nueva entera.
 
 ## Próximo (en orden de size)
+
+**PRIMERO — 2 specs draft esperan revisión del usuario (pedidos explícitamente el 2026-08-29):**
+1. `docs/superpowers/specs/2026-08-29-nosotros-academy-link-block-design.md` — [S]. Al aprobar:
+   `superpowers:writing-plans` → 1 ciclo (data `academy` en `aboutPage.js` + render en `AboutPage.jsx`
+   entre Team y Testimonials + baseline `nosotros-viewport`). Registrar la reversión en `DECISIONS.md`.
+2. `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md` — [M]. Cycle 1 =
+   link a Google reviews (`GOOGLE_REVIEWS_URL` en `siteMeta.js`, validar URL) + curación por tema
+   (Opción A) + update de docs 8.20/INTAKE. Cycle 2 opcional = `src/data/reviews.js` con tags.
+   Pendiente de decisión del usuario en el spec: Opción A vs B, y confirmación de "sin aggregateRating".
 
 **Integración de media faltante — usar la skill `add-media`, Acción A, un slot por ciclo.**
 Bloqueado en input del usuario: hay que dejar los archivos crudos en `scratchpad/media-in/` y

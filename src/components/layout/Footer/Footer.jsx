@@ -16,7 +16,7 @@ export default function Footer() {
             <h2 className={styles.logo}>DERMA.M</h2>
             <p className={styles.subline}>Health for your skin.</p>
             <p className={styles.brandDesc}>
-              DERMA.M, LLC es un centro de estética, belleza y salud clínica enfocado en el cuidado integral de la piel, cuerpo y el bienestar general en West Palm Beach, Florida.
+              DERMA.M, LLC es un medical spa en West Palm Beach, Florida, enfocado en el cuidado integral de la piel, el cuerpo y el bienestar.
             </p>
             <div className={styles.socialBlock}>
               <a
@@ -57,7 +57,6 @@ export default function Footer() {
             <ul className={styles.linkList}>
               <li><Link to="/" className={styles.link}>Inicio</Link></li>
               <li><Link to="/nosotros" className={styles.link}>Nosotros</Link></li>
-              <li><Link to="/faciales" className={styles.link}>Tratamientos</Link></li>
               <li><Link to="/contacto" className={styles.link}>Contacto</Link></li>
             </ul>
           </nav>
@@ -72,6 +71,8 @@ export default function Footer() {
               <li><Link to="/faciales" className={styles.link}>Faciales</Link></li>
               <li><Link to="/corporales" className={styles.link}>Corporales</Link></li>
               <li><Link to="/laser-y-luz" className={styles.link}>Láser y Luz</Link></li>
+              <li><Link to="/iv-therapy" className={styles.link}>IV Therapy</Link></li>
+              <li><Link to="/capilar" className={styles.link}>Capilar</Link></li>
             </ul>
           </nav>
 
@@ -111,7 +112,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-[#F2F0F1]/10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 text-xs tracking-wider text-[#BBB8B5] font-light">
-          <p className="order-1">&copy; 2026 Derma.M. Todos los derechos reservados.</p>
+          <p className="order-1">&copy; {new Date().getFullYear()} Derma.M. Todos los derechos reservados.</p>
           
           <div className="order-2 lg:text-center text-[#BBB8B5]/85">
             Created by: <a href="https://empathoai.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F2F0F1] underline underline-offset-4 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">EmpathoAI</a>

@@ -1,9 +1,12 @@
 # NEXT
 
-Estado: HEAD esperado `ec61d89`, pusheado, árbol limpio, sin servers levantados.
+Estado: HEAD esperado `bd497ca`, pusheado, árbol limpio, sin servers levantados.
 Sesión 2026-08-28: Track A #1 (`91bed37`), #2 (`4a4603e`), #3 (`cb53307`) + follow-ups
 cerrados y pusheados. **Ítem #4 CERRADO** — FAQ PAA: PRF (#3), `/limpieza-facial-profunda`
 (`b7a6452`, 6→9), `/tratamientos-postoperatorios` (`7d6126d`, 5→9).
+**Ítem #5 CERRADO** como estrategia registrada — spec `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md`
+(doc interno, sin cambio on-site; `docs/` gitignored → solo se commitearon PROGRESS/DECISIONS/NEXT).
+La spec §8 lista 4 ciclos hijo; el #1 (enriquecer el landing PRF con secciones comparativas + tabla) es candidato de próximo.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
 `founderBioPage` ya es objeto standalone (sin refs a `aboutPage.*`); `/nosotros` = página del equipo;
@@ -47,10 +50,15 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    (`7d6126d`, 5→9; spec/plan `…postoperatorios-faq-paa*`). Método: sin Apify, seeds §189 +
    pase `WebSearch` ES, append-only, sin ítem de precio, count en `faq-consistency.spec.js`.
    Ruling de compliance (`DECISIONS.md` 2026-08-28): "prevenir la fibrosis" OK, "cura/trata" no.
-5. **[L] ← PRÓXIMO (empatado con #6)** Estrategia PRF (Tema 4, must-win) — apropiarse de
-   "Plasma Rico en Plaquetas y Fibrina (PRF)", demand-gen vía ads (término real a nivel nacional,
-   0 competencia local). Content strategy con brainstorming.
-6. **[L] ← PRÓXIMO (empatado con #5)** Cuña postop demand-gen — GBP posts + FAQ + pieza
+5. ~~**[L]** Estrategia PRF (Tema 4, must-win)~~ ✅ HECHO como estrategia registrada — spec
+   `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md`. Consolida research §1a/§S1/§S5/§S7.
+   Deja 4 ciclos hijo (§8 de la spec): **5a** enriquecer landing PRF (secciones comparativas + tabla),
+   **5b** expandir FAQ del landing con cluster comparativo, **5c** (condicional) página EN,
+   **5d** (condicional) guía pilar. Cada uno brainstorm→aprobación→1 cambio.
+5a. **[M/L] ← PRÓXIMO** Enriquecer `/prf-y-fibrina`: secciones vs PRP / vs fillers / vs PDGF·under-eye /
+   duración + tabla comparativa. Data en `landingPages.js`; copy derivada de copy vetada; compliance
+   vs `MEDICAL_COMPLIANCE.md`; posible re-baseline del snapshot del landing.
+6. **[L] ← PRÓXIMO (empatado con #5a)** Cuña postop demand-gen — GBP posts + FAQ + pieza
    "por qué el postoperatorio importa" (pocos proveedores, cirujanos no lo recomiendan).
    Audiencia real existente. (Del `/llm-council` de 4a: el Expansionist lo marcó como el
    verdadero upside de esta área; va con su propio brainstorm, no como scope-creep de FAQ.)

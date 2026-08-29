@@ -2,12 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — FAQ #4 (pág. 2/2): 4 ítems PAA en `/tratamientos-postoperatorios` — **ítem #4 cerrado**
-- **Cambio:** append de 4 ítems a `postoperatorios.faq.items` (`src/data/landingPages.js`), posiciones 6–9; los 5 existentes intactos. `tests/faq-consistency.spec.js` count `/tratamientos-postoperatorios` 5 → 9. `FAQPage.mainEntity` auto-derivado. Commit `7d6126d`.
-- **Ítems:** "¿Qué pasa si no me hago los masajes de drenaje…?" · "¿Cuánto tiempo dura el proceso…?" (timeline, distinto del ítem de nº de sesiones) · "¿Puedo hacerlo si me operé en otra clínica?" (conecta con la cuña demand-gen §S7) · "¿El drenaje ayuda a prevenir la fibrosis?". Fraseo confirmado con 2 web searches ES; respuestas derivadas de `problem`/`benefits`/`howItWorks`/`quickFacts` vetados.
-- **Compliance (página más pesada):** "prevenir la fibrosis" permitido (el usuario lo confirmó; ya es título de beneficio); **prohibido "cura/trata/elimina/resuelve la fibrosis"**; sin claims de complicación médica (seroma/trombosis); deferimiento al cirujano en 6/8/9. Ver `DECISIONS.md`.
-- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` **34/34 sin diffs** (snapshots de la landing = Viewport + carrusel, no la FAQ — sin re-baseline).
-- Spec/plan: `docs/superpowers/{specs,plans}/2026-08-28-postoperatorios-faq-paa*`. **Cierra el ítem #4 de la cola completo** (PRF en #3, limpieza `b7a6452`, postop `7d6126d`).
+## 2026-08-28 — Ítem #5: estrategia de contenido PRF consolidada (doc interno, sin cambio on-site)
+- **Cambio:** se escribió `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md` — consolida en una sola spec el research disperso (`COMPETENCIA-SERVICIOS-2026.md` §1a/§S1/§S5/§S7 + `INTAKE.md:188-190`, que decía textual "estrategia no resuelta"). **Cero cambios en `src/`, schema, archivos protegidos o baselines visuales.** `docs/` es gitignored → la spec vive en disco; solo se commitean PROGRESS/DECISIONS/NEXT.
+- **Posición fijada:** (1) defender/ensanchar el término ES completo "Plasma Rico en Plaquetas y Fibrina (PRF)" (Derma.M ya #1 sin geo); (2) apropiarse del cluster informacional/comparativo ("qué es el PRF", "PRF vs PRP", "vs fillers", "vs PDGF", "duración") — 0 competencia local; (3) NO pelear `PRP facial`/`vampire facial`/`bioestimulación` (saturado); (4) PRPF nunca, PRP pelado nunca (mercado ortopédico).
+- **Arquitectura de contenido:** enriquecer el landing existente (secciones comparativas + tabla) + expandir FAQ; **sin ruta nueva ahora**. Guía pilar y página EN quedan condicionales a que el landing enriquecido rankee / a que el tráfico EN de ads convierta.
+- **Ads = capa especificada, no ejecutada:** Google Search (captura de intención) + Meta (demand-gen real, audiencias latinas South FL); ambos al mismo landing ES bilingüe. El doc define ángulos/audiencias/términos; el gasto y la operación de campañas son decisión del usuario, ningún ciclo hijo invoca el MCP de Meta Ads.
+- Spec §8 lista los 4 ciclos hijo (cada uno brainstorm→aprobación→1 cambio). **Ítem #5 cerrado como estrategia registrada.**
 
 ---
 

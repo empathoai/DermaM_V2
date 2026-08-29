@@ -9,28 +9,39 @@ export default function FloatingWhatsApp() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Check if user has already dismissed the helper bubble this session
-    const dismissed = sessionStorage.getItem('derma_wp_dismissed');
-    if (dismissed) {
+    if (sessionStorage.getItem('derma_wp_dismissed')) {
       setIsDismissed(true);
-    } else {
-      // Elegant, delayed entrance animation after 3 seconds
-      const timer = setTimeout(() => {
-        setShowHelper(true);
-      }, 3000);
-      return () => clearTimeout(timer);
+      return;
     }
+    // Desktop only — on mobile the FAB alone is enough of an affordance and a
+    // pop-up card is too much visual noise.
+    if (!window.matchMedia('(min-width: 768px)').matches) return;
+
+    // Show the helper on an intent signal instead of a flat timer: once the
+    // visitor has scrolled ~40% of the page, or after 15s of dwell.
+    let shown = false;
+    const reveal = () => {
+      if (shown) return;
+      shown = true;
+      setShowHelper(true);
+    };
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max > 0 && window.scrollY / max >= 0.4) reveal();
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    const dwell = setTimeout(reveal, 15000);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      clearTimeout(dwell);
+    };
   }, []);
 
   useEffect(() => {
-    // Once the user scrolls, the bubble has done its job — hide it so it
-    // stops covering page content further down (not a manual dismissal,
-    // so it can still reappear on the next page load).
+    // Never let the helper linger — auto-hide it after 6s.
     if (!showHelper) return;
-
-    const handleScroll = () => setShowHelper(false);
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    const t = setTimeout(() => setShowHelper(false), 6000);
+    return () => clearTimeout(t);
   }, [showHelper]);
 
   useEffect(() => {

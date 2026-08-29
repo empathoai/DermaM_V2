@@ -118,13 +118,37 @@ export default function FounderBioPage({ data }) {
         aria-labelledby="academy-heading"
       >
         <div className={styles.academyContainer}>
-          <p className={styles.academyEyebrow}>{dermamYAcademy.eyebrow}</p>
-          <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
-          <h2 id="academy-heading" className={styles.academyTitle}>{dermamYAcademy.headline}</h2>
-          <p className={styles.academyBody}>{dermamYAcademy.body}</p>
-          {dermamYAcademy.secondaryBody && (
-            <p className={styles.academyBodySecondary}>{dermamYAcademy.secondaryBody}</p>
-          )}
+          <div className={styles.academyRow}>
+            <div className={styles.academyContent}>
+              <p className={styles.academyEyebrow}>{dermamYAcademy.eyebrow}</p>
+              <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
+              <h2 id="academy-heading" className={styles.academyTitle}>{dermamYAcademy.headline}</h2>
+              <p className={styles.academyBody}>{dermamYAcademy.body}</p>
+              {dermamYAcademy.secondaryBody && (
+                <p className={styles.academyBodySecondary}>{dermamYAcademy.secondaryBody}</p>
+              )}
+              <a
+                href={dermamYAcademy.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.academyLink}
+              >
+                {dermamYAcademy.linkLabel} <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <motion.div
+              className={styles.academyMedia}
+              whileHover="hover"
+              variants={{ hover: imageHover }}
+            >
+              <MediaBlock
+                src="/assets/images/about/dermam-academy.jpg"
+                alt="Interior de DERMA.M Academy con el logotipo Dm Academy en la pared y libros de formación sobre el escritorio."
+                variant="light"
+                className={styles.academyImage}
+              />
+            </motion.div>
+          </div>
         </div>
       </motion.section>
 

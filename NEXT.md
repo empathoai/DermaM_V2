@@ -1,8 +1,8 @@
 # NEXT
 
-Estado: HEAD esperado `620fa63`, pusheado, árbol limpio, sin servers levantados.
+Estado: HEAD esperado `b7a6452` (+ commit de docs encima), árbol limpio, sin servers levantados.
 Sesión 2026-08-28: Track A #1 (`91bed37`), #2 (`4a4603e`), #3 (`cb53307`) + follow-ups
-(hashes en PROGRESS) cerrados y pusheados.
+cerrados y pusheados. FAQ #4 pág. 1/2 — `/limpieza-facial-profunda` (`b7a6452`) hecho.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
 `founderBioPage` ya es objeto standalone (sin refs a `aboutPage.*`); `/nosotros` = página del equipo;
@@ -41,9 +41,14 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    `knowsAbout` + `llms.txt`; nav/footer/cards con nombre ES completo limpio. FAQ del PRF landing
    reescrita 7→8 (voz de búsqueda, Q→A autocontenidas, +fillers/duración/efectos secundarios).
    `faq-consistency` count 7→8. Spec: `docs/superpowers/specs/2026-08-28-prf-canonical-naming-design.md`.
-4. **[L] ← PRÓXIMO (parcial)** FAQ sembradas desde las PAA reales — **PRF landing ya hecho** en #3.
-   Falta: `/limpieza-facial-profunda` y `/tratamientos-postoperatorios`. Fase 1 capturar PAA ES
-   (S–M), fase 2 reescribir FAQ + count en `faq-consistency.spec.js`. Mismo patrón que el PRF.
+4. **[M] ← PRÓXIMO** FAQ sembradas desde PAA reales — falta solo `/tratamientos-postoperatorios`
+   (PRF hecho en #3; `/limpieza-facial-profunda` hecho `b7a6452`, 6→9 ítems). Método fijado
+   (`DECISIONS.md` 2026-08-28): **sin Apify** — seeds EN del findings doc §189 + pase manual
+   `WebSearch` ES; evaluar append-only; sin ítem de precio; actualizar count en
+   `faq-consistency.spec.js` (hoy `/tratamientos-postoperatorios` = 5) misma commit; `test:visual`.
+   OJO postop: carga de compliance mayor (drenaje linfático, cirugía) — cross-check estricto
+   `MEDICAL_COMPLIANCE.md`, sin claims de resultado, sin diagnóstico. Spec/plan de la pág. 1
+   como plantilla: `docs/superpowers/{specs,plans}/2026-08-28-limpieza-facial-faq-paa*`.
 5. **[XL]** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
    compliance+baseline visual; brainstorm largo).
 6. **Estrategia PRF (Tema 4, must-win)** — apropiarse de "Plasma Rico en Plaquetas y Fibrina (PRF)",

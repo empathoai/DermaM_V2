@@ -3,6 +3,14 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Skill `add-media` (proceso para agregar imágenes/videos)
+- **Nueva skill project-local `add-media`** en `.agents/skills/add-media/SKILL.md` + copia sincronizada en `.claude/skills/add-media/SKILL.md`. SKILL.md en inglés (doc de tooling).
+- Define 3 procedimientos: **Acción A** rellenar slot existente (ruta en `src/data/*.js` sin archivo en disco), **Acción B** slot de media nuevo (gate de brainstorming previo), **Acción C** video de fondo de hero. Envuelve `assets-optimizer` (llama sus scripts), no lo reemplaza.
+- Checklist DoD compartido: subdir correcto, optimizado (<200KB img / <3MB video / `-an`), `.webp` hermano, filename SEO español kebab (7.1), alt español trazable (7.2 + `feedback_no_inventar_contenido`), render en `:3000` sin fallback `og-default`, `test:visual` limpio, WCAG AA, ritual de docs.
+- Handoff de archivos crudos: `scratchpad/media-in/`. Faltantes conocidos listados (8 slots de `/nosotros`).
+- Spec: `docs/superpowers/specs/2026-08-29-add-media-skill-design.md`. **Sin cambios de código de sitio.**
+
+
 ## 2026-08-29 — Sanity check de documentación + registro de estado de deploy
 - **Estado de deploy registrado** (memoria `project_deploy_state_vercel_hostinger` + `NEXT.md`): **prod real = Hostinger/Apache, pendiente**. Vercel auto-push = solo demo para el cliente, no es prod definitiva. Para cerrar el proyecto solo falta: subir a Hostinger + verificar GSC. Nada de código.
 - **Doc-hygiene (XS), 3 correcciones de datos falsos en docs fuente de verdad:**

@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 const faqRoutes = [
   { path: '/contacto', count: 5 },
   { path: '/limpieza-facial-profunda', count: 9 },
-  { path: '/prf-y-fibrina', count: 8 },
+  { path: '/prf-y-fibrina', count: 12 },
   { path: '/tratamientos-postoperatorios', count: 9 },
   { path: '/faciales/hidrofacial', count: 5 }
 ];

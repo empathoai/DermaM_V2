@@ -152,6 +152,22 @@ export const landingPages = {
         {
           question: '¿Qué efectos secundarios puede tener?',
           answer: 'Lo más frecuente son pequeños puntos rojos, hematomas leves o algo de hinchazón en zonas sensibles, que ceden en pocos días y pueden disimularse con corrector. El protocolo requiere una valoración previa para descartar contraindicaciones.'
+        },
+        {
+          question: '¿El PRF es mejor que el PRP?',
+          answer: 'El PRF representa una evolución respecto al PRP. Al procesarse como una matriz de fibrina, libera los factores de crecimiento de forma sostenida y progresiva, en lugar de una única liberación inicial como el PRP. En Derma.M el protocolo combina ambos de forma tópica con Dermapen para aprovechar la acción inmediata del PRP y la liberación prolongada del PRF; la valoración profesional define el número de sesiones según el estado visible de tu piel.'
+        },
+        {
+          question: '¿El PRF ayuda con las marcas del post-acné?',
+          answer: 'Puede considerarse cuando el objetivo es acompañar la textura y la apariencia del relieve y las marcas asociadas al post-acné, de forma progresiva. No está indicado sobre piel con acné activo; en ese caso la valoración profesional define si es adecuado. Los resultados varían según cada persona.'
+        },
+        {
+          question: '¿Hay personas que no deberían hacerse PRF?',
+          answer: 'Sí. El protocolo requiere una valoración previa para descartar contraindicaciones. Algunas condiciones de salud, el estado de la piel en la zona a tratar o ciertos tratamientos en curso pueden hacer que no sea recomendable en ese momento, por lo que cada caso se evalúa de forma individual antes de iniciar.'
+        },
+        {
+          question: '¿En qué zonas del cuerpo puede aplicarse el PRF?',
+          answer: 'Además del rostro, puede aplicarse en el contorno de ojos, el contorno de boca, el escote, las manos, las orejas y el cuero cabelludo. La zona y la técnica se definen en la valoración profesional según tus objetivos y el estado visible de la piel.'
         }
       ]
     },

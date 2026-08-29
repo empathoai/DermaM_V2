@@ -108,24 +108,27 @@ export default function FounderBioPage({ data }) {
         </div>
       </motion.section>
 
-      {/* 4. DERMA.M y DERMA.M Academy (Off-White #EFEFEB) */}
+      {/* 4. DERMA.M y DERMA.M Academy — mismo patrón que Historia, imagen a la derecha */}
       <motion.section
-        className={styles.academySection}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={sectionReveal}
+        className={styles.spotlightSection}
+        id="academy-spotlight"
         aria-labelledby="academy-heading"
       >
-        <div className={styles.academyContainer}>
-          <div className={styles.academyRow}>
-            <div className={styles.academyContent}>
-              <p className={styles.academyEyebrow}>{dermamYAcademy.eyebrow}</p>
-              <div className={styles.academyEyebrowLine} aria-hidden="true"></div>
-              <h2 id="academy-heading" className={styles.academyTitle}>{dermamYAcademy.headline}</h2>
-              <p className={styles.academyBody}>{dermamYAcademy.body}</p>
+        <div className={styles.spotlightContainer}>
+          <div className={`${styles.spotlightRow} ${styles.spotlightRowAcademy}`}>
+            <motion.div
+              className={styles.spotlightContent}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
+            >
+              <p className={styles.spotlightEyebrow}>{dermamYAcademy.eyebrow}</p>
+              <div className={styles.spotlightEyebrowLine} aria-hidden="true"></div>
+              <h2 id="academy-heading" className={styles.spotlightTitle}>{dermamYAcademy.headline}</h2>
+              <p className={styles.spotlightBody}>{dermamYAcademy.body}</p>
               {dermamYAcademy.secondaryBody && (
-                <p className={styles.academyBodySecondary}>{dermamYAcademy.secondaryBody}</p>
+                <p className={styles.spotlightBodySecondary}>{dermamYAcademy.secondaryBody}</p>
               )}
               <a
                 href={dermamYAcademy.href}
@@ -135,18 +138,24 @@ export default function FounderBioPage({ data }) {
               >
                 {dermamYAcademy.linkLabel} <span aria-hidden="true">↗</span>
               </a>
-            </div>
+            </motion.div>
             <motion.div
-              className={styles.academyMedia}
-              whileHover="hover"
-              variants={{ hover: imageHover }}
+              className={styles.spotlightMedia}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionReveal}
             >
-              <MediaBlock
-                src="/assets/images/about/dermam-academy.jpg"
-                alt="Interior de DERMA.M Academy con el logotipo Dm Academy en la pared y libros de formación sobre el escritorio."
-                variant="light"
-                className={styles.academyImage}
-              />
+              <div className={styles.spotlightMediaFrame}>
+                <motion.div className={styles.spotlightMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
+                  <MediaBlock
+                    src="/assets/images/about/dermam-academy.jpg"
+                    alt="Interior de DERMA.M Academy con el logotipo Dm Academy en la pared y libros de formación sobre el escritorio."
+                    variant="light"
+                    className={styles.spotlightImage}
+                  />
+                </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>

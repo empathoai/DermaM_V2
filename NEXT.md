@@ -1,13 +1,18 @@
 # NEXT
 
-Estado: HEAD esperado = commit de código de #6 (FAQ postop 9→12 + `faq-consistency` count) + este commit de cierre de docs encima, pusheado, árbol limpio, sin servers levantados.
+Estado: HEAD esperado = 1 commit encima de `d1d1dfc` — `contactFaq` 5→6 + `faq-consistency`
+count `/contacto` 5→6 + docs de cierre — pusheado, árbol limpio, sin servers levantados
+salvo el `:3000` del browser pane.
 
-Sesión 2026-08-29 (2 ciclos):
+Sesión 2026-08-29 (3 ciclos):
 - **Ítem #5b CERRADO** (`293f8d2`) — 4 FAQ comparativas en `/prf-y-fibrina` (count 8→12). Ítem #5a DESCARTADO.
-- **Ítem #6 CERRADO** — cuña postop demand-gen: 3 FAQ en `/tratamientos-postoperatorios` (count 9→12),
-  derivadas de 2 transcripts de video de ads de la clínica. Marco de dos fases (activa + mantenimiento);
-  el ítem viejo "10 a 15 sesiones" no se tocó. `test:visual` 34/34 sin diffs. Append-only.
-  Spec: `docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md`.
+- **Ítem #6 CERRADO** — cuña postop demand-gen: 3 FAQ en `/tratamientos-postoperatorios` (count 9→12).
+- **Ítem "mejores med spa de WPB" [XL] DESCARTADO** → resuelto como 1 FAQ en `/contacto` (`contactFaq`
+  5→6, `faq-consistency` count 5→6): "¿Cómo elijo un buen med spa en West Palm Beach?", criterios de
+  decisión, sin claim de superioridad. Premio BusinessRate ya descartado (`INTAKE.md:66`); la palanca
+  del término es off-site (Yelp/reseñas). `test:visual` 34/34 sin diffs.
+  Spec: `docs/superpowers/specs/2026-08-29-contacto-faq-med-spa-eleccion-design.md`.
+  Detalle del descarte y cómo/cuándo reconsiderar: DECISIONS 2026-08-29.
 
 Contexto vigente de sesiones previas (no re-abrir):
 - Ítem #5 (estrategia PRF) cerrado como spec 2026-08-28. Ítem #4 (FAQ PAA) cerrado.
@@ -28,9 +33,10 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 **L** multi-fase o captura de data previa · **XL** página/feature nueva entera.
 
 ## Próximo (en orden de size)
-1. **[XL] ← PRÓXIMO** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
-   compliance+baseline visual; brainstorm largo). Contexto: el listicle de Yelp domina "best med spa WPB";
-   Yelp lo reclama Nancy (bloqueado), pero una página propia bien armada compite por el término.
+
+**Cola de código no bloqueada: vacía.** Todo lo abierto es condicional o backlog off-site.
+Próxima sesión sin pedido nuevo del usuario: doc-hygiene (empezar por `INTAKE.md:56`
+"deploy en Vercel" → Hostinger/Apache, ver Bloqueado) como ciclo mecánico único.
 
 Condicionales (no ejecutar sin que se cumpla la condición):
 - **Pieza/sección "por qué el postoperatorio importa"** — sección nueva en `LandingPage` (+ baseline visual)

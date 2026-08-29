@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Ítem #6: cuña postop demand-gen — 3 FAQ en `/tratamientos-postoperatorios` (9 → 12) + spec GBP/ads
+- **Cambio:** append de 3 ítems a `postoperatorios.faq.items` (`src/data/landingPages.js`), posiciones 10–12; los 9 existentes intactos. `tests/faq-consistency.spec.js` count `/tratamientos-postoperatorios` 9 → 12. `FAQPage.mainEntity` auto-derivado.
+- **Ítems (derivados de 2 transcripts de video de ads de la clínica, 2026-08-29):** "¿Son suficientes 6 u 8 sesiones de masajes postoperatorios?" (mito → no; etapas) · "¿Por qué conviene continuar el acompañamiento después de que baja la inflamación?" (el drop-off; fase de reparación) · "¿Debo hacer drenaje postoperatorio si mi cirujano no me lo indicó?" (demand-gen core → consultar en el control). Marco de **dos fases** (activa intensiva + mantenimiento espaciado); el ítem viejo de "10 a 15 sesiones" **no se tocó**.
+- **Coherencia ads ↔ sitio:** mismo mensaje de los videos alimenta la FAQ on-site y la spec de posts de GBP + copy base de Facebook ads (entregable A, **especificado no ejecutado**, para sesión Track B con la dueña logueada en GBP).
+- **Compliance:** "prevenir endurecimientos/fibrosis/adherencias" + deferimiento al cirujano (OK per DECISIONS 2026-08-28). Fuera del sitio: "seromas" como gancho, "no pongas tu inversión en riesgo" — quedan solo para paid social a criterio de la clínica.
+- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` **34/34 sin diffs** · cross-check `MEDICAL_COMPLIANCE.md` OK.
+- Spec: `docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md`. Diferido a `NEXT.md`: pieza "por qué el postoperatorio importa" (sección/ruta nueva, ciclo propio, condicional a tracción).
+
+
 ## 2026-08-29 — Ítem #5b: 4 FAQ comparativas en `/prf-y-fibrina` (8 → 12)
 - **Cambio:** append de 4 ítems a `prfYFibrina.faq.items` (`src/data/landingPages.js`), posiciones 9–12; los 8 existentes intactos. `tests/faq-consistency.spec.js` count `/prf-y-fibrina` 8 → 12. `FAQPage.mainEntity` auto-derivado. Commit `293f8d2`.
 - **Ítems:** "¿El PRF es mejor que el PRP?" (posiciona el PRF como evolución por **mecanismo** — matriz de fibrina → liberación sostenida vs liberación inicial única; **sin claim de superioridad** en el body) · "¿El PRF ayuda con las marcas del post-acné?" (deriva de `problem.list`) · "¿Hay personas que no deberían hacerse PRF?" (contraindicaciones, deriva del ítem 8) · "¿En qué zonas del cuerpo puede aplicarse el PRF?" (rostro + contorno de ojos/boca, escote, manos, orejas, cuero cabelludo — lista confirmada por la dueña).

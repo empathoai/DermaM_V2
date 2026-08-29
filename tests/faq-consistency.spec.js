@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
 const faqRoutes = [
-  { path: '/contacto', count: 5 },
+  { path: '/contacto', count: 6 },
   { path: '/limpieza-facial-profunda', count: 9 },
   { path: '/prf-y-fibrina', count: 12 },
   { path: '/tratamientos-postoperatorios', count: 12 },

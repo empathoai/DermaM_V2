@@ -2,12 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — FAQ #4 (pág. 1/2): 3 ítems PAA en `/limpieza-facial-profunda`
-- **Cambio:** append de 3 ítems a `limpiezaFacial.faq.items` (`src/data/landingPages.js`), posiciones 7–9; los 6 existentes intactos. `tests/faq-consistency.spec.js` count `/limpieza-facial-profunda` 6 → 9. `FAQPage.mainEntity` auto-derivado del array (sin editar schema). Commit `b7a6452`.
-- **Ítems:** "¿Para qué sirve una limpieza facial profunda?" · "¿Cuánto dura la sesión?" · "¿Cuál es la diferencia entre una limpieza facial básica y una limpieza facial profunda?". Fraseo confirmado con 2 web searches ES (PAA reales); respuestas derivadas verbatim-en-espíritu de `problem.body`/`benefits`/`quickFacts`/`howItWorks` ya vetados; cierre relacional (§S7: "te valoramos, te explicamos"). Sin claims nuevos, sin banned words, sin garantías, sin competidor nombrado.
-- **Decisión de método:** `/llm-council` (2026-08-28) descartó el ciclo "4a" de captura vía Apify — los seeds EN del findings doc §189 + un pase manual ES de ~15 min son insumo suficiente (mismo patrón que el ciclo #3 PRF). Sin ítem de precio (el sitio no publica precios). Ver `DECISIONS.md`.
-- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` **34/34 sin diffs** (el snapshot "Limpieza Facial Landing" es una sección, no la FAQ — sin re-baseline).
-- Spec: `docs/superpowers/specs/2026-08-28-limpieza-facial-faq-paa-design.md` · Plan: `docs/superpowers/plans/2026-08-28-limpieza-facial-faq-paa.md`. Cierra la pág. 1 del ítem #4; falta `/tratamientos-postoperatorios`.
+## 2026-08-28 — FAQ #4 (pág. 2/2): 4 ítems PAA en `/tratamientos-postoperatorios` — **ítem #4 cerrado**
+- **Cambio:** append de 4 ítems a `postoperatorios.faq.items` (`src/data/landingPages.js`), posiciones 6–9; los 5 existentes intactos. `tests/faq-consistency.spec.js` count `/tratamientos-postoperatorios` 5 → 9. `FAQPage.mainEntity` auto-derivado. Commit `7d6126d`.
+- **Ítems:** "¿Qué pasa si no me hago los masajes de drenaje…?" · "¿Cuánto tiempo dura el proceso…?" (timeline, distinto del ítem de nº de sesiones) · "¿Puedo hacerlo si me operé en otra clínica?" (conecta con la cuña demand-gen §S7) · "¿El drenaje ayuda a prevenir la fibrosis?". Fraseo confirmado con 2 web searches ES; respuestas derivadas de `problem`/`benefits`/`howItWorks`/`quickFacts` vetados.
+- **Compliance (página más pesada):** "prevenir la fibrosis" permitido (el usuario lo confirmó; ya es título de beneficio); **prohibido "cura/trata/elimina/resuelve la fibrosis"**; sin claims de complicación médica (seroma/trombosis); deferimiento al cirujano en 6/8/9. Ver `DECISIONS.md`.
+- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` **34/34 sin diffs** (snapshots de la landing = Viewport + carrusel, no la FAQ — sin re-baseline).
+- Spec/plan: `docs/superpowers/{specs,plans}/2026-08-28-postoperatorios-faq-paa*`. **Cierra el ítem #4 de la cola completo** (PRF en #3, limpieza `b7a6452`, postop `7d6126d`).
 
 ---
 

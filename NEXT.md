@@ -1,8 +1,9 @@
 # NEXT
 
-Estado: HEAD esperado `b7a6452` (+ commit de docs encima), árbol limpio, sin servers levantados.
+Estado: HEAD esperado `7d6126d` (+ commit de docs encima), árbol limpio, sin servers levantados.
 Sesión 2026-08-28: Track A #1 (`91bed37`), #2 (`4a4603e`), #3 (`cb53307`) + follow-ups
-cerrados y pusheados. FAQ #4 pág. 1/2 — `/limpieza-facial-profunda` (`b7a6452`) hecho.
+cerrados y pusheados. **Ítem #4 CERRADO** — FAQ PAA: PRF (#3), `/limpieza-facial-profunda`
+(`b7a6452`, 6→9), `/tratamientos-postoperatorios` (`7d6126d`, 5→9).
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
 `founderBioPage` ya es objeto standalone (sin refs a `aboutPage.*`); `/nosotros` = página del equipo;
@@ -41,20 +42,20 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    `knowsAbout` + `llms.txt`; nav/footer/cards con nombre ES completo limpio. FAQ del PRF landing
    reescrita 7→8 (voz de búsqueda, Q→A autocontenidas, +fillers/duración/efectos secundarios).
    `faq-consistency` count 7→8. Spec: `docs/superpowers/specs/2026-08-28-prf-canonical-naming-design.md`.
-4. **[M] ← PRÓXIMO** FAQ sembradas desde PAA reales — falta solo `/tratamientos-postoperatorios`
-   (PRF hecho en #3; `/limpieza-facial-profunda` hecho `b7a6452`, 6→9 ítems). Método fijado
-   (`DECISIONS.md` 2026-08-28): **sin Apify** — seeds EN del findings doc §189 + pase manual
-   `WebSearch` ES; evaluar append-only; sin ítem de precio; actualizar count en
-   `faq-consistency.spec.js` (hoy `/tratamientos-postoperatorios` = 5) misma commit; `test:visual`.
-   OJO postop: carga de compliance mayor (drenaje linfático, cirugía) — cross-check estricto
-   `MEDICAL_COMPLIANCE.md`, sin claims de resultado, sin diagnóstico. Spec/plan de la pág. 1
-   como plantilla: `docs/superpowers/{specs,plans}/2026-08-28-limpieza-facial-faq-paa*`.
-5. **[XL]** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
+4. ~~**[M/L]** FAQ sembradas desde PAA reales~~ ✅ HECHO — PRF (#3), `/limpieza-facial-profunda`
+   (`b7a6452`, 6→9; spec/plan `…limpieza-facial-faq-paa*`), `/tratamientos-postoperatorios`
+   (`7d6126d`, 5→9; spec/plan `…postoperatorios-faq-paa*`). Método: sin Apify, seeds §189 +
+   pase `WebSearch` ES, append-only, sin ítem de precio, count en `faq-consistency.spec.js`.
+   Ruling de compliance (`DECISIONS.md` 2026-08-28): "prevenir la fibrosis" OK, "cura/trata" no.
+5. **[L] ← PRÓXIMO (empatado con #6)** Estrategia PRF (Tema 4, must-win) — apropiarse de
+   "Plasma Rico en Plaquetas y Fibrina (PRF)", demand-gen vía ads (término real a nivel nacional,
+   0 competencia local). Content strategy con brainstorming.
+6. **[L] ← PRÓXIMO (empatado con #5)** Cuña postop demand-gen — GBP posts + FAQ + pieza
+   "por qué el postoperatorio importa" (pocos proveedores, cirujanos no lo recomiendan).
+   Audiencia real existente. (Del `/llm-council` de 4a: el Expansionist lo marcó como el
+   verdadero upside de esta área; va con su propio brainstorm, no como scope-creep de FAQ.)
+7. **[XL]** página "mejores med spa de WPB" (ruta+template+copy+schema+internal linking+
    compliance+baseline visual; brainstorm largo).
-6. **Estrategia PRF (Tema 4, must-win)** — apropiarse de "Plasma Rico en Plaquetas y Fibrina (PRF)",
-   demand-gen vía ads (término real a nivel nacional, 0 competencia local). Content strategy con brainstorming.
-7. **Cuña postop demand-gen** — GBP posts + FAQ + pieza "por qué el postoperatorio importa"
-   (pocos proveedores, cirujanos no lo recomiendan). Audiencia real existente.
 
 ## Bloqueado (espera al usuario / terceros)
 - **Yelp:** reclamarlo lo hace Nancy (dueña) — el listicle "TOP 10 BEST Medical Spas in WPB"

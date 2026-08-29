@@ -1,7 +1,20 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `d357419` (`fix(floating-whatsapp): hide
-the FAB when the footer scrolls into view`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `22507ae` (`feat(navbar): mobile-first top
+info bar…`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 13) — CERRADO:
+- **Navbar top info bar mobile-first.** Mobile (<768px): se oculta el label "West Palm Beach", se
+  muestran teléfono + WhatsApp (antes desktop-only). Ícono `Phone` + `aria-label` para que el número
+  se lea como teléfono (no nº de licencia). Tap target 15→27px. `test:visual` 34/34. `22507ae`.
+  Ver DECISIONS 2026-08-29.
+
+**EN DISCUSIÓN — `FloatingWhatsApp` helper/label/animación (mobile-first):** el usuario quiere reducir
+el ruido del helper bubble (aparece a los 3s, sin señal de intención) y, si se oculta el label,
+agregar una animación de atención al FAB. Análisis + opciones dados; recomendación = ocultar helper
+en mobile (FAB + su label ya bastan) + trigger por intención en desktop + énfasis de entrada del FAB
+(+ opcional ring de 3 pulsos, guardado por `prefers-reduced-motion`, pausa cuando el FAB está oculto).
+Pendiente: brainstorm → aprobación → implementar. NO empezado.
 
 Sesión 2026-08-29 (cont. 12) — CERRADO:
 - **Fix: el botón flotante de WhatsApp tapaba el footer.** `FloatingWhatsApp` se oculta cuando el

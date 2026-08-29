@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Fix: el botón flotante de WhatsApp tapaba el footer
+- `FloatingWhatsApp.jsx` + `.module.css` — el FAB (`position: fixed`) cubría el bloque legal/contacto del footer al llegar al fondo.
+- `IntersectionObserver` sobre `<footer>` (re-adquirido por ruta vía `useLocation`, el footer se monta por página) → clase `.hidden` (`opacity:0; translateY(24px); pointer-events:none`). Reaparece al scrollear arriba.
+- Verificado en `/` y `/contacto`. `test:visual` 34/34. Commit `d357419`.
+- Evaluación aparte (sin cambio): el CTA del navbar NO es redundante — navbar `sticky`, única acción de reserva persistente en desktop.
+
+
 ## 2026-08-29 — Footer: pulido 1d (blurb, nav, hubs, año) — cierra la auditoría del footer
 - `Footer.jsx` (1 componente): blurb "centro de estética, belleza y salud clínica" → "medical spa en West Palm Beach, Florida…"; se quita "Tratamientos" (→`/faciales`) de la col. Navegación (queda Inicio·Nosotros·Contacto); +IV Therapy +Capilar en la col. Tratamientos (eran 6 de 8 hubs; Dental afuera por el hold regulatorio); `© {getFullYear()}`.
 - Cross-check `MEDICAL_COMPLIANCE.md` OK. Sin `test:visual` (1 componente). Commit `6392595`. Ver DECISIONS 2026-08-29.

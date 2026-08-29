@@ -93,6 +93,7 @@ export const organizationNode = {
     'medical spa West Palm Beach, med spa West Palm Beach, medspa WPB, skin care clinic West Palm Beach, facial spa, laser hair removal West Palm Beach',
   sameAs: [
     'https://www.instagram.com/dermamskinhealth',
+    'https://www.tiktok.com/@derma.m',
     'https://www.facebook.com/DermaMskinhealth',
     'https://www.yelp.com/biz/derma-m-west-palm-beach',
     // TODO(8.19): añadir la URL de Google Maps del GBP cuando esté verificado

@@ -142,6 +142,26 @@
   flex-direction: row;
   gap: 24px;
   align-items: center;
+  margin-top: 28px;
+}
+
+.socialLink {
+  color: #CCC9C1;
+  display: inline-flex;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+@media (hover: hover) {
+  .socialLink:hover {
+    color: #F2F0F1;
+    opacity: 0.8;
+  }
+}
+
+.socialLink:focus-visible {
+  outline: 2px solid #F2F0F1;
+  outline-offset: 2px;
+  color: #F2F0F1;
 }
 
 /* Aviso Box */

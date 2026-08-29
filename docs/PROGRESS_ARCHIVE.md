@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Footer: horario en la columna Contacto (auditoría 1b)
+- `Footer.jsx` — línea "Horario: Lun–Sáb 9:00 AM – 5:00 PM · Dom 9:00 AM – 1:00 PM" después de la dirección. String = `Contacto.jsx:367` + `openingHoursSpecification`. Orden NAP: nombre → dirección → horario → tel → email → WhatsApp.
+- 1 componente → sin `test:visual`. Commit `2269fd9`.
+
+
 ## 2026-08-29 — Footer: links de redes (Instagram / TikTok / Facebook) + `sameAs` alineado (auditoría 1a)
 - `Footer.jsx` — fila de 3 links (24px) en la columna de marca, debajo de la descripción. IG + FB desde `lucide-react`; **TikTok como `<svg>` inline** (lucide 0.546 no trae el glifo). `aria-label` por link, `aria-hidden` en SVG, `:focus-visible`.
 - `Footer.module.css` — `.socialBlock` +`margin-top: 28px`; nueva `.socialLink`.

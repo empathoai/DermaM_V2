@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado `<Track A #3 commit>`, pusheado, árbol limpio. Dev server `:3000` levantado
+Estado: HEAD esperado `cb53307`, pusheado, árbol limpio. Dev server `:3000` levantado
 (browser pane) — detener al cierre de sesión.
 **Plan founder-content-architecture CERRADO** — Ciclo 1 (Home, `fd39a56`), Ciclo 2 (`5223f2d`+`c1cf90a`),
 Ciclo 2b (`ad2be76`+`d2afee9`) y Ciclo 3 (`/nosotros/nancy-nieto` standalone, `45e7a5c`) hechos y pusheados.
@@ -35,7 +35,7 @@ capturar data antes · **XL** página/feature nueva entera (ruta+template+copy+s
    consistencia NAP: sub-tag de hero → `Medical Spa · West Palm Beach, FL` en fuente única
    `src/data/siteMeta.js` (`HERO_LOCAL_TAG`), ~10 call sites importan. §S5.2 del findings doc
    quedó obsoleto. Spec: `docs/superpowers/specs/2026-08-28-hero-localtag-city-state-consistency-design.md`.
-3. ~~**[M]** naming PRF canónico + FAQ del PRF landing~~ ✅ HECHO (Track A #3 commit `<pending>`).
+3. ~~**[M]** naming PRF canónico + FAQ del PRF landing~~ ✅ HECHO (Track A #3 commit `cb53307`).
    "(PRF)" en title/og/twitter + H1 + `Service.name` (+`alternateName`) + `BreadcrumbList` +
    `knowsAbout` + `llms.txt`; nav/footer/cards con nombre ES completo limpio. FAQ del PRF landing
    reescrita 7→8 (voz de búsqueda, Q→A autocontenidas, +fillers/duración/efectos secundarios).

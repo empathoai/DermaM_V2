@@ -1,8 +1,17 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `b4c354e`
-(`fix(nancy): spotlight rows grow to fit text instead of clipping`). Árbol limpio, sin servers
-salvo el `:3000` del browser pane.
+Estado: HEAD esperado = commit del ritual de docs sobre `29e48aa`
+(`fix(home): align CTA container to shared FinalCTA, drop WPB/phone line`). Árbol limpio, sin
+servers salvo el `:3000` del browser pane.
+
+Sesión 2026-08-29 (cont. 3) — CERRADO:
+- **Home CTA: contenedor alineado a `shared/FinalCTA`** — `.container` de `sections/FinalCTA.module.css`
+  pierde `min-height: 75vh` y el override de padding; queda `clamp(80px,12vw,160px) clamp(24px,4vw,64px)`.
+  Sección 990px → 763px, sin efecto "zoom" en la imagen. Los 2 componentes `FinalCTA` NO se unificaron
+  (blast radius de `shared`). Ver DECISIONS 2026-08-29.
+- **Línea `supportingInfo` fuera** del CTA del Home ("West Palm Beach · 561 253 5384"). Commit `29e48aa`.
+  `test:visual` 34/34 (el CTA del Home es below-the-fold en los snapshots).
+- **Auditoría del footer** (read-only, sin código) — 7 hallazgos → cola de pulido abajo. DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 2) — CERRADO:
 - **`/nancy-nieto` sección Academy → 2 columnas** (formato `.spotlight*` de "Historia", imagen a la
@@ -91,6 +100,17 @@ antes de cada tanda.
 2. **Link contextual Home → `/nosotros/nancy-nieto`** — [XS/S]. Enlazar el bloque de fundadora de Home
    (foto de Nancy en `FeaturedServices`/founder) a su bio. Fix parcial de orfandad; blast radius local
    a Home. Ver DECISIONS 2026-08-29.
+3. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 3a → 3b → 3c; 3d agrupable.
+   - **3a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
+     **no renderiza redes**. Cablear links a IG/FB (URLs en `organizationSchema.js` `sameAs`) o borrar
+     el código muerto. Footer entra en varios snapshots → `test:visual` completo.
+   - **3b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
+   - **3c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
+     y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.
+   - **3d** [XS]: blurb dice "salud clínica" → cambiar a "med spa / medspa en West Palm Beach" (entidad
+     consistente, keyword local); "Tratamientos" (col. Navegación) apunta a `/faciales` (label→destino
+     incoherente); col. "Tratamientos" lista 3 de 6 hubs (falta IV Therapy + Capilar; Dental se omite
+     a propósito por §Bloqueado dental); `© 2026` hardcodeado → año dinámico.
 
 Sin ítem de doc-hygiene pendiente por ahora.
 

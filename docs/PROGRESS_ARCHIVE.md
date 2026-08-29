@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — `/nancy-nieto` sección Academy → 2 columnas (formato spotlight) + link saliente
+- **Sección 4 de `FounderBioPage` ("DERMA.M y DERMA.M Academy")** pasó de prosa a una sola columna al **patrón `.spotlight*` de la sección "Historia"**: panel de texto + imagen a sangre completa. Espejada → imagen a la **derecha** (Historia la tiene a la izquierda). Imagen: `public/assets/images/about/dermam-academy.jpg` (webp), alt español trazable.
+- **Link saliente seguido** "Conoce DERMA.M Academy ↗" a `https://dermamacademy.com` (`target=_blank rel="noopener noreferrer"`, sin `nofollow`) — refuerza desambiguación de entidad med spa ≠ academy (audit 8.19). Data: `href` + `linkLabel` nuevos en `dermamYAcademy` (`src/data/aboutPage.js`).
+- **`.spotlightRow` desktop: `height` fijo → `min-height`** — la fila ahora crece hasta encajar el texto. Arregla el clipping de los 2 párrafos largos de "Historia" contra los 800px fijos. Afecta secciones 2 y 4 (únicas que usan `.spotlightRow`).
+- **Evaluado y descartado: link a `/nosotros/nancy-nieto` en el navbar** — costo > ganancia SEO/E-E-A-T blanda. Fix real de la orfandad = entrada en `sitemap.xml` en el deploy + link contextual desde Home. Ver DECISIONS 2026-08-29.
+- **Verificación:** `npm run test:visual` 34/34 sin diffs (2 corridas). Salvedad: los baselines de `nancy-nieto` capturan solo el viewport above-the-fold.
+- Spec: `docs/superpowers/specs/2026-08-29-nancy-academy-two-column-design.md` · Plan: `docs/superpowers/plans/2026-08-29-nancy-academy-two-column.md`.
+
+
 ## 2026-08-29 — Skill `add-media` (proceso para agregar imágenes/videos)
 - **Nueva skill project-local `add-media`** en `.agents/skills/add-media/SKILL.md` + copia sincronizada en `.claude/skills/add-media/SKILL.md`. SKILL.md en inglés (doc de tooling).
 - Define 3 procedimientos: **Acción A** rellenar slot existente (ruta en `src/data/*.js` sin archivo en disco), **Acción B** slot de media nuevo (gate de brainstorming previo), **Acción C** video de fondo de hero. Envuelve `assets-optimizer` (llama sus scripts), no lo reemplaza.

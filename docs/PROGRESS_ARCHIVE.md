@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — `/nancy-nieto`: `.spotlightTitle` desktop 56px → 44px
+- `FounderBioPage.module.css` `@media (min-width:1024px)` `.spotlightTitle`: **56px → 44px**. Base 40px (mobile/tablet) sin tocar.
+- Motivo: 56px era casi indistinguible del H1 de hero (64px) y empujaba los títulos largos de "Historia" y "Academy" a 4 líneas en la columna angosta. Ahora "Historia" son 3 líneas; jerarquía 64→44 clara.
+- Afecta las 2 secciones que comparten `.spotlightTitle` (Historia + Academy) — quedan consistentes.
+- **Verificación:** `npm run test:visual` 34/34 sin diffs (el H2 está fuera del viewport del snapshot `nancy-nieto`).
+
+
 ## 2026-08-29 — Home CTA: contenedor alineado a `shared/FinalCTA` + línea WPB/teléfono fuera
 - **`sections/FinalCTA.module.css` `.container`**: se quitó `min-height: 75vh` y el override de padding de `120px 64px`; ahora `padding: clamp(80px,12vw,160px) clamp(24px,4vw,64px)` = mismo que `shared/FinalCTA`. Sección del Home **990px → 763px**, sin efecto "zoom" en la imagen de fondo.
 - **Línea `supportingInfo` eliminada** ("West Palm Beach · 561 253 5384") — JSX + regla CSS (muerta). Pedido explícito.

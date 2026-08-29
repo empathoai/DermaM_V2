@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from "motion/react";
 import HeroMedia from '../../utils/HeroMedia';
 import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './Hero.module.css';
 
 export default function Hero({ backgroundImage, image }) {
+  const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
   const mediaSrc = backgroundImage || image || '/assets/images/home/hero.mp4';
   const [mediaReady, setMediaReady] = useState(!mediaSrc);
 
@@ -77,12 +79,12 @@ export default function Hero({ backgroundImage, image }) {
 
               {/* CTAs */}
               <div className="mt-8 lg:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-5 sm:gap-6 w-full sm:w-auto">
-                <button className="bg-[#F2F0F1] border border-[#F2F0F1] text-[#141313] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center hover:bg-[#CCC9C1] hover:border-[#CCC9C1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
+                <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-[#F2F0F1] border border-[#F2F0F1] text-[#141313] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center no-underline hover:bg-[#CCC9C1] hover:border-[#CCC9C1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
                   Reservar
-                </button>
-                <button className="bg-transparent border border-[#f2f0f1]/32 text-[#F2F0F1] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center hover:bg-[#f2f0f1]/5 hover:border-[#F2F0F1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
+                </a>
+                <Link to="/contacto" className="bg-transparent border border-[#f2f0f1]/32 text-[#F2F0F1] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center no-underline hover:bg-[#f2f0f1]/5 hover:border-[#F2F0F1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
                   Contacto
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>

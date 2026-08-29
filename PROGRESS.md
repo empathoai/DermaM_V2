@@ -2,13 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-28 — Ítem #5: estrategia de contenido PRF consolidada (doc interno, sin cambio on-site)
-- **Cambio:** se escribió `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md` — consolida en una sola spec el research disperso (`COMPETENCIA-SERVICIOS-2026.md` §1a/§S1/§S5/§S7 + `INTAKE.md:188-190`, que decía textual "estrategia no resuelta"). **Cero cambios en `src/`, schema, archivos protegidos o baselines visuales.** `docs/` es gitignored → la spec vive en disco; solo se commitean PROGRESS/DECISIONS/NEXT.
-- **Posición fijada:** (1) defender/ensanchar el término ES completo "Plasma Rico en Plaquetas y Fibrina (PRF)" (Derma.M ya #1 sin geo); (2) apropiarse del cluster informacional/comparativo ("qué es el PRF", "PRF vs PRP", "vs fillers", "vs PDGF", "duración") — 0 competencia local; (3) NO pelear `PRP facial`/`vampire facial`/`bioestimulación` (saturado); (4) PRPF nunca, PRP pelado nunca (mercado ortopédico).
-- **Arquitectura de contenido:** enriquecer el landing existente (secciones comparativas + tabla) + expandir FAQ; **sin ruta nueva ahora**. Guía pilar y página EN quedan condicionales a que el landing enriquecido rankee / a que el tráfico EN de ads convierta.
-- **Ads = capa especificada, no ejecutada:** Google Search (captura de intención) + Meta (demand-gen real, audiencias latinas South FL); ambos al mismo landing ES bilingüe. El doc define ángulos/audiencias/términos; el gasto y la operación de campañas son decisión del usuario, ningún ciclo hijo invoca el MCP de Meta Ads.
-- Spec §8 lista los 4 ciclos hijo (cada uno brainstorm→aprobación→1 cambio). **Ítem #5 cerrado como estrategia registrada.**
+## 2026-08-29 — Ítem #5b: 4 FAQ comparativas en `/prf-y-fibrina` (8 → 12)
+- **Cambio:** append de 4 ítems a `prfYFibrina.faq.items` (`src/data/landingPages.js`), posiciones 9–12; los 8 existentes intactos. `tests/faq-consistency.spec.js` count `/prf-y-fibrina` 8 → 12. `FAQPage.mainEntity` auto-derivado. Commit `293f8d2`.
+- **Ítems:** "¿El PRF es mejor que el PRP?" (posiciona el PRF como evolución por **mecanismo** — matriz de fibrina → liberación sostenida vs liberación inicial única; **sin claim de superioridad** en el body) · "¿El PRF ayuda con las marcas del post-acné?" (deriva de `problem.list`) · "¿Hay personas que no deberían hacerse PRF?" (contraindicaciones, deriva del ítem 8) · "¿En qué zonas del cuerpo puede aplicarse el PRF?" (rostro + contorno de ojos/boca, escote, manos, orejas, cuero cabelludo — lista confirmada por la dueña).
+- **Alcance recortado:** ítem #5a de la spec (secciones comparativas vs PRP/fillers/PDGF + tabla) **descartado** tras review — la FAQ ya carga la intención comparativa y una tabla médica "X vs Y" abría un tipo de sección nuevo en `LandingPage` + baseline + exposición a claim de superioridad, sin justificarse en un sitio near-final. Sin PDGF (sin fuente vetada). Sin ángulo "West Palm Beach" en respuestas (sin fuente + roza claim de foto-daño + geo ya cubierto por schema/H1).
+- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` **34/34 sin diffs** (snapshot de la landing = Viewport, no la FAQ — sin re-baseline) · cross-check `MEDICAL_COMPLIANCE.md` OK.
+- Spec/plan: `docs/superpowers/{specs,plans}/2026-08-29-prf-landing-faq-comparative-cluster*`. Cierra el ciclo hijo #2 de la spec de estrategia PRF.
 
 ---
 
-**Historia anterior:** ver [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md) (entradas de sesiones cerradas hasta 2026-08-28).
+**Historia anterior:** ver [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md) (entradas de sesiones cerradas hasta 2026-08-29).

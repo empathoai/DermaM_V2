@@ -289,12 +289,8 @@
   .spotlightRow {
     flex-direction: row;
     align-items: stretch;
-    height: clamp(680px, 44vw, 800px);
-  }
-
-  /* Academy row carries an extra link; let it grow past the fixed height */
-  .spotlightRowAcademy {
-    height: auto;
+    /* min-height, not height: the row grows to fit its text (long bodies, the
+       Academy row's extra link) instead of clipping it */
     min-height: clamp(680px, 44vw, 800px);
   }
 

@@ -115,7 +115,7 @@ export default function FounderBioPage({ data }) {
         aria-labelledby="academy-heading"
       >
         <div className={styles.spotlightContainer}>
-          <div className={`${styles.spotlightRow} ${styles.spotlightRowAcademy}`}>
+          <div className={styles.spotlightRow}>
             <motion.div
               className={styles.spotlightContent}
               initial="hidden"

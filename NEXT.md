@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado `7d6126d` (+ commit de docs encima), árbol limpio, sin servers levantados.
+Estado: HEAD esperado `ec61d89`, pusheado, árbol limpio, sin servers levantados.
 Sesión 2026-08-28: Track A #1 (`91bed37`), #2 (`4a4603e`), #3 (`cb53307`) + follow-ups
 cerrados y pusheados. **Ítem #4 CERRADO** — FAQ PAA: PRF (#3), `/limpieza-facial-profunda`
 (`b7a6452`, 6→9), `/tratamientos-postoperatorios` (`7d6126d`, 5→9).

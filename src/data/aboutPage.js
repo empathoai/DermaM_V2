@@ -226,7 +226,9 @@ export const founderBioPage = {
     eyebrow: "DERMA.M Y DERMA.M ACADEMY",
     headline: "UN ESPACIO PARA CUIDAR Y UN PROYECTO PARA FORMAR",
     body: "Con esa visión, Nancy creó DERMA.M: un espacio donde la ciencia, la experiencia y la atención humana se unen para ofrecer tratamientos seguros, éticos y orientados a resultados reales. De su mano nació también DERMA.M Academy, un proyecto que refleja su compromiso con la excelencia, la educación continua y el crecimiento profesional dentro de la industria de la estética.",
-    secondaryBody: "Hoy continúa preparándose con el mismo entusiasmo que la impulsó desde el primer día. Su meta es seguir haciendo crecer DERMA.M para generar oportunidades a otras mujeres profesionales e inspirarlas a creer en su potencial."
+    secondaryBody: "Hoy continúa preparándose con el mismo entusiasmo que la impulsó desde el primer día. Su meta es seguir haciendo crecer DERMA.M para generar oportunidades a otras mujeres profesionales e inspirarlas a creer en su potencial.",
+    href: "https://dermamacademy.com",
+    linkLabel: "Conoce DERMA.M Academy"
   },
   quote: {
     text: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso. Cuando ayudamos a alguien a sentirse mejor consigo mismo, también estamos cambiando su día, su confianza y, muchas veces, una parte importante de su vida.",

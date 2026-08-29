@@ -1,10 +1,16 @@
 # NEXT
 
-Estado: HEAD esperado = `15fbc5a` + 1 commit de sanity check de docs (registro de estado de deploy
-+ doc-hygiene XS: GA4 hecho en 8.17, ítems 7.3/7.4 cerrados). Árbol limpio, sin servers salvo el
-`:3000` del browser pane.
+Estado: HEAD esperado = commit `feat(skills): add-media` sobre `323d7d8` (skill `add-media`;
+sin cambios de código de sitio). Árbol limpio, sin servers salvo el `:3000` del browser pane.
+**Push pendiente de confirmación.**
 
-Sesión 2026-08-29 (3 ciclos):
+Sesión 2026-08-29 (cont.):
+- **Skill `add-media` creada** — `.agents/skills/add-media/SKILL.md` + copia en `.claude/skills/`.
+  3 acciones: A (rellenar slot existente), B (slot nuevo, gate brainstorming), C (video de hero).
+  Envuelve `assets-optimizer`. Handoff de archivos crudos = `scratchpad/media-in/`.
+  Spec: `docs/superpowers/specs/2026-08-29-add-media-skill-design.md`.
+
+Sesión 2026-08-29 (3 ciclos previos):
 - **Ítem #5b CERRADO** (`293f8d2`) — 4 FAQ comparativas en `/prf-y-fibrina` (count 8→12). Ítem #5a DESCARTADO.
 - **Ítem #6 CERRADO** — cuña postop demand-gen: 3 FAQ en `/tratamientos-postoperatorios` (count 9→12).
 - **Ítem "mejores med spa de WPB" [XL] DESCARTADO** → resuelto como 1 FAQ en `/contacto` (`contactFaq`
@@ -34,7 +40,21 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 
 ## Próximo (en orden de size)
 
-**Cola de código no bloqueada: vacía.** Todo lo abierto es condicional o backlog off-site.
+**Integración de media faltante — usar la skill `add-media`, Acción A, un slot por ciclo.**
+Bloqueado en input del usuario: hay que dejar los archivos crudos en `scratchpad/media-in/` y
+confirmar el mapeo 1 archivo ↔ 1 slot antes de procesar. Slots vacíos hoy (todos `/nosotros`):
+- `/assets/images/about/hero.jpg`
+- `/assets/images/about/team/{melisa-rios,mikaela-guajardo,daniela-parra,elianne-trujillo,samantha-atencio,tony-diaz}.jpg`
+- `/assets/images/about/team/{samantha-atencio,tony-diaz}.mp4`
+Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español → render `:3000` →
+`test:visual` re-baseline → WCAG → ritual). Nombres `hero.jpg`/`<slug>.jpg` se mantienen (los
+data refs de `aboutPage.js` ya los usan; renombre SEO 7.1 sería sub-ciclo aparte).
+
+Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
+`grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
+antes de cada tanda.
+
+**Cola de código no bloqueada: vacía.** Todo lo demás abierto es condicional o backlog off-site.
 Sin ítem de doc-hygiene pendiente por ahora.
 
 **Para cerrar el proyecto solo falta (NO es código, NO es este workflow):**

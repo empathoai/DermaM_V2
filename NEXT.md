@@ -1,8 +1,18 @@
 # NEXT
 
-Estado: HEAD esperado = commit `docs(specs): academy block + reviews 8.20 rescope` sobre
-`dec374c` (2 specs draft; sin cambios de código de sitio). Árbol limpio, sin servers salvo el
-`:3000` del browser pane.
+Estado: HEAD esperado = commit del ritual de docs sobre `b4c354e`
+(`fix(nancy): spotlight rows grow to fit text instead of clipping`). Árbol limpio, sin servers
+salvo el `:3000` del browser pane.
+
+Sesión 2026-08-29 (cont. 2) — CERRADO:
+- **`/nancy-nieto` sección Academy → 2 columnas** (formato `.spotlight*` de "Historia", imagen a la
+  **derecha**) + **link saliente seguido** a `dermamacademy.com` ("Conoce DERMA.M Academy ↗",
+  refuerza audit 8.19). Data `href`/`linkLabel` en `dermamYAcademy` (`aboutPage.js`).
+- **`.spotlightRow` desktop: `height` fijo → `min-height`** — arregla clipping de texto en
+  secciones 2 y 4. Commits `f357fc4`→`b4c354e`. `test:visual` 34/34 (2×), sin diffs.
+- **Evaluado y descartado:** link a `/nosotros/nancy-nieto` en el navbar (costo > ganancia blanda).
+  Fix de orfandad queda como 2 ítems abajo. Ver DECISIONS 2026-08-29.
+- Spec/plan: `docs/superpowers/{specs,plans}/2026-08-29-nancy-academy-two-column*` (gitignored).
 
 Sesión 2026-08-29 (cont.):
 - **Skill `add-media` creada** — `.agents/skills/add-media/SKILL.md` + copia en `.claude/skills/`.
@@ -72,7 +82,16 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada: vacía.** Todo lo demás abierto es condicional o backlog off-site.
+**Cola de código no bloqueada (en orden de size):**
+1. **`.spotlightTitle` 56px en `/nancy-nieto`** — [XS]. El usuario observó que el H2 de la sección
+   "Historia" (`FounderBioPage.module.css:344`, `@media min-width:1024px`) se ve muy grande / rompe
+   en 4 líneas; jerarquía débil vs el H1 de hero (64px). Propuesta parkeada: bajar a ~44px. Cambio
+   visual → brainstorm → aprobación → re-baseline `nancy-nieto` (nota: el baseline solo captura
+   above-the-fold, y este H2 sí entra en viewport).
+2. **Link contextual Home → `/nosotros/nancy-nieto`** — [XS/S]. Enlazar el bloque de fundadora de Home
+   (foto de Nancy en `FeaturedServices`/founder) a su bio. Fix parcial de orfandad; blast radius local
+   a Home. Ver DECISIONS 2026-08-29.
+
 Sin ítem de doc-hygiene pendiente por ahora.
 
 **Para cerrar el proyecto solo falta (NO es código, NO es este workflow):**
@@ -108,6 +127,9 @@ con el usuario logueado, no toca `src/`. Sin prioridad asignada.
   Al deployar en Hostinger: reemplazar `public/.htaccess` con el bloque de
   `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8, verificar con el script `curl -I` del mismo doc,
   y recién ahí corregir `docs/seo-setrategies/INTAKE.md:56` ("deploy en Vercel" → Hostinger/Apache).
+  **Aprovechar la tanda para agregar `/nosotros/nancy-nieto` a `public/sitemap.xml`** (priority ~0.6):
+  hoy está ausente y es casi huérfana (1 solo link entrante). `sitemap.xml` es archivo protegido → no
+  tocar antes del deploy. Ver DECISIONS 2026-08-29.
   Condiciona la verificación GSC por Dominio.
 - Nota operativa para la clínica: servicio postop tiene punto débil documentado (ayuda con la faja +
   protección ocular en luz LED) — de las 2 reseñas negativas.

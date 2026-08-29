@@ -1,7 +1,8 @@
 # NEXT
 
-Estado: HEAD esperado = `2b49029` (`contactFaq` 5→6 + `faq-consistency` count `/contacto` 5→6
-+ docs de cierre) pusheado, árbol limpio, sin servers levantados salvo el `:3000` del browser pane.
+Estado: HEAD esperado = `15fbc5a` + 1 commit de sanity check de docs (registro de estado de deploy
++ doc-hygiene XS: GA4 hecho en 8.17, ítems 7.3/7.4 cerrados). Árbol limpio, sin servers salvo el
+`:3000` del browser pane.
 
 Sesión 2026-08-29 (3 ciclos):
 - **Ítem #5b CERRADO** (`293f8d2`) — 4 FAQ comparativas en `/prf-y-fibrina` (count 8→12). Ítem #5a DESCARTADO.
@@ -36,6 +37,11 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 **Cola de código no bloqueada: vacía.** Todo lo abierto es condicional o backlog off-site.
 Sin ítem de doc-hygiene pendiente por ahora.
 
+**Para cerrar el proyecto solo falta (NO es código, NO es este workflow):**
+1. Subir el sitio a **Hostinger/Apache** (prod real; Vercel es solo demo para el cliente).
+2. Verificar **GSC** por Dominio una vez en Hostinger + DNS.
+Ver §Bloqueado para el detalle de `.htaccess` y el orden de pasos.
+
 Condicionales (no ejecutar sin que se cumpla la condición):
 - **Pieza/sección "por qué el postoperatorio importa"** — sección nueva en `LandingPage` (+ baseline visual)
   o ruta nueva. Solo si `/tratamientos-postoperatorios` gana tracción. Material ya vetado en el spec de #6.
@@ -57,9 +63,10 @@ con el usuario logueado, no toca `src/`. Sin prioridad asignada.
 - **Dental en el sitio:** `/dental-estetico` hub + blanqueamiento + limpieza dental en vivo. Mismo riesgo
   regulatorio que sacó dental del GBP — evaluar si las páginas deben salir/reencuadrarse. Ciclo aparte,
   decisión del usuario. No tocar sin pedido explícito.
-- Deploy: **estado actual** = deploy automático en Vercel en cada push. Falta la subida a Hostinger/Apache;
-  no tocar nada de Hostinger (ni `.htaccess`, ni corregir refs de docs que digan "Vercel") hasta que el
-  usuario diga explícitamente "vamos a hacer el deploy en Hostinger".
+- Deploy: **estado actual** = Vercel auto en cada push, **solo como demo para el cliente**.
+  **Prod real = Hostinger/Apache, pendiente de implementar.** No tocar nada de Hostinger (ni `.htaccess`,
+  ni corregir refs de docs que digan "Vercel") hasta que el usuario diga explícitamente "vamos a hacer el
+  deploy en Hostinger".
   Al deployar en Hostinger: reemplazar `public/.htaccess` con el bloque de
   `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8, verificar con el script `curl -I` del mismo doc,
   y recién ahí corregir `docs/seo-setrategies/INTAKE.md:56` ("deploy en Vercel" → Hostinger/Apache).

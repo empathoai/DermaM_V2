@@ -3,6 +3,14 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — "Mejores med spa de WPB": ítem [XL] descartado → 1 FAQ en `/contacto` (5 → 6)
+- **Decisión de alcance:** el ítem #1 de `NEXT.md` ("página mejores med spa de West Palm Beach", [XL]) se saca de la cola. Origen real = premio BusinessRate.com, ya descartado 2026-08-27 (`INTAKE.md:66`). Sin premio, página nueva = XL con impacto B-tier; palanca real es off-site (Yelp/reseñas).
+- **Cambio:** append de 1 ítem a `contactFaq.items` (`src/data/contactPage.js`), pos. 6; los 5 existentes intactos. `tests/faq-consistency.spec.js` count `/contacto` 5 → 6.
+- **Ítem:** "¿Cómo elijo un buen med spa en West Palm Beach?" — responde la decisión (licencia + quién ejecuta + valoración previa + idioma), sin claim de superioridad. Derma.M vía hechos verificables + diferenciador relacional.
+- **Verificación:** `faq-consistency` 12/12 · `npm run test:visual` 34/34 sin diffs · cross-check `MEDICAL_COMPLIANCE.md` OK.
+- Spec: `docs/superpowers/specs/2026-08-29-contacto-faq-med-spa-eleccion-design.md`.
+
+
 ## 2026-08-29 — Ítem #6: cuña postop demand-gen — 3 FAQ en `/tratamientos-postoperatorios` (9 → 12) + spec GBP/ads
 - **Cambio:** append de 3 ítems a `postoperatorios.faq.items` (`src/data/landingPages.js`), posiciones 10–12; los 9 existentes intactos. `tests/faq-consistency.spec.js` count `/tratamientos-postoperatorios` 9 → 12. `FAQPage.mainEntity` auto-derivado.
 - **Ítems (derivados de 2 transcripts de video de ads de la clínica, 2026-08-29):** "¿Son suficientes 6 u 8 sesiones de masajes postoperatorios?" (mito → no; etapas) · "¿Por qué conviene continuar el acompañamiento después de que baja la inflamación?" (el drop-off; fase de reparación) · "¿Debo hacer drenaje postoperatorio si mi cirujano no me lo indicó?" (demand-gen core → consultar en el control). Marco de **dos fases** (activa intensiva + mantenimiento espaciado); el ítem viejo de "10 a 15 sesiones" **no se tocó**.

@@ -239,7 +239,7 @@ Leyenda: ✅ cumple · ⚠️ parcial / con reservas · ❌ falta · ➖ no apli
 | **8.12** robots.txt directivas IA | **Confirmado ×4** (council + 2 reports + Google + scan). Riesgo cero. Taxonomía lista en §4. | **1 — hacer ya** |
 | **8.14** `sameAs` en JSON-LD | **Confirmado** (Google textual). Hoy es autorreferencia inútil → apuntar a GBP/redes reales. Riesgo cero. | **2 — hacer ya** |
 | **5.6** `aggregateRating` sin reviews visibles | **NUEVO — Alta.** Riesgo de acción manual + compliance. Verificar con usuario → mostrar reviews o quitar schema. | **3 — decidir ya** |
-| **8.17** GSC + GA4 (+ Bing WT) | **Confirmado prerequisito.** Sin esto no se validan 8.11/8.13/8.15/8.16. Agregar Bing Webmaster Tools (única analítica de citación IA). Config externa, no toca código. | **4 — desbloquea el resto** |
+| **8.17** GSC + GA4 (+ Bing WT) | **GA4 hecho (2026-08-28, `G-9272VHFT03`).** Falta GSC (verificación por Dominio, recién con el sitio en Hostinger + DNS) y Bing WT. Sin GSC no se validan 8.11/8.13/8.15/8.16. Config externa, no toca código. | **4 — desbloquea el resto** |
 | **8.11** SSR / client-render | **Sigue especulativo.** Evidencia nueva (shell 432 B) pero sin datos de indexación. Veredicto del council intacto: medir en GSC primero. | Bloqueado por 8.17 |
 | **8.13** "Cite sources" en copy médico | **Baja de peso** — sin corroboración en fuentes primarias. Re-enfocar como mejora de claridad/conversión + RASTRO, con sign-off de compliance por página. | Post-8.17, multi-sesión |
 | **8.15** RASTRO/densidad en hubs y templates | **Sube ligeramente** (RASTRO lo respalda como editorial). Mejora de conversión, no palanca de ranking. `BreadcrumbList` en templates entra acá. | Post-8.17 |

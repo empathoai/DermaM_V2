@@ -1,7 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `43dc34b` (`feat(home): point founder
-section link to Nancy's bio page`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit del ritual de docs sobre `b30f01a` (`feat(footer): add Instagram /
+TikTok / Facebook social links`). Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 8) — CERRADO:
+- **Footer: fila de redes** (Instagram · TikTok · Facebook) en la columna de marca, debajo de la
+  descripción. IG/FB de lucide; TikTok `<svg>` inline (lucide no lo trae). +`tiktok.com/@derma.m`
+  en `sameAs` de `organizationSchema.js`. Cierra **ítem 1a** de la auditoría del footer.
+  3 archivos. `test:visual` 34/34 — el footer no está en ningún snapshot. Ver DECISIONS 2026-08-29.
 
 Sesión 2026-08-29 (cont. 7) — CERRADO:
 - **Home `FounderSection` → link a la bio de Nancy.** `founderPrimer` (`aboutPage.js`): `linkTo`
@@ -115,10 +121,8 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 antes de cada tanda.
 
 **Cola de código no bloqueada (en orden de size):**
-1. **Footer — hallazgos de auditoría** (DECISIONS 2026-08-29). Prioridad: 1a → 1b → 1c; 1d agrupable.
-   - **1a** [S]: `Footer.jsx` importa `Instagram/Facebook` (lucide) + tiene `.socialBlock` CSS pero
-     **no renderiza redes**. Cablear links a IG/FB (URLs en `organizationSchema.js` `sameAs`) o borrar
-     el código muerto. Footer entra en varios snapshots → `test:visual` completo.
+1. **Footer — hallazgos de auditoría restantes** (DECISIONS 2026-08-29). `1a` (redes) HECHO en `b30f01a`.
+   El footer NO está en ningún snapshot de `test:visual` → verificar a ojo en `:3000`.
    - **1b** [XS]: falta el horario en el footer (Contacto: "Lun-Sáb 9:00–17:00 · Dom 9:00–13:00").
    - **1c** [XS/S]: bloque legal incompleto — bottom bar solo Privacidad + Términos. Sumar `/accessibility`
      y `/legal` (hub). `/treatment-disclaimer` y `/booking-cancellation-refund-policy` opcionales.

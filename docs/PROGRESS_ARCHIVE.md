@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Home: link de la sección de fundadora → bio de Nancy (fix de orfandad)
+- `src/data/aboutPage.js` `founderPrimer`: `linkTo` `/nosotros` → **`/nosotros/nancy-nieto`**; `linkLabel` "Conoce a Nancy y al equipo" → **"Conoce a Nancy Nieto"**.
+- `FounderSection` del Home es 100% sobre Nancy → su bio es el destino natural. `/nosotros/nancy-nieto` pasa de 1 a 2 links internos entrantes, el 2º desde la Home con ancla de nombre completo (8.19). `/nosotros` sigue en navbar + footer.
+- **Verificación:** click probado en `:3000`. Data-only → **sin `test:visual`** (gate nuevo, ver DECISIONS 2026-08-29).
+- Falta el 2º paso (entrada en `sitemap.xml`), atado al deploy a Hostinger.
+
+
 ## 2026-08-29 — BUG fix: los CTA del hero del Home no navegaban
 - `src/components/sections/Hero/Hero.jsx` — "Reservar" y "Contacto" eran `<button>` sin `onClick`/`href` (residuo del scaffold de AI Studio) → click sin efecto.
 - Fix (patrón de `PageHero`/`FinalCTA`): "Reservar" → `<a href={bookingUrl} target="_blank" rel="noopener noreferrer">`; "Contacto" → `<Link to="/contacto">`. Añadido `import { Link }` + const `bookingUrl`, clase `no-underline`.

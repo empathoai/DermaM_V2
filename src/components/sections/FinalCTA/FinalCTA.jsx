@@ -41,10 +41,6 @@ export default function FinalCTA() {
             Agenda tu cita en Derma.M y recibe una orientación profesional según tu piel, tu cuerpo y tus objetivos.
           </p>
           
-          <p className={styles.supportingInfo}>
-            West Palm Beach &middot; <a href="tel:+15612535384" style={{ color: 'inherit', textDecoration: 'none' }}>561 253 5384</a>
-          </p>
-
           <div className={styles.buttonGroup}>
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.primaryButton}>
               Reservar

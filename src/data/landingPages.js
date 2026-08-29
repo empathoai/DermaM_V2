@@ -305,6 +305,18 @@ export const landingPages = {
         {
           question: '¿La limpieza facial profunda es lo mismo que un deep cleansing facial?',
           answer: 'Sí. Deep cleansing facial es el nombre en inglés de la limpieza facial profunda. El protocolo incluye la extracción de impurezas y puntos negros, y se adapta a pieles grasas o con tendencia acneica ajustando los activos y la presión sobre la piel.'
+        },
+        {
+          question: '¿Para qué sirve una limpieza facial profunda?',
+          answer: 'Sirve para remover impurezas, puntos negros y células muertas acumuladas en el poro, y para dejar la piel preparada para absorber mejor tus activos de cuidado en casa. Antes de empezar valoramos el estado visible de tu piel y te explicamos qué esperar en cada paso.'
+        },
+        {
+          question: '¿Cuánto dura la sesión?',
+          answer: 'La sesión dura alrededor de 60 minutos e incluye valoración inicial, preparación de la piel, la limpieza profunda y un cuidado final con recomendaciones para casa. Nos tomamos el tiempo de explicarte cada etapa mientras avanzamos.'
+        },
+        {
+          question: '¿Cuál es la diferencia entre una limpieza facial básica y una limpieza facial profunda?',
+          answer: 'La limpieza facial profunda incluye extracción de impurezas y puntos negros y un protocolo adaptado a tu tipo de piel, con activos y presión ajustados a lo que necesita tu cutis. Una limpieza básica es una higiene más superficial, de mantenimiento, sin ese trabajo de extracción. En la valoración definimos cuál se ajusta a tus objetivos.'
         }
       ]
     },

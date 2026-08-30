@@ -190,8 +190,21 @@ export const founderBioPage = {
   historia: {
     eyebrow: "FORMACIÓN Y TRAYECTORIA",
     headline: "UNA PROFESIONAL FORMADA EN DOS PAÍSES",
-    body: "Nancy es Flebotomista Certificada en los Estados Unidos y Especialista en Estética Facial con licencia aprobada por el Estado de Florida. Cuenta además con formación como Cosmetóloga, Cosmiatra y Dermocosmiatra en Ecuador, y complementa sus conocimientos con capacitación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel.",
-    secondaryBody: "Más allá de sus títulos y certificaciones, Nancy se define como una profesional apasionada por transformar vidas a través del cuidado de la piel. Para ella, cada tratamiento es una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada."
+    credentials: [
+      {
+        region: "Estados Unidos",
+        detail: "Flebotomista Certificada · Especialista en Estética Facial con licencia aprobada por el Estado de Florida."
+      },
+      {
+        region: "Ecuador",
+        detail: "Cosmetóloga · Cosmiatra · Dermocosmiatra."
+      },
+      {
+        region: "Formación continua",
+        detail: "Tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel."
+      }
+    ],
+    body: "Más allá de sus títulos y certificaciones, Nancy se define como una profesional apasionada por transformar vidas a través del cuidado de la piel. Para ella, cada tratamiento es una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada."
   },
   filosofia: {
     eyebrow: "FILOSOFÍA",

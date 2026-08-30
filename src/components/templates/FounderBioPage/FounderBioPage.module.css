@@ -105,6 +105,73 @@
   margin: 0;
 }
 
+/* 2b. Historia — texto sin imagen, mismo layout que Filosofía sobre canvas claro */
+.historiaSection {
+  background-color: #F2F0F1; /* Clinical Canvas */
+  color: #363633;
+  padding: 96px 0;
+}
+
+.historiaContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.historiaHeader {
+  width: 100%;
+}
+
+.historiaContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.historiaCredentials {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+}
+
+.historiaCredential {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(54, 54, 51, 0.18);
+}
+
+.historiaRegion {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #363633;
+}
+
+.historiaDetail {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4E4D4D;
+  font-weight: 300;
+}
+
+.historiaBody {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4E4D4D;
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0;
+}
+
 /* 3. Founder Philosophy Section */
 .philosophySection {
   background-color: #141313; /* Dark Authority */
@@ -322,11 +389,13 @@
     font-size: 44px;
   }
 
+  .historiaSection,
   .philosophySection,
   .academySection {
     padding: 120px 0;
   }
 
+  .historiaContainer,
   .philosophyContainer {
     grid-template-columns: 4fr 6fr;
     gap: 80px;

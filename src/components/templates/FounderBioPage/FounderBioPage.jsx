@@ -29,47 +29,38 @@ export default function FounderBioPage({ data }) {
         hasTrustBar={false}
       />
 
-      {/* 2. Historia y formación (Clinical Canvas #F2F0F1) */}
+      {/* 2. Historia y formación (Clinical Canvas #F2F0F1) — texto, sin imagen */}
       <motion.section
-        className={styles.spotlightSection}
+        className={styles.historiaSection}
         id="founder-spotlight"
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportConfig}
+        variants={sectionReveal}
         aria-labelledby="founder-heading"
       >
-        <div className={styles.spotlightContainer}>
-          <div className={styles.spotlightRow}>
-            <motion.div
-              className={styles.spotlightMedia}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportConfig}
-              variants={sectionReveal}
-            >
-              <div className={styles.spotlightMediaFrame}>
-                <motion.div className={styles.spotlightMotionMedia} whileHover="hover" variants={{ hover: imageHover }}>
-                  <MediaBlock
-                    src="/assets/images/home/founder.jpg"
-                    alt="Nancy Nieto, fundadora y directora de DERMA.M"
-                    variant="light"
-                    className={styles.spotlightImage}
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-            <motion.div
-              className={styles.spotlightContent}
-              initial="hidden"
-              whileInView="visible"
-              viewport={viewportConfig}
-              variants={sectionReveal}
-            >
-              <p className={styles.spotlightEyebrow}>{historia.eyebrow}</p>
-              <div className={styles.spotlightEyebrowLine} aria-hidden="true"></div>
-              <h2 id="founder-heading" className={styles.spotlightTitle}>{historia.headline}</h2>
-              <p className={styles.spotlightBody}>{historia.body}</p>
-              {historia.secondaryBody && (
-                <p className={styles.spotlightBodySecondary}>{historia.secondaryBody}</p>
-              )}
-            </motion.div>
+        <div className={styles.historiaContainer}>
+          <div className={styles.historiaHeader}>
+            <SectionHeader
+              eyebrow={historia.eyebrow}
+              title={historia.headline}
+              titleId="founder-heading"
+              variant="light"
+              align="left"
+            />
+          </div>
+          <div className={styles.historiaContent}>
+            {historia.credentials && (
+              <dl className={styles.historiaCredentials}>
+                {historia.credentials.map((item) => (
+                  <div className={styles.historiaCredential} key={item.region}>
+                    <dt className={styles.historiaRegion}>{item.region}</dt>
+                    <dd className={styles.historiaDetail}>{item.detail}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
+            <p className={styles.historiaBody}>{historia.body}</p>
           </div>
         </div>
       </motion.section>

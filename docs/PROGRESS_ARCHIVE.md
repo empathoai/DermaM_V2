@@ -3,6 +3,14 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros/nancy-nieto: hero enfocado en ella + imagen propia
+
+- **Imagen (`feat`, `bd43ced`).** `founderBioPage.hero.backgroundImage`: `about/hero.jpg` (modelo stock, compartida con /nosotros) → `about/nancy-nieto/nancy-nieto-hero.jpg` (Nancy, 1920×1080, 56 KB) + `.webp`. `about/hero.jpg` sigue vivo en el hero de /nosotros.
+- **Copy + CTAs + animación (`feat`, `c7df424`).** `hero.body` → frase corta de Nancy en vez del párrafo largo de historia. Se quitan `primaryCta`/`secondaryCta` del hero del bio. `PageHero`: el texto anima recién cuando `mediaReady` + `delay 0.35s`.
+- **Eyebrow → attribution (`feat`, `435ac97`).** `PageHero`: guard `{eyebrow && …}` + nueva prop `attribution` (Nancy-only) pintada bajo el body como firma `FUNDADORA Y DIRECTORA DE DERMA.M`.
+- **Verificación.** `:3000` mobile + desktop, consola limpia. `test:visual` 34/34.
+- **Mapa de imágenes de Nancy: 2/4** (Home + bio hero). Faltan: `/nosotros` `founderSpotlight.image`, retrato del bio + schema.
+
 ## 2026-08-30 — /nosotros: hero copy recortado (H1 + body)
 
 - **Data-only (`feat`).** `aboutPage.js` → `hero`: `title` `CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (58 ch, 6 líneas) → `CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (40 ch, ~4). `body` reescrito a `En DERMA.M cada plan empieza por entender tus objetivos. Estética informada y acompañada, no improvisada.` (lidera con la escucha = diferenciador; saca "medical spa en West Palm Beach" que el `localTag` ya dice).

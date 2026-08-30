@@ -300,13 +300,13 @@ const customDetails = {
   },
   'oxigenoterapia-facial': {
     contentUpdated: '2026-08-27',
-    heroDescription: 'Hidrata la barrera cutánea y devuelve frescura y luminosidad de forma inmediata proyectando oxígeno de alta pureza y activos nebulizados sobre la piel.',
+    heroDescription: 'Envuelve el rostro en una cápsula rica en oxígeno de alta pureza y una fina bruma de activos para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata.',
     whatIsHeadline: 'Oxigenoterapia facial: qué es y para qué sirve',
-    whatIsBody: 'La oxigenoterapia facial es un tratamiento estético que proyecta oxígeno de alta pureza junto con activos nebulizados —vitaminas, péptidos y ácido hialurónico— sobre la superficie de la piel. Está pensada para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata, sin exfoliación física. Derma.M es un medical spa en West Palm Beach; aquí se realiza en cabina y con una valoración previa, sobre todo en pieles sensibles.',
+    whatIsBody: 'La oxigenoterapia facial es un tratamiento estético en el que el rostro se coloca bajo una cápsula transparente que se llena de oxígeno de alta pureza junto con una fina bruma de activos —vitaminas, péptidos y ácido hialurónico—. La piel queda envuelta en un microclima húmedo y rico en oxígeno, sin chorro a presión ni exfoliación física, y la sesión suele combinarse con luz LED. Está pensada para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata. En Derma.M, medical spa en West Palm Beach, se realiza en cabina y con una valoración previa, sobre todo en pieles sensibles.',
     problemContextHeadline: 'PIEL DESHIDRATADA Y ESTRESADA POR FACTORES URBANOS',
     problemContextBody: 'El aire acondicionado, la falta de descanso y los hábitos cotidianos saturan y apagan las células de la piel, haciéndola lucir opaca y deshidratada. Este protocolo calma el rostro sensible, aporta oxigenación superficial profunda y restaura un aspecto descansado y fresco al instante.',
     duration: '45 min',
-    application: 'Cabina / Nebulización',
+    application: 'Cabina / Cápsula de oxígeno',
     anesthesia: 'No requiere',
     resultado: 'Suavidad y frescura tras finalizar el tratamiento',
     whoForList: [
@@ -321,7 +321,7 @@ const customDetails = {
     faq: [
       {
         question: '¿Qué es la bruma de oxígeno y qué se siente?',
-        answer: 'Es la aplicación de un chorro de oxígeno puro enriquecido con sueros a alta presión. Se percibe como una brisa de viento frío, sumamente relajante y refrescante sobre la cara y muy cómoda.'
+        answer: 'El rostro se coloca bajo una cápsula que se llena de oxígeno de alta pureza y una fina bruma de sueros; no es un chorro a presión. Se siente como un ambiente fresco y húmedo que envuelve la cara, muy relajante y cómodo.'
       },
       {
         question: '¿Es adecuado para pieles deshidratadas u opacas?',

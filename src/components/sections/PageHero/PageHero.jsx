@@ -15,6 +15,7 @@ export default function PageHero({
   variant = 'default',
   primaryCta,
   secondaryCta,
+  attribution,
   hasTrustBar = true
 }) {
   const isLanding = variant === 'landing';
@@ -63,18 +64,22 @@ export default function PageHero({
             variants={sectionReveal}
             transition={{ delay: 0.35 }}
           >
-            <div className={styles.eyebrowWrapper}>
-              <div className={styles.line}></div>
-              <p className={styles.eyebrow}>{eyebrow}</p>
-            </div>
-            
+            {eyebrow && (
+              <div className={styles.eyebrowWrapper}>
+                <div className={styles.line}></div>
+                <p className={styles.eyebrow}>{eyebrow}</p>
+              </div>
+            )}
+
             <h1 className={styles.title}>
               {title}
               {localTag && <span className={styles.localTag}>{localTag}</span>}
             </h1>
-            
+
             {body && <p className={styles.body}>{body}</p>}
-            
+
+            {attribution && <p className={styles.attribution}>{attribution}</p>}
+
             {(primaryCta || secondaryCta) && (
               <div className={styles.ctaGroup}>
                 {primaryCta && (

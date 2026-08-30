@@ -21,6 +21,7 @@ export default function FounderBioPage({ data }) {
         eyebrow={hero.eyebrow}
         title={hero.title}
         body={hero.body}
+        attribution={hero.attribution}
         backgroundImage={hero.backgroundImage}
         variant={hero.variant}
         primaryCta={hero.primaryCta}

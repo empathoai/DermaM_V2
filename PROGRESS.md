@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Home FounderSection: imagen propia de Nancy + saca logo mobile
+## 2026-08-30 — /nosotros/nancy-nieto: hero enfocado en ella + imagen propia
 
-- **Imagen (`feat`).** `FounderSection` dejaba de usar `home/founder.jpg` (compartido con /nosotros y el bio) y pasa a `home/nancy-nieto-fundadora.jpg` (retrato propio, 1000×1200 = 5:6, 64 KB) + `.webp`. Encuadre pensado mobile-first: la caja mobile es 375×450 (~5:6), así la foto entra casi sin recorte y Nancy llena el frame (antes se "perdía" con un plano entero). En desktop la caja es apaisada (~990×680) → se ve una franja cara+torso, tradeoff aceptado.
-- **Logo mobile (`refactor`).** Se elimina `.mobileLogoContainer` (img de `global/logo.png`) del JSX + su CSS: solo se renderizaba en <1024px, repetía el logo del navbar arriba del bloque de Nancy.
-- **Pendiente del mapeo de imágenes de Nancy (4 slots):** hechos = Home. Faltan = /nosotros `founderSpotlight.image`, bio hero, bio retrato (+ schema). `home/founder.jpg` viejo NO se borra hasta migrar esos 3.
-- **Verificación.** `:3000` mobile + desktop: Nancy llena el frame, sin logo repetido, consola limpia. `test:visual` re-baseline intencional de `home-founder` (desktop + mobile); resto 0-diff, 34/34.
+- **Imagen (`feat`, `bd43ced`).** `founderBioPage.hero.backgroundImage`: `about/hero.jpg` (modelo stock, compartida con /nosotros) → `about/nancy-nieto/nancy-nieto-hero.jpg` (Nancy, 1920×1080, 56 KB) + `.webp`. `about/hero.jpg` sigue vivo en el hero de /nosotros.
+- **Copy + CTAs + animación (`feat`, `c7df424`).** `hero.body` → frase corta de Nancy ("Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso.") en vez del párrafo largo de historia. Se quitan `primaryCta`/`secondaryCta` del hero del bio (protagonismo a ella; el FAB de WhatsApp queda como acción persistente). `PageHero`: el texto anima recién cuando `mediaReady` + `delay 0.35s` → primero pinta la imagen, después entra el texto (aplica a todos los heroes; sin diff en `test:visual` por el wait de 3s).
+- **Eyebrow → attribution (`feat`, este commit).** `PageHero`: guard `{eyebrow && …}` (antes el `<div>` se renderizaba aunque el string fuera vacío) + nueva prop `attribution` que se pinta **debajo del body** (`.attribution`, 13px, weight 600, blanco). El hero de Nancy deja de usar `eyebrow` y pasa `attribution: "FUNDADORA Y DIRECTORA DE DERMA.M"` → queda como firma bajo la cita. Nancy-only; los demás heroes no pasan `attribution` y no cambian.
+- **Verificación.** `:3000` mobile + desktop: orden H1 → cita → firma, sin CTAs, imagen de Nancy detrás, consola limpia. `test:visual` 34/34 (el snapshot `nancy-nieto-viewport` no reaccionó a los cambios de texto del hero — posible gap de cobertura pre-existente, no bloquea).
+- **Mapa de imágenes de Nancy: 2/4** (Home + bio hero). Faltan: `/nosotros` `founderSpotlight.image`, retrato del bio + schema.
 
 ---
 

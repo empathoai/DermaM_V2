@@ -181,9 +181,9 @@ export const founderPrimer = {
 
 export const founderBioPage = {
   hero: {
-    eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
     title: "NANCY NIETO",
     body: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso.",
+    attribution: "FUNDADORA Y DIRECTORA DE DERMA.M",
     backgroundImage: "/assets/images/about/nancy-nieto/nancy-nieto-hero.jpg",
     variant: "default"
   },

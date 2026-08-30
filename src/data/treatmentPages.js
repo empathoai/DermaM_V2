@@ -339,7 +339,20 @@ const customDetails = {
         question: '¿Con qué frecuencia se aconseja realizarlo?',
         answer: 'Para mantener la piel hidratada frente al aire acondicionado y la polución, se recomienda una sesión cada 15 a 21 días.'
       }
-    ]
+    ],
+    beforeAfter: {
+      eyebrow: 'EL PROCEDIMIENTO',
+      headline: 'ASÍ ES UNA SESIÓN DE OXIGENOTERAPIA FACIAL',
+      items: [{
+        before: '/assets/images/treatments/faciales/oxigenoterapia-facial/oxigenoterapia-facial-procedimiento.mp4',
+        after: '/assets/images/treatments/faciales/oxigenoterapia-facial/oxigenoterapia-facial-procedimiento-detalle.jpg',
+        beforeAlt: 'Sesión de oxigenoterapia facial en Derma.M, West Palm Beach: rostro dentro de una cápsula donde se libera oxígeno en forma de vapor, con panel de luz LED y protección ocular',
+        afterAlt: 'Primer plano del panel de luz LED durante una sesión de oxigenoterapia facial en cápsula en Derma.M, West Palm Beach'
+      }],
+      beforeLabel: 'EN CABINA',
+      afterLabel: 'EQUIPO',
+      disclaimer: 'Contenido de referencia del procedimiento con fines informativos. No representa un resultado garantizado; los efectos varían según cada persona, la piel y el protocolo aplicado.'
+    }
   },
   'rejuvenecimiento-facial': {
     contentUpdated: '2026-08-27',

@@ -260,8 +260,8 @@ export default function TreatmentDetailPage({ data }) {
         <section className={styles.beforeAfterSection}>
           <div className={styles.container}>
             <BeforeAfterGrid
-              eyebrow="EVIDENCIA DE APOYO"
-              headline="EVOLUCIÓN Y RESULTADOS ASISTIDOS"
+              eyebrow={beforeAfter?.eyebrow ?? "EVIDENCIA DE APOYO"}
+              headline={beforeAfter?.headline ?? "EVOLUCIÓN Y RESULTADOS ASISTIDOS"}
               items={beforeAfterItems}
               disclaimer={beforeAfter?.disclaimer ?? beforeAfterDisclaimer}
               beforeLabel={beforeAfter?.beforeLabel}

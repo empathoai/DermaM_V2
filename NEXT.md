@@ -1,7 +1,17 @@
 # NEXT
 
-Estado: HEAD esperado = commit `feat` Home FounderSection (imagen Nancy + logo) + su `docs` (push pendiente).
-Árbol limpio. Sin servers salvo el `:3000`.
+Estado: HEAD esperado = `bd43ced`/`c7df424` (pusheados) + commit `feat` attribution/eyebrow + su `docs` (push pendiente).
+Árbol limpio salvo esos 2 commits. Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 12) — CERRADO:
+- **`/nosotros/nancy-nieto` hero enfocado en ella.** Imagen propia (`about/nancy-nieto/nancy-nieto-hero.jpg`,
+  `bd43ced`); body → cita corta de Nancy + sin CTAs + texto anima tras la imagen (`c7df424`); eyebrow →
+  prop nueva `attribution` de `PageHero` que pinta la firma "FUNDADORA Y DIRECTORA DE DERMA.M" debajo de
+  la cita (este commit). `PageHero` gana guard `{eyebrow && …}` + prop `attribution` (Nancy-only). Ver DECISIONS.
+- **Mapa de imágenes de Nancy — 2/4** (Home + bio hero). Faltan: `/nosotros` `founderSpotlight.image`
+  (`about/nancy-nieto-fundadora.jpg`, ref `aboutPage.js:19`), retrato del bio + schema
+  (`about/nancy-nieto/nancy-nieto-retrato.jpg`, refs `FounderBioPage.jsx:49` + `NancyNieto.jsx:32`).
+  `home/founder.jpg` viejo se borra recién cuando migren esos 2.
 
 Sesión 2026-08-30 (cont. 11) — CERRADO:
 - **Home `FounderSection`: imagen propia de Nancy + saca logo mobile.** `home/nancy-nieto-fundadora.jpg`

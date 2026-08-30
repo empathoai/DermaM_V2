@@ -56,11 +56,12 @@ export default function PageHero({
         }}
       >
         <div className={styles.container}>
-          <motion.div 
+          <motion.div
             className={styles.content}
             initial="hidden"
-            animate="visible"
+            animate={mediaReady ? "visible" : "hidden"}
             variants={sectionReveal}
+            transition={{ delay: 0.35 }}
           >
             <div className={styles.eyebrowWrapper}>
               <div className={styles.line}></div>

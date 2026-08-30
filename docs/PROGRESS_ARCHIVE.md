@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros: videos de team (Tony Díaz, Miguel Ramos, reemplazo Daniela Parra) + optimización melisa-rios
+- **Media + data (`feat`).** Tony: `dr-tony-diaz.mp4` → `tony-diaz.mp4` (slot ya cableado, sin cambio de data). Miguel Ramos (Estética Dental): `aboutPage.js` `mediaType: "image"`→`"video"` + `videoSrc` nuevo + `mediaSrc` poster (hold dental omitido por pedido explícito). Daniela: usuario reemplazó `daniela-parra.mp4`, sin cambio de data. Los 3 en un `feat`.
+- **Optimización.** `optimize.js` (CRF 28, `-an`): 1.1–1.4 MB → 256–310 KB; posters frame-0 + `.webp`. Aparte: `melisa-rios.mp4` optimizado 1.40 MB → 310 KB + poster/webp (`chore(assets)` `f6562dd`).
+- **Sin cambio de componente.** `test:visual` 34/34 sin diffs.
+
 ## 2026-08-30 — /faciales/rejuvenecimiento-facial: sección antes/después (labels custom)
 - **Data + media (`feat`).** `beforeAfter` (1 item) en el entry `rejuvenecimiento-facial`. El cliente armó los collages: slot `before` = collage antes/después de 2 paneles (label `ANTES - DESPUÉS`), slot `after` = collage de progresión de 3 paneles (label `RESULTADOS`). Imágenes 1000×1250, `optimize.js` (130/178 KB) + `.webp`.
 - **Sin cambio de componente.** `TreatmentDetailPage` ya pasa `beforeLabel`/`afterLabel` desde la data.

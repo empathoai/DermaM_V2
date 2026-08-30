@@ -2,17 +2,13 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — /nosotros: videos de team (Tony Díaz, Miguel Ramos, reemplazo Daniela Parra)
+## 2026-08-30 — /nosotros: sección de equipo aplanada en grid único con eyebrow de especialidad
 
-- **Media + data (`feat`).** Los 2 `.mp4` que el usuario dejó sin trackear, integrados en un solo ciclo (el usuario pidió ejecutar ambos y omitir el hold regulatorio dental para Miguel Ramos).
-  - **Tony Díaz, DO** (IV Therapy): `dr-tony-diaz.mp4` → renombrado a `tony-diaz.mp4` (los demás videos del team no llevan título). El slot ya estaba cableado en `aboutPage.js` (`mediaType: "video"`, `videoSrc`/`mediaSrc` a `tony-diaz.*`) → **sin cambio de data**.
-  - **Dr. Miguel Ramos** (Estética Dental): `aboutPage.js` cambió `mediaType: "image"` → `"video"`, `mediaSrc: undefined` → `.../miguel-ramos.jpg`, y se agregó `videoSrc: ".../miguel-ramos.mp4"`.
-  - **Daniela Parra** (Faciales): el usuario reemplazó `daniela-parra.mp4` por un clip nuevo; sin cambio de data (`mediaPosition: "center top"` ya estaba). Se generó su poster `.jpg` + `.webp` (antes no existía).
-- **Optimización.** `optimize.js` (x264 CRF 28, `-an`): tony 1.31 MB → 290 KB, miguel 1.31 MB → 302 KB, daniela 1.11 MB → 256 KB, en línea con los siblings. Posters `.jpg` del frame 0 con ffmpeg (40–49 KB) + `.webp` (`generate-webp.js`, 3 creados, ningún sibling ajeno).
-- **Sin cambio de componente.** `TeamMemberCard` ya lee `mediaType`/`videoSrc`/`mediaSrc`/`mediaPosition` y ramifica a `ViewportVideo` (video `muted` + `playsInline` + autoplay en viewport, poster).
-- **Encuadre.** Fuente 720×1280 (retrato) en frame `cover` → sin `mediaPosition` se perdían las cabezas. Ambos entries llevan `mediaPosition: "center 18%"` (= mismo valor que Melisa/Mikaela).
-- **Verificación.** `:3000` `/nosotros`: ambas cards pintan su video (no el fallback `og-default`), consola sin errores. `test:visual` 34/34 sin diffs (la sección de equipo queda fuera del viewport de los snapshots de `/nosotros`). WCAG: media decorativa adyacente al nombre visible, sin audio.
-- **Queda:** `samantha-atencio.{jpg,mp4}` y las 6 `.jpg` de team + `hero.jpg` siguen siendo slots vacíos de `/nosotros`.
+- **Componente (`refactor` `0bdd848`).** `TeamMemberCard`: nuevo slot `specialtyLabel` (eyebrow arriba de la card, `.eyebrow` uppercase 11px letter-spacing 0.2em) + nombre `h4` → `h3`.
+- **Grid + data (`feat` `837bd1d`).** `TeamBySpecialty` deja de agrupar: renderiza `SectionHeader` (con `titleId="team-heading"`, antes el `aria-labelledby` apuntaba a nada) + un solo `.grid` de `TeamMemberCard`. Se borran `.groupsList/.groupBlock/.groupHeader/.groupTitle/.groupSupport/.line`. `AboutPage` pasa `members={team}`.
+- **`aboutPage.js`:** `teamBySpecialty` (agrupado) → `team` plano, 7 miembros en orden estratégico: Nancy → Mikaela → Daniela → Elianne → Tony → Miguel → Melisa. Cada uno con `specialtyLabel`. **Samantha Atencio eliminada** de la data (no había `.mp4`; no quedaban archivos suyos que borrar). Nancy nueva: `mediaType: "image"`, `mediaSrc: null` → `MediaBlock` renderiza panel `.fallback` vacío (usuario eligió "sin media" hasta tener clip); su `.vcf` ya existía.
+- **Verificación.** `:3000` en tab fresco: 7 cards, orden correcto, grid 3col desktop / 2col tablet (max-width 960) / 1col mobile, filas 3+3+1, headings `H2`+7×`H3` (sin salto), eyebrow contraste ~10.5:1, sin errores de consola, sin 404. `test:visual` 34/34 sin diffs (snapshots de `/nosotros` son above-the-fold). Compliance: labels de área + bio de Nancy (verbatim de `founderSpotlight`) sin banned words.
+- **Queda:** card de Nancy sin media (necesita clip o still vía `add-media`). Sección "Fundadora" de arriba sin tocar (posible dedupe futuro). `samantha-atencio.vcf` queda como huérfano inofensivo.
 
 ---
 

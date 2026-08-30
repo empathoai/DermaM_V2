@@ -1,6 +1,20 @@
 # NEXT
 
-Estado: HEAD esperado = `71cc20e` (pusheado). Árbol limpio. Sin servers salvo el `:3000`.
+Estado: HEAD esperado = `837bd1d` (feat grid plano) + commit `docs` de cierre (push pendiente de confirmar).
+Árbol limpio salvo el commit de docs. Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 9) — CERRADO:
+- **`/nosotros`: sección de equipo aplanada en grid único.** `TeamMemberCard` gana slot `specialtyLabel`
+  (eyebrow) + nombre `h4`→`h3` (`0bdd848`). `TeamBySpecialty` deja de agrupar → un solo `.grid`
+  (`837bd1d`); CSS de grupos borrado; `SectionHeader` con `titleId="team-heading"` (arreglo del
+  `aria-labelledby` que apuntaba a nada). `aboutPage.js`: `teamBySpecialty` → `team` plano, 7 miembros
+  en orden estratégico (Nancy→Mikaela→Daniela→Elianne→Tony→Miguel→Melisa). **Samantha eliminada** de la
+  data. **Nancy** como 1ª card, `Fundadora & CEO · Faciales`, **sin media** (`mediaType: "image"`,
+  `mediaSrc: null` → panel `.fallback`) por decisión del usuario. `test:visual` 34/34. Ver DECISIONS.
+  Spec/plan: `docs/superpowers/{specs,plans}/2026-08-30-nosotros-team-grid-flatten*` (gitignored).
+- **Pendiente del ciclo:** card de Nancy sin foto/video → cerrar con `add-media` cuando haya clip o still.
+- **No urgente:** la sección `founderSpotlight` de arriba y la card de Nancy en la grilla son 2 bloques
+  de Nancy cerca; posible dedupe futuro (no pedido).
 
 Sesión 2026-08-30 (cont. 8) — CERRADO:
 - **`/nosotros`: videos de Tony Díaz y Miguel Ramos (2 slots, 1 ciclo).** Por pedido explícito del
@@ -222,13 +236,14 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
-- `/assets/images/about/hero.jpg`
-- `/assets/images/about/team/{melisa-rios,mikaela-guajardo,daniela-parra,elianne-trujillo,samantha-atencio}.jpg`
-- `/assets/images/about/team/samantha-atencio.mp4`
+- `/assets/images/about/hero.jpg` (hero de `/nosotros`)
+- **Card de Nancy en la grilla del equipo** — hoy sin media (`mediaType: "image"`, `mediaSrc: null`).
+  Cerrar con un clip `nancy-nieto.mp4` (→ `mediaType: "video"`) o un still `nancy-nieto.jpg`.
+- Posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` podrían faltar (el video igual corre sin
+  ellos); verificar con `ls public/assets/images/about/team/*.jpg` antes de darlo por pendiente.
 Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español → render `:3000` →
-`test:visual` re-baseline → WCAG → ritual). Nombres `hero.jpg`/`<slug>.jpg` se mantienen (los
-data refs de `aboutPage.js` ya los usan; renombre SEO 7.1 sería sub-ciclo aparte).
-(Tony Díaz y Miguel Ramos: CERRADOS en cont. 8.)
+`test:visual` re-baseline → WCAG → ritual).
+(Tony Díaz, Miguel Ramos, Daniela, Melisa: videos CERRADOS. Samantha: eliminada del equipo en cont. 9.)
 
 Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`

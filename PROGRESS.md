@@ -2,14 +2,12 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — /nosotros: sección de equipo aplanada en grid único con eyebrow de especialidad
+## 2026-08-30 — /nosotros: hero copy recortado (H1 + body)
 
-- **Componente (`refactor` `0bdd848`).** `TeamMemberCard`: nuevo slot `specialtyLabel` (eyebrow arriba de la card, `.eyebrow` uppercase 11px letter-spacing 0.2em) + nombre `h4` → `h3`.
-- **Grid + data (`feat` `837bd1d`).** `TeamBySpecialty` deja de agrupar: renderiza `SectionHeader` (con `titleId="team-heading"`, antes el `aria-labelledby` apuntaba a nada) + un solo `.grid` de `TeamMemberCard`. Se borran `.groupsList/.groupBlock/.groupHeader/.groupTitle/.groupSupport/.line`. `AboutPage` pasa `members={team}`.
-- **`aboutPage.js`:** `teamBySpecialty` (agrupado) → `team` plano, 7 miembros en orden estratégico: Nancy → Mikaela → Daniela → Elianne → Tony → Miguel → Melisa. Cada uno con `specialtyLabel`. **Samantha Atencio eliminada** de la data (no había `.mp4`; no quedaban archivos suyos que borrar). Nancy nueva: `mediaType: "image"`, `mediaSrc: null` → `MediaBlock` renderiza panel `.fallback` vacío (usuario eligió "sin media" hasta tener clip); su `.vcf` ya existía.
-- **Verificación.** `:3000` en tab fresco: 7 cards, orden correcto, grid 3col desktop / 2col tablet (max-width 960) / 1col mobile, filas 3+3+1, headings `H2`+7×`H3` (sin salto), eyebrow contraste ~10.5:1, sin errores de consola, sin 404. `test:visual` 34/34 sin diffs (snapshots de `/nosotros` son above-the-fold). Compliance: labels de área + bio de Nancy (verbatim de `founderSpotlight`) sin banned words.
-- **Cierre (mini-ciclo).** El usuario pasó `nancy-nieto.mp4` (reemplazado 1 vez); `optimize.js` 2.48 MB HEVC → 424 KB h264 (1080×1920, `-an`), poster frame-0 77 KB + `.webp`. Entry de Nancy: `mediaType: "image"`/`mediaSrc: null` → `"video"` + `videoSrc` + `mediaSrc` poster + `mediaPosition: "center top"` (18% dejaba a Nancy muy abajo). `:3000`: video pinta, encuadre alineado con Mikaela/Daniela, sirve 200, consola limpia. `test:visual` skip (data-only, sección fuera de snapshots).
-- **Queda:** sección "Fundadora" de arriba sin tocar (posible dedupe futuro). `samantha-atencio.vcf` queda como huérfano inofensivo.
+- **Data-only (`feat`).** `aboutPage.js` → `hero`: `title` `CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (58 ch, 6 líneas) → `CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (40 ch, ~4). `body` reescrito a `En DERMA.M cada plan empieza por entender tus objetivos. Estética informada y acompañada, no improvisada.` (lidera con la escucha = diferenciador; saca "medical spa en West Palm Beach" que el `localTag` ya dice).
+- **Alcance.** Solo 2 strings. `hero.title` alimenta únicamente el `<h1>` visual del `PageHero`; el `<title>`/meta de SEO están hardcodeados en `Nosotros.jsx`, sin tocar. Ningún componente.
+- **Verificación.** `:3000`: H1 4 líneas, body 2, CTAs OK, consola limpia. Compliance: sin banned words, "no improvisada" = contraste de proceso, no promesa. `test:visual`: re-baseline intencional de `nosotros-viewport-desktop-chrome` y `nosotros-founder-with-link-mobile-safari` (hero más corto → todo sube / el scroll de la sección de fundadora arranca distinto); resto 0-diff, 34/34 tras re-basear.
+- Spec: `docs/superpowers/specs/2026-08-30-nosotros-hero-copy-trim-design.md` (gitignored).
 
 ---
 

@@ -3,8 +3,8 @@ import { HERO_LOCAL_TAG } from './siteMeta';
 export const aboutPage = {
   hero: {
     eyebrow: "NOSOTROS",
-    title: "CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL",
-    body: "DERMA.M es un medical spa en West Palm Beach. Trabajamos la estética como una decisión de salud: informada, conversada y sostenida en el tiempo.",
+    title: "CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL",
+    body: "En DERMA.M cada plan empieza por entender tus objetivos. Estética informada y acompañada, no improvisada.",
     localTag: HERO_LOCAL_TAG,
     primaryCta: "AGENDA TU VALORACIÓN",
     secondaryCta: "WHATSAPP",

@@ -197,22 +197,3 @@
   outline: 2px solid #363633;
   outline-offset: 3px;
 }
-
-.mobileLogoContainer {
-  margin-bottom: 24px;
-  display: flex;
-  justify-content: center;
-}
-
-.mobileLogo {
-  max-width: 140px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-@media (min-width: 1024px) {
-  .mobileLogoContainer {
-    display: none;
-  }
-}

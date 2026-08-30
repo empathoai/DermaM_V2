@@ -48,8 +48,10 @@ export const aboutPage = {
       role: "Fundadora y Directora",
       specialtyLabel: "Fundadora & CEO · Faciales",
       shortBio: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
-      mediaType: "image",
-      mediaSrc: null,
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/nancy-nieto.mp4",
+      mediaSrc: "/assets/images/about/team/nancy-nieto.jpg",
+      mediaPosition: "center top",
       vcardEnabled: true,
       vcardUrl: "/team/vcards/nancy-nieto.vcf",
       status: "active"

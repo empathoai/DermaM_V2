@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `<este commit>` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `920a4cf` (pusheado). Árbol limpio. Sin servers.
 
 **BLOQUEADO EN INPUT DEL USUARIO:** el usuario va a mandar la foto real de Nancy para el bloque
 `founderSpotlight` de `/nosotros` (AboutPage). Próximo ciclo = ese bloque: quitar la foto stock

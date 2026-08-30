@@ -3,6 +3,9 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/oxigenoterapia-facial: copy a modalidad cápsula
+- **Fix (`fix`).** `src/data/treatmentPages.js` entry `oxigenoterapia-facial`: `heroDescription`, `whatIsBody`, `application` ("Nebulización" → "Cápsula de oxígeno") y `faq[0]` ("bruma de oxígeno") describían una pistola de O2 a alta presión. La sesión real (video del propio entry) es cápsula transparente + bruma de activos + luz LED, sin chorro sobre la piel. Reescrito para que matchee. Sin banned words. Data-only, sin `test:visual`. Render verificado en `:3000`. Cierra el ítem abierto por el ciclo del bloque de procedimiento.
+
 ## 2026-08-30 — /faciales/oxigenoterapia-facial: bloque de procedimiento (video + still)
 - **Template (`feat`).** `TreatmentDetailPage.jsx` (2 líneas): el render de `BeforeAfterGrid` pasa a aceptar `eyebrow`/`headline` desde `customDetails.beforeAfter` con los strings actuales como fallback → retrocompatible; capilar/acné/PRF sin cambio (verificado en browser). `BeforeAfterGrid.jsx` y su CSS **sin tocar**.
 - **Data + media.** Entry `oxigenoterapia-facial`: objeto `beforeAfter` con `eyebrow: 'EL PROCEDIMIENTO'`, headline propio, slot `before` = video `.mp4` del procedimiento (cápsula de O2 + panel LED), slot `after` = still de detalle, labels `EN CABINA` / `EQUIPO`, disclaimer de procedimiento (sin claim de resultado). Video en `public/assets/images/treatments/faciales/oxigenoterapia-facial/` transcodificado a H.264, `-an`, 2.6 MB; poster + still extraídos con ffmpeg (79/67 KB) + `.webp`.

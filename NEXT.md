@@ -1,7 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = `03eeb0e` + commit de cierre de docs.
+Estado: HEAD esperado = `8f83c2d` + commit de cierre de docs.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 3) — CERRADO:
+- **`/faciales/plasma-frio`: bloque de procedimiento (video + still).** Mismo patrón que oxigenoterapia,
+  data-only (el override de `eyebrow`/`headline` ya estaba shippeado). Entry `plasma-frio`: `beforeAfter`
+  con video del electrodo de gas ionizado (H.264, `-an`, 18 s recortados, 2.78 MB) + still, labels
+  `EN CABINA`/`EQUIPO`. `test:visual` 34/34 sin diffs. `8f83c2d`.
 
 Sesión 2026-08-30 (cont. 2) — CERRADO:
 - **`/faciales/oxigenoterapia-facial`: copy a modalidad cápsula.** `heroDescription`, `whatIsBody`,

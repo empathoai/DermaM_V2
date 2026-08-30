@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `3c8bb2c` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `9e618e0` (pusheado). Árbol limpio. Sin servers.
 
 Sesión 2026-08-30 (cont. 15) — CERRADO:
 - **JSON-LD de Nancy: `image` de Persona → foto real** (`NancyNieto.jsx:32`, 1 línea). Mapa de

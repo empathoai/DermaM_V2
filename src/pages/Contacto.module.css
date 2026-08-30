@@ -1020,3 +1020,99 @@
   }
 }
 
+/* Start block (replaces the removed contact form) */
+.startBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.startBlockIntro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4E4D4D;
+  font-weight: 300;
+  margin: 0 0 28px 0;
+}
+
+.startActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.startBtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 18px 32px;
+  border-radius: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  min-height: 48px;
+  transition: all 0.3s ease;
+}
+
+.startBtnPrimary {
+  background-color: #363633;
+  color: #F2F0F1;
+  border: 1px solid #363633;
+}
+
+@media (hover: hover) {
+  .startBtnPrimary:hover {
+    background-color: #141313;
+    border-color: #141313;
+  }
+}
+
+.startBtnPrimary:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
+}
+
+.startBtnSecondary {
+  background-color: transparent;
+  color: #363633;
+  border: 1px solid rgba(54, 54, 51, 0.32);
+}
+
+@media (hover: hover) {
+  .startBtnSecondary:hover {
+    background-color: rgba(54, 54, 51, 0.04);
+    border-color: #363633;
+  }
+}
+
+.startBtnSecondary:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
+}
+
+.startMicrocopy {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #666463;
+  margin: 12px 0 0 0;
+}
+
+.startPhoneLine {
+  font-size: 13px;
+  color: #4E4D4D;
+  font-weight: 300;
+  margin: 24px 0 0 0;
+}
+
+.startPhoneLink {
+  color: #363633;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.startPhoneLink:focus-visible {
+  outline: 2px solid #363633;
+  outline-offset: 2px;
+}
+

@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `9e618e0` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `fa791b2` (pusheado). Árbol limpio. Sin servers.
 
 Sesión 2026-08-30 (cont. 15) — CERRADO:
 - **JSON-LD de Nancy: `image` de Persona → foto real** (`NancyNieto.jsx:32`, 1 línea). Mapa de
@@ -281,7 +281,7 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
-- **Mapa de imágenes de Nancy — COMPLETO (4/4).** Falta solo `git rm public/assets/images/home/founder.jpg`
+- **Mapa de imágenes de Nancy — COMPLETO (4/4).** `home/founder.jpg` borrado (cont. 15).
   + `.webp` (sin refs de código; el intento del cont. 15 lo bloqueó el classifier) — limpieza mecánica.
 - `/assets/images/about/hero.jpg` (hero de `/nosotros`) — **roto ahora**: `aboutPage.js:11` lo
   referencia y el archivo no existe (cae al gradiente de `PageHero`). Necesita foto del usuario.

@@ -224,6 +224,11 @@ Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español →
 `test:visual` re-baseline → WCAG → ritual). Nombres `hero.jpg`/`<slug>.jpg` se mantienen (los
 data refs de `aboutPage.js` ya los usan; renombre SEO 7.1 sería sub-ciclo aparte).
 
+**El usuario ya dejó en disco (sin trackear, 2026-08-30):** `about/team/dr-tony-diaz.mp4` y
+`about/team/miguel-ramos.mp4`. Ojo: los refs de `aboutPage.js` son `tony-diaz.mp4` (sin `dr-`) y
+no hay `miguel-ramos` en el team array → arrancar el ciclo confirmando nombre final + si Miguel
+Ramos es miembro nuevo (¿alta en `aboutPage.js`?) o rename de otro.
+
 Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.

@@ -13,7 +13,7 @@ Dev server `:3000` = owned by another chat, do not touch.
 27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
-Nothing executed. Each task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
+Done: Tasks 1, 3, 4 (cont. 24–26). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
 **Next: Task 7** — Organization entity fragmented on Nosotros (SEO-04), S.
 

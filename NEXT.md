@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = commit `feat(nosotros)` de videos de team + su commit `docs` (push pendiente de confirmar). Árbol limpio. Sin servers salvo el `:3000`.
+Estado: HEAD esperado = `71cc20e` (pusheado). Árbol limpio. Sin servers salvo el `:3000`.
 
 Sesión 2026-08-30 (cont. 8) — CERRADO:
 - **`/nosotros`: videos de Tony Díaz y Miguel Ramos (2 slots, 1 ciclo).** Por pedido explícito del

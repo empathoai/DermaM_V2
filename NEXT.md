@@ -1,11 +1,17 @@
 # NEXT
 
-Estado: HEAD esperado = `fa791b2` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `PENDIENTE-PUSH` (código commiteado, falta push confirmado). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 16) — CERRADO:
+- **`/nosotros` hero: placeholder interino.** `aboutPage.js:11` `hero.backgroundImage`
+  `about/hero.jpg` (no existía → caía a `og-default.webp` stock) → `contact/hero.jpg` (recepción
+  real, cross-ref, no se copia). Data-only, 1 string. Sin `test:visual`. Pendiente: foto propia de
+  equipo para `about/hero.jpg` (usuario la va a conseguir; tarea en hold hasta entonces).
 
 Sesión 2026-08-30 (cont. 15) — CERRADO:
 - **JSON-LD de Nancy: `image` de Persona → foto real** (`NancyNieto.jsx:32`, 1 línea). Mapa de
-  imágenes de Nancy **4/4 — COMPLETO**. `home/founder.jpg` + `.webp` sin refs de código; `git rm`
-  pendiente (bloqueado por classifier este ciclo). Sin `test:visual`.
+  imágenes de Nancy **4/4 — COMPLETO**. `home/founder.jpg` + `.webp` **ya borrados** en `fa791b2`
+  (`chore(assets)`). Sin `test:visual`.
 
 Sesión 2026-08-30 (cont. 14) — CERRADO:
 - **`/nosotros` `founderSpotlight`: foto real de Nancy.** `founderSpotlight.image` en `aboutPage.js`:
@@ -281,10 +287,11 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
-- **Mapa de imágenes de Nancy — COMPLETO (4/4).** `home/founder.jpg` borrado (cont. 15).
-  + `.webp` (sin refs de código; el intento del cont. 15 lo bloqueó el classifier) — limpieza mecánica.
-- `/assets/images/about/hero.jpg` (hero de `/nosotros`) — **roto ahora**: `aboutPage.js:11` lo
-  referencia y el archivo no existe (cae al gradiente de `PageHero`). Necesita foto del usuario.
+- **Mapa de imágenes de Nancy — COMPLETO (4/4).** `home/founder.jpg` + `.webp` borrados (`fa791b2`).
+- `/assets/images/about/hero.jpg` (hero de `/nosotros`) — **placeholder interino puesto (cont. 16)**:
+  `aboutPage.js:11` apunta a `contact/hero.jpg` por cross-ref. Falta la foto propia: composición de
+  **equipo** que el usuario va a conseguir. Al llegar → `add-media` a `about/hero.jpg` (+ `.webp`) y
+  revertir la línea a `about/hero.jpg`. **EN HOLD** hasta que el usuario tenga la imagen.
 - Posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` podrían faltar (el video igual corre sin
   ellos); verificar con `ls public/assets/images/about/team/*.jpg` antes de darlo por pendiente.
 - Slot de retrato de §2 del bio **ya no existe** (cont. 13, §2 quedó sin imagen).

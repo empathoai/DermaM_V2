@@ -8,7 +8,7 @@ export const aboutPage = {
     localTag: HERO_LOCAL_TAG,
     primaryCta: "AGENDA TU VALORACIÓN",
     secondaryCta: "WHATSAPP",
-    backgroundImage: "/assets/images/about/hero.jpg",
+    backgroundImage: "/assets/images/contact/hero.jpg",
     variant: "default"
   },
   founderSpotlight: {

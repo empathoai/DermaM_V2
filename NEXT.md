@@ -1,7 +1,7 @@
 # NEXT
 
-Estado: HEAD esperado = `837bd1d` (feat grid plano) + commit `docs` de cierre (push pendiente de confirmar).
-Árbol limpio salvo el commit de docs. Sin servers salvo el `:3000`.
+Estado: HEAD esperado = `6b32195` (grid plano + video de Nancy, push pendiente de confirmar).
+Árbol limpio. Sin servers salvo el `:3000`.
 
 Sesión 2026-08-30 (cont. 9) — CERRADO:
 - **`/nosotros`: sección de equipo aplanada en grid único.** `TeamMemberCard` gana slot `specialtyLabel`
@@ -12,7 +12,8 @@ Sesión 2026-08-30 (cont. 9) — CERRADO:
   data. **Nancy** como 1ª card, `Fundadora & CEO · Faciales`, **sin media** (`mediaType: "image"`,
   `mediaSrc: null` → panel `.fallback`) por decisión del usuario. `test:visual` 34/34. Ver DECISIONS.
   Spec/plan: `docs/superpowers/{specs,plans}/2026-08-30-nosotros-team-grid-flatten*` (gitignored).
-- **Pendiente del ciclo:** card de Nancy sin foto/video → cerrar con `add-media` cuando haya clip o still.
+- **Cerrado (mini-ciclo):** card de Nancy con `nancy-nieto.mp4` (optimizado 2.48 MB → 424 KB, poster + webp);
+  entry a `mediaType: "video"` + `mediaPosition: "center top"`.
 - **No urgente:** la sección `founderSpotlight` de arriba y la card de Nancy en la grilla son 2 bloques
   de Nancy cerca; posible dedupe futuro (no pedido).
 
@@ -237,8 +238,6 @@ Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuari
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
 - `/assets/images/about/hero.jpg` (hero de `/nosotros`)
-- **Card de Nancy en la grilla del equipo** — hoy sin media (`mediaType: "image"`, `mediaSrc: null`).
-  Cerrar con un clip `nancy-nieto.mp4` (→ `mediaType: "video"`) o un still `nancy-nieto.jpg`.
 - Posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` podrían faltar (el video igual corre sin
   ellos); verificar con `ls public/assets/images/about/team/*.jpg` antes de darlo por pendiente.
 Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español → render `:3000` →

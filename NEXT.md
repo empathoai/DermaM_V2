@@ -1,9 +1,14 @@
 # NEXT
 
-Estado: HEAD esperado = `563efc7` — 3 commits sobre `7adc357`
-(`83d6bfe` feat acné antes/después · `81a79c0` feat oxigenoterapia bloque de procedimiento ·
-`563efc7` docs cierre).
+Estado: HEAD esperado = `03eeb0e` + commit de cierre de docs.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 2) — CERRADO:
+- **`/faciales/oxigenoterapia-facial`: copy a modalidad cápsula.** `heroDescription`, `whatIsBody`,
+  `application` ("Nebulización" → "Cápsula de oxígeno") y `faq[0]` del entry `oxigenoterapia-facial`
+  describían una pistola de O2 a presión; reescritos a la cápsula real (cúpula transparente + bruma de
+  activos + luz LED, sin chorro). Data-only, sin banned words, sin `test:visual`. Cierra el pendiente
+  del ciclo anterior. `03eeb0e`.
 
 Sesión 2026-08-30 (cont.) — CERRADO:
 - **`/faciales/oxigenoterapia-facial`: bloque de procedimiento (video + still).** `TreatmentDetailPage.jsx`
@@ -12,8 +17,6 @@ Sesión 2026-08-30 (cont.) — CERRADO:
   `beforeAfter` con `eyebrow: 'EL PROCEDIMIENTO'`, slot `before` = video `.mp4` (cápsula O2 + panel LED,
   H.264, `-an`, 2.6 MB), slot `after` = still de detalle, labels `EN CABINA`/`EQUIPO`, disclaimer de
   procedimiento. `BeforeAfterGrid` sin tocar. `test:visual` 34/34 sin diffs. Ver DECISIONS 2026-08-30.
-- **Pendiente abierto por este ciclo** (cola abajo): el copy del entry `oxigenoterapia-facial`
-  (`whatIsBody` + FAQ "bruma de oxígeno") describe "chorro a alta presión" — no matchea la cápsula.
 
 Sesión 2026-08-30 — CERRADO:
 - **`/faciales/tratamiento-acne`: sección antes/después.** `beforeAfter: { items: [...] }` (1 par) en
@@ -193,13 +196,7 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada:**
-- **[XS] Copy `oxigenoterapia-facial` — modalidad cápsula, no "chorro a alta presión".** En
-  `src/data/treatmentPages.js`, entry `oxigenoterapia-facial`: `whatIsBody` y la FAQ "¿Qué es la
-  bruma de oxígeno y qué se siente?" describen "chorro de oxígeno puro a alta presión" / "brisa de
-  viento frío". La sesión real (ver video en el mismo entry) es una **cápsula/cúpula** donde se
-  libera oxígeno en forma de vapor + panel LED. Reescribir esas 2 piezas para que matcheen. Cross-check
-  `MEDICAL_COMPLIANCE.md`. Data-only, sin `test:visual`. Abierto por el ciclo del 2026-08-30.
+**Cola de código no bloqueada:** vacía.
 - ~~CTA sticky en mobile~~ — **DESCARTADO 2026-08-29** por el usuario: el hero mobile ya tiene CTA de
   reserva + el FAB de WhatsApp es persistente; un 2º elemento fijo = clutter y riesgo de overlap
   (ver fix del footer). Retomar solo si analytics muestra caída de conversión en mobile. Ver DECISIONS.

@@ -2,6 +2,16 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
+## 2026-08-30 — Plan de remediación de auditorías (cont. 21, sin código)
+
+- **Llegaron los 3 informes externos** → `auditorias-externas/resultados/{ui-ux,seo,copy}.md` (12 hallazgos UX + 10 SEO + 7 CPY).
+- **Triaje completo → cola priorizada de 27 tareas** por severidad × impacto de negocio × riesgo de regresión. Fusiones: UX-01=CPY-02 (botón muerto), UX-02=SEO-05 (contenido fantasma en `CategoryPage`).
+- **Plan paso a paso:** `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md` (gitignored, en disco) — por tarea: archivos exactos, enfoque, verificación, impacto SEO/GEO/AEO, gate (brainstorm / visual / archivo protegido). Resumen de la cola inline en `NEXT.md` §cont. 21.
+- **Nada ejecutado.** Cada tarea entra por su ciclo: brainstorm → aprobación → 1 cambio → verificación → ritual. Empezar por Tarea 1 (CTA muerto Postoperatorios, XS). Tarea 2 (`.htaccess`) bloqueada hasta el deploy a Hostinger.
+- Se corrigió el template TDD de `superpowers:writing-plans` a formato de backlog: no hay runner unitario y la regla de un-cambio-por-ciclo de `CLAUDE.md` prevalece.
+
+---
+
 ## 2026-08-30 — Briefs de auditoría externa (cont. 20, sin código)
 
 - **`auditorias-externas/` nueva carpeta versionada.** Prepara una revisión read-only por un LLM externo conectado a una copia del repo (acceso de lectura a todo, escritura solo en `resultados/`).

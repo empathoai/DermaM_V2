@@ -1,6 +1,45 @@
 # NEXT
 
-Estado: HEAD esperado = commit `docs: cont.20 — briefs de auditoría externa` (sobre `a5fce3f`). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = commit `docs: cont.21 — plan de remediación de auditorías` (sobre `70dd261`). Árbol limpio salvo `M docs/PROGRESS_ARCHIVE.md` (preexistente, gitignored-tracked, NO de este ciclo — no tocar). Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 21) — PLAN DE REMEDIACIÓN ESCRITO (sin código):
+- Llegaron los 3 informes → `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. Triaje de los 27
+  hallazgos (12 UX + 10 SEO + 7 CPY; fusiones UX-01=CPY-02, UX-02=SEO-05) → cola priorizada por
+  severidad × impacto × riesgo de regresión.
+- Plan paso a paso (archivos, enfoque, verificación, impacto SEO/GEO/AEO, gate por tarea):
+  `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md` (gitignored, en disco).
+- **Nada ejecutado.** Cada tarea: `superpowers:brainstorming` → aprobación → 1 cambio → verificación → ritual.
+- Cola (tier · # · hallazgo · talla · nota):
+  - P0 · 1 · Botón muerto CTA "Agenda tu valoración" en Postoperatorios (UX-01=CPY-02) · **XS** · sin gate visual, sin protegido → **EMPEZAR AQUÍ**
+  - P0 · 2 · `.htaccess`: catch-all SPA antes de los 301 (SEO-01) · S · **BLOQUEADA** hasta deploy Hostinger
+  - P1 · 3 · `/nosotros/nancy-nieto` fuera de sitemap/robots/llms (SEO-02) · S · archivos protegidos, go nominal
+  - P1 · 4 · 3 variantes del disclaimer médico bajo CTAs → constante única (CPY-01) · M
+  - P1 · 5 · `CategoryPage` no renderiza benefits/approach/process/breadcrumb (UX-02=SEO-05) · **L** · gate visual, 6 hubs
+  - P1 · 6 · `BreadcrumbList` JSON-LD sin migas visibles (SEO-03) · M · decidir quitar nodo vs. render UI
+  - P1 · 7 · Entidad Organization fragmentada en Nosotros (SEO-04) · S · solo schema
+  - P1 · 8 · Hero de tratamiento en video oscuro vs. hero editorial claro (UX-03) · **L** · gate visual, 25 páginas
+  - P1 · 9 · Texto de hero `opacity:0` hasta evento de video (UX-04) · M
+  - P2 · 10 · Cláusula 911 sin versión en inglés (CPY-06) · S
+  - P2 · 11 · `h3` antes de `h2` en layout legal (UX-05) · XS
+  - P2 · 12 · robots.txt sin directivas para crawlers de IA (SEO-06) · S · protegido
+  - P2 · 13 · sitemap.xml sin `<lastmod>` (SEO-09) · S · protegido
+  - P2 · 14 · Consolidar JSON-LD de tratamiento en un `@graph` (SEO-07) · M
+  - P2 · 15 · `tú`/`usted` inconsistente en documentos legales (CPY-03) · M
+  - P2 · 16 · Taxonomía de CTAs primarios dispersa (CPY-04) · M
+  - P2 · 17 · Marcadores circulares en `MethodProcess` rompen radio 0px (UX-06) · S
+  - P2 · 18 · `bg-white` (#FFFFFF) en LegalResources (UX-07) · XS
+  - P2 · 19 · `Contacto`: gradientes/blur/CSS zombi + token de botón (UX-08) · M
+  - P2 · 20 · Viñetas cuadradas vs `<ListSparkle />` en FeaturedServices (UX-09) · S
+  - P2 · 21 · Falta enlace "Saltar al contenido" (UX-10) · S
+  - P2 · 22 · Canibalización semántica PRF vs faciales/capilar (SEO-08) · M · reconciliar con spec PRF cerrada
+  - P3 · 23 · llms.txt sin enlaces a políticas legales (SEO-10) · XS · protegido
+  - P3 · 24 · "marcas permanentes" → "persistentes" (CPY-05) · XS
+  - P3 · 25 · Capitalización/estilo de títulos ES inconsistente (CPY-07) · L (por volumen)
+  - P3 · 26 · Disclaimer del footer a 11px → 12px (UX-11) · XS
+  - P3 · 27 · `AboutPage`: padding fijo → `clamp()` + glifos de estrella (UX-12) · S
+- Orden de ataque del bloque alto: **1 → 3 → 4 → 7 → 9 → 6 → 5 → 8** (2 fuera hasta deploy). Luego P2
+  por talla ascendente (11 → 18 → 24 → 10 → 12 → 13 → 20 → 21 → 17 → 14 → 15 → 16 → 19 → 22), P3 al final.
+- **Al retomar:** `superpowers:brainstorming` sobre la Tarea 1.
 
 Sesión 2026-08-30 (cont. 20) — ESPERANDO 3 AUDITORÍAS EXTERNAS (sin código):
 - Se creó `auditorias-externas/` para una revisión read-only de un LLM externo:
@@ -389,7 +428,10 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada:** vacía.
+**Cola de código: cola de remediación de auditorías (cont. 21).** 27 tareas priorizadas — ver el
+bloque "Sesión 2026-08-30 (cont. 21)" arriba + plan completo en
+`docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`. Próxima: **Tarea 1** (botón
+muerto CTA Postoperatorios, XS). Cada tarea mantiene su gate: brainstorm → aprobación → 1 cambio.
 - ~~CTA sticky en mobile~~ — **DESCARTADO 2026-08-29** por el usuario: el hero mobile ya tiene CTA de
   reserva + el FAB de WhatsApp es persistente; un 2º elemento fijo = clutter y riesgo de overlap
   (ver fix del footer). Retomar solo si analytics muestra caída de conversión en mobile. Ver DECISIONS.

@@ -1,6 +1,23 @@
 # NEXT
 
-Estado: HEAD esperado = `0734f1f` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = `52a258e` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 19) — AUDITORÍA, sin código:
+- **Linkeo de Square: mapeo definido, doc para la clínica publicado.** Se extrajo el catálogo
+  completo de Square (52 servicios + `SERVICE_ID`) navegando `book.squareup.com` y se cruzó 1:1
+  contra las páginas de tratamiento del sitio. Mapeo cerrado con el usuario. Persistido en
+  **`docs/LINKEO-SQUARE-2026.md`** (catálogo + tabla directo/a-confirmar/genérico + próximos pasos).
+  Doc de revisión para la clínica = artifact
+  `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` (para editar tras su feedback:
+  republicar con `url=`).
+- **Bloqueado en:** confirmación de la clínica de 4 filas ("A confirmar": PRF, marcación abdominal,
+  corrientes rusas, depilación láser) + validar hidrofacial ("HIDRATACIÓN PROFUNDA" figura "LLÁMANOS").
+- **Al retomar:** `superpowers:brainstorming` → `src/data/squareServices.js` (slug→SERVICE_ID + helper
+  que arma la URL, fallback `/start`); de paso centraliza el `bookingUrl` copy-pasteado en 8 sitios
+  (follow-up cont.17 #3). Aprobación → cablear en 1 ciclo (PageHero/TreatmentHero/FinalCTA de páginas
+  de tratamiento leen el slug de ruta; Home/Navbar/Contacto/hubs siguen genérico). Doc-hygiene del
+  mismo ciclo: quitar el bloqueo dental de §Bloqueado para blanqueamiento estético (el usuario lo
+  autorizó — es estético, sin riesgo regulatorio).
 
 Sesión 2026-08-30 (cont. 18) — CERRADO:
 - **`/contacto` bloque de dos columnas: tarjetas simétricas + mapa a ancho completo.** `Contacto.jsx` +

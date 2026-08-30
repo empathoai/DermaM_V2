@@ -1,6 +1,23 @@
 # NEXT
 
-Estado: HEAD esperado = `52a258e` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = commit `docs: cont.20 — briefs de auditoría externa` (sobre `a5fce3f`). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 20) — ESPERANDO 3 AUDITORÍAS EXTERNAS (sin código):
+- Se creó `auditorias-externas/` para una revisión read-only de un LLM externo:
+  - `PROMPT.md` — lo único que el usuario pega en el LLM externo (solo el rol + "leé el doc").
+  - `INSTRUCCIONES-AUDITORIA.md` — detalle completo: guardrails (SOLO LECTURA de todo el repo,
+    escritura únicamente en `auditorias-externas/resultados/`), contexto de proyecto, 3 auditorías
+    con las skills que debe invocar cada una + fallback a leer el `SKILL.md`, checklist técnico, formato.
+  - `resultados/` — donde el auditor deja `seo.md`, `ui-ux.md`, `copy.md`.
+  - Auditoría 1 UI/UX → skill `impeccable`. Auditoría 2 SEO/GEO/AEO/Local → `seo-checklist-65` →
+    `seo-audit`+`schema` → `ai-seo` → `geo-aeo-playbook` → `bencium-aeo` → `seo-local` + checklist técnico.
+    Auditoría 3 copy → cross-check duro vs `MEDICAL_COMPLIANCE.md`.
+- El usuario corre las 3 sobre una copia del repo y pega los resultados en `resultados/`.
+- **Bloqueado en:** llegada de los 3 informes.
+- **Al retomar:** leer `auditorias-externas/resultados/*.md` → triar cada hallazgo → cada uno su ciclo
+  (brainstorm → aprobación → 1 cambio → verificación → ritual). NADA se ejecuta sin que el usuario
+  priorice. Cross-check obligatorio contra `MEDICAL_COMPLIANCE.md` + `DESIGN.md` antes de aceptar
+  cualquier recomendación.
 
 Sesión 2026-08-30 (cont. 19) — AUDITORÍA, sin código:
 - **Linkeo de Square: mapeo definido, doc para la clínica publicado.** Se extrajo el catálogo

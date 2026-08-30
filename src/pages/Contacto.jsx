@@ -144,9 +144,8 @@ export default function ContactoPage() {
                   </div>
                 </div>
 
-                {/* Right Sede West Palm Beach + Iframe Map */}
-                <div className={styles.infoColumn}>
-                  <div className={styles.locationCard}>
+                {/* Right: Sede West Palm Beach */}
+                <div className={styles.locationCard}>
                     <div className={styles.badgeRow}>
                       <span className={styles.badgeActive}>Sede Principal</span>
                     </div>
@@ -183,10 +182,11 @@ export default function ContactoPage() {
                         Cómo llegar
                       </a>
                     </div>
-                  </div>
+                </div>
+              </div>
 
-                  {/* Google Maps Container with Interactive Overlay Filter for Mobile */}
-                  <div className={styles.mapCardSection}>
+              {/* Full-width map below both cards */}
+              <div className={styles.mapCardSection}>
                     <div className={styles.mapTitleBar}>
                       <div className="flex items-center gap-2">
                         <MapPin size={14} />
@@ -231,10 +231,8 @@ export default function ContactoPage() {
                         style={{ pointerEvents: mapInteractive ? 'auto' : 'none' }}
                       ></iframe>
                     </div>
-                  </div>
-                </div>
-
               </div>
+
             </div>
           </section>
 

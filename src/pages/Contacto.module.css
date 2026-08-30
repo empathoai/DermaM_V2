@@ -669,9 +669,15 @@
 
 /* 5. Map Section */
 .mapCardSection {
-  margin-top: 32px;
+  margin-top: 40px;
   border: 1px solid rgba(54, 54, 51, 0.18);
   background-color: #EFEFEB;
+}
+
+@media (min-width: 1024px) {
+  .mapCardSection {
+    margin-top: 60px;
+  }
 }
 
 .mapTitleBar {
@@ -845,9 +851,9 @@
 
 @media (min-width: 1024px) {
   .twoColumnGrid {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 }
 
@@ -855,18 +861,14 @@
   background-color: #EFEFEB; /* Off White card background for focus form */
   border: 1px solid rgba(54, 54, 51, 0.18);
   padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .formColumn {
     padding: 56px 48px;
   }
-}
-
-.infoColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 /* Quick Action Bar */
@@ -1024,6 +1026,7 @@
 .startBlock {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .startBlockIntro {
@@ -1102,7 +1105,8 @@
   font-size: 13px;
   color: #4E4D4D;
   font-weight: 300;
-  margin: 24px 0 0 0;
+  margin: auto 0 0 0;
+  padding-top: 24px;
 }
 
 .startPhoneLink {

@@ -84,6 +84,7 @@ export default function TeamMemberCard({ member }) {
   const {
     name,
     role,
+    specialtyLabel,
     specialty,
     licenses,
     shortBio,
@@ -116,7 +117,8 @@ export default function TeamMemberCard({ member }) {
       </div>
       
       <div className={styles.info}>
-        <h4 className={styles.name}>{name}</h4>
+        {specialtyLabel && <p className={styles.eyebrow}>{specialtyLabel}</p>}
+        <h3 className={styles.name}>{name}</h3>
         <p className={styles.role}>{role}</p>
         
         {specialty && (

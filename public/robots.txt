@@ -8,6 +8,7 @@ User-agent: *
 # Allow all main content
 Allow: /
 Allow: /nosotros
+Allow: /nosotros/nancy-nieto
 Allow: /contacto
 Allow: /faciales
 Allow: /corporales

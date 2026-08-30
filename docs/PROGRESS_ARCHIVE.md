@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Task 1: dead CTA in Postoperatorios fixed (cont. 24, code)
+
+- **`FeaturedServices.jsx:124`** — replaced the routing-less `<button>Agenda tu valoración</button>` with `<Link to="/tratamientos-postoperatorios" className={styles.ctaLight}>Ver tratamiento</Link>`, matching cards 1 and 2. `Link` already imported; same class → no style/pixel change.
+- **Verified:** browser pane on `:3000` — click navigates to `/tratamientos-postoperatorios`, no console errors. `test:visual` skipped per `CLAUDE.md` §DoD (single-component content edit, no CSS/shared-template/layout change, no pixel change). Copy unchanged → no MEDICAL_COMPLIANCE cross-check needed.
+- Closes audit Task 1 (UX-01 = CPY-02). Commit `a52de89`.
+
 ## 2026-08-30 — Operational docs to English + `close-cycle` skill (cont. 23, no code)
 
 - **`NEXT.md`, `PROGRESS.md`, `MEMORY.md` + the Spanish memory files rewritten in English.** Spanish kept verbatim inside them: route paths, file/component/class names, quoted site copy, brand nouns, the mandated medical notice. No retro-translation of dated history in `DECISIONS.md` / `PROGRESS_ARCHIVE.md`.

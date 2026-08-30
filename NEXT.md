@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `a52de89` (cont. 24 — Task 1 done). Clean tree.
+Base commit = `<hash>` (cont. 25 — Task 3 done). HEAD may be 1 doc-fixup ahead. Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)
@@ -15,14 +15,13 @@ Dev server `:3000` = owned by another chat, do not touch.
 
 Nothing executed. Each task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 3** — `/nosotros/nancy-nieto` missing from sitemap/robots/llms (SEO-02), S, PROTECTED (needs explicit "go" per file).
+**Next: Task 4** — 3 variants of the medical notice under CTAs → single constant (CPY-01), M. Brainstorm: what happens to "Resultados pueden variar".
 
-Order: **3 → 4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+Order: **4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 3 | `/nosotros/nancy-nieto` missing from sitemap/robots/llms (SEO-02) | S | PROTECTED |
 | 4 | 3 variants of the medical notice under CTAs → single constant (CPY-01) | M | |
 | 5 | `CategoryPage` does not render benefits/approach/process/breadcrumb (UX-02=SEO-05) | L | |
 | 6 | `BreadcrumbList` JSON-LD with no visible breadcrumb (SEO-03) | M | |
@@ -71,8 +70,8 @@ Not executed without a request. On resume: curation Option A vs B, confirm "no `
 
 1. **Deploy to Hostinger/Apache** (real prod; Vercel = client demo). When doing it: replace `public/.htaccess`
    with the block from `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8 (this also resolves
-   Task 2 / SEO-01), verify with its `curl -I` script, add `/nosotros/nancy-nieto` to `sitemap.xml`
-   (covers Task 3 / SEO-02), fix `docs/seo-setrategies/INTAKE.md:56` ("Vercel" → Hostinger/Apache).
+   Task 2 / SEO-01), verify with its `curl -I` script — check `/nosotros/nancy-nieto` is still in
+   `sitemap.xml`/`robots.txt`/`llms.txt` (Task 3 / SEO-02 done cont. 25), fix `docs/seo-setrategies/INTAKE.md:56` ("Vercel" → Hostinger/Apache).
 2. **Verify GSC** by Domain on Hostinger + DNS.
 
 ## Conditional (wait for the condition to hold)

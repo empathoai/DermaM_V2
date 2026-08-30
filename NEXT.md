@@ -1,7 +1,12 @@
 # NEXT
 
-Estado: HEAD esperado = `bd43ced`/`c7df424` (pusheados) + commit `feat` attribution/eyebrow + su `docs` (push pendiente).
-Árbol limpio salvo esos 2 commits. Sin servers salvo el `:3000`.
+Estado: HEAD esperado = `aa05d05` (pusheado). Árbol limpio. Sin servers.
+
+**Para la próxima sesión — evaluar el modelo de procesamiento / ritmo.** Esta sesión fue lenta para
+el usuario: cambios chicos (2 strings, swaps de imagen) llevaron varias vueltas y corridas de
+`test:visual` de ~6 min (fallar → `--update-snapshots` → verificar). Ver memoria
+`feedback_pacing_small_changes`. Revisar si conviene (a) batchear los slots de imagen restantes de
+Nancy para pagar `test:visual` una sola vez, (b) un modo más rápido, (c) menos verificación por paso.
 
 Sesión 2026-08-30 (cont. 12) — CERRADO:
 - **`/nosotros/nancy-nieto` hero enfocado en ella.** Imagen propia (`about/nancy-nieto/nancy-nieto-hero.jpg`,

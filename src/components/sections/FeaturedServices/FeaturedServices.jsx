@@ -121,7 +121,7 @@ export default function FeaturedServices() {
               <li><span className={styles.bullet}></span>Prevención de fibrosis</li>
             </ul>
             <div className={styles.actionArea}>
-              <button className={styles.ctaLight}>Agenda tu valoración</button>
+              <Link to="/tratamientos-postoperatorios" className={styles.ctaLight}>Ver tratamiento</Link>
               <p className={styles.disclaimer}>
                 Requiere valoración médica previa para garantizar tu seguridad y resultados.
               </p>

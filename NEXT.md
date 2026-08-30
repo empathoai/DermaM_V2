@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `556f99f` (cont. 23 close). HEAD may be 1 doc-fixup ahead. Clean tree.
+Base commit = `<hash>` (cont. 24 — Task 1 done). Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)
@@ -15,13 +15,12 @@ Dev server `:3000` = owned by another chat, do not touch.
 
 Nothing executed. Each task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 1** — dead CTA "Agenda tu valoración" in Postoperatorios (`FeaturedServices.jsx:124`), XS.
+**Next: Task 3** — `/nosotros/nancy-nieto` missing from sitemap/robots/llms (SEO-02), S, PROTECTED (needs explicit "go" per file).
 
-Order: **1 → 3 → 4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+Order: **3 → 4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
-| 1 | Dead CTA in Postoperatorios (UX-01=CPY-02) | XS | |
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 3 | `/nosotros/nancy-nieto` missing from sitemap/robots/llms (SEO-02) | S | PROTECTED |
 | 4 | 3 variants of the medical notice under CTAs → single constant (CPY-01) | M | |
@@ -103,9 +102,8 @@ GBP posts + base Facebook ads copy for postop (`docs/superpowers/specs/2026-08-2
    Verification: cross-check `docs/MEDICAL_COMPLIANCE.md` (copy) + WCAG AA + browser `:3000`.
    `test:visual` **only** if the change touches CSS / a shared component-template / layout / a reused class
    (`CLAUDE.md` §DoD). Git Bash gotcha: prefix `MSYS_NO_PATHCONV=1` when using `-g /pattern`.
-3. t-shirt sizing (attack in ascending order unless the user says otherwise):
-   **XS** copy in 1 place · **S** 1–3 files mechanical · **M** multi-file with judgement · **L** multi-phase · **XL** whole new feature.
-4. Closing the session → run the `close-cycle` skill.
+3. t-shirt sizing (ascending order unless told otherwise): **XS** copy in 1 place · **S** 1–3 files mechanical · **M** multi-file w/ judgement · **L** multi-phase · **XL** new feature.
+4. Closing the session → `close-cycle` skill.
 
 ## Resolved infra (do not redo)
 

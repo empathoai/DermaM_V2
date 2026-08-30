@@ -1,8 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = `ddfa331` + commit de cierre de docs.
-Árbol: en disco sin trackear `about/team/dr-tony-diaz.mp4` y `about/team/miguel-ramos.mp4`
-(material para un ciclo `/nosotros`, no de este). Sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit `feat(nosotros)` de videos de team + su commit `docs` (push pendiente de confirmar). Árbol limpio. Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 8) — CERRADO:
+- **`/nosotros`: videos de Tony Díaz y Miguel Ramos (2 slots, 1 ciclo).** Por pedido explícito del
+  usuario: ambos en un commit + hold dental omitido para Miguel. Tony = rename `dr-tony-diaz.mp4` →
+  `tony-diaz.mp4` (slot ya cableado, sin cambio de data). Miguel = `aboutPage.js` `mediaType`
+  `image`→`video` + `videoSrc` nuevo + `mediaSrc` (poster). `optimize.js` (1.31 MB → ~295 KB),
+  posters frame-0 + `.webp`. `TeamMemberCard` sin tocar. `test:visual` 34/34. Ver DECISIONS 2026-08-30.
 
 Sesión 2026-08-30 (cont. 7) — CERRADO:
 - **`/faciales/rejuvenecimiento-facial`: sección antes/después con labels custom.** `beforeAfter` (1 item):
@@ -218,16 +223,12 @@ Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuari
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
 - `/assets/images/about/hero.jpg`
-- `/assets/images/about/team/{melisa-rios,mikaela-guajardo,daniela-parra,elianne-trujillo,samantha-atencio,tony-diaz}.jpg`
-- `/assets/images/about/team/{samantha-atencio,tony-diaz}.mp4`
+- `/assets/images/about/team/{melisa-rios,mikaela-guajardo,daniela-parra,elianne-trujillo,samantha-atencio}.jpg`
+- `/assets/images/about/team/samantha-atencio.mp4`
 Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español → render `:3000` →
 `test:visual` re-baseline → WCAG → ritual). Nombres `hero.jpg`/`<slug>.jpg` se mantienen (los
 data refs de `aboutPage.js` ya los usan; renombre SEO 7.1 sería sub-ciclo aparte).
-
-**El usuario ya dejó en disco (sin trackear, 2026-08-30):** `about/team/dr-tony-diaz.mp4` y
-`about/team/miguel-ramos.mp4`. Ojo: los refs de `aboutPage.js` son `tony-diaz.mp4` (sin `dr-`) y
-no hay `miguel-ramos` en el team array → arrancar el ciclo confirmando nombre final + si Miguel
-Ramos es miembro nuevo (¿alta en `aboutPage.js`?) o rename de otro.
+(Tony Díaz y Miguel Ramos: CERRADOS en cont. 8.)
 
 Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`

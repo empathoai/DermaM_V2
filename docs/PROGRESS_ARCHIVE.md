@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/rejuvenecimiento-facial: sección antes/después (labels custom)
+- **Data + media (`feat`).** `beforeAfter` (1 item) en el entry `rejuvenecimiento-facial`. El cliente armó los collages: slot `before` = collage antes/después de 2 paneles (label `ANTES - DESPUÉS`), slot `after` = collage de progresión de 3 paneles (label `RESULTADOS`). Imágenes 1000×1250, `optimize.js` (130/178 KB) + `.webp`.
+- **Sin cambio de componente.** `TreatmentDetailPage` ya pasa `beforeLabel`/`afterLabel` desde la data.
+- **Verificación.** `:3000`: 2 tiles, labels correctos, `.webp` cargan, consola limpia. `test:visual` skip.
+
 ## 2026-08-30 — /faciales/peel-coreano: 2do par antes/después
 - **Data + media (`feat`).** Se agrega un `item` a `beforeAfter.items` del entry `peel-coreano` (queda 2 filas). Imágenes separadas del cliente (1000×1250) → `optimize.js` (~112 KB) + `.webp`. Par 1 (`peel-coreano-antes/despues.jpg`, del 27/08) sin cambios; nuevos = `-antes-2`/`-despues-2`.
 - **Sin cambio de componente.** Alt trazable al copy del entry, sin banned words, imágenes reales del cliente.

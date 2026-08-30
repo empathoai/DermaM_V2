@@ -133,6 +133,7 @@ export const aboutPage = {
           mediaType: "video",
           videoSrc: "/assets/images/about/team/tony-diaz.mp4",
           mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
+          mediaPosition: "center 18%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/tony-diaz.vcf",
           status: "active"
@@ -147,8 +148,10 @@ export const aboutPage = {
           role: "Odontólogo Especialista en Ortodoncia, Rehabilitación Oral y Estética Dental",
           tags: ["Estética Dental"],
           shortBio: "Más de 25 años de práctica clínica en ortodoncia, rehabilitación oral y blanqueamiento dental certificado, combinando conocimiento clínico con una visión estética centrada en el paciente.",
-          mediaType: "image",
-          mediaSrc: undefined,
+          mediaType: "video",
+          videoSrc: "/assets/images/about/team/miguel-ramos.mp4",
+          mediaSrc: "/assets/images/about/team/miguel-ramos.jpg",
+          mediaPosition: "center 18%",
           vcardEnabled: true,
           vcardUrl: "/team/vcards/miguel-ramos.vcf",
           status: "active"

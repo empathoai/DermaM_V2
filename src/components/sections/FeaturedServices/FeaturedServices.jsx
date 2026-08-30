@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import Picture from '../../shared/Picture/Picture';
+import { MEDICAL_VALUATION_NOTICE } from '../../../data/siteMeta';
 import styles from './FeaturedServices.module.css';
 
 export default function FeaturedServices() {
@@ -48,9 +49,7 @@ export default function FeaturedServices() {
             </ul>
             <div className={styles.actionArea}>
               <Link to="/limpieza-facial-profunda" className={styles.ctaLight}>Ver tratamiento</Link>
-              <p className={styles.disclaimer}>
-                Requiere valoración médica previa para garantizar tu seguridad y resultados.
-              </p>
+              <p className={styles.disclaimer}>{MEDICAL_VALUATION_NOTICE}</p>
             </div>
           </div>
           <div className={styles.mediaCol}>
@@ -85,9 +84,7 @@ export default function FeaturedServices() {
             </ul>
             <div className={styles.actionArea}>
               <Link to="/prf-y-fibrina" className={styles.ctaDark}>Ver tratamiento</Link>
-              <p className={styles.disclaimerDark}>
-                Requiere valoración médica previa para garantizar tu seguridad y resultados.
-              </p>
+              <p className={styles.disclaimerDark}>{MEDICAL_VALUATION_NOTICE}</p>
             </div>
           </div>
           <div className={styles.mediaColDark}>
@@ -122,9 +119,7 @@ export default function FeaturedServices() {
             </ul>
             <div className={styles.actionArea}>
               <Link to="/tratamientos-postoperatorios" className={styles.ctaLight}>Ver tratamiento</Link>
-              <p className={styles.disclaimer}>
-                Requiere valoración médica previa para garantizar tu seguridad y resultados.
-              </p>
+              <p className={styles.disclaimer}>{MEDICAL_VALUATION_NOTICE}</p>
             </div>
           </div>
           <div className={styles.mediaCol}>

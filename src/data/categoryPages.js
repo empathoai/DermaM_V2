@@ -1,4 +1,4 @@
-import { HERO_LOCAL_TAG } from './siteMeta';
+import { HERO_LOCAL_TAG, MEDICAL_VALUATION_NOTICE } from './siteMeta';
 
 export const categoryPages = {
   faciales: {
@@ -53,7 +53,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas poros más limpios.',
           to: '/limpieza-facial-profunda',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/landings/limpieza-facial-profunda/hero.jpg'
         },
         {
@@ -67,7 +67,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas regeneración progresiva.',
           to: '/prf-y-fibrina',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/landings/prf-y-fibrina/hero.jpg'
         },
         {
@@ -81,7 +81,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas piel limpia e hidratada.',
           to: '/faciales/hidrofacial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/hidrofacial/hero.jpg'
         },
         {
@@ -95,7 +95,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mejorar marcas.',
           to: '/faciales/microneedling',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/microneedling/hero.jpg'
         },
         {
@@ -109,7 +109,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas firmeza facial.',
           to: '/faciales/hifu-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/hifu-facial/hero.jpg'
         },
         {
@@ -123,7 +123,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas glow sin agresión.',
           to: '/faciales/peel-coreano',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/peel-coreano/hero.jpg'
         },
         {
@@ -137,7 +137,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas elasticidad.',
           to: '/faciales/radiofrecuencia-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/radiofrecuencia-facial/hero.jpg'
         },
         {
@@ -151,7 +151,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas frescura.',
           to: '/faciales/oxigenoterapia-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/oxigenoterapia-facial/hero.jpg'
         },
         {
@@ -165,7 +165,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas prevención.',
           to: '/faciales/rejuvenecimiento-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/rejuvenecimiento-facial/hero.jpg'
         },
         {
@@ -179,7 +179,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas control.',
           to: '/faciales/tratamiento-acne',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/tratamiento-acne/hero.jpg'
         },
         {
@@ -193,7 +193,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas uniformidad.',
           to: '/faciales/manchas-cicatrices',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/manchas-cicatrices/hero.jpg'
         },
         {
@@ -207,7 +207,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas suavidad.',
           to: '/faciales/dermabracion-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/dermabracion-facial/hero.jpg'
         },
         {
@@ -221,7 +221,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas confort.',
           to: '/faciales/plasma-frio',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/plasma-frio/hero.jpg'
         },
         {
@@ -235,7 +235,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas revitalización.',
           to: '/faciales/carboxiterapia-facial',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/faciales/carboxiterapia-facial/hero.jpg'
         }
       ]
@@ -250,7 +250,7 @@ export const categoryPages = {
           description: 'Estimula la piel a nivel profundo y mejora la absorción de activos.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -258,7 +258,7 @@ export const categoryPages = {
           description: 'Tecnología térmica controlada para firmeza, textura y elasticidad.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -266,7 +266,7 @@ export const categoryPages = {
           description: 'Estimula músculos faciales y activa colágeno para definición.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -274,7 +274,7 @@ export const categoryPages = {
           description: 'Técnica manual para realzar el contorno natural del rostro.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -282,7 +282,7 @@ export const categoryPages = {
           description: 'Oxigena tejidos, reduce tensión y mejora el aspecto general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -290,7 +290,7 @@ export const categoryPages = {
           description: 'Estimula circulación, drenaje y efecto lifting suave del rostro.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         }
       ]
@@ -435,7 +435,7 @@ export const categoryPages = {
           ideal: 'Ideal si estás en proceso de recuperación corporal.',
           to: '/tratamientos-postoperatorios',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
           imagePosition: '70% center'
         },
@@ -450,7 +450,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas apoyo corporal integral.',
           to: '/corporales/lipo-360',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/lipo-360/hero.jpg',
           imagePosition: '74% center'
         },
@@ -465,7 +465,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mejorar la apariencia de glúteos.',
           to: '/corporales/levantamiento-gluteos',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/levantamiento-gluteos/hero.jpg',
           imagePosition: '72% center'
         },
@@ -480,7 +480,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas una apariencia abdominal más definida.',
           to: '/corporales/marcacion-abdominal',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/marcacion-abdominal/hero.jpg',
           imagePosition: '70% center'
         },
@@ -495,7 +495,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas acompañar firmeza sin cirugía.',
           to: '/corporales/hifu-corporal',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/hifu-corporal/hero.jpg',
           imagePosition: '82% center'
         },
@@ -510,7 +510,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas complementar definición corporal.',
           to: '/corporales/corrientes-rusas',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/corrientes-rusas/hero.jpg',
           imagePosition: '76% center'
         },
@@ -525,7 +525,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mejorar textura visible de la piel.',
           to: '/corporales/estrias-celulitis',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/estrias-celulitis/hero.jpg',
           imagePosition: '72% center'
         },
@@ -540,7 +540,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas revitalización corporal localizada.',
           to: '/corporales/carboxiterapia-corporal',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/carboxiterapia-corporal/hero.jpg',
           imagePosition: '78% center'
         }
@@ -556,7 +556,7 @@ export const categoryPages = {
           description: 'Técnica manual para apoyar drenaje, circulación y apariencia corporal.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/corporales/maderoterapia-corporal/tratamiento-maderoterapia-corporal.jpg',
           imagePosition: 'center 80%'
         }
@@ -703,7 +703,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas una solución más duradera para el vello corporal o facial.',
           to: '/laser-y-luz/depilacion-laser',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/laser-y-luz/depilacion-laser/hero.jpg'
         },
         {
@@ -718,7 +718,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mejorar la apariencia general de la piel.',
           to: '/laser-y-luz/ipl',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/laser-y-luz/ipl/hero.jpg'
         }
       ]
@@ -864,7 +864,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mejorar la luminosidad visible de tu sonrisa.',
           to: '/dental-estetico/blanqueamiento-dental',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/hero.jpg',
           imagePosition: '74% center'
         },
@@ -879,7 +879,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas mantener una sonrisa limpia y cuidada.',
           to: '/dental-estetico/limpieza-dental',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/dental-estetico/limpieza-dental/hero.jpg',
           imagePosition: '74% center'
         }
@@ -1020,7 +1020,7 @@ export const categoryPages = {
           description: 'Protocolo intravenoso orientado a apoyar bienestar, defensas y vitalidad general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1028,7 +1028,7 @@ export const categoryPages = {
           description: 'Opción intravenosa diseñada para acompañar energía, hidratación y recuperación.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1036,7 +1036,7 @@ export const categoryPages = {
           description: 'Protocolo orientado a apoyar el bienestar inmunológico y la vitalidad general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1044,7 +1044,7 @@ export const categoryPages = {
           description: 'Opción intravenosa enfocada en apoyar claridad, concentración y bienestar general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1052,7 +1052,7 @@ export const categoryPages = {
           description: 'Protocolo diseñado para acompañar recuperación, confort y equilibrio general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1060,7 +1060,7 @@ export const categoryPages = {
           description: 'Opción enfocada en apoyar hidratación, reposición y sensación de bienestar.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1068,7 +1068,7 @@ export const categoryPages = {
           description: 'Protocolo orientado a recuperación, hidratación y revitalización general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1076,7 +1076,7 @@ export const categoryPages = {
           description: 'Opción diseñada para acompañar recuperación física, hidratación y rendimiento general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1084,7 +1084,7 @@ export const categoryPages = {
           description: 'Protocolo orientado a apoyar bienestar, luminosidad y cuidado integral desde el interior.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1092,7 +1092,7 @@ export const categoryPages = {
           description: 'Opción intravenosa enfocada en bienestar, antioxidantes y apoyo al cuidado integral.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         },
         {
@@ -1100,7 +1100,7 @@ export const categoryPages = {
           description: 'Protocolo orientado a acompañar energía, metabolismo y bienestar general.',
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: null
         }
       ]
@@ -1246,7 +1246,7 @@ export const categoryPages = {
           ideal: 'Ideal si buscas acompañar la calidad visible de tu cabello.',
           to: '/capilar/tratamiento-capilar',
           cta: 'VER TRATAMIENTO',
-          disclaimer: 'Requiere valoración profesional previa para garantizar tu seguridad y resultados.',
+          disclaimer: MEDICAL_VALUATION_NOTICE,
           image: '/assets/images/treatments/capilar/tratamiento-capilar/hero.jpg'
         }
       ]

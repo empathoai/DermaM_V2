@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `0c723fc` (cont. 25 — Task 3 done). HEAD may be 1 doc-fixup ahead. Clean tree.
+Base commit = `<hash>` (cont. 26 — Task 4 done). HEAD may be 1 doc-fixup ahead. Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)
@@ -15,14 +15,15 @@ Dev server `:3000` = owned by another chat, do not touch.
 
 Nothing executed. Each task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 4** — 3 variants of the medical notice under CTAs → single constant (CPY-01), M. Brainstorm: what happens to "Resultados pueden variar".
+**Next: Task 7** — Organization entity fragmented on Nosotros (SEO-04), S.
 
-Order: **4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+Order: **7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+
+Notice constant (Task 4, done): `MEDICAL_VALUATION_NOTICE` in `src/data/siteMeta.js` = `"Requiere valoración profesional previa para garantizar tu seguridad y resultados."` — invariable, "profesional" not "médica". See `DECISIONS.md` 2026-08-30.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 4 | 3 variants of the medical notice under CTAs → single constant (CPY-01) | M | |
 | 5 | `CategoryPage` does not render benefits/approach/process/breadcrumb (UX-02=SEO-05) | L | |
 | 6 | `BreadcrumbList` JSON-LD with no visible breadcrumb (SEO-03) | M | |
 | 7 | Organization entity fragmented on Nosotros (SEO-04) | S | |
@@ -59,9 +60,8 @@ Missing: clinic confirmation of 4 rows (PRF, marcación abdominal, corrientes ru
 doc = artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` (republish with `url=`).
 
 **Missing media — `add-media` skill, 1 slot per cycle.**
-- `about/hero.jpg` (`/nosotros` hero) ON HOLD: points to `contact/hero.jpg` (placeholder, `aboutPage.js:11`), waiting on the user's team photo. Leaves `nosotros-viewport` (desktop-chrome) failing in `test:visual` until it arrives; if it drags: `npx playwright test -g "Nosotros Page - Viewport" --update-snapshots`.
+- `about/hero.jpg` (`/nosotros` hero) ON HOLD: points to `contact/hero.jpg` (placeholder, `aboutPage.js:11`), waiting on the user's team photo. **Known `test:visual` failure** `nosotros-viewport` (desktop-chrome) until it lands; if it drags: `npx playwright test -g "Nosotros Page - Viewport" --update-snapshots`.
 - Verify `.jpg` posters for `mikaela-guajardo` / `elianne-trujillo`. Nancy image map: COMPLETE (4/4).
-- Other missing media: `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 
 **Reviews 8.20 — IN BACKLOG** (user, 2026-08-29). `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
 Not executed without a request. On resume: curation Option A vs B, confirm "no `aggregateRating`".

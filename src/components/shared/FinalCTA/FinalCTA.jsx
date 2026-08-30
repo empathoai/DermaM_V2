@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MEDICAL_VALUATION_NOTICE } from '../../../data/siteMeta';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA({
@@ -63,7 +64,7 @@ export default function FinalCTA({
           {disclaimer && (
             <p className={styles.disclaimer}>
               {compactLegal
-                ? 'Requiere valoración médica previa para garantizar tu seguridad y resultados. Resultados pueden variar.'
+                ? `${MEDICAL_VALUATION_NOTICE} Resultados pueden variar.`
                 : disclaimer}
             </p>
           )}

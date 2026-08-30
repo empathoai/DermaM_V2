@@ -1,3 +1,4 @@
+import { MEDICAL_VALUATION_NOTICE } from './siteMeta';
 import { categoryPages } from './categoryPages';
 
 function getTreatmentAssetFolder(categoryKey) {
@@ -41,7 +42,7 @@ function getBaseTreatment(categoryKey, slug) {
       image: found.image || `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
       imagePosition: found.imagePosition,
       route: found.to || found.link || `/${getTreatmentAssetFolder(categoryKey)}/${slug}`,
-      disclaimer: found.disclaimer || 'Requiere valoración previa para garantizar tu seguridad y resultados.'
+      disclaimer: found.disclaimer || MEDICAL_VALUATION_NOTICE
     };
   }
 
@@ -53,7 +54,7 @@ function getBaseTreatment(categoryKey, slug) {
     ideal: 'Ideal si buscas un cuidado personalizado y de alta calidad.',
     image: `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
     route: `/${getTreatmentAssetFolder(categoryKey)}/${slug}`,
-    disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.'
+    disclaimer: MEDICAL_VALUATION_NOTICE
   };
 }
 

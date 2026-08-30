@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Task 3: `/nosotros/nancy-nieto` into discovery files (cont. 25, code)
+
+- **Additions only, format/order preserved.** `public/sitemap.xml` — `<url>` for `https://dermamskinhealth.com/nosotros/nancy-nieto` after `/nosotros`, `priority` 0.7, no `<lastmod>` (that's Task 13). `public/robots.txt` — `Allow: /nosotros/nancy-nieto` after `Allow: /nosotros`. `public/llms.txt` — `- Nancy Nieto — Founder & Director: …` in `## About` (title traceable to `aboutPage.js:20`).
+- **Verified:** sitemap parses as valid XML (44/44 tags balanced); robots/llms placement confirmed by inspection. No visual gate — files not rendered by the SPA. Navbar untouched per `MEMORY.md` `project_nav_orphan_bio_page`.
+- Closes audit Task 3 (SEO-02). Commit `0c723fc`.
+
 ## 2026-08-30 — Task 1: dead CTA in Postoperatorios fixed (cont. 24, code)
 
 - **`FeaturedServices.jsx:124`** — replaced the routing-less `<button>Agenda tu valoración</button>` with `<Link to="/tratamientos-postoperatorios" className={styles.ctaLight}>Ver tratamiento</Link>`, matching cards 1 and 2. `Link` already imported; same class → no style/pixel change.

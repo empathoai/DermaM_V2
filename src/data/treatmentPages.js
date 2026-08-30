@@ -492,7 +492,23 @@ const customDetails = {
         question: '¿Puedo tomar sol durante el tratamiento?',
         answer: 'No. La exposición solar directa sobre el área tratada está totalmente desaconsejada. Debes aplicar protector solar SPF 30 o superior cada 4 horas.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [
+        {
+          before: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-antes-1.jpg',
+          after: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-despues-1.jpg',
+          beforeAlt: 'Mejilla con manchas solares e hiperpigmentación de tono irregular antes del tratamiento de manchas y cicatrices en Derma.M, West Palm Beach',
+          afterAlt: 'Mejilla con tono más homogéneo y manchas atenuadas tras el tratamiento de manchas y cicatrices en Derma.M, West Palm Beach'
+        },
+        {
+          before: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-antes-2.jpg',
+          after: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-despues-2.jpg',
+          beforeAlt: 'Rostro con pecas y manchas de melasma extendidas antes del tratamiento de manchas y cicatrices en Derma.M, West Palm Beach',
+          afterAlt: 'Rostro con pigmentación más uniforme y manchas menos visibles tras el tratamiento de manchas y cicatrices en Derma.M, West Palm Beach'
+        }
+      ]
+    }
   },
   'dermabracion-facial': {
     contentUpdated: '2026-08-27',

@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /corporales: imagen en la card complementaria de maderoterapia
+- **Data + media (`feat`).** `src/data/categoryPages.js`, objeto `corporales` → `complementaryTreatments.treatments[0]` (MADEROTERAPIA CORPORAL): `image: null` → ruta real + `imagePosition: 'center 80%'` (recorte 1:1). Era la única card complementaria del hub → tarjeta de texto huérfana en grilla de 3 col. Imagen del usuario PNG 1.9 MB → JPG 133 KB + `.webp`.
+- **Sin cambio de componente.** `CategoryPage.jsx` ya pasa `showMedia={true}`. Otros 5 hubs sin tocar. faciales (6) e iv-therapy (11) complementarias quedan con `image: null` a propósito. Ver DECISIONS 2026-08-30.
+- **Verificación.** `:3000` `/corporales`: card con imagen (webp), recorte OK, alt autogenerado. `test:visual` skip.
+
 ## 2026-08-30 — /faciales/plasma-frio: bloque de procedimiento (video + still)
 - **Data + media (`feat`).** Entry `plasma-frio` en `src/data/treatmentPages.js`: objeto `beforeAfter` (`eyebrow: 'EL PROCEDIMIENTO'`, headline propio, labels `EN CABINA`/`EQUIPO`, disclaimer de procedimiento). Slot `before` = video del electrodo de vidrio con gas ionizado (HEVC 41 s/38 MB → H.264, `-an`, recortado a 18 s, 2.78 MB); slot `after` = still de detalle. Poster + still (41/45 KB) + `.webp`.
 - **Sin cambio de componente.** `TreatmentDetailPage.jsx` (override de `eyebrow`/`headline` ya shippeado en el ciclo anterior) y `BeforeAfterGrid` sin tocar.

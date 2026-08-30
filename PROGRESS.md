@@ -2,10 +2,10 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — /corporales: imagen en la card complementaria de maderoterapia
-- **Data + media (`feat`).** `src/data/categoryPages.js`, objeto `corporales` → `complementaryTreatments.treatments[0]` (MADEROTERAPIA CORPORAL): `image: null` → ruta real + `imagePosition: 'center 80%'` (recorte 1:1). Era la única card complementaria del hub → quedaba una tarjeta de texto huérfana en grilla de 3 col. Imagen del usuario (herramientas de maderoterapia sobre camilla) PNG 1.9 MB → JPG 133 KB + `.webp`.
-- **Sin cambio de componente.** `CategoryPage.jsx` ya pasa `showMedia={true}` a la grilla complementaria. Otros 5 hubs sin tocar (solo cambia 1 valor en el objeto `corporales`). `image: null` en cards complementarias sigue siendo el patrón en faciales (6) e iv-therapy (11) — no se tocaron (6–11 cards se leen bien como grilla de texto; corporales era el caso de 1 sola).
-- **Verificación.** Render `:3000` en `/corporales`: card con imagen (webp 200), recorte OK (herramientas visibles), 1:1 424px, alt "Maderoterapia Corporal" (autogenerado por `TreatmentCard`, = resto del sitio), consola limpia. `test:visual` skip (`/corporales` no snapshoteada, edit data-only). Ver DECISIONS 2026-08-30.
+## 2026-08-30 — /faciales/manchas-cicatrices: sección antes/después (2 pares)
+- **Data + media (`feat`).** `beforeAfter` con 2 `items` en el entry `manchas-cicatrices`. Fotos del cliente llegaron como collage vertical (antes arriba / después abajo por imagen, 2 imágenes) → partidas y recortadas a 4:5 centrado en la mejilla con ffmpeg (costura en y≈612/627, no exactamente 625), sin línea divisoria. 4 JPG ~15–31 KB + `.webp`; los 2 collages originales no se versionan.
+- **Sin cambio de componente.** `TreatmentDetailPage` ya renderiza "EVIDENCIA DE APOYO / EVOLUCIÓN Y RESULTADOS ASISTIDOS" + disclaimer estándar con `items.length > 0`. Acá el encabezado de resultados **sí corresponde** (es antes/después real, a diferencia de oxigenoterapia/plasma-frío).
+- **Verificación.** `:3000`: 2 filas ANTES/DESPUÉS, 4 `.webp` cargan (496×600, no rotas), consola limpia. Alt trazable al copy del entry (hiperpigmentación solar, tono irregular, atenuación), sin banned words, imágenes reales del cliente. `test:visual` skip (data-only, ruta no snapshoteada).
 
 ---
 

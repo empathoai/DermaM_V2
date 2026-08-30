@@ -1,7 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = `acb0d06` + commit de cierre de docs.
+Estado: HEAD esperado = `e1f9c29` + commit de cierre de docs.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 5) — CERRADO:
+- **`/faciales/manchas-cicatrices`: sección antes/después (2 pares).** `beforeAfter` con 2 `items` en el
+  entry. Fotos del cliente venían como collage vertical (antes/después en la misma imagen) → partidas y
+  recortadas a 4:5 con ffmpeg, sin costura. 4 JPG + `.webp`, collages originales no versionados. Sin
+  cambio de componente (encabezado de resultados sí corresponde acá). `test:visual` skip. `e1f9c29`.
 
 Sesión 2026-08-30 (cont. 4) — CERRADO:
 - **`/corporales`: imagen en la card complementaria de maderoterapia.** `categoryPages.js`, objeto

@@ -29,7 +29,7 @@ export default function NancyNietoPage() {
           "jobTitle": "Fundadora y Directora",
           "description": "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Fundadora y directora de DERMA.M.",
           "url": "https://dermamskinhealth.com/nosotros/nancy-nieto",
-          "image": "https://dermamskinhealth.com/assets/images/home/founder.jpg",
+          "image": "https://dermamskinhealth.com/assets/images/about/nancy-nieto-fundadora.jpg",
           "worksFor": { "@id": "https://dermamskinhealth.com/#organization" },
           "sameAs": ["https://www.linkedin.com/in/nancy-nieto-581160144"]
         })}</script>

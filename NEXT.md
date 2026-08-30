@@ -2,6 +2,11 @@
 
 Estado: HEAD esperado = `3c8bb2c` (pusheado). Árbol limpio. Sin servers.
 
+Sesión 2026-08-30 (cont. 15) — CERRADO:
+- **JSON-LD de Nancy: `image` de Persona → foto real** (`NancyNieto.jsx:32`, 1 línea). Mapa de
+  imágenes de Nancy **4/4 — COMPLETO**. `home/founder.jpg` + `.webp` sin refs de código; `git rm`
+  pendiente (bloqueado por classifier este ciclo). Sin `test:visual`.
+
 Sesión 2026-08-30 (cont. 14) — CERRADO:
 - **`/nosotros` `founderSpotlight`: foto real de Nancy.** `founderSpotlight.image` en `aboutPage.js`:
   `home/founder.jpg` (modelo stock) → `about/nancy-nieto-fundadora.jpg` (retrato real, 1000×1200,
@@ -276,11 +281,8 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
-- **JSON-LD `image` en `NancyNieto.jsx:32`** — URL absoluta a `home/founder.jpg` (modelo stock). Es la
-  4ª y última imagen de Nancy del mapa. Al migrarla (a una URL de Nancy real, p. ej. la de
-  `about/nancy-nieto-fundadora.jpg`), `home/founder.jpg` queda sin referencias → se puede `git rm`.
-  Nota: es un `<script type="application/ld+json">` en un `.jpx`, no un slot de `src/data/*` — ciclo
-  aparte, revisar si toca `add-media` o es edición directa de schema.
+- **Mapa de imágenes de Nancy — COMPLETO (4/4).** Falta solo `git rm public/assets/images/home/founder.jpg`
+  + `.webp` (sin refs de código; el intento del cont. 15 lo bloqueó el classifier) — limpieza mecánica.
 - `/assets/images/about/hero.jpg` (hero de `/nosotros`) — **roto ahora**: `aboutPage.js:11` lo
   referencia y el archivo no existe (cae al gradiente de `PageHero`). Necesita foto del usuario.
 - Posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` podrían faltar (el video igual corre sin

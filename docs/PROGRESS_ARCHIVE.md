@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — /capilar/tratamiento-capilar: sección antes/después + skill add-media ajustada
+- **Media (`feat`).** `src/data/treatmentPages.js`: `beforeAfter: { items: [...] }` (1 par) en el entry `tratamiento-capilar` — el template `TreatmentDetailPage` ya lo renderiza, sin cambio de componente. Imágenes del usuario en `public/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-{antes,despues}.jpg` (185/156 KB, 1000×1250) + `.webp` sibling. Alt español trazable al entry, sin banned words.
+- **Verificación.** Browser `:3000`: sección pinta con imágenes reales (no `og-default`), `.webp` 200 OK. `test:visual` 34/34 sin diffs (ruta no snapshoteada → sin re-baseline). WCAG: alt presente y descriptivo. Compliance OK.
+- **Skill `add-media` (`docs(skills)`).** 4 ajustes tras el primer uso real: paso Locate distingue data-only vs ciclo de componente; recepción = "dar nombres + ruta primero, el usuario coloca; si solo pide nombres, parar"; sin `find` recursivo (colgó 120s); gotcha de `generate-webp.js` (crea siblings no relacionados → reportar aparte). Shape `beforeAfter` corregido a `{ items: [...] }`. Ambas copias sincronizadas. Ver DECISIONS 2026-08-29.
+- **Side-effect.** `generate-webp.js` creó `landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.webp` (sibling que faltaba, `.jpg` ya referenciado) → commit `chore(assets)` aparte.
+
 ## 2026-08-29 — Heroes /nosotros y /nancy-nieto: CTA primario → "AGENDA TU VALORACIÓN"
 - `src/data/aboutPage.js` (2 líneas): `primaryCta` de `aboutPage.hero` y `founderBioPage.hero` pasa de `"RESERVAR"` a `"AGENDA TU VALORACIÓN"`. Eran los **únicos 2 heroes del sitio** que quedaban en "RESERVAR" — supersede la decisión del mismo día que los había alineado a "RESERVAR" (premisa equivocada: se creía que los ~10 heroes de tratamiento decían "RESERVAR", pero `TreatmentHero` y `LandingPage` ya default a "AGENDA TU VALORACIÓN", y los heroes de hub no tienen CTA).
 - Ahora todos los heroes con CTA + el navbar dicen el mismo string. Eyebrows sin tocar (el eco eyebrow=botón que se temía es en `FinalCTA` de hubs, no en heroes).

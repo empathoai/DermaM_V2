@@ -1,8 +1,14 @@
 # NEXT
 
-Estado: HEAD esperado = `036bb64` — ciclo "antes/después capilar", 4 commits sobre `ff9ba96`
-(`bf2c755` feat capilar · `ad852dc` chore webp PRF · `9ea92ce` docs(skills) add-media · `036bb64` docs cierre).
+Estado: HEAD esperado = `7adc357` + 1 commit del ciclo "antes/después acné faciales".
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 — CERRADO:
+- **`/faciales/tratamiento-acne`: sección antes/después.** `beforeAfter: { items: [...] }` (1 par) en
+  el entry `tratamiento-acne` de `treatmentPages.js` — mismo patrón que capilar, sin cambio de
+  componente. Imágenes del usuario en `public/assets/images/treatments/faciales/tratamiento-acne/`
+  optimizadas (116/131 KB, 1000×1250) + `.webp` sibling. Alt español trazable al entry. `test:visual`
+  omitido (data-only, gate DoD). Render verificado en `:3000`.
 
 Sesión 2026-08-29 (cont. 16) — CERRADO:
 - **`/capilar/tratamiento-capilar`: sección antes/después.** `beforeAfter: { items: [...] }` en

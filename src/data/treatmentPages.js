@@ -427,7 +427,15 @@ const customDetails = {
         question: '¿Es seguro para adolescentes (teenagers)?',
         answer: 'Sí. Es un servicio altamente recomendado para enseñarles hábitos de higiene facial correctos y equilibrar su piel joven de forma segura.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/faciales/tratamiento-acne/tratamiento-acne-antes.jpg',
+        after: '/assets/images/treatments/faciales/tratamiento-acne/tratamiento-acne-despues.jpg',
+        beforeAlt: 'Rostro con brotes de acné, poros congestionados y brillo graso antes del tratamiento de acné en Derma.M, West Palm Beach',
+        afterAlt: 'Rostro con piel más equilibrada, menos imperfecciones y aspecto calmado tras el tratamiento de acné en Derma.M, West Palm Beach'
+      }]
+    }
   },
   'manchas-cicatrices': {
     contentUpdated: '2026-08-27',

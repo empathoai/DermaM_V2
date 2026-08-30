@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Expected HEAD = `4593ec4` (`docs: cont.23 — operational docs to English + close-cycle skill`).
-Clean tree. Dev server `:3000` = owned by another chat, do not touch.
+Base commit = `556f99f` (cont. 23 close). HEAD may be 1 doc-fixup ahead. Clean tree.
+Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)
 

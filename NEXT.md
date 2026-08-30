@@ -1,7 +1,7 @@
 # NEXT
 
-Estado: HEAD esperado = ritual de docs del ciclo "antes/después capilar" (5 commits: feat capilar,
-chore webp PRF, docs(skills) add-media, docs cierre), sobre `ff9ba96`.
+Estado: HEAD esperado = `036bb64` — ciclo "antes/después capilar", 4 commits sobre `ff9ba96`
+(`bf2c755` feat capilar · `ad852dc` chore webp PRF · `9ea92ce` docs(skills) add-media · `036bb64` docs cierre).
 Árbol limpio, sin servers salvo el `:3000`.
 
 Sesión 2026-08-29 (cont. 16) — CERRADO:

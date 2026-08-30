@@ -2,14 +2,15 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — /contacto: se quita el formulario muerto y se de-duplican los puntos de contacto
+## 2026-08-30 — /contacto bloque de dos columnas: tarjetas simétricas + mapa a ancho completo
 
-- **`Contacto.jsx` + `Contacto.module.css` (169 +/315 −).** El `<form>` de 7 campos tenía `handleFormSubmit` simulado (sin backend, sin Square, sin email) → un dead-end que mostraba "¡Mensaje enviado!" y perdía el lead. Se reemplaza por el **Start block**: "Agenda en línea" → Square (link `target=_blank`, mismo `bookingUrl` que Navbar/PageHero/FinalCTA) + "Consultar primero por WhatsApp" → wa.me + microcopy "Continúas en Square" + línea `tel:`.
-- **De-dup.** Se elimina la Quick Action Bar (WhatsApp/tel/email — copia literal de la tarjeta de sede). La tarjeta de sede pierde "WhatsApp Directo", queda solo "Cómo llegar" + NAP + horario (bloque de referencia, bueno para SEO local). FinalCTA de la página repunta a Square ("Agenda en línea") — componente compartido sin tocar.
-- **Limpieza:** imports sin uso fuera (`Link`, `MessageSquare`, `PhoneCall`, `Mail`, `CheckCircle2`, `ChevronDown`, `contactConsentCopy`). CSS muerto del form + de la Quick Action Bar **NO se borró** (blast radius, un-cambio-por-ciclo) → follow-up doc-hygiene. `contactConsentCopy` queda huérfano en `legalPages.js`.
-- **Embed inline de Square (snippet `square.site/appointments/buyer/widget/…​.js`): decisión PENDING.** Es best practice y técnicamente viable (nada en `.htaccess` lo bloquea), pero requiere pasada de copy legal (privacidad/treatment-disclaimer/booking-policy dicen "abandonarás este sitio") + sign-off de la clínica. Se retoma como brainstorm propio.
-- **Verificación.** Render en server temporal (`:3007`): layout OK, hrefs OK, 0 errores de consola. `test:visual` 21/22 — `contacto-viewport` **pasa sin diff** (el snapshot cubre solo el hero, intacto). El 1 fallo (`nosotros-viewport` desktop) es **drift preexistente en `main`**: el hero de `/nosotros` usa `contact/hero.jpg` desde el ciclo data-only anterior que saltó `test:visual` por gate — no lo tocó este cambio. WCAG AA OK (`<a>` reales, `:focus-visible`, contraste ~8.9:1). Compliance OK (copy nuevo sin banned words ni claims).
-- Spec/plan: `docs/superpowers/{specs/2026-08-30-contacto-remove-form-design,plans/2026-08-30-contacto-streamline}.md` (gitignored). Commit `7225e57`.
+- **`Contacto.jsx` + `Contacto.module.css` (2 archivos, ~40 líneas).** El bloque tenía la tarjeta izquierda ("Empieza tu evaluación") y la derecha ("Sede Principal") con **alturas distintas** (bordes inferiores desalineados → parecía bug) y el **mapa colgando solo bajo la columna derecha**, con el cuadrante inferior-izquierdo vacío. Rediseño (Opción A del brainstorm):
+  - `.twoColumnGrid` @≥1024: `1.1fr 0.9fr` → `1fr 1fr`; `align-items: flex-start` → `stretch` (tarjetas mismo ancho y misma altura, bordes inferiores alineados — 526px c/u @desktop).
+  - `.formColumn` → `display:flex; flex-direction:column`; `.startBlock` → `flex:1`; `.startPhoneLine` → `margin: auto 0 0 0` + `padding-top: 24px` (línea de teléfono anclada al fondo, sin perder aire en móvil).
+  - **Mapa** sale de la columna derecha (JSX): `.mapCardSection` pasa a ser hijo directo de `.twoColumnContainer`, **ancho completo** (1440px) debajo de ambas tarjetas. `margin-top` 40px / 60px @desktop (= gap del grid).
+  - Wrapper `.infoColumn` eliminado (JSX + regla CSS — quedaba huérfano con este cambio).
+- **Contexto:** cambio detonado por review del usuario del rebuild de `/contacto` (ciclo anterior). Se verificó que el skill `impeccable` **nunca se corrió** sobre `/contacto` (`.impeccable/critique/` solo tiene 2 archivos del 2026-06-25) y que el CSS bespoke de la página diverge de los tokens de `DESIGN.md` (gutters hard-coded en vez de `clamp(24px,4vw,64px)`). El fix de gutter se probó y se **revirtió** — era real pero no era lo que el usuario veía mal; queda anotado como follow-up.
+- **Verificación.** DOM medido en `:3000`: grid `690px 690px` stretch, `bottomsMatch: true`, mapa `W:1440` full-width, gap 60px. Móvil 390px: stack en 1 columna, 3 bloques a ancho completo, espaciado del teléfono preservado. Consola limpia (los 500 vistos eran estados intermedios de HMR mientras se editaba). `test:visual` `Contacto Page`: **pasa sin diff** (el snapshot solo cubre el hero). WCAG / compliance: sin cambios de semántica, foco, contraste ni copy.
 
 ---
 

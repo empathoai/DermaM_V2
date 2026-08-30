@@ -1,6 +1,27 @@
 # NEXT
 
-Estado: HEAD esperado = `7225e57` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = `0734f1f` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 18) — CERRADO:
+- **`/contacto` bloque de dos columnas: tarjetas simétricas + mapa a ancho completo.** `Contacto.jsx` +
+  `Contacto.module.css` (~40 líneas). Review del usuario del rebuild anterior: tarjetas izq/der de distinta
+  altura (bordes inferiores desalineados → parecía bug) + mapa colgando solo bajo la columna derecha
+  (cuadrante inferior-izq vacío). Fix (Opción A del brainstorm): `.twoColumnGrid` @≥1024 `1.1fr 0.9fr` →
+  `1fr 1fr`, `flex-start` → `stretch`; `.formColumn` flex-column + `.startBlock` `flex:1` +
+  `.startPhoneLine` `margin:auto 0 0 0` + `padding-top:24px`; `.mapCardSection` sale de la columna y pasa
+  a hijo directo de `.twoColumnContainer` a ancho completo (1440px), `margin-top` 40/60px. `.infoColumn`
+  eliminado (JSX + CSS). `test:visual` `Contacto Page` pasa sin diff (snapshot solo cubre el hero).
+  Spec/plan: no se escribió — fix de un bloque, cerrado por brainstorm → aprobación → cambio.
+- **Follow-ups abiertos por este ciclo** (no bloqueantes, cada uno su ciclo):
+  1. **Alinear gutters bespoke de `/contacto` al token de `DESIGN.md`.** `.heroSection` y
+     `.twoColumnCoreBlock` hard-codean `24px` (móvil) / `64px` (@≥1024) en vez de
+     `clamp(24px, 4vw, 64px)` — el mismo token que sí usan `FAQAccordion` y `FinalCTA` en la página.
+     Efecto: el borde de contenido "escalona" ~6px entre bloques bespoke y compartidos, y el gutter
+     cruza (bespoke más apretado <1024px, más ancho ≥1024px). [XS] Se intentó y se revirtió este ciclo
+     (no era lo que el usuario veía mal). Cambio: `padding: … clamp(24px,4vw,64px) …` en esos 2 selectores.
+  2. **`impeccable` nunca se corrió sobre `/contacto`.** `.impeccable/critique/` = 2 archivos, ambos
+     2026-06-25 (`FeaturedServices`, `hero`). El CSS de `/contacto` se escribió a mano sin cotejar contra
+     `DESIGN.md`. Si se retoma pulido de la página, pasar `impeccable` primero.
 
 Sesión 2026-08-30 (cont. 17) — CERRADO:
 - **`/contacto`: se elimina el formulario muerto + de-dup de puntos de contacto.** `Contacto.jsx` +

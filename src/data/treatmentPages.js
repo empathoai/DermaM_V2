@@ -404,7 +404,17 @@ const customDetails = {
         question: '¿Qué cuidados diarios debo mantener en casa?',
         answer: 'Es fundamental aplicar una hidratación abundante recomendada por tu especialista y usar protector solar de amplio espectro SPF 30+ todos los días.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/faciales/rejuvenecimiento-facial/rejuvenecimiento-facial.jpg',
+        after: '/assets/images/treatments/faciales/rejuvenecimiento-facial/rejuvenecimiento-facial-resultados.jpg',
+        beforeAlt: 'Comparativa antes y después del perfil del rostro: líneas finas y flacidez que se ven suavizadas tras un tratamiento de rejuvenecimiento facial en Derma.M, West Palm Beach',
+        afterAlt: 'Secuencia de primeros planos de la piel con textura progresivamente más lisa y tono más uniforme tras sesiones de rejuvenecimiento facial en Derma.M, West Palm Beach'
+      }],
+      beforeLabel: 'ANTES - DESPUÉS',
+      afterLabel: 'RESULTADOS'
+    }
   },
   'tratamiento-acne': {
     contentUpdated: '2026-08-27',

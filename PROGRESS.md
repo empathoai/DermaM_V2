@@ -2,13 +2,12 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Task 4: medical-valuation notice unified into one constant (cont. 26, code)
+## 2026-08-30 — Task 7: Organization entity consolidated on Nosotros (cont. 27, code)
 
-- **Decision (user):** canonical string = `"Requiere valoración profesional previa para garantizar tu seguridad y resultados."` — **"profesional"**, not "médica": accurate for esthetician-performed *and* physician-supervised services, keeps "medical spa ≠ clínica". Supersedes `MEDICAL_COMPLIANCE.md` L11 (old "médica") + the ambiguous `DECISIONS.md` 2026-08-27 reference. See `DECISIONS.md` 2026-08-30.
-- **New `MEDICAL_VALUATION_NOTICE`** in `src/data/siteMeta.js`, wired into: `categoryPages.js` (46, replacing the "valoración previa" / "valoración profesional previa" variants), `treatmentPages.js` (2), `FeaturedServices.jsx` (3 hardcoded `<p>`), `shared/FinalCTA.jsx` (`compactLegal` branch → `` `${NOTICE} Resultados pueden variar.` ``). The 6 long `cta.disclaimer` informational strings + `TreatmentSEO.jsx:31` meta fragment left as-is (different slot/purpose).
-- **`docs/MEDICAL_COMPLIANCE.md` L11** updated to the new wording (on-disk; gitignored).
-- **Verified:** grep → 0 notice literals outside the constant, 1 definition, 5 importers. Browser `:3000` — renders correctly on Home / treatment / landing CTAs. `test:visual` 33/34; the 1 failure is the pre-existing `nosotros-viewport` `about/hero.jpg` placeholder (NEXT.md), diff is 100% the hero image, unrelated. No re-baseline.
-- Closes audit Task 4 (CPY-01). Commit `6cc3e4f`.
+- **`src/pages/Nosotros.jsx`:** replaced the inline 6-field `HealthAndBeautyBusiness` in the JSON-LD with the unified `@graph` pattern used by Home/Contacto — `organizationNode` (imported from `src/data/organizationSchema.js`) + an `AboutPage` node (`@id` `…/nosotros#aboutpage`) whose `mainEntity` references `…/#organization` by `@id`. No UI change.
+- **Why:** the inline node had no canonical `@id`, no geo/sameAs → fragmented the brand entity in the Knowledge Graph vs. the single `#organization` node. Now one referenced entity across Home / Contacto / Nosotros / NancyNieto.
+- **Verified:** `JSON.stringify` of the graph parses clean (2 nodes, org `@id` correct); pattern byte-identical to already-live Home/Contacto. Schema-only, no visual gate — `test:visual` not run per `CLAUDE.md` §DoD (no CSS / shared component / layout touched). Browser render not checked: `:3000` owned by another chat, `autoPort` off.
+- Closes audit Task 7 (SEO-04). Commit `<hash>`.
 
 ---
 

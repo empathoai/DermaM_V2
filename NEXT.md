@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `6cc3e4f` (cont. 26 — Task 4 done). HEAD may be 1 doc-fixup ahead. Clean tree.
+Base commit = `<hash>` (cont. 27 — Task 7 done). HEAD may be 1 doc-fixup ahead. Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)
@@ -13,11 +13,11 @@ Dev server `:3000` = owned by another chat, do not touch.
 27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
-Done: Tasks 1, 3, 4 (cont. 24–26). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
+Done: Tasks 1, 3, 4, 7 (cont. 24–27). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 7** — Organization entity fragmented on Nosotros (SEO-04), S.
+**Next: Task 9** — Hero text `opacity:0` until a video event (UX-04), M.
 
-Order: **7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+Order: **9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 
 Notice constant (Task 4, done): `MEDICAL_VALUATION_NOTICE` in `src/data/siteMeta.js` = `"Requiere valoración profesional previa para garantizar tu seguridad y resultados."` — invariable, "profesional" not "médica". See `DECISIONS.md` 2026-08-30.
 
@@ -26,7 +26,6 @@ Notice constant (Task 4, done): `MEDICAL_VALUATION_NOTICE` in `src/data/siteMeta
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 5 | `CategoryPage` does not render benefits/approach/process/breadcrumb (UX-02=SEO-05) | L | |
 | 6 | `BreadcrumbList` JSON-LD with no visible breadcrumb (SEO-03) | M | |
-| 7 | Organization entity fragmented on Nosotros (SEO-04) | S | |
 | 8 | Treatment hero: dark video vs. light editorial hero (UX-03) | L | |
 | 9 | Hero text `opacity:0` until a video event (UX-04) | M | |
 | 10 | 911 emergency clause has no English version (CPY-06) | S | |

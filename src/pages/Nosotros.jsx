@@ -4,6 +4,7 @@ import Navbar from '../components/layout/Navbar/Navbar';
 import Footer from '../components/layout/Footer/Footer';
 import AboutPage from '../components/templates/AboutPage/AboutPage';
 import { aboutPage } from '../data/aboutPage';
+import { organizationNode } from '../data/organizationSchema';
 
 export default function NosotrosPage() {
   return (
@@ -24,18 +25,19 @@ export default function NosotrosPage() {
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "AboutPage",
-          "name": "Equipo y filosofía de cuidado | DERMA.M Florida",
-          "url": "https://dermamskinhealth.com/nosotros",
-          "description": "Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach.",
-          "mainEntity": {
-            "@type": "HealthAndBeautyBusiness",
-            "name": "Derma.M",
-            "legalName": "DERMA.M, LLC",
-            "url": "https://dermamskinhealth.com",
-            "telephone": "+15612535384",
-            "email": "info@dermamskinhealth.com"
-          }
+          "@graph": [
+            organizationNode,
+            {
+              "@type": "AboutPage",
+              "@id": "https://dermamskinhealth.com/nosotros#aboutpage",
+              "name": "Equipo y filosofía de cuidado | DERMA.M Florida",
+              "url": "https://dermamskinhealth.com/nosotros",
+              "description": "Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach.",
+              "mainEntity": {
+                "@id": "https://dermamskinhealth.com/#organization"
+              }
+            }
+          ]
         })}</script>
       </Helmet>
       <Navbar />

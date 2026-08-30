@@ -3,6 +3,17 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-29 — Heroes /nosotros y /nancy-nieto: CTA primario → "AGENDA TU VALORACIÓN"
+- `src/data/aboutPage.js` (2 líneas): `primaryCta` de `aboutPage.hero` y `founderBioPage.hero` pasa de `"RESERVAR"` a `"AGENDA TU VALORACIÓN"`. Eran los **únicos 2 heroes del sitio** que quedaban en "RESERVAR" — supersede la decisión del mismo día que los había alineado a "RESERVAR" (premisa equivocada: se creía que los ~10 heroes de tratamiento decían "RESERVAR", pero `TreatmentHero` y `LandingPage` ya default a "AGENDA TU VALORACIÓN", y los heroes de hub no tienen CTA).
+- Ahora todos los heroes con CTA + el navbar dicen el mismo string. Eyebrows sin tocar (el eco eyebrow=botón que se temía es en `FinalCTA` de hubs, no en heroes).
+- **Verificación:** browser mobile 375px + desktop, ambos heroes, sin wrap. `test:visual` 22/22 sin diffs (botón fuera del área capturada). Compliance OK, WCAG OK (solo texto). Commit `a25e317`. Ver DECISIONS 2026-08-29.
+
+## 2026-08-29 — FloatingWhatsApp: helper mobile-first + animación de atención del FAB
+- `FloatingWhatsApp.jsx` + `.module.css`:
+  - **Helper bubble:** en mobile (<768px) **no se renderiza** (el FAB solo alcanza; una tarjeta pop-up es demasiado ruido en pantalla chica). En desktop: el timer plano de 3s → **trigger por intención** (scroll ≥40% de la página o 15s de dwell) + **auto-hide a los 6s**. Dismiss con `sessionStorage` intacto.
+  - **FAB:** énfasis de entrada (`fabEnter`, scale-in con overshoot, `backwards` para no romper el `:hover`) + ring de atención (`::after`) que pulsa **3× en los primeros ~2.5s y no vuelve nunca**. Guard `@media (prefers-reduced-motion: reduce)` → sin ring ni overshoot.
+- **Verificación:** mobile (helper no aparece ni scrolleando 60%) · desktop (helper aparece al 45%, se va a los 6.5s) · console limpia. `npm run test:visual` 34/34 — **re-baseline de `home-hero` mobile-safari** (cambios intencionales: barra superior con tap-to-call, sin helper mobile, hero tag actualizado). Commit `ba4e4bc`.
+
 ## 2026-08-29 — Navbar top info bar: mobile-first (tap-to-call visible + número identificado)
 - `Navbar.jsx` + `Navbar.module.css`: mobile (<768px) oculta el label "West Palm Beach" (redundante) y muestra teléfono + WhatsApp (antes desktop-only). Ícono `Phone` (lucide, 12px, `aria-hidden`) + `aria-label="Llamar al 561 253 5384"` → el número se lee como teléfono, no nº de licencia. `.topInfoRight`/`.topInfoLink` estiran a 28px → tap target 15→27px (44px WCAG no entra en 28px). Desktop igual salvo el ícono.
 - Browser desktop+mobile ok, links `tel:`/WhatsApp clickeables. `test:visual` 34/34 (barra no está en snapshots). Commit `22507ae`. Ver DECISIONS 2026-08-29.

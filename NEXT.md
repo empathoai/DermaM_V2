@@ -1,7 +1,19 @@
 # NEXT
 
-Estado: HEAD esperado = commit del CTA de hero "AGENDA TU VALORACIÓN" + ritual de docs, sobre `6e2aafb`.
+Estado: HEAD esperado = ritual de docs del ciclo "antes/después capilar" (5 commits: feat capilar,
+chore webp PRF, docs(skills) add-media, docs cierre), sobre `ff9ba96`.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 16) — CERRADO:
+- **`/capilar/tratamiento-capilar`: sección antes/después.** `beforeAfter: { items: [...] }` en
+  `treatmentPages.js` (el template ya lo renderiza, sin cambio de componente). Imágenes del usuario
+  optimizadas + `.webp` en `public/assets/images/treatments/capilar/tratamiento-capilar/`. `test:visual`
+  34/34 sin diffs (ruta no snapshoteada). Ver DECISIONS 2026-08-29.
+- **Skill `add-media` ajustada tras primer uso real** (ambas copias): Locate distingue data-only vs
+  ciclo de componente; recepción = dar nombres+ruta y parar si el usuario solo pide nombres; sin `find`
+  recursivo; gotcha de `generate-webp.js` (siblings no relacionados → reportar aparte). Ver DECISIONS.
+- **Side-effect:** `generate-webp.js` creó el `.webp` faltante de `plasma-rico-en-plaquetas-procedimiento`
+  (`/prf-y-fibrina`) — commit `chore(assets)` aparte, no revertido (sibling legítimo).
 
 Sesión 2026-08-29 (cont. 15) — CERRADO:
 - **Heroes `/nosotros` + `/nancy-nieto`: CTA primario → "AGENDA TU VALORACIÓN"** (`aboutPage.js`, 2
@@ -148,9 +160,10 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
    solo si el usuario lo pide. Pendiente cuando se retome: Opción A vs B de curación, confirmar "sin
    aggregateRating".
 
-**Integración de media faltante — usar la skill `add-media`, Acción A, un slot por ciclo.**
-Bloqueado en input del usuario: hay que dejar los archivos crudos en `scratchpad/media-in/` y
-confirmar el mapeo 1 archivo ↔ 1 slot antes de procesar. Slots vacíos hoy (todos `/nosotros`):
+**Integración de media faltante — usar la skill `add-media`, un slot por ciclo.**
+Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
+(ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
+hoy (todos `/nosotros`):
 - `/assets/images/about/hero.jpg`
 - `/assets/images/about/team/{melisa-rios,mikaela-guajardo,daniela-parra,elianne-trujillo,samantha-atencio,tony-diaz}.jpg`
 - `/assets/images/about/team/{samantha-atencio,tony-diaz}.mp4`

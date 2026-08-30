@@ -580,7 +580,20 @@ const customDetails = {
         question: '¿Tiene algún tiempo de inactividad o rojez?',
         answer: 'El enrojecimiento, si aparece, es leve y breve. Tu piel se siente calmada y fresca, y puedes retomar tu rutina el mismo día.'
       }
-    ]
+    ],
+    beforeAfter: {
+      eyebrow: 'EL PROCEDIMIENTO',
+      headline: 'ASÍ ES UNA SESIÓN DE PLASMA FRÍO',
+      items: [{
+        before: '/assets/images/treatments/faciales/plasma-frio/tratamiento-plasma-frio-procedimiento.mp4',
+        after: '/assets/images/treatments/faciales/plasma-frio/tratamiento-plasma-frio-procedimiento-detalle.jpg',
+        beforeAlt: 'Sesión de plasma frío en Derma.M, West Palm Beach: electrodo de vidrio con gas ionizado, con filamentos de plasma violeta, deslizándose sobre la piel del rostro',
+        afterAlt: 'Primer plano del electrodo de vidrio con gas ionizado durante una sesión de plasma frío en Derma.M, West Palm Beach'
+      }],
+      beforeLabel: 'EN CABINA',
+      afterLabel: 'EQUIPO',
+      disclaimer: 'Contenido de referencia del procedimiento con fines informativos. No representa un resultado garantizado; los efectos varían según cada persona, la piel y el protocolo aplicado.'
+    }
   },
   'carboxiterapia-facial': {
     contentUpdated: '2026-08-27',

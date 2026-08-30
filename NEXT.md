@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `124ea06` (grid plano + video de Nancy; push pendiente de confirmar).
+Estado: HEAD esperado = `a83e9e0` (pusheado).
 Árbol limpio. Sin servers salvo el `:3000`.
 
 Sesión 2026-08-30 (cont. 9) — CERRADO:

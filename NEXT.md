@@ -1,7 +1,7 @@
 # NEXT
 
-Estado: HEAD esperado = commit del ritual de docs sobre `ba4e4bc` (`feat(floating-whatsapp):
-mobile-first helper + FAB attention animation`). Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = commit de docs que descarta el bloque Academy en `/nosotros`, sobre `8d1276b`.
+Árbol limpio, sin servers salvo el `:3000`.
 
 Sesión 2026-08-29 (cont. 14) — CERRADO:
 - **FloatingWhatsApp mobile-first.** Helper bubble: no se renderiza en mobile; en desktop trigger por
@@ -131,10 +131,10 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 
 ## Próximo (en orden de size)
 
-**PRIMERO — 2 specs draft esperan revisión del usuario (pedidos explícitamente el 2026-08-29):**
-1. `docs/superpowers/specs/2026-08-29-nosotros-academy-link-block-design.md` — [S]. Al aprobar:
-   `superpowers:writing-plans` → 1 ciclo (data `academy` en `aboutPage.js` + render en `AboutPage.jsx`
-   entre Team y Testimonials + baseline `nosotros-viewport`). Registrar la reversión en `DECISIONS.md`.
+**PRIMERO — 1 spec draft espera revisión del usuario:**
+1. ~~`2026-08-29-nosotros-academy-link-block-design.md`~~ — **DESCARTADO 2026-08-29** por el usuario:
+   la sección de Academy ya vive en `/nosotros/nancy-nieto` (`#academy-spotlight`) y ahí se queda; no
+   se duplica en `/nosotros`. Ver DECISIONS 2026-08-29. No re-proponer sin pedido explícito.
 2. `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md` — [M]. Cycle 1 =
    link a Google reviews (`GOOGLE_REVIEWS_URL` en `siteMeta.js`, validar URL) + curación por tema
    (Opción A) + update de docs 8.20/INTAKE. Cycle 2 opcional = `src/data/reviews.js` con tags.

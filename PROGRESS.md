@@ -1,14 +1,15 @@
 # PROGRESS.md
 
-Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
+Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Poda de NEXT.md (cont. 22, sin código)
+## 2026-08-30 — Operational docs to English + `close-cycle` skill (cont. 23, no code)
 
-- **NEXT.md 494 → ~145 líneas**, aplicando `writing-for-agents`: se borraron ~20 bloques "Sesión … CERRADO" (sedimento — ya viven en `PROGRESS.md` / `PROGRESS_ARCHIVE.md`), narrativa → secciones de referencia co-locadas, cola cont. 21 como tabla compacta (`# · hallazgo · talla · flag`) con puntero al plan para el detalle.
-- **Follow-ups vivos rescatados** de los bloques borrados → sección "Otros pendientes": Square deep-linking (bloqueado en la clínica), `about/hero.jpg` en hold, reviews 8.20 en backlog. Limpiezas viejas de `/contacto` → absorbidas en la Tarea 19.
-- **Regla de persistencia explícita** en el encabezado de NEXT.md: un ciclo cerrado no deja bloque ahí; mantener < ~110 líneas.
-- `PROGRESS.md` queda con 1 entrada viva; cont. 20 + cont. 21 → `PROGRESS_ARCHIVE.md`, junto con la entrada huérfana de cont. 18 en el archivo (movida en `52a258e`, nunca commiteada).
+- **`NEXT.md`, `PROGRESS.md`, `MEMORY.md` + the Spanish memory files rewritten in English.** Spanish kept verbatim inside them: route paths, file/component/class names, quoted site copy, brand nouns, the mandated medical notice. No retro-translation of dated history in `DECISIONS.md` / `PROGRESS_ARCHIVE.md`.
+- **New rule in `CLAUDE.md` §Memory:** operational docs + skills + auditor instructions in English; `src/data/*` + `MEDICAL_COMPLIANCE.md` + `INTAKE.md` + chat stay Spanish. Doc authoring goes through `writing-for-agents`; `NEXT.md` size cap ~110 lines; session start sanity-checks HEAD vs. the expected-HEAD line.
+- **New skill `close-cycle`** (`.agents/skills/` + `.claude/skills/`, synced): deterministic session-close — PROGRESS rotation, DECISIONS/MEMORY only when warranted, NEXT refresh under the cap, clean tree, commit, push on confirmation, dev-server stop only at session end.
+- `feedback_doc_language_policy.md` rewritten with the new policy.
+- **Left for a follow-up pass:** verify/translate the ~13 memory files not yet read this session (most already English) + the 2 Spanish skills (`seo-checklist-65`, `seo-local`).
 
 ---
 
-**Historia anterior:** ver [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md).
+**Earlier history:** see [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md).

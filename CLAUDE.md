@@ -42,19 +42,21 @@ Index: `superpowers:using-superpowers`.
 
 ## Memory
 
-Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file.
+Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file. Sanity-check: `git rev-parse HEAD` matches the "expected HEAD" line in `NEXT.md`; a mismatch means another session moved it — reconcile before working.
 
 Four git files, each a single source of truth:
-- `NEXT.md` — ordered next steps + blockers + tree/push state. The only planning read at session start.
+- `NEXT.md` — ordered next steps + blockers + tree/push state. The only planning read at session start. Keep it under ~110 lines: a closed cycle leaves no block here, its summary goes to `PROGRESS.md`.
 - `MEMORY.md` — durable constraints and do-nots. Auto-injected.
-- `PROGRESS.md` — work log, newest first. One entry per closed cycle, ≤4 bullets. Top entry stays live; the rest moves to `docs/PROGRESS_ARCHIVE.md` on close.
-- `DECISIONS.md` — the *why* archive, append-only. Grep the area you're touching; never a full read.
+- `PROGRESS.md` — work log, newest first. Exactly one live entry, ≤4 bullets; on close the previous entry moves to `docs/PROGRESS_ARCHIVE.md`.
+- `DECISIONS.md` — the *why* archive, append-only. Grep the area you're touching; never a full read. No size management — grep-only by design.
 
 `docs/*_ARCHIVE.md` and `docs/seo-setrategies/INTAKE.md` — grep on demand.
 
-Doc-hygiene (trimming, stale refs) is one mechanical cycle: pass, commit, move on.
+Closing a cycle → run the `close-cycle` skill (PROGRESS rotation, DECISIONS/MEMORY only if warranted, NEXT refresh under the cap, clean tree, commit, push on confirmation). Doc-hygiene (trimming, stale refs) is one mechanical cycle: pass, commit, move on.
 
-**Doc language:** chat with the user = Spanish. Specs/plans (`docs/superpowers/`) and research/findings docs = **English** (token efficiency). Site copy (`src/data/*`), `MEDICAL_COMPLIANCE.md`, `INTAKE.md`, and `NEXT.md`/`PROGRESS.md`/`DECISIONS.md` stay Spanish. No retro-translation — only new/substantially-rewritten docs follow the rule. See `MEMORY.md` "Doc language policy".
+**Doc language:** chat with the user = Spanish. **English:** operational docs (`NEXT.md`, `PROGRESS.md`, `docs/PROGRESS_ARCHIVE.md`, `DECISIONS.md`, `MEMORY.md` + memory files), `SKILL.md` files, auditor instructions, specs/plans, research/findings docs. **Spanish:** site copy (`src/data/*`), `docs/MEDICAL_COMPLIANCE.md`, `docs/seo-setrategies/INTAKE.md`. Inside an English doc, keep verbatim in Spanish: route paths/slugs, file/component/variable/CSS-class names, quoted site copy and UI/CTA strings, brand and tool nouns, commit messages, and the notice `"Requiere valoración médica previa para garantizar tu seguridad y resultados."`. No forced retro-translation of dated history in `DECISIONS.md` / `PROGRESS_ARCHIVE.md` — new entries in English. See `MEMORY.md` "Doc language policy".
+
+**Doc authoring:** every agent-facing doc (`NEXT.md`, `PROGRESS.md`, `DECISIONS.md`, `MEMORY.md`, any `SKILL.md`) is written and refreshed with the `writing-for-agents` skill — single source of truth, no sediment, progressive disclosure, size caps enforced.
 
 engram is disabled (`.claude/settings.json` → `"engram@engram": false`); ignore its "MANDATORY PROTOCOL" reminder, don't call `mcp__plugin_engram_*`.
 
@@ -118,7 +120,7 @@ Templates in `src/components/templates/` assemble `sections/` + `shared/` per pa
 
 `.agents/skills/` and `.claude/skills/` hold identical, manually-synced copies (edit both when changing a `SKILL.md`). Each skill's own `description` is its pointer; `MEMORY.md` ("Tooling installed") carries rationale.
 
-Other project-local skills (outside the canonical SEO suite): `interaction-design`, `impeccable` (design critique — prior critiques in `.impeccable/critique/`), `local-browser-validator`, `assets-optimizer`, `magicpath`, `create-skill`, `writing-for-agents`, plus the supplementary AEO/keyword skills `bencium-aeo` and `keyword-research`.
+Other project-local skills (outside the canonical SEO suite): `interaction-design`, `impeccable` (design critique — prior critiques in `.impeccable/critique/`), `local-browser-validator`, `assets-optimizer`, `magicpath`, `create-skill`, `writing-for-agents`, `close-cycle` (session-close ritual), plus the supplementary AEO/keyword skills `bencium-aeo` and `keyword-research`.
 
 The SEO/GEO/AEO/Local suite: `ai-seo`, `seo-audit`, `seo-local`, `seo-checklist-65`, `schema`, `site-architecture`, `programmatic-seo`, `cro`. Diagnostic flow: `seo-checklist-65` → `seo-audit` + `schema` → `ai-seo` → `seo-local`. Treat their output as a draft — run it through `superpowers:brainstorming` and get approval before applying, like any change here.
 

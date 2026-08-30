@@ -1,125 +1,116 @@
 # NEXT
 
-**Este archivo = estado vivo + cola + cómo retomar.** Un ciclo cerrado no deja bloque aquí: su
-resumen va a `PROGRESS.md`. Mantener bajo ~110 líneas — los "CERRADO" viejos son sedimento, se podan.
+**This file = live state + queue + how to resume.** A closed cycle leaves no block here; its
+summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks are sediment, prune them.
 
-## Estado
+## State
 
-HEAD esperado = `docs: cont.22 — poda de NEXT.md` sobre `fdf7b7e`. Árbol limpio salvo
-`M docs/PROGRESS_ARCHIVE.md` (preexistente, no de este ciclo — no tocar). Dev server `:3000` = de
-otro chat, no tocar.
+Expected HEAD = `docs: cont.23 — operational docs to English + close-cycle skill` on `b89aac3`.
+Clean tree. Dev server `:3000` = owned by another chat, do not touch.
 
-## Cola activa — remediación de auditorías (cont. 21)
+## Active queue — audit remediation (cont. 21)
 
-27 tareas triadas de `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Detalle por tarea**
-(archivos, enfoque, verificación, impacto SEO/GEO/AEO, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
+27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
+(files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
-Nada ejecutado. Cada tarea: `superpowers:brainstorming` → aprobación del usuario → 1 cambio → verificación → ritual.
+Nothing executed. Each task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Próxima: Tarea 1** — CTA muerto "Agenda tu valoración" en Postoperatorios (`FeaturedServices.jsx:124`), XS.
+**Next: Task 1** — dead CTA "Agenda tu valoración" in Postoperatorios (`FeaturedServices.jsx:124`), XS.
 
-Orden: **1 → 3 → 4 → 7 → 9 → 6 → 5 → 8** · luego `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · luego `23 → 24 → 26 → 27 → 25`.
+Order: **1 → 3 → 4 → 7 → 9 → 6 → 5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 
-| # | Hallazgo | Talla | Flag |
+| # | Finding | Size | Flag |
 |---|---|---|---|
-| 1 | CTA muerto Postoperatorios (UX-01=CPY-02) | XS | |
-| 2 | `.htaccess`: catch-all SPA antes de los 301 (SEO-01) | S | **BLOQUEADA → deploy Hostinger** |
-| 3 | `/nosotros/nancy-nieto` fuera de sitemap/robots/llms (SEO-02) | S | PROTEGIDO |
-| 4 | 3 variantes del disclaimer médico bajo CTAs → constante única (CPY-01) | M | |
-| 5 | `CategoryPage` no renderiza benefits/approach/process/breadcrumb (UX-02=SEO-05) | L | |
-| 6 | `BreadcrumbList` JSON-LD sin migas visibles (SEO-03) | M | |
-| 7 | Entidad Organization fragmentada en Nosotros (SEO-04) | S | |
-| 8 | Hero de tratamiento: video oscuro vs. hero editorial claro (UX-03) | L | |
-| 9 | Texto de hero `opacity:0` hasta evento de video (UX-04) | M | |
-| 10 | Cláusula 911 sin versión en inglés (CPY-06) | S | |
-| 11 | `h3` antes de `h2` en layout legal (UX-05) | XS | |
-| 12 | robots.txt sin directivas para crawlers de IA (SEO-06) | S | PROTEGIDO |
-| 13 | sitemap.xml sin `<lastmod>` (SEO-09) | S | PROTEGIDO |
-| 14 | Consolidar JSON-LD de tratamiento en un `@graph` (SEO-07) | M | |
-| 15 | `tú`/`usted` inconsistente en documentos legales (CPY-03) | M | |
-| 16 | Taxonomía de CTAs primarios dispersa (CPY-04) | M | |
-| 17 | Marcadores circulares en `MethodProcess` rompen radio 0px (UX-06) | S | |
-| 18 | `bg-white` (#FFFFFF) en LegalResources (UX-07) | XS | |
-| 19 | `Contacto`: gradientes/blur/CSS zombi + token de botón (UX-08) | M | absorbe follow-ups viejos de `/contacto` |
-| 20 | Viñetas cuadradas vs `<ListSparkle />` en FeaturedServices (UX-09) | S | |
-| 21 | Falta enlace "Saltar al contenido" (UX-10) | S | |
-| 22 | Canibalización PRF vs faciales/capilar (SEO-08) | M | reconciliar con spec PRF cerrada |
-| 23 | llms.txt sin enlaces a políticas legales (SEO-10) | XS | PROTEGIDO |
+| 1 | Dead CTA in Postoperatorios (UX-01=CPY-02) | XS | |
+| 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
+| 3 | `/nosotros/nancy-nieto` missing from sitemap/robots/llms (SEO-02) | S | PROTECTED |
+| 4 | 3 variants of the medical notice under CTAs → single constant (CPY-01) | M | |
+| 5 | `CategoryPage` does not render benefits/approach/process/breadcrumb (UX-02=SEO-05) | L | |
+| 6 | `BreadcrumbList` JSON-LD with no visible breadcrumb (SEO-03) | M | |
+| 7 | Organization entity fragmented on Nosotros (SEO-04) | S | |
+| 8 | Treatment hero: dark video vs. light editorial hero (UX-03) | L | |
+| 9 | Hero text `opacity:0` until a video event (UX-04) | M | |
+| 10 | 911 emergency clause has no English version (CPY-06) | S | |
+| 11 | `h3` before `h2` in the legal layout (UX-05) | XS | |
+| 12 | robots.txt has no directives for AI crawlers (SEO-06) | S | PROTECTED |
+| 13 | sitemap.xml has no `<lastmod>` (SEO-09) | S | PROTECTED |
+| 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |
+| 15 | `tú`/`usted` inconsistent across legal documents (CPY-03) | M | |
+| 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
+| 17 | Circular markers in `MethodProcess` break the 0px radius (UX-06) | S | |
+| 18 | `bg-white` (#FFFFFF) in LegalResources (UX-07) | XS | |
+| 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
+| 20 | Square bullets vs `<ListSparkle />` in FeaturedServices (UX-09) | S | |
+| 21 | Missing "skip to content" link (UX-10) | S | |
+| 22 | PRF vs faciales/capilar keyword cannibalization (SEO-08) | M | reconcile with the closed PRF spec |
+| 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
 | 24 | "marcas permanentes" → "persistentes" (CPY-05) | XS | |
-| 25 | Capitalización/estilo de títulos ES inconsistente (CPY-07) | L | |
-| 26 | Disclaimer del footer 11px → 12px (UX-11) | XS | |
-| 27 | `AboutPage`: padding fijo → `clamp()` + glifos de estrella (UX-12) | S | |
+| 25 | Inconsistent ES title capitalization/style (CPY-07) | L | |
+| 26 | Footer disclaimer 11px → 12px (UX-11) | XS | |
+| 27 | `AboutPage`: fixed padding → `clamp()` + star glyphs (UX-12) | S | |
 
-Archivos protegidos (`.htaccess`/`robots.txt`/`sitemap.xml`/`llms.txt`): cada uno arranca solo con "go" nominal del usuario sobre ese archivo.
+Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 
-## Otros pendientes (fuera de la cola cont. 21)
+## Other pending (outside the cont. 21 queue)
 
-**Square deep-linking — BLOQUEADO en la clínica.** Mapeo cerrado en `docs/LINKEO-SQUARE-2026.md`.
-Falta confirmación de 4 filas (PRF, marcación abdominal, corrientes rusas, depilación láser) + validar
-hidrofacial. Al desbloquear: `superpowers:brainstorming` → `src/data/squareServices.js` (slug→SERVICE_ID
-+ helper, fallback `/start`); de paso centraliza `bookingUrl` (hoy copy-pasteado en 8 sitios: Navbar,
-Hero, PageHero, TreatmentHero, FinalCTA×2, LandingPage, Contacto). Doc para la clínica = artifact
-`https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` (republicar con `url=`).
+**Square deep-linking — BLOCKED on the clinic.** Mapping closed in `docs/LINKEO-SQUARE-2026.md`.
+Missing: clinic confirmation of 4 rows (PRF, marcación abdominal, corrientes rusas, depilación láser)
++ validate hidrofacial. On unblock: `superpowers:brainstorming` → `src/data/squareServices.js`
+(slug→SERVICE_ID + helper, fallback `/start`); also centralize `bookingUrl` (today copy-pasted in
+8 places: Navbar, Hero, PageHero, TreatmentHero, FinalCTA×2, LandingPage, Contacto). Clinic-facing
+doc = artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` (republish with `url=`).
 
-**Media faltante — skill `add-media`, 1 slot por ciclo.**
-- `about/hero.jpg` (hero `/nosotros`) EN HOLD: hoy apunta a `contact/hero.jpg` (placeholder, `aboutPage.js:11`).
-  Espera foto de **equipo** del usuario. Deja `nosotros-viewport` (desktop-chrome) fallando en `test:visual`
-  hasta que llegue; si tarda, ciclo aparte: `npx playwright test -g "Nosotros Page - Viewport" --update-snapshots`.
-- Verificar posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` (`ls public/assets/images/about/team/*.jpg`).
-- Mapa de imágenes de Nancy: COMPLETO (4/4).
-- Otras faltantes fuera de `/nosotros`: `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
+**Missing media — `add-media` skill, 1 slot per cycle.**
+- `about/hero.jpg` (`/nosotros` hero) ON HOLD: points to `contact/hero.jpg` (placeholder, `aboutPage.js:11`), waiting on the user's team photo. Leaves `nosotros-viewport` (desktop-chrome) failing in `test:visual` until it arrives; if it drags: `npx playwright test -g "Nosotros Page - Viewport" --update-snapshots`.
+- Verify `.jpg` posters for `mikaela-guajardo` / `elianne-trujillo`. Nancy image map: COMPLETE (4/4).
+- Other missing media: `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 
-**Reviews 8.20 — EN BACKLOG** (usuario, 2026-08-29). `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
-No se ejecuta sin pedido. Al retomar: Opción A vs B de curación, confirmar "sin `aggregateRating`".
+**Reviews 8.20 — IN BACKLOG** (user, 2026-08-29). `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
+Not executed without a request. On resume: curation Option A vs B, confirm "no `aggregateRating`".
 
-## Cerrar el proyecto (NO código, NO este workflow)
+## Close the project (NOT code, NOT this workflow)
 
-1. **Deploy a Hostinger/Apache** (prod real; Vercel = demo cliente). Al hacerlo: reemplazar `public/.htaccess`
-   con el bloque de `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8 (esto también resuelve la
-   Tarea 2 / SEO-01), verificar con su script `curl -I`, agregar `/nosotros/nancy-nieto` a `sitemap.xml`
-   (cubre la Tarea 3 / SEO-02), corregir `docs/seo-setrategies/INTAKE.md:56` ("Vercel" → Hostinger/Apache).
-2. **Verificar GSC** por Dominio en Hostinger + DNS.
+1. **Deploy to Hostinger/Apache** (real prod; Vercel = client demo). When doing it: replace `public/.htaccess`
+   with the block from `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8 (this also resolves
+   Task 2 / SEO-01), verify with its `curl -I` script, add `/nosotros/nancy-nieto` to `sitemap.xml`
+   (covers Task 3 / SEO-02), fix `docs/seo-setrategies/INTAKE.md:56` ("Vercel" → Hostinger/Apache).
+2. **Verify GSC** by Domain on Hostinger + DNS.
 
-## Condicionales (esperar a que se cumpla la condición)
+## Conditional (wait for the condition to hold)
 
-- Sección "por qué el postoperatorio importa" (nueva en `LandingPage` o ruta) — solo si `/tratamientos-postoperatorios` gana tracción. Material vetado en el spec de #6.
-- PRF §8.3 página EN — solo si el tráfico EN de ads convierte.
-- PRF §8.4 guía pilar "Qué es el PRF" — solo si el landing enriquecido rankea para el cluster.
-- Link a Dental en el footer — condicional al hold regulatorio dental (abajo).
+- "Why postoperative care matters" section (new in `LandingPage` or a route) — only if `/tratamientos-postoperatorios` gains traction. Material vetted in the #6 spec.
+- PRF §8.3 EN page — only if EN ad traffic converts.
+- PRF §8.4 pillar guide "What is PRF" — only if the enriched landing ranks for the cluster.
+- Dental link in the footer — conditional on the dental regulatory hold (below).
 
-## Bloqueado (usuario / terceros)
+## Blocked (waiting on user / third parties)
 
-- **Deploy Hostinger:** no tocar Hostinger ni `.htaccess` hasta que el usuario diga "vamos a hacer el deploy en Hostinger".
-- **Dental en el sitio** (`/dental-estetico` hub + blanqueamiento + limpieza dental): mismo riesgo regulatorio que lo sacó del GBP. Decidir si las páginas salen/reencuadran — ciclo aparte, decisión del usuario, no tocar sin pedido.
-- **Yelp:** lo reclama Nancy (dueña); el usuario le pasa NAP + descripción optimizados.
-- **C2:** sign-off de compliance de la clínica por dato cuantitativo + enlace de autoridad.
-- Intake temas 6/7: velocidad de captación de reseñas; GMBspy sobre competencia secundaria (Élévatione / Beverly Hills / Pure Skin).
-- Nota para la clínica: postop tiene punto débil documentado (ayuda con la faja + protección ocular en luz LED) — de las 2 reseñas negativas.
+- **Hostinger deploy:** do not touch Hostinger or `.htaccess` until the user says "let's do the Hostinger deploy".
+- **Dental on the site** (`/dental-estetico` hub + whitening + live dental cleaning): same regulatory risk that pulled it from the GBP. Decide whether the pages leave/reframe — separate cycle, user's call, do not touch without a request.
+- **Yelp:** claimed by Nancy (owner); the user hands her the optimized NAP + description.
+- **C2:** clinic compliance sign-off for a quantitative datapoint + an authority link.
+- Intake topics 6/7: review-acquisition velocity; GMBspy on secondary competitors (Élévatione / Beverly Hills / Pure Skin).
+- Clinic note: postop has a documented weak point (help with the faja + eye protection under LED light) — from the 2 negative reviews.
 
-## Backlog off-site (no consume ciclo de código; sesiones aparte, usuario logueado)
+## Off-site backlog (no code cycle; separate sessions, user logged in)
 
-- Posts de GBP + copy base de Facebook ads para postop — `docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md` §"Specified, NOT executed".
-- Servicios 1–3 + descripción de GBP — `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` §S1–S3.
-- Ads de PRF (canales/ángulos/términos) — `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md`.
+GBP posts + base Facebook ads copy for postop (`docs/superpowers/specs/2026-08-29-postop-demand-gen-wedge-design.md` §"Specified, NOT executed") · Services 1–3 + GBP description (`COMPETENCIA-SERVICIOS-2026.md` §S1–S3) · PRF ads channels/angles/terms (`docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md`).
 
-## Cómo retomar
+## How to resume
 
-1. `npm run dev` (`:3000`) → abrir en el browser pane. Comandos completos en `CLAUDE.md` §Commands.
-2. Cada ciclo: brainstorm → aprobación → **1 cambio** → verificación → commit → ritual de docs → push confirmado.
-   Verificación: cross-check `MEDICAL_COMPLIANCE.md` (copy) + WCAG AA + browser `:3000`.
-   `test:visual` **solo** si el cambio toca CSS / componente-template compartido / layout / clase reusada
-   (`CLAUDE.md` §DoD). Gotcha Git Bash: prefijar `MSYS_NO_PATHCONV=1` cuando se use `-g /patrón`.
-3. t-shirt sizing (ataque en orden ascendente salvo que el usuario diga otra cosa):
-   **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-archivo con criterio · **L** multi-fase · **XL** feature nueva.
+1. `npm run dev` (`:3000`) → open in the browser pane. Full commands in `CLAUDE.md` §Commands.
+2. Each cycle: brainstorm → approval → **1 change** → verification → commit → doc ritual → push on confirmation.
+   Verification: cross-check `docs/MEDICAL_COMPLIANCE.md` (copy) + WCAG AA + browser `:3000`.
+   `test:visual` **only** if the change touches CSS / a shared component-template / layout / a reused class
+   (`CLAUDE.md` §DoD). Git Bash gotcha: prefix `MSYS_NO_PATHCONV=1` when using `-g /pattern`.
+3. t-shirt sizing (attack in ascending order unless the user says otherwise):
+   **XS** copy in 1 place · **S** 1–3 files mechanical · **M** multi-file with judgement · **L** multi-phase · **XL** whole new feature.
+4. Closing the session → run the `close-cycle` skill.
 
-## Infra resuelta (cache — no rehacer)
+## Resolved infra (do not redo)
 
-graphify fuera del workflow · engram off · GSC prefijo creado sin verificar
-(`public/google2f0ede1a410e8a22.html`) · GA4 `G-9272VHFT03` en `index.html` · Apify token en
-`.env.local` raíz (`APIFY_API_KEY`, formato `KEY: valor`)
+graphify out of the workflow · engram off · GSC prefix unverified (`public/google2f0ede1a410e8a22.html`) · GA4 `G-9272VHFT03` in `index.html` · Apify token in `.env.local` at root (`APIFY_API_KEY`, format `KEY: valor`)
 
-## Contexto por área — grep, no full-read
+## Context by area — grep, not full-read
 
-`PROGRESS.md` = log de ciclos · `DECISIONS.md` = por qué (grep el área, nunca full-read) ·
-`docs/seo-setrategies/INTAKE.md` = proyecto SEO local ·
-`docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` = research competencia/servicios + reseñas
+`PROGRESS.md` = cycle log · `DECISIONS.md` = the why (grep, never full) · `docs/seo-setrategies/INTAKE.md` = local-SEO project · `docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` = competition research + reviews

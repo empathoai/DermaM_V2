@@ -1,7 +1,15 @@
 # NEXT
 
-Estado: HEAD esperado = commit de docs que descarta el bloque Academy en `/nosotros`, sobre `8d1276b`.
+Estado: HEAD esperado = commit del CTA de hero "AGENDA TU VALORACIÓN" + ritual de docs, sobre `6e2aafb`.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-29 (cont. 15) — CERRADO:
+- **Heroes `/nosotros` + `/nancy-nieto`: CTA primario → "AGENDA TU VALORACIÓN"** (`aboutPage.js`, 2
+  líneas). Eran los únicos 2 heroes en "RESERVAR"; ahora todos los heroes con CTA + navbar unifican
+  string. Supersede el ruling del mismo día que los puso en "RESERVAR" (premisa equivocada).
+  `test:visual` 22/22 sin diffs. `a25e317`. Ver DECISIONS 2026-08-29.
+- **Descartado (sin cambio):** bloque Academy en `/nosotros` (vive en `/nancy-nieto`); spec reviews 8.20
+  → backlog; CTA sticky en mobile (FAB + hero CTA ya cubren; retomar solo si analytics muestra caída).
 
 Sesión 2026-08-29 (cont. 14) — CERRADO:
 - **FloatingWhatsApp mobile-first.** Helper bubble: no se renderiza en mobile; en desktop trigger por
@@ -154,11 +162,10 @@ Otras secciones "con media faltante" fuera de `/nosotros`: identificar con
 `grep -rhoE '/assets/images/[^"]+\.(jpg|mp4|webp)' src | while read p; do [ -f public$p ] || echo $p; done`
 antes de cada tanda.
 
-**Cola de código no bloqueada (ideas surgidas de evaluaciones, sin pedido explícito):**
-- **CTA sticky en mobile** — [S/M]. En mobile el booking primario está detrás del hamburger
-  (`Navbar.jsx` `mobileCtaPrimary`); el FAB persistente es solo WhatsApp. Un bottom bar sticky en
-  mobile con "Reservar" daría paridad de conversión con desktop (navbar `sticky`). Surgió de la
-  evaluación del CTA del navbar (DECISIONS 2026-08-29). Brainstorm antes de tocar — es UI nueva.
+**Cola de código no bloqueada:** vacía.
+- ~~CTA sticky en mobile~~ — **DESCARTADO 2026-08-29** por el usuario: el hero mobile ya tiene CTA de
+  reserva + el FAB de WhatsApp es persistente; un 2º elemento fijo = clutter y riesgo de overlap
+  (ver fix del footer). Retomar solo si analytics muestra caída de conversión en mobile. Ver DECISIONS.
 
 - **Auditoría del footer: CERRADA** — 1a redes (`b30f01a`), 1b horario (`2269fd9`), 1c legal/accessibility
   (`ffc0e0f`), 1d pulido (`6392595`). Lo único de footer pendiente: link a Dental (condicional al hold

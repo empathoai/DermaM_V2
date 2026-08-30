@@ -14,8 +14,9 @@ Close one working cycle. Makes session state survive a cold start with `NEXT.md`
 
 - The change is approved by the user. No approval → stop and report what is pending.
 - One logical change this cycle. Several unrelated changes → close them one at a time.
-- `git rev-parse HEAD` matches the "expected HEAD" line in `NEXT.md`. Mismatch → another session
-  moved it; reconcile before committing.
+- `main` has not diverged since session start (`git log --oneline -3` vs. `NEXT.md`'s State line;
+  HEAD at or one doc-fixup ahead of the named commit is fine). Diverged → another session moved it;
+  reconcile before committing.
 
 ## Steps
 

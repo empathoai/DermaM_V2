@@ -42,7 +42,7 @@ Index: `superpowers:using-superpowers`.
 
 ## Memory
 
-Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file. Sanity-check: `git rev-parse HEAD` matches the "expected HEAD" line in `NEXT.md`; a mismatch means another session moved it — reconcile before working.
+Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file. Sanity-check: `git log --oneline -3` — HEAD is at, or one doc-fixup commit ahead of, the commit named in `NEXT.md`'s State line (message match is enough). A diverged `main` means another session moved it — reconcile before working.
 
 Four git files, each a single source of truth:
 - `NEXT.md` — ordered next steps + blockers + tree/push state. The only planning read at session start. Keep it under ~110 lines: a closed cycle leaves no block here, its summary goes to `PROGRESS.md`.

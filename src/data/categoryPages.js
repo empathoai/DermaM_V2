@@ -557,7 +557,8 @@ export const categoryPages = {
           cta: 'CONSULTAR DISPONIBILIDAD',
           ctaTo: '/contacto',
           disclaimer: 'Requiere valoración previa para garantizar tu seguridad y resultados.',
-          image: null
+          image: '/assets/images/treatments/corporales/maderoterapia-corporal/tratamiento-maderoterapia-corporal.jpg',
+          imagePosition: 'center 80%'
         }
       ]
     },

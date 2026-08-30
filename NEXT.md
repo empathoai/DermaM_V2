@@ -1,7 +1,8 @@
 # NEXT
 
-Estado: HEAD esperado = `7adc357` + 3 commits (acné antes/después · spec descartada del historial ·
-oxigenoterapia bloque de procedimiento) + 1 commit de cierre de docs.
+Estado: HEAD esperado = `563efc7` — 3 commits sobre `7adc357`
+(`83d6bfe` feat acné antes/después · `81a79c0` feat oxigenoterapia bloque de procedimiento ·
+`563efc7` docs cierre).
 Árbol limpio, sin servers salvo el `:3000`.
 
 Sesión 2026-08-30 (cont.) — CERRADO:

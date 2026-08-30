@@ -246,12 +246,20 @@ const customDetails = {
       }
     ],
     beforeAfter: {
-      items: [{
-        before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes.jpg',
-        after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues.jpg',
-        beforeAlt: 'Rostro con enrojecimiento, textura irregular y aspecto opaco antes de un peel coreano en Derma.M, West Palm Beach',
-        afterAlt: 'Rostro con piel más uniforme, luminosa e hidratada tras un peel coreano en Derma.M, West Palm Beach'
-      }]
+      items: [
+        {
+          before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes.jpg',
+          after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues.jpg',
+          beforeAlt: 'Rostro con enrojecimiento, textura irregular y aspecto opaco antes de un peel coreano en Derma.M, West Palm Beach',
+          afterAlt: 'Rostro con piel más uniforme, luminosa e hidratada tras un peel coreano en Derma.M, West Palm Beach'
+        },
+        {
+          before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes-2.jpg',
+          after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues-2.jpg',
+          beforeAlt: 'Rostro con textura irregular y tono desigual en la frente antes de un peel coreano en Derma.M, West Palm Beach',
+          afterAlt: 'Rostro con piel visiblemente más lisa, luminosa y de tono uniforme tras un peel coreano en Derma.M, West Palm Beach'
+        }
+      ]
     }
   },
   'radiofrecuencia-facial': {

@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Task 7: Organization entity consolidated on Nosotros (cont. 27, code)
+## 2026-08-30 — Task 9: hero text no longer gated on the video-load event (cont. 28, code)
 
-- **`src/pages/Nosotros.jsx`:** replaced the inline 6-field `HealthAndBeautyBusiness` in the JSON-LD with the unified `@graph` pattern used by Home/Contacto — `organizationNode` (imported from `src/data/organizationSchema.js`) + an `AboutPage` node (`@id` `…/nosotros#aboutpage`) whose `mainEntity` references `…/#organization` by `@id`. No UI change.
-- **Why:** the inline node had no canonical `@id`, no geo/sameAs → fragmented the brand entity in the Knowledge Graph vs. the single `#organization` node. Now one referenced entity across Home / Contacto / Nosotros / NancyNieto.
-- **Verified:** `JSON.stringify` of the graph parses clean (2 nodes, org `@id` correct); pattern byte-identical to already-live Home/Contacto. Schema-only, no visual gate — `test:visual` not run per `CLAUDE.md` §DoD (no CSS / shared component / layout touched). Browser render not checked: `:3000` owned by another chat, `autoPort` off.
-- Closes audit Task 7 (SEO-04). Commit `ed260de`.
+- **`Hero.jsx` + `TreatmentHero.jsx`:** removed the `mediaReady` state + 2000ms fallback timer + `onReady` gate that held the headline/body/CTAs at `opacity:0` until `<video>` `onLoadedData`. Critical text now renders from first paint.
+- **`Hero.jsx`** keeps the `motion.div` entrance beat but time-driven: `delay 0.3s → 0.7s`, plus a `useReducedMotion()` guard (`initial={false}` / `duration:0` when opted out). **`TreatmentHero.jsx`** had no entrance animation → renders immediately (full redesign is Task 8). No CSS-module changes (initial opacity was inline-only). `HeroMedia.onReady` now unused by both callers, left as harmless optional.
+- **Why:** `onLoadedData` can take 4–5s on slow networks and may never fire in a backgrounded tab → old code showed an empty hero for up to 2s on the visits that matter for LCP/CLS. User's intent was a "video first, then header" UX beat, not a load gate; a fixed 0.7s delay preserves it safely. See `DECISIONS.md` 2026-08-30.
+- **Verified:** `npm run test:visual` 33/34 — Home Hero Viewport (desktop + mobile) pass → no diff in settled state. The 1 fail is the standing `nosotros-viewport` `about/hero.jpg` placeholder (unrelated, `NEXT.md`). `useReducedMotion` confirmed as a valid `motion/react` export. No re-baseline.
+- Closes audit Task 9 (UX-04). Commit `<hash>`.
 
 ---
 

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import HeroMedia from '../../utils/HeroMedia';
 import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './Hero.module.css';
@@ -8,16 +8,7 @@ import styles from './Hero.module.css';
 export default function Hero({ backgroundImage, image }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
   const mediaSrc = backgroundImage || image || '/assets/images/home/hero.mp4';
-  const [mediaReady, setMediaReady] = useState(!mediaSrc);
-
-  useEffect(() => {
-    if (mediaSrc) {
-      const timer = setTimeout(() => {
-        setMediaReady(true);
-      }, 2000); // 2s safety fallback
-      return () => clearTimeout(timer);
-    }
-  }, [mediaSrc]);
+  const prefersReducedMotion = useReducedMotion();
 
   return (
     <section className={styles.heroSection}>
@@ -26,7 +17,6 @@ export default function Hero({ backgroundImage, image }) {
         <HeroMedia
           src={mediaSrc}
           alt=""
-          onReady={() => setMediaReady(true)}
           className={styles.heroVideoElement}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
@@ -42,23 +32,16 @@ export default function Hero({ backgroundImage, image }) {
       <div
         className="relative z-10 w-full max-w-[1440px] mx-auto text-left py-12 lg:py-16 px-[max(24px,4vw)] lg:px-[max(64px,4vw)]"
       >
-        <div
-          style={{
-            position: 'relative',
-            zIndex: 1,
-            opacity: mediaReady ? 1 : 0,
-            transition: 'opacity 480ms ease',
-          }}
-        >
+        <div style={{ position: 'relative', zIndex: 1 }}>
           <div className="w-full max-w-[620px] flex flex-col">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1.2,
-                delay: 0.3,
-                ease: [0.16, 1, 0.3, 1],
-              }}
+              transition={
+                prefersReducedMotion
+                  ? { duration: 0 }
+                  : { duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }
+              }
             >
               {/* Headline */}
               <h1 className="text-[clamp(2.5rem,5vw+1rem,4rem)] leading-[1.05] tracking-[0.05em] uppercase font-normal lg:font-medium text-[#F2F0F1] m-0 mb-6">

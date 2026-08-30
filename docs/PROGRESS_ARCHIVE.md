@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Task 7: Organization entity consolidated on Nosotros (cont. 27, code)
+
+- **`src/pages/Nosotros.jsx`:** replaced the inline 6-field `HealthAndBeautyBusiness` in the JSON-LD with the unified `@graph` pattern used by Home/Contacto — `organizationNode` (imported from `src/data/organizationSchema.js`) + an `AboutPage` node (`@id` `…/nosotros#aboutpage`) whose `mainEntity` references `…/#organization` by `@id`. No UI change.
+- **Why:** the inline node had no canonical `@id`, no geo/sameAs → fragmented the brand entity in the Knowledge Graph vs. the single `#organization` node. Now one referenced entity across Home / Contacto / Nosotros / NancyNieto.
+- **Verified:** `JSON.stringify` of the graph parses clean (2 nodes, org `@id` correct); pattern byte-identical to already-live Home/Contacto. Schema-only, no visual gate — `test:visual` not run per `CLAUDE.md` §DoD. Browser render not checked: `:3000` owned by another chat.
+- Closes audit Task 7 (SEO-04). Commit `ed260de`.
+
+---
+
 ## 2026-08-30 — Task 4: medical-valuation notice unified into one constant (cont. 26, code)
 
 - **Decision (user):** canonical string = `"Requiere valoración profesional previa para garantizar tu seguridad y resultados."` — **"profesional"**, not "médica": accurate for esthetician-performed *and* physician-supervised services, keeps "medical spa ≠ clínica". Supersedes `MEDICAL_COMPLIANCE.md` L11 (old "médica") + the ambiguous `DECISIONS.md` 2026-08-27 reference. See `DECISIONS.md` 2026-08-30.

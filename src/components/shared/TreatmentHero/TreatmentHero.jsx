@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import HeroMedia from '../../utils/HeroMedia';
 import styles from './TreatmentHero.module.css';
 
@@ -19,15 +19,6 @@ export default function TreatmentHero({
     ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}`
     : 'https://wa.link/z7i9vm';
 
-  const [mediaReady, setMediaReady] = useState(!image);
-
-  useEffect(() => {
-    if (image) {
-      const timer = setTimeout(() => setMediaReady(true), 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [image]);
-
   return (
     <section className={styles.heroSection}>
 
@@ -36,7 +27,6 @@ export default function TreatmentHero({
         <HeroMedia
           src={image}
           alt={imageAlt || ''}
-          onReady={() => setMediaReady(true)}
           className={styles.mediaAsset}
         />
         {/* Asymmetric gradient — heavy left for text, fades right */}
@@ -46,13 +36,7 @@ export default function TreatmentHero({
       </div>
 
       {/* TWO-COLUMN CONTENT GRID */}
-      <div
-        className={styles.grid}
-        style={{
-          opacity: mediaReady ? 1 : 0,
-          transition: 'opacity 480ms ease',
-        }}
-      >
+      <div className={styles.grid}>
         {/* Left Column: Text */}
         <div className={styles.textContent}>
           {categoryLabel && (

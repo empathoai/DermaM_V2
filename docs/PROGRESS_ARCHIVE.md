@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/plasma-frio: bloque de procedimiento (video + still)
+- **Data + media (`feat`).** Entry `plasma-frio` en `src/data/treatmentPages.js`: objeto `beforeAfter` (`eyebrow: 'EL PROCEDIMIENTO'`, headline propio, labels `EN CABINA`/`EQUIPO`, disclaimer de procedimiento). Slot `before` = video del electrodo de vidrio con gas ionizado (HEVC 41 s/38 MB → H.264, `-an`, recortado a 18 s, 2.78 MB); slot `after` = still de detalle. Poster + still (41/45 KB) + `.webp`.
+- **Sin cambio de componente.** `TreatmentDetailPage.jsx` (override de `eyebrow`/`headline` ya shippeado en el ciclo anterior) y `BeforeAfterGrid` sin tocar.
+- **Verificación.** `:3000`: video autoplaya muted+loop, still en 2º slot, sección 1350px (= oxigenoterapia). `test:visual` 34/34 sin diffs. Compliance OK.
+
 ## 2026-08-30 — /faciales/oxigenoterapia-facial: copy a modalidad cápsula
 - **Fix (`fix`).** `src/data/treatmentPages.js` entry `oxigenoterapia-facial`: `heroDescription`, `whatIsBody`, `application` ("Nebulización" → "Cápsula de oxígeno") y `faq[0]` ("bruma de oxígeno") describían una pistola de O2 a alta presión. La sesión real (video del propio entry) es cápsula transparente + bruma de activos + luz LED, sin chorro sobre la piel. Reescrito para que matchee. Sin banned words. Data-only, sin `test:visual`. Render verificado en `:3000`. Cierra el ítem abierto por el ciclo del bloque de procedimiento.
 

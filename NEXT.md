@@ -1,7 +1,15 @@
 # NEXT
 
-Estado: HEAD esperado = `8f83c2d` + commit de cierre de docs.
+Estado: HEAD esperado = `acb0d06` + commit de cierre de docs.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 4) — CERRADO:
+- **`/corporales`: imagen en la card complementaria de maderoterapia.** `categoryPages.js`, objeto
+  `corporales` → `complementaryTreatments.treatments[0]`: `image: null` → ruta real + `imagePosition:
+  'center 80%'`. Era la única card complementaria del hub (tarjeta de texto huérfana). Sin cambio de
+  componente (`showMedia={true}` ya se pasa). Otros 5 hubs sin tocar. faciales/iv-therapy complementarias
+  quedan con `image: null` a propósito (6–11 cards se leen bien; ver DECISIONS 2026-08-30). `test:visual`
+  skip. `acb0d06`.
 
 Sesión 2026-08-30 (cont. 3) — CERRADO:
 - **`/faciales/plasma-frio`: bloque de procedimiento (video + still).** Mismo patrón que oxigenoterapia,

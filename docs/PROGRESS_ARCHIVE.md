@@ -3,6 +3,29 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Plan de remediación de auditorías (cont. 21, sin código)
+
+- **Llegaron los 3 informes externos** → `auditorias-externas/resultados/{ui-ux,seo,copy}.md` (12 hallazgos UX + 10 SEO + 7 CPY).
+- **Triaje completo → cola priorizada de 27 tareas** por severidad × impacto de negocio × riesgo de regresión. Fusiones: UX-01=CPY-02 (botón muerto), UX-02=SEO-05 (contenido fantasma en `CategoryPage`).
+- **Plan paso a paso:** `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md` (gitignored, en disco) — por tarea: archivos exactos, enfoque, verificación, impacto SEO/GEO/AEO, gate (brainstorm / visual / archivo protegido). Cola compacta en `NEXT.md`.
+- **Nada ejecutado.** Cada tarea entra por su ciclo: brainstorm → aprobación → 1 cambio → verificación → ritual. Tarea 1 = CTA muerto Postoperatorios (XS). Tarea 2 (`.htaccess`) bloqueada hasta el deploy a Hostinger. Commit `fdf7b7e`.
+- Se corrigió el template TDD de `superpowers:writing-plans` a formato de backlog: no hay runner unitario y la regla de un-cambio-por-ciclo de `CLAUDE.md` prevalece.
+
+## 2026-08-30 — Briefs de auditoría externa (cont. 20, sin código)
+
+- **`auditorias-externas/` nueva carpeta versionada.** Prepara una revisión read-only por un LLM externo conectado a una copia del repo (acceso de lectura a todo, escritura solo en `resultados/`).
+  - `PROMPT.md` — el único texto que el usuario pega en el LLM externo: rol + "leé `INSTRUCCIONES-AUDITORIA.md` y seguilo" + guardrails resumidos + los 3 archivos de salida.
+  - `INSTRUCCIONES-AUDITORIA.md` — detalle completo: guardrails no negociables, contexto de proyecto, source-of-truth docs (con nota de que `docs/` es gitignored y puede faltar), cómo invocar skills del repo con fallback a leer `SKILL.md`, las 3 auditorías, formato de salida, constraint sobre recomendaciones.
+  - `resultados/.gitkeep` — destino de `seo.md`, `ui-ux.md`, `copy.md`.
+- **Alcance de las 3 auditorías:** (1) UI/UX/A11y → skill `impeccable` sobre todos los templates + `/contacto` (nunca criticado) + WCAG 2.1 AA + tokens `DESIGN.md`. (2) SEO/GEO/AEO/Local → `seo-checklist-65` → `seo-audit`+`schema` → `ai-seo` → `geo-aeo-playbook` → `bencium-aeo` → `seo-local`, más checklist técnico (headings, meta por tipo de página, JSON-LD, sitemap/robots/llms.txt/.htaccess, canonicals, huérfanas, canibalización PRF). (3) Copy → cross-check duro vs `MEDICAL_COMPLIANCE.md` + posicionamiento relacional + calidad del español + CTAs + redundancias; solo flag.
+- **Sin código, sin spec en `docs/superpowers/`** — el entregable son los propios docs. Brainstorm → aprobación del usuario → escritura.
+- **Estado:** bloqueado esperando los 3 informes (llegaron en cont. 21).
+
+## 2026-08-30 — /contacto bloque de dos columnas: tarjetas simétricas + mapa a ancho completo
+
+- **`Contacto.jsx` + `Contacto.module.css` (2 archivos, ~40 líneas).** Tarjeta izquierda ("Empieza tu evaluación") y derecha ("Sede Principal") con alturas distintas (bordes inferiores desalineados) y mapa colgando solo bajo la columna derecha. Rediseño (Opción A del brainstorm): `.twoColumnGrid` @≥1024 `1.1fr 0.9fr` → `1fr 1fr`, `flex-start` → `stretch`; `.formColumn` flex-column + `.startBlock` `flex:1` + `.startPhoneLine` `margin:auto 0 0 0` + `padding-top:24px`; `.mapCardSection` sale de la columna → hijo directo de `.twoColumnContainer` a ancho completo (1440px), `margin-top` 40/60px. `.infoColumn` eliminado (JSX + CSS).
+- **Verificación.** DOM en `:3000`: grid `690px 690px` stretch, `bottomsMatch: true`, mapa full-width, gap 60px. Móvil 390px OK. `test:visual` `Contacto Page` pasa sin diff (snapshot solo cubre el hero). Sin cambios de semántica/foco/contraste/copy. Commit `0734f1f`.
+
 ## 2026-08-30 — /contacto: se quita el formulario muerto y se de-duplican los puntos de contacto
 
 - **`Contacto.jsx` + `Contacto.module.css` (169 +/315 −).** El `<form>` de 7 campos tenía `handleFormSubmit` simulado (sin backend, sin Square, sin email) → un dead-end que mostraba "¡Mensaje enviado!" y perdía el lead. Se reemplaza por el **Start block**: "Agenda en línea" → Square (link `target=_blank`, mismo `bookingUrl` que Navbar/PageHero/FinalCTA) + "Consultar primero por WhatsApp" → wa.me + microcopy "Continúas en Square" + línea `tel:`.

@@ -3,6 +3,10 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/tratamiento-acne: sección antes/después
+- **Media (`feat`).** `src/data/treatmentPages.js`: `beforeAfter: { items: [...] }` (1 par) en el entry `tratamiento-acne` — mismo patrón que `tratamiento-capilar`, el template `TreatmentDetailPage` ya lo renderiza, sin cambio de componente. Imágenes del usuario en `public/assets/images/treatments/faciales/tratamiento-acne/tratamiento-acne-{antes,despues}.jpg` (116/131 KB, 1000×1250) + `.webp` sibling. Alt español trazable al copy del entry, sin banned words.
+- **Verificación.** Browser `:3000`: sección "EVIDENCIA DE APOYO" pinta con imágenes reales (no `og-default`), sin errores de consola. `test:visual` omitido (edit data-only en `src/data/*`, gate CLAUDE.md §DoD). WCAG: alt presente y descriptivo. Compliance OK (disclaimer de resultados individuales lo pone el template).
+
 ## 2026-08-29 — /capilar/tratamiento-capilar: sección antes/después + skill add-media ajustada
 - **Media (`feat`).** `src/data/treatmentPages.js`: `beforeAfter: { items: [...] }` (1 par) en el entry `tratamiento-capilar` — el template `TreatmentDetailPage` ya lo renderiza, sin cambio de componente. Imágenes del usuario en `public/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-{antes,despues}.jpg` (185/156 KB, 1000×1250) + `.webp` sibling. Alt español trazable al entry, sin banned words.
 - **Verificación.** Browser `:3000`: sección pinta con imágenes reales (no `og-default`), `.webp` 200 OK. `test:visual` 34/34 sin diffs (ruta no snapshoteada → sin re-baseline). WCAG: alt presente y descriptivo. Compliance OK.

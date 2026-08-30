@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros/nancy-nieto §2 "Historia": sin imagen, layout tipo Filosofía + credenciales en lista
+
+- **Imagen fuera (`feat`, `920a4cf`).** §2 (`#founder-spotlight`) del bio deja de ser `spotlightRow` de 2 col — se elimina el `MediaBlock` con la modelo stock `home/founder.jpg`. El hero queda como único retrato; fotos vuelven en §4 (Academy).
+- **Layout = Filosofía (`FounderBioPage.jsx`).** §2 pasa a `SectionHeader` (`variant="light"`, `align="left"`) + contenido, mismo esqueleto que §3, sobre canvas claro `#F2F0F1`. Clases `.historia*` nuevas (no reusar `.philosophy*`, texto claro hardcodeado). `.spotlight*` intactas (§4 Academy).
+- **Credenciales en `<dl>` (`aboutPage.js`).** `historia.body` denso → `historia.credentials[]` (Estados Unidos / Ecuador / Formación continua) en `<dl>` con borde-izquierdo. `body` = solo párrafo narrativo. Sin `secondaryBody`. Puro reorden de copy vetada.
+- **Verificación.** `:3000` desktop + mobile, consola limpia. `test:visual` 34/34 sin diffs (snapshot del bio solo cubre el hero). WCAG AA OK. `id="founder-spotlight"` se mantiene.
+
 ## 2026-08-30 — /nosotros/nancy-nieto: hero enfocado en ella + imagen propia
 
 - **Imagen (`feat`, `bd43ced`).** `founderBioPage.hero.backgroundImage`: `about/hero.jpg` (modelo stock, compartida con /nosotros) → `about/nancy-nieto/nancy-nieto-hero.jpg` (Nancy, 1920×1080, 56 KB) + `.webp`. `about/hero.jpg` sigue vivo en el hero de /nosotros.

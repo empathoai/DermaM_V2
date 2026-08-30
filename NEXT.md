@@ -1,24 +1,20 @@
 # NEXT
 
-Estado: HEAD esperado = `920a4cf` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `<HASH>` (pusheado). Árbol limpio. Sin servers.
 
-**BLOQUEADO EN INPUT DEL USUARIO:** el usuario va a mandar la foto real de Nancy para el bloque
-`founderSpotlight` de `/nosotros` (AboutPage). Próximo ciclo = ese bloque: quitar la foto stock
-`home/founder.jpg`, meter `about/nancy-nieto-fundadora.jpg`, y reducir el bloque a founder-primer
-compacto (sin mini-bio que compita con la página dedicada). **NO borrar la sección** — es el
-link-driver a `/nosotros/nancy-nieto` (casi huérfana) + anchor de E-E-A-T de la página About.
-Ver DECISIONS 2026-08-30 (evaluación) y MEMORY `project_nav_orphan_bio_page`.
+Sesión 2026-08-30 (cont. 14) — CERRADO:
+- **`/nosotros` `founderSpotlight`: foto real de Nancy.** `founderSpotlight.image` en `aboutPage.js`:
+  `home/founder.jpg` (modelo stock) → `about/nancy-nieto-fundadora.jpg` (retrato real, 1000×1200,
+  110 KB) + `.webp`. Alt → "Retrato de Nancy Nieto…". La sección se conserva tal cual (NO se redujo a
+  primer compacto — sin aprobación). `test:visual` re-baseline `nosotros-founder-with-link` desktop +
+  mobile (único diff). Mapa de imágenes de Nancy 3/4. Ver DECISIONS.
 
 Sesión 2026-08-30 (cont. 13) — CERRADO:
 - **`/nosotros/nancy-nieto` §2 "Historia": sin imagen, layout tipo Filosofía + credenciales en `<dl>`.**
-  Se elimina el `MediaBlock` con la modelo stock; §2 pasa al esqueleto de §3 (SectionHeader +
-  contenido, grid `4fr 6fr`) sobre canvas claro `#F2F0F1`. `historia.body` denso → `historia.credentials[]`
-  (Estados Unidos / Ecuador / Formación continua) en `<dl>`. Clases `.historia*` nuevas (no reusar
-  `.philosophy*`, texto claro hardcodeado). `.spotlight*` intactas (§4 Academy). `test:visual` 34/34
-  sin diffs. `home/founder.jpg` queda en disco. Ver DECISIONS.
+  Se elimina el `MediaBlock` con la modelo stock; §2 pasa al esqueleto de §3 sobre canvas claro.
+  Clases `.historia*` nuevas. `.spotlight*` intactas (§4 Academy). `test:visual` 34/34. Ver DECISIONS.
 
-**Nota de ritmo (de la próxima sesión):** cambios chicos llevaron varias vueltas de `test:visual`.
-Ver `feedback_pacing_small_changes`. Evaluar batchear los slots de imagen restantes de Nancy.
+**Nota de ritmo:** cambios chicos llevan varias vueltas de `test:visual`. Ver `feedback_pacing_small_changes`.
 
 Sesión 2026-08-30 (cont. 12) — CERRADO:
 - **`/nosotros/nancy-nieto` hero enfocado en ella.** Imagen propia (`about/nancy-nieto/nancy-nieto-hero.jpg`,
@@ -280,16 +276,19 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 Flujo (post-ajuste cont. 16): la skill da nombre(s) SEO + ruta exacta; el usuario coloca los archivos
 (ruta final ya nombrada o `scratchpad/media-in/`) y confirma el mapeo 1 archivo ↔ 1 slot. Slots vacíos
 hoy (todos `/nosotros`):
-- **`founderSpotlight.image` de `/nosotros`** (`about/nancy-nieto-fundadora.jpg`) — el usuario manda la
-  foto real de Nancy. Ciclo = swap foto stock + reducir el bloque a founder-primer compacto. NO borrar
-  la sección. (Ver nota BLOQUEADO arriba.)
+- **JSON-LD `image` en `NancyNieto.jsx:32`** — URL absoluta a `home/founder.jpg` (modelo stock). Es la
+  4ª y última imagen de Nancy del mapa. Al migrarla (a una URL de Nancy real, p. ej. la de
+  `about/nancy-nieto-fundadora.jpg`), `home/founder.jpg` queda sin referencias → se puede `git rm`.
+  Nota: es un `<script type="application/ld+json">` en un `.jpx`, no un slot de `src/data/*` — ciclo
+  aparte, revisar si toca `add-media` o es edición directa de schema.
 - `/assets/images/about/hero.jpg` (hero de `/nosotros`) — **roto ahora**: `aboutPage.js:11` lo
   referencia y el archivo no existe (cae al gradiente de `PageHero`). Necesita foto del usuario.
 - Posters `.jpg` de `mikaela-guajardo` / `elianne-trujillo` podrían faltar (el video igual corre sin
   ellos); verificar con `ls public/assets/images/about/team/*.jpg` antes de darlo por pendiente.
-- El slot de retrato de §2 del bio (`FounderBioPage.jsx`) **ya no existe** — §2 quedó sin imagen
-  (cont. 13). Del mapa de 4 imágenes de Nancy quedan 2: `founderSpotlight` de `/nosotros` + retrato
-  del schema en `NancyNieto.jsx:32` (JSON-LD `image`, sigue apuntando a `home/founder.jpg`).
+- Slot de retrato de §2 del bio **ya no existe** (cont. 13, §2 quedó sin imagen).
+- **Follow-up opcional NO pedido:** reducir el bloque `founderSpotlight` de `/nosotros` a founder-primer
+  compacto (dedupe vs. card #1 del grid de equipo + página dedicada). Solo si el usuario lo pide;
+  brainstorm propio. Ver DECISIONS 2026-08-30.
 Cada ciclo: `add-media` A (localizar → optimizar → webp → alt español → render `:3000` →
 `test:visual` re-baseline → WCAG → ritual).
 (Tony Díaz, Miguel Ramos, Daniela, Melisa: videos CERRADOS. Samantha: eliminada del equipo en cont. 9.)

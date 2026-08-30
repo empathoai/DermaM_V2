@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<hash>` (cont. 24 — Task 1 done). Clean tree.
+Base commit = `a52de89` (cont. 24 — Task 1 done). Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)

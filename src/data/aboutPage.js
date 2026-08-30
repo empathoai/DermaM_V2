@@ -186,7 +186,7 @@ export const founderBioPage = {
     body: "DERMA.M nació del sueño y la pasión de Nancy Nieto por el cuidado de la piel, el bienestar y el servicio a los demás. Hoy dirige el medical spa en West Palm Beach con esa misma visión.",
     primaryCta: "AGENDA TU VALORACIÓN",
     secondaryCta: "WHATSAPP",
-    backgroundImage: "/assets/images/about/hero.jpg",
+    backgroundImage: "/assets/images/about/nancy-nieto/nancy-nieto-hero.jpg",
     variant: "default"
   },
   historia: {

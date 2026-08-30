@@ -131,14 +131,14 @@ Escala: **XS** copy 1 sitio · **S** 1–3 archivos mecánico · **M** multi-arc
 
 ## Próximo (en orden de size)
 
-**PRIMERO — 1 spec draft espera revisión del usuario:**
+**Specs draft resueltos por el usuario (no en la cola activa):**
 1. ~~`2026-08-29-nosotros-academy-link-block-design.md`~~ — **DESCARTADO 2026-08-29** por el usuario:
    la sección de Academy ya vive en `/nosotros/nancy-nieto` (`#academy-spotlight`) y ahí se queda; no
    se duplica en `/nosotros`. Ver DECISIONS 2026-08-29. No re-proponer sin pedido explícito.
-2. `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md` — [M]. Cycle 1 =
-   link a Google reviews (`GOOGLE_REVIEWS_URL` en `siteMeta.js`, validar URL) + curación por tema
-   (Opción A) + update de docs 8.20/INTAKE. Cycle 2 opcional = `src/data/reviews.js` con tags.
-   Pendiente de decisión del usuario en el spec: Opción A vs B, y confirmación de "sin aggregateRating".
+2. `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md` — [M]. **EN BACKLOG
+   por decisión del usuario 2026-08-29** — no se ejecuta por ahora. El spec queda como está; retomar
+   solo si el usuario lo pide. Pendiente cuando se retome: Opción A vs B de curación, confirmar "sin
+   aggregateRating".
 
 **Integración de media faltante — usar la skill `add-media`, Acción A, un slot por ciclo.**
 Bloqueado en input del usuario: hay que dejar los archivos crudos en `scratchpad/media-in/` y

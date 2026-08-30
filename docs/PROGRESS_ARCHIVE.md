@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/peel-coreano: 2do par antes/después
+- **Data + media (`feat`).** Se agrega un `item` a `beforeAfter.items` del entry `peel-coreano` (queda 2 filas). Imágenes separadas del cliente (1000×1250) → `optimize.js` (~112 KB) + `.webp`. Par 1 (`peel-coreano-antes/despues.jpg`, del 27/08) sin cambios; nuevos = `-antes-2`/`-despues-2`.
+- **Sin cambio de componente.** Alt trazable al copy del entry, sin banned words, imágenes reales del cliente.
+- **Verificación.** `:3000`: 2 filas ANTES/DESPUÉS, 4 `.webp` cargan, consola limpia. `test:visual` skip.
+
 ## 2026-08-30 — /faciales/manchas-cicatrices: sección antes/después (2 pares)
 - **Data + media (`feat`).** `beforeAfter` con 2 `items` en el entry `manchas-cicatrices`. Fotos del cliente llegaron como collage vertical (antes arriba / después abajo por imagen, 2 imágenes) → partidas y recortadas a 4:5 centrado en la mejilla con ffmpeg (costura en y≈612/627), sin línea divisoria. 4 JPG ~15–31 KB + `.webp`; los 2 collages originales no se versionan.
 - **Sin cambio de componente.** `TreatmentDetailPage` ya renderiza "EVIDENCIA DE APOYO / EVOLUCIÓN Y RESULTADOS ASISTIDOS" + disclaimer estándar con `items.length > 0`. Acá el encabezado de resultados **sí corresponde** (antes/después real).

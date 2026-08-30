@@ -1,7 +1,14 @@
 # NEXT
 
-Estado: HEAD esperado = `4f51fe9` + commit de cierre de docs.
-Árbol limpio, sin servers salvo el `:3000`.
+Estado: HEAD esperado = `ddfa331` + commit de cierre de docs.
+Árbol: en disco sin trackear `about/team/dr-tony-diaz.mp4` y `about/team/miguel-ramos.mp4`
+(material para un ciclo `/nosotros`, no de este). Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 7) — CERRADO:
+- **`/faciales/rejuvenecimiento-facial`: sección antes/después con labels custom.** `beforeAfter` (1 item):
+  slot `before` = collage antes/después del cliente (label `ANTES - DESPUÉS`), slot `after` = collage de
+  progresión de 3 paneles (label `RESULTADOS`). Data-only — la sección no tiene slot de imagen suelta,
+  todo es por pares; labels custom fue la salida sin tocar componente. `test:visual` skip. `ddfa331`.
 
 Sesión 2026-08-30 (cont. 6) — CERRADO:
 - **`/faciales/peel-coreano`: 2do par antes/después.** Se agrega 1 `item` a `beforeAfter.items` del

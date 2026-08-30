@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros: hero copy recortado (H1 + body)
+
+- **Data-only (`feat`).** `aboutPage.js` → `hero`: `title` `CUIDADO ESTÉTICO CON CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (58 ch, 6 líneas) → `CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (40 ch, ~4). `body` reescrito a `En DERMA.M cada plan empieza por entender tus objetivos. Estética informada y acompañada, no improvisada.` (lidera con la escucha = diferenciador; saca "medical spa en West Palm Beach" que el `localTag` ya dice).
+- **Alcance.** Solo 2 strings. `hero.title` alimenta únicamente el `<h1>` visual del `PageHero`; el `<title>`/meta de SEO están hardcodeados en `Nosotros.jsx`, sin tocar. Ningún componente.
+- **Verificación.** `:3000`: H1 4 líneas, body 2, CTAs OK, consola limpia. Compliance: sin banned words, "no improvisada" = contraste de proceso, no promesa. `test:visual`: re-baseline intencional de `nosotros-viewport-desktop-chrome` y `nosotros-founder-with-link-mobile-safari` (hero más corto → todo sube / el scroll de la sección de fundadora arranca distinto); resto 0-diff, 34/34 tras re-basear.
+- Spec: `docs/superpowers/specs/2026-08-30-nosotros-hero-copy-trim-design.md` (gitignored).
+
 ## 2026-08-30 — /nosotros: sección de equipo aplanada en grid único con eyebrow de especialidad
 
 - **Componente (`refactor` `0bdd848`).** `TeamMemberCard`: nuevo slot `specialtyLabel` (eyebrow arriba de la card, `.eyebrow` uppercase 11px letter-spacing 0.2em) + nombre `h4` → `h3`.

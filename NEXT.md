@@ -1,7 +1,17 @@
 # NEXT
 
-Estado: HEAD esperado = `93647fe` (pusheado) + `feat` hero copy `/nosotros` + su `docs` (push pendiente).
+Estado: HEAD esperado = commit `feat` Home FounderSection (imagen Nancy + logo) + su `docs` (push pendiente).
 Árbol limpio. Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 11) — CERRADO:
+- **Home `FounderSection`: imagen propia de Nancy + saca logo mobile.** `home/nancy-nieto-fundadora.jpg`
+  (1000×1200, 5:6, mobile-first) reemplaza `home/founder.jpg` en el componente; se elimina
+  `.mobileLogoContainer` (JSX+CSS). `test:visual` re-baseline `home-founder` (desktop+mobile). Ver DECISIONS.
+- **Mapa de imágenes de Nancy — 1/4 hecho (Home).** Faltan: `/nosotros` `founderSpotlight.image`
+  (`about/nancy-nieto-fundadora.jpg`), bio hero (`about/nancy-nieto/nancy-nieto-hero.jpg`), bio retrato
+  + schema (`about/nancy-nieto/nancy-nieto-retrato.jpg`). Refs: `aboutPage.js:19`,
+  `founderBioPage.hero.backgroundImage`, `FounderBioPage.jsx:49`, `NancyNieto.jsx:32` (JSON-LD).
+  `home/founder.jpg` viejo se borra recién cuando migren esos 3.
 
 Sesión 2026-08-30 (cont. 10) — CERRADO:
 - **`/nosotros` hero: copy recortado.** `aboutPage.js` → `hero.title` de frase entera (58 ch/6 líneas)

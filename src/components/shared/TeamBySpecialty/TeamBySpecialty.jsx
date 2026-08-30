@@ -3,8 +3,11 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 import TeamMemberCard from '../TeamMemberCard/TeamMemberCard';
 import styles from './TeamBySpecialty.module.css';
 
-export default function TeamBySpecialty({ groups, header }) {
-  if (!groups || groups.length === 0) return null;
+export default function TeamBySpecialty({ members, header }) {
+  const visible = (members || []).filter(
+    (m) => m.status === 'active' || m.status === 'comingSoon'
+  );
+  if (visible.length === 0) return null;
 
   return (
     <section className={styles.section} aria-labelledby="team-heading">
@@ -16,41 +19,16 @@ export default function TeamBySpecialty({ groups, header }) {
             support={header?.body}
             variant="light"
             align="left"
+            titleId="team-heading"
           />
         </div>
 
-        <div className={styles.groupsList}>
-          {groups.map((group, groupIdx) => {
-            // Filter out draft and archived members
-            const visibleMembers = group.members.filter(
-              (m) => m.status === 'active' || m.status === 'comingSoon'
-            );
-
-            // If empty (all draft/archived), inject a temporary comingSoon record
-            const displayMembers = visibleMembers.length > 0 
-              ? visibleMembers 
-              : [{ name: "Próximamente", status: "comingSoon" }];
-
-            return (
-              <div key={groupIdx} className={styles.groupBlock}>
-                <div className={styles.groupHeader}>
-                  <h3 className={styles.groupTitle}>{group.specialty}</h3>
-                  {group.support && (
-                    <p className={styles.groupSupport}>{group.support}</p>
-                  )}
-                  <div className={styles.line}></div>
-                </div>
-
-                <div className={styles.grid}>
-                  {displayMembers.map((member, memberIdx) => (
-                    <div key={memberIdx} className={styles.gridItem}>
-                      <TeamMemberCard member={member} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+        <div className={styles.grid}>
+          {visible.map((member, idx) => (
+            <div key={member.name || idx} className={styles.gridItem}>
+              <TeamMemberCard member={member} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

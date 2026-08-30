@@ -20,7 +20,7 @@ export default function AboutPage({ data }) {
     founderSpotlight,
     enfoque,
     teamHeader,
-    teamBySpecialty,
+    team,
     testimonials,
     testimonialsHeader,
     cta
@@ -118,7 +118,7 @@ export default function AboutPage({ data }) {
       </motion.section>
 
       {/* 4. Team By Specialty (Clinical Canvas #F2F0F1) */}
-      <TeamBySpecialty groups={teamBySpecialty} header={teamHeader} />
+      <TeamBySpecialty members={team} header={teamHeader} />
 
       {/* 5. Testimonials (Clinical Canvas #F2F0F1 layout, Off White #EFEFEB card background) */}
       <section className={styles.testimonialsSection} aria-labelledby="testimonials-heading">

@@ -42,121 +42,95 @@ export const aboutPage = {
     headline: "PROFESIONALES POR ÁREA DE CUIDADO",
     body: "Conoce a las profesionales que acompañan cada área de cuidado y la preparación que aportan a tu experiencia en DERMA.M."
   },
-  teamBySpecialty: [
+  team: [
     {
-      specialty: "Administración",
-      members: [
-        {
-          name: "Melisa L. Ríos",
-          role: "HR & Operations Manager",
-          tags: ["Operaciones"],
-          shortBio: "Esteticista y Flebotomista licenciada en Florida. Responsable de recursos humanos, operaciones y la experiencia integral del equipo y los pacientes en Derma.M.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/melisa-rios.mp4",
-          mediaSrc: "/assets/images/about/team/melisa-rios.jpg",
-          mediaPosition: "center 18%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/melisa-rios.vcf",
-          status: "active"
-        }
-      ]
+      name: "Nancy Nieto",
+      role: "Fundadora y Directora",
+      specialtyLabel: "Fundadora & CEO · Faciales",
+      shortBio: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
+      mediaType: "image",
+      mediaSrc: null,
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/nancy-nieto.vcf",
+      status: "active"
     },
     {
-      specialty: "Faciales",
-      members: [
-        {
-          name: "Mikaela Guajardo",
-          role: "Especialista Facial & Electróloga",
-          tags: ["Faciales", "Láser y Luz"],
-          shortBio: "Licenciada en Florida como Facial Specialist y Técnica en Electrólisis. Formación complementaria en enfermería aplicada al cuidado avanzado de piel.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/mikaela-guajardo.mp4",
-          mediaSrc: "/assets/images/about/team/mikaela-guajardo.jpg",
-          mediaPosition: "center 18%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/mikaela-guajardo.vcf",
-          status: "active"
-        },
-        {
-          name: "Daniela Parra",
-          role: "Esteticista",
-          tags: ["Faciales"],
-          shortBio: "+3 años en tratamiento de pieles acneicas, hiperpigmentadas, sensibles y envejecidas. Terapeuta de masajes certificada con enfoque de bienestar integral.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/daniela-parra.mp4",
-          mediaSrc: "/assets/images/about/team/daniela-parra.jpg",
-          mediaPosition: "center top",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/daniela-parra.vcf",
-          status: "active"
-        },
-        {
-          name: "Samantha Atencio",
-          role: "Esteticista",
-          tags: ["Faciales"],
-          shortBio: "Especialista en el cuidado de piel para clientes de todas las edades. Comprometida con crear un espacio de confianza, relajación y resultados reales.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/samantha-atencio.mp4",
-          mediaSrc: "/assets/images/about/team/samantha-atencio.jpg",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/samantha-atencio.vcf",
-          status: "active"
-        }
-      ]
+      name: "Mikaela Guajardo",
+      role: "Especialista Facial & Electróloga",
+      specialtyLabel: "Faciales",
+      shortBio: "Licenciada en Florida como Facial Specialist y Técnica en Electrólisis. Formación complementaria en enfermería aplicada al cuidado avanzado de piel.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/mikaela-guajardo.mp4",
+      mediaSrc: "/assets/images/about/team/mikaela-guajardo.jpg",
+      mediaPosition: "center 18%",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/mikaela-guajardo.vcf",
+      status: "active"
     },
     {
-      specialty: "Corporales & Postoperatorio",
-      members: [
-        {
-          name: "Elianne Trujillo",
-          role: "Masajista Terapéutica",
-          tags: ["Corporales", "Postoperatorio"],
-          shortBio: "2 años de experiencia en postoperatorio, drenaje linfático y masaje descontracturante. Enfocada en recuperación, remodelación y bienestar del paciente.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/elianne-trujillo.mp4",
-          mediaSrc: "/assets/images/about/team/elianne-trujillo.jpg",
-          mediaPosition: "center 12%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/elianne-trujillo.vcf",
-          status: "active"
-        }
-      ]
+      name: "Daniela Parra",
+      role: "Esteticista",
+      specialtyLabel: "Faciales",
+      shortBio: "+3 años en tratamiento de pieles acneicas, hiperpigmentadas, sensibles y envejecidas. Terapeuta de masajes certificada con enfoque de bienestar integral.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/daniela-parra.mp4",
+      mediaSrc: "/assets/images/about/team/daniela-parra.jpg",
+      mediaPosition: "center top",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/daniela-parra.vcf",
+      status: "active"
     },
     {
-      specialty: "IV Therapy",
-      members: [
-        {
-          name: "Tony Díaz, DO",
-          role: "Médico Director — Supervisión IV Therapy",
-          tags: ["IV Therapy"],
-          shortBio: "Responsable de la supervisión médica de los protocolos de IV Therapy en Derma.M.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/tony-diaz.mp4",
-          mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
-          mediaPosition: "center 18%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/tony-diaz.vcf",
-          status: "active"
-        }
-      ]
+      name: "Elianne Trujillo",
+      role: "Masajista Terapéutica",
+      specialtyLabel: "Corporales & Postoperatorio",
+      shortBio: "2 años de experiencia en postoperatorio, drenaje linfático y masaje descontracturante. Enfocada en recuperación, remodelación y bienestar del paciente.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/elianne-trujillo.mp4",
+      mediaSrc: "/assets/images/about/team/elianne-trujillo.jpg",
+      mediaPosition: "center 12%",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/elianne-trujillo.vcf",
+      status: "active"
     },
     {
-      specialty: "Estética Dental",
-      members: [
-        {
-          name: "Dr. Miguel Ramos",
-          role: "Odontólogo Especialista en Ortodoncia, Rehabilitación Oral y Estética Dental",
-          tags: ["Estética Dental"],
-          shortBio: "Más de 25 años de práctica clínica en ortodoncia, rehabilitación oral y blanqueamiento dental certificado, combinando conocimiento clínico con una visión estética centrada en el paciente.",
-          mediaType: "video",
-          videoSrc: "/assets/images/about/team/miguel-ramos.mp4",
-          mediaSrc: "/assets/images/about/team/miguel-ramos.jpg",
-          mediaPosition: "center 18%",
-          vcardEnabled: true,
-          vcardUrl: "/team/vcards/miguel-ramos.vcf",
-          status: "active"
-        }
-      ]
+      name: "Tony Díaz, DO",
+      role: "Médico Director — Supervisión IV Therapy",
+      specialtyLabel: "IV Therapy",
+      shortBio: "Responsable de la supervisión médica de los protocolos de IV Therapy en Derma.M.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/tony-diaz.mp4",
+      mediaSrc: "/assets/images/about/team/tony-diaz.jpg",
+      mediaPosition: "center 18%",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/tony-diaz.vcf",
+      status: "active"
+    },
+    {
+      name: "Dr. Miguel Ramos",
+      role: "Odontólogo Especialista en Ortodoncia, Rehabilitación Oral y Estética Dental",
+      specialtyLabel: "Estética Dental",
+      shortBio: "Más de 25 años de práctica clínica en ortodoncia, rehabilitación oral y blanqueamiento dental certificado, combinando conocimiento clínico con una visión estética centrada en el paciente.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/miguel-ramos.mp4",
+      mediaSrc: "/assets/images/about/team/miguel-ramos.jpg",
+      mediaPosition: "center 18%",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/miguel-ramos.vcf",
+      status: "active"
+    },
+    {
+      name: "Melisa L. Ríos",
+      role: "HR & Operations Manager",
+      specialtyLabel: "Administración",
+      shortBio: "Esteticista y Flebotomista licenciada en Florida. Responsable de recursos humanos, operaciones y la experiencia integral del equipo y los pacientes en Derma.M.",
+      mediaType: "video",
+      videoSrc: "/assets/images/about/team/melisa-rios.mp4",
+      mediaSrc: "/assets/images/about/team/melisa-rios.jpg",
+      mediaPosition: "center 18%",
+      vcardEnabled: true,
+      vcardUrl: "/team/vcards/melisa-rios.vcf",
+      status: "active"
     }
   ],
   quote: {

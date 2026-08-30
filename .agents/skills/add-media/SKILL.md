@@ -48,8 +48,10 @@ Design doc: `docs/superpowers/specs/2026-08-29-add-media-skill-design.md`.
 - **Before/after (SEO backlog 7.2):** set `beforeAlt` / `afterAlt` in
   `src/data/landingPages.js`. Never rely on the hardcoded `"Before"` / `"After"`.
 - **One change per cycle** (CLAUDE.md). One slot filled = one cycle = one commit.
-- **Structural/visual change → brainstorm + approval gate** before editing `src/data/*.js`
-  (Acción B and any component change).
+- **Approval gate before editing `src/data/*.js`.** New section appears on the page →
+  present one decided plan (files, names, alt, what renders) and get a single yes.
+  Full `superpowers:brainstorming` only when the section needs a component change or a
+  layout decision (MEMORY `feedback_decide_dont_interrogate`).
 - **DoD for visual change:** `test:visual` no unintended diffs; copy cross-checked
   against `docs/MEDICAL_COMPLIANCE.md`; WCAG 2.1 AA.
 
@@ -59,18 +61,29 @@ Create a todo per step.
 
 1. **Locate.** `grep` the path string across `src/data/*.js`. Identify page/section/
    treatment, asset role (hero 1920×1080, card, overview, before/after), and the
-   surrounding copy to source alt text from.
-2. **Receive source.** User drops raw file(s) in `scratchpad/media-in/` or names a path.
-   Confirm the 1 file ↔ 1 slot mapping with the user before processing anything.
-3. **Name.** Decide the SEO Spanish kebab filename (slug + role). If it differs from the
-   path already in `src/data/*.js`, that is a rename — flag it, get the user's ok, and
-   plan to update the data ref.
-4. **Place + optimize.** Move the file into the correct `public/assets/images/...` dir.
+   surrounding copy to source alt text from. If the data key is absent (Acción B),
+   grep the key across `src/components/templates/`: key already read → data-only
+   cycle; key not read → stop, that is a component cycle.
+2. **Name.** Decide the SEO Spanish kebab filename now (slug + role, e.g.
+   `tratamiento-capilar-antes.jpg`), matching the sibling pattern of assets already in
+   that dir. If it differs from the path already in `src/data/*.js`, that is a rename —
+   flag it, get the user's ok, and plan to update the data ref.
+3. **Give the target, then receive.** Hand the user the step-2 filename(s) and the exact
+   `public/assets/images/...` dir. The user places the files there — already at the
+   final path and named, or raw in `scratchpad/media-in/`. Confirm the 1 file ↔ 1 slot
+   mapping before processing. If the user only asked for names, reply with names + path
+   and stop.
+4. **Place + optimize.** If the file is not already at the target path, move it there —
+   `ls` the known source and target dirs, never a recursive `find` across the repo.
    Run `node .agents/skills/assets-optimizer/scripts/optimize.js <file>`. For video:
    also produce the poster `.jpg` (same basename) — extract a frame with
    `ffmpeg -i <video> -vf "select=eq(n\,0)" -q:v 3 <poster>.jpg` if the user gave none.
 5. **Generate webp sibling.** `node .agents/skills/assets-optimizer/scripts/generate-webp.js`.
-   Confirm the `.webp` (and poster `.webp` for video) now exist.
+   It scans the whole `public/assets/images` tree and also fills in siblings for any
+   unrelated `.jpg` that was missing one. After it runs, `git status`: report every
+   `.webp` outside your slot to the user as a separate item, keep or `git rm` per their
+   call, and never fold it into this cycle's commit silently. Confirm your slot's
+   `.webp` (and poster `.webp` for video) now exist.
 6. **Alt text.** Write Spanish, descriptive alt. Source it from vetted copy on the page
    or in `docs/`. Cross-check `docs/MEDICAL_COMPLIANCE.md` for banned words. Before/after
    → `beforeAlt` / `afterAlt` in `src/data/landingPages.js`.
@@ -89,16 +102,15 @@ Create a todo per step.
 
 ## Acción B — Add a new media slot to a section that has none
 
-Do everything in Acción A, preceded by:
+Acción A step 1 already splits the two cases. Then:
 
-- **Brainstorm gate.** `superpowers:brainstorming` + explicit user approval before
-  editing `src/data/*.js` — this is a structural/visual change.
-- Add the key to the correct object in `src/data/*.js`, matching the existing shape:
-  `image`, `backgroundImage`, `videoSrc` + `mediaSrc`, or
-  `beforeAfter: [{ before, after, beforeAlt, afterAlt }]`.
-- If the section's component does not already read that key, stop — that is a component
-  change and gets its own cycle with a `DESIGN.md` review.
-- Then Acción A steps 2–10.
+- **Template reads the key** → data-only cycle. Present one decided plan, get a single
+  yes, run Acción A steps 2–10.
+- **Template does not read the key** → component cycle. `superpowers:brainstorming` +
+  `DESIGN.md` review + approval, on its own commit, before any Acción A step.
+- Add the key to the correct object in `src/data/*.js`, copying the shape a sibling
+  entry already uses — `image`, `backgroundImage`, `videoSrc` + `mediaSrc`, or
+  `beforeAfter: { items: [{ before, after, beforeAlt, afterAlt }] }`.
 
 ## Acción C — Hero background video
 

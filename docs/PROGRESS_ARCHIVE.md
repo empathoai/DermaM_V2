@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros: sección de equipo aplanada en grid único con eyebrow de especialidad
+
+- **Componente (`refactor` `0bdd848`).** `TeamMemberCard`: nuevo slot `specialtyLabel` (eyebrow arriba de la card, `.eyebrow` uppercase 11px letter-spacing 0.2em) + nombre `h4` → `h3`.
+- **Grid + data (`feat` `837bd1d`).** `TeamBySpecialty` deja de agrupar: renderiza `SectionHeader` (con `titleId="team-heading"`, antes el `aria-labelledby` apuntaba a nada) + un solo `.grid` de `TeamMemberCard`. Se borran `.groupsList/.groupBlock/.groupHeader/.groupTitle/.groupSupport/.line`. `AboutPage` pasa `members={team}`.
+- **`aboutPage.js`:** `teamBySpecialty` (agrupado) → `team` plano, 7 miembros en orden estratégico: Nancy → Mikaela → Daniela → Elianne → Tony → Miguel → Melisa. Cada uno con `specialtyLabel`. **Samantha Atencio eliminada** de la data (no había `.mp4`; no quedaban archivos suyos que borrar). Nancy nueva: `mediaType: "image"`, `mediaSrc: null` → `MediaBlock` renderiza panel `.fallback` vacío (usuario eligió "sin media" hasta tener clip); su `.vcf` ya existía.
+- **Verificación.** `:3000` en tab fresco: 7 cards, orden correcto, grid 3col desktop / 2col tablet (max-width 960) / 1col mobile, filas 3+3+1, headings `H2`+7×`H3` (sin salto), eyebrow contraste ~10.5:1, sin errores de consola, sin 404. `test:visual` 34/34 sin diffs (snapshots de `/nosotros` son above-the-fold). Compliance: labels de área + bio de Nancy (verbatim de `founderSpotlight`) sin banned words.
+- **Cierre (mini-ciclo).** El usuario pasó `nancy-nieto.mp4` (reemplazado 1 vez); `optimize.js` 2.48 MB HEVC → 424 KB h264 (1080×1920, `-an`), poster frame-0 77 KB + `.webp`. Entry de Nancy: `mediaType: "image"`/`mediaSrc: null` → `"video"` + `videoSrc` + `mediaSrc` poster + `mediaPosition: "center top"` (18% dejaba a Nancy muy abajo). `:3000`: video pinta, encuadre alineado con Mikaela/Daniela, sirve 200, consola limpia. `test:visual` skip (data-only, sección fuera de snapshots).
+- **Queda:** sección "Fundadora" de arriba sin tocar (posible dedupe futuro). `samantha-atencio.vcf` queda como huérfano inofensivo.
+
 ## 2026-08-30 — /nosotros: videos de team (Tony Díaz, Miguel Ramos, reemplazo Daniela Parra) + optimización melisa-rios
 - **Media + data (`feat`).** Tony: `dr-tony-diaz.mp4` → `tony-diaz.mp4` (slot ya cableado, sin cambio de data). Miguel Ramos (Estética Dental): `aboutPage.js` `mediaType: "image"`→`"video"` + `videoSrc` nuevo + `mediaSrc` poster (hold dental omitido por pedido explícito). Daniela: usuario reemplazó `daniela-parra.mp4`, sin cambio de data. Los 3 en un `feat`.
 - **Optimización.** `optimize.js` (CRF 28, `-an`): 1.1–1.4 MB → 256–310 KB; posters frame-0 + `.webp`. Aparte: `melisa-rios.mp4` optimizado 1.40 MB → 310 KB + poster/webp (`chore(assets)` `f6562dd`).

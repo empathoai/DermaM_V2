@@ -1,7 +1,12 @@
 # NEXT
 
-Estado: HEAD esperado = `e1f9c29` + commit de cierre de docs.
+Estado: HEAD esperado = `4f51fe9` + commit de cierre de docs.
 Árbol limpio, sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 6) — CERRADO:
+- **`/faciales/peel-coreano`: 2do par antes/después.** Se agrega 1 `item` a `beforeAfter.items` del
+  entry (queda 2 filas). Imágenes separadas del cliente, `-antes-2`/`-despues-2` (par 1 del 27/08 sin
+  tocar). Data-only, `test:visual` skip. `4f51fe9`.
 
 Sesión 2026-08-30 (cont. 5) — CERRADO:
 - **`/faciales/manchas-cicatrices`: sección antes/después (2 pares).** `beforeAfter` con 2 `items` en el

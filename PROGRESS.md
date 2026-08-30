@@ -2,10 +2,10 @@
 
 Running log of work in this repo. Newest entries on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — /faciales/manchas-cicatrices: sección antes/después (2 pares)
-- **Data + media (`feat`).** `beforeAfter` con 2 `items` en el entry `manchas-cicatrices`. Fotos del cliente llegaron como collage vertical (antes arriba / después abajo por imagen, 2 imágenes) → partidas y recortadas a 4:5 centrado en la mejilla con ffmpeg (costura en y≈612/627, no exactamente 625), sin línea divisoria. 4 JPG ~15–31 KB + `.webp`; los 2 collages originales no se versionan.
-- **Sin cambio de componente.** `TreatmentDetailPage` ya renderiza "EVIDENCIA DE APOYO / EVOLUCIÓN Y RESULTADOS ASISTIDOS" + disclaimer estándar con `items.length > 0`. Acá el encabezado de resultados **sí corresponde** (es antes/después real, a diferencia de oxigenoterapia/plasma-frío).
-- **Verificación.** `:3000`: 2 filas ANTES/DESPUÉS, 4 `.webp` cargan (496×600, no rotas), consola limpia. Alt trazable al copy del entry (hiperpigmentación solar, tono irregular, atenuación), sin banned words, imágenes reales del cliente. `test:visual` skip (data-only, ruta no snapshoteada).
+## 2026-08-30 — /faciales/peel-coreano: 2do par antes/después
+- **Data + media (`feat`).** Se agrega un `item` a `beforeAfter.items` del entry `peel-coreano` (queda 2 filas). Imágenes separadas del cliente (1000×1250) → `optimize.js` (~112 KB) + `.webp`. Par 1 (`peel-coreano-antes/despues.jpg`, del 27/08) sin cambios; nuevos = `-antes-2`/`-despues-2` (no se renombra el par 1 a `-1` para no tocar data que funciona).
+- **Sin cambio de componente.** Alt trazable al copy del entry (textura irregular, tono desigual → piel lisa y luminosa), sin banned words, imágenes reales del cliente.
+- **Verificación.** `:3000`: 2 filas ANTES/DESPUÉS, 4 `.webp` cargan (1000×1250, no rotas), consola limpia. `test:visual` skip (data-only, ruta no snapshoteada).
 
 ---
 

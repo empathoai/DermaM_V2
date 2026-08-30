@@ -3,6 +3,11 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /faciales/manchas-cicatrices: sección antes/después (2 pares)
+- **Data + media (`feat`).** `beforeAfter` con 2 `items` en el entry `manchas-cicatrices`. Fotos del cliente llegaron como collage vertical (antes arriba / después abajo por imagen, 2 imágenes) → partidas y recortadas a 4:5 centrado en la mejilla con ffmpeg (costura en y≈612/627), sin línea divisoria. 4 JPG ~15–31 KB + `.webp`; los 2 collages originales no se versionan.
+- **Sin cambio de componente.** `TreatmentDetailPage` ya renderiza "EVIDENCIA DE APOYO / EVOLUCIÓN Y RESULTADOS ASISTIDOS" + disclaimer estándar con `items.length > 0`. Acá el encabezado de resultados **sí corresponde** (antes/después real).
+- **Verificación.** `:3000`: 2 filas ANTES/DESPUÉS, 4 `.webp` cargan, consola limpia. Alt trazable al copy, sin banned words, imágenes reales. `test:visual` skip.
+
 ## 2026-08-30 — /corporales: imagen en la card complementaria de maderoterapia
 - **Data + media (`feat`).** `src/data/categoryPages.js`, objeto `corporales` → `complementaryTreatments.treatments[0]` (MADEROTERAPIA CORPORAL): `image: null` → ruta real + `imagePosition: 'center 80%'` (recorte 1:1). Era la única card complementaria del hub → tarjeta de texto huérfana en grilla de 3 col. Imagen del usuario PNG 1.9 MB → JPG 133 KB + `.webp`.
 - **Sin cambio de componente.** `CategoryPage.jsx` ya pasa `showMedia={true}`. Otros 5 hubs sin tocar. faciales (6) e iv-therapy (11) complementarias quedan con `image: null` a propósito. Ver DECISIONS 2026-08-30.

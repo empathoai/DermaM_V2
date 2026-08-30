@@ -1,7 +1,13 @@
 # NEXT
 
-Estado: HEAD esperado = `a83e9e0` (pusheado).
+Estado: HEAD esperado = `93647fe` (pusheado) + `feat` hero copy `/nosotros` + su `docs` (push pendiente).
 Árbol limpio. Sin servers salvo el `:3000`.
+
+Sesión 2026-08-30 (cont. 10) — CERRADO:
+- **`/nosotros` hero: copy recortado.** `aboutPage.js` → `hero.title` de frase entera (58 ch/6 líneas)
+  a `CRITERIO, EXPERIENCIA Y ATENCIÓN PERSONAL` (40 ch); `hero.body` reescrito hacia la escucha
+  ("cada plan empieza por entender tus objetivos…"). Data-only, 2 strings. `test:visual` re-baseline
+  intencional de `nosotros-viewport` (desktop) + `nosotros-founder-with-link` (mobile). Ver DECISIONS.
 
 Sesión 2026-08-30 (cont. 9) — CERRADO:
 - **`/nosotros`: sección de equipo aplanada en grid único.** `TeamMemberCard` gana slot `specialtyLabel`

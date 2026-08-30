@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `<HASH>` (pusheado). Árbol limpio. Sin servers.
+Estado: HEAD esperado = `3c8bb2c` (pusheado). Árbol limpio. Sin servers.
 
 Sesión 2026-08-30 (cont. 14) — CERRADO:
 - **`/nosotros` `founderSpotlight`: foto real de Nancy.** `founderSpotlight.image` en `aboutPage.js`:

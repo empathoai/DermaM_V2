@@ -1200,7 +1200,15 @@ const customDetails = {
         question: '¿Puedo lavarme el cabello después de la sesión?',
         answer: 'Recomendamos esperar al menos 12 horas antes de lavar el cabello o mojar la cabeza para permitir que la hebra absorba todos los nutrientes.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [{
+        before: '/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-antes.jpg',
+        after: '/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-despues.jpg',
+        beforeAlt: 'Cuero cabelludo con cabello fino, frágil y con menor densidad antes de un tratamiento capilar en Derma.M, West Palm Beach',
+        afterAlt: 'Cabello con aspecto más fuerte y mayor volumen tras un ciclo de tratamiento capilar en Derma.M, West Palm Beach'
+      }]
+    }
   }
 };
 

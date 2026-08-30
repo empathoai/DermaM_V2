@@ -1,6 +1,6 @@
 # NEXT
 
-Estado: HEAD esperado = `PENDIENTE-PUSH` (código commiteado, falta push confirmado). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = `9d341cd` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
 
 Sesión 2026-08-30 (cont. 16) — CERRADO:
 - **`/nosotros` hero: placeholder interino.** `aboutPage.js:11` `hero.backgroundImage`

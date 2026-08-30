@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — /nosotros hero: placeholder interino = `contact/hero.jpg` (recepción real), no stock genérica
+
+- **1 línea, data-only.** `aboutPage.js:11` `hero.backgroundImage`: `/assets/images/about/hero.jpg` (nunca existió → `PageHero` caía a `global/og-default.webp`, modelo stock de OG) → `/assets/images/contact/hero.jpg` (recepción real de DERMA.M, ya optimizada 177 KB + `.webp` 131 KB). Cross-ref al asset de `contact/`, no se copia a `about/`.
+- **Interino.** El slot `about/hero.jpg` sigue esperando foto propia (composición de equipo, pendiente de que el usuario la consiga). Cuando llegue → `add-media` la pone en `about/hero.jpg` (+ `.webp`) y se revierte esta línea.
+- **Trade-off:** mismo hero en `/contacto` y `/nosotros` hasta la definitiva (cosmético).
+- **Verificación.** `:3000`: la recepción pinta, `.webp` 200 (PageHero resuelve el sibling), overlay degradado mantiene el H1/body blancos legibles (mismo patrón que el hero de `/contacto`, ya shippeado). Sin `test:visual` (swap de bg en 1 página, gate DoD → skip). Sin cambio de copy → compliance N/A.
+
+---
+
 ## 2026-08-30 — JSON-LD de Nancy: `image` de Persona → foto real (cierra el mapa de imágenes, 4/4)
 
 - **1 línea, `NancyNieto.jsx:32`.** El `image` del `Person` schema pasaba de `.../home/founder.jpg` (modelo stock) a `.../about/nancy-nieto-fundadora.jpg`. No visible; es el dato de entidad para panel de conocimiento / IA. Mapa de imágenes de Nancy: **4/4**.

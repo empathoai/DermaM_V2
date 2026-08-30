@@ -1,6 +1,34 @@
 # NEXT
 
-Estado: HEAD esperado = `9d341cd` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+Estado: HEAD esperado = `7225e57` (+ commit docs de esta línea). Árbol limpio. Dev server `:3000` = de otro chat (no tocar).
+
+Sesión 2026-08-30 (cont. 17) — CERRADO:
+- **`/contacto`: se elimina el formulario muerto + de-dup de puntos de contacto.** `Contacto.jsx` +
+  `Contacto.module.css` (`7225e57`). Form de 7 campos con submit simulado (sin backend) → **Start block**:
+  "Agenda en línea" → Square (link, mismo `bookingUrl` que Navbar/PageHero/FinalCTA) + "Consultar primero
+  por WhatsApp" + microcopy + línea `tel:`. Quick Action Bar **eliminada** (duplicaba la tarjeta de sede).
+  Tarjeta de sede = bloque NAP de referencia (sin "WhatsApp Directo", solo "Cómo llegar"). FinalCTA de la
+  página → Square (componente compartido intacto). `test:visual`: `contacto-viewport` pasa sin diff (cubre
+  solo el hero). **Embed inline de Square = decisión PENDING** (best practice, viable, pero requiere copy
+  legal + sign-off de la clínica — ver DECISIONS 2026-08-30). Spec/plan:
+  `docs/superpowers/{specs/2026-08-30-contacto-remove-form-design,plans/2026-08-30-contacto-streamline}.md`.
+- **Follow-ups abiertos por este ciclo** (cada uno su ciclo, no bloqueantes):
+  1. Doc-hygiene: borrar CSS muerto en `Contacto.module.css` — clases del form (`.formTitle`, `.formGrid`,
+     `.fieldRow`, `.inputGroup`, `.label`, `.input`, `.textarea`, `.select`, `.submitBtn`, `.microcopy`,
+     `.successMessage*`, `.legalAccordion*`) y de la Quick Action Bar (`.quickActionBar`,
+     `.quickActionContainer`, `.quickActionGrid`, `.quickActionItem`, `.quickActionLink`,
+     `.quickActionTitle`, `.quickActionText`). Mecánico, 1 pasada.
+  2. `contactConsentCopy` en `src/data/legalPages.js` quedó como export sin consumidores — evaluar en el
+     mismo ciclo de doc-hygiene si se borra o se deja para el futuro embed.
+  3. [M] Centralizar el literal `bookingUrl` (`import.meta.env.VITE_SQUARE_BOOKING_URL || '…start'`) en
+     `src/data/siteMeta.js` — hoy copy-pasteado en Navbar, Hero, PageHero, TreatmentHero, FinalCTA (×2),
+     LandingPage, Contacto (8 sitios). Junto a `HERO_LOCAL_TAG`.
+- **Ojo (drift preexistente, NO de este ciclo):** `npm run test:visual` deja `nosotros-viewport`
+  (desktop-chrome) fallando — el hero de `/nosotros` renderiza `contact/hero.jpg` (placeholder puesto en
+  cont. 16, ciclo data-only que saltó `test:visual` por gate DoD). Cuando llegue la foto de equipo para
+  `about/hero.jpg` (§"Integración de media faltante") el `add-media` re-baselinea ese snapshot y cierra el
+  fallo. Si la foto tarda, ciclo aparte de 1 línea: `npx playwright test -g "Nosotros Page - Viewport"
+  --update-snapshots`.
 
 Sesión 2026-08-30 (cont. 16) — CERRADO:
 - **`/nosotros` hero: placeholder interino.** `aboutPage.js:11` `hero.backgroundImage`

@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **New `MEDICAL_VALUATION_NOTICE`** in `src/data/siteMeta.js`, wired into: `categoryPages.js` (46, replacing the "valoración previa" / "valoración profesional previa" variants), `treatmentPages.js` (2), `FeaturedServices.jsx` (3 hardcoded `<p>`), `shared/FinalCTA.jsx` (`compactLegal` branch → `` `${NOTICE} Resultados pueden variar.` ``). The 6 long `cta.disclaimer` informational strings + `TreatmentSEO.jsx:31` meta fragment left as-is (different slot/purpose).
 - **`docs/MEDICAL_COMPLIANCE.md` L11** updated to the new wording (on-disk; gitignored).
 - **Verified:** grep → 0 notice literals outside the constant, 1 definition, 5 importers. Browser `:3000` — renders correctly on Home / treatment / landing CTAs. `test:visual` 33/34; the 1 failure is the pre-existing `nosotros-viewport` `about/hero.jpg` placeholder (NEXT.md), diff is 100% the hero image, unrelated. No re-baseline.
-- Closes audit Task 4 (CPY-01). Commit `<hash>`.
+- Closes audit Task 4 (CPY-01). Commit `6cc3e4f`.
 
 ---
 

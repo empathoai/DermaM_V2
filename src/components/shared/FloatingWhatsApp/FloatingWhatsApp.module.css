@@ -7,12 +7,13 @@
   flex-direction: column;
   align-items: flex-end;
   pointer-events: none; /* Let clicks pass outside UI elements */
-  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Yield to the footer: hide once it scrolls into view */
 .hidden {
   opacity: 0;
+  visibility: hidden; /* propagates to children — removes the FAB from hit-testing and tab order */
   transform: translateY(24px);
   pointer-events: none;
 }

@@ -12,7 +12,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Why:** user scope-expansion off Task 15 — align the legal surface with reality (no form, GA4 live, med spa ≠ clínica) and hide unreviewed-legal callouts. One cycle, "todo junto". Spec: `docs/superpowers/specs/2026-08-31-legal-pages-overhaul-design.md`; plan `2026-08-31-legal-pages-overhaul.md`. See `DECISIONS.md` 2026-08-31 (×2).
 - **Verified:** browser `:3000` 375px + desktop — Privacy/Terms/Disclaimer/Accessibility/`/legal` read in full; `/notice-of-privacy-practices` redirects; §7 shows GA4 + opt-out. `git grep` sweeps (notice-of-privacy, contactConsentCopy, centro dermatológico, chat en línea, formulario in legalPages, attorneyReviewRequired={true}, asistenciales, dermatológicos) = 0. `npm run test:visual` — 21 passed, only the standing unrelated `nosotros-viewport` (desktop) failure (`about/hero.jpg` placeholder); no legal-page or footer-only snapshot exists, nothing to update. `MEDICAL_COMPLIANCE.md` — no banned word, mandatory notice literal absent from these files, legal sense unchanged, `tú` preserved.
 - Adjectival medical terms deliberately kept (accurate, not institutional): "nota clínica", "cribado clínico", "clínicamente evaluados", "empleado clínico" in `TreatmentDisclaimer`.
-- Commit `<HASH>`.
+- Commit `34ab2a4`.
 - **Deploy checklist additions:** `.htaccess` 301 `/notice-of-privacy-practices` → `/politica-de-privacidad`; drop the 7× `Disallow: /notice-of-privacy-practices` from `public/robots.txt`.
 
 ---

@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<HASH>` (legal-pages overhaul done, cont. 39). Clean tree, **pushed**.
+Base commit = `34ab2a4` (legal-pages overhaul done, cont. 39). Clean tree, **pushed**.
 Dev server `:3000` = running (started this session).
 
 ## Active queue — audit remediation (cont. 21)

@@ -76,6 +76,10 @@
   margin: 0;
 }
 
+.reviewsLink {
+  margin-top: 24px;
+}
+
 @media (min-width: 1024px) {
   .support {
     font-size: 15px;

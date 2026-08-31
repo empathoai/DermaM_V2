@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import { aboutPage } from '../../../data/aboutPage';
+import GoogleReviewsLink from '../../shared/GoogleReviewsLink/GoogleReviewsLink';
 import styles from './Testimonials.module.css';
 
 export default function Testimonials() {
@@ -33,6 +34,7 @@ export default function Testimonials() {
             <p className={styles.support}>
               Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.
             </p>
+            <GoogleReviewsLink tone="light" className={styles.reviewsLink} />
           </motion.div>
 
           {/* Right: Testimonial Cards */}

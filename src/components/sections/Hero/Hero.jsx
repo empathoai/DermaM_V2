@@ -63,7 +63,7 @@ export default function Hero({ backgroundImage, image }) {
               {/* CTAs */}
               <div className="mt-8 lg:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-5 sm:gap-6 w-full sm:w-auto">
                 <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="bg-[#F2F0F1] border border-[#F2F0F1] text-[#141313] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center no-underline hover:bg-[#CCC9C1] hover:border-[#CCC9C1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
-                  Reservar
+                  Agenda tu valoración
                 </a>
                 <Link to="/contacto" className="bg-transparent border border-[#f2f0f1]/32 text-[#F2F0F1] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center no-underline hover:bg-[#f2f0f1]/5 hover:border-[#F2F0F1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
                   Contacto

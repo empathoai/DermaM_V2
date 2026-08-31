@@ -163,8 +163,8 @@ export const aboutPage = {
     eyebrow: "TU PRIMER PASO",
     headline: "AGENDA UNA VALORACIÓN PERSONALIZADA",
     body: "Conversemos sobre tus objetivos y revisemos qué opciones pueden ajustarse a ti después de una valoración profesional.",
-    primaryCta: "AGENDAR VALORACIÓN",
-    secondaryCta: "CONSULTAR POR WHATSAPP",
+    primaryCta: "AGENDA TU VALORACIÓN",
+    secondaryCta: "WHATSAPP",
     disclaimer: "La recomendación final depende de una valoración profesional. Los resultados y la respuesta a cada tratamiento pueden variar.",
     backgroundImage: "/assets/images/about/cta.jpg"
   }
@@ -229,8 +229,8 @@ export const founderBioPage = {
     eyebrow: "TU PRIMER PASO",
     headline: "AGENDA UNA VALORACIÓN PERSONALIZADA",
     body: "Conversemos sobre tus objetivos y revisemos qué opciones pueden ajustarse a ti después de una valoración profesional.",
-    primaryCta: "AGENDAR VALORACIÓN",
-    secondaryCta: "CONSULTAR POR WHATSAPP",
+    primaryCta: "AGENDA TU VALORACIÓN",
+    secondaryCta: "WHATSAPP",
     disclaimer: "La recomendación final depende de una valoración profesional. Los resultados y la respuesta a cada tratamiento pueden variar.",
     backgroundImage: "/assets/images/about/cta.jpg"
   }

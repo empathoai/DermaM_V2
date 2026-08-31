@@ -1430,7 +1430,7 @@ const compileTreatments = () => {
           eyebrow: 'AGENDA TU VALORACIÓN',
           headline: `DEFINE SI ${title} ES EL PROTOCOLO ADECUADO PARA TI`,
           body: 'Agenda tu cita de evaluación en Derma.M y recibe un diagnóstico estético especializado e integral diseñado según tus objetivos de cuidado personal.',
-          primaryCta: 'RESERVAR',
+          primaryCta: 'AGENDA TU VALORACIÓN',
           secondaryCta: 'WHATSAPP',
           disclaimer: disclaimer,
           backgroundImage: `${treatmentAssetBase}/cta.jpg`

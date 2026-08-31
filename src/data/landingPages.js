@@ -100,7 +100,7 @@ export const landingPages = {
       label: 'Explora también',
       links: [
         { text: 'Tratamientos faciales', to: '/faciales' },
-        { text: 'Agenda una valoración', to: '/contacto' }
+        { text: 'Contáctanos', to: '/contacto' }
       ]
     },
     brandPromise: 'RENOVACIÓN PROGRESIVA DESDE TUS PROPIOS COMPONENTES NATURALES',
@@ -180,7 +180,7 @@ export const landingPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'DESCUBRE SI PLASMA RICO EN PLAQUETAS Y FIBRINA ES ADECUADO PARA TU PIEL',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo puede acompañar tus objetivos de firmeza, textura y luminosidad.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/cta.jpg'
@@ -282,7 +282,7 @@ export const landingPages = {
       label: 'Explora también',
       links: [
         { text: 'Tratamientos faciales', to: '/faciales' },
-        { text: 'Agenda una valoración', to: '/contacto' }
+        { text: 'Contáctanos', to: '/contacto' }
       ]
     },
     brandPromise: 'PURIFICACIÓN PROFUNDA QUE RESPETA EL EQUILIBRIO DE TU PIEL',
@@ -350,7 +350,7 @@ export const landingPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'EMPIEZA CON UNA LIMPIEZA FACIAL PERSONALIZADA',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo es adecuado para tu piel y tus objetivos de cuidado.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/cta.jpg'
@@ -488,7 +488,7 @@ export const landingPages = {
       label: 'Explora también',
       links: [
         { text: 'Tratamientos corporales', to: '/corporales' },
-        { text: 'Agenda una valoración', to: '/contacto' }
+        { text: 'Contáctanos', to: '/contacto' }
       ]
     },
     brandPromise: 'CUIDADO PROFESIONAL EN CADA ETAPA DE TU RECUPERACIÓN',
@@ -568,7 +568,7 @@ export const landingPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'ACOMPAÑA TU RECUPERACIÓN CON CUIDADO PROFESIONAL',
       body: 'Agenda tu cita y recibe orientación profesional para definir el protocolo postoperatorio más adecuado según tu proceso.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/cta.jpg'

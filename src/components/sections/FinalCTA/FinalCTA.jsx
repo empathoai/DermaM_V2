@@ -43,7 +43,7 @@ export default function FinalCTA() {
           
           <div className={styles.buttonGroup}>
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.primaryButton}>
-              Reservar
+              Agenda tu valoración
             </a>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.secondaryButton}>
               WhatsApp

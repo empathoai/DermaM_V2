@@ -377,7 +377,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'EMPIEZA CON UN CUIDADO FACIAL PERSONALIZADO',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el tratamiento facial más adecuado para ti.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/faciales/cta.jpg'
@@ -644,7 +644,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'EMPIEZA CON UN CUIDADO CORPORAL PERSONALIZADO',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el tratamiento corporal más adecuado para ti.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/corporales/cta.jpg'
@@ -805,7 +805,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'DESCUBRE QUÉ TECNOLOGÍA ES ADECUADA PARA TU PIEL',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo de láser o luz más adecuado para tus objetivos.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/laser-y-luz/cta.jpg'
@@ -967,7 +967,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'DESCUBRE CÓMO CUIDAR LA ESTÉTICA DE TU SONRISA',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo dental estético más adecuado para ti.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/dental-estetico/cta.jpg'
@@ -1187,7 +1187,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'DESCUBRE SI IV THERAPY ES ADECUADO PARA TI',
       body: 'Agenda tu cita y recibe orientación profesional sobre opciones de bienestar adaptadas a tus objetivos.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/iv-therapy/cta.jpg'
@@ -1333,7 +1333,7 @@ export const categoryPages = {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'EMPIEZA CON UN CUIDADO CAPILAR PERSONALIZADO',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo capilar más adecuado para tus objetivos.',
-      primaryCta: 'RESERVAR',
+      primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
       disclaimer: 'La información presentada tiene fines informativos y no sustituye una evaluación profesional personalizada. Los resultados pueden variar según cada persona, tratamiento y condición individual.',
       backgroundImage: '/assets/images/hubs/capilar/cta.jpg'

@@ -89,7 +89,7 @@ export default function ContactoPage() {
                     rel="noopener noreferrer"
                     className={styles.primaryBtn}
                   >
-                    Escríbenos por WhatsApp
+                    WhatsApp
                   </a>
                   <a
                     href="tel:+15612535384"
@@ -123,7 +123,7 @@ export default function ContactoPage() {
                         rel="noopener noreferrer"
                         className={`${styles.startBtn} ${styles.startBtnPrimary}`}
                       >
-                        Agenda en línea
+                        Agenda tu valoración
                       </a>
                       <a
                         href={formattedWhatsAppUrl}
@@ -131,7 +131,7 @@ export default function ContactoPage() {
                         rel="noopener noreferrer"
                         className={`${styles.startBtn} ${styles.startBtnSecondary}`}
                       >
-                        Consultar primero por WhatsApp
+                        WhatsApp
                       </a>
                     </div>
                     <p className={styles.startMicrocopy}>
@@ -247,7 +247,7 @@ export default function ContactoPage() {
             title="¿Lista para dar el siguiente paso?"
             body="Estamos aquí para acompañarte en el camino hacia una piel más sana, dándole un cuidado profesional con propósito."
             backgroundImage={contactCtaImage}
-            primaryCta="Agenda en línea"
+            primaryCta="Agenda tu valoración"
             primaryLink={bookingUrl}
             variant="dark"
           />

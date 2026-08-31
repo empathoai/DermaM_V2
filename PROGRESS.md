@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Ciclo B — pendiente:** botones `.locBtnPrimary` + `.startBtnPrimary` fondo `#363633` → `#141313`; quitar `backdrop-blur-[2px]` del escudo del mapa (`Contacto.jsx:209`); conservar `.heroOverlay` (scrim fotográfico = patrón sitewide, ver `DECISIONS.md`).
 - **Why:** audit UX-08 — `Contacto.module.css` con ~55% de reglas muertas de secciones ya retiradas (cont. 18/20/39) + token de botón incorrecto. Diseño de 2 ciclos aprobado (A = borrado sin riesgo, B = ajuste visual mínimo). Brainstorm de esta sesión; sin spec formal (talla S mecánica).
 - **Verified (Ciclo A):** `npm run test:visual` en `/contacto` (`-g "Contacto Page - Viewport"`) — **2 passed** (desktop-chrome + mobile-safari), **cero diff** → confirma que nada visible cambió. Servidor `:3003` levantado y detenido por PID.
-- Commit `<PENDIENTE-A>`.
+- Commit `49ae920`.
 
 ---
 

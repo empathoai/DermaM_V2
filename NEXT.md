@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<PENDIENTE-A>` (Task 19 Ciclo A — Contacto CSS purge, cont. 41). Clean tree.
+Base commit = `49ae920` (Task 19 Ciclo A — Contacto CSS purge, cont. 41). Clean tree.
 Ciclo B (button token `#363633`→`#141313` + drop map `backdrop-blur`) in progress this session.
 Dev server `:3000` = not started this session.
 

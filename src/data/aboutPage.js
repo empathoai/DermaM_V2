@@ -155,7 +155,7 @@ export const aboutPage = {
     }
   ],
   testimonialsHeader: {
-    eyebrow: "RESEÑAS DE GOOGLE",
+    eyebrow: "GOOGLE REVIEWS",
     headline: "EXPERIENCIAS COMPARTIDAS POR NUESTROS CLIENTES",
     body: "Testimonios de personas que eligieron a DERMA.M para acompañar sus objetivos de cuidado."
   },

@@ -8,6 +8,7 @@ import MediaBlock from '../../shared/MediaBlock/MediaBlock';
 import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
 import TeamBySpecialty from '../../shared/TeamBySpecialty/TeamBySpecialty';
 import FinalCTA from '../../shared/FinalCTA/FinalCTA';
+import GoogleReviewsLink from '../../shared/GoogleReviewsLink/GoogleReviewsLink';
 import styles from './AboutPage.module.css';
 
 export default function AboutPage({ data }) {
@@ -135,6 +136,7 @@ export default function AboutPage({ data }) {
               <div className={styles.eyebrowLine}></div>
               <h2 id="testimonials-heading" className={styles.headline}>{testimonialsHeader.headline}</h2>
               <p className={styles.testimonialSupport}>{testimonialsHeader.body}</p>
+              <GoogleReviewsLink tone="light" className={styles.reviewsLink} />
             </motion.div>
             
             <motion.div 

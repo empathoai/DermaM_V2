@@ -1,0 +1,58 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start; /* don't stretch inside flex-column parents */
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.glyph {
+  flex-shrink: 0;
+}
+
+.external {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.light {
+  color: #363633;
+}
+
+.dark {
+  color: #CCC9C1;
+}
+
+@media (hover: hover) {
+  .link:hover .text {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .dark:hover {
+    color: #F2F0F1;
+  }
+}
+
+.link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

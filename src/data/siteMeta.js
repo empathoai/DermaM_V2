@@ -9,3 +9,9 @@ export const HERO_LOCAL_TAG = 'Medical Spa · West Palm Beach, FL';
 // ("valoración profesional previa", not "médica": true for every service, med spa ≠ clínica).
 export const MEDICAL_VALUATION_NOTICE =
   'Requiere valoración profesional previa para garantizar tu seguridad y resultados.';
+
+// Canonical outbound link to the live Google Business Profile review panel.
+// Single source — never inline. Trust signal for the on-page curated quotes,
+// which carry NO aggregateRating / Review schema (audit 8.18). See
+// docs/superpowers/specs/2026-08-31-google-reviews-outbound-link-design.md
+export const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/Hgy4FgMVrEJoFWZWA';

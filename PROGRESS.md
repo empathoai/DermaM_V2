@@ -10,6 +10,8 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Verified:** Ciclo A — `test:visual /contacto` (`-g "Contacto Page - Viewport"`) 2 passed, **cero diff**. Ciclo B — mismo test 2 passed (desktop-chrome + mobile-safari), diff dentro de la tolerancia 2% → sin actualizar baselines. Browser pane 375px + desktop: "AGENDA TU VALORACIÓN" y "CÓMO LLEGAR" ahora `#141313`, consistentes con navbar; contraste `#F2F0F1`/`#141313` mejora vs `#363633` (WCAG AAA); escudo del mapa sigue velando el mapa, sin blur, sin glassmorphism; scrim del hero intacto. Sin errores de consola. Sin copy tocado → `MEDICAL_COMPLIANCE` n/a. Servidor `:3003` levantado y detenido por PID (×2).
 - Commits: `49ae920` (Ciclo A) · `c7ff7ac` (Ciclo B). **Task 19 cerrada.**
 
+**Task 22 / SEO-08 — cerrada como no-op (sin cambio de código).** Reconciliada contra `project_prf_content_strategy` + `project_seo_backlog_89_810_prf_positioning` + ciclo de naming canónico (`DECISIONS.md` 2026-08-28) + grep del árbol actual: (1) naming/canónico/intención ya hechos; (2) enlazado interno hub↔landing ya existe bidireccional (`categoryPages.js:60-68` ↔ `landingPages.js:5`); (3) `/faciales/microneedling` no existe, `treatmentPages.js` sin `PRF`/`plasma rico`/`factores de crecimiento`/`bioestimulación`; (4) capilar sin menciones de plasma/PRF; (5) metas de PRF sin token geo = deliberado (jugada demand-gen nacional, 0 competidor local). Detalle y "how to apply": `DECISIONS.md` 2026-08-31. Doc-only, sin `test:visual`.
+
 ---
 
 **Earlier history:** see [docs/PROGRESS_ARCHIVE.md](docs/PROGRESS_ARCHIVE.md).

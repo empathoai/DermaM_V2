@@ -8,16 +8,6 @@ export const legalUiCopy = {
   defaultLegalReviewText: 'Este documento requiere validación final del asesor legal y del equipo de operaciones de DERMA.M, LLC antes de su publicación.'
 };
 
-export const contactConsentCopy = {
-  sensitiveInfoEs: 'No envíes diagnósticos, resultados, fotografías clínicas íntimas, números de seguro, información de medicación ni información urgente. Este formulario es únicamente para consultas generales y coordinación de citas.',
-  sensitiveInfoEn: 'Do not submit diagnoses, test results, intimate clinical images, insurance numbers, medication information, or urgent information. This form is only for general inquiries and appointment coordination.',
-  serviceNoticeEs: 'Al enviar esta solicitud, autorizas a DERMA.M a contactarte para responder tu consulta y coordinar la cita por el canal seleccionado. Esta autorización de servicio no incluye campañas promocionales.',
-  serviceNoticeEn: 'By submitting this request, you authorize DERMA.M to contact you to respond to your inquiry and coordinate the appointment through the selected channel. This service authorization does not include promotional campaigns.',
-  marketingEs: 'Autorizo a DERMA.M, LLC a enviarme mensajes promocionales por SMS o WhatsApp al número proporcionado, incluso mediante tecnología automatizada cuando corresponda. El consentimiento no es condición de compra. La frecuencia puede variar. Pueden aplicar tarifas de mensajes y datos. Puedo cancelar en cualquier momento respondiendo STOP o PARAR. He leído la Política de Privacidad.',
-  marketingEn: 'I authorize DERMA.M, LLC to send promotional messages by SMS or WhatsApp to the number provided, including through automated technology when applicable. Consent is not a condition of purchase. Message frequency may vary. Message and data rates may apply. I may opt out at any time by replying STOP or PARAR. I have read the Privacy Policy.',
-  privacyMicrocopy: 'Consulta cómo protegemos y utilizamos tu información en nuestra Política de Privacidad.'
-};
-
 const privacyContact = [
   'DERMA.M, LLC',
   '5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405',
@@ -40,11 +30,11 @@ export const privacyPolicyData = {
       shortTitle: 'Introducción',
       title: '1. Introducción / Introduction',
       es: [
-        { type: 'p', text: 'DERMA.M, LLC respeta tu privacidad. Esta Política explica qué información podemos procesar cuando visitas dermamskinhealth.com, completas un formulario o te comunicas por teléfono, email, SMS o WhatsApp.' },
+        { type: 'p', text: 'DERMA.M, LLC respeta tu privacidad. Esta Política explica qué información podemos procesar cuando visitas dermamskinhealth.com, te comunicas con nosotros por teléfono, email, SMS o WhatsApp, o reservas mediante Square.' },
         { type: 'p', text: 'La mayor parte del sitio puede consultarse sin proporcionar información que te identifique directamente. Esta Política se refiere a nuestros canales digitales públicos y no sustituye los avisos o consentimientos que puedan aplicar a un expediente creado por un profesional autorizado.' }
       ],
       en: [
-        { type: 'p', text: 'DERMA.M, LLC respects your privacy. This Policy explains what information we may process when you visit dermamskinhealth.com, submit a form, or contact us by phone, email, SMS, or WhatsApp.' },
+        { type: 'p', text: 'DERMA.M, LLC respects your privacy. This Policy explains what information we may process when you visit dermamskinhealth.com, contact us by phone, email, SMS, or WhatsApp, or book through Square.' },
         { type: 'p', text: 'Most of the website can be viewed without directly identifying yourself. This Policy covers our public digital channels and does not replace notices or consents that may apply to a record created by a licensed professional.' }
       ]
     },
@@ -70,14 +60,14 @@ export const privacyPolicyData = {
         { type: 'list', items: ['Nombre y apellidos.', 'Número de teléfono.', 'Dirección de email.', 'Servicio o tratamiento de interés.', 'Preferencia de contacto.', 'Contenido de tu consulta o mensaje.', 'Registro de consentimiento o revocación de comunicaciones, cuando corresponda.'] },
         { type: 'p', text: 'El proveedor de alojamiento puede procesar registros técnicos necesarios para entregar y proteger el sitio, como dirección IP, fecha y hora de acceso, recurso solicitado, tipo de navegador y eventos de seguridad.' },
         { type: 'p', text: 'Si eliges reservar mediante el enlace directo de Square, abandonarás este sitio y proporcionarás información en la plataforma de Square. Según la configuración de la reserva, Square puede solicitar nombre, apellidos, teléfono, email, servicio, ubicación, profesional, fecha y hora, campos opcionales del perfil y, si se exige un depósito o prepago, información de pago. DERMA.M recibe los datos de la cita y del cliente que Square pone a disposición del comercio para gestionar la reserva.' },
-        { type: 'notice', title: 'No envíes información médica sensible', text: 'No incluyas diagnósticos, resultados, fotografías clínicas íntimas, números de seguro, información de medicación ni información urgente en formularios públicos, email, SMS o WhatsApp.' }
+        { type: 'notice', title: 'No envíes información médica sensible', text: 'No incluyas diagnósticos, resultados, fotografías clínicas íntimas, números de seguro, información de medicación ni información urgente por email, SMS, WhatsApp o al reservar.' }
       ],
       en: [
         { type: 'p', text: 'We may process information you choose to provide when requesting information or coordinating an appointment:' },
         { type: 'list', items: ['First and last name.', 'Phone number.', 'Email address.', 'Service or treatment of interest.', 'Contact preference.', 'The content of your inquiry or message.', 'A record of communication consent or withdrawal, when applicable.'] },
         { type: 'p', text: 'Our hosting provider may process technical logs needed to deliver and protect the website, such as IP address, access date and time, requested resource, browser type, and security events.' },
         { type: 'p', text: 'If you choose the direct Square booking link, you will leave this website and provide information through Square. Depending on the booking configuration, Square may request your first and last name, phone number, email, service, location, professional, date and time, optional profile fields, and payment information if a deposit or prepayment is required. DERMA.M receives the appointment and customer details Square makes available to the seller to manage the booking.' },
-        { type: 'notice', title: 'Do not send sensitive medical information', text: 'Do not include diagnoses, test results, intimate clinical images, insurance numbers, medication information, or urgent information in public forms, email, SMS, or WhatsApp.' }
+        { type: 'notice', title: 'Do not send sensitive medical information', text: 'Do not include diagnoses, test results, intimate clinical images, insurance numbers, medication information, or urgent information by email, SMS, WhatsApp, or when booking.' }
       ]
     },
     {
@@ -130,12 +120,14 @@ export const privacyPolicyData = {
       shortTitle: 'Cookies',
       title: '7. Cookies y tecnologías similares / Cookies and similar technologies',
       es: [
-        { type: 'p', text: 'El sitio no utiliza actualmente herramientas propias de publicidad comportamental, remarketing ni perfiles publicitarios. Los servicios externos enlazados pueden aplicar sus propias tecnologías cuando decides visitarlos.' },
-        { type: 'p', text: 'Si incorporamos analítica no esencial o publicidad basada en seguimiento, actualizaremos esta Política e implementaremos los mecanismos de aviso o consentimiento que correspondan antes de activarlas.' }
+        { type: 'p', text: 'El sitio utiliza Google Analytics 4 (identificador G-9272VHFT03) para medir el uso de forma agregada: páginas vistas, origen aproximado de la visita y tipo de dispositivo. No lo utilizamos para publicidad comportamental, remarketing ni perfiles publicitarios. Los servicios externos enlazados pueden aplicar sus propias tecnologías cuando decides visitarlos.' },
+        { type: 'p', text: 'Puedes limitar o bloquear esta medición desde la configuración de cookies de tu navegador o instalando el complemento de inhabilitación de Google Analytics (https://tools.google.com/dlpage/gaoptout).' },
+        { type: 'p', text: 'Si en el futuro incorporamos publicidad basada en seguimiento u otra analítica no esencial, actualizaremos esta Política e implementaremos los mecanismos de aviso o consentimiento que correspondan antes de activarlas.' }
       ],
       en: [
-        { type: 'p', text: 'The website does not currently use first-party behavioral advertising, remarketing, or advertising-profile tools. Linked external services may use their own technologies when you choose to visit them.' },
-        { type: 'p', text: 'If we add non-essential analytics or tracking-based advertising, we will update this Policy and implement applicable notice or consent mechanisms before activation.' }
+        { type: 'p', text: 'The website uses Google Analytics 4 (identifier G-9272VHFT03) to measure usage in aggregate: pages viewed, approximate visit origin, and device type. We do not use it for behavioral advertising, remarketing, or advertising profiles. Linked external services may use their own technologies when you choose to visit them.' },
+        { type: 'p', text: "You can limit or block this measurement through your browser's cookie settings or by installing the Google Analytics opt-out add-on (https://tools.google.com/dlpage/gaoptout)." },
+        { type: 'p', text: 'If we later add tracking-based advertising or other non-essential analytics, we will update this Policy and implement applicable notice or consent mechanisms before activation.' }
       ]
     },
     {
@@ -279,12 +271,12 @@ export const termsOfUseData = {
       id: 'informacion-general', shortTitle: 'Información general', title: '3. Información general y ausencia de relación profesional / Informational use',
       es: [
         { type: 'p', text: 'El contenido del sitio es informativo y no constituye diagnóstico, prescripción, consejo médico ni promesa de idoneidad. No sustituye una evaluación individual por un profesional autorizado.' },
-        { type: 'p', text: 'Enviar un formulario, iniciar un chat o solicitar una cita no crea por sí solo una relación profesional. Esa relación solo puede comenzar después de que un profesional autorizado acepte atenderte y realice la evaluación o los consentimientos que correspondan.' },
+        { type: 'p', text: 'Escribir por WhatsApp o solicitar una cita no crea por sí solo una relación profesional. Esa relación solo puede comenzar después de que un profesional autorizado acepte atenderte y realice la evaluación o los consentimientos que correspondan.' },
         { type: 'notice', title: 'Emergencias', text: 'No utilices este sitio, email, SMS o WhatsApp para una emergencia. Llama al 911.' }
       ],
       en: [
         { type: 'p', text: 'Website content is informational and is not a diagnosis, prescription, medical advice, or promise of suitability. It does not replace an individual evaluation by an authorized professional.' },
-        { type: 'p', text: 'Submitting a form, starting a chat, or requesting an appointment does not by itself create a professional relationship. Such a relationship may begin only after an authorized professional accepts your care and completes the applicable evaluation or consents.' },
+        { type: 'p', text: 'Writing on WhatsApp or requesting an appointment does not by itself create a professional relationship. Such a relationship may begin only after an authorized professional accepts your care and completes the applicable evaluation or consents.' },
         { type: 'notice', title: 'Emergencies', text: 'Do not use this website, email, SMS, or WhatsApp for an emergency. Call 911.' }
       ]
     },

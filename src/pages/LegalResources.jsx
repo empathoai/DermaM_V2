@@ -15,7 +15,7 @@ export default function LegalResources() {
     },
     {
       title: "Términos de Uso / Terms of Use",
-      description: "Las reglas, lineamientos y acuerdos que rigen el uso del sitio web, envío de formularios y nuestra relación comercial general.",
+      description: "Las reglas, lineamientos y acuerdos que rigen el uso del sitio web, las reservas y nuestra relación comercial general.",
       link: "/terminos-de-uso"
     },
     {
@@ -64,7 +64,7 @@ export default function LegalResources() {
       >
         <div className="space-y-8 max-w-3xl">
           <p className="text-base text-[#4E4D4D] leading-relaxed">
-            Bienvenido al portal de cumplimiento de <strong className="text-[#141313]">DERMA.M</strong>. Para garantizar la máxima transparencia con nuestros pacientes, visitantes y la comunidad, ponemos a su disposición todos los documentos rectores de nuestra operación y presencia digital. Seleccione uno de los recursos a continuación para ver de forma detallada cada política:
+            Bienvenido al portal de cumplimiento de <strong className="text-[#141313]">DERMA.M</strong>. Para garantizar la máxima transparencia contigo, con nuestros visitantes y con la comunidad, ponemos a tu disposición todos los documentos rectores de nuestra operación y presencia digital. Selecciona uno de los recursos a continuación para ver de forma detallada cada política:
           </p>
 
           <p className="italic text-xs text-[#666463] pb-4">
@@ -102,10 +102,10 @@ export default function LegalResources() {
 
           <div className="mt-12 p-6 border border-[#363633]/15 bg-[#EFEFEB] text-[11px] leading-relaxed text-[#666463] space-y-2">
             <p>
-              <strong>Aviso Clínico General / General Medical Disclaimer:</strong> La información contenida en todos los documentos legales, páginas asistenciales o páginas de redes sociales de DERMA.M, LLC tiene propósitos informativos generales únicamente. Por favor, lea detenidamente los deslindes clínicos de cada procedimiento antes de someterse a cualquier tratamiento estético.
+              <strong>Aviso General / General Disclaimer:</strong> La información contenida en todos los documentos legales, páginas de servicios o páginas de redes sociales de DERMA.M, LLC tiene propósitos informativos generales únicamente. Por favor, lee detenidamente los avisos de cada procedimiento antes de someterte a cualquier tratamiento estético.
             </p>
             <p className="border-t border-[#363633]/10 pt-2 italic">
-              <strong>Clinical Disclosure:</strong> The legal documents, treatment outlines, or social media statements provided by DERMA.M, LLC are for general informational purposes only. Please carefully read clinical disclosures for each procedure before undergoing any aesthetic treatments.
+              <strong>General Disclosure:</strong> The legal documents, treatment outlines, or social media statements provided by DERMA.M, LLC are for general informational purposes only. Please carefully read the disclosures for each procedure before undergoing any aesthetic treatments.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 
 import Nosotros from "./pages/Nosotros";
@@ -9,7 +9,6 @@ import TermsOfUse from "./pages/TermsOfUse";
 import TreatmentDisclaimer from "./pages/TreatmentDisclaimer";
 import BookingPolicy from "./pages/BookingPolicy";
 import Accessibility from "./pages/Accessibility";
-import NoticePrivacyPractices from "./pages/NoticePrivacyPractices";
 import LegalResources from "./pages/LegalResources";
 
 import Faciales from "./pages/hubs/Faciales";
@@ -44,7 +43,9 @@ export default function AppRoutes() {
       <Route path="/tratamientos-disclaimer" element={<TreatmentDisclaimer />} />
       <Route path="/booking-cancellation-refund-policy" element={<BookingPolicy />} />
       <Route path="/accessibility" element={<Accessibility />} />
-      <Route path="/notice-of-privacy-practices" element={<NoticePrivacyPractices />} />
+      {/* Retired 2026-08-31 — see docs/superpowers/specs/2026-08-31-legal-pages-overhaul-design.md.
+          Health-info privacy now lives in Política de Privacidad §6. .htaccess carries the 301 at deploy. */}
+      <Route path="/notice-of-privacy-practices" element={<Navigate to="/politica-de-privacidad" replace />} />
       <Route path="/legal" element={<LegalResources />} />
 
       <Route path="/faciales" element={<Faciales />} />

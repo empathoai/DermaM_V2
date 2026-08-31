@@ -65,7 +65,7 @@ export default function TreatmentDisclaimer() {
       content: (
         <>
           <p>
-            Previa realización de cualquier protocolo avanzado (como PRP, peelings químicos fuertes, aparatología láser, microagujoneamiento, terapia intravenosa, etc.), es estrictamente indispensable completar una consulta personal de evaluación de tez. En este proceso de cribado clínico se analizará tu historia, hábitos y posibles contraindicaciones que invaliden o pospongan el tratamiento por motivos éticos y de seguridad física.
+            Previa realización de cualquier protocolo avanzado (como PRF, peelings químicos fuertes, aparatología láser, microneedling, terapia intravenosa, etc.), es estrictamente indispensable completar una consulta personal de evaluación de tez. En este proceso de cribado clínico se analizará tu historia, hábitos y posibles contraindicaciones que invaliden o pospongan el tratamiento por motivos éticos y de seguridad física.
           </p>
         </>
       )
@@ -130,10 +130,10 @@ export default function TreatmentDisclaimer() {
           <div className="p-4 border border-red-950/20 bg-red-950/[0.03] text-xs space-y-2">
             <span className="font-semibold text-red-900 block uppercase">EMERGENCIA MÉDICA / MEDICAL EMERGENCY DISPATCH</span>
             <p>
-              Nuestra plataforma digital, formularios generales y chat en línea no son monitoreados de forma constante ni están capacitados clínicamente para atender emergencias médicas de salud o traumas cutáneos graves de riesgo vital.
+              Nuestro sitio web, WhatsApp y email no se monitorean de forma constante ni están capacitados clínicamente para atender emergencias médicas de salud o traumas cutáneos graves de riesgo vital.
             </p>
             <p className="font-light text-[#363633]/80">
-              Our digital platform, general forms, and online chat are not continuously monitored and are not clinically equipped to handle medical emergencies or severe, life-threatening skin trauma.
+              Our website, WhatsApp, and email are not continuously monitored and are not clinically equipped to handle medical emergencies or severe, life-threatening skin trauma.
             </p>
             <p className="italic">
               Si estás experimentando una reacción alérgica repentina grave (por ejemplo, anafilaxia, dificultad para respirar, quemadura grave o dolor agudo imprevisto), por favor llama de inmediato al número de emergencia general de los Estados Unidos (<strong>911</strong>) o acude a la sala de urgencias hospitalarias más cercana a tu domicilio.
@@ -148,7 +148,7 @@ export default function TreatmentDisclaimer() {
     {
       id: "contact",
       shortTitle: "Contacto",
-      title: "Información para Consultas Clínicas / Contact Details",
+      title: "Información para Consultas sobre Tratamientos / Contact Details",
       content: (
         <>
           <p>
@@ -156,7 +156,7 @@ export default function TreatmentDisclaimer() {
           </p>
           <div className="p-5 border border-[#363633]/10 bg-[#EFEFEB] text-xs mt-4">
             <p className="font-semibold uppercase text-[#141313] mb-2">DERMA.M, LLC</p>
-            <p className="mb-1"><strong>Atención Clínica:</strong> 5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405</p>
+            <p className="mb-1"><strong>Ubicación:</strong> 5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405</p>
             <p className="mb-1"><strong>Teléfono / Coordinación:</strong> +1 561 253 5384</p>
             <p className="mb-1"><strong>Correo de Contacto:</strong> info@dermamskinhealth.com</p>
           </div>
@@ -169,7 +169,7 @@ export default function TreatmentDisclaimer() {
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] selection:bg-[#CCC9C1]">
       <Helmet>
         <title>Descargo de Tratamientos | DERMA.M LLC Florida</title>
-        <meta name="description" content="Advertencia sobre tratamientos y resultados de cuidado estético corporal y facial del centro dermatológico DERMA.M, LLC en Florida." />
+        <meta name="description" content="Advertencia sobre tratamientos y resultados de cuidado estético corporal y facial del medical spa DERMA.M, LLC en Florida." />
         {siteUrl && <link rel="canonical" href={`${siteUrl}/treatment-disclaimer`} />}
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -177,13 +177,12 @@ export default function TreatmentDisclaimer() {
       <Navbar />
       
       <main className="flex-grow">
+        {/* legal review still pending — attorneyReviewRequired callout hidden per user 2026-08-31 */}
         <LegalPageLayout
           title="Descargo de Tratamientos y Resultados"
           subtitle="Advertencias legales y especificaciones clínicas obligatorias respecto de las expectativas de resultados estéticos de nuestros tratamientos faciales y corporales."
           effectiveDate="10 de Octubre de 2021"
           lastUpdated="17 de Junio de 2026"
-          attorneyReviewRequired={true}
-          attorneyCalloutText="[REVISIÓN LEGAL REQUERIDA: Un especialista en derecho de salud en Florida debe ratificar que los descargos clínicos para PRP y aparatología láser se acoplan a las leyes estatales que regulan los consultorios médicos estéticos y no vulneran la junta de medicina.]"
           sections={sections}
         />
       </main>

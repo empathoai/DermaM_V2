@@ -25,7 +25,7 @@ export default function Accessibility() {
             </p>
           </div>
           <p className="mt-4">
-            Nuestro objetivo es facilitar que todas las audiencias naveguen de forma inclusiva por nuestros contenidos dermatológicos y de bienestar, independientemente de sus capacidades físicas, visuales, auditivas, cognitivas o tecnológicas.
+            Nuestro objetivo es facilitar que todas las audiencias naveguen de forma inclusiva por nuestros contenidos de cuidado de la piel y de bienestar, independientemente de sus capacidades físicas, visuales, auditivas, cognitivas o tecnológicas.
           </p>
         </>
       )
@@ -111,13 +111,12 @@ export default function Accessibility() {
       <Navbar />
       
       <main className="flex-grow">
+        {/* legal review still pending — attorneyReviewRequired callout hidden per user 2026-08-31 */}
         <LegalPageLayout
           title="Declaración de Accesibilidad"
           subtitle="Compromiso y pautas de inclusión informática aplicadas al sitio de DERMA.M para garantizar facilidad de uso a todos nuestros usuarios."
           effectiveDate="10 de Octubre de 2021"
           lastUpdated="17 de Junio de 2026"
-          attorneyReviewRequired={true}
-          attorneyCalloutText="[REVISIÓN LEGAL REQUERIDA: Revise las directrices con un asesor legal técnico para certificar el cumplimiento digital ante leyes de accesibilidad corporativa aplicables en Florida.]"
           sections={sections}
         />
       </main>

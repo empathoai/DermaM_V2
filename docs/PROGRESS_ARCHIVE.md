@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — Task 15: unify legal-doc address register to `tú` (cont. 38, code)
+
+- **`Accessibility.jsx` / `TreatmentDisclaimer.jsx` / `NoticePrivacyPractices.jsx`:** 13 inline-copy edits flipping every direct 2nd-person address from `usted` to respectful `tú` (`usted`→`tú`, courtesy imperatives `contáctenos`→`contáctanos` / `escríbanos`→`escríbenos` / `comuníquese`→`comunícate` / `llame`→`llama` / `acuda`→`acude`, reflexive `Se le guiará`→`Te guiaremos`, and `su`/`sus` meaning "your" when it addresses the reader). Third-person legal nouns (`el paciente`, `el cliente`) and the `su` that agrees with them, quoted bilingual `"…"` clauses and their English mirrors, and `su sitio web` on `Accessibility.jsx` (possessive of DERMA.M) left untouched.
+- **Why:** CPY-03. Privacy + Cancellation policies (`legalPages.js`) already tutean; these three still used `usted` → split institutional voice. Register rule: respectful `tú` for all customer-facing legal docs, no reserved-`usted` exception (grammatical person doesn't change legal meaning). See `DECISIONS.md` 2026-08-31. Spec: `docs/superpowers/specs/2026-08-31-tu-usted-registro-legal-cpy-03-design.md`.
+- **Verified:** grep `\busted\b` + courtesy imperatives across the 3 files = 0. Browser `:3000` at 375px + desktop — `/accessibility`, `/treatment-disclaimer`, `/notice-of-privacy-practices` read in full: no broken sentence, verbs agree, quoted clauses + English mirrors intact. `MEDICAL_COMPLIANCE.md` — no grammatical-person rule, no banned word introduced, legal sense preserved. **`test:visual` skipped** per `CLAUDE.md` §DoD.
+- Closes audit Task 15 (CPY-03). Commit `098874e`.
+
+---
+
 ## 2026-08-31 — Task 14: consolidate treatment JSON-LD into one `@graph` (cont. 37, code)
 
 - **`FAQAccordion.jsx`:** new `emitSchema = true` prop; the `<Helmet>` emitting the standalone `FAQPage` `<script>` is now `{emitSchema && (…)}`. `LandingPage` / `Contacto` don't pass the prop → their FAQ schema is unchanged.

@@ -97,7 +97,7 @@ export default function Footer() {
 
           {/* Column 5: Aviso */}
           <div className={styles.avisoCol}>
-            <h3 className={styles.colHeading}>Aviso Clínico</h3>
+            <h3 className={styles.colHeading}>Aviso Importante</h3>
             <div className={styles.avisoBox}>
               <p className="text-[11px] leading-relaxed text-[#BBB8B5] font-light mb-2">
                 <strong>ES:</strong> La información de este sitio es únicamente educativa y no reemplaza una evaluación profesional. Los resultados varían según cada persona.

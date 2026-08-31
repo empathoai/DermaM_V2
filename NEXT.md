@@ -5,47 +5,34 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `098874e` (Task 15 done, cont. 38). Clean tree, **pushed**.
-Dev server `:3000` = running (cont. 38, started this session).
+Base commit = `<HASH>` (legal-pages overhaul done, cont. 39). Clean tree, **pushed**.
+Dev server `:3000` = running (started this session).
 
 ## Active queue — audit remediation (cont. 21)
 
 27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
-Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38) —
-detail in `docs/PROGRESS_ARCHIVE.md`. Task 15 (cont. 38): legal-doc address register → respectful
-`tú` (`DECISIONS.md` 2026-08-31; memory `project_legal_docs_tu_register`). Each remaining task:
-`superpowers:brainstorming` → user approval → 1 change → verification → ritual.
+Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
+**legal-pages overhaul** (cont. 39) — detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each
+remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
 Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
 media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See `DECISIONS.md` 2026-08-30.
 
-**Next: LEGAL-PAGES OVERHAUL** (cont. 38, user scope-expansion off Task 15 — chose "todo junto"
-despite high compliance-copy blast radius). `superpowers:brainstorming` → spec → plan → go. Scope, 6:
-  1. **med-spa ≠ clínica** — swap institutional-self nouns (`clínica`/`consultorio`/`centro dermatológico`;
-     `TreatmentDisclaimer.jsx` ×6, `legalPages.js` ×2, others ×1). KEEP legally-required "professional
-     medical evaluation/supervision" refs (FL med spa runs under medical direction). Align `siteMeta.js`
-     + `DECISIONS.md` 2026-08-30.
-  2. **dead contact form** — `Contacto.jsx` has NO `<form>` (WhatsApp/tel/Square/map). Rewrite (not delete)
-     stale copy for the real flow: `legalPages.js` `contactConsentCopy` + "completas/Enviar un formulario"
-     / "formularios públicos" (Privacy §Intro/§data-collected, Terms §no-relationship). "No envíes info
-     sensible" still applies to WhatsApp — reword for channel.
-  3. **tech accuracy** — reconcile with real functionality: no form; GA4 `G-9272VHFT03`; "chat en línea"
-     in `TreatmentDisclaimer.jsx` emergency §; Privacy analytics clause. Verify treatment mentions vs
-     `treatmentPages.js` published set.
-  4. **company-data congruence** — NAP audit (`5707 S Dixie Hwy UNIT D, West Palm Beach, FL 33405` ·
-     `+1 561 253 5384` · `info@dermamskinhealth.com` · `dermamskinhealth.com`) across every legal page +
-     Footer + `Contacto.jsx` + `siteMeta.js`. One canonical source.
-  5. **niche best-practices** — confirm FL med-spa legal set complete; assess SMS/telemarketing consent,
-     ADA, minors clause. `MEDICAL_COMPLIANCE.md` + `seo-local` skill.
-  6. **hide legal-review callouts** — remove visible `[REVISIÓN LEGAL REQUERIDA]` on the 3 pages
-     (`attorneyReviewRequired` + `attorneyCalloutText` on `LegalPageLayout`); leave internal code comment
-     "legal review still pending — callout hidden per user 2026-08-31". Not a claim counsel reviewed.
+**Legal-pages overhaul left two deploy-checklist items** (PROTECTED files, do at Hostinger deploy):
+`.htaccess` 301 `/notice-of-privacy-practices` → `/politica-de-privacidad`; drop the 7×
+`Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
+GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-Remaining PROTECTED item: Task 23 (`llms.txt` legal links, XS).
+**Next: Task 16** — primary-CTA vocabulary scattered (CPY-04). M. `superpowers:brainstorming` →
+taxonomy (e.g. "Agenda tu valoración" = Square booking, "Consulta por WhatsApp" = chat channel,
+"Ver tratamiento" = nav, unchanged) → apply across Hero/Navbar/Contacto/`aboutPage.js` + any grep hit.
+Watch the audited Square linking (`MEMORY.md`). `test:visual` gate applies (Hero/Navbar shared).
 
-Order after the overhaul: **16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
+
+Order: **16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|

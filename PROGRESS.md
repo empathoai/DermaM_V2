@@ -2,13 +2,12 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-31 — Task 20: FeaturedServices bullets → `<ListSparkle />` (cont. 35, code)
+## 2026-08-31 — Task 21: skip-to-content link (cont. 36, code)
 
-- **`FeaturedServices.jsx` + `.module.css`:** the home "Tratamientos destacados" section was the only place still using one-off 4×4px `<span className={styles.bullet}>` square markers for benefit lists. Migrated all 9 `<li>` across the 3 cards to `<ListSparkle variant="dark|light" /><span>…</span>` (the site-wide component already used in `LandingPage`, `TreatmentDetailPage`, `WarningBox`). Deleted `.bullet`/`.bulletDark` CSS; `.benefitsList li` now `align-items: flex-start` + `gap: 12px`. Variant rule: `dark` glyph (`#363633`) on the light bands, `light` glyph (`#CCC9C1`) on the dark band.
-- **`DESIGN.md` §"Lists & Bullets":** the existing prohibition (no browser bullets, no dashes) now also names "one-off custom markers (square/dot `<span>`s, geometric glyphs)" — closing the gap that let this slip. The `<ListSparkle />` mandate + `flex-start` + per-background variant rule were already written there.
-- **Why:** UX-09. `DESIGN.md` already mandates `<ListSparkle />` as the canonical benefit-list marker; FeaturedServices was a straight violation (3 of 4 list sites already compliant).
-- **Verified:** browser 375px + pane — ✦ renders on all 3 bands, aligned to first text line, correct variant color per background, no console errors. `npm run test:visual` — 33 passed; `home-featured-services.png` passes with no diff (glyph-vs-square delta below pixel threshold); the 1 failure is the standing unrelated `nosotros-viewport` (`about/hero.jpg` placeholder). No copy change → MEDICAL_COMPLIANCE n/a. A11y: decorative SVG, list semantics + text unchanged.
-- Closes audit Task 20 (UX-09). Commit `ea6d473`.
+- **`Navbar.jsx` + `Navbar.module.css`:** `Navbar` is the only component on all 25 pages (no shared route layout). Wrapped its return in a fragment: `<a href="#main-content" className={styles.skipLink}>Saltar al contenido principal</a>` as the first focusable element, then the unchanged `<header>`, then `<div id="main-content" tabIndex={-1} className={styles.mainContentAnchor} />` immediately after it. `.skipLink` is off-screen (`position:absolute; left:-999px`, not `display:none`); `.skipLink:focus` = fixed top-left bar, `min-height:44px`, `z-index:1100` (above `.header` 1000 / `.megaMenu` 100), `#141313`/`#F2F0F1`, `outline:2px solid #CCC9C1`.
+- **Why:** UX-10 / WCAG 2.4.1 (Level A). Sentinel `<div>` in `Navbar` instead of `id="main"` on 25 pages with an inconsistent `<main>` (`Home.jsx` wraps Navbar+Footer inside it) — one file, robust everywhere. See `DECISIONS.md` 2026-08-31. Spec: `docs/superpowers/specs/2026-08-31-skip-to-content-link-ux-10-design.md`.
+- **Verified:** browser `:3000` at 375px + desktop — `Tab` on load reveals the bar top-left (hidden + no layout shift before focus); activating moves focus to `#main-content`; next `Tab` → Hero "Reservar" CTA, bypassing the nav. `npm run test:visual` — 33 passed, only failure is the standing unrelated `nosotros-viewport` (`about/hero.jpg` placeholder); link hidden until focus → no snapshot diffs. Copy "Saltar al contenido principal" — plain Spanish, MEDICAL_COMPLIANCE n/a.
+- Closes audit Task 21 (UX-10). Commit `<pending>`.
 
 ---
 

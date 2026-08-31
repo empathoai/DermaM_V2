@@ -49,7 +49,11 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className={styles.header}>
+    <>
+      <a href="#main-content" className={styles.skipLink}>
+        Saltar al contenido principal
+      </a>
+      <header className={styles.header}>
       {/* TOP INFO BAR */}
       <div className={styles.topInfoBar}>
         <div className={styles.topInfoLeft}>
@@ -198,6 +202,8 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </header>
+      </header>
+      <div id="main-content" tabIndex={-1} className={styles.mainContentAnchor} />
+    </>
   );
 }

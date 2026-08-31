@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `45fd1ae` (Task 20 done, cont. 35). Clean tree, **pushed**.
-Dev server `:3000` = stopped at end of cont. 35. Restart with `npm run dev` on resume.
+Base commit = `<pending>` (Task 21 done, cont. 36). Clean tree, **pushed**.
+Dev server `:3000` = running (cont. 36). Stop at session end.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -19,17 +19,15 @@ Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment he
 media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-Done (cont. 32–35, detail in `docs/PROGRESS_ARCHIVE.md`): Task 11 (UX-05), Task 18 (UX-07),
+Done (cont. 32–36, detail in `docs/PROGRESS_ARCHIVE.md`): Task 11 (UX-05), Task 18 (UX-07),
 Task 10 (CPY-06), Task 12 (SEO-06 `robots.txt`), Task 13 (SEO-09 sitemap `<lastmod>`),
-Task 20 (UX-09 — FeaturedServices bullets → `<ListSparkle />`; `DESIGN.md` §Lists tightened).
+Task 20 (UX-09 — FeaturedServices bullets → `<ListSparkle />`), Task 21 (UX-10 — skip-to-content
+link + `#main-content` sentinel in `Navbar`; `DECISIONS.md` 2026-08-31).
 
-**Next: Task 21** — missing "skip to content" link (UX-10). S. Not blocked. WCAG 2.4.1 bypass block:
-add a visually-hidden-until-focus anchor to `#main` as the first focusable element (likely in the
-root layout / `App` shell), plus an `id="main"` on the primary `<main>`. Shared layout →
-**`test:visual` gate applies** (should be no visible diff — link only shows on focus).
+**Next: Task 14** — consolidate treatment JSON-LD into one `@graph` (SEO-07). M. Not blocked.
 Remaining PROTECTED item: Task 23 (`llms.txt` legal links, XS).
 
-Order: **21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
@@ -38,7 +36,6 @@ Order: **21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 2
 | 15 | `tú`/`usted` inconsistent across legal documents (CPY-03) | M | |
 | 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
 | 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
-| 21 | Missing "skip to content" link (UX-10) | S | |
 | 22 | PRF vs faciales/capilar keyword cannibalization (SEO-08) | M | reconcile with the closed PRF spec |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
 | 24 | "marcas permanentes" → "persistentes" (CPY-05) | XS | |

@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `34ab2a4` (legal-pages overhaul done, cont. 39). Clean tree, **pushed**.
-Dev server `:3000` = running (started this session).
+Base commit = `4572f98` (Task 16 CTA taxonomy done, cont. 40). Clean tree, **pushed**.
+Dev server `:3000` = running.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -14,8 +14,9 @@ Dev server `:3000` = running (started this session).
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
 Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
-**legal-pages overhaul** (cont. 39) — detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each
-remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
+**legal-pages overhaul** (cont. 39); Task 16 (cont. 40) — detail in `docs/PROGRESS_ARCHIVE.md` /
+`PROGRESS.md`. Each remaining task: `superpowers:brainstorming` → user approval → 1 change →
+verification → ritual.
 
 Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
 media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See `DECISIONS.md` 2026-08-30.
@@ -25,19 +26,18 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 `Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-**Next: Task 16** — primary-CTA vocabulary scattered (CPY-04). M. `superpowers:brainstorming` →
-taxonomy (e.g. "Agenda tu valoración" = Square booking, "Consulta por WhatsApp" = chat channel,
-"Ver tratamiento" = nav, unchanged) → apply across Hero/Navbar/Contacto/`aboutPage.js` + any grep hit.
-Watch the audited Square linking (`MEMORY.md`). `test:visual` gate applies (Hero/Navbar shared).
+**Next: Task 19** (UX-08) — `Contacto`: strip manual gradients/radials + `backdrop-blur-[2px]` +
+orphan CSS from the removed form; buttons `#363633` → `#141313` token. `Contacto.module.css:1-60`
++ `Contacto.jsx:78-100`. Violates `DESIGN.md` §4 + §10. M. Full detail in the cont. 21 plan doc.
+`test:visual` gate applies (`/contacto` snapshot). Absorbs the old `/contacto` follow-ups.
 
 Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
 
-Order: **16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
 | 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
 | 22 | PRF vs faciales/capilar keyword cannibalization (SEO-08) | M | reconcile with the closed PRF spec |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
@@ -49,6 +49,10 @@ Order: **16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 
 ## Other pending (outside the cont. 21 queue)
+
+**Pre-existing test failure (found cont. 40):** `/faciales/hidrofacial` fails
+`tests/faq-consistency.spec.js` (`faqSchema.mainEntity` count ≠ rendered `button[aria-expanded]`);
+confirmed on base `228da1d`. Own cycle: reconcile hidrofacial FAQ data vs its JSON-LD.
 
 **Square deep-linking — BLOCKED on the clinic.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing:
 clinic confirmation of 4 rows (PRF, marcación abdominal, corrientes rusas, depilación láser) + validate

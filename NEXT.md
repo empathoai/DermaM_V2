@@ -15,7 +15,7 @@ Dev server `:3000` = owned by another chat, do not touch.
 
 Done: Tasks 1, 3, 4, 6, 7, 9 (cont. 24–29). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 5** — `CategoryPage` does not render benefits/approach/process (UX-02=SEO-05), L, likely 2–4 sub-cycles. Visible category breadcrumb already shipped in Task 6.
+**Next: Task 5** — `CategoryPage` does not render benefits/approach/process (UX-02=SEO-05). Breadcrumb part already shipped in Task 6, so effectively S–M / 1 cycle. **Planned:** spec `docs/superpowers/specs/2026-08-30-task5-categorypage-benefits-approach-process-design.md` + plan `docs/superpowers/plans/2026-08-30-task5-categorypage-benefits-approach-process.md`. Execute via `superpowers:executing-plans`. Staged: implement + validate `/faciales` only → user approves look → roll to 6 hubs → `test:visual --update-snapshots` (6 category routes only) → close-cycle. Reuse `BenefitColumns` / `ProcessTimeline` unchanged; if they need edits, STOP (blast radius → landings).
 
 Order: **5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 

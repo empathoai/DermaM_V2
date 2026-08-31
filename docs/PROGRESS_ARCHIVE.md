@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — Task 12: AI-crawler directives in robots.txt (cont. 35, no code)
+
+- **`public/robots.txt` (PROTECTED — nominal go given):** appended 6 dedicated user-agent groups before the `Sitemap:` line. AI search: `OAI-SearchBot`, `Claude-SearchBot`, `PerplexityBot`. AI training: `GPTBot`, `ClaudeBot`, `Google-Extended`. Each = `Allow: /` plus the same `Disallow` set already applied to `User-agent: *` (non-canonical language variants `/privacy-policy` · `/terms-of-use` · `/tratamientos-disclaimer`, draft `/notice-of-privacy-practices`, `/_audit/`).
+- **Why:** SEO-06. Policy call (user, cont. 35): allow BOTH search and training — public copy is marketing content we want surfaced/cited; no sensitive IP to protect by blocking training bots, and an explicit `Allow` for the SearchBots prevents accidental perimeter blocks. Same crawl scope as `*` so duplicate legal pages don't pollute AI citations.
+- **Verified:** robots.txt syntax valid (well-formed `User-agent` groups + rules; global `Sitemap:` intact at EOF). No `test:visual` (static file). No browser check (not a rendered route).
+- **SEO/GEO/AEO:** direct GEO/AEO — controls/blinds citability in ChatGPT Search and Perplexity. Commit `55f2b7d`.
+
+---
+
 ## 2026-08-30 — Task 10: English mirror for the 911 emergency-exclusion clause (cont. 34, code)
 
 - **`TreatmentDisclaimer.jsx` §8 ("emergency", inline JSX, not from `legalPages.js`):** the two ES paragraphs (digital channels not monitored / call 911 for a severe allergic reaction) had no English version, unlike the sibling "Nota Clínica" and "Fotos Antes y Después" sections. Added an EN mirror `<p>` right after each ES paragraph, inside the same red box, matching the italic/weight of its pair (`font-light text-[#363633]/80`, `italic` on the second).

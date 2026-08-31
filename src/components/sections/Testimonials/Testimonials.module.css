@@ -111,26 +111,6 @@
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.card::before {
-  content: '“';
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 130px;
-  line-height: 1;
-  color: var(--color-stone, #363633);
-  opacity: 0.05;
-  z-index: -1;
-  pointer-events: none;
 }
 
 @media (min-width: 1024px) {
@@ -139,18 +119,26 @@
   }
 }
 
-.stars {
+.quoteIcon {
+  color: var(--color-border-light, rgba(54, 54, 51, 0.18));
+  margin-bottom: 32px;
   display: flex;
-  justify-content: center;
-  gap: 4px;
-  margin-bottom: 16px;
-  color: var(--color-stone, #363633);
+  align-items: center;
 }
 
-.starIcon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+.quoteIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.starsWrapper {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.star {
+  color: var(--color-stone, #363633);
 }
 
 .quote {
@@ -173,7 +161,7 @@
   width: 48px;
   height: 1px;
   background-color: var(--color-border-light, rgba(54, 54, 51, 0.18));
-  margin: 24px auto;
+  margin: 24px 0;
 }
 
 .clientName {

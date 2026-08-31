@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `610cb6c` (cont. 30 — Task 5 done, benefits/approach/process on CategoryPage). HEAD may be 1 doc-fixup ahead. Clean tree.
+Base commit = `1a9e2d9` (Task 11 done). Prior: `3dd9734` (cont.31 declines). HEAD may be 1 doc-fixup ahead. Clean tree. **Not pushed (cont.31 + cont.32).**
 Dev server `:3000` = started this session (pane); stop it at session end.
 
 ## Active queue — audit remediation (cont. 21)
@@ -19,17 +19,18 @@ Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment he
 media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-**Next: Task 11** — `h3` before `h2` in the legal layout (UX-05). XS. `LegalPageLayout.jsx:118-123`:
-"Sección X" label is an `<h3>` before the section's `<h2>` → change it to `<p>`/`<span>` with the same
-type styles so the `<h2>` is the only heading governing the block. WCAG 1.3.1.
+Done: Task 11 (cont. 32) — `LegalPageLayout.jsx` "Sección N" `<h3>` → `<p>`, heading tree fixed (UX-05 / WCAG 1.3.1).
 
-Order: **11 → 18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+**Next: Task 18** — `bg-white` (`#FFFFFF`) in `LegalResources.jsx:78` (UX-07). XS. Swap to `#EFEFEB`
+(pergamino) or `#F2F0F1` + subtle graphite border. `DESIGN.md` §2/§10 forbid pure white. `test:visual`
+if it's a reused class — check the class scope first.
+
+Order: **18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 10 | 911 emergency clause has no English version (CPY-06) | S | |
-| 11 | `h3` before `h2` in the legal layout (UX-05) | XS | |
 | 12 | robots.txt has no directives for AI crawlers (SEO-06) | S | PROTECTED |
 | 13 | sitemap.xml has no `<lastmod>` (SEO-09) | S | PROTECTED |
 | 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |

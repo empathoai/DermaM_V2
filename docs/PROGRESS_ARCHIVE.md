@@ -3,6 +3,16 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Audit UI/UX review: UX-03 + UX-06 declined, DESIGN.md exception recorded (cont. 31, docs)
+
+- **Full 12-item UI/UX audit list reviewed with the user.** UX-01/02/04 already shipped (Tasks 1/5/9); UX-05/07/08/09/10/11/12 remain queued; **UX-03 and UX-06 declined by product**.
+- **`DESIGN.md`:** §4 Geometry gains a dated "Documented exception" — `MethodProcess` step markers keep `border-radius: 50%`, scoped to that component only; §11 point 7 amended to point at it. UX-03's `TreatmentHero` untouched; `DESIGN.md` §7 knowingly diverges.
+- **`DECISIONS.md`:** appended 2026-08-30 entry — owner overriding the spec (dramatic media hero intentional; circular step index intentional).
+- **`NEXT.md`:** Tasks 8 and 17 dropped; order line now `11 → 18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22`.
+- Commit `3dd9734`.
+
+---
+
 ## 2026-08-30 — Task 5: render benefits/approach/process on CategoryPage (cont. 30, code)
 
 - **`CategoryPage.jsx` + `CategoryPage.module.css`:** the template destructured `benefits` / `approach` / `process` but never rendered them — all 6 hubs (`/faciales`, `/corporales`, `/laser-y-luz`, `/dental-estetico`, `/iv-therapy`, `/capilar`) were header + trust bar + overview + grid + whoFor + testimonials + CTA. Added 3 guarded `<section>` blocks between `whoFor` and `testimonials`: Benefits (`<BenefitColumns variant="light">`, Clinical Canvas `#F2F0F1`), Approach (inline `<SectionHeader variant="dark" align="center" maxWidth="760px">` statement, Dark Authority `#141313`, `aria-labelledby="approach-heading"`), Process (`<ProcessTimeline variant="light">`, Clinical Canvas). +2 imports, +4 CSS classes, trailing comments renumbered `10/11 → 11/12`. No data edits; `BenefitColumns` / `ProcessTimeline` / `SectionHeader` called unchanged (already prod on `LandingPage`).

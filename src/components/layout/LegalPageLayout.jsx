@@ -115,9 +115,9 @@ export default function LegalPageLayout({
                   key={sec.id} 
                   className={`scroll-mt-32 pt-8 ${index !== 0 ? "border-t border-[#363633]/10" : ""}`}
                 >
-                  <h3 className="text-xs uppercase tracking-[0.2em] text-[#666463] font-semibold mb-2">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#666463] font-semibold mb-2">
                     {legalUiCopy.sectionLabel} {index + 1}
-                  </h3>
+                  </p>
                   <h2 className="font-sans text-xl sm:text-2xl uppercase tracking-wider font-normal text-[#141313] mb-6">
                     {sec.title}
                   </h2>

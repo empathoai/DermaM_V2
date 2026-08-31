@@ -19,11 +19,9 @@ Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment he
 media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-Done: Task 11 (cont. 32) — `LegalPageLayout.jsx` "Sección N" `<h3>` → `<p>` (UX-05 / WCAG 1.3.1).
-Done: Task 18 (cont. 33) — `LegalResources.jsx:78` `bg-white` → `bg-[#EFEFEB]` (UX-07).
-Done: Task 10 (cont. 34) — `TreatmentDisclaimer.jsx` §8: EN mirror `<p>` for the 911 clause (CPY-06).
-Done: Task 12 (cont. 35) — `robots.txt`: 6 AI-crawler groups (search + training) all `Allow: /` with
-the `User-agent: *` Disallow set mirrored (SEO-06). Policy = allow both. See `DECISIONS.md` 2026-08-31.
+Done (cont. 32–35, detail in `docs/PROGRESS_ARCHIVE.md`): Task 11 (UX-05), Task 18 (UX-07),
+Task 10 (CPY-06), Task 12 (SEO-06 — `robots.txt` AI-crawler groups, policy = allow search + training,
+see `DECISIONS.md` 2026-08-31).
 
 **Next: Task 13** — `sitemap.xml` has no `<lastmod>` (SEO-09). S. **PROTECTED file** — starts only on
 your explicit "go" on `sitemap.xml`. Needs a brainstorm call: hand-write `<lastmod>` per URL now

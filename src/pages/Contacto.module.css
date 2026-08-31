@@ -183,325 +183,7 @@
   object-position: center;
 }
 
-/* 2. Quick Contact Cards */
-.quickSection {
-  background-color: #F2F0F1; /* Clinical Canvas */
-  padding: 80px 24px;
-}
-
-@media (min-width: 1024px) {
-  .quickSection {
-    padding: 100px 64px;
-  }
-}
-
-.quickContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.quickGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .quickGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.quickCard {
-  background-color: #EFEFEB; /* Off White */
-  border: 1px solid rgba(54, 54, 51, 0.18);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 0px;
-  min-height: 240px;
-}
-
-@media (hover: hover) {
-  .quickCard:hover {
-    border-color: rgba(54, 54, 51, 0.32);
-  }
-}
-
-.quickIcon {
-  color: #363633;
-  margin-bottom: 24px;
-}
-
-.quickTitle {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #363633;
-  margin: 0 0 12px 0;
-}
-
-.quickText {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #4E4D4D;
-  margin: 0 0 24px 0;
-  font-weight: 300;
-  flex-grow: 1;
-}
-
-.quickCta {
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #363633;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(54, 54, 51, 0.32);
-  align-self: flex-start;
-  padding-bottom: 4px;
-  transition: all 0.3s ease;
-}
-
-@media (hover: hover) {
-  .quickCta:hover {
-    border-color: #141313;
-    color: #141313;
-  }
-}
-
-.quickCta:focus-visible {
-  outline: 2px solid #363633;
-  outline-offset: 4px;
-}
-
-/* 3. Form Section */
-.formSection {
-  background-color: #EFEFEB; /* Off White */
-  padding: 80px 24px;
-}
-
-@media (min-width: 1024px) {
-  .formSection {
-    padding: 100px 64px;
-  }
-}
-
-.formContainer {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.formCard {
-  background-color: #F2F0F1; /* Clinical Canvas nested card */
-  border: 1px solid rgba(54, 54, 51, 0.18);
-  padding: 40px 24px;
-  border-radius: 0px;
-}
-
-@media (min-width: 768px) {
-  .formCard {
-    padding: 60px 48px;
-  }
-}
-
-.formTitle {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #363633;
-  margin: 0 0 32px 0;
-  text-align: center;
-}
-
-.formGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .formGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .fullWidth {
-    grid-column: span 2;
-  }
-}
-
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.label {
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #363633;
-}
-
-.input, .textarea, .select {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #363633;
-  background-color: #EFEFEB; /* Off White for input fields on Clinical Canvas */
-  border: 1px solid rgba(54, 54, 51, 0.18);
-  padding: 14px 16px;
-  border-radius: 0px;
-  outline: none;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.input:focus-visible, .textarea:focus-visible, .select:focus-visible {
-  outline: 2px solid #363633;
-  outline-offset: 2px;
-  background-color: #F2F0F1;
-}
-
-.textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.select {
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23363633' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 16px center;
-  background-size: 16px;
-  padding-right: 40px;
-}
-
-.submitBtn {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  background-color: #363633;
-  color: #F2F0F1;
-  border: 1px solid #363633;
-  padding: 16px 32px;
-  border-radius: 0px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-  margin-top: 12px;
-}
-
-@media (hover: hover) {
-  .submitBtn:hover {
-    background-color: #141313;
-    border-color: #141313;
-  }
-}
-
-.submitBtn:focus-visible {
-  outline: 2px solid #363633;
-  outline-offset: 2px;
-}
-
-.microcopy {
-  font-size: 11px;
-  color: #BBB8B5; /* Soft Grey */
-  text-align: center;
-  margin: 16px 0 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.successMessage {
-  background-color: rgba(54, 54, 51, 0.03);
-  border: 1px solid rgba(54, 54, 51, 0.18);
-  padding: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.successTitle {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #363633;
-}
-
-.successText {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #4E4D4D;
-  margin: 0;
-  font-weight: 300;
-}
-
-/* 4. Locations Section */
-.locationsSection {
-  background-color: #F2F0F1; /* Clinical Canvas */
-  padding: 80px 24px;
-}
-
-@media (min-width: 1024px) {
-  .locationsSection {
-    padding: 100px 64px;
-  }
-}
-
-.locationsContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.sectionHeaderBlock {
-  margin-bottom: 56px;
-  max-width: 680px;
-}
-
-.sectionTitle {
-  font-size: 32px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #363633;
-  margin: 0 0 16px 0;
-}
-
-.sectionIntro {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #4E4D4D;
-  font-weight: 300;
-  margin: 0;
-}
-
-.locationsRow {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-@media (min-width: 992px) {
-  .locationsRow {
-    flex-direction: row;
-    align-items: stretch;
-  }
-  .activeColumn {
-    flex: 0 0 55%;
-  }
-  .secondaryColumn {
-    flex: 0 0 45%;
-  }
-}
-
+/* 2. Locations — WPB card */
 .locationCard {
   background-color: #EFEFEB; /* Off White */
   border: 1px solid rgba(54, 54, 51, 0.18);
@@ -532,16 +214,6 @@
   background-color: #363633;
   color: #F2F0F1;
   padding: 4px 10px;
-}
-
-.badgeUpcoming {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  border: 1px solid rgba(54, 54, 51, 0.32);
-  color: #4E4D4D;
-  padding: 3px 9px;
 }
 
 .locName {
@@ -588,17 +260,6 @@
   color: #363633;
 }
 
-.locNote {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #666463;
-  background-color: rgba(54, 54, 51, 0.03);
-  padding: 16px;
-  border-left: 2px solid #363633;
-  margin-bottom: 32px;
-  font-weight: 300;
-}
-
 .locBtnGroup {
   display: flex;
   flex-direction: column;
@@ -612,7 +273,7 @@
   }
 }
 
-.locBtnPrimary, .locBtnSecondary {
+.locBtnPrimary {
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   font-weight: 500;
@@ -629,9 +290,6 @@
   transition: all 0.3s ease;
   min-height: 44px;
   flex: 1;
-}
-
-.locBtnPrimary {
   background-color: #363633;
   color: #F2F0F1;
   border: 1px solid #363633;
@@ -649,25 +307,7 @@
   outline-offset: 2px;
 }
 
-.locBtnSecondary {
-  background-color: transparent;
-  color: #363633;
-  border: 1px solid rgba(54, 54, 51, 0.32);
-}
-
-@media (hover: hover) {
-  .locBtnSecondary:hover {
-    background-color: rgba(54, 54, 51, 0.04);
-    border-color: #363633;
-  }
-}
-
-.locBtnSecondary:focus-visible {
-  outline: 2px solid #363633;
-  outline-offset: 2px;
-}
-
-/* 5. Map Section */
+/* 3. Map Section */
 .mapCardSection {
   margin-top: 40px;
   border: 1px solid rgba(54, 54, 51, 0.18);
@@ -697,52 +337,6 @@
   margin: 0;
 }
 
-.mapPlaceholder {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  background-color: #CCC9C1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 24px;
-}
-
-/* Clean clinical map graphic overlay simulation */
-.mapGraphicBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(rgba(54, 54, 51, 0.12) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-.mapInnerContent {
-  position: relative;
-  z-index: 1;
-  max-width: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.mapLocationIcon {
-  color: #141313;
-}
-
-.mapAddressText {
-  font-size: 13px;
-  line-height: 1.5;
-  color: #363633;
-  font-weight: 300;
-  margin: 0;
-}
-
 .mapWpbIframe {
   width: 100%;
   height: 100%;
@@ -761,72 +355,7 @@
   background-color: #CCC9C1;
 }
 
-/* 6. Trust Section */
-.trustSection {
-  background-color: #F2F0F1; /* Clinical Canvas */
-  padding: 80px 24px;
-  border-top: 1px solid rgba(54, 54, 51, 0.18);
-}
-
-@media (min-width: 1024px) {
-  .trustSection {
-    padding: 100px 64px;
-  }
-}
-
-.trustContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.trustHeadline {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #363633;
-  text-align: center;
-  margin: 0 0 56px 0;
-}
-
-.trustGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-}
-
-@media (min-width: 768px) {
-  .trustGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.trustColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border-left: 1px solid rgba(54, 54, 51, 0.18);
-  padding-left: 24px;
-}
-
-.trustColTitle {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #363633;
-  margin: 0;
-}
-
-.trustColText {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #4E4D4D;
-  margin: 0;
-  font-weight: 300;
-}
-
-/* Restructured Two-Column Contact Layout */
+/* 4. Restructured Two-Column Contact Layout */
 .twoColumnCoreBlock {
   background-color: #F2F0F1; /* Clinical Canvas */
   padding: 64px 24px;
@@ -871,158 +400,7 @@
   }
 }
 
-/* Quick Action Bar */
-.quickActionBar {
-  background-color: #363633; /* Dark/Stone Authority bar */
-  padding: 40px 24px;
-  color: #F2F0F1;
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .quickActionBar {
-    padding: 60px 64px;
-  }
-}
-
-.quickActionContainer {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.quickActionGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-}
-
-@media (min-width: 768px) {
-  .quickActionGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.quickActionItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  border-bottom: 1px solid rgba(242, 240, 241, 0.12);
-  padding-bottom: 24px;
-}
-
-@media (min-width: 768px) {
-  .quickActionItem {
-    border-bottom: none;
-    padding-bottom: 0;
-    border-right: 1px solid rgba(242, 240, 241, 0.12);
-    padding-right: 16px;
-  }
-  .quickActionItem:last-child {
-    border-right: none;
-    padding-right: 0;
-  }
-}
-
-.quickActionLink {
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #F2F0F1;
-  text-decoration: none;
-  background-color: transparent;
-  border: 1px solid rgba(242, 240, 241, 0.32);
-  padding: 12px 24px;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 200px;
-}
-
-@media (hover: hover) {
-  .quickActionLink:hover {
-    background-color: #F2F0F1;
-    color: #141313;
-    border-color: #F2F0F1;
-  }
-}
-
-.quickActionLink:focus-visible {
-  outline: 2px solid #F2F0F1;
-  outline-offset: 2px;
-}
-
-.quickActionTitle {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #F2F0F1;
-  margin: 0;
-}
-
-.quickActionText {
-  font-size: 13px;
-  color: #CCC9C1;
-  margin: 0;
-  font-weight: 300;
-}
-
-/* 7. Legal Notice Accordion (collapsed by default, all breakpoints) */
-.legalAccordion {
-  border: 1px solid rgba(54, 54, 51, 0.15);
-  background-color: #EFEFEB;
-}
-
-.legalSummary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 16px;
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #363633;
-  cursor: pointer;
-  list-style: none;
-}
-
-.legalSummary::-webkit-details-marker {
-  display: none;
-}
-
-.legalSummary:focus-visible {
-  outline: 2px solid #363633;
-  outline-offset: -2px;
-}
-
-.legalSummaryIcon {
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-
-.legalAccordion[open] .legalSummaryIcon {
-  transform: rotate(180deg);
-}
-
-/* 8. Paired field row (Nombre + Teléfono) */
-.fieldRow {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-@media (min-width: 768px) {
-  .fieldRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-}
-
-/* Start block (replaces the removed contact form) */
+/* 5. Start block (replaces the removed contact form) */
 .startBlock {
   display: flex;
   flex-direction: column;
@@ -1119,4 +497,3 @@
   outline: 2px solid #363633;
   outline-offset: 2px;
 }
-

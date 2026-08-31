@@ -20,7 +20,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL SIN UN CAMBIO ARTIFICIAL',
+      headline: 'Si buscas mejorar la calidad visible de tu piel sin un cambio artificial',
       body: 'Plasma Rico en Plaquetas y Fibrina pueden ser una opción para quienes desean acompañar la firmeza, textura, luminosidad y apariencia general de la piel mediante un protocolo personalizado y progresivo.',
       list: [
         'Piel con pérdida de luminosidad',
@@ -38,7 +38,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'BIOESTIMULACIÓN CUTÁNEA CON UN ENFOQUE NATURAL Y PROGRESIVO',
+      headline: 'Bioestimulación cutánea con un enfoque natural y progresivo',
       list: [
         {
           title: 'APOYO A LA FIRMEZA',
@@ -56,7 +56,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DISEÑADO PARA ESTIMULAR LA RESPUESTA NATURAL DE LA PIEL',
+      headline: 'Un protocolo diseñado para estimular la respuesta natural de la piel',
       body: 'El tratamiento se basa en la obtención y preparación de componentes autólogos para aplicarlos dentro de un protocolo personalizado, con el objetivo de acompañar la calidad visible de la piel de forma progresiva.',
       steps: [
         {
@@ -83,7 +83,7 @@ export const landingPages = {
     },
     beforeAfter: {
       eyebrow: 'RESULTADOS',
-      headline: 'EVOLUCIÓN VISIBLE, PROGRESIVA Y PERSONALIZADA',
+      headline: 'Evolución visible, progresiva y personalizada',
       items: [
         {
           before: '/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.mp4',
@@ -178,7 +178,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE SI PLASMA RICO EN PLAQUETAS Y FIBRINA ES ADECUADO PARA TU PIEL',
+      headline: 'Descubre si Plasma Rico en Plaquetas y Fibrina es adecuado para tu piel',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo puede acompañar tus objetivos de firmeza, textura y luminosidad.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -207,7 +207,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS UNA PIEL MÁS LIMPIA, EQUILIBRADA Y PREPARADA',
+      headline: 'Si buscas una piel más limpia, equilibrada y preparada',
       body: 'La Limpieza Facial Profunda puede ayudarte a remover impurezas, mejorar la sensación de frescura y preparar la piel para absorber mejor los activos de cuidado.',
       list: [
         'Poros congestionados',
@@ -222,7 +222,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'UNA PIEL MÁS LIMPIA, FRESCA Y EQUILIBRADA',
+      headline: 'Una piel más limpia, fresca y equilibrada',
       list: [
         {
           title: 'PURIFICACIÓN PROFUNDA',
@@ -240,7 +240,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DE LIMPIEZA PROFUNDA ADAPTADO A TU PIEL',
+      headline: 'Un protocolo de limpieza profunda adaptado a tu piel',
       body: 'El tratamiento combina evaluación, limpieza, preparación y cuidado personalizado para apoyar una piel más equilibrada y renovada.',
       steps: [
         {
@@ -267,7 +267,7 @@ export const landingPages = {
     },
     beforeAfter: {
       eyebrow: 'RESULTADOS',
-      headline: 'UNA PIEL VISUALMENTE MÁS LIMPIA Y RENOVADA',
+      headline: 'Una piel visualmente más limpia y renovada',
       items: [
         {
           before: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg',
@@ -348,7 +348,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'EMPIEZA CON UNA LIMPIEZA FACIAL PERSONALIZADA',
+      headline: 'Empieza con una limpieza facial personalizada',
       body: 'Agenda tu cita y recibe orientación profesional para definir si este protocolo es adecuado para tu piel y tus objetivos de cuidado.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -377,7 +377,7 @@ export const landingPages = {
     ],
     problem: {
       eyebrow: 'CUÁNDO CONSIDERARLO',
-      headline: 'SI BUSCAS ACOMPAÑAR TU RECUPERACIÓN CON CUIDADO PROFESIONAL',
+      headline: 'Si buscas acompañar tu recuperación con cuidado profesional',
       body: 'Los tratamientos postoperatorios pueden apoyar el proceso de recuperación corporal mediante protocolos enfocados en drenaje, inflamación, fibrosis y acompañamiento personalizado.',
       list: [
         'Inflamación o retención de líquidos',
@@ -392,7 +392,7 @@ export const landingPages = {
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
-      headline: 'APOYO PROFESIONAL PARA UNA RECUPERACIÓN MÁS CÓMODA',
+      headline: 'Apoyo profesional para una recuperación más cómoda',
       list: [
         {
           title: 'DRENAJE LINFÁTICO',
@@ -410,7 +410,7 @@ export const landingPages = {
     },
     howItWorks: {
       eyebrow: 'CÓMO FUNCIONA',
-      headline: 'UN PROTOCOLO DE ACOMPAÑAMIENTO SEGÚN TU ETAPA DE RECUPERACIÓN',
+      headline: 'Un protocolo de acompañamiento según tu etapa de recuperación',
       body: 'El tratamiento se adapta a tu proceso, zona tratada y evolución visible para acompañar la recuperación con técnicas profesionales y orientación clara.',
       steps: [
         {
@@ -439,7 +439,7 @@ export const landingPages = {
       layout: 'carousel',
       variant: 'light',
       eyebrow: 'RESULTADOS',
-      headline: 'ACOMPAÑAMIENTO VISIBLE DURANTE TU PROCESO DE RECUPERACIÓN',
+      headline: 'Acompañamiento visible durante tu proceso de recuperación',
       items: [
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-1.jpg',
@@ -566,7 +566,7 @@ export const landingPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'ACOMPAÑA TU RECUPERACIÓN CON CUIDADO PROFESIONAL',
+      headline: 'Acompaña tu recuperación con cuidado profesional',
       body: 'Agenda tu cita y recibe orientación profesional para definir el protocolo postoperatorio más adecuado según tu proceso.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',

@@ -9,7 +9,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **`TreatmentDetailPage.jsx`:** `<FAQAccordion emitSchema={false} … />`.
 - **Why:** SEO-07. Treatment routes emitted two separate `ld+json` `<script>`s (Service+Breadcrumb from `TreatmentSEO`, FAQPage from `FAQAccordion`) — `react-helmet-async` can merge/drop sibling scripts without unique keys → rich-results risk; and the FAQ was unlinked from the Service. One connected `@graph` fixes both. Enfoque A (opt-out prop), no shared helper (YAGNI). See `DECISIONS.md` 2026-08-31. Spec: `docs/superpowers/specs/2026-08-31-treatment-jsonld-graph-seo-07-design.md`.
 - **Verified:** browser `:3000` — 5 treatment routes (one per category): exactly 1 `ld+json`, `@graph` = `[Service, BreadcrumbList, MedicalWebPage, FAQPage]`, `FAQPage.about['@id']` === `Service['@id']`, breadcrumb has `@id`, no standalone `FAQPage`. `/limpieza-facial-profunda`, `/contacto`, `/prf-y-fibrina`, `/tratamientos-postoperatorios`: their `FAQPage` still present. FAQ accordion renders/works; no React warnings. **`test:visual` skipped** — schema-only in `<head>`, `FAQAccordion`'s rendered markup is byte-identical (per `CLAUDE.md` §DoD). No new copy → MEDICAL_COMPLIANCE n/a. Google Rich Results Test = manual at deploy.
-- Closes audit Task 14 (SEO-07). Commit `<pending>`.
+- Closes audit Task 14 (SEO-07). Commit `2b89dd3`.
 
 ---
 

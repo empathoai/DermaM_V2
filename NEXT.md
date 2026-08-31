@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `PENDING` (cont. 43 — Task 27: AboutPage testimonials padding → `clamp()`).
+Base commit = `3587bcf` (cont. 43 — Task 27: AboutPage testimonials padding → `clamp()`).
 Clean tree, **pushed**. Prior: `b121009` (cont. 42 testimonial card unification), `e1ef938` (doc).
 Dev server `:3000` = running (external, PID not ours).
 
@@ -31,13 +31,7 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
 **Next: Task 25** (CPY-07, L) — inconsistent ES title capitalization/style across `src/data/*`.
-
-Task 27 (UX-12) done cont. 43 — `.testimonialsContainer` horizontal padding → `clamp(24px, 4vw, 64px)`,
-vertical 80/120px kept (section rhythm), see `DECISIONS.md` 2026-08-31.
-Task 19 (UX-08) done cont. 41 — kept `.heroOverlay` scrim (sitewide pattern), see `DECISIONS.md` 2026-08-31.
-Task 22 (SEO-08) closed no-op cont. 41 — PRF cannibalization already resolved, see `DECISIONS.md` 2026-08-31.
-Task 24 (CPY-05) done cont. 41 — `marcas permanentes` → `persistentes` (`treatmentPages.js:478`).
-Task 26 (UX-11) done cont. 41 — Footer disclaimer `text-[11px]` → `text-[12px]` (`Footer.jsx:102,105`), no snapshot framed it.
+Rationale for closed tasks 19/22/24/26/27 → `DECISIONS.md` 2026-08-31 + `PROGRESS_ARCHIVE.md`.
 
 Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
 

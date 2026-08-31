@@ -10,7 +10,8 @@ export default function FAQAccordion({
   support,
   items,
   variant = 'warm',
-  layout = 'split'
+  layout = 'split',
+  emitSchema = true
 }) {
   const [openIndex, setOpenIndex] = useState(null);
   const sectionId = useId();
@@ -37,9 +38,11 @@ export default function FAQAccordion({
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      </Helmet>
+      {emitSchema && (
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        </Helmet>
+      )}
       <section
         className={`${styles.section} ${styles[variant]}`}
         aria-labelledby={headline ? `${sectionId}-heading` : undefined}

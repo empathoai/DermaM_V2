@@ -14,8 +14,10 @@ const HUB = {
 
 /**
  * Full <head> for a treatment detail page: title, description, canonical, robots,
- * Open Graph / Twitter, and a Service + BreadcrumbList JSON-LD @graph.
- * The FAQPage JSON-LD is emitted separately by FAQAccordion — not here.
+ * Open Graph / Twitter, and one JSON-LD @graph — Service + BreadcrumbList, plus
+ * FAQPage (when data.faq is present) and MedicalWebPage (when data.contentUpdated),
+ * all linked by @id. On treatment routes FAQAccordion is rendered with
+ * emitSchema={false} so this is the only ld+json block.
  */
 export default function TreatmentSEO({ data, categorySlug, slug }) {
   if (!data) return null;
@@ -54,6 +56,7 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       },
       {
         '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE}/` },
           { '@type': 'ListItem', position: 2, name: hubName, item: `${SITE}/${categorySlug}` },
@@ -73,6 +76,20 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       isPartOf: { '@id': `${SITE}/#website` },
       about: { '@id': `${url}#service` },
       dateModified: data.contentUpdated,
+    });
+  }
+
+  if (Array.isArray(data.faq) && data.faq.length > 0) {
+    graph['@graph'].push({
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      inLanguage: 'es',
+      about: { '@id': `${url}#service` },
+      mainEntity: data.faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
     });
   }
 

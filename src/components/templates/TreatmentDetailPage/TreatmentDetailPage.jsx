@@ -279,6 +279,7 @@ export default function TreatmentDetailPage({ data }) {
 
       {/* 13. Canonical FAQ */}
       <FAQAccordion
+        emitSchema={false}
         headline={faqHeadline}
         items={faq}
       />

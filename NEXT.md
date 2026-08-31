@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `af5e46c` (Task 21 done, cont. 36). Clean tree, **pushed**.
-Dev server `:3000` = stopped at end of cont. 36. Restart with `npm run dev` on resume.
+Base commit = `<pending>` (Task 14 done, cont. 37). Clean tree, **pushed**.
+Dev server `:3000` = stopped at end of cont. 37. Restart with `npm run dev` on resume.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -19,20 +19,23 @@ Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment he
 media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-Done (cont. 32–36, detail in `docs/PROGRESS_ARCHIVE.md`): Task 11 (UX-05), Task 18 (UX-07),
+Done (cont. 32–37, detail in `docs/PROGRESS_ARCHIVE.md`): Task 11 (UX-05), Task 18 (UX-07),
 Task 10 (CPY-06), Task 12 (SEO-06 `robots.txt`), Task 13 (SEO-09 sitemap `<lastmod>`),
-Task 20 (UX-09 — FeaturedServices bullets → `<ListSparkle />`), Task 21 (UX-10 — skip-to-content
-link + `#main-content` sentinel in `Navbar`; `DECISIONS.md` 2026-08-31).
+Task 20 (UX-09 — bullets → `<ListSparkle />`), Task 21 (UX-10 — skip-to-content link in `Navbar`),
+Task 14 (SEO-07 — treatment JSON-LD consolidated into one `@graph`; `FAQAccordion` gains
+`emitSchema` prop; `DECISIONS.md` 2026-08-31).
 
-**Next: Task 14** — consolidate treatment JSON-LD into one `@graph` (SEO-07). M. Not blocked.
+**Next: Task 15** — `tú`/`usted` inconsistent across legal docs (CPY-03). M. Not blocked.
+Brainstorm the register rule (recommend: respectful `tú` everywhere), then sweep
+`TreatmentDisclaimer` / `NoticePrivacyPractices` / `Accessibility` + their `legalPages.js` sources.
+Cross-check `MEDICAL_COMPLIANCE.md` (grammar person only). Ref tone already tutea: `legalPages.js:14,43,384,436`.
 Remaining PROTECTED item: Task 23 (`llms.txt` legal links, XS).
 
-Order: **14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |
 | 15 | `tú`/`usted` inconsistent across legal documents (CPY-03) | M | |
 | 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
 | 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |

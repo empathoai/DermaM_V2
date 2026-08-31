@@ -71,10 +71,10 @@ export default function Accessibility() {
       content: (
         <>
           <p>
-            Si usted experimenta cualquier dificultad de visualización o navegación en alguna sección específica de este sitio oficial de DERMA.M, LLC, o si tiene alguna recomendación de cómo optimizar la accesibilidad inclusiva del portal, por favor contáctenos de inmediato por correo electrónico o por vía telefónica.
+            Si experimentas cualquier dificultad de visualización o navegación en alguna sección específica de este sitio oficial de DERMA.M, LLC, o si tienes alguna recomendación de cómo optimizar la accesibilidad inclusiva del portal, por favor contáctanos de inmediato por correo electrónico o por vía telefónica.
           </p>
           <p>
-            Al reportarnos una barrera de accesibilidad, le agradeceríamos especificar de forma detallada la página o elemento exacto (especificando si navega desde móvil o escritorio) que provocó el bloqueo técnico, a fin de que nuestro equipo de soporte informático responda y resuelva el inconveniente con la mayor diligencia posible.
+            Al reportarnos una barrera de accesibilidad, te agradeceríamos especificar de forma detallada la página o elemento exacto (especificando si navegas desde móvil o escritorio) que provocó el bloqueo técnico, a fin de que nuestro equipo de soporte informático responda y resuelva el inconveniente con la mayor diligencia posible.
           </p>
         </>
       )
@@ -86,7 +86,7 @@ export default function Accessibility() {
       content: (
         <>
           <p>
-            Para reportes de accesibilidad o asistencia especial para coordinar citas, comuníquese con nuestro equipo:
+            Para reportes de accesibilidad o asistencia especial para coordinar citas, comunícate con nuestro equipo:
           </p>
           <div className="p-5 border border-[#363633]/10 bg-[#EFEFEB] text-xs mt-4">
             <p className="font-semibold uppercase text-[#141313] mb-2">DERMA.M, LLC</p>

@@ -38,7 +38,7 @@ export default function NoticePrivacyPractices() {
       content: (
         <>
           <p>
-            Este Aviso regiría obligatoriamente en el caso en que se determine que DERMA.M, LLC califica como un "Proveedor de Atención Médica Cubierto" que realiza de forma electrónica transacciones estándar de salud. En tal escenario, se regularía la recolección, uso y transferencia del historial dermo-cosmético o datos clínicos que identifiquen directa o indirectamente su estado de salud psicofísica.
+            Este Aviso regiría obligatoriamente en el caso en que se determine que DERMA.M, LLC califica como un "Proveedor de Atención Médica Cubierto" que realiza de forma electrónica transacciones estándar de salud. En tal escenario, se regularía la recolección, uso y transferencia del historial dermo-cosmético o datos clínicos que identifiquen directa o indirectamente tu estado de salud psicofísica.
           </p>
         </>
       )
@@ -50,7 +50,7 @@ export default function NoticePrivacyPractices() {
       content: (
         <>
           <p>
-            Bajo las directrices federales, la Información de Salud Protegida (PHI) incluye datos demográficos, antecedentes médicos, informes diagnósticos de la dermis, fotografías clínicas de historial de tratamiento tomadas en el medical spa e información de facturación médica asociada a su perfil que sea transmitida o conservada físicamente por nuestras instalaciones.
+            Bajo las directrices federales, la Información de Salud Protegida (PHI) incluye datos demográficos, antecedentes médicos, informes diagnósticos de la dermis, fotografías clínicas de historial de tratamiento tomadas en el medical spa e información de facturación médica asociada a tu perfil que sea transmitida o conservada físicamente por nuestras instalaciones.
           </p>
         </>
       )
@@ -65,12 +65,12 @@ export default function NoticePrivacyPractices() {
             En caso de activación regulatoria, la PHI sólo podría ser utilizada o revelada para los fines principales definidos por la ley HIPAA como <strong>TPO (Treatment, Payment, and Healthcare Operations)</strong>:
           </p>
           <ul className="list-disc pl-6 space-y-2 mt-2">
-            <li><strong>Tratamiento (Treatment):</strong> Coordinar sus servicios estéticos y clínicos entre los especialistas, esteticistas licenciadas y el director médico.</li>
+            <li><strong>Tratamiento (Treatment):</strong> Coordinar tus servicios estéticos y clínicos entre los especialistas, esteticistas licenciadas y el director médico.</li>
             <li><strong>Pagos (Payment):</strong> Procesar cobros de depósitos, financiamientos estéticos externos o realizar comprobantes de caja corporativa.</li>
             <li><strong>Operaciones de Salud (Operations):</strong> Llevar a cabo controles internos de calidad clínica de técnicas aplicadas, capacitación de personal o auditorías de cumplimiento.</li>
           </ul>
           <p className="mt-4 text-[#363633]">
-            Cualquier otro uso o transferencia de su PHI (con fines publicitarios directos, patrocinios externos o transferencia a terceros ajenos al centro) requeriría expresamente su <strong>Autorización Escrita Firmada</strong>.
+            Cualquier otro uso o transferencia de tu PHI (con fines publicitarios directos, patrocinios externos o transferencia a terceros ajenos al centro) requeriría expresamente tu <strong>Autorización Escrita Firmada</strong>.
           </p>
         </>
       )
@@ -117,7 +117,7 @@ export default function NoticePrivacyPractices() {
       content: (
         <>
           <p>
-            De suscitarse un acceso no autorizado o incidente cibernético que vulnere la privacidad de su Información de Salud Protegida desprovista de cifrado válido, asumimos el compromiso de notificarle formalmente a su dirección de contacto del incidente en los plazos exigidos en la reglamentación federal aplicable.
+            De suscitarse un acceso no autorizado o incidente cibernético que vulnere la privacidad de tu Información de Salud Protegida desprovista de cifrado válido, asumimos el compromiso de notificarte formalmente a tu dirección de contacto del incidente en los plazos exigidos en la reglamentación federal aplicable.
           </p>
         </>
       )
@@ -129,7 +129,7 @@ export default function NoticePrivacyPractices() {
       content: (
         <>
           <p>
-            Si usted sospecha que sus derechos de privacidad correspondientes a sus datos de salud han sido vulnerados o desea interponer una queja, puede remitirla directamente a nuestro Delegado de Privacidad o bien elevarla formalmente ante la Oficina de Derechos Civiles (OCR) del Departamento de Salud y Servicios Humanos (HHS) de los EE. UU.
+            Si sospechas que tus derechos de privacidad correspondientes a tus datos de salud han sido vulnerados o deseas interponer una queja, puedes remitirla directamente a nuestro Delegado de Privacidad o bien elevarla formalmente ante la Oficina de Derechos Civiles (OCR) del Departamento de Salud y Servicios Humanos (HHS) de los EE. UU.
           </p>
           <div className="p-5 border border-[#363633]/15 bg-[#EFEFEB] text-xs mt-4">
             <p className="font-semibold uppercase tracking-wider text-[#141313] mb-2">DERMA.M, LLC — OFICINA DE PRIVACIDAD (PROPUESTA)</p>

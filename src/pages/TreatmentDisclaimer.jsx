@@ -15,7 +15,7 @@ export default function TreatmentDisclaimer() {
       content: (
         <>
           <p>
-            Tanto el contenido editado en el sitio web oficial de <strong>DERMA.M, LLC</strong>, como las publicaciones, folletos o vídeos descriptivos promocionales compartidos a través de redes estéticas digitales, poseen fines educativos e informativos exclusivamente. No pretenden reemplazar, emular ni evadir la consulta médica formal, diagnóstico personalizado ni prescripción facultativa proporcionada por su terapeuta de cabecera o especialista en salud certificado.
+            Tanto el contenido editado en el sitio web oficial de <strong>DERMA.M, LLC</strong>, como las publicaciones, folletos o vídeos descriptivos promocionales compartidos a través de redes estéticas digitales, poseen fines educativos e informativos exclusivamente. No pretenden reemplazar, emular ni evadir la consulta médica formal, diagnóstico personalizado ni prescripción facultativa proporcionada por tu terapeuta de cabecera o especialista en salud certificado.
           </p>
           <p className="italic text-xs text-[#363633]/70 mt-4">
             The content provided on this website, social media, and other digital platforms is for general educational and informational purposes only. It does not replace or constitute a professional medical evaluation, diagnosis, or prescription from a licensed healthcare provider.
@@ -53,7 +53,7 @@ export default function TreatmentDisclaimer() {
       content: (
         <>
           <p>
-            El campo de la medicina estética y el tratamiento dermo-cosmético no es una ciencia exacta en la cual se puedan prometer u ofrecer garantías absolutas de éxito o transformación. Ningún profesional o empleado clínico de <strong>DERMA.M, LLC</strong> puede, de forma verbal o escrita, garantizar que usted obtendrá un cambio estético permanente ni una eliminación absoluta de manchas, arrugas o flacidez. Se le guiará respecto de expectativas reales basadas en experiencia estadística previa.
+            El campo de la medicina estética y el tratamiento dermo-cosmético no es una ciencia exacta en la cual se puedan prometer u ofrecer garantías absolutas de éxito o transformación. Ningún profesional o empleado clínico de <strong>DERMA.M, LLC</strong> puede, de forma verbal o escrita, garantizar que obtendrás un cambio estético permanente ni una eliminación absoluta de manchas, arrugas o flacidez. Te guiaremos respecto de expectativas reales basadas en experiencia estadística previa.
           </p>
         </>
       )
@@ -65,7 +65,7 @@ export default function TreatmentDisclaimer() {
       content: (
         <>
           <p>
-            Previa realización de cualquier protocolo avanzado (como PRP, peelings químicos fuertes, aparatología láser, microagujoneamiento, terapia intravenosa, etc.), es estrictamente indispensable completar una consulta personal de evaluación de tez. En este proceso de cribado clínico se analizará su historia, hábitos y posibles contraindicaciones que invaliden o pospongan el tratamiento por motivos éticos y de seguridad física.
+            Previa realización de cualquier protocolo avanzado (como PRP, peelings químicos fuertes, aparatología láser, microagujoneamiento, terapia intravenosa, etc.), es estrictamente indispensable completar una consulta personal de evaluación de tez. En este proceso de cribado clínico se analizará tu historia, hábitos y posibles contraindicaciones que invaliden o pospongan el tratamiento por motivos éticos y de seguridad física.
           </p>
         </>
       )
@@ -104,7 +104,7 @@ export default function TreatmentDisclaimer() {
             <p className="font-light text-[#363633]/80">"Before-and-after photographs and testimonials may reflect real individual experiences, but they are examples only. Results vary and are not guaranteed."</p>
           </blockquote>
           <p className="mt-4">
-            Las fotografías representan casos específicos clínicamente evaluados con protocolos a medida. Las condiciones de iluminación, ángulos de captura y variaciones de cámara se cuidan al máximo para reflejar realismo, pero de ningún modo constituyen una promesa implícita de que su rostro o estructura corporal responderá idénticamente al tratamiento.
+            Las fotografías representan casos específicos clínicamente evaluados con protocolos a medida. Las condiciones de iluminación, ángulos de captura y variaciones de cámara se cuidan al máximo para reflejar realismo, pero de ningún modo constituyen una promesa implícita de que tu rostro o estructura corporal responderá idénticamente al tratamiento.
           </p>
         </>
       )
@@ -136,7 +136,7 @@ export default function TreatmentDisclaimer() {
               Our digital platform, general forms, and online chat are not continuously monitored and are not clinically equipped to handle medical emergencies or severe, life-threatening skin trauma.
             </p>
             <p className="italic">
-              Si usted está experimentando una reacción alérgica repentina grave (por ejemplo, anafilaxia, dificultad para respirar, quemadura grave o dolor agudo imprevisto), por favor llame de inmediato al número de emergencia general de los Estados Unidos (<strong>911</strong>) o acuda a la sala de urgencias hospitalarias más cercana a su residencia.
+              Si estás experimentando una reacción alérgica repentina grave (por ejemplo, anafilaxia, dificultad para respirar, quemadura grave o dolor agudo imprevisto), por favor llama de inmediato al número de emergencia general de los Estados Unidos (<strong>911</strong>) o acude a la sala de urgencias hospitalarias más cercana a tu domicilio.
             </p>
             <p className="italic font-light text-[#363633]/80">
               If you are experiencing a sudden severe allergic reaction (for example, anaphylaxis, difficulty breathing, a serious burn, or unexpected acute pain), call the United States general emergency number (<strong>911</strong>) immediately or go to the nearest hospital emergency room.
@@ -152,7 +152,7 @@ export default function TreatmentDisclaimer() {
       content: (
         <>
           <p>
-            Si desea esclarecer dudas adicionales respecto de las condiciones de idoneidad o contraindicaciones de nuestros tratamientos médicos estéticos, escríbanos de inmediato:
+            Si quieres esclarecer dudas adicionales respecto de las condiciones de idoneidad o contraindicaciones de nuestros tratamientos médicos estéticos, escríbenos de inmediato:
           </p>
           <div className="p-5 border border-[#363633]/10 bg-[#EFEFEB] text-xs mt-4">
             <p className="font-semibold uppercase text-[#141313] mb-2">DERMA.M, LLC</p>

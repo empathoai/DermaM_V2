@@ -33,7 +33,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'FACIALES',
-      headline: 'TRATAMIENTOS DISEÑADOS PARA RENOVAR, EQUILIBRAR Y CUIDAR TU PIEL',
+      headline: 'Tratamientos diseñados para renovar, equilibrar y cuidar tu piel',
       body: 'En Derma.M trabajamos tratamientos faciales personalizados para acompañar distintas necesidades de la piel, desde limpieza profunda y luminosidad hasta textura, manchas, acné y rejuvenecimiento.',
       image: '/assets/images/hubs/faciales/overview.jpg'
     },
@@ -297,7 +297,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS MEJORAR LA CALIDAD VISIBLE DE TU PIEL',
+      headline: 'Si buscas mejorar la calidad visible de tu piel',
       list: [
         'Piel opaca o con textura irregular',
         'Poros congestionados',
@@ -308,7 +308,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DEL CUIDADO FACIAL EN DERMA.M',
+      headline: 'Beneficios del cuidado facial en Derma.M',
       list: [
         {
           title: 'PIEL MÁS EQUILIBRADA',
@@ -326,7 +326,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'CADA PIEL REQUIERE UNA MIRADA PERSONALIZADA',
+      headline: 'Cada piel requiere una mirada personalizada',
       body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, el estado visible de tu piel y el protocolo más adecuado para acompañarte con claridad y cuidado.'
     },
     process: {
@@ -375,7 +375,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'EMPIEZA CON UN CUIDADO FACIAL PERSONALIZADO',
+      headline: 'Empieza con un cuidado facial personalizado',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el tratamiento facial más adecuado para ti.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -415,7 +415,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'CORPORALES',
-      headline: 'TRATAMIENTOS DISEÑADOS PARA ACOMPAÑAR TU CUERPO CON PRECISIÓN',
+      headline: 'Tratamientos diseñados para acompañar tu cuerpo con precisión',
       body: 'En Derma.M trabajamos protocolos corporales personalizados para acompañar objetivos estéticos, bienestar físico, recuperación y cuidado integral del cuerpo.',
       image: '/assets/images/hubs/corporales/overview.jpg'
     },
@@ -564,7 +564,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS ACOMPAÑAR TU CUERPO CON CUIDADO PROFESIONAL',
+      headline: 'Si buscas acompañar tu cuerpo con cuidado profesional',
       list: [
         'Recuperación corporal postoperatoria',
         'Inflamación o retención de líquidos',
@@ -575,7 +575,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DEL CUIDADO CORPORAL EN DERMA.M',
+      headline: 'Beneficios del cuidado corporal en Derma.M',
       list: [
         {
           title: 'ACOMPAÑAMIENTO PERSONALIZADO',
@@ -593,7 +593,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'CADA CUERPO REQUIERE UN PLAN ADAPTADO',
+      headline: 'Cada cuerpo requiere un plan adaptado',
       body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, tu proceso corporal y el protocolo más adecuado para acompañarte con seguridad, claridad y cuidado.'
     },
     process: {
@@ -642,7 +642,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'EMPIEZA CON UN CUIDADO CORPORAL PERSONALIZADO',
+      headline: 'Empieza con un cuidado corporal personalizado',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el tratamiento corporal más adecuado para ti.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -683,7 +683,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'LÁSER Y LUZ',
-      headline: 'TRATAMIENTOS CON TECNOLOGÍA PARA ACOMPAÑAR LA CALIDAD VISIBLE DE TU PIEL',
+      headline: 'Tratamientos con tecnología para acompañar la calidad visible de tu piel',
       body: 'En Derma.M trabajamos protocolos de láser y luz orientados a mejorar la apariencia de la piel, apoyar renovación, textura, manchas, depilación y otros objetivos estéticos personalizados.',
       image: '/assets/images/hubs/laser-y-luz/overview.jpg'
     },
@@ -725,7 +725,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS TECNOLOGÍA PARA ACOMPAÑAR CAMBIOS VISIBLES EN TU PIEL',
+      headline: 'Si buscas tecnología para acompañar cambios visibles en tu piel',
       list: [
         'Vello facial o corporal no deseado',
         'Manchas visibles o tono irregular',
@@ -736,7 +736,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DE LÁSER Y LUZ EN DERMA.M',
+      headline: 'Beneficios de Láser y Luz en Derma.M',
       list: [
         {
           title: 'TECNOLOGÍA SELECCIONADA',
@@ -754,7 +754,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'LA TECNOLOGÍA DEBE APLICARSE CON CRITERIO',
+      headline: 'La tecnología debe aplicarse con criterio',
       body: 'Antes de recomendar un protocolo de láser o luz, evaluamos tu piel, tus objetivos y las condiciones necesarias para elegir una opción adecuada y segura.'
     },
     process: {
@@ -803,7 +803,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE QUÉ TECNOLOGÍA ES ADECUADA PARA TU PIEL',
+      headline: 'Descubre qué tecnología es adecuada para tu piel',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo de láser o luz más adecuado para tus objetivos.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -844,7 +844,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'DENTAL ESTÉTICO',
-      headline: 'TRATAMIENTOS PARA CUIDAR LA APARIENCIA VISIBLE DE TU SONRISA',
+      headline: 'Tratamientos para cuidar la apariencia visible de tu sonrisa',
       body: 'En Derma.M acompañamos el cuidado dental estético con protocolos orientados a mejorar la apariencia visible de la sonrisa desde una experiencia profesional, clara y personalizada.',
       image: '/assets/images/hubs/dental-estetico/overview.jpg'
     },
@@ -887,7 +887,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS CUIDAR LA ESTÉTICA VISIBLE DE TU SONRISA',
+      headline: 'Si buscas cuidar la estética visible de tu sonrisa',
       list: [
         'Sonrisa opaca o con pérdida de luminosidad',
         'Necesidad de limpieza profesional',
@@ -898,7 +898,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DEL CUIDADO DENTAL ESTÉTICO EN DERMA.M',
+      headline: 'Beneficios del cuidado dental estético en Derma.M',
       list: [
         {
           title: 'SONRISA MÁS LUMINOSA',
@@ -916,7 +916,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'UNA SONRISA CUIDADA TAMBIÉN ES PARTE DE TU BIENESTAR',
+      headline: 'Una sonrisa cuidada también es parte de tu bienestar',
       body: 'Antes de recomendar un tratamiento dental estético, evaluamos tus objetivos visibles y el protocolo más adecuado para acompañarte con claridad y cuidado profesional.'
     },
     process: {
@@ -965,7 +965,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE CÓMO CUIDAR LA ESTÉTICA DE TU SONRISA',
+      headline: 'Descubre cómo cuidar la estética de tu sonrisa',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo dental estético más adecuado para ti.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -1006,7 +1006,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'IV THERAPY',
-      headline: 'TERAPIAS DISEÑADAS PARA ACOMPAÑAR TU BIENESTAR GENERAL',
+      headline: 'Terapias diseñadas para acompañar tu bienestar general',
       body: 'En Derma.M ofrecemos opciones de IV Therapy orientadas a apoyar hidratación, recuperación, energía y bienestar desde una experiencia profesional, cómoda y personalizada.',
       image: '/assets/images/hubs/iv-therapy/overview.jpg'
     },
@@ -1107,7 +1107,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS ACOMPAÑAR TU BIENESTAR DESDE UNA EXPERIENCIA PERSONALIZADA',
+      headline: 'Si buscas acompañar tu bienestar desde una experiencia personalizada',
       list: [
         'Necesidad de hidratación',
         'Sensación de cansancio o baja energía',
@@ -1118,7 +1118,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DE IV THERAPY EN DERMA.M',
+      headline: 'Beneficios de IV Therapy en Derma.M',
       list: [
         {
           title: 'HIDRATACIÓN Y BIENESTAR',
@@ -1136,7 +1136,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'EL BIENESTAR TAMBIÉN REQUIERE ORIENTACIÓN PROFESIONAL',
+      headline: 'El bienestar también requiere orientación profesional',
       body: 'Antes de recomendar una sesión de IV Therapy, escuchamos tus objetivos y revisamos tus necesidades para orientarte con claridad y cuidado.'
     },
     process: {
@@ -1185,7 +1185,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'DESCUBRE SI IV THERAPY ES ADECUADO PARA TI',
+      headline: 'Descubre si IV Therapy es adecuado para ti',
       body: 'Agenda tu cita y recibe orientación profesional sobre opciones de bienestar adaptadas a tus objetivos.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',
@@ -1226,7 +1226,7 @@ export const categoryPages = {
     ],
     overview: {
       eyebrow: 'CAPILAR',
-      headline: 'TRATAMIENTOS PARA ACOMPAÑAR LA SALUD Y APARIENCIA DEL CABELLO',
+      headline: 'Tratamientos para acompañar la salud y apariencia del cabello',
       body: 'En Derma.M trabajamos el cuidado capilar desde una mirada profesional y personalizada, orientada a apoyar la apariencia, fortaleza y bienestar visible del cabello.',
       image: '/assets/images/hubs/capilar/overview.jpg'
     },
@@ -1253,7 +1253,7 @@ export const categoryPages = {
     },
     whoFor: {
       eyebrow: 'PARA QUIÉN ES',
-      headline: 'SI BUSCAS ACOMPAÑAR EL CUIDADO Y APARIENCIA DE TU CABELLO',
+      headline: 'Si buscas acompañar el cuidado y apariencia de tu cabello',
       list: [
         'Pérdida de fortaleza visible',
         'Cabello débil o con apariencia apagada',
@@ -1264,7 +1264,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'BENEFICIOS DEL CUIDADO CAPILAR EN DERMA.M',
+      headline: 'Beneficios del cuidado capilar en Derma.M',
       list: [
         {
           title: 'ORIENTACIÓN PERSONALIZADA',
@@ -1282,7 +1282,7 @@ export const categoryPages = {
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
-      headline: 'EL CUIDADO CAPILAR REQUIERE UNA MIRADA PERSONALIZADA',
+      headline: 'El cuidado capilar requiere una mirada personalizada',
       body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, la apariencia visible del cabello y el protocolo más adecuado para acompañarte con claridad y cuidado.'
     },
     process: {
@@ -1331,7 +1331,7 @@ export const categoryPages = {
     },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
-      headline: 'EMPIEZA CON UN CUIDADO CAPILAR PERSONALIZADO',
+      headline: 'Empieza con un cuidado capilar personalizado',
       body: 'Agenda tu cita y recibe orientación profesional para elegir el protocolo capilar más adecuado para tus objetivos.',
       primaryCta: 'AGENDA TU VALORACIÓN',
       secondaryCta: 'WHATSAPP',

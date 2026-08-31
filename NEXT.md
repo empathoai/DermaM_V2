@@ -15,17 +15,19 @@ Dev server `:3000` = started this session (pane); stop it at session end.
 
 Done: Tasks 1, 3, 4, 5, 6, 7, 9 (cont. 24–30). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 8** — Treatment hero: dark video vs. light editorial hero (UX-03). L / multi-phase. Task 9
-already decoupled hero text from media load; this is the full `TreatmentHero` editorial redesign.
-`superpowers:brainstorming` first, then a plan. Shared component (`TreatmentHero` on every treatment
-detail page) → `test:visual` gate applies, `/faciales/hidrofacial` snapshot covers it.
+Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
+media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
+kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-Order: **8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+**Next: Task 11** — `h3` before `h2` in the legal layout (UX-05). XS. `LegalPageLayout.jsx:118-123`:
+"Sección X" label is an `<h3>` before the section's `<h2>` → change it to `<p>`/`<span>` with the same
+type styles so the `<h2>` is the only heading governing the block. WCAG 1.3.1.
+
+Order: **11 → 18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 8 | Treatment hero: dark video vs. light editorial hero (UX-03) | L | Task 9 done — hero text no longer gated on media load |
 | 10 | 911 emergency clause has no English version (CPY-06) | S | |
 | 11 | `h3` before `h2` in the legal layout (UX-05) | XS | |
 | 12 | robots.txt has no directives for AI crawlers (SEO-06) | S | PROTECTED |
@@ -33,7 +35,6 @@ Order: **8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14
 | 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |
 | 15 | `tú`/`usted` inconsistent across legal documents (CPY-03) | M | |
 | 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
-| 17 | Circular markers in `MethodProcess` break the 0px radius (UX-06) | S | |
 | 18 | `bg-white` (#FFFFFF) in LegalResources (UX-07) | XS | |
 | 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
 | 20 | Square bullets vs `<ListSparkle />` in FeaturedServices (UX-09) | S | |

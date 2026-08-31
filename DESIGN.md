@@ -239,6 +239,11 @@ Media:
 Accordions:
 `0px`
 
+Documented exception (2026-08-30): the numbered step markers in `MethodProcess`
+keep `border-radius: 50%`. Reviewed against audit UX-06 and retained by product
+decision — the circular step index is intentional and does not extend to any
+other component.
+
 ### Shadows
 
 No shadows.
@@ -834,7 +839,7 @@ Never create:
 4. Use the surface map before selecting any background.
 5. Use the component role before styling any card.
 6. Preserve medical disclaimer rules.
-7. Preserve 0px radius globally.
+7. Preserve 0px radius globally (one documented exception: `MethodProcess` step markers — see §4 Geometry).
 8. Use borders instead of shadows.
 9. Keep pages monochrome and warm gray.
 10. Use imagery to create premium perception.

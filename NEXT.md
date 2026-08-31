@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<HASH>` (Task 15 done, cont. 38). Clean tree, **pushed**.
+Base commit = `098874e` (Task 15 done, cont. 38). Clean tree, **pushed**.
 Dev server `:3000` = running (cont. 38, started this session).
 
 ## Active queue — audit remediation (cont. 21)

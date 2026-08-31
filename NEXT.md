@@ -5,8 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `49ae920` (Task 19 Ciclo A — Contacto CSS purge, cont. 41). Clean tree.
-Ciclo B (button token `#363633`→`#141313` + drop map `backdrop-blur`) in progress this session.
+Base commit = `<PENDIENTE-B>` (Task 19 done — Contacto CSS purge + button token, cont. 41). Clean tree.
 Dev server `:3000` = not started this session.
 
 ## Active queue — audit remediation (cont. 21)
@@ -15,9 +14,9 @@ Dev server `:3000` = not started this session.
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
 Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
-**legal-pages overhaul** (cont. 39); Task 16 (cont. 40) — detail in `docs/PROGRESS_ARCHIVE.md` /
-`PROGRESS.md`. Each remaining task: `superpowers:brainstorming` → user approval → 1 change →
-verification → ritual.
+**legal-pages overhaul** (cont. 39); Task 16 (cont. 40); Task 19 (cont. 41) — detail in
+`docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each remaining task: `superpowers:brainstorming` →
+user approval → 1 change → verification → ritual.
 
 Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
 media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See `DECISIONS.md` 2026-08-30.
@@ -27,19 +26,22 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 `Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-**Next: Task 19** (UX-08) — `Contacto`: strip manual gradients/radials + `backdrop-blur-[2px]` +
-orphan CSS from the removed form; buttons `#363633` → `#141313` token. `Contacto.module.css:1-60`
-+ `Contacto.jsx:78-100`. Violates `DESIGN.md` §4 + §10. M. Full detail in the cont. 21 plan doc.
-`test:visual` gate applies (`/contacto` snapshot). Absorbs the old `/contacto` follow-ups.
+**Next: Task 22** (SEO-08) — PRF vs faciales/capilar keyword cannibalization. **First reconcile
+with `MEMORY.md`** *project_prf_content_strategy* (closed as spec 2026-08-28) + *project_seo_backlog_89_810_prf_positioning*:
+if that spec already covers SEO-08, close Task 22 as "already specified" and only execute the pending
+internal-linking part. Files (copy/links only, no structure): `src/pages/landings/PrfYFibrina.jsx`,
+`src/data/landingPages.js`, `src/data/categoryPages.js`, `src/data/treatmentPages.js` (microneedling,
+capilar). No visual gate. M. Full detail in the cont. 21 plan doc.
+
+Task 19 (UX-08) done cont. 41 — kept `.heroOverlay` scrim (sitewide pattern), see `DECISIONS.md` 2026-08-31.
 
 Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
 
-Order: **19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
 | 22 | PRF vs faciales/capilar keyword cannibalization (SEO-08) | M | reconcile with the closed PRF spec |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
 | 24 | "marcas permanentes" → "persistentes" (CPY-05) | XS | |

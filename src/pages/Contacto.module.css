@@ -290,9 +290,9 @@
   transition: all 0.3s ease;
   min-height: 44px;
   flex: 1;
-  background-color: #363633;
+  background-color: #141313; /* Dark Authority */
   color: #F2F0F1;
-  border: 1px solid #363633;
+  border: 1px solid #141313;
 }
 
 @media (hover: hover) {
@@ -437,9 +437,9 @@
 }
 
 .startBtnPrimary {
-  background-color: #363633;
+  background-color: #141313; /* Dark Authority */
   color: #F2F0F1;
-  border: 1px solid #363633;
+  border: 1px solid #141313;
 }
 
 @media (hover: hover) {

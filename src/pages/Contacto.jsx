@@ -206,7 +206,7 @@ export default function ContactoPage() {
                       {/* Mobile Interaction Shield (Prevents scroll/drag/gestures hijacking) */}
                       {!mapInteractive && (
                         <div
-                          className="absolute inset-0 bg-[#363633]/40 backdrop-blur-[2px] flex flex-col items-center justify-center cursor-pointer z-10 transition hover:bg-[#363633]/50 p-4"
+                          className="absolute inset-0 bg-[#363633]/40 flex flex-col items-center justify-center cursor-pointer z-10 transition hover:bg-[#363633]/50 p-4"
                           onClick={() => setMapInteractive(true)}
                         >
                           <button

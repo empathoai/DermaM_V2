@@ -231,3 +231,32 @@
   padding: clamp(64px, 10vw, 120px) 0;
   color: #363633;
 }
+
+/* 8. Category Benefits (Clinical Canvas) */
+.benefits {
+  background-color: #F2F0F1;
+  padding: clamp(64px, 10vw, 120px) 0;
+  color: #363633;
+}
+
+/* 9. Method / Category Approach (Dark Authority) */
+.approach {
+  background-color: var(--color-dark-authority, #141313);
+  padding: clamp(72px, 12vw, 140px) 0;
+  color: #F2F0F1;
+}
+
+.approachInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 64px);
+  display: flex;
+  justify-content: center;
+}
+
+/* 10. Process / Visit (Clinical Canvas) */
+.process {
+  background-color: #F2F0F1;
+  padding: clamp(64px, 10vw, 120px) 0;
+  color: #363633;
+}

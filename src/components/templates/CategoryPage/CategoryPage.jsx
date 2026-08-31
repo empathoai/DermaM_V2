@@ -2,6 +2,8 @@ import React from 'react';
 import PageHero from '../../sections/PageHero/PageHero';
 import Breadcrumb from '../../shared/Breadcrumb/Breadcrumb';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
+import BenefitColumns from '../../shared/BenefitColumns/BenefitColumns';
+import ProcessTimeline from '../../shared/ProcessTimeline/ProcessTimeline';
 import TrustSafetyBar from '../../shared/TrustSafetyBar/TrustSafetyBar';
 import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
 import TestimonialsSection from '../../shared/TestimonialsSection/TestimonialsSection';
@@ -162,7 +164,50 @@ export default function CategoryPage({ data }) {
         </section>
       )}
 
-      {/* 10. Testimonials */}
+      {/* 8. Category Benefits (Clinical Canvas) */}
+      {benefits && (
+        <section className={styles.benefits}>
+          <div className={styles.container}>
+            <BenefitColumns
+              sectionHeader={{ eyebrow: benefits.eyebrow, title: benefits.headline }}
+              items={benefits.list}
+              variant="light"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* 9. Method / Category Approach (Dark Authority) */}
+      {approach && (
+        <section className={styles.approach} aria-labelledby="approach-heading">
+          <div className={styles.approachInner}>
+            <SectionHeader
+              eyebrow={approach.eyebrow}
+              title={approach.headline}
+              support={approach.body}
+              variant="dark"
+              align="center"
+              titleId="approach-heading"
+              maxWidth="760px"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* 10. Process / Visit (Clinical Canvas) */}
+      {process?.steps?.length > 0 && (
+        <section className={styles.process}>
+          <div className={styles.container}>
+            <ProcessTimeline
+              title={process.headline}
+              steps={process.steps}
+              variant="light"
+            />
+          </div>
+        </section>
+      )}
+
+      {/* 11. Testimonials */}
       {testimonials && (
         <section className={styles.testimonials}>
           <div className={styles.container}>
@@ -178,7 +223,7 @@ export default function CategoryPage({ data }) {
         </section>
       )}
 
-      {/* 11. Category CTA */}
+      {/* 12. Category CTA */}
       {cta && (
         <FinalCTA 
           eyebrow={cta.eyebrow}

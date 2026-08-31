@@ -5,9 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `3587bcf` (cont. 43 — Task 27: AboutPage testimonials padding → `clamp()`).
-Clean tree, **pushed**. Prior: `b121009` (cont. 42 testimonial card unification), `e1ef938` (doc).
-Dev server `:3000` = running (external, PID not ours).
+Base commit = `c82fab1` (cont. 44 — Task 25 / CPY-07: ES headline sentence-case + `titleCase()`
+acronym whitelist). 4 code commits `e39c374`→`c82fab1`. Clean tree, **push pending confirmation**.
+Prior: `3587bcf` (cont. 43 Task 27), `b121009` (cont. 42). Dev server `:3000` = running (external, PID not ours).
 
 **Pending from user:** more instructions coming re: reviews/stars (stars kept on all testimonial
 renderers cont. 42 — real Google reviews). Wait for them before touching testimonials again.
@@ -19,8 +19,8 @@ renderers cont. 42 — real Google reviews). Wait for them before touching testi
 
 Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
 **legal-pages overhaul** (cont. 39); Task 16 (cont. 40); Tasks 19, 22 (no-op), 24, 26 (cont. 41);
-Task 27 (cont. 43) — detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each remaining task: `superpowers:brainstorming` →
-user approval → 1 change → verification → ritual.
+Task 27 (cont. 43); Task 25 (cont. 44) — detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each remaining task:
+`superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
 Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
 media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See `DECISIONS.md` 2026-08-30.
@@ -30,18 +30,16 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 `Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-**Next: Task 25** (CPY-07, L) — inconsistent ES title capitalization/style across `src/data/*`.
-Rationale for closed tasks 19/22/24/26/27 → `DECISIONS.md` 2026-08-31 + `PROGRESS_ARCHIVE.md`.
+**Next: Task 23** (`llms.txt` legal links, XS, PROTECTED) — starts only on the user's explicit "go"
+for `llms.txt`. Rationale for closed tasks 19/22/24/25/26/27 → `DECISIONS.md` 2026-08-31 + `PROGRESS_ARCHIVE.md`.
+Task 25 spec/plan: `docs/superpowers/{specs,plans}/2026-08-31-task25-title-casing*.md`.
 
-Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
-
-Order: **25** · Task 23 (PROTECTED) on user's "go".
+Order: Task 23 (PROTECTED) on user's "go". After that the cont. 21 queue is empty (Task 2 stays BLOCKED → Hostinger deploy).
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
-| 25 | Inconsistent ES title capitalization/style (CPY-07) | L | |
 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 

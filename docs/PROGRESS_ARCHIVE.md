@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — Task 13: `<lastmod>` for all sitemap URLs (cont. 35, no code)
+
+- **`public/sitemap.xml` (PROTECTED — nominal go given):** added `<lastmod>` (`YYYY-MM-DD`) to all 44 `<url>` entries, ordered `loc → lastmod → changefreq → priority`. Dates per-section from `git log` of the backing `src/data/*.js` / shared template: `/treatment-disclaimer` = `2026-08-31`, `/contacto` = `2026-08-29`, everything else = `2026-08-30`. Top-of-file comment tells editors to bump a section's dates when its data file changes. `<changefreq>`/`<priority>` untouched.
+- **Why:** SEO-09. `changefreq`/`priority` are ignored by Google; `<lastmod>` is the only reliable freshness signal. Per-section granularity over per-URL (43 fragile `git log -S` lookups) or one global date (Google treats all-identical dates as noise). Spec: `docs/superpowers/specs/2026-08-31-sitemap-lastmod-design.md`. See `DECISIONS.md` 2026-08-31.
+- **Verified:** XML well-formed (ElementTree); 44/44 URLs have `<lastmod>`; no future dates; `/nosotros/nancy-nieto` still present. No `test:visual`. No browser check.
+- **SEO/GEO/AEO:** SEO crawl-budget only. Commit `c58ef37`.
+
+---
+
 ## 2026-08-31 — Task 12: AI-crawler directives in robots.txt (cont. 35, no code)
 
 - **`public/robots.txt` (PROTECTED — nominal go given):** appended 6 dedicated user-agent groups before the `Sitemap:` line. AI search: `OAI-SearchBot`, `Claude-SearchBot`, `PerplexityBot`. AI training: `GPTBot`, `ClaudeBot`, `Google-Extended`. Each = `Allow: /` plus the same `Disallow` set already applied to `User-agent: *` (non-canonical language variants `/privacy-policy` · `/terms-of-use` · `/tratamientos-disclaimer`, draft `/notice-of-privacy-practices`, `/_audit/`).

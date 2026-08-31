@@ -223,7 +223,8 @@
   font-weight: 300;
   margin-bottom: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .benefitsList li {
@@ -232,24 +233,6 @@
 
 .benefitsListDark li {
   color: var(--color-warm-light, #CCC9C1);
-}
-
-.bullet, .bulletDark {
-  width: 4px;
-  height: 4px;
-  margin-right: 12px;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.bullet {
-  background-color: var(--color-stone, #363633);
-  opacity: 0.4;
-}
-
-.bulletDark {
-  background-color: var(--color-clinical-canvas, #F2F0F1);
-  opacity: 0.4;
 }
 
 /* CTAs & DISCLAIMERS */

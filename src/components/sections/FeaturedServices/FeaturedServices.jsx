@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import Picture from '../../shared/Picture/Picture';
+import ListSparkle from '../../shared/ListSparkle/ListSparkle';
 import { MEDICAL_VALUATION_NOTICE } from '../../../data/siteMeta';
 import styles from './FeaturedServices.module.css';
 
@@ -43,9 +44,9 @@ export default function FeaturedServices() {
             <h3 className={styles.treatmentName}>Limpieza Facial Profunda</h3>
             <p className={styles.outcome}>Piel limpia, equilibrada y profundamente renovada.</p>
             <ul className={styles.benefitsList}>
-              <li><span className={styles.bullet}></span>Purificación folicular</li>
-              <li><span className={styles.bullet}></span>Textura suavizada</li>
-              <li><span className={styles.bullet}></span>Preparación para activos</li>
+              <li><ListSparkle variant="dark" /><span>Purificación folicular</span></li>
+              <li><ListSparkle variant="dark" /><span>Textura suavizada</span></li>
+              <li><ListSparkle variant="dark" /><span>Preparación para activos</span></li>
             </ul>
             <div className={styles.actionArea}>
               <Link to="/limpieza-facial-profunda" className={styles.ctaLight}>Ver tratamiento</Link>
@@ -78,9 +79,9 @@ export default function FeaturedServices() {
             <h3 className={styles.treatmentNameDark}>Plasma Rico en Plaquetas y Fibrina</h3>
             <p className={styles.outcomeDark}>Bioestimulación cutánea natural y progresiva.</p>
             <ul className={styles.benefitsListDark}>
-              <li><span className={styles.bulletDark}></span>Apoyo a la firmeza</li>
-              <li><span className={styles.bulletDark}></span>Textura mejorada</li>
-              <li><span className={styles.bulletDark}></span>Regeneración autóloga</li>
+              <li><ListSparkle variant="light" /><span>Apoyo a la firmeza</span></li>
+              <li><ListSparkle variant="light" /><span>Textura mejorada</span></li>
+              <li><ListSparkle variant="light" /><span>Regeneración autóloga</span></li>
             </ul>
             <div className={styles.actionArea}>
               <Link to="/prf-y-fibrina" className={styles.ctaDark}>Ver tratamiento</Link>
@@ -113,9 +114,9 @@ export default function FeaturedServices() {
             <h3 className={styles.treatmentName}>Tratamientos Postoperatorios</h3>
             <p className={styles.outcome}>Apoyo experto para una recuperación cómoda.</p>
             <ul className={styles.benefitsList}>
-              <li><span className={styles.bullet}></span>Drenaje linfático</li>
-              <li><span className={styles.bullet}></span>Reducción de inflamación</li>
-              <li><span className={styles.bullet}></span>Prevención de fibrosis</li>
+              <li><ListSparkle variant="dark" /><span>Drenaje linfático</span></li>
+              <li><ListSparkle variant="dark" /><span>Reducción de inflamación</span></li>
+              <li><ListSparkle variant="dark" /><span>Prevención de fibrosis</span></li>
             </ul>
             <div className={styles.actionArea}>
               <Link to="/tratamientos-postoperatorios" className={styles.ctaLight}>Ver tratamiento</Link>

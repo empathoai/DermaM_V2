@@ -5,8 +5,15 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `36c1931` (Tasks 19, 22-noop, 24, 26, cont. 41). Clean tree, **pushed** through `04496ed`.
+Base commit = `b121009` (cont. 42 — testimonial card design unified sitewide; off-queue user request).
+Clean tree, **pushed**. Prior: `36c1931` (Tasks 19, 22-noop, 24, 26, cont. 41).
 Dev server `:3000` = running (external, PID not ours).
+
+**cont. 42 (off-queue):** `AboutPage` testimonial card design replicated onto `Testimonials.jsx`
+(Home) + shared `TestimonialsSection.jsx` (hubs + landings). Stars **kept on all renderers** per
+user (real Google reviews). User said more instructions coming re: reviews/stars — wait for them.
+This makes Task 27 part (b) moot (no star removal); **Task 27 is now part (a) only** — padding
+`clamp()` fix. `DECISIONS.md` not touched (mechanical replication, no trade-off).
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -26,13 +33,12 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 `Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-**Next: Task 27** (UX-12, S) — `AboutPage` template. Two parts: (a) fixed container padding
-`80px 24px` / `120px 64px` → `clamp(24px, 4vw, 64px)` gutters per `DESIGN.md` §4
-(`AboutPage.module.css:14, 52`); (b) testimonial cards render literal `★` star glyphs — replace with
-sober editorial typography + typographic quotes (`AboutPage.jsx:87-91`). `superpowers:brainstorming`
-first (design decision on the testimonial treatment). **`test:visual` gate** — `nosotros-viewport`
-snapshot frames this; expect intentional diff, review + `--update-snapshots` (mind the standing
-`about/hero.jpg` placeholder failure — don't mask it).
+**Next: Task 27** (UX-12, now XS) — `AboutPage` template, **part (a) only**: `.testimonialsContainer`
+fixed padding `80px 24px` / `120px 64px` (`AboutPage.module.css:521, 527`) → `<vertical> clamp(24px,
+4vw, 64px)` matching the page's other containers (`.philosophyContainer` / `.approachContainer` already
+use that pattern per `DESIGN.md` §4). Part (b) (star glyphs → editorial typography) is **moot** — user
+kept stars sitewide cont. 42. Mechanical; `test:visual` gate — `nosotros-viewport` snapshot is
+hero-viewport only, unlikely to move; mind the standing `about/hero.jpg` placeholder failure.
 
 Task 19 (UX-08) done cont. 41 — kept `.heroOverlay` scrim (sitewide pattern), see `DECISIONS.md` 2026-08-31.
 Task 22 (SEO-08) closed no-op cont. 41 — PRF cannibalization already resolved, see `DECISIONS.md` 2026-08-31.
@@ -47,7 +53,7 @@ Order: **27 → 25** · Task 23 (PROTECTED) on user's "go".
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
-| 27 | `AboutPage`: fixed padding → `clamp()` + star glyphs (UX-12) | S | `test:visual` gate |
+| 27 | `AboutPage`: `.testimonialsContainer` fixed padding → `clamp()` (UX-12, part a only) | XS | `test:visual` gate |
 | 25 | Inconsistent ES title capitalization/style (CPY-07) | L | |
 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.

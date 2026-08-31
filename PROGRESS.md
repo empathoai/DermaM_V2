@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Why:** SEO-09. `changefreq`/`priority` are ignored by Google; `<lastmod>` is the only reliable freshness signal for crawl-budget prioritisation. Per-section granularity (Approach A) over true per-URL dates (43 fragile `git log -S` lookups = hand-rolled tooling) or one global date (Google treats all-identical dates as noise). Spec: `docs/superpowers/specs/2026-08-31-sitemap-lastmod-design.md`.
 - **Verified:** XML well-formed (ElementTree parse); 44/44 URLs have `<lastmod>`; no future dates; `/nosotros/nancy-nieto` still present (Task 3 / SEO-02). No `test:visual` (static file). No browser check.
 - **SEO/GEO/AEO:** SEO crawl-budget only — faster re-crawl of recently-changed URLs. No direct GEO/AEO effect.
-- Closes audit Task 13 (SEO-09). Commit `<hash>`.
+- Closes audit Task 13 (SEO-09). Commit `c58ef37`.
 
 ---
 

@@ -5,24 +5,26 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `cecc39e` (cont. 29 — Task 6 done, visible breadcrumbs). HEAD may be 1 doc-fixup ahead. Clean tree.
-Dev server `:3000` = owned by another chat, do not touch.
+Base commit = `610cb6c` (cont. 30 — Task 5 done, benefits/approach/process on CategoryPage). HEAD may be 1 doc-fixup ahead. Clean tree.
+Dev server `:3000` = started this session (pane); stop it at session end.
 
 ## Active queue — audit remediation (cont. 21)
 
 27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
-Done: Tasks 1, 3, 4, 6, 7, 9 (cont. 24–29). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
+Done: Tasks 1, 3, 4, 5, 6, 7, 9 (cont. 24–30). Each remaining task: `superpowers:brainstorming` → user approval → 1 change → verification → ritual.
 
-**Next: Task 5** — `CategoryPage` does not render benefits/approach/process (UX-02=SEO-05). Breadcrumb part already shipped in Task 6, so effectively S–M / 1 cycle. **Planned:** spec `docs/superpowers/specs/2026-08-30-task5-categorypage-benefits-approach-process-design.md` + plan `docs/superpowers/plans/2026-08-30-task5-categorypage-benefits-approach-process.md`. Execute via `superpowers:executing-plans`. Staged: implement + validate `/faciales` only → user approves look → roll to 6 hubs → `test:visual --update-snapshots` (6 category routes only) → close-cycle. Reuse `BenefitColumns` / `ProcessTimeline` unchanged; if they need edits, STOP (blast radius → landings).
+**Next: Task 8** — Treatment hero: dark video vs. light editorial hero (UX-03). L / multi-phase. Task 9
+already decoupled hero text from media load; this is the full `TreatmentHero` editorial redesign.
+`superpowers:brainstorming` first, then a plan. Shared component (`TreatmentHero` on every treatment
+detail page) → `test:visual` gate applies, `/faciales/hidrofacial` snapshot covers it.
 
-Order: **5 → 8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
+Order: **8** · then `11 → 18 → 10 → 12 → 13 → 17 → 20 → 21 → 14 → 15 → 16 → 19 → 22` · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 5 | `CategoryPage` does not render benefits/approach/process (UX-02=SEO-05) | L | breadcrumb part done in Task 6 |
 | 8 | Treatment hero: dark video vs. light editorial hero (UX-03) | L | Task 9 done — hero text no longer gated on media load |
 | 10 | 911 emergency clause has no English version (CPY-06) | S | |
 | 11 | `h3` before `h2` in the legal layout (UX-05) | XS | |

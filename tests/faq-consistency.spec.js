@@ -37,6 +37,7 @@ test.describe('FAQ consistency', () => {
       const structuredData = await page.locator('script[type="application/ld+json"]').allTextContents();
       const faqSchema = structuredData
         .map((entry) => JSON.parse(entry))
+        .flatMap((entry) => entry['@graph'] ?? [entry])
         .find((entry) => entry['@type'] === 'FAQPage');
       expect(faqSchema?.mainEntity).toHaveLength(count);
 

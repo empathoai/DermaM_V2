@@ -5,9 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `86a5e02` (cont. 45 — Task 23 / SEO-10 `llms.txt` Legal section + FloatingWhatsApp
-`.hidden` hit-test fix). 2 code commits `4abc39b` (llms.txt) · `86a5e02` (floating-whatsapp). HEAD is one doc commit ahead.
-Prior: `4bb0554` (cont. 44 Task 25), `3587bcf` (cont. 43 Task 27). Dev server `:3000` = running (external, PID not ours).
+Base commit = `<HASH>` (cont. 46 — `faq-consistency.spec.js` reads FAQPage from JSON-LD `@graph`;
+test-only, no site code). Prior: `86a5e02` (cont. 45 Task 23 / SEO-10), `4bb0554` (cont. 44 Task 25).
+Dev server `:3000` = running (external, PID not ours).
 
 **Pending from user:** more instructions coming re: reviews/stars (stars kept on all testimonial
 renderers cont. 42 — real Google reviews). Wait for them before touching testimonials again.
@@ -40,15 +40,7 @@ Rationale for closed tasks 19/22/23/24/25/26/27 → `DECISIONS.md` 2026-08-31 + 
 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 
-**cont. 45 also fixed a pre-existing bug** (not from the audit queue): `FloatingWhatsApp` `.hidden`
-state left the invisible FAB capturing clicks over the footer (child `pointer-events:auto` beat the
-container's `none`) — tapping a legal link opened `wa.me`. Fixed with `visibility:hidden`. `DECISIONS.md` 2026-08-31.
-
 ## Other pending (outside the cont. 21 queue)
-
-**Pre-existing test failure (found cont. 40):** `/faciales/hidrofacial` fails
-`tests/faq-consistency.spec.js` (`faqSchema.mainEntity` count ≠ rendered `button[aria-expanded]`);
-confirmed on base `228da1d`. Own cycle: reconcile hidrofacial FAQ data vs its JSON-LD.
 
 **Square deep-linking — BLOCKED on the clinic.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing:
 clinic confirmation of 4 rows (PRF, marcación abdominal, corrientes rusas, depilación láser) + validate

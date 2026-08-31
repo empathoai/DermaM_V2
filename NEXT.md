@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<cont.29 HEAD>` (Task 6 done — visible breadcrumbs). HEAD may be 1 doc-fixup ahead. Clean tree.
+Base commit = `cecc39e` (cont. 29 — Task 6 done, visible breadcrumbs). HEAD may be 1 doc-fixup ahead. Clean tree.
 Dev server `:3000` = owned by another chat, do not touch.
 
 ## Active queue — audit remediation (cont. 21)

@@ -7,11 +7,14 @@ import styles from './GoogleReviewsLink.module.css';
  * Outbound link to DERMA.M's live Google Business Profile review panel.
  * Trust signal for the on-page curated testimonials (no aggregateRating schema).
  *
- * @param {{ tone?: 'light' | 'dark', className?: string }} props
+ * @param {{ tone?: 'light' | 'dark', label?: string, className?: string }} props
  *   tone 'light' = dark text for #F2F0F1 / #EFEFEB section backgrounds;
  *   tone 'dark'  = muted link colour for the footer's dark background.
+ *   label — visible text. Default 'Ver más en Google' (an action, distinct from
+ *   the section's 'GOOGLE REVIEWS' eyebrow). The footer, which has no eyebrow and
+ *   lists plain labels, passes 'Reseñas en Google'.
  */
-export default function GoogleReviewsLink({ tone = 'light', className }) {
+export default function GoogleReviewsLink({ tone = 'light', label = 'Ver más en Google', className }) {
   return (
     <a
       href={GOOGLE_REVIEWS_URL}
@@ -32,7 +35,7 @@ export default function GoogleReviewsLink({ tone = 'light', className }) {
         <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
       </svg>
-      <span className={styles.text}>Reseñas en Google</span>
+      <span className={styles.text}>{label}</span>
       <span className={styles.srOnly}> (se abre en una pestaña nueva)</span>
       <ArrowUpRight className={styles.external} size={14} aria-hidden="true" />
     </a>

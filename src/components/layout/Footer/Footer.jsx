@@ -93,7 +93,7 @@ export default function Footer() {
               <p className={styles.contactItem}>
                 <a href={whatsappUrl} className={styles.link} target="_blank" rel="noopener noreferrer">WhatsApp</a>
               </p>
-              <GoogleReviewsLink tone="dark" />
+              <GoogleReviewsLink tone="dark" label="Reseñas en Google" />
             </address>
          </div>
 

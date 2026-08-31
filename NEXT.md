@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `6fe2cfd` (Task 11 done). HEAD = `d0832a2` (doc-fixup). Clean tree, **pushed** (`origin/main` @ `d0832a2`).
-Dev server `:3000` = stopped at end of cont. 32. Restart with `npm run dev` on resume.
+Base commit = `<pending>` (Task 18 done, cont. 33). Clean tree, push pending confirmation.
+Dev server `:3000` = running (started cont. 33). Stop on session close.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -19,13 +19,16 @@ Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment he
 media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodProcess` circular step markers
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
-Done: Task 11 (cont. 32) — `LegalPageLayout.jsx` "Sección N" `<h3>` → `<p>`, heading tree fixed (UX-05 / WCAG 1.3.1).
+Done: Task 11 (cont. 32) — `LegalPageLayout.jsx` "Sección N" `<h3>` → `<p>` (UX-05 / WCAG 1.3.1).
+Done: Task 18 (cont. 33) — `LegalResources.jsx:78` `bg-white` → `bg-[#EFEFEB]` to match the sibling
+disclaimer block; no `test:visual` (inline utility, one file, `/legal` not in snapshot suite) (UX-07).
 
-**Next: Task 18** — `bg-white` (`#FFFFFF`) in `LegalResources.jsx:78` (UX-07). XS. Swap to `#EFEFEB`
-(pergamino) or `#F2F0F1` + subtle graphite border. `DESIGN.md` §2/§10 forbid pure white. `test:visual`
-if it's a reused class — check the class scope first.
+**Next: Task 10** — 911 / medical-emergency exclusion clause has no English mirror (CPY-06). S.
+Add the EN paragraph inside `src/pages/TreatmentDisclaimer.jsx` §8 (and/or its source in
+`src/data/legalPages.js`), following the bilingual pattern the other sections already use.
+Cross-check `docs/MEDICAL_COMPLIANCE.md`. No `test:visual` (single-document content).
 
-Order: **18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
@@ -36,7 +39,6 @@ Order: **18 → 10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 2
 | 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |
 | 15 | `tú`/`usted` inconsistent across legal documents (CPY-03) | M | |
 | 16 | Primary-CTA vocabulary is scattered (CPY-04) | M | |
-| 18 | `bg-white` (#FFFFFF) in LegalResources (UX-07) | XS | |
 | 19 | `Contacto`: gradients/blur/zombie CSS + button token (UX-08) | M | absorbs old `/contacto` follow-ups |
 | 20 | Square bullets vs `<ListSparkle />` in FeaturedServices (UX-09) | S | |
 | 21 | Missing "skip to content" link (UX-10) | S | |

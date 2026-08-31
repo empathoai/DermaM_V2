@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Task 11: legal section label `<h3>` → `<p>` (cont. 32, code)
+## 2026-08-30 — Task 18: `bg-white` → `#EFEFEB` in LegalResources cards (cont. 33, code)
 
-- **`LegalPageLayout.jsx:118`:** the `"Sección N"` eyebrow was an `<h3>` rendered immediately before the section's `<h2>` title — inverted heading tree. Changed the tag `<h3>` → `<p>`, keeping the exact same Tailwind classes (`text-xs uppercase tracking-[0.2em] text-[#666463] font-semibold mb-2`). The `<h2>` is now the only heading governing each section block.
-- **Why:** UX-05 — WCAG 2.1 SC 1.3.1 (Info & Relationships): a screen reader announced a sub-heading before its parent. Zero visual change (identical classes; no UA styles apply). Coherent heading tree also helps crawler/AEO structure extraction.
-- **Verified:** in-browser on `/politica-de-privacidad` — "SECCIÓN 1" eyebrow renders identically; `<main>` heading tree is now `H1 → H2 (TOC) → H2 (per section)` with no H3 skip (checked via DOM query, 14 headings). No console errors. No `test:visual` (single component, no layout/token change; no legal route in the snapshot suite).
-- Closes audit Task 11 (UX-05). Commit `6fe2cfd`.
+- **`LegalResources.jsx:78`:** the 5 legal-doc link cards used `bg-white` (`#FFFFFF`), forbidden by `DESIGN.md` §2/§10 (warm palette, no pure white). Swapped the single inline Tailwind utility `bg-white` → `bg-[#EFEFEB]` (Parchment). Border `border-[#363633]/15` and all other classes unchanged.
+- **Why:** UX-07. `#EFEFEB` chosen over `#F2F0F1` to match the sibling "Aviso Clínico" block at `LegalResources.jsx:103`, which already uses `border border-[#363633]/15 bg-[#EFEFEB]` — fixes an in-file inconsistency, not just the design-system one. Contrast of card text (`#141313`/`#4E4D4D`/`#363633`) on `#EFEFEB` stays ≥ AA (identical to that disclaimer block).
+- **Verified:** in-browser on `/legal` — computed `background-color: rgb(239, 239, 235)`, border intact, content renders, no console errors. No `test:visual`: inline utility on one element in one file (not a shared class), and `/legal` has no snapshot in `tests/visual.spec.js`.
+- **SEO/GEO/AEO:** none — background color token only.
+- Closes audit Task 18 (UX-07).
 
 ---
 

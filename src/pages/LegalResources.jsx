@@ -75,7 +75,7 @@ export default function LegalResources() {
             {legalDocs.map((doc, index) => (
               <div 
                 key={index} 
-                className="p-6 border border-[#363633]/15 bg-white hover:border-[#141313] transition-all duration-300 flex flex-col sm:flex-row gap-4 items-start justify-between group"
+                className="p-6 border border-[#363633]/15 bg-[#EFEFEB] hover:border-[#141313] transition-all duration-300 flex flex-col sm:flex-row gap-4 items-start justify-between group"
               >
                 <div className="space-y-2 flex-1">
                   <div className="flex items-center gap-2 mb-1">

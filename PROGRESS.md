@@ -2,12 +2,12 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-31 — Testimonial card design unified sitewide (cont. 42, code)
+## 2026-08-31 — Task 27: AboutPage testimonials padding → clamp() (cont. 43, code)
 
-- **What:** replicated the `AboutPage` testimonial card design onto the two other renderers. `Testimonials.jsx` + `.module.css` (Home) and shared `TestimonialsSection.jsx` + `.module.css` (hubs via `CategoryPage`, landings via `LandingPage`, both `variant="offWhite"`). New layout matches AboutPage exactly: quote-mark inline SVG top-left, left-aligned text, 48px left divider (`margin: 24px 0`), 5-star row **below** the divider, `cite` name. Removed: centered layout (`text-align/align-items: center`), the faint 130px Playfair `"` `::before` background glyph (+ its `.dark` override), `lucide-react` `Star` import (inline polygon SVG instead, like AboutPage). Added `.quoteIcon` / `.starsWrapper` / `.star` rules mirroring AboutPage; kept `.dark` variant overrides for `TestimonialsSection`.
-- **Why:** user request — AboutPage card is the desired look; the other two were visually divergent (stars on top, centered, giant bg quote). Stars **retained on all renderers** per explicit user instruction (real Google reviews; no `aggregateRating` schema added). Off the queued Task 27 — user redirected mid-brainstorm; Task 27 part (a) AboutPage padding→`clamp()` still pending.
-- **Verified:** browser `:3000` — Home + `/faciales` hub, desktop + 375px mobile: both now render identical to `/nosotros`. No console errors. `test:visual` full suite (shared component gate): **21 passed, 1 failed** = pre-existing `nosotros-viewport` desktop-chrome (`about/hero.jpg` placeholder, documented, unrelated — AboutPage untouched, snapshot is hero-viewport only). No snapshot frames a testimonials section → no baselines updated. No copy touched → `MEDICAL_COMPLIANCE` n/a.
-- Commit `b121009`, pushed.
+- **What:** `.testimonialsContainer` in `AboutPage.module.css:520` — `padding: 80px 24px` → `80px clamp(24px, 4vw, 64px)`; `@media (min-width: 1024px)` override `120px 64px` → `120px clamp(24px, 4vw, 64px)`. Horizontal axis only; vertical (80/120px section rhythm) kept.
+- **Why:** audit UX-12 / Task 27 part (a) — the container used fixed horizontal padding while its siblings `.philosophyContainer` / `.approachContainer` use `clamp(24px, 4vw, 64px)` (`DESIGN.md` §4). `NEXT.md` said "match the other containers"; those use `0` vertical, but keeping 80/120px avoids a visible regression — only the horizontal token was inconsistent. Part (b) (star glyphs → editorial type) is moot: stars kept sitewide (cont. 42).
+- **Verified:** browser `:3000` at 1440px — `.testimonialsContainer` horizontal padding now 57.6px, identical to `.philosophyContainer`; vertical 120px intact; no console errors. `test:visual` full suite (CSS gate): **21 passed, 1 failed** = pre-existing `Nosotros Page - Viewport` desktop-chrome (`about/hero.jpg` placeholder, documented, unrelated — snapshot is hero-viewport only, testimonials not framed). No baselines updated. No copy touched → `MEDICAL_COMPLIANCE` n/a. SEO/GEO/AEO impact: none (CSS padding). Temp `:3003` server started + stopped by PID.
+- Commit `PENDING`. **Task 27 closed.**
 
 ---
 

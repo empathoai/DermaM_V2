@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<HASH>` (cont. 46 — `faq-consistency.spec.js` reads FAQPage from JSON-LD `@graph`;
+Base commit = `d9ed2fe` (cont. 46 — `faq-consistency.spec.js` reads FAQPage from JSON-LD `@graph`;
 test-only, no site code). Prior: `86a5e02` (cont. 45 Task 23 / SEO-10), `4bb0554` (cont. 44 Task 25).
 Dev server `:3000` = running (external, PID not ours).
 

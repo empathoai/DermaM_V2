@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<PENDIENTE-26>` (Tasks 19, 22-noop, 24, 26, cont. 41). Clean tree, **pushed** through `04496ed`.
+Base commit = `36c1931` (Tasks 19, 22-noop, 24, 26, cont. 41). Clean tree, **pushed** through `04496ed`.
 Dev server `:3000` = running (external, PID not ours).
 
 ## Active queue — audit remediation (cont. 21)

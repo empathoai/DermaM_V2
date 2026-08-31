@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.reviewsLink {
+  margin-top: 24px;
+}
+
 .grid {
   display: flex;
   flex-direction: column;

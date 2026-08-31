@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import GoogleReviewsLink from '../GoogleReviewsLink/GoogleReviewsLink';
 import styles from './TestimonialsSection.module.css';
 
 export default function TestimonialsSection({
@@ -16,13 +17,17 @@ export default function TestimonialsSection({
     <div className={`${styles.wrapper} ${styles[variant]} ${styles[layout]}`}>
       {(eyebrow || title || support) && (
         <div className={styles.header}>
-          <SectionHeader 
-            eyebrow={eyebrow} 
-            title={title} 
-            support={support} 
-            variant={variant === 'dark' ? 'dark' : 'light'} 
+          <SectionHeader
+            eyebrow={eyebrow}
+            title={title}
+            support={support}
+            variant={variant === 'dark' ? 'dark' : 'light'}
             align="left"
             maxWidth="800px"
+          />
+          <GoogleReviewsLink
+            tone={variant === 'dark' ? 'dark' : 'light'}
+            className={styles.reviewsLink}
           />
         </div>
       )}

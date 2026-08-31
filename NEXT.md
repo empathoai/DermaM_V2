@@ -5,12 +5,15 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `d9ed2fe` (cont. 46 — `faq-consistency.spec.js` reads FAQPage from JSON-LD `@graph`;
-test-only, no site code). Prior: `86a5e02` (cont. 45 Task 23 / SEO-10), `4bb0554` (cont. 44 Task 25).
-Dev server `:3000` = running (external, PID not ours).
+Base commit = `e62a7db` (cont. 47 — Google Reviews outbound link on every testimonials surface +
+footer, shared `GoogleReviewsLink` + `GOOGLE_REVIEWS_URL`, eyebrow unified to `GOOGLE REVIEWS`;
+8.20 spec Part 1). HEAD is one doc commit ahead. Prior: `d9ed2fe` (cont. 46 faq-consistency),
+`86a5e02` (cont. 45 Task 23). Dev server `:3000` = running (external, PID not ours).
 
-**Pending from user:** more instructions coming re: reviews/stars (stars kept on all testimonial
-renderers cont. 42 — real Google reviews). Wait for them before touching testimonials again.
+**Reviews 8.20 — Part 1 shipped (cont. 47).** Still backlog: Part 2 (per-page topical curation of
+the quotes, Option A/B — spec `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`)
+and Part 3 (`aggregateRating` decision — needs clinic sign-off on unfiltered reviews). Stars kept on
+all renderers (cont. 42). Memory `project_google_reviews_link`.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -53,8 +56,10 @@ artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` 
 `nosotros-viewport` (desktop-chrome); if it drags: `npx playwright test -g "Nosotros Page - Viewport"
 --update-snapshots`. Also verify `.jpg` posters for `mikaela-guajardo` / `elianne-trujillo` (Nancy 4/4 done).
 
-**Reviews 8.20 — IN BACKLOG** (user, 2026-08-29), spec `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
-On request: curation Option A vs B, confirm "no `aggregateRating`".
+**Reviews 8.20 — Part 1 done (cont. 47), Parts 2–3 in backlog.** Part 2: per-page topical curation
+of the quotes (Option A minimal vs B tagged pool — decide on request). Part 3: `aggregateRating`
+stays out until clinic sign-off on unfiltered reviews. Spec
+`docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`. Memory `project_google_reviews_link`.
 
 ## Close the project (NOT code, NOT this workflow)
 

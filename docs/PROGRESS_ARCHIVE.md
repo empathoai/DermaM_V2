@@ -3,6 +3,13 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — faq-consistency spec: read FAQPage from JSON-LD `@graph` (cont. 46, code — test only)
+
+- **What:** `tests/faq-consistency.spec.js:40` — added `.flatMap((entry) => entry['@graph'] ?? [entry])` before the `.find((entry) => entry['@type'] === 'FAQPage')`. No site code touched.
+- **Why:** pre-existing failure flagged cont. 40. `/faciales/hidrofacial` (only treatment-detail route in the spec) emits its FAQ schema nested in a `@graph` via `TreatmentSEO.jsx` (`emitSchema={false}` on the accordion), while the 4 landing/contact routes emit a flat `{"@type":"FAQPage"}` via `FAQAccordion emitSchema`. The old `.find()` only inspected root objects → `faqSchema` undefined → `toHaveLength(5)` threw "received value must have a length property". Page was always correct: 5 `mainEntity` questions == 5 rendered `button[aria-expanded]`, verified live on `:3003`.
+- **Verified:** `npx playwright test tests/faq-consistency.spec.js` → **12/12 passed** (desktop-chrome + mobile-safari, 29.2s). The 4 flat-schema routes still pass (covered by `?? [entry]`). No `test:visual` needed — test-file-only change, no CSS/component/layout touched (`CLAUDE.md` §DoD gate). Temp `:3003` vite server started + stopped by PID. No `MEDICAL_COMPLIANCE` impact (no copy). SEO/GEO/AEO: nil — the emitted schema was already valid; only the test's reader changed.
+- Commit `d9ed2fe`. Removes the "pre-existing test failure" item from `NEXT.md`.
+
 ## 2026-08-31 — Task 23 (SEO-10) llms.txt legal links + FloatingWhatsApp hit-test fix (cont. 45, code)
 
 - **What:** (1) `public/llms.txt` — new `## Legal` section (between `## About` and `## Important Disclaimers`) with 6 canonical URLs matching `sitemap.xml` `<loc>`: `/politica-de-privacidad`, `/terminos-de-uso`, `/treatment-disclaimer`, `/booking-cancellation-refund-policy`, `/accessibility`, `/legal`. No cookie-policy route exists — not invented; retired `/notice-of-privacy-practices` excluded. (2) `FloatingWhatsApp.module.css` — `.hidden` gained `visibility: hidden` + `visibility` added to `.container` transition.

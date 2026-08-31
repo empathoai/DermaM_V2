@@ -475,7 +475,7 @@ const customDetails = {
     whatIsHeadline: 'Tratamiento de manchas y cicatrices: qué es y cómo funciona',
     whatIsBody: 'El tratamiento de manchas y cicatrices es un protocolo estético facial que combina exfoliación suave, activos que unifican el tono y técnicas de estimulación del relieve cutáneo. Su objetivo es atenuar la apariencia de las manchas solares y suavizar la textura de marcas superficiales para lograr un rostro más uniforme. En Derma.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración y exige fotoprotección estricta durante todo el ciclo.',
     problemContextHeadline: 'DISCROMÍAS Y TEXTURA CRATERIFORME EN LA PIEL',
-    problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas permanentes tras imperfecciones alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación renovadora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
+    problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas persistentes tras imperfecciones alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación renovadora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
     duration: '50 - 60 min',
     application: 'Cabina / Focalizado',
     anesthesia: 'Según protocolo sugerido',

@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `b977fba` (Task 19 + Task 22-noop, cont. 41). Clean tree, **pushed** through `9dc502a`.
+Base commit = `<PENDIENTE-24>` (Task 19 + 22-noop + 24, cont. 41). Clean tree, **pushed** through `9dc502a`.
 Dev server `:3000` = running (external, PID not ours).
 
 ## Active queue — audit remediation (cont. 21)
@@ -14,7 +14,7 @@ Dev server `:3000` = running (external, PID not ours).
 (files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
 
 Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
-**legal-pages overhaul** (cont. 39); Task 16 (cont. 40); Task 19 + Task 22 (cont. 41, 22 = no-op) —
+**legal-pages overhaul** (cont. 39); Task 16 (cont. 40); Tasks 19, 22 (no-op), 24 (cont. 41) —
 detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`. Each remaining task: `superpowers:brainstorming` →
 user approval → 1 change → verification → ritual.
 
@@ -26,24 +26,24 @@ media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See 
 `Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
 GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
 
-**Next: Task 24** (CPY-05, XS) — `src/data/treatmentPages.js:478` (`manchas-cicatrices` `problemContextBody`):
-`las marcas permanentes tras imperfecciones` → `las marcas persistentes tras imperfecciones`.
-1-word copy swap; cross-check `MEDICAL_COMPLIANCE.md` (context = problem state, not a results claim).
-No visual gate.
+**Next: Task 26** (UX-11, XS) — Footer disclaimer `11px` → `12px`. Shared component (`Footer`) →
+**`test:visual` gate applies** (any snapshot with the footer in frame). Locate the 11px rule in
+`src/components/layout/Footer/Footer.module.css`, bump the disclaimer line only, review diff, update baselines.
 
 Task 19 (UX-08) done cont. 41 — kept `.heroOverlay` scrim (sitewide pattern), see `DECISIONS.md` 2026-08-31.
 Task 22 (SEO-08) closed no-op cont. 41 — PRF cannibalization already resolved, see `DECISIONS.md` 2026-08-31.
+Task 24 (CPY-05) done cont. 41 — `marcas permanentes` → `persistentes` (`treatmentPages.js:478`).
 
 Remaining PROTECTED item in queue: Task 23 (`llms.txt` legal links, XS).
 
-Order: **24 → 26 → 27 → 25** · Task 23 (PROTECTED) on user's "go".
+Order: **26 → 27 → 25** · Task 23 (PROTECTED) on user's "go".
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
 | 23 | llms.txt has no links to legal policies (SEO-10) | XS | PROTECTED |
+| 26 | Footer disclaimer 11px → 12px (UX-11) | XS | `test:visual` gate |
 | 25 | Inconsistent ES title capitalization/style (CPY-07) | L | |
-| 26 | Footer disclaimer 11px → 12px (UX-11) | XS | |
 | 27 | `AboutPage`: fixed padding → `clamp()` + star glyphs (UX-12) | S | |
 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.

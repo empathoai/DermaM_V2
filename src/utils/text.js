@@ -1,9 +1,19 @@
 // Treatment / category names are stored UPPERCASE in the data files.
 // titleCase() produces a human-readable form for <title>, meta description,
-// schema names and image alt text (not prose — acronyms like "HIFU" become
-// "Hifu", which is acceptable in these contexts).
-export const titleCase = (s = '') =>
-  s.toLowerCase().replace(/(^|\s|\/)([a-záéíóúñ])/g, (_, p, c) => p + c.toUpperCase());
+// schema names and image alt text. ACRONYMS are restored to their canonical
+// uppercase form after the word-capitalization pass (whole-word match only,
+// delimited by start / end / whitespace / "/").
+const ACRONYMS = ['HIFU', 'IPL', 'PRF', 'PRP', 'IV', 'MS', 'EVEFUS', 'DERMAPEN'];
+
+export const titleCase = (s = '') => {
+  const out = s
+    .toLowerCase()
+    .replace(/(^|\s|\/)([a-záéíóúñ])/g, (_, p, c) => p + c.toUpperCase());
+  return out.replace(
+    new RegExp(`(^|[\\s/])(${ACRONYMS.join('|')})(?=$|[\\s/])`, 'gi'),
+    (_, sep, tok) => sep + tok.toUpperCase()
+  );
+};
 
 // Trim a string to at most `max` characters, cutting at the last word boundary.
 export const clampWords = (s = '', max = 155) => {

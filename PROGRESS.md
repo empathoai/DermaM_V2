@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Why:** SEO-06. Policy call (user, cont. 35): allow BOTH search and training — public copy is marketing content we want surfaced/cited; no sensitive IP to protect by blocking training bots, and an explicit `Allow` for the SearchBots prevents accidental perimeter blocks. Same crawl scope as `*` so duplicate legal pages don't pollute AI citations.
 - **Verified:** robots.txt syntax valid (well-formed `User-agent` groups + rules; global `Sitemap:` intact at EOF). No `test:visual` (static file, not in snapshot suite). No browser check (not a rendered route).
 - **SEO/GEO/AEO:** direct GEO/AEO — controls/blinds citability in ChatGPT Search and Perplexity. No traditional-SEO indexing effect.
-- Closes audit Task 12 (SEO-06). Commit `<hash>`.
+- Closes audit Task 12 (SEO-06). Commit `55f2b7d`.
 
 ---
 

@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **`DESIGN.md` §"Lists & Bullets":** the existing prohibition (no browser bullets, no dashes) now also names "one-off custom markers (square/dot `<span>`s, geometric glyphs)" — closing the gap that let this slip. The `<ListSparkle />` mandate + `flex-start` + per-background variant rule were already written there.
 - **Why:** UX-09. `DESIGN.md` already mandates `<ListSparkle />` as the canonical benefit-list marker; FeaturedServices was a straight violation (3 of 4 list sites already compliant).
 - **Verified:** browser 375px + pane — ✦ renders on all 3 bands, aligned to first text line, correct variant color per background, no console errors. `npm run test:visual` — 33 passed; `home-featured-services.png` passes with no diff (glyph-vs-square delta below pixel threshold); the 1 failure is the standing unrelated `nosotros-viewport` (`about/hero.jpg` placeholder). No copy change → MEDICAL_COMPLIANCE n/a. A11y: decorative SVG, list semantics + text unchanged.
-- Closes audit Task 20 (UX-09). Commit `<hash>`.
+- Closes audit Task 20 (UX-09). Commit `ea6d473`.
 
 ---
 

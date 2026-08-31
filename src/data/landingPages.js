@@ -1,5 +1,10 @@
 export const landingPages = {
   prfYFibrina: {
+    breadcrumb: [
+      { label: 'Inicio', to: '/' },
+      { label: 'Tratamientos Faciales', to: '/faciales' },
+      { label: 'Plasma Rico en Plaquetas y Fibrina (PRF)', to: '/prf-y-fibrina' }
+    ],
     hero: {
       eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA (PRF)',
@@ -182,6 +187,11 @@ export const landingPages = {
     }
   },
   limpiezaFacial: {
+    breadcrumb: [
+      { label: 'Inicio', to: '/' },
+      { label: 'Tratamientos Faciales', to: '/faciales' },
+      { label: 'Limpieza Facial Profunda', to: '/limpieza-facial-profunda' }
+    ],
     hero: {
       eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'LIMPIEZA FACIAL PROFUNDA',
@@ -347,6 +357,11 @@ export const landingPages = {
     }
   },
   postoperatorios: {
+    breadcrumb: [
+      { label: 'Inicio', to: '/' },
+      { label: 'Tratamientos Corporales', to: '/corporales' },
+      { label: 'Tratamientos Postoperatorios', to: '/tratamientos-postoperatorios' }
+    ],
     hero: {
       eyebrow: 'TRATAMIENTOS CORPORALES',
       title: 'TRATAMIENTOS POSTOPERATORIOS',

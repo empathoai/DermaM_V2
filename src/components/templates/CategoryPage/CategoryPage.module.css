@@ -11,6 +11,12 @@
   width: 100%;
 }
 
+.breadcrumbBg {
+  background-color: #F2F0F1;
+  padding: clamp(20px, 4vw, 32px) 0 16px 0;
+  border-bottom: 1px solid rgba(54, 54, 51, 0.08);
+}
+
 .narrowContainer {
   max-width: 800px;
   margin: 0 auto;

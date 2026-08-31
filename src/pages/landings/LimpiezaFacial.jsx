@@ -42,11 +42,12 @@ export default function LimpiezaFacialPage() {
             },
             {
               "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Tratamientos Faciales", "item": "https://dermamskinhealth.com/faciales" },
-                { "@type": "ListItem", "position": 3, "name": "Limpieza Facial Profunda", "item": "https://dermamskinhealth.com/limpieza-facial-profunda" }
-              ]
+              "itemListElement": (landingPages.limpiezaFacial.breadcrumb || []).map((b, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": b.label,
+                "item": `https://dermamskinhealth.com${b.to}`
+              }))
             }
           ]
         })}</script>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../../sections/PageHero/PageHero';
+import Breadcrumb from '../../shared/Breadcrumb/Breadcrumb';
 import TreatmentQuickFacts from '../../shared/TreatmentQuickFacts/TreatmentQuickFacts';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import MediaBlock from '../../shared/MediaBlock/MediaBlock';
@@ -21,6 +22,7 @@ export default function LandingPage({ data }) {
   if (!data) return null;
 
   const {
+    breadcrumb,
     hero,
     quickFacts,
     trustItems,
@@ -40,6 +42,17 @@ export default function LandingPage({ data }) {
 
   return (
     <div className={styles.landingPage}>
+      {/* 0. Breadcrumb (Clinical Canvas Surface: #F2F0F1) */}
+      {breadcrumb?.length > 1 && (
+        <div className={styles.breadcrumbBg}>
+          <div className={styles.container}>
+            {/* Visible trail = ancestors only; the current page is the H1 right
+                below. Full hierarchy (incl. leaf) stays in the page's JSON-LD. */}
+            <Breadcrumb items={breadcrumb.slice(0, -1)} />
+          </div>
+        </div>
+      )}
+
       {/* 1. PageHero */}
       {hero && (
         <PageHero

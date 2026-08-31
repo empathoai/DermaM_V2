@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHero from '../../sections/PageHero/PageHero';
+import Breadcrumb from '../../shared/Breadcrumb/Breadcrumb';
 import SectionHeader from '../../shared/SectionHeader/SectionHeader';
 import TrustSafetyBar from '../../shared/TrustSafetyBar/TrustSafetyBar';
 import TreatmentGrid from '../../shared/TreatmentGrid/TreatmentGrid';
@@ -29,6 +30,15 @@ export default function CategoryPage({ data }) {
 
   return (
     <div className={styles.categoryPage}>
+      {/* 1. Breadcrumb (Clinical Canvas Surface: #F2F0F1) */}
+      {breadcrumb?.length > 0 && (
+        <div className={styles.breadcrumbBg}>
+          <div className={styles.container}>
+            <Breadcrumb items={breadcrumb.map((b) => ({ label: b.label, to: b.link }))} />
+          </div>
+        </div>
+      )}
+
       {/* 2. PageHero */}
       {hero && (
         <PageHero

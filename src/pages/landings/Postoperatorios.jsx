@@ -41,11 +41,12 @@ export default function PostoperatoriosPage() {
             },
             {
               "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Tratamientos Corporales", "item": "https://dermamskinhealth.com/corporales" },
-                { "@type": "ListItem", "position": 3, "name": "Tratamientos Postoperatorios", "item": "https://dermamskinhealth.com/tratamientos-postoperatorios" }
-              ]
+              "itemListElement": (landingPages.postoperatorios.breadcrumb || []).map((b, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": b.label,
+                "item": `https://dermamskinhealth.com${b.to}`
+              }))
             }
           ]
         })}</script>

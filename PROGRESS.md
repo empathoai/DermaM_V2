@@ -2,13 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Task 9: hero text no longer gated on the video-load event (cont. 28, code)
+## 2026-08-30 — Task 6: visible breadcrumbs to match `BreadcrumbList` JSON-LD (cont. 29, code)
 
-- **`Hero.jsx` + `TreatmentHero.jsx`:** removed the `mediaReady` state + 2000ms fallback timer + `onReady` gate that held the headline/body/CTAs at `opacity:0` until `<video>` `onLoadedData`. Critical text now renders from first paint.
-- **`Hero.jsx`** keeps the `motion.div` entrance beat but time-driven: `delay 0.3s → 0.7s`, plus a `useReducedMotion()` guard (`initial={false}` / `duration:0` when opted out). **`TreatmentHero.jsx`** had no entrance animation → renders immediately (full redesign is Task 8). No CSS-module changes (initial opacity was inline-only). `HeroMedia.onReady` now unused by both callers, left as harmless optional.
-- **Why:** `onLoadedData` can take 4–5s on slow networks and may never fire in a backgrounded tab → old code showed an empty hero for up to 2s on the visits that matter for LCP/CLS. User's intent was a "video first, then header" UX beat, not a load gate; a fixed 0.7s delay preserves it safely. See `DECISIONS.md` 2026-08-30.
-- **Verified:** `npm run test:visual` 33/34 — Home Hero Viewport (desktop + mobile) pass → no diff in settled state. The 1 fail is the standing `nosotros-viewport` `about/hero.jpg` placeholder (unrelated, `NEXT.md`). `useReducedMotion` confirmed as a valid `motion/react` export. No re-baseline.
-- Closes audit Task 9 (UX-04). Commit `b28e7bb`.
+- **`CategoryPage.jsx` + `LandingPage.jsx` (+ their `.module.css`):** render the shipped `<Breadcrumb>` component in a `.breadcrumbBg` bar (`#F2F0F1`, `padding: clamp(20px,4vw,32px) 0 16px`) above the hero — the same surface `TreatmentDetailPage` already uses (`DESIGN.md` §7, surface 2). Hubs render the full 2-level trail from `data.breadcrumb`; landings render **ancestors only** (`breadcrumb.slice(0,-1)`) so the long PRF/Postop leaf doesn't wrap 2 lines on 375px above the fold — the leaf is the H1 right below anyway.
+- **`landingPages.js`:** added a 3-level `breadcrumb` array to `prfYFibrina` / `limpiezaFacial` / `postoperatorios`. The 3 landing page files (`PrfYFibrina.jsx`, `LimpiezaFacial.jsx`, `Postoperatorios.jsx`) now derive their inline `BreadcrumbList` JSON-LD from that array — one source, visible trail and markup can't drift.
+- **Why:** SEO-03 — `BreadcrumbList` was emitted with no visible trail (Google manual-action risk, lost breadcrumb rich snippet). Option B (add UI) over Option A (delete markup) because `DESIGN.md` already specs the trail. JSON-LD keeps all 3 levels with the canonical PRF name; visible ancestor-only trail still satisfies "reflects visible content" (penalty case is *zero* visible breadcrumbs). See `DECISIONS.md` 2026-08-30.
+- **Verified:** mobile-first — 375px viewport checked in-browser on `/faciales` + all 3 landings (trail on 1 line), then desktop. DOM confirmed PRF JSON-LD = 3 `ListItem` intact. `npm run test:visual` full suite 33/34 (both projects); the 1 fail is the standing unrelated `nosotros-viewport`. Suite has no coverage of the breadcrumb area — no re-baseline. No console errors; contrast/focus/aria from the existing component.
+- Closes audit Task 6 (SEO-03). Commit `PENDING`.
 
 ---
 

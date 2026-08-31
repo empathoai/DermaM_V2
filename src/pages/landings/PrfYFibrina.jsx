@@ -42,11 +42,12 @@ export default function PrfYFibrinaPage() {
             },
             {
               "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dermamskinhealth.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Tratamientos Faciales", "item": "https://dermamskinhealth.com/faciales" },
-                { "@type": "ListItem", "position": 3, "name": "Plasma Rico en Plaquetas y Fibrina (PRF)", "item": "https://dermamskinhealth.com/prf-y-fibrina" }
-              ]
+              "itemListElement": (landingPages.prfYFibrina.breadcrumb || []).map((b, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": b.label,
+                "item": `https://dermamskinhealth.com${b.to}`
+              }))
             }
           ]
         })}</script>

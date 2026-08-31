@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-30 — Task 18: `bg-white` → `#EFEFEB` in LegalResources cards (cont. 33, code)
+
+- **`LegalResources.jsx:78`:** the 5 legal-doc link cards used `bg-white` (`#FFFFFF`), forbidden by `DESIGN.md` §2/§10 (warm palette, no pure white). Swapped the single inline Tailwind utility `bg-white` → `bg-[#EFEFEB]` (Parchment). Border `border-[#363633]/15` and all other classes unchanged.
+- **Why:** UX-07. `#EFEFEB` chosen over `#F2F0F1` to match the sibling "Aviso Clínico" block at `LegalResources.jsx:103`, which already uses `border border-[#363633]/15 bg-[#EFEFEB]` — fixes an in-file inconsistency, not just the design-system one. Contrast of card text on `#EFEFEB` stays ≥ AA.
+- **Verified:** in-browser on `/legal` — computed `background-color: rgb(239, 239, 235)`, border intact, content renders, no console errors. No `test:visual`: inline utility on one element in one file (not a shared class), and `/legal` has no snapshot in `tests/visual.spec.js`.
+- **SEO/GEO/AEO:** none — background color token only. Commits `91494e3` + `2301ae1` + `f793169`.
+
+---
+
 ## 2026-08-30 — Task 11: legal section label `<h3>` → `<p>` (cont. 32, code)
 
 - **`LegalPageLayout.jsx:118`:** the `"Sección N"` eyebrow was an `<h3>` rendered immediately before the section's `<h2>` title — inverted heading tree. Changed the tag `<h3>` → `<p>`, keeping the exact same Tailwind classes (`text-xs uppercase tracking-[0.2em] text-[#666463] font-semibold mb-2`). The `<h2>` is now the only heading governing each section block.

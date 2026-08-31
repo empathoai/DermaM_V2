@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `2301ae1` (Task 18 done, cont. 33). Clean tree, **pushed** (`origin/main` @ `2301ae1`).
-Dev server `:3000` = running (started cont. 33). Stop on session close.
+Base commit = `<pending>` (Task 10 done, cont. 34). Clean tree, push pending confirmation.
+Dev server `:3000` = running. Stop on session close.
 
 ## Active queue — audit remediation (cont. 21)
 
@@ -20,20 +20,20 @@ media — `DESIGN.md` §7 knowingly diverges) · **Task 17 / UX-06** (`MethodPro
 kept — `DESIGN.md` §4/§11 now record the exception). See `DECISIONS.md` 2026-08-30.
 
 Done: Task 11 (cont. 32) — `LegalPageLayout.jsx` "Sección N" `<h3>` → `<p>` (UX-05 / WCAG 1.3.1).
-Done: Task 18 (cont. 33) — `LegalResources.jsx:78` `bg-white` → `bg-[#EFEFEB]` to match the sibling
-disclaimer block; no `test:visual` (inline utility, one file, `/legal` not in snapshot suite) (UX-07).
+Done: Task 18 (cont. 33) — `LegalResources.jsx:78` `bg-white` → `bg-[#EFEFEB]` (UX-07).
+Done: Task 10 (cont. 34) — `TreatmentDisclaimer.jsx` §8: added EN mirror `<p>` after each ES
+paragraph of the 911 emergency-exclusion clause (CPY-06). ES untouched. No `test:visual`.
 
-**Next: Task 10** — 911 / medical-emergency exclusion clause has no English mirror (CPY-06). S.
-Add the EN paragraph inside `src/pages/TreatmentDisclaimer.jsx` §8 (and/or its source in
-`src/data/legalPages.js`), following the bilingual pattern the other sections already use.
-Cross-check `docs/MEDICAL_COMPLIANCE.md`. No `test:visual` (single-document content).
+**Next: Task 12** — `robots.txt` has no directives for AI crawlers (SEO-06). S. **PROTECTED file** —
+starts only on your explicit "go" on `robots.txt`. Also needs a policy call first (`superpowers:brainstorming`):
+allow AI *training* (`GPTBot`, `ClaudeBot`, `Google-Extended`) or only AI *search* (`OAI-SearchBot`,
+`Claude-SearchBot`, `PerplexityBot`)? If you'd rather skip protected files for now, next unblocked = Task 20.
 
-Order: **10 → 12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
+Order: **12 → 13 → 20 → 21 → 14 → 15 → 16 → 19 → 22** · then `23 → 24 → 26 → 27 → 25`.
 
 | # | Finding | Size | Flag |
 |---|---|---|---|
 | 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
-| 10 | 911 emergency clause has no English version (CPY-06) | S | |
 | 12 | robots.txt has no directives for AI crawlers (SEO-06) | S | PROTECTED |
 | 13 | sitemap.xml has no `<lastmod>` (SEO-09) | S | PROTECTED |
 | 14 | Consolidate treatment JSON-LD into one `@graph` (SEO-07) | M | |

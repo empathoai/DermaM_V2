@@ -132,8 +132,14 @@ export default function TreatmentDisclaimer() {
             <p>
               Nuestra plataforma digital, formularios generales y chat en línea no son monitoreados de forma constante ni están capacitados clínicamente para atender emergencias médicas de salud o traumas cutáneos graves de riesgo vital.
             </p>
+            <p className="font-light text-[#363633]/80">
+              Our digital platform, general forms, and online chat are not continuously monitored and are not clinically equipped to handle medical emergencies or severe, life-threatening skin trauma.
+            </p>
             <p className="italic">
               Si usted está experimentando una reacción alérgica repentina grave (por ejemplo, anafilaxia, dificultad para respirar, quemadura grave o dolor agudo imprevisto), por favor llame de inmediato al número de emergencia general de los Estados Unidos (<strong>911</strong>) o acuda a la sala de urgencias hospitalarias más cercana a su residencia.
+            </p>
+            <p className="italic font-light text-[#363633]/80">
+              If you are experiencing a sudden severe allergic reaction (for example, anaphylaxis, difficulty breathing, a serious burn, or unexpected acute pain), call the United States general emergency number (<strong>911</strong>) immediately or go to the nearest hospital emergency room.
             </p>
           </div>
         </>

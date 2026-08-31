@@ -2,13 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-08-30 — Task 18: `bg-white` → `#EFEFEB` in LegalResources cards (cont. 33, code)
+## 2026-08-30 — Task 10: English mirror for the 911 emergency-exclusion clause (cont. 34, code)
 
-- **`LegalResources.jsx:78`:** the 5 legal-doc link cards used `bg-white` (`#FFFFFF`), forbidden by `DESIGN.md` §2/§10 (warm palette, no pure white). Swapped the single inline Tailwind utility `bg-white` → `bg-[#EFEFEB]` (Parchment). Border `border-[#363633]/15` and all other classes unchanged.
-- **Why:** UX-07. `#EFEFEB` chosen over `#F2F0F1` to match the sibling "Aviso Clínico" block at `LegalResources.jsx:103`, which already uses `border border-[#363633]/15 bg-[#EFEFEB]` — fixes an in-file inconsistency, not just the design-system one. Contrast of card text (`#141313`/`#4E4D4D`/`#363633`) on `#EFEFEB` stays ≥ AA (identical to that disclaimer block).
-- **Verified:** in-browser on `/legal` — computed `background-color: rgb(239, 239, 235)`, border intact, content renders, no console errors. No `test:visual`: inline utility on one element in one file (not a shared class), and `/legal` has no snapshot in `tests/visual.spec.js`.
-- **SEO/GEO/AEO:** none — background color token only.
-- Closes audit Task 18 (UX-07).
+- **`TreatmentDisclaimer.jsx` §8 ("emergency", inline JSX, not from `legalPages.js`):** the two ES paragraphs (digital channels not monitored / call 911 for a severe allergic reaction) had no English version, unlike the sibling "Nota Clínica" and "Fotos Antes y Después" sections. Added an EN mirror `<p>` right after each ES paragraph, inside the same red box, matching the italic/weight of its pair (`font-light text-[#363633]/80`, `italic` on the second).
+- **Why:** CPY-06 — West Palm Beach has a large English-speaking population; an emergency-exclusion clause readable only in Spanish is a civil-liability gap. ES text left untouched (the "usted" register is Task 15's scope).
+- **Verified:** cross-checked `docs/MEDICAL_COMPLIANCE.md` (no banned words, no guarantee/cure claims). In-browser `/treatment-disclaimer` §8 — both EN paragraphs render alternating with the ES ones, red box intact, no console errors. No `test:visual` (single-document content; route not in the snapshot suite).
+- **SEO/GEO/AEO:** minor — reinforces E-E-A-T / trustworthiness signals for LLMs on health content; no indexing effect.
+- Closes audit Task 10 (CPY-06).
 
 ---
 

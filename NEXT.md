@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `ea6d473` (Task 20 done, cont. 35). Clean tree, **pushed**.
-Dev server `:3000` = running (browser pane, started this session).
+Base commit = `45fd1ae` (Task 20 done, cont. 35). Clean tree, **pushed**.
+Dev server `:3000` = stopped at end of cont. 35. Restart with `npm run dev` on resume.
 
 ## Active queue — audit remediation (cont. 21)
 

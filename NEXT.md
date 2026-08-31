@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `6fe2cfd` (Task 11 done). Prior: `3dd9734` (cont.31 declines). HEAD may be 1 doc-fixup ahead. Clean tree. **Not pushed (cont.31 + cont.32).**
-Dev server `:3000` = started this session (pane); stop it at session end.
+Base commit = `6fe2cfd` (Task 11 done). HEAD = `d0832a2` (doc-fixup). Clean tree, **pushed** (`origin/main` @ `d0832a2`).
+Dev server `:3000` = stopped at end of cont. 32. Restart with `npm run dev` on resume.
 
 ## Active queue — audit remediation (cont. 21)
 

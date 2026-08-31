@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook } from 'lucide-react';
+import GoogleReviewsLink from '../../shared/GoogleReviewsLink/GoogleReviewsLink';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -92,6 +93,7 @@ export default function Footer() {
               <p className={styles.contactItem}>
                 <a href={whatsappUrl} className={styles.link} target="_blank" rel="noopener noreferrer">WhatsApp</a>
               </p>
+              <GoogleReviewsLink tone="dark" />
             </address>
          </div>
 

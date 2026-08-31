@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `1a9e2d9` (Task 11 done). Prior: `3dd9734` (cont.31 declines). HEAD may be 1 doc-fixup ahead. Clean tree. **Not pushed (cont.31 + cont.32).**
+Base commit = `6fe2cfd` (Task 11 done). Prior: `3dd9734` (cont.31 declines). HEAD may be 1 doc-fixup ahead. Clean tree. **Not pushed (cont.31 + cont.32).**
 Dev server `:3000` = started this session (pane); stop it at session end.
 
 ## Active queue — audit remediation (cont. 21)

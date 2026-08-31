@@ -52,5 +52,62 @@ Disallow: /wp-login.php
 Disallow: /wp-content/
 Disallow: /wp-includes/
 
+# -----------------------------------------------
+# AI crawlers — deliberate posture (SEO-06)
+# Full access granted: the site's public content is marketing copy we
+# want surfaced and cited in AI answers. Non-canonical language variants
+# and draft/audit paths stay disallowed, matching User-agent: *.
+# -----------------------------------------------
+
+# AI search / answer engines (cite with attribution link)
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
+# AI training crawlers (allowed — no sensitive IP in public copy)
+User-agent: GPTBot
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-of-use
+Disallow: /tratamientos-disclaimer
+Disallow: /notice-of-privacy-practices
+Disallow: /_audit/
+
 # Sitemap location
 Sitemap: https://dermamskinhealth.com/sitemap.xml

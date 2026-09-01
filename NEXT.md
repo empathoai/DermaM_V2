@@ -5,10 +5,14 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `e62a7db` (cont. 47 — Google Reviews outbound link on every testimonials surface +
-footer, shared `GoogleReviewsLink` + `GOOGLE_REVIEWS_URL`, eyebrow unified to `GOOGLE REVIEWS`;
-8.20 spec Part 1). HEAD is one doc commit ahead. Prior: `d9ed2fe` (cont. 46 faq-consistency),
-`86a5e02` (cont. 45 Task 23). Dev server `:3000` = running (external, PID not ours).
+Base commit = `<cont.48 hash>` (cont. 48 — docs only: `DEPLOY.md` pre-deploy full-site checklist
+at repo root + `docs/communication_dermam.md` client handoff of the Vercel version). Prior:
+`07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1), `d9ed2fe` (cont. 46 faq-consistency).
+Dev server `:3000` = running (external, PID not ours). **No code changed since `e62a7db`.**
+
+**Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
+the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work
+proceeds on deploy until they confirm.
 
 **Reviews 8.20 — Part 1 shipped (cont. 47).** Still backlog: Part 2 (per-page topical curation of
 the quotes, Option A/B — spec `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`)
@@ -63,11 +67,10 @@ stays out until clinic sign-off on unfiltered reviews. Spec
 
 ## Close the project (NOT code, NOT this workflow)
 
-1. **Deploy to Hostinger/Apache** (real prod; Vercel = client demo): replace `public/.htaccess` with the
-   block from `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8 (resolves Task 2 / SEO-01), verify
-   with its `curl -I` script, check `/nosotros/nancy-nieto` still in `sitemap.xml`/`robots.txt`/`llms.txt`,
-   fix `docs/seo-setrategies/INTAKE.md:56` ("Vercel" → Hostinger/Apache).
-2. **Verify GSC** by Domain on Hostinger + DNS.
+**Full procedure = `DEPLOY.md`** (repo root). Part 1 = local full-site sanity check; Part 2 = the
+protected-file work at deploy (`public/.htaccess` from `REDIRECT-MAP-VALIDATION-2026.md` §8 →
+resolves Task 2 / SEO-01, `robots.txt` cleanup, `sitemap`/`llms.txt` check, `INTAKE.md:56` fix),
+then GSC verify by Domain + submit sitemap. Blocked on the client handoff (see State).
 
 ## Conditional (wait for the condition to hold)
 

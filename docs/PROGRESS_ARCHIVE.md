@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — Google Reviews outbound link + eyebrow unification (cont. 47, code)
+
+- **What:** new shared `src/components/shared/GoogleReviewsLink/` (`tone` light/dark, `label` prop, official 4-colour Google "G" + `ArrowUpRight`, `rel="noopener noreferrer"`, 44px target, `:focus-visible`, sr-only new-tab notice) → outbound link to the live GBP review panel. Rendered on Home (`Testimonials.jsx`), `/nosotros` (`AboutPage.jsx`), 6 hubs + 3 landings (`TestimonialsSection.jsx`), and the footer Contacto column (`Footer.jsx`). Single `GOOGLE_REVIEWS_URL` constant in `siteMeta.js` (= `https://maps.app.goo.gl/Hgy4FgMVrEJoFWZWA`, validated live → DERMA.M listing 4.9). Eyebrow unified: `aboutPage.js` `RESEÑAS DE GOOGLE` → `GOOGLE REVIEWS`. Labels: sections carry the `GOOGLE REVIEWS` eyebrow so the link reads **"Ver más en Google"**; footer has no eyebrow so it keeps **"Reseñas en Google"**. No layout/grid change. NO `Review`/`aggregateRating` schema (8.18 policy risk stays avoided). Executes Part 1 of the 2026-08-29 reviews-alignment (8.20) spec.
+- **Why:** the `GOOGLE REVIEWS` eyebrow claimed a provenance the page never let you verify. A followed outbound link to the real GBP panel is the honest trust mechanism instead of a curated-reviews `aggregateRating`.
+- **Verified:** browser at 375px then desktop on Home, `/nosotros`, `/faciales`, `/corporales`, `/limpieza-facial-profunda` + footer — link visible, `height` 44, `rel`/`target` correct, `:focus-visible` outline, opens the correct GBP listing in a new tab. Contrast: light ≈ 10.6:1 · dark = 11.2:1 (AA). Console clean. `git grep` guards: review URL only in `siteMeta.js` (+ pre-existing `Contacto.jsx`); zero `RESEÑAS DE GOOGLE` residual. `npm run test:visual` (run at `ce6a32f`): **33 passed, 1 failed = pre-existing `Nosotros Page - Viewport`** (`about/hero.jpg` placeholder). No new diffs. `faq-consistency` 12/12. SEO/GEO/AEO: mild-positive trust/entity; nil ranking.
+- Commits `5ff5d05` · `5f9ca54` · `e1a924a` · `b581722` · `0764a59` · `ce6a32f` · `cf129cc` · `e62a7db` · `07730e3` (docs). Spec `docs/superpowers/specs/2026-08-31-google-reviews-outbound-link-design.md`. **8.20 Part 1 done; Parts 2–3 remain backlog.**
+
+---
+
 ## 2026-08-31 — faq-consistency spec: read FAQPage from JSON-LD `@graph` (cont. 46, code — test only)
 
 - **What:** `tests/faq-consistency.spec.js:40` — added `.flatMap((entry) => entry['@graph'] ?? [entry])` before the `.find((entry) => entry['@type'] === 'FAQPage')`. No site code touched.

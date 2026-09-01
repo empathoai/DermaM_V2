@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<cont.48 hash>` (cont. 48 — docs only: `DEPLOY.md` pre-deploy full-site checklist
+Base commit = `3e59e00` (cont. 48 — docs only: `DEPLOY.md` pre-deploy full-site checklist
 at repo root + `docs/communication_dermam.md` client handoff of the Vercel version). Prior:
 `07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1), `d9ed2fe` (cont. 46 faq-consistency).
 Dev server `:3000` = running (external, PID not ours). **No code changed since `e62a7db`.**

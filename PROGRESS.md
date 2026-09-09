@@ -9,7 +9,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Compliance:** body-contouring before/after is Florida-sensitive ("no before/after for weight loss; cosmetic OK with 'results not typical' disclosure"). Images are a genuine same-client pair, no surgical markers → reads as desinflamación/contour over massage + lymphatic-drainage sessions, matching the page's "acompañamiento / no reemplaza las indicaciones de tu cirujano" framing. Kept the template's default block disclaimer (already a full "results vary / nothing guaranteed" disclosure). Alt says "protocolo estético" + "tras varias sesiones" — no surgical/weight-loss claim. Rationale in `DECISIONS.md` 2026-09-08.
 - **Verified:** browser desktop + 375px on `/corporales/lipo-360` — block renders between "Para quién es" and FAQ (eyebrow "EVIDENCIA DE APOYO", headline "EVOLUCIÓN Y RESULTADOS ASISTIDOS"), both images serve as `.webp` 200 OK, not the `og-default` fallback, disclaimer visible, no console/network 404. `npm run test:visual` (server :3003): **33 passed, 1 failed** = pre-existing `Nosotros Page - Viewport` desktop-chrome only. `/corporales/lipo-360` is not in the visual spec → no baseline change. WCAG: `alt` present + meaningful, static images.
 - **SEO/AEO/GEO:** positive — indexable image with keyword-rich alt + a visual E-E-A-T/evidence signal on a treatment page that had none.
-- Commit `PENDING`.
+- Commit `fff3ef0`.
 
 ---
 

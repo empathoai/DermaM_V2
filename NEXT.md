@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 53 (Lipo 360 before/after block — 1 real client pair added to
+Base commit = `fff3ef0` (cont. 53 — Lipo 360 before/after block — 1 real client pair added to
 `treatments/corporales/lipo-360/` + `beforeAfter` key in `src/data/treatmentPages.js`; via `add-media`).
 Prior: `44a7a20` (cont. 52 limpieza FAQ reword), `5380c67` (cont. 51 limpieza image swap). Dev server `:3000` = running.
 

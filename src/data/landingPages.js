@@ -325,7 +325,7 @@ export const landingPages = {
           answer: 'Sugerimos esperar un mínimo de 4 a 6 horas para permitir que los poros se cierren completamente y la piel absorba los sueros antioxidantes e hidratantes aplicados.'
         },
         {
-          question: '¿Qué cuidados posteriores debo seguir al salir del spa?',
+          question: '¿Qué cuidados posteriores debo seguir después de la sesión?',
           answer: 'Es fundamental mantener la piel hidratada, evitar la exfoliación casera por 5 días y aplicar protector solar de amplio espectro SPF 30+ todos los días.'
         },
         {

@@ -2,14 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-08 — Limpieza facial landing: swap ANTES/DESPUÉS images (cont. 51, assets)
+## 2026-09-08 — Limpieza FAQ: "al salir del spa" → "después de la sesión" (cont. 52, copy)
 
-- **What:** client reported the before/after photos on `/limpieza-facial-profunda` were reversed. Swapped the 4 asset files on disk — `limpieza-facial-profunda-antes.{jpg,webp}` ↔ `limpieza-facial-profunda-despues.{jpg,webp}` in `public/assets/images/landings/limpieza-facial-profunda/`. No change to `src/data/landingPages.js` (the `before`/`after` slot paths + `beforeAlt`/`afterAlt` stay correct and keyword-named).
-- **Why:** DERMA.M change-request batch (2026-09-08). Showing a worse "después" than "antes" misrepresents the result.
-- **Compliance:** unchanged — still real client-provided images (`MEDICAL_COMPLIANCE` Before & After rule); only which is which was corrected. Reference disclaimer already present on the block.
-- **Verified:** browser desktop on `/limpieza-facial-profunda` after hard reload — ANTES now shows the oilier/pre-treatment skin, DESPUÉS the matte/renovated skin; alt text matches. `npm run test:visual` (server :3003): **33 passed, 1 failed** = only the pre-existing `Nosotros Page - Viewport` desktop-chrome (`about/hero.jpg` placeholder). The `Limpieza Facial Landing - Viewport` snapshots do NOT frame the before/after grid → no baseline change.
-- **SEO/AEO/GEO:** neutral — filenames and alt unchanged. Correctness/credibility fix only.
-- Commit `5380c67`.
+- **What:** one FAQ question on `/limpieza-facial-profunda` ([landingPages.js:328](src/data/landingPages.js)) reworded — "¿Qué cuidados posteriores debo seguir al salir del spa?" → "…después de la sesión?". It was the only line on the page calling the location "el spa" (off-voice vs the rest of the block, which uses "Derma.M" / "la sesión" / "el procedimiento").
+- **Why:** DERMA.M change-request batch (2026-09-08); user flagged the "spa"-only phrasing as inconsistent.
+- **Verified:** browser desktop on `/limpieza-facial-profunda` after hard reload — question renders. Copy-only edit in `src/data/*`; `test:visual` not gated. `faq-consistency.spec.js` checks FAQ structure/a11y, not question text → unaffected. No `MEDICAL_COMPLIANCE` impact.
+- **SEO/AEO/GEO:** neutral-positive — "después de la sesión" is natural post-care query phrasing; "al salir del spa" is not a search pattern. No keyword loss ("limpieza facial profunda" saturated across the other FAQ items).
+- Commit `PENDING`.
 
 ---
 

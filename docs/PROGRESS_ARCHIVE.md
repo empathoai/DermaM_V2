@@ -3,6 +3,16 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-08 — Limpieza facial landing: swap ANTES/DESPUÉS images (cont. 51, assets)
+
+- **What:** client reported the before/after photos on `/limpieza-facial-profunda` were reversed. Swapped the 4 asset files on disk — `limpieza-facial-profunda-antes.{jpg,webp}` ↔ `limpieza-facial-profunda-despues.{jpg,webp}`. No change to `src/data/landingPages.js` (slot paths + alt text stay correct and keyword-named).
+- **Why:** DERMA.M change-request batch (2026-09-08). Showing a worse "después" than "antes" misrepresents the result.
+- **Compliance:** unchanged — still real client-provided images; only which is which was corrected.
+- **Verified:** browser desktop after hard reload — ANTES shows oilier pre-treatment skin, DESPUÉS the matte/renovated skin. `test:visual` 33 passed / 1 failed = pre-existing `Nosotros Page - Viewport` only; the Limpieza Facial snapshots don't frame the before/after grid → no baseline change.
+- Commit `5380c67` (+ `a4ea691` docs).
+
+---
+
 ## 2026-09-08 — Nancy Nieto bio page: FORMACIÓN + FILOSOFÍA revision from client (cont. 50, code)
 
 - **What:** client-supplied rewrite of the `founderBioPage` FORMACIÓN Y TRAYECTORIA and FILOSOFÍA blocks in `src/data/aboutPage.js`. `historia.headline` → "UNA TRAYECTORIA CONSTRUIDA EN VARIOS PAÍSES" (client sent "EN TRES PAÍSES"; user approved evergreen "VARIOS" to kill the hardcoded country counter). `historia.credentials`: 4 items — Estados Unidos / Ecuador / **Argentina (new)** / Formación continua, reworded; spelling per client "Dermatocosmiatría". `historia.body` string → `historia.paragraphs` array of 3 (passion · "+4,000 procedimientos hasta 2026" · team-training); `FounderBioPage.jsx` renders `historia.paragraphs` as mapped `<p>` in a new `.historiaBodyGroup` (gap 16px), string `body` still supported as fallback. `filosofia.body`/`secondaryBody` → two new paragraphs; `quote.text` → new quote; `hero.body` synced to the new quote's first sentence.

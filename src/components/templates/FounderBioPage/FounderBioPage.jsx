@@ -60,7 +60,15 @@ export default function FounderBioPage({ data }) {
                 ))}
               </dl>
             )}
-            <p className={styles.historiaBody}>{historia.body}</p>
+            {historia.paragraphs ? (
+              <div className={styles.historiaBodyGroup}>
+                {historia.paragraphs.map((text, i) => (
+                  <p className={styles.historiaBody} key={i}>{text}</p>
+                ))}
+              </div>
+            ) : (
+              <p className={styles.historiaBody}>{historia.body}</p>
+            )}
           </div>
         </div>
       </motion.section>

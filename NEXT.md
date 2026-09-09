@@ -5,12 +5,14 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `c953f40` (cont. 49 — founder-spotlight copy revision from client — `src/data/aboutPage.js`
-`founderSpotlight` block only). Prior: `3e59e00` (cont. 48 docs: `DEPLOY.md` + client handoff),
-`07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1). Dev server `:3000` = running.
+Base commit = cont. 50 (Nancy Nieto bio page — FORMACIÓN + FILOSOFÍA rewrite from client:
+`src/data/aboutPage.js` `founderBioPage` + `FounderBioPage.jsx`/`.module.css` for a 3-paragraph
+`historia.paragraphs` array + 1 baseline refresh). Prior: `c953f40` (cont. 49 founder-spotlight copy),
+`3e59e00` (cont. 48 docs). Dev server `:3000` = running.
 
 **Client change requests (2026-09-08):** DERMA.M sent a batch of copy revisions — executing one per
-cycle. Done: founder spotlight (cont. 49). More may follow from the same batch.
+cycle. Done: founder spotlight (cont. 49), Nancy Nieto bio FORMACIÓN+FILOSOFÍA (cont. 50). More may
+follow from the same batch.
 
 **Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work
@@ -51,11 +53,12 @@ Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each 
 
 ## Other pending (outside the cont. 21 queue)
 
-**Founder bio consistency (from cont. 49) — follow-up, only if client wants it.** The old bio string
-still lives at `aboutPage.js:50` (`shortBio`), `aboutPage.js:186` (`attribution`), `NancyNieto.jsx:30`
-(Person schema `description`). Client only revised the spotlight block. If aligning: propagate the new
-wording + consider re-homing the "Cosmetología/Cosmiatría/Dermocosmiatría en Ecuador" credential on
-`/nosotros/nancy-nieto` (E-E-A-T author-authority signal dropped from the spotlight).
+**Founder bio consistency (from cont. 49–50) — follow-up, only if client wants it.** Not touched by
+the client's requests: `aboutPage.js:50` (`shortBio`) + `aboutPage.js:186` (`attribution`
+"FUNDADORA Y DIRECTORA…") + `NancyNieto.jsx:30` (Person schema `description`) still carry the old
+wording. If aligning: propagate the new phrasing; normalize spelling **"Dermocosmiatría" →
+"Dermatocosmiatría"** site-wide (client's grafía, now live on the bio page); update the schema
+`description` to match the new subheadline.
 
 
 **Square deep-linking — BLOCKED on the clinic.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing:
@@ -92,7 +95,7 @@ then GSC verify by Domain + submit sitemap. Blocked on the client handoff (see S
 - **Hostinger deploy:** do not touch Hostinger or `.htaccess` until the user says "let's do the Hostinger deploy".
 - **Dental on the site** (`/dental-estetico` hub + whitening + live dental cleaning): same regulatory risk that pulled it from the GBP. Decide whether the pages leave/reframe — separate cycle, user's call, do not touch without a request.
 - **Yelp:** claimed by Nancy (owner); user hands her the optimized NAP + description.
-- **C2:** clinic compliance sign-off for a quantitative datapoint + an authority link.
+- **C2:** quantitative datapoint half RESOLVED cont. 50 — client supplied "+4,000 procedimientos hasta 2026" in writing (now live on `/nosotros/nancy-nieto`). Still open: an authority link.
 - Intake 6/7 + postop weak-point note: research context, see `docs/seo-setrategies/INTAKE.md`.
 
 ## Off-site backlog (no code cycle; separate sessions, user logged in)

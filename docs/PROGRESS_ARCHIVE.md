@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-08 — Founder-spotlight copy revision from client (cont. 49, code)
+
+- **What:** client-supplied copy swap in `src/data/aboutPage.js` `founderSpotlight` block only. `eyebrow` "FUNDADORA Y DIRECTORA DE DERMA.M" → "FUNDADORA DE DERMA.M"; `subheadline` → "Flebotomista certificada en Estados Unidos y especialista en Estética Facial, con licencia otorgada por el Estado de Florida." (drops the "Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador" credential line); `body` → "Su filosofía de trabajo se basa en escuchar, educar y acompañar a cada persona, porque detrás de cada piel existe una historia única." (relational differentiator, on-brand per the 130-review analysis).
+- **Why:** DERMA.M requested the exact wording for the `/nosotros` founder section.
+- **Verified:** browser at desktop on `/nosotros`. No banned words, no license number → `MEDICAL_COMPLIANCE` OK. `test:visual` not gated at the time (data/copy edit); the 375px text reflow it caused was picked up and baselined in cont. 50.
+- Commit `c953f40` (+ `122801a` docs). Follow-up left: same bio string still at `aboutPage.js:50` `shortBio`, `aboutPage.js:186` `attribution`, `NancyNieto.jsx:30` schema `description`.
+
+---
+
 ## 2026-08-31 — Pre-deploy checklist + client handoff communication (cont. 48, docs)
 
 - **What:** two new docs, no site code. (1) `DEPLOY.md` at repo root (tracked) — full-site **local** sanity check to run before the Hostinger cut: clean build + `test:visual` (expect 33/1), route inventory (≈44 pages: 4 core, 6 hubs, 22 treatment slugs listed, 3 landings, legal + aliases, 1 redirect), head/SEO tags, JSON-LD validation, images (`alt`, no hardcoded Before/After), internal links, CTA taxonomy, 375px, WCAG AA, medical/legal compliance, GA4. Part 2 = the protected-file work at deploy time, pointing to `REDIRECT-MAP-VALIDATION-2026.md §8`. Folds in the scattered `NEXT.md` "Close the project" items. (2) `docs/communication_dermam.md` (gitignored dir; Spanish, client-facing) — formal handoff of the Vercel version for final approval.

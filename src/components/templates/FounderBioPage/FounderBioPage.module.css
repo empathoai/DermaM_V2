@@ -163,6 +163,12 @@
   font-weight: 300;
 }
 
+.historiaBodyGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .historiaBody {
   font-size: 16px;
   line-height: 1.8;

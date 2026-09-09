@@ -182,35 +182,43 @@ export const founderPrimer = {
 export const founderBioPage = {
   hero: {
     title: "NANCY NIETO",
-    body: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso.",
+    body: "Mi mayor satisfacción es observar cambios reales en la piel de mis clientes y acompañarlos durante todo su proceso.",
     attribution: "FUNDADORA Y DIRECTORA DE DERMA.M",
     backgroundImage: "/assets/images/about/nancy-nieto/nancy-nieto-hero.jpg",
     variant: "default"
   },
   historia: {
     eyebrow: "FORMACIÓN Y TRAYECTORIA",
-    headline: "UNA PROFESIONAL FORMADA EN DOS PAÍSES",
+    headline: "UNA TRAYECTORIA CONSTRUIDA EN VARIOS PAÍSES",
     credentials: [
       {
         region: "Estados Unidos",
-        detail: "Flebotomista Certificada · Especialista en Estética Facial con licencia aprobada por el Estado de Florida."
+        detail: "Flebotomista certificada y especialista en Estética Facial, con licencia otorgada por el Estado de Florida."
       },
       {
         region: "Ecuador",
-        detail: "Cosmetóloga · Cosmiatra · Dermocosmiatra."
+        detail: "Formación profesional en Cosmetología, Cosmiatría y Dermatocosmiatría."
+      },
+      {
+        region: "Argentina",
+        detail: "Título profesional en Dermatocosmiatría."
       },
       {
         region: "Formación continua",
-        detail: "Tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento de la piel."
+        detail: "Certificaciones y educación continua en tratamientos faciales avanzados, acné, manchas, cicatrices y rejuvenecimiento facial."
       }
     ],
-    body: "Más allá de sus títulos y certificaciones, Nancy se define como una profesional apasionada por transformar vidas a través del cuidado de la piel. Para ella, cada tratamiento es una oportunidad de ayudar a una persona a sentirse más segura, más feliz y más confiada."
+    paragraphs: [
+      "Más allá de sus títulos y certificaciones, Nancy se distingue por su pasión por aprender y mantenerse en constante actualización. Su propósito es lograr cambios reales y visibles en la piel de cada cliente mediante tratamientos personalizados, conocimiento y acompañamiento profesional.",
+      "Hasta 2026, Nancy y su equipo han realizado más de 4,000 procedimientos estéticos, construyendo una trayectoria basada en la experiencia, la confianza y el compromiso con cada cliente.",
+      "Como fundadora de DERMA.M, Nancy también se dedica a capacitar continuamente a su equipo, asegurándose de que cada profesional brinde un servicio de excelencia, con preparación, responsabilidad y un trato humano."
+    ]
   },
   filosofia: {
     eyebrow: "FILOSOFÍA",
     headline: "ESCUCHAR, EDUCAR Y ACOMPAÑAR",
-    body: "Su forma de trabajar parte de escuchar, educar y acompañar a cada cliente de manera personalizada, entendiendo que detrás de cada piel existe una historia única.",
-    secondaryBody: "Para Nancy, la estética va mucho más allá de la apariencia: se trata de bienestar, autoestima y calidad de vida."
+    body: "Su forma de trabajar comienza con una escucha cercana y una evaluación personalizada. Nancy considera que cada piel tiene necesidades diferentes y que comprender su historia es esencial para recomendar el tratamiento adecuado.",
+    secondaryBody: "Para ella, la estética va más allá de la apariencia: significa cuidar la salud de la piel, fortalecer la confianza y contribuir al bienestar de cada cliente."
   },
   dermamYAcademy: {
     eyebrow: "DERMA.M Y DERMA.M ACADEMY",
@@ -221,7 +229,7 @@ export const founderBioPage = {
     linkLabel: "Conoce DERMA.M Academy"
   },
   quote: {
-    text: "Mi mayor satisfacción es saber que puedo servir, escuchar y acompañar a cada persona en su proceso. Cuando ayudamos a alguien a sentirse mejor consigo mismo, también estamos cambiando su día, su confianza y, muchas veces, una parte importante de su vida.",
+    text: "Mi mayor satisfacción es observar cambios reales en la piel de mis clientes y acompañarlos durante todo su proceso. Cada resultado representa confianza, constancia y un trabajo realizado con conocimiento, dedicación y responsabilidad.",
     author: "Nancy Nieto",
     title: "Fundadora y Directora de DERMA.M"
   },

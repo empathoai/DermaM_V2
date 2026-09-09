@@ -3,6 +3,16 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-08 — Lipo 360: add before/after block (cont. 53, media + data)
+
+- **What:** via the `add-media` skill (Acción B, data-only — `TreatmentDetailPage` already reads `beforeAfter`). Client supplied one real before/after pair (side-profile torso, same client). Placed `lipo-360-antes.jpg` / `lipo-360-despues.jpg` in `public/assets/images/treatments/corporales/lipo-360/` (1000×1250; `optimize.js` recompressed to 124/76 KB), generated the `.webp` siblings. Added `beforeAfter.items` (1 pair) to the `'lipo-360'` entry in `src/data/treatmentPages.js` with Spanish `beforeAlt`/`afterAlt` traceable to the page copy.
+- **Why:** DERMA.M change-request batch (2026-09-08) — the treatment page had no visual proof.
+- **Compliance:** body-contouring before/after is Florida-sensitive. Real same-client pair, no surgical markers → reads as desinflamación/contour over massage + lymphatic-drainage sessions, matching the page's "acompañamiento / no reemplaza las indicaciones de tu cirujano" framing. Template's default block disclaimer kept as the "results not typical" disclosure. Rationale in `DECISIONS.md` 2026-09-08.
+- **Verified:** browser desktop + 375px on `/corporales/lipo-360` — block renders between "Para quién es" and FAQ, both images serve as `.webp` 200 OK, not the `og-default` fallback, no 404. `test:visual` 33 passed / 1 failed = pre-existing `Nosotros Page - Viewport` only; `/corporales/lipo-360` not in the visual spec → no baseline change.
+- Commit `fff3ef0` (+ `0e2bca9` docs). Doc-only cont. 54 (`310d0a7` + `f919aaa`) closed the cookie-banner + US state-privacy items as non-mandatory/client-side + trimmed the audit section.
+
+---
+
 ## 2026-09-08 — Limpieza FAQ: "al salir del spa" → "después de la sesión" (cont. 52, copy)
 
 - **What:** one FAQ question on `/limpieza-facial-profunda` (`landingPages.js:328`) reworded — "…al salir del spa?" → "…después de la sesión?". Only line on the page calling the location "el spa" (off-voice vs the rest of the block).

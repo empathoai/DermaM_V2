@@ -5,9 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `310d0a7` (cont. 54 — docs only — closed the cookie-banner + US state-privacy items as
-non-mandatory/client-side; trimmed the audit-remediation section). Prior: `fff3ef0` (cont. 53
-Lipo 360 before/after), `44a7a20` (cont. 52 limpieza FAQ reword). Dev server `:3000` = running.
+Base commit = cont. 55 (Nancy Nieto identity — unified founder title to "FUNDADORA Y DIRECTORA
+DE DERMA.M" + one canonical bio blurb across `aboutPage.js` + `NancyNieto.jsx` schema). Prior:
+`f919aaa` (cont. 54 docs), `fff3ef0` (cont. 53 Lipo 360 before/after). Dev server `:3000` = running.
 
 **Client change requests (2026-09-08):** DERMA.M sent a batch of revisions — executing one per cycle.
 Done: founder spotlight (cont. 49), Nancy Nieto bio (cont. 50), limpieza image swap (cont. 51),
@@ -45,12 +45,13 @@ Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each 
 
 ## Other pending (outside the cont. 21 queue)
 
-**Founder bio consistency (from cont. 49–50) — follow-up, only if client wants it.** Not touched by
-the client's requests: `aboutPage.js:50` (`shortBio`) + `aboutPage.js:186` (`attribution`
-"FUNDADORA Y DIRECTORA…") + `NancyNieto.jsx:30` (Person schema `description`) still carry the old
-wording. If aligning: propagate the new phrasing; normalize spelling **"Dermocosmiatría" →
-"Dermatocosmiatría"** site-wide (client's grafía, now live on the bio page); update the schema
-`description` to match the new subheadline.
+**Founder identity consistency — mostly done (cont. 55).** Title unified to "FUNDADORA Y DIRECTORA
+DE DERMA.M"; `shortBio` + Person-schema `description` aligned to the canonical blurb. Residual (minor,
+not scheduled): `founderPrimer.credentialLine` on Home is a distinct title-case teaser ("…con licencia
+del Estado de Florida.") — near-identical, align only if a consistency pass touches Home anyway. The
+"Dermocosmiatría → Dermatocosmiatría" spelling question is moot (the card blurb dropped the Ecuador
+line); it only survives now inside the bio page's own 3-country block, which already uses the client's
+grafía.
 
 
 **Square deep-linking — BLOCKED on the clinic.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing:

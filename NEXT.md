@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 52 (limpieza FAQ reword "al salir del spa" → "después de la sesión";
+Base commit = `44a7a20` (cont. 52 — limpieza FAQ reword "al salir del spa" → "después de la sesión";
 `src/data/landingPages.js` 1 line). Prior: `5380c67` (cont. 51 limpieza ANTES/DESPUÉS image swap),
 `52a0b90` (cont. 50 Nancy Nieto bio). Dev server `:3000` = running.
 

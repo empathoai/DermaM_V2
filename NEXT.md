@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 49 (founder-spotlight copy revision from client — `src/data/aboutPage.js`
+Base commit = `c953f40` (cont. 49 — founder-spotlight copy revision from client — `src/data/aboutPage.js`
 `founderSpotlight` block only). Prior: `3e59e00` (cont. 48 docs: `DEPLOY.md` + client handoff),
 `07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1). Dev server `:3000` = running.
 

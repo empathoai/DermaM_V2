@@ -5,9 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `fff3ef0` (cont. 53 — Lipo 360 before/after block — 1 real client pair added to
-`treatments/corporales/lipo-360/` + `beforeAfter` key in `src/data/treatmentPages.js`; via `add-media`).
-Prior: `44a7a20` (cont. 52 limpieza FAQ reword), `5380c67` (cont. 51 limpieza image swap). Dev server `:3000` = running.
+Base commit = cont. 54 (docs only — closed the cookie-banner + US state-privacy items as
+non-mandatory/client-side; trimmed the audit-remediation section). Prior: `fff3ef0` (cont. 53
+Lipo 360 before/after), `44a7a20` (cont. 52 limpieza FAQ reword). Dev server `:3000` = running.
 
 **Client change requests (2026-09-08):** DERMA.M sent a batch of revisions — executing one per cycle.
 Done: founder spotlight (cont. 49), Nancy Nieto bio (cont. 50), limpieza image swap (cont. 51),
@@ -23,31 +23,23 @@ the quotes, Option A/B — spec `docs/superpowers/specs/2026-08-29-reviews-align
 and Part 3 (`aggregateRating` decision — needs clinic sign-off on unfiltered reviews). Stars kept on
 all renderers (cont. 42). Memory `project_google_reviews_link`.
 
-## Active queue — audit remediation (cont. 21)
+## Audit remediation (cont. 21) — CLOSED
 
-27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`. **Per-task detail**
-(files, approach, verification, SEO/GEO/AEO impact, gate): `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`.
+27 tasks triaged from `auditorias-externas/resultados/{ui-ux,seo,copy}.md`; all closed (detail in
+`docs/PROGRESS_ARCHIVE.md` + plan `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`,
+rationale in `DECISIONS.md` 2026-08-30/31). **Only open item: Task 2** — `.htaccess` SPA catch-all
+before the 301s (SEO-01), **BLOCKED → Hostinger deploy**.
 
-Done: Tasks 1, 3–7, 9 (cont. 24–30); Tasks 11, 18, 10, 12, 13, 20, 21, 14, 15 (cont. 32–38);
-**legal-pages overhaul** (cont. 39); Task 16 (cont. 40); Tasks 19, 22 (no-op), 24, 26 (cont. 41);
-Task 27 (cont. 43); Task 25 (cont. 44); Task 23 (cont. 45) — detail in `docs/PROGRESS_ARCHIVE.md` / `PROGRESS.md`.
-
-**Queue is now empty** — every triaged task is closed except Task 2 (`.htaccess` SPA catch-all before
-the 301s / SEO-01), which stays **BLOCKED → Hostinger deploy**. Nothing else to schedule here.
-
-Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark full-bleed
-media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). See `DECISIONS.md` 2026-08-30.
+Declined by product (cont. 31, do not re-open): **Task 8 / UX-03** (treatment hero stays dark
+full-bleed media) · **Task 17 / UX-06** (`MethodProcess` circular step markers kept). `DECISIONS.md` 2026-08-30.
 
 **Legal-pages overhaul left two deploy-checklist items** (PROTECTED files, do at Hostinger deploy):
 `.htaccess` 301 `/notice-of-privacy-practices` → `/politica-de-privacidad`; drop the 7×
-`Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Backlog (flagged, not scheduled):
-GA4 cookie-consent banner; explicit US state-privacy-rights section. Memory `project_legal_pages_state`.
+`Disallow: /notice-of-privacy-practices` from `public/robots.txt`. Memory `project_legal_pages_state`.
 
-Rationale for closed tasks 19/22/23/24/25/26/27 → `DECISIONS.md` 2026-08-31 + `PROGRESS_ARCHIVE.md`.
-
-| # | Finding | Size | Flag |
-|---|---|---|---|
-| 2 | `.htaccess`: SPA catch-all before the 301s (SEO-01) | S | **BLOCKED → Hostinger deploy** |
+GA4 cookie-consent banner + US state-privacy-rights section: **closed as non-mandatory for this
+business (client's call)** — not an EmpathoAI task. Handoff §8 + `DECISIONS.md` 2026-09-08. Only
+revisit if the client asks or paid ads start reaching the EU/UK.
 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 

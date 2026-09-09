@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 54 (docs only — closed the cookie-banner + US state-privacy items as
+Base commit = `310d0a7` (cont. 54 — docs only — closed the cookie-banner + US state-privacy items as
 non-mandatory/client-side; trimmed the audit-remediation section). Prior: `fff3ef0` (cont. 53
 Lipo 360 before/after), `44a7a20` (cont. 52 limpieza FAQ reword). Dev server `:3000` = running.
 

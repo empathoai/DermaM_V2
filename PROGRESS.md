@@ -9,7 +9,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Compliance:** unchanged — still real client-provided images (`MEDICAL_COMPLIANCE` Before & After rule); only which is which was corrected. Reference disclaimer already present on the block.
 - **Verified:** browser desktop on `/limpieza-facial-profunda` after hard reload — ANTES now shows the oilier/pre-treatment skin, DESPUÉS the matte/renovated skin; alt text matches. `npm run test:visual` (server :3003): **33 passed, 1 failed** = only the pre-existing `Nosotros Page - Viewport` desktop-chrome (`about/hero.jpg` placeholder). The `Limpieza Facial Landing - Viewport` snapshots do NOT frame the before/after grid → no baseline change.
 - **SEO/AEO/GEO:** neutral — filenames and alt unchanged. Correctness/credibility fix only.
-- Commit `PENDING`.
+- Commit `5380c67`.
 
 ---
 

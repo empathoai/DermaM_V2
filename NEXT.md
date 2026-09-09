@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 51 (limpieza-facial-profunda landing — swapped the 4 ANTES/DESPUÉS asset files
+Base commit = `5380c67` (cont. 51 — limpieza-facial-profunda landing — swapped the 4 ANTES/DESPUÉS asset files
 on disk; no data change). Prior: `52a0b90` (cont. 50 Nancy Nieto bio FORMACIÓN+FILOSOFÍA),
 `c953f40` (cont. 49 founder-spotlight copy). Dev server `:3000` = running.
 

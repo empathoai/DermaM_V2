@@ -14,7 +14,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Verified:** browser desktop + 375px on `/nosotros/nancy-nieto` — 4 credentials, 3 body paragraphs with clean rhythm, filosofía + quote + hero subtitle all render, no layout shift, console clean. `npm run test:visual` (server on :3003): **32 passed, 2 failed** — (1) `Nosotros Page - Founder Cross-link` mobile-safari: 4px text reflow from the cont. 49 subheadline change → baseline regenerated (`nosotros-founder-with-link-mobile-safari-win32.png`); (2) `Nosotros Page - Viewport` desktop-chrome: pre-existing known failure (`about/hero.jpg` placeholder, awaiting team photo — `NEXT.md`). `/nosotros/nancy-nieto` itself has no snapshot test; template change covered by browser check.
 - **SEO/AEO/GEO:** strong positive — third country + per-country credentials + a hard citable stat ("+4,000 procedimientos hasta 2026", GEO statistics tactic) + team-training authority angle. Recovers and exceeds the E-E-A-T credential detail dropped from the `/nosotros` spotlight in cont. 49. Nil ranking risk.
 - **Left / follow-up cycle (unchanged from cont. 49, now also spelling):** old bio string + "FUNDADORA Y DIRECTORA" still at `aboutPage.js:50` `shortBio`, `aboutPage.js:186` `attribution`, `NancyNieto.jsx:30` Person schema `description`; normalize "Dermocosmiatría" → "Dermatocosmiatría" site-wide if aligning. Client did not ask to touch these.
-- Commit `PENDING`.
+- Commit `52a0b90`.
 
 ---
 

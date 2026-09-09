@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 50 (Nancy Nieto bio page — FORMACIÓN + FILOSOFÍA rewrite from client:
+Base commit = `52a0b90` (cont. 50 — Nancy Nieto bio page — FORMACIÓN + FILOSOFÍA rewrite from client:
 `src/data/aboutPage.js` `founderBioPage` + `FounderBioPage.jsx`/`.module.css` for a 3-paragraph
 `historia.paragraphs` array + 1 baseline refresh). Prior: `c953f40` (cont. 49 founder-spotlight copy),
 `3e59e00` (cont. 48 docs). Dev server `:3000` = running.

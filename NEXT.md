@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = cont. 55 (Nancy Nieto identity — unified founder title to "FUNDADORA Y DIRECTORA
+Base commit = `ca612d9` (cont. 55 — Nancy Nieto identity — unified founder title to "FUNDADORA Y DIRECTORA
 DE DERMA.M" + one canonical bio blurb across `aboutPage.js` + `NancyNieto.jsx` schema). Prior:
 `f919aaa` (cont. 54 docs), `fff3ef0` (cont. 53 Lipo 360 before/after). Dev server `:3000` = running.
 

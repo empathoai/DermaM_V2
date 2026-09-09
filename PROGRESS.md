@@ -11,7 +11,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Not touched:** `founderPrimer.credentialLine` on Home is a distinct title-case teaser string ("…con licencia del Estado de Florida.") — close but not identical; left as a known minor residual. `aboutPage.js:214` / `contactPage.js:26` lowercase "fundadora …" prose is natural, left.
 - **Verified:** browser desktop on `/nosotros` (spotlight eyebrow + team card now identical wording, no "& CEO") and Home (`founderPrimer` eyebrow one line, no wrap); console clean. `npm run test:visual` (server :3003): **33 passed, 1 failed** = pre-existing `Nosotros Page - Viewport` desktop-chrome (`about/hero.jpg` placeholder). No new diffs — the eyebrow/label text changes reflow within tolerance; no baseline update. Founder spotlight is covered by `Nosotros Page - Founder Cross-link` (passed).
 - **SEO/AEO/GEO:** positive — one consistent identity for Nancy across the visible page, the team card and the Person schema; nothing an LLM reads now contradicts another surface. No ranking-surface change.
-- Commit `PENDING`.
+- Commit `ca612d9`.
 
 ---
 

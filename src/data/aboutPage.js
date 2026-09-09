@@ -12,10 +12,10 @@ export const aboutPage = {
     variant: "default"
   },
   founderSpotlight: {
-    eyebrow: "FUNDADORA Y DIRECTORA DE DERMA.M",
+    eyebrow: "FUNDADORA DE DERMA.M",
     name: "NANCY NIETO",
-    subheadline: "Flebotomista certificada en Estados Unidos y especialista facial con licencia en Florida. Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador.",
-    body: "DERMA.M nació de su visión de una estética responsable, cercana y guiada por la formación continua.",
+    subheadline: "Flebotomista certificada en Estados Unidos y especialista en Estética Facial, con licencia otorgada por el Estado de Florida.",
+    body: "Su filosofía de trabajo se basa en escuchar, educar y acompañar a cada persona, porque detrás de cada piel existe una historia única.",
     image: "/assets/images/about/nancy-nieto-fundadora.jpg",
     imageAlt: "Retrato de Nancy Nieto, fundadora y directora de DERMA.M"
   },

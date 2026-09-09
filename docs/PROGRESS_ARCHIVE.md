@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-08-31 — Pre-deploy checklist + client handoff communication (cont. 48, docs)
+
+- **What:** two new docs, no site code. (1) `DEPLOY.md` at repo root (tracked) — full-site **local** sanity check to run before the Hostinger cut: clean build + `test:visual` (expect 33/1), route inventory (≈44 pages: 4 core, 6 hubs, 22 treatment slugs listed, 3 landings, legal + aliases, 1 redirect), head/SEO tags, JSON-LD validation, images (`alt`, no hardcoded Before/After), internal links, CTA taxonomy, 375px, WCAG AA, medical/legal compliance, GA4. Part 2 = the protected-file work at deploy time, pointing to `REDIRECT-MAP-VALIDATION-2026.md §8`. Folds in the scattered `NEXT.md` "Close the project" items. (2) `docs/communication_dermam.md` (gitignored dir; Spanish, client-facing) — formal handoff of the Vercel version for final approval.
+- **Why:** the deploy steps + validation lived only as fragments in `NEXT.md` and memory; `DEPLOY.md` is now the single pre-deploy source of truth. The client needs a professional, non-technical delivery doc to approve the Vercel build and unblock the Hostinger deploy.
+- **Verified:** route inventory in `DEPLOY.md` cross-checked against `src/routes.jsx` + the 22 keys in `src/data/treatmentPages.js`. Square detail cross-checked against `docs/LINKEO-SQUARE-2026.md`. No code, no `test:visual`, no `MEDICAL_COMPLIANCE` impact. User confirmed the email was sent to the client.
+- Commit `3e59e00`. Client now reviewing; awaiting confirmation + hosting/domain authorization before any deploy work.
+
+---
+
 ## 2026-08-31 — Google Reviews outbound link + eyebrow unification (cont. 47, code)
 
 - **What:** new shared `src/components/shared/GoogleReviewsLink/` (`tone` light/dark, `label` prop, official 4-colour Google "G" + `ArrowUpRight`, `rel="noopener noreferrer"`, 44px target, `:focus-visible`, sr-only new-tab notice) → outbound link to the live GBP review panel. Rendered on Home (`Testimonials.jsx`), `/nosotros` (`AboutPage.jsx`), 6 hubs + 3 landings (`TestimonialsSection.jsx`), and the footer Contacto column (`Footer.jsx`). Single `GOOGLE_REVIEWS_URL` constant in `siteMeta.js` (= `https://maps.app.goo.gl/Hgy4FgMVrEJoFWZWA`, validated live → DERMA.M listing 4.9). Eyebrow unified: `aboutPage.js` `RESEÑAS DE GOOGLE` → `GOOGLE REVIEWS`. Labels: sections carry the `GOOGLE REVIEWS` eyebrow so the link reads **"Ver más en Google"**; footer has no eyebrow so it keeps **"Reseñas en Google"**. No layout/grid change. NO `Review`/`aggregateRating` schema (8.18 policy risk stays avoided). Executes Part 1 of the 2026-08-29 reviews-alignment (8.20) spec.

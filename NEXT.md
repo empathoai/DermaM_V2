@@ -5,10 +5,12 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `3e59e00` (cont. 48 — docs only: `DEPLOY.md` pre-deploy full-site checklist
-at repo root + `docs/communication_dermam.md` client handoff of the Vercel version). Prior:
-`07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1), `d9ed2fe` (cont. 46 faq-consistency).
-Dev server `:3000` = running (external, PID not ours). **No code changed since `e62a7db`.**
+Base commit = cont. 49 (founder-spotlight copy revision from client — `src/data/aboutPage.js`
+`founderSpotlight` block only). Prior: `3e59e00` (cont. 48 docs: `DEPLOY.md` + client handoff),
+`07730e3` (cont. 47 Google Reviews outbound link, 8.20 Part 1). Dev server `:3000` = running.
+
+**Client change requests (2026-09-08):** DERMA.M sent a batch of copy revisions — executing one per
+cycle. Done: founder spotlight (cont. 49). More may follow from the same batch.
 
 **Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work
@@ -48,6 +50,13 @@ Rationale for closed tasks 19/22/23/24/25/26/27 → `DECISIONS.md` 2026-08-31 + 
 Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each starts only on the user's explicit "go" for that file.
 
 ## Other pending (outside the cont. 21 queue)
+
+**Founder bio consistency (from cont. 49) — follow-up, only if client wants it.** The old bio string
+still lives at `aboutPage.js:50` (`shortBio`), `aboutPage.js:186` (`attribution`), `NancyNieto.jsx:30`
+(Person schema `description`). Client only revised the spotlight block. If aligning: propagate the new
+wording + consider re-homing the "Cosmetología/Cosmiatría/Dermocosmiatría en Ecuador" credential on
+`/nosotros/nancy-nieto` (E-E-A-T author-authority signal dropped from the spotlight).
+
 
 **Square deep-linking — BLOCKED on the clinic.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing:
 clinic confirmation of 4 rows (PRF, marcación abdominal, corrientes rusas, depilación láser) + validate

@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-08 — Limpieza FAQ: "al salir del spa" → "después de la sesión" (cont. 52, copy)
+
+- **What:** one FAQ question on `/limpieza-facial-profunda` (`landingPages.js:328`) reworded — "…al salir del spa?" → "…después de la sesión?". Only line on the page calling the location "el spa" (off-voice vs the rest of the block).
+- **Why:** DERMA.M change-request batch (2026-09-08); user flagged the phrasing.
+- **Verified:** browser desktop after hard reload. Copy-only edit in `src/data/*`; `test:visual` not gated; `faq-consistency.spec.js` checks structure/a11y, not question text. No `MEDICAL_COMPLIANCE` impact.
+- Commit `44a7a20` (+ `33900ff` docs).
+
+---
+
 ## 2026-09-08 — Limpieza facial landing: swap ANTES/DESPUÉS images (cont. 51, assets)
 
 - **What:** client reported the before/after photos on `/limpieza-facial-profunda` were reversed. Swapped the 4 asset files on disk — `limpieza-facial-profunda-antes.{jpg,webp}` ↔ `limpieza-facial-profunda-despues.{jpg,webp}`. No change to `src/data/landingPages.js` (slot paths + alt text stay correct and keyword-named).

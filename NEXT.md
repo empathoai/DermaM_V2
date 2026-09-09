@@ -5,14 +5,14 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `44a7a20` (cont. 52 — limpieza FAQ reword "al salir del spa" → "después de la sesión";
-`src/data/landingPages.js` 1 line). Prior: `5380c67` (cont. 51 limpieza ANTES/DESPUÉS image swap),
-`52a0b90` (cont. 50 Nancy Nieto bio). Dev server `:3000` = running.
+Base commit = cont. 53 (Lipo 360 before/after block — 1 real client pair added to
+`treatments/corporales/lipo-360/` + `beforeAfter` key in `src/data/treatmentPages.js`; via `add-media`).
+Prior: `44a7a20` (cont. 52 limpieza FAQ reword), `5380c67` (cont. 51 limpieza image swap). Dev server `:3000` = running.
 
 **Client change requests (2026-09-08):** DERMA.M sent a batch of revisions — executing one per cycle.
-Done: founder spotlight (cont. 49), Nancy Nieto bio FORMACIÓN+FILOSOFÍA (cont. 50), limpieza landing
-ANTES/DESPUÉS image swap (cont. 51), limpieza FAQ "spa" reword (cont. 52). Nothing else queued from
-the batch — waiting on the next item.
+Done: founder spotlight (cont. 49), Nancy Nieto bio (cont. 50), limpieza image swap (cont. 51),
+limpieza FAQ reword (cont. 52), Lipo 360 before/after (cont. 53). Nothing else queued from the batch —
+waiting on the next item.
 
 **Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work

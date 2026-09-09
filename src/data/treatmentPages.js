@@ -718,7 +718,17 @@ const customDetails = {
         question: '¿Sustituye este masaje el uso de la faja postoperatoria?',
         answer: 'No. Los masajes estéticos son un complemento para moldear la silueta; debes continuar usando la faja según las pautas de tu cirujano.'
       }
-    ]
+    ],
+    beforeAfter: {
+      items: [
+        {
+          before: '/assets/images/treatments/corporales/lipo-360/lipo-360-antes.jpg',
+          after: '/assets/images/treatments/corporales/lipo-360/lipo-360-despues.jpg',
+          beforeAlt: 'Perfil lateral del abdomen y la cintura antes del protocolo estético Lipo 360 en Derma.M, medical spa en West Palm Beach',
+          afterAlt: 'Perfil lateral del abdomen y la cintura con un contorno más definido tras varias sesiones del protocolo estético Lipo 360 en Derma.M, medical spa en West Palm Beach'
+        }
+      ]
+    }
   },
   'levantamiento-gluteos': {
     contentUpdated: '2026-08-27',

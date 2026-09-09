@@ -5,14 +5,15 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `52a0b90` (cont. 50 — Nancy Nieto bio page — FORMACIÓN + FILOSOFÍA rewrite from client:
-`src/data/aboutPage.js` `founderBioPage` + `FounderBioPage.jsx`/`.module.css` for a 3-paragraph
-`historia.paragraphs` array + 1 baseline refresh). Prior: `c953f40` (cont. 49 founder-spotlight copy),
-`3e59e00` (cont. 48 docs). Dev server `:3000` = running.
+Base commit = cont. 51 (limpieza-facial-profunda landing — swapped the 4 ANTES/DESPUÉS asset files
+on disk; no data change). Prior: `52a0b90` (cont. 50 Nancy Nieto bio FORMACIÓN+FILOSOFÍA),
+`c953f40` (cont. 49 founder-spotlight copy). Dev server `:3000` = running.
 
-**Client change requests (2026-09-08):** DERMA.M sent a batch of copy revisions — executing one per
-cycle. Done: founder spotlight (cont. 49), Nancy Nieto bio FORMACIÓN+FILOSOFÍA (cont. 50). More may
-follow from the same batch.
+**Client change requests (2026-09-08):** DERMA.M sent a batch of revisions — executing one per cycle.
+Done: founder spotlight (cont. 49), Nancy Nieto bio FORMACIÓN+FILOSOFÍA (cont. 50), limpieza landing
+ANTES/DESPUÉS image swap (cont. 51). **Pending from the batch:** limpieza FAQ item "…al salir del
+spa?" reads off-voice (only place on the page that calls the location "el spa") — reword to match the
+rest of the FAQ, e.g. "…después de la sesión?". XS, next.
 
 **Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work

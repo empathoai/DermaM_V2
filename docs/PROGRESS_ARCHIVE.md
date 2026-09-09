@@ -3,6 +3,17 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-08 — Nancy Nieto bio page: FORMACIÓN + FILOSOFÍA revision from client (cont. 50, code)
+
+- **What:** client-supplied rewrite of the `founderBioPage` FORMACIÓN Y TRAYECTORIA and FILOSOFÍA blocks in `src/data/aboutPage.js`. `historia.headline` → "UNA TRAYECTORIA CONSTRUIDA EN VARIOS PAÍSES" (client sent "EN TRES PAÍSES"; user approved evergreen "VARIOS" to kill the hardcoded country counter). `historia.credentials`: 4 items — Estados Unidos / Ecuador / **Argentina (new)** / Formación continua, reworded; spelling per client "Dermatocosmiatría". `historia.body` string → `historia.paragraphs` array of 3 (passion · "+4,000 procedimientos hasta 2026" · team-training); `FounderBioPage.jsx` renders `historia.paragraphs` as mapped `<p>` in a new `.historiaBodyGroup` (gap 16px), string `body` still supported as fallback. `filosofia.body`/`secondaryBody` → two new paragraphs; `quote.text` → new quote; `hero.body` synced to the new quote's first sentence.
+- **Why:** DERMA.M change-request batch (2026-09-08), one section per cycle.
+- **Compliance:** "+4,000 procedimientos hasta 2026" = quantitative practitioner-experience claim, client-supplied in writing → meets the "confirmed in writing" bar; resolves the `NEXT.md` C2 quantitative-datapoint note. "cambios reales y visibles" covered by the page's existing variability disclaimer. No banned words.
+- **Verified:** browser desktop + 375px on `/nosotros/nancy-nieto` — all renders, no layout shift, console clean. `test:visual` 32 passed / 2 failed → regenerated `nosotros-founder-with-link-mobile-safari` baseline (4px reflow from cont. 49 subheadline); `Nosotros Page - Viewport` desktop-chrome is the pre-existing `about/hero.jpg` placeholder failure.
+- **SEO/AEO/GEO:** strong positive — third country + per-country credentials + citable "+4,000 procedimientos" stat + team-training authority; recovers/exceeds the E-E-A-T credential detail dropped in cont. 49.
+- Commit `52a0b90` (+ `3deead7` docs). Follow-up still open: `shortBio` / `attribution` / schema `description` consistency + site-wide "Dermocosmiatría" → "Dermatocosmiatría".
+
+---
+
 ## 2026-09-08 — Founder-spotlight copy revision from client (cont. 49, code)
 
 - **What:** client-supplied copy swap in `src/data/aboutPage.js` `founderSpotlight` block only. `eyebrow` "FUNDADORA Y DIRECTORA DE DERMA.M" → "FUNDADORA DE DERMA.M"; `subheadline` → "Flebotomista certificada en Estados Unidos y especialista en Estética Facial, con licencia otorgada por el Estado de Florida." (drops the "Formación en Cosmetología, Cosmiatría y Dermocosmiatría en Ecuador" credential line); `body` → "Su filosofía de trabajo se basa en escuchar, educar y acompañar a cada persona, porque detrás de cada piel existe una historia única." (relational differentiator, on-brand per the 130-review analysis).

@@ -1,32 +1,34 @@
+import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
 
-import Nosotros from "./pages/Nosotros";
-import NancyNieto from "./pages/NancyNieto";
-import Contacto from "./pages/Contacto";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfUse from "./pages/TermsOfUse";
-import TreatmentDisclaimer from "./pages/TreatmentDisclaimer";
-import BookingPolicy from "./pages/BookingPolicy";
-import Accessibility from "./pages/Accessibility";
-import LegalResources from "./pages/LegalResources";
+const Home = lazy(() => import("./pages/Home"));
 
-import Faciales from "./pages/hubs/Faciales";
-import Corporales from "./pages/hubs/Corporales";
-import LaserYLuz from "./pages/hubs/LaserYLuz";
-import DentalEstetico from "./pages/hubs/DentalEstetico";
-import IvTherapy from "./pages/hubs/IvTherapy";
-import Capilar from "./pages/hubs/Capilar";
+const Nosotros = lazy(() => import("./pages/Nosotros"));
+const NancyNieto = lazy(() => import("./pages/NancyNieto"));
+const Contacto = lazy(() => import("./pages/Contacto"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfUse = lazy(() => import("./pages/TermsOfUse"));
+const TreatmentDisclaimer = lazy(() => import("./pages/TreatmentDisclaimer"));
+const BookingPolicy = lazy(() => import("./pages/BookingPolicy"));
+const Accessibility = lazy(() => import("./pages/Accessibility"));
+const LegalResources = lazy(() => import("./pages/LegalResources"));
 
-import FacialesTreatment from "./pages/treatments/faciales/[treatment]";
-import CorporalesTreatment from "./pages/treatments/corporales/[treatment]";
-import LaserTreatment from "./pages/treatments/laser/[treatment]";
-import DentalTreatment from "./pages/treatments/dental/[treatment]";
-import CapilarTreatment from "./pages/treatments/capilar/[treatment]";
+const Faciales = lazy(() => import("./pages/hubs/Faciales"));
+const Corporales = lazy(() => import("./pages/hubs/Corporales"));
+const LaserYLuz = lazy(() => import("./pages/hubs/LaserYLuz"));
+const DentalEstetico = lazy(() => import("./pages/hubs/DentalEstetico"));
+const IvTherapy = lazy(() => import("./pages/hubs/IvTherapy"));
+const Capilar = lazy(() => import("./pages/hubs/Capilar"));
 
-import LimpiezaFacial from "./pages/landings/LimpiezaFacial";
-import PrfYFibrina from "./pages/landings/PrfYFibrina";
-import Postoperatorios from "./pages/landings/Postoperatorios";
+const FacialesTreatment = lazy(() => import("./pages/treatments/faciales/[treatment]"));
+const CorporalesTreatment = lazy(() => import("./pages/treatments/corporales/[treatment]"));
+const LaserTreatment = lazy(() => import("./pages/treatments/laser/[treatment]"));
+const DentalTreatment = lazy(() => import("./pages/treatments/dental/[treatment]"));
+const CapilarTreatment = lazy(() => import("./pages/treatments/capilar/[treatment]"));
+
+const LimpiezaFacial = lazy(() => import("./pages/landings/LimpiezaFacial"));
+const PrfYFibrina = lazy(() => import("./pages/landings/PrfYFibrina"));
+const Postoperatorios = lazy(() => import("./pages/landings/Postoperatorios"));
 
 export default function AppRoutes() {
   return (

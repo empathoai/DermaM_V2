@@ -6,9 +6,9 @@ are in it.
 
 ## State
 
-HEAD at `e1ac72a` (this cycle: fixed OG image dimensions — 1200×630 primary + 200×200 fallback
+HEAD at `d791609` (this cycle: fixed OG image dimensions — 1200×630 primary + 200×200 fallback
 replacing the oversized 1920×1080 default across all `og:image`/`twitter:image` tags; also includes
-the prior favicon-link cycle, `4b5ba7e`). Not yet pushed — awaiting push confirmation.
+the prior favicon-link cycle, `4b5ba7e`). Pushed to origin.
 
 ## Next activity
 

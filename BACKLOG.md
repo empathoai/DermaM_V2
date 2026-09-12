@@ -8,23 +8,18 @@ is already resolved, delete the item now (don't wait for a formal close) and say
 
 ## Blocked (waiting on user / client / third party)
 
-- **Hostinger deploy.** Client authorized go-live 2026-09-11; handoff sent 2026-08-31
-  (`docs/communication_dermam.md`) — awaiting client approval of the Vercel build + Hostinger
-  hosting/Banahost domain-migration authorization + access list. Do not touch Hostinger or protected
-  files until the user says "let's do the Hostinger deploy". Procedure: `DEPLOY.md` (Part 1 local
-  sanity check, Part 2 protected-file work: `.htaccess` SPA catch-all + 301 for
+- **Hostinger deploy.** Client authorized go-live 2026-09-11; Hostinger access confirmed by user
+  2026-09-12. All other §6 handoff sub-items resolved/deprioritized same day (see below) — nothing
+  left blocking except the user's explicit go-ahead. Do not touch Hostinger or protected files until
+  the user says "let's do the Hostinger deploy" (not yet said as of 2026-09-12). Procedure: `DEPLOY.md`
+  (Part 1 local sanity check, Part 2 protected-file work: `.htaccess` SPA catch-all + 301 for
   `/notice-of-privacy-practices`, `robots.txt` cleanup — **Check:** `grep -c "notice-of-privacy-practices" public/robots.txt` should drop from 7 to 0 once done — `sitemap`/`llms.txt` check, `INTAKE.md:56` fix), then GSC verify + submit sitemap.
-- **Square deep-linking.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing: clinic confirmation of 4
-  rows (PRF, marcación abdominal, corrientes rusas, depilación láser) + validate hidrofacial. Clinic
-  doc: artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46`. On unblock:
+- **Square deep-linking.** Deferred to post-deploy by user (2026-09-12) — does not block Hostinger.
+  Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing: clinic confirmation of 4 rows (PRF, marcación
+  abdominal, corrientes rusas, depilación láser) + validate hidrofacial. Clinic doc: artifact
+  `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46`. On unblock:
   `superpowers:brainstorming` → `src/data/squareServices.js` (slug→SERVICE_ID + helper, fallback
   `/start`); centralize `bookingUrl` (copy-pasted in 8 places).
-- **Dental on the site** (`/dental-estetico` hub + whitening + live dental cleaning) — same regulatory
-  risk that pulled it from the GBP. Decide whether the pages leave/reframe — separate cycle, user's
-  call, do not touch without an explicit request.
-- **Yelp** — claimed by Nancy (owner); user hands her the optimized NAP + description.
-- **C2 authority link** — quantitative datapoint half-resolved cont. 50 (client supplied
-  "+4,000 procedimientos hasta 2026", live on `/nosotros/nancy-nieto`). Still open: an authority link.
 - **Square staff roster stale** — "Josey" still listed as bookable staff on Square services (confirmed
   2026-09-11). Not a site/code fix — lives in Square's admin panel. User to email the clinic. No action
   here until done.
@@ -64,5 +59,12 @@ graphify out of the workflow · engram off · GSC prefix unverified
   impact (`DECISIONS.md` 2026-09-12).
 - PRF §8.3 EN page — not tracked as pending; ask explicitly if/when it becomes relevant
   (`DECISIONS.md` 2026-09-12).
+- **Dental on the site** (`/dental-estetico` hub + whitening + live dental cleaning) — user decided
+  2026-09-12: pages stay as-is, no removal or reframe. Does not block Hostinger deploy.
+- **Yelp** — user call 2026-09-12: no impact, not tracked as blocking. Whenever it happens: hand
+  Nancy (owner) the optimized NAP + description.
+- **C2 authority link** — quantitative datapoint half-resolved cont. 50 (client supplied
+  "+4,000 procedimientos hasta 2026", live on `/nosotros/nancy-nieto`) stays as unsourced prose; no
+  verifiable reference document available as of 2026-09-12. Not tracked as blocking.
 
 Rationale: `DECISIONS.md` (grep the date/task).

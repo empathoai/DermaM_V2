@@ -6,7 +6,7 @@ are in it.
 
 ## State
 
-HEAD at `<pending>` (this cycle: sharing-metadata sweep — `apple-touch-icon`, `theme-color`,
+HEAD at `dbbb4ab` (this cycle: sharing-metadata sweep — `apple-touch-icon`, `theme-color`,
 `og:site_name` across 13 files; `twitter:site`/manifest.json deliberately skipped, see
 `DECISIONS.md` 2026-09-12). Not yet pushed — awaiting push confirmation.
 

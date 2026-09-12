@@ -1,0 +1,69 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 4px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(12px, 3vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.star {
+  flex-shrink: 0;
+}
+
+.light {
+  color: #363633;
+}
+
+.dark {
+  color: #CCC9C1;
+}
+
+.light .star {
+  color: #E0A526;
+}
+
+.dark .star {
+  color: #E0C168;
+}
+
+@media (hover: hover) {
+  .badge:hover .text {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .dark:hover {
+    color: #F2F0F1;
+  }
+}
+
+.badge:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

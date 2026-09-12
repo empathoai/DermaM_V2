@@ -2,6 +2,15 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-11 — Miguel Ramos team video replaced (cont. 58, media)
+
+- **What:** replaced `public/assets/images/about/team/miguel-ramos.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (4 MB → 459 KB, `-an`), regenerated poster `.jpg` (63 KB) and `.webp` sibling.
+- **Why:** item 2 of the client's `/nosotros` team-video swap batch (item 1 = Daniela Parra, cont. 56).
+- **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
+- Commit: pending.
+
+---
+
 ## 2026-09-11 — Missing team posters filled: Mikaela Guajardo + Elianne Trujillo (cont. 57, media)
 
 - **What:** both were video-only slots (no `.jpg`/`.webp`), so their `/nosotros` cards showed the `og-default.jpg` fallback before the video loaded. Frame-extracted a poster from each existing `.mp4` (`ffmpeg -vf "select=eq(n\,0)"`), optimized (~37-39 KB each), generated `.webp` siblings. No new client asset needed — reused the video's own opening frame.

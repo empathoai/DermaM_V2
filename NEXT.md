@@ -6,18 +6,21 @@ are in it.
 
 ## State
 
-HEAD will be at this cycle's doc-fixup commit, on top of `b78223b` (GA4 `contact_whatsapp` event,
-V1.0.2), `1ddc9d7` (DERMA.M casing normalization, V1.0.1), and `653930b` (footer version
-indicator). Working tree clean, not yet pushed.
+HEAD at `be37273` (docs close for GA4 event cycle), on top of `b78223b` (GA4 `contact_whatsapp`
+event, V1.0.2), `1ddc9d7` (DERMA.M casing normalization, V1.0.1), and `653930b` (footer version
+indicator). Working tree clean.
 
 ## Next activity
 
-**All local changes are done and verified; production (Hostinger) has NOT been re-deployed
-yet** — it's still running the build from before this session (site-live cycle only). User needs
-to: `npm run build`, zip `dist/` (Python zipfile, not PowerShell `Compress-Archive` — see
-`DECISIONS.md` 2026-09-12 site-live entry), upload to Hostinger `public_html`. After that deploy,
-confirm the footer shows `V1.0.2` on the live site, and confirm the GA4 `contact_whatsapp` event
-fires on a real WhatsApp click (GA4 Realtime → Events).
+**Deployed to Hostinger and verified live (2026-09-12).** `dermam-dist-v1.0.2.zip` built from a
+clean `npm run build` (Part 1 of `DEPLOY.md` fully green: 34/34 `test:visual` on the prod build,
+all routes 200, redirects clean), uploaded to `public_html`, extracted. Confirmed on
+`dermamskinhealth.com`: `<title>` = `DERMA.M`, footer = `V1.0.2`, console clean, all 3 redirect
+types single-hop 301, GA4 `contact_whatsapp` event fires on a real WhatsApp click (dataLayer
+confirmed).
+
+No proactive next step — wait for the user. Still open, not urgent: **GSC domain verification +
+sitemap.xml submission**.
 
 Also still open, not urgent: **GSC domain verification + `sitemap.xml` submission**.
 

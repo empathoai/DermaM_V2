@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `<cont.67-hash>`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
+Base commit = `9f0b954`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
 `npm run dev` next session.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some

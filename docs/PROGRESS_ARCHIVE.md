@@ -3,6 +3,24 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-11 — Square booking UX research: deep-link live test, staff roster, admin config (cont. 63, research/docs only, no code)
+
+- **What:** live-tested a Square deep-link (`.../services/{SERVICE_ID}`) on Lipo 360 — confirmed it pre-selects the correct service, skips staff/date/checkout correctly. Cross-checked all 28 site treatment pages against `docs/LINKEO-SQUARE-2026.md` — coverage confirmed complete (§1: 14 + §2: 4 + §3: 10 = 28, no gaps).
+- **Findings documented, no code touched:** (1) Square's post-add-to-cart step always reveals the full 52-service catalog ("Add more to your appointment?") — native Square behavior, not fixable from the site. (2) "Josey" still listed as bookable staff though she's no longer with the clinic — Square admin data issue, user to email clinic. (3) Three Square Dashboard options worth the clinic reviewing later: per-service Online Booking Visibility toggle, per-service price display type, and a booking-timezone lock. All logged with source URLs in `NEXT.md` §Blocked (at the time).
+- **Why:** user flagged the booking UX as bad and wanted to understand what's actually fixable on our side vs. what's Square's own platform behavior/admin config.
+- No commit — doc-only (`NEXT.md`, `docs/LINKEO-SQUARE-2026.md`).
+
+---
+
+## 2026-09-11 — Route Contacto page WhatsApp CTAs through the shared helper (cont. 62, cleanup)
+
+- **What:** `src/pages/Contacto.jsx` had a 3rd hardcoded copy of the `wa.me` URL construction (found while auditing for any WhatsApp button missed by cont. 60/61). Its message was already correct and deliberate ("Hola, quiero agendar una evaluación personalizada con DERMA.M.", same as `FloatingWhatsApp`'s) — no typo, no bug — so this is pure DRY cleanup: now built via `buildWhatsAppUrl()` from `src/utils/whatsapp.js`. No message or number change.
+- **Why:** user asked to check for any other WhatsApp button not yet considered; this one was out of cont. 60/61's scope (not treatment/landing/hub) but still worth centralizing.
+- **Verified:** browser on `/contacto` — both hero/start WhatsApp buttons still open the same message, `wa.me/15612535384?text=...`.
+- Commit `148f90a`.
+
+---
+
 ## 2026-09-11 — Extend contextual WhatsApp message to category hubs (cont. 61, feature)
 
 - **What:** `CategoryPage.jsx`'s closing `FinalCTA` now passes `whatsappTopic={breadcrumb?.[breadcrumb.length - 1]?.label}` (e.g. "Faciales", "Láser y Luz", "Dental Estético") — 1 file, 1 line. Reuses the `whatsappTopic` prop/helper already built in cont. 60; no new data field, since every hub's breadcrumb already carries a short category label.

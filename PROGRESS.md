@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-11 — Route Contacto page WhatsApp CTAs through the shared helper (cont. 62, cleanup)
+## 2026-09-11 — Install SlopMonster skill (cont. 64, tooling only, no site code)
 
-- **What:** `src/pages/Contacto.jsx` had a 3rd hardcoded copy of the `wa.me` URL construction (found while auditing for any WhatsApp button missed by cont. 60/61). Its message was already correct and deliberate ("Hola, quiero agendar una evaluación personalizada con DERMA.M.", same as `FloatingWhatsApp`'s) — no typo, no bug — so this is pure DRY cleanup: now built via `buildWhatsAppUrl()` from `src/utils/whatsapp.js`. No message or number change.
-- **Why:** user asked to check for any other WhatsApp button not yet considered; this one was out of cont. 60/61's scope (not treatment/landing/hub) but still worth centralizing.
-- **Verified:** browser on `/contacto` — both hero/start WhatsApp buttons still open the same message, `wa.me/15612535384?text=...`.
-- Commit `148f90a`.
+- **What:** copied the `SlopMonster` skill (github.com/ItsssssJack/SlopMonster) into `.claude/skills/slopmonster/` and `.agents/skills/slopmonster/` — an AI-writing-tell linter (`tools/deslop.py`, stdlib Python, no new deps) plus rival-model cleanse script. Files copied verbatim, no source edits.
+- **Why:** user is watching Google's tightening stance on AI-sounding copy and wants a tool to catch AI "tells" (vocabulary, rule-of-three, unfalsifiable proof claims) in site copy before it ships.
+- **Mode:** no Codex CLI installed → `cleanse.sh` falls back to printing the rewrite prompt for manual paste into ChatGPT (confirmed with user, avoids adding a new CLI/account dependency this cycle).
+- **Verified:** `python3 tools/deslop.py --text "..."` runs clean (stdlib only) and correctly flags a seeded AI-tell sentence (score 3/5, exit 1).
+- **Not done this cycle (deferred, no request yet):** running the scorer against `src/data/*`, installing `openai/codex-plugin-cc` to automate the cleanse step.
 
 ---
 

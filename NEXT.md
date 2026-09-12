@@ -5,9 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `148f90a` (cont. 62 — Contacto page WhatsApp CTAs routed through the shared helper,
-DRY cleanup, no message/behavior change). Working tree clean, pushed. Dev server `:3000` = running
-(owned by another chat this session).
+Base commit = pending (cont. 64 — SlopMonster AI-copy linter skill installed under `.claude/skills/`
++ `.agents/skills/`, tooling only, no site code). Working tree to be committed + pushed this cycle.
+Dev server `:3000` = running (owned by another chat this session).
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing
@@ -94,6 +94,22 @@ then GSC verify by Domain + submit sitemap. Blocked on the client handoff (see S
 - **Yelp:** claimed by Nancy (owner); user hands her the optimized NAP + description.
 - **C2:** quantitative datapoint half RESOLVED cont. 50 — client supplied "+4,000 procedimientos hasta 2026" in writing (now live on `/nosotros/nancy-nieto`). Still open: an authority link.
 - Intake 6/7 + postop weak-point note: research context, see `docs/seo-setrategies/INTAKE.md`.
+- **Square staff roster stale:** "Josey" still listed as bookable staff on Square services (confirmed
+  2026-09-11 testing the Lipo 360 deep-link, `Corporal Abdomen,Cintura y Espalda`); user says she's no
+  longer with the clinic. Not a site/code fix — lives in Square's own admin panel. User to email the
+  clinic to remove her from staff on all services. No action here until that's done.
+- **Square Appointments admin options to review (2026-09-11):** not code — Dashboard config the user
+  wants to revisit later. (1) Per-service "Online Booking Visibility" toggle — can hide a service from
+  the public booking site while keeping it for internal/staff scheduling:
+  https://squareup.com/help/us/en/article/7243-customize-your-square-online-booking-site ·
+  https://community.squareup.com/t5/Appointments-Bookings/Why-are-all-of-my-services-not-visible-to-customers-on-my/m-p/143313
+  (2) Per-service price display type (Fixed / Starting at / Price Varies / Call Us / Blank) — lets a
+  service keep its real internal price while showing "Call Us" instead of a number online:
+  https://squareup.com/us/en/the-bottom-line/reaching-customers/introducing-more-ways-to-price-services-in-square-appointments ·
+  https://squareup.com/help/us/en/article/6487-create-a-service-from-the-square-appointments-app
+  (3) Booking timezone lock (Dashboard → Appointments → Online Booking → Settings → Calendar & Booking →
+  "Lock booking timezone to business timezone") to skip the timezone-mismatch modal:
+  https://squareup.com/help/us/en/article/5351-manage-your-square-appointments-account-settings
 
 ## Off-site backlog (no code cycle; separate sessions, user logged in)
 

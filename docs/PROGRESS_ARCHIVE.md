@@ -2,6 +2,13 @@
 
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
+## 2026-09-12 — Sharing-metadata sweep: apple-touch-icon, theme-color, og:site_name (cont. 76, code) — `dbbb4ab`
+
+- Follow-up to the favicon/OG-image fixes — audited other "invisible until shared/installed" details: `apple-touch-icon`, `theme-color`, `og:site_name`, `twitter:site`, web app manifest.
+- Generated `public/assets/images/global/apple-touch-icon.png` (180×180 PNG, rasterized via `sharp` from `logo_dermam_nav.svg`, `#141313` brand-dark background) and linked it plus `<meta name="theme-color" content="#141313">` in `index.html`.
+- Added `<meta property="og:site_name" content="Derma.M" />` to all 13 files carrying an `og:url` tag (8 top-level pages, 3 landing pages, `CategorySEO.jsx`, `TreatmentSEO.jsx`).
+- Skipped `twitter:site` — no active X/Twitter account (checked `organizationSchema.js` `sameAs`, only Instagram/TikTok/Facebook/Yelp/Maps listed). Skipped a web app manifest — out of scope for a non-PWA marketing site, would only matter alongside a full "Add to Home Screen" treatment.
+
 ## 2026-09-12 — DEPLOY.md Part 2 (items 1-3) + external-audit reconciliation (cont. 72, code + docs) — `a31f5bf`
 
 - **DEPLOY.md Part 2 items 1-3** (user go-ahead, full sweep not just documented steps): rewrote `public/.htaccess` (legacy 301 block reordered before the SPA fallback, +27 missing redirects added, trailing-slash regex bug fixed, `/notice-of-privacy-practices` 301 added); removed the 7× stale `Disallow: /notice-of-privacy-practices` from `public/robots.txt`; confirmed `/nosotros/nancy-nieto` already present in sitemap/robots/llms. Added a "Spec:" citation (Apache mod_rewrite docs, Google robots.txt spec, sitemaps.org, llmstxt.org) to each Part 2 item so future passes verify against ground truth, not self-graded thoroughness (`DECISIONS.md` 2026-09-12).

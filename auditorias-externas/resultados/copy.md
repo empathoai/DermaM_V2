@@ -33,7 +33,7 @@
 > | CPY-04 (7 variantes de CTA) | ✅ **RESUELTO** — commit `4572f98` | Taxonomía unificada: "Agenda tu valoración" / "WhatsApp" / "Consultar disponibilidad" (memoria `project_cta_taxonomy`). |
 > | CPY-05 ("marcas permanentes") | ✅ **RESUELTO** | Sin ocurrencias de "permanentes" en `treatmentPages.js`. |
 > | CPY-06 (emergencia sin inglés) | ✅ **RESUELTO** | `TreatmentDisclaimer.jsx:139-142` — cláusula 911 bilingüe ES/EN presente. |
-> | CPY-07 (capitalización inconsistente) | ❌ **SIGUE ABIERTO** | No verificado a fondo (barrido amplio, talla L en el plan de remediación) — re-auditar. |
+> | CPY-07 (capitalización inconsistente) | ✅ **RESUELTO** | Verificado 2026-09-12 contra el código real: grep de `headline:`/`problemContextHeadline:`/`question:`/`eyebrow:`/`label:` en `categoryPages.js` y `treatmentPages.js` — sin Title Case anglosajón; mayúsculas sostenidas solo en eyebrows cortos, sentence case en el resto. Resuelto por Task 25 (2026-08-31); esta fila había quedado desactualizada. |
 
 | # | Severidad | Ubicación (`file:line` o ruta) | Qué pasa | Por qué importa | Dirección sugerida |
 |---|---|---|---|---|---|

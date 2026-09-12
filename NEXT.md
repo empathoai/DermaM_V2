@@ -6,8 +6,8 @@ are in it.
 
 ## State
 
-HEAD will be at this cycle's commit (site-live docs cycle `b9c3e60` + this fix). Working tree clean
-after commit.
+HEAD at `de8c84d` (fix: maderoterapia-corporal request-loop) + this doc-hash-fixup commit. Working
+tree clean, not yet pushed.
 
 ## Next activity
 

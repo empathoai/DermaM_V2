@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `76fa298` + cont. 68 (pending push). Working tree clean. Dev server `:3000` = stopped;
-restart with `npm run dev` next session.
+Base commit = `55cff86`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
+`npm run dev` next session.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing

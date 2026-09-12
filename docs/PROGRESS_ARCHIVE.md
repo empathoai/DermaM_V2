@@ -9,6 +9,11 @@ Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para al
 - **Reconciled the external-audit package** (`auditorias-externas/resultados/*.md`, `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`, gitignored) against current code + a live browser pass: of 27 original findings, 26 closed (19 already fixed in untracked prior cycles, 6 UX/`DESIGN.md` items closed after visual verification showed no real defect, 1 — PRF internal linking — matches an already-registered spec that defers it). Only CPY-07 (title-case inconsistency) stays open, deferred to the pre-deploy external re-audit per user request.
 - `test:visual` skipped — no CSS/component changes, only protected config files + doc reconciliation.
 
+## 2026-09-12 — DEPLOY.md Part 2 item 4: fix stale "Vercel" reference (cont. 73, docs only) — `bbc1ce5`
+
+- Fixed `docs/seo-setrategies/INTAKE.md:56` — "deploy en **Vercel**" → "deploy en **Hostinger (Apache)**", matching the actual deploy target (Hostinger = prod, Vercel = client demo only).
+- Doc-only, mechanical — no DECISIONS.md entry.
+
 ## 2026-09-12 — Reconcile technical SEO/GEO audit doc + close item 8.19 (cont. 71, code)
 
 - Verified `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` against current code (not a re-research pass) and corrected stale `❌ pendiente` markers that were actually already resolved: 8.12 (robots.txt AI-bot directives), 8.14 (`sameAs` real profiles), 8.16/6.1 (sitemap `<lastmod>`), 8.18/5.6 (`aggregateRating` removed from Home/Contacto), `BreadcrumbList` in treatment templates, 8.9/8.10 (PRF naming), GA4. Reclassified 8.17 (GSC/Bing WT) as blocked by the Hostinger deploy, not un-worked. `docs/SEO_AUDIT_2026.md` left untouched — out of scope.

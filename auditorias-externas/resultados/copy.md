@@ -22,6 +22,19 @@
 
 ## 2. Hallazgos
 
+> **Nota de verificación interna (2026-09-12), previa a re-auditoría externa pre-deploy:**
+> 6 de 7 hallazgos ya están resueltos en código. Verificado por grep/lectura directa.
+>
+> | # | Estado | Evidencia |
+> |---|---|---|
+> | CPY-01 (3 formulaciones del aviso) | ✅ **RESUELTO** | Constante única `MEDICAL_VALUATION_NOTICE` (`siteMeta.js`) importada en todos los puntos de `categoryPages.js`/`treatmentPages.js`/`FeaturedServices.jsx`/`FinalCTA.jsx`. |
+> | CPY-02 (botón muerto) | ✅ **RESUELTO** — commit `a52de89` | Ver UX-01 en `resultados/ui-ux.md`. |
+> | CPY-03 (tú/usted inconsistente) | ✅ **RESUELTO** | Sin ocurrencias de "usted" en `TreatmentDisclaimer.jsx` (memoria `project_legal_docs_tu_register`, Task 15/CPY-03). |
+> | CPY-04 (7 variantes de CTA) | ✅ **RESUELTO** — commit `4572f98` | Taxonomía unificada: "Agenda tu valoración" / "WhatsApp" / "Consultar disponibilidad" (memoria `project_cta_taxonomy`). |
+> | CPY-05 ("marcas permanentes") | ✅ **RESUELTO** | Sin ocurrencias de "permanentes" en `treatmentPages.js`. |
+> | CPY-06 (emergencia sin inglés) | ✅ **RESUELTO** | `TreatmentDisclaimer.jsx:139-142` — cláusula 911 bilingüe ES/EN presente. |
+> | CPY-07 (capitalización inconsistente) | ❌ **SIGUE ABIERTO** | No verificado a fondo (barrido amplio, talla L en el plan de remediación) — re-auditar. |
+
 | # | Severidad | Ubicación (`file:line` o ruta) | Qué pasa | Por qué importa | Dirección sugerida |
 |---|---|---|---|---|---|
 | **CPY-01** | **Alta** | `src/data/categoryPages.js:56, 867`<br>`src/data/treatmentPages.js:44, 56`<br>`src/components/sections/FeaturedServices/FeaturedServices.jsx:52, 89, 126`<br>`src/components/shared/FinalCTA/FinalCTA.jsx:66` | Coexisten tres versiones distintas del aviso preventivo obligatorio al pie de las llamadas a la acción: 1) *"Requiere valoración médica previa para garantizar tu seguridad y resultados."*; 2) *"Requiere valoración previa para garantizar tu seguridad y resultados."* (omite "médica"); 3) *"Requiere valoración profesional previa para garantizar tu seguridad y resultados."* (sustituye por "profesional"). | `docs/MEDICAL_COMPLIANCE.md` (Regla de Oro 2) define una cadena textual obligatoria y uniforme como salvaguarda médico-legal ante el Departamento de Salud de Florida y la Junta Médica. La variabilidad diluye la protección jurídica y genera ambigüedad sobre si la evaluación es facultativa o meramente estética general. | Estandarizar una única constante de texto centralizada en un módulo de configuración e importarla en todos los componentes y archivos de datos, garantizando que el enunciado normativo exacto se aplique al 100% de los CTAs de tratamientos. |

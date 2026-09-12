@@ -128,13 +128,27 @@ have absolute URLs; per-treatment graph present (SEO-07).
 
 Do **not** touch these until the user says "let's do the Hostinger deploy".
 
+**Rule for every item below:** "done" requires checking against the cited external spec, not just
+internal consistency or re-reading the file. If an item's spec wasn't actually fetched/consulted for
+this pass, say so — don't mark it done. (See `DECISIONS.md` 2026-09-12 — self-graded "thorough"
+passes missed a real llms.txt spec violation until asked directly; this rule exists because of that.)
+
 1. **`public/.htaccess`** — replace with the block from
    `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8. This puts the SPA catch-all
    **after** the 301s (resolves Task 2 / SEO-01) and adds
    `301 /notice-of-privacy-practices → /politica-de-privacidad`.
+   **Spec:** [Apache mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) rule
+   order and flags (`R=301`, `L`) — verify the legacy 301 block precedes the SPA fallback and no
+   rule shadows one below it.
 2. **`public/robots.txt`** — remove the 7× `Disallow: /notice-of-privacy-practices` lines.
+   **Spec:** [Google's robots.txt spec](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt) —
+   verify directive syntax, group structure, and that no `Allow`/`Disallow` pair contradicts
+   `sitemap.xml` or `llms.txt`.
 3. Verify `/nosotros/nancy-nieto` is present in `public/sitemap.xml`, `public/robots.txt`,
    `public/llms.txt`.
+   **Spec:** [sitemaps.org protocol](https://www.sitemaps.org/protocol.html) for `sitemap.xml`
+   structure/`lastmod`; [llmstxt.org](https://llmstxt.org) for `llms.txt` — single H1, blockquote
+   summary, H2 file-list sections using markdown hyperlinks `[name](url)`, `Optional` section last.
 4. Fix `docs/seo-setrategies/INTAKE.md:56` — "Vercel" → Hostinger/Apache.
 5. **Post-deploy on prod:** run the `curl -I` redirect script from `REDIRECT-MAP-VALIDATION-2026.md`
    §8; confirm key routes 200 over HTTPS with no mixed content; GA4 fires; then GSC verify by

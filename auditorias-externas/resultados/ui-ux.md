@@ -23,6 +23,33 @@
 
 ## 2. Hallazgos
 
+> **Nota de verificación interna (2026-09-12), previa a re-auditoría externa pre-deploy:**
+> Los 12 hallazgos de este informe están cerrados: 6 resueltos en código, 6 evaluados
+> directamente en el navegador (desktop + mobile, `/`, `/faciales/hifu-facial`, `/contacto`,
+> `/nosotros`) por pedido explícito del usuario — el sitio está casi-final y una desviación
+> literal de `DESIGN.md` no se toca solo por ser una desviación si visualmente funciona bien.
+> 5 de esos 6 resultaron ser discrepancias de documentación sin defecto visual real; 1
+> (skip-link) era un falso negativo del grep original.
+>
+> | # | Estado | Evidencia |
+> |---|---|---|
+> | UX-01 (botón muerto Postoperatorios) | ✅ **RESUELTO** — commit `a52de89` | `FeaturedServices.jsx:122` ahora es `<Link to="/tratamientos-postoperatorios">`. |
+> | UX-02 (CategoryPage amputada) | ✅ **RESUELTO** | breadcrumb/benefits/approach/process se renderizan en `CategoryPage.jsx`. |
+> | UX-03 (hero de tratamiento oscuro a pantalla completa) | 🔵 **CERRADO SIN CAMBIO** — revisado en browser | Visualmente pulido y legible en desktop y mobile (`/faciales/hifu-facial`); desviación literal de `DESIGN.md` §7 pero no un defecto — se mantiene como decisión de diseño. |
+> | UX-04 (opacity:0 hasta evento de video) | 🔵 **CERRADO SIN CAMBIO** — revisado en browser | Texto visible de inmediato en Home y hero de tratamiento, sin pantalla en blanco; no se reprodujo el bloqueo descrito. |
+> | UX-05 (h3 antes de h2 en legales) | ✅ **RESUELTO** | `LegalPageLayout.jsx` ya no tiene el `<h3>` de "Sección X"; solo `<h2>`. |
+> | UX-06 (marcador circular en MethodProcess) | 🔵 **CERRADO SIN CAMBIO** — revisado en browser | Los marcadores 01-04 en "Así es nuestro método" (Home) se ven limpios y deliberados; desviación literal del radio 0px pero no una falla visual. |
+> | UX-07 (bg-white en LegalResources) | ✅ **RESUELTO** | Sin ocurrencias de `bg-white`/`#FFFFFF` en `LegalResources.jsx`. |
+> | UX-08 (Contacto: gradientes/blur/#363633) | 🔵 **CERRADO SIN CAMBIO** — revisado en browser | `/contacto` completo sin glassmorphism ni blur visibles, botones consistentes con el resto del sitio. |
+> | UX-09 (bullet genérico vs ListSparkle) | ✅ **RESUELTO** | `FeaturedServices.jsx` usa `<ListSparkle variant="dark/light" />` en las 3 bandas. |
+> | UX-10 (falta skip-to-content) | ✅ **RESUELTO** — corregido 2026-09-12 | El grep original en `App.jsx` fue un falso negativo. Confirmado en browser: `Tab` desde Home muestra "Saltar al contenido principal". |
+> | UX-11 (disclaimer footer 11px) | ✅ **RESUELTO** | `Footer.jsx:106,109` ya usa `text-[12px]`. |
+> | UX-12 (AboutPage padding fijo + estrellas) | 🔵 **CERRADO SIN CAMBIO** — revisado en browser | Estrellas doradas ya no aparecen (testimonios usan estrellas grises sobrias); ritmo y canaletas de `/nosotros` se ven consistentes sin saltos perceptibles. |
+>
+> **Ningún hallazgo de UX queda abierto.** Todos los ítems de `DESIGN.md`/UX de este informe están
+> cerrados — sea porque el código ya lo corrigió, o porque la revisión visual confirmó que no hay
+> un problema real que justifique tocar diseño en un sitio casi-final.
+
 | # | Severidad | Ubicación (`file:line`) | Qué pasa | Por qué importa | Dirección sugerida |
 |---|---|---|---|---|---|
 | **UX-01** | **Crítica** | `src/components/sections/FeaturedServices/FeaturedServices.jsx:124` | El botón de llamada a la acción para "Tratamientos Postoperatorios" está implementado como `<button className={styles.ctaLight}>Agenda tu valoración</button>` sin atributo `onClick`, sin propiedad `type`, sin pertenecer a un formulario y sin envoltorio de enlace de enrutamiento. | Es un callejón sin salida interactivo en una de las secciones de mayor exposición del Home. Un usuario interesado en recuperación postquirúrgica pulsa el botón y no experimenta ninguna retroalimentación ni navegación, lo que genera desconfianza clínica y abandono de la sesión. | Convertir el botón en un enlace de enrutamiento consistente con las otras dos tarjetas de la misma sección (`/limpieza-facial-profunda` y `/prf-y-fibrina`), dirigiéndolo a la ruta canónica `/tratamientos-postoperatorios`. |

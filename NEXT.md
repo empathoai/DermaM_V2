@@ -6,23 +6,26 @@ are in it.
 
 ## State
 
-Clean, pushed pending this cycle's commit. HEAD will move past `a82d527` once committed (this
-cycle: `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` reconciled against code + item 8.19 closed in
-`organizationSchema.js`). Hostinger access confirmed by user; deploy is unblocked pending only the
-user's explicit "hagamos el deploy".
+Clean, pushed pending this cycle's commit. HEAD will move past `2a50f8a` once committed (this
+cycle: `DEPLOY.md` Part 2 items 1-3 executed — `.htaccess`/`robots.txt` fixed, `/nosotros/nancy-nieto`
+confirmed present; `llms.txt` brought into llmstxt.org spec compliance; external-audit package
+reconciled against current code, 26/27 findings closed).
 
 ## Next activity
 
-Nothing queued. `DEPLOY.md` Part 1 is fully closed. SEO/GEO/AEO technical audit doc is now
-reconciled with code (see `PROGRESS.md` top entry) — only 8.17 (GSC/Bing WT, blocked by deploy) and
-low-priority 8.11/8.13/8.15 remain, none actionable this session.
+`DEPLOY.md` Part 2 items 4-6 remain: item 4 (fix `docs/seo-setrategies/INTAKE.md:56` "Vercel" →
+Hostinger/Apache — small doc fix, no gate) and items 5-6 (post-deploy `curl -I` verification +
+`public_html` backup — only executable once the user actually uploads to Hostinger, not from this
+session). None require deploy access to start item 4.
 
-Part 2 of `DEPLOY.md` (protected files: `.htaccess`, `robots.txt`, etc.) stays untouched until the
-user says the literal words "hagamos el deploy" / "let's do the Hostinger deploy".
+Auditorías externas: only CPY-07 (title-case inconsistency across `categoryPages.js`/
+`treatmentPages.js`, talla L) stays open — deferred to the pre-deploy external re-audit
+(`auditorias-externas/PROMPT.md`) per explicit user request, not to be picked up ad hoc.
 
 ## How to resume
 
-Nothing to execute proactively — waiting for the user's explicit deploy go-ahead, or a new task.
+Nothing to execute proactively — waiting for the user's explicit deploy go-ahead ("hagamos el
+deploy") to touch items 5-6, or a request to run the external re-audit, or a new task.
 
 ## Context by area — grep, not full-read
 

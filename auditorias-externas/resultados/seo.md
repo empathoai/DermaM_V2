@@ -23,6 +23,26 @@
 
 ## 2. Hallazgos
 
+> **Nota de verificación interna (2026-09-12), previa a re-auditoría externa pre-deploy:**
+> 7 de 10 hallazgos de este informe ya están resueltos en código a la fecha de esta nota.
+> Verificado por grep/lectura directa, no por re-ejecución del auditor original. Un auditor
+> externo nuevo no debería re-reportar estos como abiertos.
+>
+> | # | Estado | Evidencia |
+> |---|---|---|
+> | SEO-01 (`.htaccess`) | ✅ **RESUELTO** 2026-09-12 | Bloque legacy 301 reordenado antes del SPA fallback, +27 redirects agregados. |
+> | SEO-02 (nancy-nieto huérfana) | ✅ **RESUELTO** — commit `0c723fc` | Presente en `sitemap.xml`, `robots.txt`, `llms.txt`. |
+> | SEO-03 (BreadcrumbList invisible) | ✅ **RESUELTO** | `<Breadcrumb />` ahora se renderiza en `CategoryPage.jsx:39` y en las landings. |
+> | SEO-04 (entidad Nosotros fragmentada) | ✅ **RESUELTO** | `Nosotros.jsx` usa `organizationNode` + `@graph` con `mainEntity: {"@id":".../#organization"}`. |
+> | SEO-05 (CategoryPage sin benefits/approach/process) | ✅ **RESUELTO** | Las 3 secciones + breadcrumb se renderizan en `CategoryPage.jsx`. |
+> | SEO-06 (robots.txt sin directivas IA) | ✅ **RESUELTO** | Bloques `OAI-SearchBot`/`Claude-SearchBot`/`PerplexityBot`/`GPTBot`/`ClaudeBot`/`Google-Extended` presentes. |
+> | SEO-07 (JSON-LD fragmentado) | ✅ **RESUELTO** | `TreatmentSEO.jsx` emite un único `@graph` (Service + BreadcrumbList + FAQPage); `FAQAccordion` ya no emite script propio. |
+> | SEO-08 (canibalización PRF) | ✅ **RESUELTO/NO APLICA** — verificado 2026-09-12 | `microneedling` no menciona "plasma"/"PRF" en su copy (sin overlap real); el enriquecimiento de la landing (FAQ PRF vs PRP/fillers) ya está ejecutado. El enlazado interno específico es un follow-up condicional ya definido en `docs/superpowers/specs/2026-08-28-prf-content-strategy-design.md:30` ("solo si la landing empieza a rankear"), no una omisión. |
+> | SEO-09 (sitemap sin `<lastmod>`) | ✅ **RESUELTO** | Las 25 URLs de tratamiento + resto tienen `<lastmod>` ISO 8601. |
+> | SEO-10 (llms.txt sin enlaces legales) | ✅ **RESUELTO** 2026-09-12 | Sección `## Optional` con los 6 enlaces legales; además corregido para cumplir el spec real de llmstxt.org (H1 único, hyperlinks markdown). |
+>
+> **Ningún hallazgo de este informe queda abierto.**
+
 | # | Severidad | Ubicación (`file:line` o ruta) | Qué pasa | Por qué importa | Dirección sugerida |
 |---|---|---|---|---|---|
 | **SEO-01** | **Crítica** | `public/.htaccess:31-34` vs `public/.htaccess:39-80` | La regla de reescritura catch-all para la Single Page Application (`RewriteRule . /index.html [L]`) se definió en la línea 34, antes del bloque de más de 40 redirecciones 301 de URLs heredadas de WordPress (líneas 39-80). En Apache mod_rewrite, la bandera `[L]` detiene el procesamiento inmediatamente para cualquier URI que no sea un archivo o directorio físico existente. | Ninguna de las redirecciones 301 hacia los nuevos tratamientos, categorías y páginas institucionales llega a ejecutarse en un entorno Apache. Cualquier enlace externo antiguo o marcador guardado por usuarios hacia rutas de WordPress es capturado por el catch-all y devuelve el `index.html` con código de estado HTTP 200 en lugar de un 301 formal. Esto destruye la transferencia histórica de PageRank y genera desindexación masiva de enlaces entrantes. | Reordenar las directivas de `.htaccess` trasladando la totalidad de las reglas `RewriteRule ... [R=301,L]` por encima de la condición y regla de captura general de la SPA (`RewriteRule . /index.html [L]`). |

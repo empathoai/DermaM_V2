@@ -18,11 +18,91 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.dermamskinhealth\.com [NC]
 RewriteRule ^(.*)$ https://dermamskinhealth.com/$1 [R=301,L]
 
+# ===============================================
+# WORDPRESS LEGACY 301 REDIRECTS
+# Must run BEFORE the trailing-slash strip and the SPA fallback.
+# Each pattern ends /?$ so it matches with or without the WP trailing slash
+# (single hop, no chain).
+# ===============================================
+
+# --- Core / structural ---
+RewriteRule ^home-3/?$                                  /                             [R=301,L]
+RewriteRule ^home-english/?$                            /                             [R=301,L]
+RewriteRule ^galeria/?$                                 /                             [R=301,L]
+RewriteRule ^acerca-de/?$                               /nosotros                     [R=301,L]
+RewriteRule ^author/nancy-marcela/?$                    /nosotros/nancy-nieto         [R=301,L]
+
+# --- Hubs ---
+RewriteRule ^tratamientos-faciales/?$                   /faciales                     [R=301,L]
+RewriteRule ^tratamientos-faciales-2/?$                 /faciales                     [R=301,L]
+RewriteRule ^portfolio-types/tratamientos-faciales/?$   /faciales                     [R=301,L]
+RewriteRule ^category/tratamientos-faciales/?$          /faciales                     [R=301,L]
+RewriteRule ^tratamientos-corporales/?$                 /corporales                   [R=301,L]
+RewriteRule ^category/tratamientos-corporales/?$        /corporales                   [R=301,L]
+
+# --- Landings ---
+RewriteRule ^plasma-rico-en-plaquetas/?$                /prf-y-fibrina                [R=301,L]
+RewriteRule ^plasma-rico-en-plaquetas-2/?$              /prf-y-fibrina                [R=301,L]
+RewriteRule ^hidratacion-profunda/?$                    /limpieza-facial-profunda     [R=301,L]
+RewriteRule ^portfolio-item/hidratacion-profunda/?$     /limpieza-facial-profunda     [R=301,L]
+RewriteRule ^portfolio-item/limpieza-facial-profunda/?$ /limpieza-facial-profunda     [R=301,L]
+RewriteRule ^drenaje-linfatico-facial/?$                /tratamientos-postoperatorios [R=301,L]
+RewriteRule ^drenaje-linfatico-corporal/?$              /tratamientos-postoperatorios [R=301,L]
+
+# --- Facial treatment detail pages ---
+RewriteRule ^microneedling/?$                           /faciales/microneedling           [R=301,L]
+RewriteRule ^tratamiento-para-el-acne/?$                /faciales/tratamiento-acne        [R=301,L]
+RewriteRule ^tratamiento-para-las-manchas/?$            /faciales/manchas-cicatrices      [R=301,L]
+RewriteRule ^camuflaje-de-cicatrices/?$                 /faciales/manchas-cicatrices      [R=301,L]
+RewriteRule ^rejuvenecedores/?$                         /faciales/rejuvenecimiento-facial [R=301,L]
+RewriteRule ^radiofrecuencia-2/?$                       /faciales/radiofrecuencia-facial  [R=301,L]
+RewriteRule ^radiofrecuencia-3/?$                       /faciales/radiofrecuencia-facial  [R=301,L]
+RewriteRule ^dermoabrasion/?$                           /faciales/dermabracion-facial     [R=301,L]
+RewriteRule ^terapia-luz-led/?$                         /faciales                         [R=301,L]
+RewriteRule ^mesoterapia/?$                             /faciales                         [R=301,L]
+RewriteRule ^mesoterapia-2/?$                           /faciales                         [R=301,L]
+RewriteRule ^dermaplaning/?$                            /faciales                         [R=301,L]
+RewriteRule ^bb-glow/?$                                 /faciales                         [R=301,L]
+RewriteRule ^bb-lips/?$                                 /faciales                         [R=301,L]
+
+# --- Body treatment detail pages ---
+RewriteRule ^dermoabrasion-2/?$                         /corporales/maderoterapia-corporal [R=301,L]
+RewriteRule ^levantamiento-de-gluteos/?$                /corporales/levantamiento-gluteos  [R=301,L]
+RewriteRule ^celulitis/?$                               /corporales/estrias-celulitis      [R=301,L]
+RewriteRule ^estrias/?$                                 /corporales/estrias-celulitis      [R=301,L]
+RewriteRule ^camuflaje-de-estrias/?$                    /corporales/estrias-celulitis      [R=301,L]
+RewriteRule ^piel-flacida/?$                            /corporales/hifu-corporal          [R=301,L]
+RewriteRule ^cavitacion/?$                              /corporales                        [R=301,L]
+RewriteRule ^vacuumterapia/?$                           /corporales                        [R=301,L]
+RewriteRule ^desintoxicacion-ionica/?$                  /corporales                        [R=301,L]
+
+# --- Hair ---
+RewriteRule ^camuflaje-capilar/?$                       /capilar                           [R=301,L]
+
+# --- Lorem-ipsum placeholder posts ---
+RewriteRule ^quisque-lorem-tortor-fringilla-sed-vesti-bulum/?$   / [R=301,L]
+RewriteRule ^quisque-lorem-tortor-fringilla-sed-vesti-bulum-2/?$ / [R=301,L]
+RewriteRule ^quisque-lorem-tortor-fringilla-sed/?$               / [R=301,L]
+RewriteRule ^donec-tempus-urna-risus/?$                          / [R=301,L]
+
+# --- Generic WordPress patterns (everything not named above) ---
+RewriteRule ^portfolio-item/(.*)$   /faciales [R=301,L]
+RewriteRule ^portfolio-types/(.*)$  /faciales [R=301,L]
+RewriteRule ^category/(.*)$         /         [R=301,L]
+RewriteRule ^tag/(.*)$              /         [R=301,L]
+RewriteRule ^author/(.*)$           /         [R=301,L]
+RewriteRule ^page/([0-9]+)/?$       /         [R=301,L]
+RewriteRule ^wp-admin/?$            /         [R=301,L]
+RewriteRule ^wp-login\.php$         /         [R=301,L]
+
+# --- Retired legal page ---
+RewriteRule ^notice-of-privacy-practices/?$             /politica-de-privacidad            [R=301,L]
+
 # -----------------------------------------------
-# REMOVE TRAILING SLASH (except root)
+# REMOVE TRAILING SLASH (non-root, non-legacy)
 # -----------------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [R=301,L]
+RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # -----------------------------------------------
 # REACT ROUTER — SPA fallback
@@ -32,51 +112,6 @@ RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
-
-# -----------------------------------------------
-# CORE PAGES — WordPress legacy redirects
-# -----------------------------------------------
-RewriteRule ^home-3/?$ / [R=301,L]
-RewriteRule ^home-english/?$ / [R=301,L]
-RewriteRule ^acerca-de/?$ /nosotros [R=301,L]
-RewriteRule ^galeria/?$ / [R=301,L]
-
-# -----------------------------------------------
-# LANDING PAGES — WordPress legacy redirects
-# -----------------------------------------------
-RewriteRule ^portfolio-item/limpieza-facial-profunda/?$ /limpieza-facial-profunda [R=301,L]
-RewriteRule ^hidratacion-profunda/?$ /limpieza-facial-profunda [R=301,L]
-RewriteRule ^portfolio-item/hidratacion-profunda/?$ /limpieza-facial-profunda [R=301,L]
-RewriteRule ^plasma-rico-en-plaquetas/?$ /prf-y-fibrina [R=301,L]
-RewriteRule ^plasma-rico-en-plaquetas-2/?$ /prf-y-fibrina [R=301,L]
-RewriteRule ^drenaje-linfatico-corporal/?$ /tratamientos-postoperatorios [R=301,L]
-RewriteRule ^drenaje-linfatico-facial/?$ /tratamientos-postoperatorios [R=301,L]
-
-# -----------------------------------------------
-# FACIALES HUB — WordPress legacy redirects
-# -----------------------------------------------
-RewriteRule ^tratamientos-faciales/?$ /faciales [R=301,L]
-RewriteRule ^tratamientos-faciales-2/?$ /faciales [R=301,L]
-RewriteRule ^portfolio-types/tratamientos-faciales/?$ /faciales [R=301,L]
-RewriteRule ^category/tratamientos-faciales/?$ /faciales [R=301,L]
-
-# -----------------------------------------------
-# CORPORALES HUB — WordPress legacy redirects
-# -----------------------------------------------
-RewriteRule ^tratamientos-corporales/?$ /corporales [R=301,L]
-RewriteRule ^category/tratamientos-corporales/?$ /corporales [R=301,L]
-
-# -----------------------------------------------
-# WORDPRESS GENERIC PATTERNS
-# -----------------------------------------------
-RewriteRule ^portfolio-item/(.*)/?$ / [R=301,L]
-RewriteRule ^portfolio-types/(.*)/?$ / [R=301,L]
-RewriteRule ^category/(.*)/?$ / [R=301,L]
-RewriteRule ^tag/(.*)/?$ / [R=301,L]
-RewriteRule ^author/(.*)/?$ / [R=301,L]
-RewriteRule ^page/([0-9]+)/?$ / [R=301,L]
-RewriteRule ^wp-admin/?$ / [R=301,L]
-RewriteRule ^wp-login\.php$ / [R=301,L]
 
 # -----------------------------------------------
 # SECURITY HEADERS

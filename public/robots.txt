@@ -40,9 +40,6 @@ Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
 
-# Disallow draft legal page until reviewed
-Disallow: /notice-of-privacy-practices
-
 # Disallow audit folder
 Disallow: /_audit/
 
@@ -65,7 +62,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 User-agent: Claude-SearchBot
@@ -73,7 +69,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 User-agent: PerplexityBot
@@ -81,7 +76,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 # AI training crawlers (allowed — no sensitive IP in public copy)
@@ -90,7 +84,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 User-agent: ClaudeBot
@@ -98,7 +91,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 User-agent: Google-Extended
@@ -106,7 +98,6 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /terms-of-use
 Disallow: /tratamientos-disclaimer
-Disallow: /notice-of-privacy-practices
 Disallow: /_audit/
 
 # Sitemap location

@@ -6,9 +6,9 @@ are in it.
 
 ## State
 
-HEAD at `<pending commit>` (this cycle: GSC verify/sitemap + `page_id` redirect fix, V1.0.3), on
-top of `be37273` (docs close for GA4 event cycle), `b78223b` (GA4 `contact_whatsapp` event,
-V1.0.2). Working tree clean.
+HEAD at `5dcb226` (GSC verify/sitemap + `page_id` redirect fix, V1.0.3), on top of `be37273` (docs
+close for GA4 event cycle), `b78223b` (GA4 `contact_whatsapp` event, V1.0.2). Working tree clean
+(pending: doc-fixup commit for the hash above).
 
 ## Next activity
 

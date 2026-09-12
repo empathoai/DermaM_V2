@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `9f0b954`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
-`npm run dev` next session.
+Base commit = `76fa298` + cont. 68 (pending push). Working tree clean. Dev server `:3000` = stopped;
+restart with `npm run dev` next session.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing
@@ -66,10 +66,12 @@ hidrofacial. On unblock: `superpowers:brainstorming` → `src/data/squareService
 helper, fallback `/start`); centralize `bookingUrl` (copy-pasted in 8 places). Clinic-facing doc =
 artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` (republish with `url=`).
 
-**Missing media — `add-media` skill, 1 slot/cycle.** `about/hero.jpg` ON HOLD: placeholder
-`contact/hero.jpg` (`aboutPage.js:11`), waiting on team photo → **known `test:visual` failure**
-`nosotros-viewport` (desktop-chrome); if it drags: `npx playwright test -g "Nosotros Page - Viewport"
---update-snapshots`. Also verify `.jpg` posters for `mikaela-guajardo` / `elianne-trujillo` (Nancy 4/4 done).
+**`about/hero.jpg` — CLOSED (cont. 68).** Client decided the `contact/hero.jpg` placeholder
+(`aboutPage.js:11`) stays permanently, no team photo coming. `nosotros-viewport` (desktop-chrome)
+baseline re-captured against the placeholder — no more known `test:visual` failure here.
+
+**Missing media — `add-media` skill, 1 slot/cycle.** Verify `.jpg` posters for `mikaela-guajardo` /
+`elianne-trujillo` (Nancy 4/4 done).
 
 ## Close the project (NOT code, NOT this workflow)
 

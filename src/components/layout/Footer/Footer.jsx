@@ -131,6 +131,10 @@ export default function Footer() {
             <span className="text-[#F2F0F1]/20">|</span>
             <Link to="/legal" className="hover:text-[#F2F0F1] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">Recursos legales</Link>
           </div>
+
+          <p className="order-4 text-[#BBB8B5]/60">
+            V{__APP_VERSION__}
+          </p>
         </div>
       </div>
     </footer>

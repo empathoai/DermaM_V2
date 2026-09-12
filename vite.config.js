@@ -1,23 +1,16 @@
-import { execSync } from 'child_process';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
+import { readFileSync } from 'fs';
 
-function getBuildHash() {
-  try {
-    return execSync('git rev-parse --short HEAD').toString().trim();
-  } catch {
-    return 'dev';
-  }
-}
+const { version } = JSON.parse(readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
 
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
     define: {
-      __BUILD_HASH__: JSON.stringify(getBuildHash()),
-      __BUILD_DATE__: JSON.stringify(new Date().toISOString()),
+      __APP_VERSION__: JSON.stringify(version),
     },
     resolve: {
       alias: {

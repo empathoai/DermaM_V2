@@ -133,23 +133,25 @@ internal consistency or re-reading the file. If an item's spec wasn't actually f
 this pass, say so — don't mark it done. (See `DECISIONS.md` 2026-09-12 — self-graded "thorough"
 passes missed a real llms.txt spec violation until asked directly; this rule exists because of that.)
 
-1. **`public/.htaccess`** — replace with the block from
-   `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8. This puts the SPA catch-all
-   **after** the 301s (resolves Task 2 / SEO-01) and adds
-   `301 /notice-of-privacy-practices → /politica-de-privacidad`.
-   **Spec:** [Apache mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) rule
-   order and flags (`R=301`, `L`) — verify the legacy 301 block precedes the SPA fallback and no
-   rule shadows one below it.
-2. **`public/robots.txt`** — remove the 7× `Disallow: /notice-of-privacy-practices` lines.
-   **Spec:** [Google's robots.txt spec](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt) —
-   verify directive syntax, group structure, and that no `Allow`/`Disallow` pair contradicts
-   `sitemap.xml` or `llms.txt`.
-3. Verify `/nosotros/nancy-nieto` is present in `public/sitemap.xml`, `public/robots.txt`,
-   `public/llms.txt`.
-   **Spec:** [sitemaps.org protocol](https://www.sitemaps.org/protocol.html) for `sitemap.xml`
-   structure/`lastmod`; [llmstxt.org](https://llmstxt.org) for `llms.txt` — single H1, blockquote
-   summary, H2 file-list sections using markdown hyperlinks `[name](url)`, `Optional` section last.
-4. Fix `docs/seo-setrategies/INTAKE.md:56` — "Vercel" → Hostinger/Apache.
+1. ✅ **`public/.htaccess`** — DONE, verified 2026-09-12. Diffed the live file line-by-line
+   against `docs/seo-setrategies/REDIRECT-MAP-VALIDATION-2026.md` §8: rule order already matches
+   (HTTPS → non-www → all legacy 301s → trailing-slash strip → SPA fallback, per §4b), and the
+   `301 /notice-of-privacy-practices → /politica-de-privacidad` rule is already present
+   (correctly placed before the SPA fallback) — it just isn't in §8's literal block text since
+   that doc predates the legal-page retirement. No edit needed; a prior session already applied
+   this and the checklist here was stale.
+2. ✅ **`public/robots.txt`** — DONE, verified 2026-09-12. No `Disallow: /notice-of-privacy-practices`
+   lines present (already removed). Checked against
+   [Google's robots.txt spec](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt):
+   directive syntax valid, groups well-formed, no `Allow`/`Disallow` contradicts `sitemap.xml` or
+   `llms.txt`, `Sitemap:` line correct.
+3. ✅ **`/nosotros/nancy-nieto` presence** — DONE, verified 2026-09-12. Present in all three:
+   `sitemap.xml:28` (`<loc>`/`<lastmod>` in valid W3C format, per
+   [sitemaps.org protocol](https://www.sitemaps.org/protocol.html)), `robots.txt:11`
+   (`Allow: /nosotros/nancy-nieto`), `llms.txt:68` (under its H2 section, markdown-hyperlink
+   format, per [llmstxt.org](https://llmstxt.org)).
+4. ✅ **`docs/seo-setrategies/INTAKE.md:56`** — DONE, verified 2026-09-12. Already reads
+   "Hostinger (Apache)", not "Vercel". No edit needed.
 5. **Post-deploy on prod:** run the `curl -I` redirect script from `REDIRECT-MAP-VALIDATION-2026.md`
    §8; confirm key routes 200 over HTTPS with no mixed content; GA4 fires; then GSC verify by
    Domain + submit `sitemap.xml`.

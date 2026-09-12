@@ -6,20 +6,25 @@ are in it.
 
 ## State
 
-HEAD at `42de864` + 1 uncommitted docs cycle (this cycle: added `DEPLOY.md` Part 2 item 7 —
-create `info@dermamskinhealth.com` mailbox for contact-info consistency). Not yet pushed.
+HEAD at `f2b3e31` + 1 uncommitted docs cycle (this cycle: Part 1 full-site sanity check done on
+a clean build; verified DEPLOY.md Part 2 items 1-4 were already applied in a prior session —
+marked ✅ in DEPLOY.md, no protected files touched). Not yet pushed.
 
 ## Next activity
 
-User said "vamos paso a paso" on the Hostinger deploy — working through `DEPLOY.md` Part 2
-items in order. Item 7 (mailbox creation) just added; items 1-4 (`.htaccess`, `robots.txt`,
-sitemap/llms.txt check, INTAKE.md fix) and items 5-6 (post-deploy `curl -I` + `public_html`
-backup) still pending, each needs its own explicit "go" per file per DEPLOY.md's protected-file
-rule.
+`DEPLOY.md` Part 2 items 1-4 and 7 are done. Only **items 5-6 remain**: post-deploy `curl -I`
+verification + `public_html` backup — only executable once the user actually uploads to
+Hostinger (dev server + prod domain not live yet). User is currently in Hostinger hPanel setting
+up the site under a temporary domain before pointing GoDaddy DNS at it.
+
+Open item (not a deploy blocker): `/corporales/maderoterapia-corporal` fires ~70 duplicate
+`whatis.webp` requests (re-render loop) — flagged in PROGRESS.md 2026-09-12, not yet
+investigated or fixed.
 
 ## How to resume
 
-Continue Part 2 item-by-item with the user, one explicit approval per protected file. No open
+Continue with the user's Hostinger upload (File Manager → `public_html`, contents of `dist/` +
+`public/` protected files). Once live, execute DEPLOY.md Part 2 items 5-6. No open
 external-audit findings remain (all 27 closed).
 
 ## Context by area — grep, not full-read

@@ -50,15 +50,37 @@ export default function FloatingWhatsApp() {
     // otherwise cover the footer's own content (legal links, contact).
     // Re-acquire the footer on every route change (it re-mounts per page).
     setNearFooter(false);
-    const footer = document.querySelector('footer');
-    if (!footer || typeof IntersectionObserver === 'undefined') return;
+    if (typeof IntersectionObserver === 'undefined') return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => setNearFooter(entry.isIntersecting),
-      { rootMargin: '0px 0px -24px 0px' }
-    );
-    observer.observe(footer);
-    return () => observer.disconnect();
+    let intersectionObserver;
+    const observeFooter = (footer) => {
+      intersectionObserver = new IntersectionObserver(
+        ([entry]) => setNearFooter(entry.isIntersecting),
+        { rootMargin: '0px 0px -24px 0px' }
+      );
+      intersectionObserver.observe(footer);
+    };
+
+    const existingFooter = document.querySelector('footer');
+    if (existingFooter) {
+      observeFooter(existingFooter);
+      return () => intersectionObserver.disconnect();
+    }
+
+    // Route pages are lazy-loaded (see routes.jsx), so the footer may not be
+    // in the DOM yet when this effect runs — wait for it to mount instead of
+    // giving up, or the FAB never learns to hide near the footer.
+    const mutationObserver = new MutationObserver(() => {
+      const footer = document.querySelector('footer');
+      if (!footer) return;
+      mutationObserver.disconnect();
+      observeFooter(footer);
+    });
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      mutationObserver.disconnect();
+      intersectionObserver?.disconnect();
+    };
   }, [pathname]);
 
   const handleDismiss = (e) => {

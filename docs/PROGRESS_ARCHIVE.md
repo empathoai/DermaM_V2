@@ -2,6 +2,13 @@
 
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
+## 2026-09-12 — Full Hostinger redeploy (V1.0.3) + Meta Pixel event verification
+
+- Meta Pixel (`3001886450080985`) verified live via Meta Events Manager: `PageView` (1.2K events) and `Contact` (4 events) both status Active, confirming the WhatsApp CTA tracking from the earlier GA4/Meta cycle works end-to-end in production.
+- Ran full `DEPLOY.md` Part 1: clean `npm ci` + `npm run build` (no errors), `playwright test` both projects — **34/34 passed** (better than the documented 33/1 baseline; the `about/hero.jpg` placeholder diff appears resolved).
+- Built `dist/` zip, handed to user for manual upload via Hostinger File Manager (no SSH/FTP automation set up yet — user checking hPanel for SSH availability as a follow-up).
+- **Deployed 2026-09-12** — user uploaded and extracted the zip over `public_html`. Verified live: footer now `V1.0.3`, new bundle hash (`index-BRgh3Aur.js`) loaded, `/`, `/contacto`, `/faciales/hidrofacial` all render clean (console clear, no 404s), SPA routing intact on deep routes.
+
 ## 2026-09-12 — GSC verification + sitemap + `?page_id=` redirect fix
 
 - GSC: discovered an already-verified URL-prefix property `https://dermamskinhealth.com/` (verified since 2026-08-28) made the new Domain-property TXT verification attempt redundant; deleted the unverified Domain property, kept the working one. Submitted `sitemap.xml`: status Success, 44 pages discovered.

@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Fix: normalize brand name casing to `DERMA.M` sitewide (V1.0.1)
+## 2026-09-12 — Feature: GA4 `contact_whatsapp` event alongside Meta Pixel (V1.0.2)
 
-- Nancy flagged inconsistent "Derma.M"/"DERMA.M" casing site-wide. Normalized to `DERMA.M` in 49 files: `index.html` title, all `src/data/*.js`, components with literal brand text, all pages/routes, `public/llms.txt`/`robots.txt`/`.htaccess` comments, team vCards, `metadata.json`, and operational docs (`CLAUDE.md`, `DESIGN.md`, `PRODUCT.md`, `MEMORY.md`, `DECISIONS.md`). Left `graphify-out/` (cache), `_audit/`, `auditorias-externas/` (historical snapshots) untouched.
-- Pure text change, no layout risk — full `test:visual` suite: 17/17 passed, no re-baseline needed.
-- `package.json` bumped `1.0.0` → `1.0.1` per the footer-version-bump rule (user-visible copy change).
-- Commit: `1ddc9d7`.
+- User asked how WhatsApp clicks were tracked; found Meta Pixel `Contact` fired on all 8 WhatsApp CTAs but GA4 had no equivalent event. Added `src/utils/ga4.js` (`trackGA4Contact`) and `src/utils/whatsappTracking.js` (`trackWhatsAppClick`, combines Meta + GA4); all 8 CTAs now call the combined function instead of `trackMetaContact` directly.
+- Verified live in the Browser pane: click fires `dataLayer` push `["event","contact_whatsapp",{"method":"whatsapp"}]`. Full `test:visual`: 17/17 passed, no re-baseline needed (JS-only change).
+- Also clarified in this cycle (no code): Meta CAPI "Connection pending" for pixel `3001886450080985` is inert and not a deploy blocker — enabling it needs a backend/serverless piece this static site doesn't have.
+- `package.json` bumped `1.0.1` → `1.0.2`.
+- Commit: `b78223b`.
 
 ---
 

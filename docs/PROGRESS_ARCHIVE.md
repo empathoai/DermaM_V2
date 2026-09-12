@@ -11,6 +11,13 @@ Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para al
 - **This number does not bump itself** — it must be bumped by hand in `package.json` at the close of any cycle with a user-visible or otherwise significant change. See `MEMORY.md`.
 - Commits: `bb9495f` (superseded git-hash approach), `653930b` (final semver version).
 
+## 2026-09-12 — Fix: normalize brand name casing to `DERMA.M` sitewide (V1.0.1)
+
+- Nancy flagged inconsistent "Derma.M"/"DERMA.M" casing site-wide. Normalized to `DERMA.M` in 49 files: `index.html` title, all `src/data/*.js`, components with literal brand text, all pages/routes, `public/llms.txt`/`robots.txt`/`.htaccess` comments, team vCards, `metadata.json`, and operational docs (`CLAUDE.md`, `DESIGN.md`, `PRODUCT.md`, `MEMORY.md`, `DECISIONS.md`). Left `graphify-out/` (cache), `_audit/`, `auditorias-externas/` (historical snapshots) untouched.
+- Pure text change, no layout risk — full `test:visual` suite: 17/17 passed, no re-baseline needed.
+- `package.json` bumped `1.0.0` → `1.0.1` per the footer-version-bump rule (user-visible copy change).
+- Commit: `1ddc9d7`.
+
 ## 2026-09-12 — Fix: infinite request loop on `/corporales/maderoterapia-corporal` (`whatis.webp` 404 loop)
 
 - Root cause: `treatmentPages.js:1432` builds `whatIs.image` for every treatment as `${folder}/whatis.jpg`, but the `maderoterapia-corporal` asset folder never had a `whatis.jpg/webp` (only `tratamiento-maderoterapia-corporal.*` and `cta.*`) — confirmed against the 3-asset convention (`hero`/`whatis`/`cta`) used by all other 24 treatments (checked `hidrofacial` as reference). The SPA fallback rule in both `vite.config.js` (dev) and `.htaccess:112-114` (prod) returns `index.html` with `200 OK` for any missing static asset instead of a real 404 — the `<picture>`/`<img>` can't decode that HTML as an image, and the decode failure retriggered in a loop (500+ near-simultaneous requests captured via the browser's network log).

@@ -8,7 +8,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Why:** cont. 65's manual copy audit (SlopMonster-style, no scorer) surfaced the mismatch; user had explicitly asked before that testimonials must match each page's topic and was unaware it had drifted this far. This closes Part 2 (Option A, topical curation) of `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
 - **Verified:** checked `faciales`, `corporales`, Home/`/nosotros`, `limpiezaFacial`, `prfYFibrina` against the same 148-review pull — already real + on-topic, left unchanged. Browser-verified all 4 touched pages (`/dental-estetico`, `/iv-therapy`, `/capilar`, `/laser-y-luz`, `/tratamientos-postoperatorios`) — no visual gap where testimonials were removed, new quotes render correctly. Copy-only, `test:visual` gate doesn't apply.
 - Raw Apify pull data (contains reviewer PII) was not committed — see `DECISIONS.md` 2026-09-12 for how to re-pull if needed. Memory `feedback_verify_testimonials_against_live_source` added.
-- Commit pending.
+- Commit `90423db`.
 
 ---
 

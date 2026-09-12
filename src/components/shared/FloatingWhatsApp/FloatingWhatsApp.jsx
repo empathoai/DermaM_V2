@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './FloatingWhatsApp.module.css';
-import { trackMetaContact } from '../../../utils/metaPixel';
+import { trackWhatsAppClick } from '../../../utils/whatsappTracking';
 
 export default function FloatingWhatsApp() {
   const [showHelper, setShowHelper] = useState(false);
@@ -101,7 +101,7 @@ export default function FloatingWhatsApp() {
       {/* Primary Floating Button */}
       <a
         href={whatsappUrl}
-        onClick={trackMetaContact}
+        onClick={trackWhatsAppClick}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.floatButton}

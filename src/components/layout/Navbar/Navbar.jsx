@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import styles from './Navbar.module.css';
 import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE } from '../../../utils/whatsapp';
-import { trackMetaContact } from '../../../utils/metaPixel';
+import { trackWhatsAppClick } from '../../../utils/whatsappTracking';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -73,7 +73,7 @@ export default function Navbar() {
           <span className={styles.topInfoSeparator}>&middot;</span>
           <a
             href={whatsappUrl}
-            onClick={trackMetaContact}
+            onClick={trackWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.topInfoLink}
@@ -197,7 +197,7 @@ export default function Navbar() {
               <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.mobileCtaPrimary}>
                 Agenda tu valoración
               </a>
-              <a href={whatsappUrl} onClick={trackMetaContact} target="_blank" rel="noopener noreferrer" className={styles.mobileCtaSecondary}>
+              <a href={whatsappUrl} onClick={trackWhatsAppClick} target="_blank" rel="noopener noreferrer" className={styles.mobileCtaSecondary}>
                 WhatsApp
               </a>
             </div>

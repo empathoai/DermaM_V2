@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MEDICAL_VALUATION_NOTICE } from '../../../data/siteMeta';
 import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE, contextualWhatsAppMessage } from '../../../utils/whatsapp';
-import { trackMetaContact } from '../../../utils/metaPixel';
+import { trackWhatsAppClick } from '../../../utils/whatsappTracking';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA({
@@ -51,7 +51,7 @@ export default function FinalCTA({
               </a>
             )}
             {secondaryCta && (
-              <a href={href2} onClick={trackMetaContact} target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
+              <a href={href2} onClick={trackWhatsAppClick} target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
                 {secondaryCta}
               </a>
             )}

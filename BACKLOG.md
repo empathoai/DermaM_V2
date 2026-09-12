@@ -37,13 +37,7 @@ is already resolved, delete the item now (don't wait for a formal close) and say
 
 - "Why postoperative care matters" section — only if `/tratamientos-postoperatorios` gains traction
   (spec #6).
-- PRF §8.3 EN page — only if EN ad traffic converts. PRF §8.4 pillar "What is PRF" — only if the
-  enriched landing ranks.
-- Dental footer link — conditional on the dental regulatory hold above being resolved.
-- Founder identity residual (low priority) — `founderPrimer.credentialLine` on Home
-  (`src/data/aboutPage.js:176`) is a distinct title-case teaser, near-identical to the canonical title
-  but not unified. **Check:** still present as of 2026-09-12. Align only if a consistency pass touches
-  Home anyway — not worth its own cycle.
+- PRF §8.4 pillar "What is PRF" — only if the enriched landing ranks.
 
 ## Off-site (no code cycle; separate sessions, user logged into the platform)
 
@@ -65,5 +59,10 @@ graphify out of the workflow · engram off · GSC prefix unverified
 - Task 17/UX-06 — `MethodProcess` circular step markers kept.
 - GA4 cookie-consent banner + US state-privacy-rights section — closed as non-mandatory
   (`DECISIONS.md` 2026-09-08/2026-09-12).
+- Dental estético footer link — declined, no core-conversion impact (`DECISIONS.md` 2026-09-12).
+- Founder identity residual (`founderPrimer.credentialLine` on Home) — declined, no core-conversion
+  impact (`DECISIONS.md` 2026-09-12).
+- PRF §8.3 EN page — not tracked as pending; ask explicitly if/when it becomes relevant
+  (`DECISIONS.md` 2026-09-12).
 
-Rationale for all three: `DECISIONS.md` (grep the date/task).
+Rationale: `DECISIONS.md` (grep the date/task).

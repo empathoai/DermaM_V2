@@ -3,6 +3,10 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-12 — Close `about/hero.jpg` placeholder as permanent (cont. 68, XS)
+
+- Client decided the `about` page hero keeps the `contact/hero.jpg` placeholder permanently — no team photo coming. Re-captured the `nosotros-viewport` (desktop-chrome) Playwright baseline against the placeholder; it was failing (36% pixel diff) against a pre-placeholder snapshot. No code change — snapshot-only.
+
 ## 2026-09-12 — De-template the 6 category hub copy (cont. 67, L, copy-only)
 
 - **What:** rewrote `overview.body`, `trustItems` (3), `benefits.list` (3), `approach.body`, and all 4 `process.steps` bodies for all 6 hubs (`faciales`, `corporales`, `laser-y-luz`, `dental-estetico`, `iv-therapy`, `capilar`) in `src/data/categoryPages.js`. Each hub now carries a distinct angle instead of the same sentence with the noun swapped: faciales = close conversation about skin concerns; corporales = multi-session process tied to a life moment (surgery recovery, postpartum); láser y luz = per-skin calibration/safety criteria; dental estético = comfort for dental anxiety, short sessions; IV therapy = daily-routine energy, fast sessions; capilar = judgment-free, private conversation about hair loss.

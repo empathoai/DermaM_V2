@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE } from '../../../utils/whatsapp';
+import { trackMetaContact } from '../../../utils/metaPixel';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA() {
@@ -46,7 +47,7 @@ export default function FinalCTA() {
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className={styles.primaryButton}>
               Agenda tu valoración
             </a>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.secondaryButton}>
+            <a href={whatsappUrl} onClick={trackMetaContact} target="_blank" rel="noopener noreferrer" className={styles.secondaryButton}>
               WhatsApp
             </a>
           </div>

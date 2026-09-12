@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import HeroMedia from '../../utils/HeroMedia';
 import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE, contextualWhatsAppMessage } from '../../../utils/whatsapp';
+import { trackMetaContact } from '../../../utils/metaPixel';
 import styles from './PageHero.module.css';
 
 export default function PageHero({
@@ -91,7 +92,7 @@ export default function PageHero({
                   </a>
                 )}
                 {secondaryCta && (
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.secondaryCta}>
+                  <a href={whatsappUrl} onClick={trackMetaContact} target="_blank" rel="noopener noreferrer" className={styles.secondaryCta}>
                     {secondaryCta}
                   </a>
                 )}

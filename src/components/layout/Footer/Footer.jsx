@@ -4,6 +4,7 @@ import { Instagram, Facebook } from 'lucide-react';
 import GoogleReviewsLink from '../../shared/GoogleReviewsLink/GoogleReviewsLink';
 import styles from './Footer.module.css';
 import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE } from '../../../utils/whatsapp';
+import { trackMetaContact } from '../../../utils/metaPixel';
 
 export default function Footer() {
   const whatsappUrl = buildWhatsAppUrl(GENERIC_WHATSAPP_MESSAGE);
@@ -92,7 +93,7 @@ export default function Footer() {
                 <a href="mailto:info@dermamskinhealth.com" className={styles.link}>info@dermamskinhealth.com</a>
               </p>
               <p className={styles.contactItem}>
-                <a href={whatsappUrl} className={styles.link} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href={whatsappUrl} onClick={trackMetaContact} className={styles.link} target="_blank" rel="noopener noreferrer">WhatsApp</a>
               </p>
               <GoogleReviewsLink tone="dark" label="Reseñas en Google" />
             </address>

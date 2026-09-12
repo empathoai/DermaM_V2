@@ -5,13 +5,21 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `55cff86`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
-`npm run dev` next session.
+Base commit = pending push (cont. 69 committed locally on top of `e3a4f02`). Working tree clean
+after commit. Dev server `:3000` = running from this session; stop it if closing out.
 
-**Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
-`/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing
-posters fix (cont. 57), Miguel Ramos video (cont. 58), Melisa Ríos video (cont. 59). Waiting on the
-user for the next team video to swap, or confirmation to move to the Hostinger deploy.
+**Meta Pixel installed (cont. 69, 2026-09-12) — CLOSED.** Site-wide install of the client's existing
+pixel (`3001886450080985`): base snippet, `PageView` per route, `Contact` on all 7 WhatsApp CTAs.
+Fixed a Privacy Policy §7 contradiction in the same cycle. Detail: `MEMORY.md` "Meta Pixel en el
+sitio", `DECISIONS.md` 2026-09-12, spec/plan in `docs/superpowers/{specs,plans}/2026-09-12-meta-pixel-install*`.
+**User action still pending (not code):** after deploy, add the production domain to the pixel's
+Traffic permissions allow list in Events Manager (currently empty), then verify with Meta Pixel
+Helper against the live URL.
+
+**Client authorized go-live (2026-09-11):** site is cleared to deploy. Team-video swap queue is
+**CLOSED** — verified 2026-09-12: all 7 `/nosotros` members (Nancy, Mikaela, Daniela, Elianne, Tony,
+Miguel, Melisa) have `mediaType: "video"` in `aboutPage.js`. Waiting on the user for confirmation to
+move to the Hostinger deploy.
 
 **Client change requests (2026-09-08) — prior batch, done:** founder spotlight (cont. 49), Nancy Nieto
 bio (cont. 50), limpieza image swap (cont. 51), limpieza FAQ reword (cont. 52), Lipo 360 before/after

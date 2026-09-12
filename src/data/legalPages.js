@@ -19,7 +19,7 @@ export const privacyPolicyData = {
   title: 'Política de Privacidad',
   subtitle: 'Cómo recopilamos, usamos, protegemos y compartimos información en los canales digitales de DERMA.M.',
   effectiveDate: '2 de julio de 2026',
-  lastUpdated: '2 de julio de 2026',
+  lastUpdated: '12 de septiembre de 2026',
   meta: {
     title: 'Política de Privacidad | DERMA.M Florida',
     description: 'Conoce cómo DERMA.M recopila, utiliza y protege información en su sitio web y canales de contacto en Florida.'
@@ -120,14 +120,16 @@ export const privacyPolicyData = {
       shortTitle: 'Cookies',
       title: '7. Cookies y tecnologías similares / Cookies and similar technologies',
       es: [
-        { type: 'p', text: 'El sitio utiliza Google Analytics 4 (identificador G-9272VHFT03) para medir el uso de forma agregada: páginas vistas, origen aproximado de la visita y tipo de dispositivo. No lo utilizamos para publicidad comportamental, remarketing ni perfiles publicitarios. Los servicios externos enlazados pueden aplicar sus propias tecnologías cuando decides visitarlos.' },
-        { type: 'p', text: 'Puedes limitar o bloquear esta medición desde la configuración de cookies de tu navegador o instalando el complemento de inhabilitación de Google Analytics (https://tools.google.com/dlpage/gaoptout).' },
-        { type: 'p', text: 'Si en el futuro incorporamos publicidad basada en seguimiento u otra analítica no esencial, actualizaremos esta Política e implementaremos los mecanismos de aviso o consentimiento que correspondan antes de activarlas.' }
+        { type: 'p', text: 'El sitio utiliza Google Analytics 4 (identificador G-9272VHFT03) para medir el uso de forma agregada: páginas vistas, origen aproximado de la visita y tipo de dispositivo; esta herramienta no se usa para publicidad comportamental, remarketing ni perfiles publicitarios.' },
+        { type: 'p', text: 'El sitio también utiliza el Píxel de Meta (Facebook e Instagram) para medir el rendimiento de nuestras campañas publicitarias y mostrarte anuncios relevantes de DERMA.M en esas plataformas (remarketing). El Píxel puede recopilar automáticamente información pública de las páginas que visitas (por ejemplo, el título de la página); no recopila datos de ningún formulario porque el sitio no tiene ninguno. Puedes gestionar o desactivar los anuncios personalizados de Meta desde tu configuración de anuncios en https://www.facebook.com/ads/preferences. Los servicios externos enlazados pueden aplicar sus propias tecnologías cuando decides visitarlos.' },
+        { type: 'p', text: 'Puedes limitar o bloquear la medición de Google Analytics desde la configuración de cookies de tu navegador o instalando el complemento de inhabilitación de Google Analytics (https://tools.google.com/dlpage/gaoptout).' },
+        { type: 'p', text: 'Si en el futuro incorporamos tecnologías de seguimiento adicionales a las descritas aquí, actualizaremos esta Política antes de activarlas.' }
       ],
       en: [
-        { type: 'p', text: 'The website uses Google Analytics 4 (identifier G-9272VHFT03) to measure usage in aggregate: pages viewed, approximate visit origin, and device type. We do not use it for behavioral advertising, remarketing, or advertising profiles. Linked external services may use their own technologies when you choose to visit them.' },
-        { type: 'p', text: "You can limit or block this measurement through your browser's cookie settings or by installing the Google Analytics opt-out add-on (https://tools.google.com/dlpage/gaoptout)." },
-        { type: 'p', text: 'If we later add tracking-based advertising or other non-essential analytics, we will update this Policy and implement applicable notice or consent mechanisms before activation.' }
+        { type: 'p', text: 'The website uses Google Analytics 4 (identifier G-9272VHFT03) to measure usage in aggregate: pages viewed, approximate visit origin, and device type; this tool is not used for behavioral advertising, remarketing, or advertising profiles.' },
+        { type: 'p', text: 'The website also uses the Meta Pixel (Facebook and Instagram) to measure the performance of our ad campaigns and to show you relevant DERMA.M ads on those platforms (remarketing). The Pixel may automatically collect public information from the pages you visit (for example, the page title); it does not collect data from any form, because the website has none. You can manage or turn off personalized Meta ads from your ad settings at https://www.facebook.com/ads/preferences. Linked external services may use their own technologies when you choose to visit them.' },
+        { type: 'p', text: "You can limit or block Google Analytics measurement through your browser's cookie settings or by installing the Google Analytics opt-out add-on (https://tools.google.com/dlpage/gaoptout)." },
+        { type: 'p', text: 'If we later add tracking technologies beyond those described here, we will update this Policy before activating them.' }
       ]
     },
     {

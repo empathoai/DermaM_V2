@@ -231,6 +231,7 @@ export default function CategoryPage({ data }) {
           body={cta.body}
           primaryCta={cta.primaryCta}
           secondaryCta={cta.secondaryCta}
+          whatsappTopic={breadcrumb?.[breadcrumb.length - 1]?.label}
           disclaimer={cta.disclaimer}
           backgroundImage={cta.backgroundImage}
           variant="dark"

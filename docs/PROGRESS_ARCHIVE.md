@@ -3,12 +3,62 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-11 — Contextual WhatsApp message per treatment/landing CTA (cont. 60, feature)
+
+- **What:** WhatsApp CTAs on treatment detail pages and the 3 landing pages (PRF, Limpieza Facial Profunda, Tratamientos Postoperatorios) now open `wa.me` with a topic-aware pre-filled message ("Hola, vi su sitio web sobre {tratamiento} y me gustaría más información.") instead of the generic `wa.link/z7i9vm` shortlink. Treatments derive the topic from their existing title; landings got a new `hero.whatsappTopic` field. Navbar/Footer keep a generic message, now built locally via `wa.me`, fixing a typo baked into the old shortlink's redirect ("...y **etoy** interesada..." → "estoy"). New `src/utils/whatsapp.js` centralizes URL/message logic previously copy-pasted across 8 files. `FloatingWhatsApp` untouched.
+- **Why:** client's original brief wanted a contextual WhatsApp opener per page; found while investigating a user-reported issue. Design: `docs/superpowers/specs/2026-09-11-contextual-whatsapp-message-design.md`, plan: `docs/superpowers/plans/2026-09-11-contextual-whatsapp-message.md`.
+- **Verified:** browser on all 3 landings + a treatment page + Navbar/Footer + FloatingWhatsApp, console clean. `test:visual` not required (no CSS/layout change).
+- Commit `f115d68`.
+
+---
+
 ## 2026-09-11 — Melisa Ríos team video replaced (cont. 59, media)
 
 - **What:** replaced `public/assets/images/about/team/melisa-rios.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (1.3 MB → 312 KB, `-an`), regenerated poster `.jpg` (49 KB) and `.webp` sibling.
 - **Why:** item 3 of the client's `/nosotros` team-video swap batch (Daniela Parra cont. 56, Miguel Ramos cont. 58).
 - **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
 - Commit `ff0960a`.
+
+---
+
+## 2026-09-11 — Miguel Ramos team video replaced (cont. 58, media)
+
+- **What:** replaced `public/assets/images/about/team/miguel-ramos.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (4 MB → 459 KB, `-an`), regenerated poster `.jpg` (63 KB) and `.webp` sibling.
+- **Why:** item 2 of the client's `/nosotros` team-video swap batch (item 1 = Daniela Parra, cont. 56).
+- **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
+- Commit `eb61edb`.
+
+---
+
+## 2026-09-11 — Missing team posters filled: Mikaela Guajardo + Elianne Trujillo (cont. 57, media)
+
+- **What:** both were video-only slots (no `.jpg`/`.webp`), so their `/nosotros` cards showed the `og-default.jpg` fallback before the video loaded. Frame-extracted a poster from each existing `.mp4` (`ffmpeg -vf "select=eq(n\,0)"`), optimized (~37-39 KB each), generated `.webp` siblings. No new client asset needed — reused the video's own opening frame.
+- **Why:** found while verifying cont. 56 (Daniela's video swap) — two team cards were silently falling back to the generic OG image.
+- **Verified:** browser on `/nosotros` — both cards now show their own photo poster (200 OK, no fallback), console clean. `test:visual` skipped per DoD (single-asset addition, no CSS/component/layout change).
+- Commit `4adf582`.
+
+---
+
+## 2026-09-11 — Daniela Parra team video replaced (cont. 56, media)
+
+- **What:** replaced `public/assets/images/about/team/daniela-parra.mp4` with the client-supplied clip (same filename/slot, no data-file change). Ran `optimize.js` (2.5 MB → 321 KB, `-an`), extracted a new poster frame → `daniela-parra.jpg` (optimized to ~48 KB), regenerated the `.webp` sibling for the poster (old one was stale from the previous video frame).
+- **Why:** client authorized go-live and requested some `/nosotros` team videos be swapped first — this is item 1 of that batch, executing one per cycle.
+- **Verified:** browser on `/nosotros` — poster (200 OK) and video (206 Partial Content, normal for range requests) both load, no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap, no CSS/component/layout change).
+- **Note:** while checking the team grid, found `mikaela-guajardo.jpg` and `elianne-trujillo.jpg` posters are missing on disk (video-only, so their cards fall back to `og-default.jpg` until the poster loads/plays) — queued as the next cycle.
+- Commit `847c3e3`.
+
+---
+
+## 2026-09-08 — Nancy Nieto identity: unify title + bio blurb site-wide (cont. 55, copy)
+
+- **What:** resolved the founder-title inconsistency (three forms in use) + the bio-blurb drift from the surgical cont. 49–50 edits. All in `src/data/aboutPage.js` + `src/pages/NancyNieto.jsx`.
+  - **Title → `FUNDADORA Y DIRECTORA DE DERMA.M` everywhere.** `founderSpotlight.eyebrow` (`aboutPage.js:15`) and `founderPrimer.eyebrow` (`:174`) were `"FUNDADORA DE DERMA.M"` (client's cont. 49 copy) → reverted to the long form, which the schema `jobTitle`, page `<title>`, all meta, team `role`, quote titles and prose already use. `team[0].specialtyLabel` `"Fundadora & CEO · Faciales"` (`:49`, a 3rd variant + redundant with the `role` line right below) → `"Faciales"`, matching the other team cards.
+  - **Bio blurb → one canonical sentence.** `team[0].shortBio` (`:50`, old wording + old spelling "Dermocosmiatría") and the `NancyNieto.jsx` Person-schema `description` (old wording) → both aligned to the cont. 49 spotlight subheadline: "Flebotomista certificada en Estados Unidos y especialista en Estética Facial, con licencia otorgada por el Estado de Florida." (schema keeps its "Fundadora y directora de DERMA.M." tail). The card blurb drops the "Formación … en Ecuador" line as the client did in the spotlight; the bio page still carries the full 3-country credentials.
+- **Why:** user asked to unify after it was flagged. The client's own cont. 49 message used both title forms, so this resolves their inconsistency toward the site-wide majority, not a deliberate client decision. Unifying "up" keeps `jobTitle`/`<title>`/meta untouched (lower blast radius than stripping "Directora" from the SEO surfaces).
+- **Not touched:** `founderPrimer.credentialLine` on Home is a distinct title-case teaser string ("…con licencia del Estado de Florida.") — close but not identical; left as a known minor residual. `aboutPage.js:214` / `contactPage.js:26` lowercase "fundadora …" prose is natural, left.
+- **Verified:** browser desktop on `/nosotros` (spotlight eyebrow + team card now identical wording, no "& CEO") and Home (`founderPrimer` eyebrow one line, no wrap); console clean. `npm run test:visual` (server :3003): **33 passed, 1 failed** = pre-existing `Nosotros Page - Viewport` desktop-chrome (`about/hero.jpg` placeholder). No new diffs — the eyebrow/label text changes reflow within tolerance; no baseline update. Founder spotlight is covered by `Nosotros Page - Founder Cross-link` (passed).
+- **SEO/AEO/GEO:** positive — one consistent identity for Nancy across the visible page, the team card and the Person schema; nothing an LLM reads now contradicts another surface. No ranking-surface change.
+- Commit `ca612d9`.
 
 ---
 

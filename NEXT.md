@@ -6,19 +6,26 @@ are in it.
 
 ## State
 
-HEAD at `de8c84d` (fix: maderoterapia-corporal request-loop) + this doc-hash-fixup commit. Working
-tree clean, not yet pushed.
+HEAD will be at this cycle's doc-fixup commit, on top of `653930b` (footer version indicator,
+V1.0.0) and `de8c84d` (maderoterapia-corporal request-loop fix). Working tree clean, not yet
+pushed.
 
 ## Next activity
 
-**Deploy is complete, maderoterapia-corporal request-loop bug is fixed.** No proactive next step —
-wait for the user. If they ask "qué sigue", offer: **GSC domain verification + `sitemap.xml`
-submission** (not urgent, guide via search.google.com/search-console, Domain property, DNS TXT
-verification via Hostinger). No open external-audit findings remain (all 27 closed).
+**Both changes are done and verified locally; production (Hostinger) has NOT been re-deployed
+yet** — it's still running the build from before this session (site-live cycle only). User needs
+to: `npm run build`, zip `dist/` (Python zipfile, not PowerShell `Compress-Archive` — see
+`DECISIONS.md` 2026-09-12 site-live entry), upload to Hostinger `public_html`. After that deploy,
+confirm the footer shows `V1.0.0` on the live site as the verification signal this whole feature
+was built for.
+
+Also still open, not urgent: **GSC domain verification + `sitemap.xml` submission**.
 
 ## How to resume
 
-No proactive next step — wait for the user.
+No proactive next step — wait for the user. If they ask "qué sigue", offer the Hostinger
+re-deploy (a fresh `dist/`+zip is needed, the one from earlier in this session is stale — it
+predates the footer version feature) or GSC setup.
 
 ## Context by area — grep, not full-read
 

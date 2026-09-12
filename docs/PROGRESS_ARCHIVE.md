@@ -2,6 +2,14 @@
 
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
+## 2026-09-12 — Fix: infinite request loop on `/corporales/maderoterapia-corporal` (`whatis.webp` 404 loop)
+
+- Root cause: `treatmentPages.js:1432` builds `whatIs.image` for every treatment as `${folder}/whatis.jpg`, but the `maderoterapia-corporal` asset folder never had a `whatis.jpg/webp` (only `tratamiento-maderoterapia-corporal.*` and `cta.*`) — confirmed against the 3-asset convention (`hero`/`whatis`/`cta`) used by all other 24 treatments (checked `hidrofacial` as reference). The SPA fallback rule in both `vite.config.js` (dev) and `.htaccess:112-114` (prod) returns `index.html` with `200 OK` for any missing static asset instead of a real 404 — the `<picture>`/`<img>` can't decode that HTML as an image, and the decode failure retriggered in a loop (500+ near-simultaneous requests captured via the browser's network log).
+- Fix: (1) added `whatis.jpg/webp` to that folder (copy of the existing hero image, following the site convention); (2) added a `dataset.fallbackStep` guard in the `onError` handler of [TreatmentDetailPage.jsx:151-168](src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx:151) so any future missing-asset case caps at 2 fallback attempts (hero → global default) instead of looping indefinitely.
+- Verified in the Browser pane (not the Playwright CLI, per user direction): fresh tab, desktop and mobile (375px) — single `200 OK` request, image renders in "EL PROTOCOLO", clean console, no loop. Full `test:visual` suite was not run (JS-only `onError` logic change, no CSS/class touched); flagged to the user, no objection.
+- Before deploying, audited the whole site locally per user request: scanned all 25 treatment folders for the `hero`/`whatis`/`cta` convention (no other gaps), scanned all 107 literal image paths in `src/data/*.js` against disk (all resolve), and browsed all 48 routes against an actual `npm run build` + `vite preview` production build (not dev) checking for broken images and duplicate-request loops via `performance.getEntriesByType('resource')` — zero issues found elsewhere.
+- Commit `de8c84d`.
+
 ## 2026-09-12 — LIVE: dermamskinhealth.com deployed to Hostinger, DNS cut over, SSL active
 
 - **The site is live in production.** Uploaded `dist/` (zipped) to Hostinger `public_html` via File Manager; first zip attempt (PowerShell `Compress-Archive`) wrote backslash-separated paths that broke extraction on the Linux server (files landed as literal filenames like `assets\images\...` instead of nested folders) — rebuilt with Python's `zipfile` module (forward-slash paths) and re-extracted clean.

@@ -152,12 +152,17 @@ passes missed a real llms.txt spec violation until asked directly; this rule exi
    format, per [llmstxt.org](https://llmstxt.org)).
 4. ✅ **`docs/seo-setrategies/INTAKE.md:56`** — DONE, verified 2026-09-12. Already reads
    "Hostinger (Apache)", not "Vercel". No edit needed.
-5. **Post-deploy on prod:** run the `curl -I` redirect script from `REDIRECT-MAP-VALIDATION-2026.md`
-   §8; confirm key routes 200 over HTTPS with no mixed content; GA4 fires; then GSC verify by
-   Domain + submit `sitemap.xml`.
-6. Keep a backup of the previous `public_html` + `.htaccess` for rollback.
-7. **Create `info@dermamskinhealth.com`** in Hostinger hPanel (Emails → Create email account),
-   domain `dermamskinhealth.com`. Purpose: contact-info consistency — this address is already
-   displayed as the site's contact email on `/contacto`
-   ([Contacto.jsx:174](src/pages/Contacto.jsx:174)); there is no contact form on the site, so the
-   mailbox must actually exist for the published address to be real and reachable.
+5. ✅ **Post-deploy on prod** — DONE 2026-09-12. `curl -I` on all 12 legacy redirects + www→non-www
+   + http→https: every one a single-hop `301` straight to its final URL, no chains. `/`, `/contacto`
+   load 200, console clean, no mixed content. GA4 (`G-9272VHFT03`) confirmed loaded via `gtag`.
+   GSC domain verification + sitemap submission still open — separate from this checklist, do
+   whenever convenient.
+6. **Backup of previous `public_html` + `.htaccess`** — SKIPPED for now. Manual backups are
+   locked behind a plan upgrade on the current Hostinger plan; automated weekly backup is active
+   (next run 2026-09-18). Local `dist/` build + full git history serve as the rollback source in
+   the meantime.
+7. ✅ **Create `info@dermamskinhealth.com`** — DONE 2026-09-12. Created in Hostinger hPanel.
+   Purpose: contact-info consistency — this address is already displayed as the site's contact
+   email on `/contacto` ([Contacto.jsx:174](src/pages/Contacto.jsx:174)); there is no contact
+   form on the site, so the mailbox must actually exist for the published address to be real
+   and reachable.

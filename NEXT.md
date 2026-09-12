@@ -6,16 +6,15 @@ are in it.
 
 ## State
 
-HEAD at `f2b3e31` + 1 uncommitted docs cycle (this cycle: Part 1 full-site sanity check done on
-a clean build; verified DEPLOY.md Part 2 items 1-4 were already applied in a prior session —
-marked ✅ in DEPLOY.md, no protected files touched). Not yet pushed.
+HEAD at `df8fdad` + 1 uncommitted docs cycle (this cycle: **site went live**. `dermamskinhealth.com`
+deployed to Hostinger, DNS cut over from BanaHosting, SSL active, all DEPLOY.md Part 2 items
+resolved — 1-5 and 7 done, 6 explicitly skipped). Not yet pushed.
 
 ## Next activity
 
-`DEPLOY.md` Part 2 items 1-4 and 7 are done. Only **items 5-6 remain**: post-deploy `curl -I`
-verification + `public_html` backup — only executable once the user actually uploads to
-Hostinger (dev server + prod domain not live yet). User is currently in Hostinger hPanel setting
-up the site under a temporary domain before pointing GoDaddy DNS at it.
+**Deploy is complete.** `DEPLOY.md` has no more open items. Only loose end: **GSC domain
+verification + `sitemap.xml` submission** — not urgent, do whenever convenient (guide the user
+through search.google.com/search-console, Domain property, DNS TXT verification via Hostinger).
 
 Open item (not a deploy blocker): `/corporales/maderoterapia-corporal` fires ~70 duplicate
 `whatis.webp` requests (re-render loop) — flagged in PROGRESS.md 2026-09-12, not yet
@@ -23,9 +22,8 @@ investigated or fixed.
 
 ## How to resume
 
-Continue with the user's Hostinger upload (File Manager → `public_html`, contents of `dist/` +
-`public/` protected files). Once live, execute DEPLOY.md Part 2 items 5-6. No open
-external-audit findings remain (all 27 closed).
+No proactive next step — wait for the user. If they ask "qué sigue", offer GSC setup or the
+maderoterapia-corporal bug. No open external-audit findings remain (all 27 closed).
 
 ## Context by area — grep, not full-read
 

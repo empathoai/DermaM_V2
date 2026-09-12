@@ -5,10 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = pending (cont. 66 — testimonial curation: removed unverifiable/off-topic quotes from
-3 hubs, fixed topical mismatch on laser-y-luz + postoperatorios, via a fresh 148-review Apify pull).
-Working tree to be committed + pushed this cycle. Dev server `:3000` = stopped (cont. 66 stopped it
-after verification; restart with `npm run dev` next session).
+Base commit = `901d6f6`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
+`npm run dev` next session.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing
@@ -23,10 +21,9 @@ bio (cont. 50), limpieza image swap (cont. 51), limpieza FAQ reword (cont. 52), 
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work
 proceeds on deploy until they confirm.
 
-**Reviews 8.20 — Part 1 shipped (cont. 47).** Still backlog: Part 2 (per-page topical curation of
-the quotes, Option A/B — spec `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`)
-and Part 3 (`aggregateRating` decision — needs clinic sign-off on unfiltered reviews). Stars kept on
-all renderers (cont. 42). Memory `project_google_reviews_link`.
+**Reviews 8.20 — Parts 1-2 done (cont. 47, 66).** Still backlog: Part 3 (`aggregateRating` decision —
+needs clinic sign-off on unfiltered reviews). Stars kept on all renderers (cont. 42). Memory
+`project_google_reviews_link`.
 
 ## Audit remediation (cont. 21) — CLOSED
 
@@ -75,11 +72,6 @@ artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46` 
 `contact/hero.jpg` (`aboutPage.js:11`), waiting on team photo → **known `test:visual` failure**
 `nosotros-viewport` (desktop-chrome); if it drags: `npx playwright test -g "Nosotros Page - Viewport"
 --update-snapshots`. Also verify `.jpg` posters for `mikaela-guajardo` / `elianne-trujillo` (Nancy 4/4 done).
-
-**Reviews 8.20 — Part 1 done (cont. 47), Parts 2–3 in backlog.** Part 2: per-page topical curation
-of the quotes (Option A minimal vs B tagged pool — decide on request). Part 3: `aggregateRating`
-stays out until clinic sign-off on unfiltered reviews. Spec
-`docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`. Memory `project_google_reviews_link`.
 
 ## Close the project (NOT code, NOT this workflow)
 

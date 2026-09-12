@@ -16,6 +16,7 @@ export default function LimpiezaFacialPage() {
         <meta property="og:title" content="Limpieza Facial Profunda en West Palm Beach | Derma.M" />
         <meta property="og:description" content="Limpieza facial profunda (deep cleansing facial) con extracción de impurezas y protocolo personalizado. Derma.M, West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/limpieza-facial-profunda" />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/landings/limpieza-facial-profunda/hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Limpieza Facial Profunda en West Palm Beach | Derma.M" />

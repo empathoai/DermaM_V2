@@ -16,6 +16,7 @@ export default function PostoperatoriosPage() {
         <meta property="og:title" content="Tratamientos Postoperatorios en West Palm Beach | Derma.M" />
         <meta property="og:description" content="Acompañamiento profesional en tu recuperación postoperatoria. Drenaje linfático y cuidados especializados en Derma.M, West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/tratamientos-postoperatorios" />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/landings/tratamientos-postoperatorios/hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tratamientos Postoperatorios en West Palm Beach | Derma.M" />

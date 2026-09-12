@@ -9,6 +9,14 @@ Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para al
 - **Reconciled the external-audit package** (`auditorias-externas/resultados/*.md`, `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`, gitignored) against current code + a live browser pass: of 27 original findings, 26 closed (19 already fixed in untracked prior cycles, 6 UX/`DESIGN.md` items closed after visual verification showed no real defect, 1 — PRF internal linking — matches an already-registered spec that defers it). Only CPY-07 (title-case inconsistency) stays open, deferred to the pre-deploy external re-audit per user request.
 - `test:visual` skipped — no CSS/component changes, only protected config files + doc reconciliation.
 
+## 2026-09-12 — Fix OG image dimensions (1200×630 primary + 200×200 fallback) (cont. 75, code) — `e1ac72a`
+
+- `og-default.jpg` (1920×1080, 16:9) didn't match the universal OG standard (1200×630, 1.91:1) — social crawlers (Facebook, WhatsApp, iMessage, LinkedIn, Slack, Discord) would crop it on share. User supplied two correctly-sized source images.
+- Generated `og-default-1200x630.webp` (37.8KB) and `og-default-200x200.webp` (5.7KB) via `sharp` for future in-page `<picture>` use; kept `.jpg` as the format used in all `og:image`/`twitter:image` meta tags (crawler compatibility — see `DECISIONS.md` 2026-09-12).
+- Repointed `og:image`/`twitter:image` in all 8 pages with their own Helmet block (`Home`, `Contacto`, `NancyNieto`, `Nosotros`, `LegalResources`, `PrivacyPolicy`, `TermsOfUse`, `BookingPolicy`) plus `CategorySEO.jsx`, `TreatmentSEO.jsx` (fallback path only — `data.image` still takes priority), and `organizationSchema.js` (`image` field) to `og-default-1200x630.jpg`, added `og:image:width`/`og:image:height`, and added `og-default-200x200.jpg` as a secondary `og:image` fallback per OG spec (multiple `og:image` tags allowed, first is primary).
+- Left `HeroMedia.jsx` and `TreatmentDetailPage.jsx` untouched — they use `og-default.jpg` (1920×1080) as a full-bleed hero-image error fallback, a different purpose from the social-share meta tags.
+- Verified: new image files serve 200 OK at correct byte sizes on the dev server; source edits confirmed by direct read. `test:visual` not gated — meta-tag-only change, no visible layout/CSS.
+
 ## 2026-09-12 — Add missing favicon `<link>` (cont. 74, code) — `4b5ba7e`
 
 - `index.html` had a `favicon.ico` file in `public/assets/images/global/` but no `<link rel="icon">` referencing it — browsers never loaded it. Added `<link rel="icon" href="/assets/images/global/favicon.ico" />` in `<head>`.

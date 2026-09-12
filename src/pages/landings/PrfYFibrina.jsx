@@ -16,6 +16,7 @@ export default function PrfYFibrinaPage() {
         <meta property="og:title" content="Plasma Rico en Plaquetas y Fibrina (PRF) | Derma.M" />
         <meta property="og:description" content="Bioestimulación cutánea natural y progresiva para apoyar la calidad, textura y firmeza de la piel. Derma.M, West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/prf-y-fibrina" />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/landings/prf-y-fibrina/hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Plasma Rico en Plaquetas y Fibrina (PRF) | Derma.M" />

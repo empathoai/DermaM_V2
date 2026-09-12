@@ -105,6 +105,7 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
+      <meta property="og:site_name" content="Derma.M" />
       <meta property="og:image" content={image} />
       {imageFallback && <meta property="og:image" content={imageFallback} />}
       {imageFallback && <meta property="og:image:width" content="200" />}

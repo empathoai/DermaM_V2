@@ -23,6 +23,7 @@ export default function PrivacyPolicy() {
         <meta property="og:title" content={privacyPolicyData.meta.title} />
         <meta property="og:description" content={privacyPolicyData.meta.description} />
         <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default-1200x630.jpg`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

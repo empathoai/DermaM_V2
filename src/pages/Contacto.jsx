@@ -38,6 +38,7 @@ export default function ContactoPage() {
         <meta property="og:title" content="Contacto | Derma.M" />
         <meta property="og:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/contacto" />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

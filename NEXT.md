@@ -6,9 +6,9 @@ are in it.
 
 ## State
 
-HEAD at `d791609` (this cycle: fixed OG image dimensions — 1200×630 primary + 200×200 fallback
-replacing the oversized 1920×1080 default across all `og:image`/`twitter:image` tags; also includes
-the prior favicon-link cycle, `4b5ba7e`). Pushed to origin.
+HEAD at `<pending>` (this cycle: sharing-metadata sweep — `apple-touch-icon`, `theme-color`,
+`og:site_name` across 13 files; `twitter:site`/manifest.json deliberately skipped, see
+`DECISIONS.md` 2026-09-12). Not yet pushed — awaiting push confirmation.
 
 ## Next activity
 

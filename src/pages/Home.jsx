@@ -24,6 +24,7 @@ export default function Home() {
         <meta property="og:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
         <meta property="og:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta property="og:url" content="https://dermamskinhealth.com/" />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

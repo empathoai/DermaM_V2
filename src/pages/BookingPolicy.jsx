@@ -21,6 +21,7 @@ export default function BookingPolicy() {
         <meta property="og:title" content={bookingPolicyData.meta.title} />
         <meta property="og:description" content={bookingPolicyData.meta.description} />
         <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content="Derma.M" />
         <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default-1200x630.jpg`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

@@ -2,13 +2,14 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Fix OG image dimensions (1200×630 primary + 200×200 fallback) (cont. 75, code) — `e1ac72a`
+## 2026-09-12 — Sharing-metadata sweep: apple-touch-icon, theme-color, og:site_name (cont. 76, code)
 
-- `og-default.jpg` (1920×1080, 16:9) didn't match the universal OG standard (1200×630, 1.91:1) — social crawlers (Facebook, WhatsApp, iMessage, LinkedIn, Slack, Discord) would crop it on share. User supplied two correctly-sized source images.
-- Generated `og-default-1200x630.webp` (37.8KB) and `og-default-200x200.webp` (5.7KB) via `sharp` for future in-page `<picture>` use; kept `.jpg` as the format used in all `og:image`/`twitter:image` meta tags (crawler compatibility — see `DECISIONS.md` 2026-09-12).
-- Repointed `og:image`/`twitter:image` in all 8 pages with their own Helmet block (`Home`, `Contacto`, `NancyNieto`, `Nosotros`, `LegalResources`, `PrivacyPolicy`, `TermsOfUse`, `BookingPolicy`) plus `CategorySEO.jsx`, `TreatmentSEO.jsx` (fallback path only — `data.image` still takes priority), and `organizationSchema.js` (`image` field) to `og-default-1200x630.jpg`, added `og:image:width`/`og:image:height`, and added `og-default-200x200.jpg` as a secondary `og:image` fallback per OG spec (multiple `og:image` tags allowed, first is primary).
-- Left `HeroMedia.jsx` and `TreatmentDetailPage.jsx` untouched — they use `og-default.jpg` (1920×1080) as a full-bleed hero-image error fallback, a different purpose from the social-share meta tags.
-- Verified: new image files serve 200 OK at correct byte sizes on the dev server; source edits confirmed by direct read. `test:visual` not gated — meta-tag-only change, no visible layout/CSS.
+- Follow-up to the favicon/OG-image fixes — audited other "invisible until shared/installed" details: `apple-touch-icon`, `theme-color`, `og:site_name`, `twitter:site`, web app manifest.
+- Generated `public/assets/images/global/apple-touch-icon.png` (180×180 PNG, rasterized via `sharp` from `logo_dermam_nav.svg`, `#141313` brand-dark background) and linked it plus `<meta name="theme-color" content="#141313">` in `index.html`.
+- Added `<meta property="og:site_name" content="Derma.M" />` to all 13 files carrying an `og:url` tag (8 top-level pages, 3 landing pages, `CategorySEO.jsx`, `TreatmentSEO.jsx`).
+- Skipped `twitter:site` — no active X/Twitter account (checked `organizationSchema.js` `sameAs`, only Instagram/TikTok/Facebook/Yelp/Maps listed). Skipped a web app manifest — out of scope for a non-PWA marketing site, would only matter alongside a full "Add to Home Screen" treatment.
+- `logo_dermam_nav.svg` shows as modified in this cycle's diff — the user replaced that source file directly (mtime confirms, not an agent edit) right before asking to use it as the icon source.
+- Verified: `apple-touch-icon.png` serves 200 OK on the dev server. `test:visual` not gated — meta/head-only change, no visible layout/CSS.
 
 ---
 

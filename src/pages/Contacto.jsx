@@ -17,11 +17,12 @@ import HeroMedia from '../components/utils/HeroMedia';
 import styles from './Contacto.module.css';
 import { contactFaq } from '../data/contactPage';
 import { organizationNode } from '../data/organizationSchema';
+import { buildWhatsAppUrl } from '../utils/whatsapp';
 
 export default function ContactoPage() {
   const [mapInteractive, setMapInteractive] = useState(false);
 
-  const formattedWhatsAppUrl = 'https://wa.me/15612535384?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20personalizada%20con%20DERMA.M.';
+  const formattedWhatsAppUrl = buildWhatsAppUrl('Hola, quiero agendar una evaluación personalizada con DERMA.M.');
   const dialPhoneUrl = 'tel:+15612535384';
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
   const contactHeroImage = '/assets/images/contact/hero.jpg';

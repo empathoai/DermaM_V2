@@ -5,14 +5,19 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `ca612d9` (cont. 55 — Nancy Nieto identity — unified founder title to "FUNDADORA Y DIRECTORA
-DE DERMA.M" + one canonical bio blurb across `aboutPage.js` + `NancyNieto.jsx` schema). Prior:
-`f919aaa` (cont. 54 docs), `fff3ef0` (cont. 53 Lipo 360 before/after). Dev server `:3000` = running.
+Base commit = `191d582` (cont. 55 docs). In progress: cont. 56 — Daniela Parra team video replaced
+(client authorized go-live, requested `/nosotros` team video swaps first) — files staged, not yet
+committed. Dev server `:3000` = running.
 
-**Client change requests (2026-09-08):** DERMA.M sent a batch of revisions — executing one per cycle.
-Done: founder spotlight (cont. 49), Nancy Nieto bio (cont. 50), limpieza image swap (cont. 51),
-limpieza FAQ reword (cont. 52), Lipo 360 before/after (cont. 53). Nothing else queued from the batch —
-waiting on the next item.
+**Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
+`/nosotros` team videos first — executing one per cycle, starting with Daniela Parra (cont. 56).
+**Next up:** fill missing posters for `mikaela-guajardo.jpg` and `elianne-trujillo.jpg` (video-only
+slots currently fall back to `og-default.jpg`) — frame-extract from their existing `.mp4`, no new
+client asset needed.
+
+**Client change requests (2026-09-08) — prior batch, done:** founder spotlight (cont. 49), Nancy Nieto
+bio (cont. 50), limpieza image swap (cont. 51), limpieza FAQ reword (cont. 52), Lipo 360 before/after
+(cont. 53), founder identity unification (cont. 55).
 
 **Client handoff sent 2026-08-31** (`docs/communication_dermam.md`) — awaiting client: approval of
 the Vercel build + Hostinger hosting/Banahost domain-migration authorization + access list. No work

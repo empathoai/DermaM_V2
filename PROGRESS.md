@@ -2,6 +2,16 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-11 — Daniela Parra team video replaced (cont. 56, media)
+
+- **What:** replaced `public/assets/images/about/team/daniela-parra.mp4` with the client-supplied clip (same filename/slot, no data-file change). Ran `optimize.js` (2.5 MB → 321 KB, `-an`), extracted a new poster frame → `daniela-parra.jpg` (optimized to ~48 KB), regenerated the `.webp` sibling for the poster (old one was stale from the previous video frame).
+- **Why:** client authorized go-live and requested some `/nosotros` team videos be swapped first — this is item 1 of that batch, executing one per cycle.
+- **Verified:** browser on `/nosotros` — poster (200 OK) and video (206 Partial Content, normal for range requests) both load, no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap, no CSS/component/layout change).
+- **Note:** while checking the team grid, found `mikaela-guajardo.jpg` and `elianne-trujillo.jpg` posters are missing on disk (video-only, so their cards fall back to `og-default.jpg` until the poster loads/plays) — queued as the next cycle.
+- Commit: pending.
+
+---
+
 ## 2026-09-08 — Nancy Nieto identity: unify title + bio blurb site-wide (cont. 55, copy)
 
 - **What:** resolved the founder-title inconsistency (three forms in use) + the bio-blurb drift from the surgical cont. 49–50 edits. All in `src/data/aboutPage.js` + `src/pages/NancyNieto.jsx`.

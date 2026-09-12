@@ -2,14 +2,12 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-11 — Install SlopMonster skill (cont. 64, tooling only, no site code)
+## 2026-09-12 — Fix one AI-tell word in depilación láser copy (cont. 65, XS, copy-only)
 
-- **What:** copied the `SlopMonster` skill (github.com/ItsssssJack/SlopMonster) into `.claude/skills/slopmonster/` and `.agents/skills/slopmonster/` — an AI-writing-tell linter (`tools/deslop.py`, stdlib Python, no new deps) plus rival-model cleanse script. Files copied verbatim, no source edits.
-- **Why:** user is watching Google's tightening stance on AI-sounding copy and wants a tool to catch AI "tells" (vocabulary, rule-of-three, unfalsifiable proof claims) in site copy before it ships.
-- **Mode:** no Codex CLI installed → `cleanse.sh` falls back to printing the rewrite prompt for manual paste into ChatGPT (confirmed with user, avoids adding a new CLI/account dependency this cycle).
-- **Verified:** `python3 tools/deslop.py --text "..."` runs clean (stdlib only) and correctly flags a seeded AI-tell sentence (score 3/5, exit 1).
-- **Not done this cycle (deferred, no request yet):** running the scorer against `src/data/*`, installing `openai/codex-plugin-cc` to automate the cleanse step.
-- Commit `1eee3ff`.
+- **What:** `treatmentPages.js:1051` `application` field — "Tecnología láser de vanguardia" → "Tecnología de fototermólisis selectiva" (reuses the term already present in the same entry's `whatIsBody`, no new claim invented).
+- **Why:** manual SlopMonster-style audit (cont. 64's follow-up, no code) flagged "de vanguardia" as the Spanish equivalent of the "cutting-edge" tier-1 AI-vocabulary tell. Full audit report + ChatGPT rewrite pass logged in chat, not committed as a doc (diagnostic only).
+- **Verified:** browser on `/laser-y-luz/depilacion-laser` — "APLICACIÓN" card renders the new text correctly. Copy-only change, `test:visual` gate doesn't apply (not CSS/shared component/layout).
+- **Deferred, larger findings from the same audit — not yet scheduled:** (1) `categoryPages.js` testimonials block identically reused across `dentalEstetico`/`ivTherapy`/`capilar` hubs, including an off-topic acne-facial quote on IV Therapy/Capilar — sized S, needs visual check. (2) The 6 category hubs share a near-identical template (same 4 process steps, same section counts) — the scaled-content-pattern Google's spam policies target; sized L, needs its own brainstorming cycle to write real per-category copy.
 
 ---
 

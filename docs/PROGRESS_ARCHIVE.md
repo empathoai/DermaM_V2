@@ -3,6 +3,16 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-11 — Install SlopMonster skill (cont. 64, tooling only, no site code)
+
+- **What:** copied the `SlopMonster` skill (github.com/ItsssssJack/SlopMonster) into `.claude/skills/slopmonster/` and `.agents/skills/slopmonster/` — an AI-writing-tell linter (`tools/deslop.py`, stdlib Python, no new deps) plus rival-model cleanse script. Files copied verbatim, no source edits.
+- **Why:** user is watching Google's tightening stance on AI-sounding copy and wants a tool to catch AI "tells" (vocabulary, rule-of-three, unfalsifiable proof claims) in site copy before it ships.
+- **Mode:** no Codex CLI installed → `cleanse.sh` falls back to printing the rewrite prompt for manual paste into ChatGPT (confirmed with user, avoids adding a new CLI/account dependency this cycle).
+- **Verified:** `python3 tools/deslop.py --text "..."` runs clean (stdlib only) and correctly flags a seeded AI-tell sentence (score 3/5, exit 1).
+- Commit `1eee3ff` / `f5061f6`.
+
+---
+
 ## 2026-09-11 — Square booking UX research: deep-link live test, staff roster, admin config (cont. 63, research/docs only, no code)
 
 - **What:** live-tested a Square deep-link (`.../services/{SERVICE_ID}`) on Lipo 360 — confirmed it pre-selects the correct service, skips staff/date/checkout correctly. Cross-checked all 28 site treatment pages against `docs/LINKEO-SQUARE-2026.md` — coverage confirmed complete (§1: 14 + §2: 4 + §3: 10 = 28, no gaps).

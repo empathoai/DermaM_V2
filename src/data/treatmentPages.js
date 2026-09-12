@@ -1048,7 +1048,7 @@ const customDetails = {
     problemContextHeadline: 'El desafío del vello corporal no deseado y la irritación',
     problemContextBody: 'El afeitado tradicional o la cera convencional irritan repetidamente los poros, provocando vellos encarnados, aspereza crónica y manchas oscuras. El láser ofrece una vía de cuidado que refina la textura de la piel volviéndola sedosa y libre de vello de forma gradual.',
     duration: '20 - 60 min (según zona)',
-    application: 'Cabina / Tecnología láser de vanguardia',
+    application: 'Cabina / Tecnología de fototermólisis selectiva',
     anesthesia: 'No requiere (incluye frío integrado)',
     resultado: 'Reducción notable del vello sesión tras sesión',
     whoForList: [

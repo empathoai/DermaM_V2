@@ -5,7 +5,7 @@ export const categoryPages = {
     slug: 'faciales',
     route: '/faciales',
     metaTitle: 'Tratamientos Faciales en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en Derma.M. West Palm Beach, Florida.',
+    metaDescription: 'Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en Derma.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Faciales', link: '/faciales' }
@@ -655,7 +655,7 @@ export const categoryPages = {
     slug: 'laser-y-luz',
     route: '/laser-y-luz',
     metaTitle: 'Tratamientos Láser y Luz en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos con tecnología estética para renovar y mejorar la piel en Derma.M. West Palm Beach, Florida.',
+    metaDescription: 'Tratamientos con tecnología estética avanzada para renovar y mejorar la piel en Derma.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Láser y Luz', link: '/laser-y-luz' }
@@ -816,7 +816,7 @@ export const categoryPages = {
     slug: 'dental-estetico',
     route: '/dental-estetico',
     metaTitle: 'Dental Estético en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos para cuidar la apariencia visible de tu sonrisa en Derma.M. West Palm Beach, Florida.',
+    metaDescription: 'Tratamientos para cuidar la apariencia visible de tu sonrisa, como blanqueamiento y limpieza dental, en Derma.M, West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Dental Estético', link: '/dental-estetico' }
@@ -1160,7 +1160,7 @@ export const categoryPages = {
     slug: 'capilar',
     route: '/capilar',
     metaTitle: 'Tratamientos Capilares en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos para acompañar la salud y apariencia del cabello en Derma.M. West Palm Beach, Florida.',
+    metaDescription: 'Tratamientos para acompañar la salud, apariencia y fortaleza del cabello en Derma.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Capilar', link: '/capilar' }

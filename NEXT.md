@@ -1,31 +1,31 @@
 # NEXT
 
 **Session-resume state only.** Not a backlog — see `BACKLOG.md` for that, and read it only when
-asked "revisemos qué falta" (verify each item's Check before reporting it).
+asked "revisemos qué falta". `DEPLOY.md` is the deploy procedure — this file just tracks where we
+are in it.
 
 ## State
 
-Base commit = `6687779` (cont. 70, Home rating badge) + this doc-close commit on top — not yet
-pushed, awaiting user confirmation. Dev server `:3000` was running from another session this
-cycle (not started/stopped by this one).
+Uncommitted: 4 fixes from this session's `DEPLOY.md` Part 1 pass (`CLAUDE.md`, `Navbar.jsx`,
+`categoryPages.js`, `PROGRESS.md`/archive). Not yet committed/pushed — pending user confirmation.
+Once committed, base commit moves past `1cf5f16`. Hostinger access confirmed by user; deploy is
+unblocked pending only the user's explicit "hagamos el deploy".
 
 ## Next activity
 
-None decided yet — everything currently open lives in `BACKLOG.md` and is Blocked/Conditional.
-Ask the user what they want to work on, or consult the backlog on request.
+`DEPLOY.md` Part 1 (full-site local sanity check, all 10 steps) is **done** — passed, live
+in-browser, no blocking failures. 4 minor findings fixed in this same cycle (see `PROGRESS.md` top
+entry). Commit + push these fixes on user confirmation, then Part 1 is fully closed.
+
+After that: Part 2 (protected files: `.htaccess`, `robots.txt`, etc.) stays untouched until the
+user says the literal words "hagamos el deploy" / "let's do the Hostinger deploy".
 
 ## How to resume
 
-`npm run dev` (`:3000`) → browser pane. Cycle: brainstorm → approval → **1 change** → verification
-(MEDICAL_COMPLIANCE + WCAG AA + browser) → commit → doc ritual → push on confirmation. `test:visual`
-**only** for CSS / shared component-template / layout / reused class (`CLAUDE.md` §DoD; Git Bash: prefix
-`MSYS_NO_PATHCONV=1` with `-g /pattern`). Sizing ascending unless told: **XS** 1-place copy · **S** 1–3
-files mechanical · **M** multi-file w/ judgement · **L** multi-phase · **XL** new feature. Session close
-→ `close-cycle` skill (also: if closing a cycle revealed a backlog item is now resolved, delete it from
-`BACKLOG.md` in the same commit).
+Confirm commit+push of the pending fixes with the user. If already done, next step is waiting for
+the user's explicit deploy go-ahead — nothing to execute proactively until then.
 
 ## Context by area — grep, not full-read
 
 `PROGRESS.md` = cycle log · `DECISIONS.md` = the why (grep, never full) · `BACKLOG.md` = open
-work outside this session · `docs/seo-setrategies/INTAKE.md` = local-SEO project ·
-`docs/seo-setrategies/COMPETENCIA-SERVICIOS-2026.md` = competition research + reviews
+work outside this session · `DEPLOY.md` = the deploy procedure itself

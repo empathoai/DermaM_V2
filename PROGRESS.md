@@ -2,11 +2,11 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Add Home rating badge (cont. 70, M)
+## 2026-09-12 — DEPLOY.md Part 1 full-site sanity check + minor fixes (S)
 
-- Added a static "4.9 ★ en Google" trust badge to the Home hero (`RatingBadge` shared component), linking out to the real Google Business Profile review panel — pure CRO, no schema attached.
-- Corrected course mid-design: originally planned to also re-declare `aggregateRating` in `#organization` schema, but confirmed against Google's own guideline that self-served `LocalBusiness`/`Organization` ratings are categorically ineligible for the star rich snippet — dropped that part entirely (`DECISIONS.md` 2026-09-12). Also considered and declined a third-party widget (Elfsight/Trustindex/SociableKit) for the same reason plus added script/account dependency.
-- Curated testimonials (cont. 65) untouched, as scoped. `test:visual`: 34 passed, 0 failed (Home Hero + Founder/Featured-Services mobile baselines updated for the badge).
+- Ran the full `DEPLOY.md` Part 1 checklist (all 10 steps) live in-browser per this session's instruction, superseding `test:visual` for this pass: all 42 routes, SEO tags, JSON-LD, images, internal links, CTAs, mobile 375px, accessibility, compliance, GA4. No blocking failures.
+- Fixed 4 findings surfaced during the check: (1) `CLAUDE.md` had a stale "médica" quote of the mandatory notice contradicting the already-decided "profesional" wording (`DECISIONS.md` 2026-08-30) — corrected to match; (2) mobile menu `aria-label` was hardcoded English ("Toggle menu") on a Spanish site — now dynamic `"Abrir menú"/"Cerrar menú"`; (3) 4 of 6 hub `metaDescription`s (faciales, láser y luz, dental, capilar) were under the 120-char SEO target — lengthened all 4 into the 120–160 range, verified live via HMR.
+- Part 2 (protected files, Hostinger deploy) still gated on the user's explicit "hagamos el deploy" — not touched.
 
 ---
 

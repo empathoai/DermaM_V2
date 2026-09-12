@@ -3,6 +3,12 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-12 — Add Home rating badge (cont. 70, M)
+
+- Added a static "4.9 ★ en Google" trust badge to the Home hero (`RatingBadge` shared component), linking out to the real Google Business Profile review panel — pure CRO, no schema attached.
+- Corrected course mid-design: originally planned to also re-declare `aggregateRating` in `#organization` schema, but confirmed against Google's own guideline that self-served `LocalBusiness`/`Organization` ratings are categorically ineligible for the star rich snippet — dropped that part entirely (`DECISIONS.md` 2026-09-12). Also considered and declined a third-party widget (Elfsight/Trustindex/SociableKit) for the same reason plus added script/account dependency.
+- Curated testimonials (cont. 65) untouched, as scoped. `test:visual`: 34 passed, 0 failed (Home Hero + Founder/Featured-Services mobile baselines updated for the badge).
+
 ## 2026-09-12 — Install Meta Pixel site-wide (cont. 69, M)
 
 - Installed the client's existing Meta Pixel (`3001886450080985`, previously only live on Square's booking page, 719 events/28d there) site-wide: base snippet in `index.html`, `PageView` on every SPA route change (new `MetaPixelPageView.jsx`, mirrors `ScrollToTop.jsx`), and a `Contact` event on all 7 WhatsApp CTAs (`FloatingWhatsApp`, `PageHero`, `TreatmentHero`, both `FinalCTA`s, `Navbar`, `Footer`).

@@ -5,8 +5,10 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = pending (cont. 65 — fixed one AI-tell word in depilación láser copy, XS). Working tree
-to be committed + pushed this cycle. Dev server `:3000` = running (this chat started it cont. 65).
+Base commit = pending (cont. 66 — testimonial curation: removed unverifiable/off-topic quotes from
+3 hubs, fixed topical mismatch on laser-y-luz + postoperatorios, via a fresh 148-review Apify pull).
+Working tree to be committed + pushed this cycle. Dev server `:3000` = stopped (cont. 66 stopped it
+after verification; restart with `npm run dev` next session).
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing
@@ -48,14 +50,11 @@ Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each 
 
 ## Other pending (outside the cont. 21 queue)
 
-**SlopMonster manual audit follow-up (cont. 64/65)** — 2 findings not yet scheduled, size given:
-(S) `categoryPages.js` reuses the identical `testimonials` block across `dentalEstetico`/`ivTherapy`/
-`capilar` hubs, incl. an off-topic acne-facial quote on IV Therapy/Capilar — ChatGPT-reviewed fix:
-remove the block from those 3 hubs (don't reassign/invent), verify `CategoryPage.jsx` doesn't leave
-a visual gap. (L) The 6 category hubs share a near-identical template (same 4 process steps, same
-section counts, templated `approach` sentence) — the scaled-content pattern Google's spam policies
-target; needs its own `brainstorming` → real per-category copy, no mechanical fix. User's call on
-whether/when to schedule either.
+**SlopMonster manual audit follow-up (cont. 64-66)** — testimonial fixes done (cont. 66). Still open:
+(L) The 6 category hubs share a near-identical template (same 4 process steps, same section counts,
+templated `approach` sentence) — the scaled-content pattern Google's spam policies target; needs its
+own `brainstorming` → real per-category copy, no mechanical fix. User's call on whether/when to
+schedule.
 
 **Founder identity consistency — mostly done (cont. 55).** Title unified to "FUNDADORA Y DIRECTORA
 DE DERMA.M"; `shortBio` + Person-schema `description` aligned to the canonical blurb. Residual (minor,

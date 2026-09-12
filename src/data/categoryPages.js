@@ -788,16 +788,16 @@ export const categoryPages = {
       support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
       list: [
         {
-          quote: 'Tengo dos años asistiendo a DERMA y estoy muy feliz con los cambios que ha tenido mi piel. Son excelentes y muy profesionales.',
-          author: 'CECY GARCIA'
+          quote: 'Excelente experiencia. Mikaela me realiza el facial y el láser, es súper profesional, amable y atenta. El salón está siempre muy limpio, tranquilo y tiene un ambiente muy agradable.',
+          author: 'RATNEY PEREZ'
         },
         {
-          quote: 'Una exprencia muy buena, el tratamiento me hizo muy bien. Me explicaron sobre los beneficios y el seguimiento para tener una piel más saludable.',
-          author: 'CELIDA SAAVEDRA'
+          quote: 'El facial y la depilación láser que me realizó superó mis expectativas, quedé encantada con el resultado.',
+          author: 'GEIMY ORTIZ'
         },
         {
-          quote: 'Realmente estoy muy agradecida con DERMA.M especialmente con Mikaela y Nancy... Es un momento de relajación.',
-          author: 'KARINA PÉREZ VAILLANT'
+          quote: 'Mikaela también es la mejor! Ella es encargada de mi láser y tratamientos de plasma. Realmente son las mejores. Su carisma, profesionalismo y servicio es espectacular!',
+          author: 'MELI LARCO'
         }
       ]
     },
@@ -941,25 +941,6 @@ export const categoryPages = {
           number: '04',
           title: 'SEGUIMIENTO',
           body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
-        }
-      ]
-    },
-    testimonials: {
-      eyebrow: 'GOOGLE REVIEWS',
-      headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
-      list: [
-        {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
         }
       ]
     },
@@ -1164,25 +1145,6 @@ export const categoryPages = {
         }
       ]
     },
-    testimonials: {
-      eyebrow: 'GOOGLE REVIEWS',
-      headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
-      list: [
-        {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
-        }
-      ]
-    },
     cta: {
       eyebrow: 'AGENDA TU VALORACIÓN',
       headline: 'Descubre si IV Therapy es adecuado para ti',
@@ -1307,25 +1269,6 @@ export const categoryPages = {
           number: '04',
           title: 'SEGUIMIENTO',
           body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
-        }
-      ]
-    },
-    testimonials: {
-      eyebrow: 'GOOGLE REVIEWS',
-      headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Conoce cómo nuestra atención profesional ha ayudado a cuidar la piel de nuestros pacientes.',
-      list: [
-        {
-          quote: 'Excelente servicio, calidad en sus productos y amabilidad que encanta. En mi rostro he recobrado elasticidad y brillo.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Súper profesional, muy amable y honesta. Me explicó cómo sería el proceso y siempre contestó mis preguntas.',
-          author: 'KATHERINE BURGOS VALDEZ'
-        },
-        {
-          quote: 'Me realicé un tratamiento facial para el acné. Nancy sabe lo que está haciendo y lo hace con cuidado.',
-          author: 'MIRASOL FERNÁNDEZ'
         }
       ]
     },

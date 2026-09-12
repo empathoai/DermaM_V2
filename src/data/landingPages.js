@@ -501,16 +501,16 @@ export const landingPages = {
       support: 'Experiencias reales de personas que han confiado en Derma.M para acompañar su recuperación y cuidar su bienestar corporal.',
       list: [
         {
-          quote: 'Recibí un tratamiento de 5 masajes corporales con Yosy, la mejor masajista de West Palm Beach, el centro estético es excelente y las chicas súper amables.',
-          author: 'YULEDSY RODRIGUEZ DOMINGUEZ'
+          quote: 'Mi masajista Josey es una persona especial, muy inteligente y amable, hace que el tiempo del masaje sea tan ameno y efectivo que siempre quieras regresar. 100% recomendado.',
+          author: 'TANIA SEGURA'
         },
         {
-          quote: 'Experiencia increíble, muy profesionales, mi masajista Yosy todo un amor como persona y con una preparación de calidad, me van encantando mis resultados.',
-          author: 'LISANDRA'
+          quote: '100% recomiendo este lugar para masajes post operatorios, muchas gracias a Josey, la mejor masajista, excelente trato.',
+          author: 'MAYULI PEREZ'
         },
         {
-          quote: 'Realmente estoy muy agradecida con DERMA.M aunque todo el equipo de trabajo es una maravilla. Súper lindas, cariñosas, comprometidas con su trabajo.',
-          author: 'KARINA PÉREZ VAILLANT'
+          quote: 'Estoy realizando mi post operatorio con Eli muy complacida, todo el equipo muy amable, muy buena experiencia.',
+          author: 'CRIS COLINA SÁNCHEZ'
         }
       ]
     },

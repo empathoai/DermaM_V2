@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Fix one AI-tell word in depilación láser copy (cont. 65, XS, copy-only)
+## 2026-09-12 — Testimonial curation: remove unverifiable quotes, fix topical mismatch (cont. 66, S, copy-only)
 
-- **What:** `treatmentPages.js:1051` `application` field — "Tecnología láser de vanguardia" → "Tecnología de fototermólisis selectiva" (reuses the term already present in the same entry's `whatIsBody`, no new claim invented).
-- **Why:** manual SlopMonster-style audit (cont. 64's follow-up, no code) flagged "de vanguardia" as the Spanish equivalent of the "cutting-edge" tier-1 AI-vocabulary tell. Full audit report + ChatGPT rewrite pass logged in chat, not committed as a doc (diagnostic only).
-- **Verified:** browser on `/laser-y-luz/depilacion-laser` — "APLICACIÓN" card renders the new text correctly. Copy-only change, `test:visual` gate doesn't apply (not CSS/shared component/layout).
-- **Deferred, larger findings from the same audit — not yet scheduled:** (1) `categoryPages.js` testimonials block identically reused across `dentalEstetico`/`ivTherapy`/`capilar` hubs, including an off-topic acne-facial quote on IV Therapy/Capilar — sized S, needs visual check. (2) The 6 category hubs share a near-identical template (same 4 process steps, same section counts) — the scaled-content-pattern Google's spam policies target; sized L, needs its own brainstorming cycle to write real per-category copy.
+- **What:** ran a fresh Apify `compass/crawler-google-places` pull of all 148 real Google reviews for DERMA.M's GBP. Confirmed 2 of 3 quotes shared identically across `dentalEstetico`/`ivTherapy`/`capilar` hub testimonials ("Katherine Burgos Valdez" ×1, "Mirasol Fernández") don't match any real review — removed the `testimonials` block from those 3 hubs (no real on-topic quote exists among the 148 for dental/IV Therapy/capilar). Also swapped `laser-y-luz` hub and the `postoperatorios` landing off generic facial/corporal quotes onto quotes confirmed to actually mention laser/depilación láser and post-op massages.
+- **Why:** cont. 65's manual copy audit (SlopMonster-style, no scorer) surfaced the mismatch; user had explicitly asked before that testimonials must match each page's topic and was unaware it had drifted this far. This closes Part 2 (Option A, topical curation) of `docs/superpowers/specs/2026-08-29-reviews-alignment-8.20-rescope-design.md`.
+- **Verified:** checked `faciales`, `corporales`, Home/`/nosotros`, `limpiezaFacial`, `prfYFibrina` against the same 148-review pull — already real + on-topic, left unchanged. Browser-verified all 4 touched pages (`/dental-estetico`, `/iv-therapy`, `/capilar`, `/laser-y-luz`, `/tratamientos-postoperatorios`) — no visual gap where testimonials were removed, new quotes render correctly. Copy-only, `test:visual` gate doesn't apply.
+- Raw Apify pull data (contains reviewer PII) was not committed — see `DECISIONS.md` 2026-09-12 for how to re-pull if needed. Memory `feedback_verify_testimonials_against_live_source` added.
+- Commit pending.
 
 ---
 

@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-12 — Fix one AI-tell word in depilación láser copy (cont. 65, XS, copy-only)
+
+- **What:** `treatmentPages.js:1051` `application` field — "Tecnología láser de vanguardia" → "Tecnología de fototermólisis selectiva" (reuses the term already present in the same entry's `whatIsBody`, no new claim invented).
+- **Why:** manual SlopMonster-style audit (cont. 64's follow-up, no code) flagged "de vanguardia" as the Spanish equivalent of the "cutting-edge" tier-1 AI-vocabulary tell.
+- **Verified:** browser on `/laser-y-luz/depilacion-laser` — "APLICACIÓN" card renders the new text correctly.
+- Commit `110c461`.
+
+---
+
 ## 2026-09-11 — Install SlopMonster skill (cont. 64, tooling only, no site code)
 
 - **What:** copied the `SlopMonster` skill (github.com/ItsssssJack/SlopMonster) into `.claude/skills/slopmonster/` and `.agents/skills/slopmonster/` — an AI-writing-tell linter (`tools/deslop.py`, stdlib Python, no new deps) plus rival-model cleanse script. Files copied verbatim, no source edits.

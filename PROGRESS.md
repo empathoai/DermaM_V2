@@ -2,7 +2,7 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Fix OG image dimensions (1200×630 primary + 200×200 fallback) (cont. 75, code)
+## 2026-09-12 — Fix OG image dimensions (1200×630 primary + 200×200 fallback) (cont. 75, code) — `e1ac72a`
 
 - `og-default.jpg` (1920×1080, 16:9) didn't match the universal OG standard (1200×630, 1.91:1) — social crawlers (Facebook, WhatsApp, iMessage, LinkedIn, Slack, Discord) would crop it on share. User supplied two correctly-sized source images.
 - Generated `og-default-1200x630.webp` (37.8KB) and `og-default-200x200.webp` (5.7KB) via `sharp` for future in-page `<picture>` use; kept `.jpg` as the format used in all `og:image`/`twitter:image` meta tags (crawler compatibility — see `DECISIONS.md` 2026-09-12).

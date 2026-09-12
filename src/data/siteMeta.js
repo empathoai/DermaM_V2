@@ -15,3 +15,10 @@ export const MEDICAL_VALUATION_NOTICE =
 // which carry NO aggregateRating / Review schema (audit 8.18). See
 // docs/superpowers/specs/2026-08-31-google-reviews-outbound-link-design.md
 export const GOOGLE_REVIEWS_URL = 'https://maps.app.goo.gl/Hgy4FgMVrEJoFWZWA';
+
+// Real rating from DERMA.M's Google Business Profile (Place ID in organizationSchema.js).
+// Visual trust signal only — no schema attached (self-served LocalBusiness ratings are
+// ineligible for Google's star rich snippet regardless; see DECISIONS.md 2026-09-12).
+// value refreshed occasionally via the Apify pull; no review count is rendered, so there's
+// nothing on-page that goes stale and needs updating.
+export const HERO_RATING = { value: 4.9 };

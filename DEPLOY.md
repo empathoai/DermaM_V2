@@ -154,3 +154,8 @@ passes missed a real llms.txt spec violation until asked directly; this rule exi
    §8; confirm key routes 200 over HTTPS with no mixed content; GA4 fires; then GSC verify by
    Domain + submit `sitemap.xml`.
 6. Keep a backup of the previous `public_html` + `.htaccess` for rollback.
+7. **Create `info@dermamskinhealth.com`** in Hostinger hPanel (Emails → Create email account),
+   domain `dermamskinhealth.com`. Purpose: contact-info consistency — this address is already
+   displayed as the site's contact email on `/contacto`
+   ([Contacto.jsx:174](src/pages/Contacto.jsx:174)); there is no contact form on the site, so the
+   mailbox must actually exist for the published address to be real and reachable.

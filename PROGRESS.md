@@ -2,13 +2,9 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Close CPY-07: stale audit checkbox, already fixed in code (cont. 77, docs only) — `084bee9`
+## 2026-09-12 — DEPLOY.md: add item 7, create `info@dermamskinhealth.com` mailbox (docs only)
 
-- User pushed back on a stale "CPY-07 still open" tracking line. Verified against the actual code (not the audit doc): grepped `headline:`/`problemContextHeadline:`/`question:`/`eyebrow:`/`label:` in `categoryPages.js` and `treatmentPages.js` — no Title Case anglosajón anywhere, ALL-CAPS reserved to short eyebrows, sentence case everywhere else. Already resolved by Task 25 (2026-08-31); the tracking docs were never updated after that fix landed.
-- Corrected `auditorias-externas/resultados/copy.md` (CPY-07 row) and `NEXT.md`. All 27 external-audit findings now closed.
-- Doc-only, mechanical — no DECISIONS.md entry.
-- `logo_dermam_nav.svg` shows as modified in this cycle's diff — the user replaced that source file directly (mtime confirms, not an agent edit) right before asking to use it as the icon source.
-- Verified: `apple-touch-icon.png` serves 200 OK on the dev server. `test:visual` not gated — meta/head-only change, no visible layout/CSS.
+- Added Part 2 item 7 to `DEPLOY.md`: create `info@dermamskinhealth.com` in Hostinger hPanel at deploy time. Purpose is contact-info consistency (the address is already shown on `/contacto`, no contact form exists on the site) — not form-submission receipt, corrected after initial phrasing assumed a form.
 
 ---
 

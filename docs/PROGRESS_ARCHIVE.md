@@ -2,6 +2,14 @@
 
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
+## 2026-09-12 — Close CPY-07: stale audit checkbox, already fixed in code (cont. 77, docs only) — `084bee9`
+
+- User pushed back on a stale "CPY-07 still open" tracking line. Verified against the actual code (not the audit doc): grepped `headline:`/`problemContextHeadline:`/`question:`/`eyebrow:`/`label:` in `categoryPages.js` and `treatmentPages.js` — no Title Case anglosajón anywhere, ALL-CAPS reserved to short eyebrows, sentence case everywhere else. Already resolved by Task 25 (2026-08-31); the tracking docs were never updated after that fix landed.
+- Corrected `auditorias-externas/resultados/copy.md` (CPY-07 row) and `NEXT.md`. All 27 external-audit findings now closed.
+- Doc-only, mechanical — no DECISIONS.md entry.
+- `logo_dermam_nav.svg` shows as modified in this cycle's diff — the user replaced that source file directly (mtime confirms, not an agent edit) right before asking to use it as the icon source.
+- Verified: `apple-touch-icon.png` serves 200 OK on the dev server. `test:visual` not gated — meta/head-only change, no visible layout/CSS.
+
 ## 2026-09-12 — Sharing-metadata sweep: apple-touch-icon, theme-color, og:site_name (cont. 76, code) — `dbbb4ab`
 
 - Follow-up to the favicon/OG-image fixes — audited other "invisible until shared/installed" details: `apple-touch-icon`, `theme-color`, `og:site_name`, `twitter:site`, web app manifest.

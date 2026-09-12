@@ -26,11 +26,11 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
   const url = `${SITE}/${categorySlug}/${slug}`;
   const hubName = HUB[categorySlug] || 'Tratamientos';
 
-  const titleWithGeo = `${name} en West Palm Beach | Derma.M`;
-  const title = data.metaTitle || (titleWithGeo.length <= 60 ? titleWithGeo : `${name} | Derma.M`);
+  const titleWithGeo = `${name} en West Palm Beach | DERMA.M`;
+  const title = data.metaTitle || (titleWithGeo.length <= 60 ? titleWithGeo : `${name} | DERMA.M`);
 
   const description = data.metaDescription || clampWords(
-    `${data.description || ''} ${name} en Derma.M, West Palm Beach. Requiere valoración profesional previa.`,
+    `${data.description || ''} ${name} en DERMA.M, West Palm Beach. Requiere valoración profesional previa.`,
     155
   );
 
@@ -52,7 +52,7 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
         provider: {
           '@type': 'HealthAndBeautyBusiness',
           '@id': `${SITE}/#organization`,
-          name: 'Derma.M',
+          name: 'DERMA.M',
         },
       },
       {
@@ -105,7 +105,7 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:site_name" content="Derma.M" />
+      <meta property="og:site_name" content="DERMA.M" />
       <meta property="og:image" content={image} />
       {imageFallback && <meta property="og:image" content={imageFallback} />}
       {imageFallback && <meta property="og:image:width" content="200" />}

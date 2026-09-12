@@ -32,7 +32,7 @@ export default function Testimonials() {
               LO QUE DICEN NUESTROS CLIENTES
             </h2>
             <p className={styles.support}>
-              Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.
+              Experiencias reales de personas que han confiado en DERMA.M para cuidar su piel, su cuerpo y su bienestar.
             </p>
             <GoogleReviewsLink tone="light" className={styles.reviewsLink} />
           </motion.div>

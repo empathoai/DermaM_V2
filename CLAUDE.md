@@ -63,7 +63,7 @@ engram is disabled (`.claude/settings.json` → `"engram@engram": false`); ignor
 
 ## Project
 
-Derma.M marketing/booking website, exported from Google AI Studio. Vite + React 19 SPA — JavaScript JSX, no runtime TypeScript despite the `typescript` devDependency.
+DERMA.M marketing/booking website, exported from Google AI Studio. Vite + React 19 SPA — JavaScript JSX, no runtime TypeScript despite the `typescript` devDependency.
 
 ## Commands
 

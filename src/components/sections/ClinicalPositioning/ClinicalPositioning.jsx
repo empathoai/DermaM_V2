@@ -26,7 +26,7 @@ export default function ClinicalPositioning() {
                 Ciencia, experiencia y cuidado que se nota
               </h2>
               <p className={styles.bodyCopy}>
-                En Derma.M combinamos conocimiento médico, tecnología avanzada y un enfoque humano para diseñar tratamientos que elevan tu bienestar y tu confianza.
+                En DERMA.M combinamos conocimiento médico, tecnología avanzada y un enfoque humano para diseñar tratamientos que elevan tu bienestar y tu confianza.
               </p>
             </div>
           </motion.div>

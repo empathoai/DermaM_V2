@@ -49,7 +49,7 @@ function getBaseTreatment(categoryKey, slug) {
   // Pure fallback if not found in categoryPages
   return {
     title: slug.replace(/-/g, ' ').toUpperCase(),
-    description: 'Protocolo de cuidado estético profesional integral en Derma.M.',
+    description: 'Protocolo de cuidado estético profesional integral en DERMA.M.',
     benefits: ['Cuidado profesional', 'Enfoque personalizado', 'Bienestar visible'],
     ideal: 'Ideal si buscas un cuidado personalizado y de alta calidad.',
     image: `/assets/images/treatments/${getTreatmentAssetFolder(categoryKey)}/${slug}/hero.jpg`,
@@ -74,7 +74,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mejora la luminosidad, la textura y la hidratación de la piel limpiando los poros e infundiendo sueros hidratantes en una sola sesión.',
     whatIsHeadline: 'Hidrofacial: qué es y para qué sirve',
-    whatIsBody: 'El hidrofacial es un tratamiento estético facial que limpia los poros, extrae impurezas e infunde sueros hidratantes en una sola sesión, mediante un sistema de succión al vacío suave. Puede ayudar a mejorar la luminosidad, la textura y el nivel de hidratación de la piel. En Derma.M, medical spa en West Palm Beach, se realiza en cabina y requiere una valoración previa para adaptar los sueros a cada tipo de piel.',
+    whatIsBody: 'El hidrofacial es un tratamiento estético facial que limpia los poros, extrae impurezas e infunde sueros hidratantes en una sola sesión, mediante un sistema de succión al vacío suave. Puede ayudar a mejorar la luminosidad, la textura y el nivel de hidratación de la piel. En DERMA.M, medical spa en West Palm Beach, se realiza en cabina y requiere una valoración previa para adaptar los sueros a cada tipo de piel.',
     problemContextHeadline: 'La congestión diaria disminuye la luminosidad de tu rostro',
     problemContextBody: 'El sebo acumulado, la exposición solar continua y la polución crean una película que obstruye los folículos y ralentiza el proceso de renovación de la piel. Esto da como resultado un rostro apagado, deshidratación profunda y una textura áspera que no responde a la rutina habitual de cuidado en casa.',
     duration: '45 - 60 min',
@@ -118,7 +118,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mejora la textura, la firmeza y la apariencia de marcas y poros dilatados estimulando la renovación natural de la piel con microagujas.',
     whatIsHeadline: 'Microneedling con Dermapen: qué es y para qué sirve',
-    whatIsBody: 'El microneedling con Dermapen es un tratamiento estético facial que crea micro-canales controlados en la piel con agujas ultrafinas para estimular su renovación natural. Puede ayudar a mejorar la textura, la firmeza y la apariencia de marcas y poros dilatados. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones, con valoración médica previa.',
+    whatIsBody: 'El microneedling con Dermapen es un tratamiento estético facial que crea micro-canales controlados en la piel con agujas ultrafinas para estimular su renovación natural. Puede ayudar a mejorar la textura, la firmeza y la apariencia de marcas y poros dilatados. En DERMA.M, medical spa en West Palm Beach, se realiza por sesiones, con valoración médica previa.',
     problemContextHeadline: 'La pérdida progresiva de soporte estructural de la piel',
     problemContextBody: 'Con los años y el daño ambiental, la producción interna de colágeno disminuye, abriendo paso a poros dilatados, líneas finas visibles y marcas resistentes de acné. El microneedling despierta de forma mecánica la capacidad de renovación de la estructura cutánea para restaurar la firmeza y suavizar imperfecciones de relieve.',
     duration: '45 - 60 min',
@@ -163,7 +163,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Favorece la firmeza y la definición del óvalo facial y el cuello llevando ultrasonido focalizado a capas profundas de la piel, sin cirugía.',
     whatIsHeadline: 'HIFU facial: qué es y para qué sirve',
-    whatIsBody: 'El HIFU facial es un tratamiento estético que emplea ultrasonido focalizado de alta intensidad para llevar calor controlado a las capas profundas de la piel del rostro y estimular la producción natural de colágeno. Está diseñado para favorecer la firmeza y la definición del óvalo facial y el cuello de forma progresiva, sin cirugía. Se realiza en Derma.M, medical spa en West Palm Beach, tras una valoración que define la energía adecuada para cada caso.',
+    whatIsBody: 'El HIFU facial es un tratamiento estético que emplea ultrasonido focalizado de alta intensidad para llevar calor controlado a las capas profundas de la piel del rostro y estimular la producción natural de colágeno. Está diseñado para favorecer la firmeza y la definición del óvalo facial y el cuello de forma progresiva, sin cirugía. Se realiza en DERMA.M, medical spa en West Palm Beach, tras una valoración que define la energía adecuada para cada caso.',
     problemContextHeadline: 'La flacidez cutánea en el óvalo facial y cuello',
     problemContextBody: 'El envejecimiento de la piel debilita las fibras elásticas que sostienen las facciones del rostro, provocando descolgamiento visible en la línea mandibular, mejillas y cuello. HIFU actúa en zonas profundas sin dañar la superficie externa de la piel, ideal para quienes buscan firmeza sin pasar por procesos quirúrgicos.',
     duration: '60 - 90 min',
@@ -207,7 +207,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Aporta luminosidad y un aspecto más terso combinando exfoliación enzimática suave e infusión de activos botánicos que retiran las células muertas.',
     whatIsHeadline: 'Peel coreano: qué es y para qué sirve',
-    whatIsBody: 'El peel coreano es un tratamiento estético facial de renovación superficial que combina exfoliación enzimática e infusión de activos botánicos para retirar células muertas de forma suave y cuidar la barrera de hidratación. Suele usarse para aportar luminosidad y un aspecto más terso, el conocido efecto "glass skin". En nuestro medical spa de West Palm Beach, Derma.M, se ofrece durante todo el año como protocolo de cabina, siempre con valoración previa.',
+    whatIsBody: 'El peel coreano es un tratamiento estético facial de renovación superficial que combina exfoliación enzimática e infusión de activos botánicos para retirar células muertas de forma suave y cuidar la barrera de hidratación. Suele usarse para aportar luminosidad y un aspecto más terso, el conocido efecto "glass skin". En nuestro medical spa de West Palm Beach, DERMA.M, se ofrece durante todo el año como protocolo de cabina, siempre con valoración previa.',
     problemContextHeadline: 'La opacidad facial por acumulación de impurezas',
     problemContextBody: 'Muchos exfoliantes convencionales dañan el manto hidrolipídico natural, generando enrojecimiento y descamación molesta. El tratamiento de piel coreano ofrece una renovación controlada para devolver el aspecto fresco y el característico efecto de "piel de vidrio" (glass skin) sin agresión y con una recuperación inmediata.',
     duration: '45 - 60 min',
@@ -251,14 +251,14 @@ const customDetails = {
         {
           before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes.jpg',
           after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues.jpg',
-          beforeAlt: 'Rostro con enrojecimiento, textura irregular y aspecto opaco antes de un peel coreano en Derma.M, West Palm Beach',
-          afterAlt: 'Rostro con piel más uniforme, luminosa e hidratada tras un peel coreano en Derma.M, West Palm Beach'
+          beforeAlt: 'Rostro con enrojecimiento, textura irregular y aspecto opaco antes de un peel coreano en DERMA.M, West Palm Beach',
+          afterAlt: 'Rostro con piel más uniforme, luminosa e hidratada tras un peel coreano en DERMA.M, West Palm Beach'
         },
         {
           before: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-antes-2.jpg',
           after: '/assets/images/treatments/faciales/peel-coreano/peel-coreano-despues-2.jpg',
-          beforeAlt: 'Rostro con textura irregular y tono desigual en la frente antes de un peel coreano en Derma.M, West Palm Beach',
-          afterAlt: 'Rostro con piel visiblemente más lisa, luminosa y de tono uniforme tras un peel coreano en Derma.M, West Palm Beach'
+          beforeAlt: 'Rostro con textura irregular y tono desigual en la frente antes de un peel coreano en DERMA.M, West Palm Beach',
+          afterAlt: 'Rostro con piel visiblemente más lisa, luminosa y de tono uniforme tras un peel coreano en DERMA.M, West Palm Beach'
         }
       ]
     }
@@ -267,7 +267,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Suaviza líneas de expresión y mejora la sensación de firmeza en mejillas, óvalo y cuello generando calor controlado con radiofrecuencia.',
     whatIsHeadline: 'Radiofrecuencia facial: qué es y para qué sirve',
-    whatIsBody: 'La radiofrecuencia facial es un tratamiento estético que aplica ondas electromagnéticas para generar calor controlado en la piel, contraer el colágeno existente y favorecer la formación de fibras nuevas. Puede ayudar a suavizar líneas de expresión y a mejorar la sensación de firmeza en mejillas, óvalo y cuello. En Derma.M, medical spa en West Palm Beach, se trabaja en ciclos de sesiones definidos en la valoración inicial.',
+    whatIsBody: 'La radiofrecuencia facial es un tratamiento estético que aplica ondas electromagnéticas para generar calor controlado en la piel, contraer el colágeno existente y favorecer la formación de fibras nuevas. Puede ayudar a suavizar líneas de expresión y a mejorar la sensación de firmeza en mejillas, óvalo y cuello. En DERMA.M, medical spa en West Palm Beach, se trabaja en ciclos de sesiones definidos en la valoración inicial.',
     problemContextHeadline: 'Cansancio visible y pérdida de tono epidérmico',
     problemContextBody: 'Con el tiempo, la pérdida de firmeza se hace evidente en zonas como las mejillas, el óvalo facial y el cuello debido a la disminución del colágeno interno. El calor controlado reactiva los procesos tensores naturales, devolviendo turgencia y elasticidad a los tejidos.',
     duration: '40 - 50 min',
@@ -311,7 +311,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Envuelve el rostro en una cápsula rica en oxígeno de alta pureza y una fina bruma de activos para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata.',
     whatIsHeadline: 'Oxigenoterapia facial: qué es y para qué sirve',
-    whatIsBody: 'La oxigenoterapia facial es un tratamiento estético en el que el rostro se coloca bajo una cápsula transparente que se llena de oxígeno de alta pureza junto con una fina bruma de activos —vitaminas, péptidos y ácido hialurónico—. La piel queda envuelta en un microclima húmedo y rico en oxígeno, sin chorro a presión ni exfoliación física, y la sesión suele combinarse con luz LED. Está pensada para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata. En Derma.M, medical spa en West Palm Beach, se realiza en cabina y con una valoración previa, sobre todo en pieles sensibles.',
+    whatIsBody: 'La oxigenoterapia facial es un tratamiento estético en el que el rostro se coloca bajo una cápsula transparente que se llena de oxígeno de alta pureza junto con una fina bruma de activos —vitaminas, péptidos y ácido hialurónico—. La piel queda envuelta en un microclima húmedo y rico en oxígeno, sin chorro a presión ni exfoliación física, y la sesión suele combinarse con luz LED. Está pensada para hidratar la barrera cutánea y devolver frescura y luminosidad de forma inmediata. En DERMA.M, medical spa en West Palm Beach, se realiza en cabina y con una valoración previa, sobre todo en pieles sensibles.',
     problemContextHeadline: 'Piel deshidratada y estresada por factores urbanos',
     problemContextBody: 'El aire acondicionado, la falta de descanso y los hábitos cotidianos saturan y apagan las células de la piel, haciéndola lucir opaca y deshidratada. Este protocolo calma el rostro sensible, aporta oxigenación superficial profunda y restaura un aspecto descansado y fresco al instante.',
     duration: '45 min',
@@ -355,8 +355,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/faciales/oxigenoterapia-facial/oxigenoterapia-facial-procedimiento.mp4',
         after: '/assets/images/treatments/faciales/oxigenoterapia-facial/oxigenoterapia-facial-procedimiento-detalle.jpg',
-        beforeAlt: 'Sesión de oxigenoterapia facial en Derma.M, West Palm Beach: rostro dentro de una cápsula donde se libera oxígeno en forma de vapor, con panel de luz LED y protección ocular',
-        afterAlt: 'Primer plano del panel de luz LED durante una sesión de oxigenoterapia facial en cápsula en Derma.M, West Palm Beach'
+        beforeAlt: 'Sesión de oxigenoterapia facial en DERMA.M, West Palm Beach: rostro dentro de una cápsula donde se libera oxígeno en forma de vapor, con panel de luz LED y protección ocular',
+        afterAlt: 'Primer plano del panel de luz LED durante una sesión de oxigenoterapia facial en cápsula en DERMA.M, West Palm Beach'
       }],
       beforeLabel: 'EN CABINA',
       afterLabel: 'EQUIPO',
@@ -367,7 +367,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Favorece la elasticidad, unifica el tono y suaviza la textura y las líneas finas combinando bioestimulación de tejidos y aparatología avanzada.',
     whatIsHeadline: 'Rejuvenecimiento facial: qué es y para qué sirve',
-    whatIsBody: 'El rejuvenecimiento facial en Derma.M es un protocolo estético personalizado que combina varias técnicas —bioestimulación de tejidos y aparatología avanzada— para mejorar de forma global la calidad de la piel del rostro. Busca favorecer la elasticidad, unificar el tono y suavizar la textura y las líneas finas. En Derma.M, medical spa en West Palm Beach, se define y se aplica a partir de una valoración profesional previa.',
+    whatIsBody: 'El rejuvenecimiento facial en DERMA.M es un protocolo estético personalizado que combina varias técnicas —bioestimulación de tejidos y aparatología avanzada— para mejorar de forma global la calidad de la piel del rostro. Busca favorecer la elasticidad, unificar el tono y suavizar la textura y las líneas finas. En DERMA.M, medical spa en West Palm Beach, se define y se aplica a partir de una valoración profesional previa.',
     problemContextHeadline: 'Signos globales de envejecimiento crónico y solar',
     problemContextBody: 'La combinación de fotoenvejecimiento y desgaste genético no afecta solo una zona del rostro, sino que se manifiesta en flacidez media, líneas finas extendidas y pérdida generalizada del brillo. Un enfoque integrado permite abordar múltiples necesidades simultáneamente para un aspecto armónico y muy natural.',
     duration: '60 - 75 min',
@@ -410,8 +410,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/faciales/rejuvenecimiento-facial/rejuvenecimiento-facial.jpg',
         after: '/assets/images/treatments/faciales/rejuvenecimiento-facial/rejuvenecimiento-facial-resultados.jpg',
-        beforeAlt: 'Comparativa antes y después del perfil del rostro: líneas finas y flacidez que se ven suavizadas tras un tratamiento de rejuvenecimiento facial en Derma.M, West Palm Beach',
-        afterAlt: 'Secuencia de primeros planos de la piel con textura progresivamente más lisa y tono más uniforme tras sesiones de rejuvenecimiento facial en Derma.M, West Palm Beach'
+        beforeAlt: 'Comparativa antes y después del perfil del rostro: líneas finas y flacidez que se ven suavizadas tras un tratamiento de rejuvenecimiento facial en DERMA.M, West Palm Beach',
+        afterAlt: 'Secuencia de primeros planos de la piel con textura progresivamente más lisa y tono más uniforme tras sesiones de rejuvenecimiento facial en DERMA.M, West Palm Beach'
       }],
       beforeLabel: 'ANTES - DESPUÉS',
       afterLabel: 'RESULTADOS'
@@ -421,7 +421,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Ayuda a controlar el exceso de grasa, calmar el aspecto inflamado y prevenir marcas con limpieza profunda, activos seborreguladores y luz estimulante.',
     whatIsHeadline: 'Tratamiento de acné: en qué consiste y para quién es',
-    whatIsBody: 'El tratamiento de acné en Derma.M es un protocolo estético de higiene y equilibrio para pieles con brotes frecuentes: combina limpieza profunda de los poros, activos seborreguladores y luz estimulante. Puede ayudar a controlar el exceso de grasa, calmar el aspecto inflamado y prevenir marcas. Se realiza por sesiones en Derma.M, medical spa en West Palm Beach, y parte de una valoración previa; no sustituye el tratamiento médico del acné.',
+    whatIsBody: 'El tratamiento de acné en DERMA.M es un protocolo estético de higiene y equilibrio para pieles con brotes frecuentes: combina limpieza profunda de los poros, activos seborreguladores y luz estimulante. Puede ayudar a controlar el exceso de grasa, calmar el aspecto inflamado y prevenir marcas. Se realiza por sesiones en DERMA.M, medical spa en West Palm Beach, y parte de una valoración previa; no sustituye el tratamiento médico del acné.',
     problemContextHeadline: 'El ciclo inflamatorio y congestión sebácea',
     problemContextBody: 'La sobreproducción de grasa natural, unida a la acumulación de células muertas en la entrada del poro, crea el entorno propicio para brotes recurrentes e inflamaciones cutáneas incómodas. Tratar la piel con delicadeza pero con gran precisión ayuda a despejar impurezas, controlar el brillo graso y restaurar la claridad cutánea.',
     duration: '60 min',
@@ -464,8 +464,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/faciales/tratamiento-acne/tratamiento-acne-antes.jpg',
         after: '/assets/images/treatments/faciales/tratamiento-acne/tratamiento-acne-despues.jpg',
-        beforeAlt: 'Rostro con brotes de acné, poros congestionados y brillo graso antes del tratamiento de acné en Derma.M, West Palm Beach',
-        afterAlt: 'Rostro con piel más equilibrada, menos imperfecciones y aspecto calmado tras el tratamiento de acné en Derma.M, West Palm Beach'
+        beforeAlt: 'Rostro con brotes de acné, poros congestionados y brillo graso antes del tratamiento de acné en DERMA.M, West Palm Beach',
+        afterAlt: 'Rostro con piel más equilibrada, menos imperfecciones y aspecto calmado tras el tratamiento de acné en DERMA.M, West Palm Beach'
       }]
     }
   },
@@ -473,7 +473,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Atenúa la apariencia de manchas solares y suaviza la textura de marcas superficiales combinando exfoliación, activos que unifican el tono y estimulación del relieve.',
     whatIsHeadline: 'Tratamiento de manchas y cicatrices: qué es y cómo funciona',
-    whatIsBody: 'El tratamiento de manchas y cicatrices es un protocolo estético facial que combina exfoliación suave, activos que unifican el tono y técnicas de estimulación del relieve cutáneo. Su objetivo es atenuar la apariencia de las manchas solares y suavizar la textura de marcas superficiales para lograr un rostro más uniforme. En Derma.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración y exige fotoprotección estricta durante todo el ciclo.',
+    whatIsBody: 'El tratamiento de manchas y cicatrices es un protocolo estético facial que combina exfoliación suave, activos que unifican el tono y técnicas de estimulación del relieve cutáneo. Su objetivo es atenuar la apariencia de las manchas solares y suavizar la textura de marcas superficiales para lograr un rostro más uniforme. En DERMA.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración y exige fotoprotección estricta durante todo el ciclo.',
     problemContextHeadline: 'Discromías y textura crateriforme en la piel',
     problemContextBody: 'Las irregularidades debido al sol (manchas) o las marcas persistentes tras imperfecciones alteran la refracción de luz sobre la cara, dando un aspecto irregular o cansado. Mediante una estimulación renovadora puntual, apoyamos la renovación controlada y la uniformización gradual de la piel afectada.',
     duration: '50 - 60 min',
@@ -517,14 +517,14 @@ const customDetails = {
         {
           before: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-antes-1.jpg',
           after: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-despues-1.jpg',
-          beforeAlt: 'Mejilla con manchas solares e hiperpigmentación de tono irregular antes del tratamiento de manchas y cicatrices en Derma.M, West Palm Beach',
-          afterAlt: 'Mejilla con tono más homogéneo y manchas atenuadas tras el tratamiento de manchas y cicatrices en Derma.M, West Palm Beach'
+          beforeAlt: 'Mejilla con manchas solares e hiperpigmentación de tono irregular antes del tratamiento de manchas y cicatrices en DERMA.M, West Palm Beach',
+          afterAlt: 'Mejilla con tono más homogéneo y manchas atenuadas tras el tratamiento de manchas y cicatrices en DERMA.M, West Palm Beach'
         },
         {
           before: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-antes-2.jpg',
           after: '/assets/images/treatments/faciales/manchas-cicatrices/manchas-cicatrices-despues-2.jpg',
-          beforeAlt: 'Rostro con pecas y manchas de melasma extendidas antes del tratamiento de manchas y cicatrices en Derma.M, West Palm Beach',
-          afterAlt: 'Rostro con pigmentación más uniforme y manchas menos visibles tras el tratamiento de manchas y cicatrices en Derma.M, West Palm Beach'
+          beforeAlt: 'Rostro con pecas y manchas de melasma extendidas antes del tratamiento de manchas y cicatrices en DERMA.M, West Palm Beach',
+          afterAlt: 'Rostro con pigmentación más uniforme y manchas menos visibles tras el tratamiento de manchas y cicatrices en DERMA.M, West Palm Beach'
         }
       ]
     }
@@ -533,7 +533,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Alisa la textura y refina el aspecto de los poros puliendo la capa más superficial de la piel con punta de diamante y micro-succión.',
     whatIsHeadline: 'Dermabrasión facial: qué es y para qué sirve',
-    whatIsBody: 'La dermabrasión facial, o microdermoabrasión con punta de diamante, es un tratamiento estético que pule de forma mecánica y calibrada la capa más superficial de la piel mientras aplica una micro-succión que activa el drenaje local. Suele usarse para alisar la textura, refinar el aspecto de los poros y preparar la piel para asimilar mejor los activos. En nuestro medical spa de West Palm Beach, Derma.M, es un protocolo de cabina que suele agendarse cada 3 o 4 semanas y parte de una valoración inicial.',
+    whatIsBody: 'La dermabrasión facial, o microdermoabrasión con punta de diamante, es un tratamiento estético que pule de forma mecánica y calibrada la capa más superficial de la piel mientras aplica una micro-succión que activa el drenaje local. Suele usarse para alisar la textura, refinar el aspecto de los poros y preparar la piel para asimilar mejor los activos. En nuestro medical spa de West Palm Beach, DERMA.M, es un protocolo de cabina que suele agendarse cada 3 o 4 semanas y parte de una valoración inicial.',
     problemContextHeadline: 'La remoción cutánea de las células envejecidas',
     problemContextBody: 'El proceso natural de recambio de la piel va perdiendo velocidad, lo que genera que las células muertas se apilen en la capa superficial, obstruyendo tratamientos y apagando el rostro. Un pulido mecánico controlado deja la superficie libre de asperezas y lista para asimilar nutrientes en plenitud.',
     duration: '45 min',
@@ -577,7 +577,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Purifica la piel y favorece la recuperación de la barrera cutánea con gas ionizado a temperatura ambiente, pensado para pieles sensibles o reactivas.',
     whatIsHeadline: 'Plasma frío: qué es y para qué sirve',
-    whatIsBody: 'El plasma frío es un tratamiento estético facial que usa gas ionizado a temperatura ambiente para purificar y desinfectar la piel sin aplicar calor, a la vez que abre micro-canales temporales que favorecen la recuperación de la barrera cutánea. Está pensado sobre todo para pieles sensibles o reactivas que no toleran bien los ácidos fuertes o el láser. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones tras una valoración previa.',
+    whatIsBody: 'El plasma frío es un tratamiento estético facial que usa gas ionizado a temperatura ambiente para purificar y desinfectar la piel sin aplicar calor, a la vez que abre micro-canales temporales que favorecen la recuperación de la barrera cutánea. Está pensado sobre todo para pieles sensibles o reactivas que no toleran bien los ácidos fuertes o el láser. En DERMA.M, medical spa en West Palm Beach, se realiza por sesiones tras una valoración previa.',
     problemContextHeadline: 'Sensibilidad, inflamación o brotes recurrentes',
     problemContextBody: 'Muchas pieles reactivas no toleran las exfoliaciones ácidas fuertes o el calor de ciertos láseres, lo que dificulta tratar impurezas o acné. El plasma frío proporciona una alternativa libre de calor que equilibra, desinfecta y estimula la barrera protectora de la piel con total confort.',
     duration: '30 - 45 min',
@@ -622,8 +622,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/faciales/plasma-frio/tratamiento-plasma-frio-procedimiento.mp4',
         after: '/assets/images/treatments/faciales/plasma-frio/tratamiento-plasma-frio-procedimiento-detalle.jpg',
-        beforeAlt: 'Sesión de plasma frío en Derma.M, West Palm Beach: electrodo de vidrio con gas ionizado, con filamentos de plasma violeta, deslizándose sobre la piel del rostro',
-        afterAlt: 'Primer plano del electrodo de vidrio con gas ionizado durante una sesión de plasma frío en Derma.M, West Palm Beach'
+        beforeAlt: 'Sesión de plasma frío en DERMA.M, West Palm Beach: electrodo de vidrio con gas ionizado, con filamentos de plasma violeta, deslizándose sobre la piel del rostro',
+        afterAlt: 'Primer plano del electrodo de vidrio con gas ionizado durante una sesión de plasma frío en DERMA.M, West Palm Beach'
       }],
       beforeLabel: 'EN CABINA',
       afterLabel: 'EQUIPO',
@@ -634,7 +634,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mejora el aspecto de las ojeras, desinflama el rostro y aporta una apariencia más descansada activando la microcirculación con microdosis de dióxido de carbono.',
     whatIsHeadline: 'Carboxiterapia facial: qué es y para qué sirve',
-    whatIsBody: 'La carboxiterapia facial es un tratamiento estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Puede ayudar a mejorar el aspecto de las ojeras, a desinflamar el rostro y a dar una apariencia más descansada. Se aplica por sesiones en Derma.M, medical spa en West Palm Beach, y requiere una valoración previa para descartar contraindicaciones circulatorias.',
+    whatIsBody: 'La carboxiterapia facial es un tratamiento estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Puede ayudar a mejorar el aspecto de las ojeras, a desinflamar el rostro y a dar una apariencia más descansada. Se aplica por sesiones en DERMA.M, medical spa en West Palm Beach, y requiere una valoración previa para descartar contraindicaciones circulatorias.',
     problemContextHeadline: 'Microcirculación deficiente y aspecto congestionado',
     problemContextBody: 'La mala oxigenación en áreas frágiles del rostro, como la órbita ocular u óvalo de la mandíbula, produce ojeras marcadas, retención de líquidos y pérdida de brillo saludable. Este protocolo estimula de forma activa la red vascular del cutis para un drenaje y revitalización inmediatos.',
     duration: '30 - 40 min',
@@ -680,7 +680,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Favorece la desinflamación, apoya la firmeza de la piel y ayuda a moldear el contorno con masaje y drenaje linfático manual en cintura, abdomen y espalda.',
     whatIsHeadline: 'Lipo 360: qué es y para qué sirve',
-    whatIsBody: 'El Lipo 360 estético en Derma.M es un protocolo de masaje corporal y drenaje linfático manual sobre cintura, abdomen y espalda, pensado como acompañamiento tras cambios de peso o procedimientos. Está diseñado para favorecer la desinflamación, apoyar la firmeza de la piel y ayudar a moldear el contorno. Se realiza por sesiones en Derma.M, medical spa en West Palm Beach, y parte de una valoración previa; no reemplaza las indicaciones de tu cirujano.',
+    whatIsBody: 'El Lipo 360 estético en DERMA.M es un protocolo de masaje corporal y drenaje linfático manual sobre cintura, abdomen y espalda, pensado como acompañamiento tras cambios de peso o procedimientos. Está diseñado para favorecer la desinflamación, apoyar la firmeza de la piel y ayudar a moldear el contorno. Se realiza por sesiones en DERMA.M, medical spa en West Palm Beach, y parte de una valoración previa; no reemplaza las indicaciones de tu cirujano.',
     problemContextHeadline: 'Irregularidad de contornos y pérdida de armonía corporal',
     problemContextBody: 'La acumulación de líquidos transitorios y la pérdida de elasticidad en la zona media y espalda dificultan lucir un contorno definido. El estímulo manual continuo promueve la retracción cutánea y la circulación de líquidos para un contorno más firme.',
     duration: '60 - 90 min',
@@ -724,8 +724,8 @@ const customDetails = {
         {
           before: '/assets/images/treatments/corporales/lipo-360/lipo-360-antes.jpg',
           after: '/assets/images/treatments/corporales/lipo-360/lipo-360-despues.jpg',
-          beforeAlt: 'Perfil lateral del abdomen y la cintura antes del protocolo estético Lipo 360 en Derma.M, medical spa en West Palm Beach',
-          afterAlt: 'Perfil lateral del abdomen y la cintura con un contorno más definido tras varias sesiones del protocolo estético Lipo 360 en Derma.M, medical spa en West Palm Beach'
+          beforeAlt: 'Perfil lateral del abdomen y la cintura antes del protocolo estético Lipo 360 en DERMA.M, medical spa en West Palm Beach',
+          afterAlt: 'Perfil lateral del abdomen y la cintura con un contorno más definido tras varias sesiones del protocolo estético Lipo 360 en DERMA.M, medical spa en West Palm Beach'
         }
       ]
     }
@@ -734,7 +734,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mejora la firmeza y el aspecto de la piel glútea de forma progresiva con masaje manual y copas de succión pulsada que tonifican la zona.',
     whatIsHeadline: 'Levantamiento de glúteos: qué es y para qué sirve',
-    whatIsBody: 'El levantamiento de glúteos sin cirugía es un protocolo estético que combina masaje manual con copas de succión pulsada para estimular la microcirculación y tonificar los tejidos de la zona. Puede ayudar a mejorar la firmeza y el aspecto de la piel glútea de forma progresiva. En Derma.M, medical spa en West Palm Beach, se trabaja en ciclos de sesiones definidos tras una valoración previa.',
+    whatIsBody: 'El levantamiento de glúteos sin cirugía es un protocolo estético que combina masaje manual con copas de succión pulsada para estimular la microcirculación y tonificar los tejidos de la zona. Puede ayudar a mejorar la firmeza y el aspecto de la piel glútea de forma progresiva. En DERMA.M, medical spa en West Palm Beach, se trabaja en ciclos de sesiones definidos tras una valoración previa.',
     problemContextHeadline: 'Pérdida de volumen y flacidez en la zona posterior',
     problemContextBody: 'La falta de tono cutáneo y la ralentización circulatoria local aplanan la silueta y opacan la textura de la piel glútea. La tecnología de succión rítmica y pulsada oxigena las células en profundidad, devolviendo volumen visual, firmeza y suavidad al tejido.',
     duration: '60 min',
@@ -754,7 +754,7 @@ const customDetails = {
     faq: [
       {
         question: '¿La succión con copas en los glúteos causa flacidez?',
-        answer: 'No. En Derma.M aplicamos succión pulsada intermitente combinada con masajes manuales, lo que estimula la microcirculación y tonifica el tejido sin estirar la piel.'
+        answer: 'No. En DERMA.M aplicamos succión pulsada intermitente combinada con masajes manuales, lo que estimula la microcirculación y tonifica el tejido sin estirar la piel.'
       },
       {
         question: '¿Es normal que queden morados después de la sesión?',
@@ -778,7 +778,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Acentúa la definición del abdomen en quienes ya tienen un porcentaje de grasa bajo, combinando electroestimulación de alta intensidad y radiofrecuencia.',
     whatIsHeadline: 'Marcación abdominal: qué es y para qué sirve',
-    whatIsBody: 'La marcación abdominal no invasiva es un protocolo estético que combina electroestimulación muscular de alta intensidad con radiofrecuencia para trabajar el tono de la musculatura del abdomen y la firmeza de la piel. Suele buscarse para acentuar la definición en personas que ya tienen un porcentaje de grasa bajo. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones y requiere una valoración previa.',
+    whatIsBody: 'La marcación abdominal no invasiva es un protocolo estético que combina electroestimulación muscular de alta intensidad con radiofrecuencia para trabajar el tono de la musculatura del abdomen y la firmeza de la piel. Suele buscarse para acentuar la definición en personas que ya tienen un porcentaje de grasa bajo. En DERMA.M, medical spa en West Palm Beach, se realiza por sesiones y requiere una valoración previa.',
     problemContextHeadline: 'Dificultad para visualizar el tono recto abdominal',
     problemContextBody: 'A pesar del ejercicio, a veces la piel abdominal pierde turgencia y las fibras musculares carecen de la estimulación necesaria para marcar definición. El enfoque de doble acción fortalece las fibras y tensa la piel de forma simultánea.',
     duration: '50 - 75 min',
@@ -822,7 +822,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Favorece la firmeza y el soporte de la piel en abdomen, brazos o muslos llevando ultrasonido focalizado a los tejidos profundos, sin cirugía.',
     whatIsHeadline: 'HIFU corporal: qué es y para qué sirve',
-    whatIsBody: 'El HIFU corporal es un protocolo estético que aplica ultrasonido focalizado de alta intensidad sobre los tejidos profundos del cuerpo para generar calor controlado y estimular la producción de colágeno. Está diseñado para favorecer la firmeza y el soporte de la piel en abdomen, brazos o muslos de forma progresiva, sin cirugía. En Derma.M, medical spa en West Palm Beach, parte de una medición del pliegue graso en la valoración inicial.',
+    whatIsBody: 'El HIFU corporal es un protocolo estético que aplica ultrasonido focalizado de alta intensidad sobre los tejidos profundos del cuerpo para generar calor controlado y estimular la producción de colágeno. Está diseñado para favorecer la firmeza y el soporte de la piel en abdomen, brazos o muslos de forma progresiva, sin cirugía. En DERMA.M, medical spa en West Palm Beach, parte de una medición del pliegue graso en la valoración inicial.',
     problemContextHeadline: 'Flacidez instalada en abdomen, muslos o brazos',
     problemContextBody: 'Las pérdidas repentinas de peso o la madurez de la piel suelen dejar tejidos corporales laxos y sin soporte, dando un aspecto irregular. El HIFU actúa específicamente donde es necesario aportar un tensado profundo de forma no invasiva.',
     duration: '60 - 90 min',
@@ -866,7 +866,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Apoya la tonificación y el drenaje en glúteos o abdomen con electroestimulación de frecuencia media que genera contracciones rítmicas, como complemento del ejercicio.',
     whatIsHeadline: 'Corrientes rusas: qué son y para qué sirven',
-    whatIsBody: 'Las corrientes rusas son un protocolo estético de electroestimulación de frecuencia media que envía impulsos controlados a grupos musculares concretos para provocar contracciones rítmicas. Se usan como complemento del ejercicio para apoyar la tonificación y el drenaje en zonas como glúteos o abdomen. En nuestro medical spa de West Palm Beach, Derma.M, se programan 2 o 3 sesiones semanales por zona, siempre tras una valoración previa.',
+    whatIsBody: 'Las corrientes rusas son un protocolo estético de electroestimulación de frecuencia media que envía impulsos controlados a grupos musculares concretos para provocar contracciones rítmicas. Se usan como complemento del ejercicio para apoyar la tonificación y el drenaje en zonas como glúteos o abdomen. En nuestro medical spa de West Palm Beach, DERMA.M, se programan 2 o 3 sesiones semanales por zona, siempre tras una valoración previa.',
     problemContextHeadline: 'Falta de tono muscular y asistencia reafirmante',
     problemContextBody: 'La inactividad o debilidad en grupos musculares específicos, como glúteos o abdomen, complica obtener una apariencia tónica o firme mediante ejercicio regular únicamente. Las corrientes rusas incrementan el trabajo de la fibra muscular, complementando tu rutina.',
     duration: '45 min',
@@ -910,7 +910,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Suaviza el aspecto de la piel de naranja y atenúa la textura de las estrías combinando estimulación térmica, masaje y activos de renovación cutánea.',
     whatIsHeadline: 'Tratamiento de estrías y celulitis: qué es y cómo funciona',
-    whatIsBody: 'El tratamiento de estrías y celulitis es un protocolo estético corporal que combina estimulación térmica, masaje y activos de renovación cutánea para actuar sobre la circulación superficial y la elasticidad de la piel. Puede ayudar a suavizar el aspecto de la piel de naranja y a atenuar la textura de las estrías, sin eliminarlas por completo. En Derma.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración previa.',
+    whatIsBody: 'El tratamiento de estrías y celulitis es un protocolo estético corporal que combina estimulación térmica, masaje y activos de renovación cutánea para actuar sobre la circulación superficial y la elasticidad de la piel. Puede ayudar a suavizar el aspecto de la piel de naranja y a atenuar la textura de las estrías, sin eliminarlas por completo. En DERMA.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración previa.',
     problemContextHeadline: 'Textura irregular y marcas de estiramiento dérmico',
     problemContextBody: 'La acumulación localizada de líquidos o el estiramiento rápido de los tejidos dejan relieves con aspecto de piel de naranja o líneas delgadas visibles (estrías). Abordar este desafío desde la circulación superficial y reestructuración cutánea es clave para alisar la zona.',
     duration: '60 min',
@@ -954,7 +954,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mejora el aspecto de la piel de naranja, la pesadez en las piernas y la firmeza corporal activando la microcirculación con microdosis de dióxido de carbono.',
     whatIsHeadline: 'Carboxiterapia corporal: qué es y para qué sirve',
-    whatIsBody: 'La carboxiterapia corporal es un protocolo estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Suele usarse para mejorar el aspecto de la piel de naranja, la sensación de pesadez en las piernas y la firmeza corporal. En Derma.M, medical spa en West Palm Beach, se realiza por sesiones y requiere una valoración circulatoria previa.',
+    whatIsBody: 'La carboxiterapia corporal es un protocolo estético que introduce pequeñas cantidades de dióxido de carbono de grado cosmético bajo la piel para activar la microcirculación y la oxigenación local. Suele usarse para mejorar el aspecto de la piel de naranja, la sensación de pesadez en las piernas y la firmeza corporal. En DERMA.M, medical spa en West Palm Beach, se realiza por sesiones y requiere una valoración circulatoria previa.',
     problemContextHeadline: 'Congestión en tejidos y grasa focalizada',
     problemContextBody: 'Una microcirculación deficiente favorece la retención de agua y la falta de tono en zonas rebeldes. El suministro estético de CO2 reactiva de inmediato la oxigenación para dar mayor tersura y alisar relieves.',
     duration: '35 - 50 min',
@@ -998,7 +998,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Favorece la circulación, ayuda a drenar la retención de líquidos y acompaña el moldeo del contorno con masaje de instrumentos de madera sobre cintura, caderas y piernas.',
     whatIsHeadline: 'Maderoterapia corporal: qué es y para qué sirve',
-    whatIsBody: 'La maderoterapia corporal es una técnica de masaje que utiliza instrumentos de madera de pino para aplicar deslizamientos y presiones rítmicas sobre cintura, caderas y piernas. Está pensada para favorecer la circulación, ayudar a drenar la retención de líquidos y acompañar el moldeo del contorno, con un efecto también relajante. En Derma.M, medical spa en West Palm Beach, se ofrece por sesiones y parte de una valoración previa.',
+    whatIsBody: 'La maderoterapia corporal es una técnica de masaje que utiliza instrumentos de madera de pino para aplicar deslizamientos y presiones rítmicas sobre cintura, caderas y piernas. Está pensada para favorecer la circulación, ayudar a drenar la retención de líquidos y acompañar el moldeo del contorno, con un efecto también relajante. En DERMA.M, medical spa en West Palm Beach, se ofrece por sesiones y parte de una valoración previa.',
     problemContextHeadline: 'Retención de líquidos y tensión acumulada',
     problemContextBody: 'La pesadez y las irregularidades en la textura del cuerpo derivan habitualmente de una acumulación excesiva de líquidos o cansancio circulatorio. Los estímulos anatómicos de madera liberan la tensión del tejido, dinamizan el flujo de drenaje corporal y aportan contornos fluidos.',
     duration: '50 - 60 min',
@@ -1018,7 +1018,7 @@ const customDetails = {
     faq: [
       {
         question: '¿La maderoterapia corporal debe dejar morados para funcionar?',
-        answer: 'No. En Derma.M desmentimos el mito del dolor. Aplicamos maniobras rítmicas de presión moderada que drenan y alisan la piel sin causar hematomas.'
+        answer: 'No. En DERMA.M desmentimos el mito del dolor. Aplicamos maniobras rítmicas de presión moderada que drenan y alisan la piel sin causar hematomas.'
       },
       {
         question: '¿Qué herramientas de madera se utilizan en el masaje?',
@@ -1044,7 +1044,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Logra una reducción progresiva del vello facial o corporal, sesión tras sesión, emitiendo luz que calienta y debilita el folículo de forma gradual.',
     whatIsHeadline: 'Depilación láser: qué es y cómo funciona',
-    whatIsBody: 'La depilación láser es un procedimiento estético que emite luz sobre el pigmento del vello para calentar y debilitar el folículo de forma gradual, según el principio de fototermólisis selectiva. Está orientada a lograr una reducción progresiva y duradera del vello facial o corporal, sesión tras sesión. En Derma.M, medical spa en West Palm Beach, se realiza en ciclos de varias sesiones y parte de una valoración del fototipo.',
+    whatIsBody: 'La depilación láser es un procedimiento estético que emite luz sobre el pigmento del vello para calentar y debilitar el folículo de forma gradual, según el principio de fototermólisis selectiva. Está orientada a lograr una reducción progresiva y duradera del vello facial o corporal, sesión tras sesión. En DERMA.M, medical spa en West Palm Beach, se realiza en ciclos de varias sesiones y parte de una valoración del fototipo.',
     problemContextHeadline: 'El desafío del vello corporal no deseado y la irritación',
     problemContextBody: 'El afeitado tradicional o la cera convencional irritan repetidamente los poros, provocando vellos encarnados, aspereza crónica y manchas oscuras. El láser ofrece una vía de cuidado que refina la textura de la piel volviéndola sedosa y libre de vello de forma gradual.',
     duration: '20 - 60 min (según zona)',
@@ -1088,7 +1088,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Atenúa manchas solares, unifica el tono y aporta luminosidad al rostro, el cuello o el escote con luz pulsada que actúa sobre pigmentos y rojeces.',
     whatIsHeadline: 'IPL (luz pulsada intensa): qué es y para qué sirve',
-    whatIsBody: 'El IPL, o luz pulsada intensa, es un tratamiento estético que aplica un espectro amplio de luz sobre la piel para actuar de forma selectiva sobre pigmentos y rojeces superficiales. Suele usarse para atenuar manchas solares, unificar el tono y aportar luminosidad al rostro, el cuello o el escote. En Derma.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración previa y exige fotoprotección estricta.',
+    whatIsBody: 'El IPL, o luz pulsada intensa, es un tratamiento estético que aplica un espectro amplio de luz sobre la piel para actuar de forma selectiva sobre pigmentos y rojeces superficiales. Suele usarse para atenuar manchas solares, unificar el tono y aportar luminosidad al rostro, el cuello o el escote. En DERMA.M, medical spa en West Palm Beach, se planifica por sesiones tras una valoración previa y exige fotoprotección estricta.',
     problemContextHeadline: 'Daño solar, manchas en la edad y tono discrómico',
     problemContextBody: 'La acumulación de radiación UV da paso a pecas solares marcadas, rojeces superficiales finas y opacidad en la piel. El tratamiento por pulsación lumínica rompe los pigmentos focales oscuros y promueve una unificación global en pocas sesiones.',
     duration: '40 - 50 min',
@@ -1133,7 +1133,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Aclara el tono de la sonrisa de forma visible con geles aclaradores certificados que disuelven manchas superficiales, sin desgastar la estructura del diente.',
     whatIsHeadline: 'Blanqueamiento dental: qué es y para qué sirve',
-    whatIsBody: 'El blanqueamiento dental estético es un protocolo que aplica geles aclaradores certificados sobre el esmalte para disolver manchas superficiales y pigmentaciones adquiridas, sin desgastar la estructura del diente. Puede ayudar a aclarar el tono de la sonrisa de forma visible, con una duración que depende de los hábitos de cada persona. En Derma.M, medical spa en West Palm Beach, parte de una valoración previa del esmalte.',
+    whatIsBody: 'El blanqueamiento dental estético es un protocolo que aplica geles aclaradores certificados sobre el esmalte para disolver manchas superficiales y pigmentaciones adquiridas, sin desgastar la estructura del diente. Puede ayudar a aclarar el tono de la sonrisa de forma visible, con una duración que depende de los hábitos de cada persona. En DERMA.M, medical spa en West Palm Beach, parte de una valoración previa del esmalte.',
     problemContextHeadline: 'Opacidad y pigmentación adquirida en las piezas dentales',
     problemContextBody: 'El tabaco, café, té y ciertos pigmentos de alimentos van creando una película opaca sobre el esmalte, oscureciendo la sonrisa. El blanqueamiento te devuelve un tono más brillante, blanco y armónico compatible con tu simetría facial.',
     duration: '45 - 60 min',
@@ -1176,8 +1176,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-procedimiento.jpg',
         after: '/assets/images/treatments/dental-estetico/blanqueamiento-dental/blanqueamiento-dental-antes-despues.jpg',
-        beforeAlt: 'Blanqueamiento dental estético en cabina en Derma.M, West Palm Beach',
-        afterAlt: 'Antes y después de blanqueamiento dental estético en Derma.M'
+        beforeAlt: 'Blanqueamiento dental estético en cabina en DERMA.M, West Palm Beach',
+        afterAlt: 'Antes y después de blanqueamiento dental estético en DERMA.M'
       }],
       beforeLabel: 'PROCEDIMIENTO',
       afterLabel: 'ANTES Y DESPUÉS'
@@ -1187,7 +1187,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Mantiene el esmalte limpio y las encías sanas retirando placa y sarro acumulados con instrumental ultrasónico suave y copas de pulido.',
     whatIsHeadline: 'Limpieza dental: qué es y para qué sirve',
-    whatIsBody: 'La limpieza dental estética es un protocolo de higiene profesional que retira placa y sarro acumulados con instrumental ultrasónico suave y copas de pulido. Está pensada para mantener el esmalte limpio y las encías sanas, y no reemplaza los tratamientos periodontales. En nuestro medical spa de West Palm Beach, Derma.M, se recomienda cada seis meses y parte de una valoración previa.',
+    whatIsBody: 'La limpieza dental estética es un protocolo de higiene profesional que retira placa y sarro acumulados con instrumental ultrasónico suave y copas de pulido. Está pensada para mantener el esmalte limpio y las encías sanas, y no reemplaza los tratamientos periodontales. En nuestro medical spa de West Palm Beach, DERMA.M, se recomienda cada seis meses y parte de una valoración previa.',
     problemContextHeadline: 'Acúmulo de cálculo e inflamación gingival discreta',
     problemContextBody: 'El cepillado doméstico regular no logra retirar por completo el sarro calcificado en el cuello de las piezas dentales o entre espacios interproximales. Una limpieza experta remueve estas acumulaciones, puliendo la sonrisa y regalando una profunda sensación de ligereza y frescor bucal.',
     duration: '45 min',
@@ -1230,8 +1230,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-antes.jpg',
         after: '/assets/images/treatments/dental-estetico/limpieza-dental/limpieza-dental-despues.jpg',
-        beforeAlt: 'Dientes con acumulación de sarro en la línea de las encías antes de una limpieza dental estética en Derma.M, West Palm Beach',
-        afterAlt: 'Dientes limpios y pulidos tras una limpieza dental estética en Derma.M, West Palm Beach'
+        beforeAlt: 'Dientes con acumulación de sarro en la línea de las encías antes de una limpieza dental estética en DERMA.M, West Palm Beach',
+        afterAlt: 'Dientes limpios y pulidos tras una limpieza dental estética en DERMA.M, West Palm Beach'
       }]
     }
   },
@@ -1241,7 +1241,7 @@ const customDetails = {
     contentUpdated: '2026-08-27',
     heroDescription: 'Ayuda a fortalecer el cabello frágil y a reducir la sensación de caída infundiendo péptidos, aminoácidos y nutrientes en el cuero cabelludo.',
     whatIsHeadline: 'Tratamiento capilar: qué es y para qué sirve',
-    whatIsBody: 'El tratamiento capilar es un protocolo de bioestimulación que infunde péptidos, aminoácidos y nutrientes en el cuero cabelludo mediante aplicadores superficiales para nutrir la raíz del cabello. Puede ayudar a fortalecer el cabello frágil y a reducir la sensación de caída, aunque no recupera folículos que ya han dejado de crecer. En Derma.M, medical spa en West Palm Beach, se realiza en ciclos de sesiones tras una valoración previa.',
+    whatIsBody: 'El tratamiento capilar es un protocolo de bioestimulación que infunde péptidos, aminoácidos y nutrientes en el cuero cabelludo mediante aplicadores superficiales para nutrir la raíz del cabello. Puede ayudar a fortalecer el cabello frágil y a reducir la sensación de caída, aunque no recupera folículos que ya han dejado de crecer. En DERMA.M, medical spa en West Palm Beach, se realiza en ciclos de sesiones tras una valoración previa.',
     problemContextHeadline: 'Cabello debilitado, caída estacional y pérdida de volumen',
     problemContextBody: 'El estrés, el cansancio y agentes ambientales agresivos debilitan el folículo, haciendo que el vello capilar nazca más delgado, frágil o se desprenda prematuramente. El aporte localizado nutre y oxigena en profundidad la base para prolongar la calidad y resistencia del cabello.',
     duration: '45 - 60 min',
@@ -1284,8 +1284,8 @@ const customDetails = {
       items: [{
         before: '/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-antes.jpg',
         after: '/assets/images/treatments/capilar/tratamiento-capilar/tratamiento-capilar-despues.jpg',
-        beforeAlt: 'Cuero cabelludo con cabello fino, frágil y con menor densidad antes de un tratamiento capilar en Derma.M, West Palm Beach',
-        afterAlt: 'Cabello con aspecto más fuerte y mayor volumen tras un ciclo de tratamiento capilar en Derma.M, West Palm Beach'
+        beforeAlt: 'Cuero cabelludo con cabello fino, frágil y con menor densidad antes de un tratamiento capilar en DERMA.M, West Palm Beach',
+        afterAlt: 'Cabello con aspecto más fuerte y mayor volumen tras un ciclo de tratamiento capilar en DERMA.M, West Palm Beach'
       }]
     }
   }
@@ -1428,7 +1428,7 @@ const compileTreatments = () => {
         whatIs: {
           eyebrow: 'EL PROTOCOLO',
           headline: custom.whatIsHeadline || `Tratamiento de ${title}`,
-          body: custom.whatIsBody || `El tratamiento de ${title} en Derma.M es un protocolo diseñado estratégicamente para abordar ${description.toLowerCase()} utilizando aparatología y activos avanzados. Buscamos restaurar la luminosidad, equilibrio y vitalidad de la zona mediante un cuidado integral.`,
+          body: custom.whatIsBody || `El tratamiento de ${title} en DERMA.M es un protocolo diseñado estratégicamente para abordar ${description.toLowerCase()} utilizando aparatología y activos avanzados. Buscamos restaurar la luminosidad, equilibrio y vitalidad de la zona mediante un cuidado integral.`,
           image: `${treatmentAssetBase}/whatis.jpg`
         },
         problemContext: {
@@ -1439,7 +1439,7 @@ const compileTreatments = () => {
         cta: {
           eyebrow: 'AGENDA TU VALORACIÓN',
           headline: `DEFINE SI ${title} ES EL PROTOCOLO ADECUADO PARA TI`,
-          body: 'Agenda tu cita de evaluación en Derma.M y recibe un diagnóstico estético especializado e integral diseñado según tus objetivos de cuidado personal.',
+          body: 'Agenda tu cita de evaluación en DERMA.M y recibe un diagnóstico estético especializado e integral diseñado según tus objetivos de cuidado personal.',
           primaryCta: 'AGENDA TU VALORACIÓN',
           secondaryCta: 'WHATSAPP',
           disclaimer: disclaimer,

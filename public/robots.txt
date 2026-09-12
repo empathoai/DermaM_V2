@@ -1,5 +1,5 @@
 # -----------------------------------------------
-# Derma.M — robots.txt
+# DERMA.M — robots.txt
 # Domain: https://dermamskinhealth.com
 # -----------------------------------------------
 

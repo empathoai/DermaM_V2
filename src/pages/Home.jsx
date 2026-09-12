@@ -17,14 +17,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#141313] text-[#F2F0F1] font-sans selection:bg-[#CCC9C1] selection:text-[#141313] flex flex-col">
       <Helmet>
-        <title>Derma.M | Medical Spa en West Palm Beach, FL</title>
-        <meta name="description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
+        <title>DERMA.M | Medical Spa en West Palm Beach, FL</title>
+        <meta name="description" content="DERMA.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <link rel="canonical" href="https://dermamskinhealth.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
-        <meta property="og:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
+        <meta property="og:title" content="DERMA.M | Medical Spa en West Palm Beach, FL" />
+        <meta property="og:description" content="DERMA.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta property="og:url" content="https://dermamskinhealth.com/" />
-        <meta property="og:site_name" content="Derma.M" />
+        <meta property="og:site_name" content="DERMA.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -33,8 +33,8 @@ export default function Home() {
         <meta property="og:image:height" content="200" />
         <meta property="og:locale" content="es_US" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
-        <meta name="twitter:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
+        <meta name="twitter:title" content="DERMA.M | Medical Spa en West Palm Beach, FL" />
+        <meta name="twitter:description" content="DERMA.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
@@ -45,7 +45,7 @@ export default function Home() {
               "@type": "WebSite",
               "@id": "https://dermamskinhealth.com/#website",
               "url": "https://dermamskinhealth.com",
-              "name": "Derma.M",
+              "name": "DERMA.M",
               "publisher": {
                 "@id": "https://dermamskinhealth.com/#organization"
               }

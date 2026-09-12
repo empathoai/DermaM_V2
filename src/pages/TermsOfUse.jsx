@@ -23,7 +23,7 @@ export default function TermsOfUse() {
         <meta property="og:title" content={termsOfUseData.meta.title} />
         <meta property="og:description" content={termsOfUseData.meta.description} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:site_name" content="Derma.M" />
+        <meta property="og:site_name" content="DERMA.M" />
         <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default-1200x630.jpg`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

@@ -17,7 +17,7 @@ export default function NosotrosPage() {
         <meta property="og:title" content="Equipo y filosofía de cuidado | DERMA.M Florida" />
         <meta property="og:description" content="Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach." />
         <meta property="og:url" content="https://dermamskinhealth.com/nosotros" />
-        <meta property="og:site_name" content="Derma.M" />
+        <meta property="og:site_name" content="DERMA.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

@@ -116,7 +116,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-[#F2F0F1]/10 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 text-xs tracking-wider text-[#BBB8B5] font-light">
-          <p className="order-1">&copy; {new Date().getFullYear()} Derma.M. Todos los derechos reservados.</p>
+          <p className="order-1">&copy; {new Date().getFullYear()} DERMA.M. Todos los derechos reservados.</p>
           
           <div className="order-2 lg:text-center text-[#BBB8B5]/85">
             Created by: <a href="https://empathoai.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F2F0F1] underline underline-offset-4 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1]">EmpathoAI</a>

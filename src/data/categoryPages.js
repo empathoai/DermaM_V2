@@ -4,8 +4,8 @@ export const categoryPages = {
   faciales: {
     slug: 'faciales',
     route: '/faciales',
-    metaTitle: 'Tratamientos Faciales en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en Derma.M, medical spa en West Palm Beach, Florida.',
+    metaTitle: 'Tratamientos Faciales en West Palm Beach | DERMA.M',
+    metaDescription: 'Tratamientos faciales diseñados para renovar, equilibrar y cuidar tu piel en DERMA.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Faciales', link: '/faciales' }
@@ -34,7 +34,7 @@ export const categoryPages = {
     overview: {
       eyebrow: 'FACIALES',
       headline: 'Tratamientos diseñados para renovar, equilibrar y cuidar tu piel',
-      body: 'En Derma.M la consulta facial arranca hablando de lo que te molesta cuando te miras al espejo, no del catálogo de aparatología. De ahí sale el protocolo: limpieza, luminosidad, textura, manchas o acné, según lo que realmente te preocupa.',
+      body: 'En DERMA.M la consulta facial arranca hablando de lo que te molesta cuando te miras al espejo, no del catálogo de aparatología. De ahí sale el protocolo: limpieza, luminosidad, textura, manchas o acné, según lo que realmente te preocupa.',
       image: '/assets/images/hubs/faciales/overview.jpg'
     },
     featuredTreatments: {
@@ -308,7 +308,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios del cuidado facial en Derma.M',
+      headline: 'Beneficios del cuidado facial en DERMA.M',
       list: [
         {
           title: 'PIEL QUE SE VE Y SE SIENTE MEJOR',
@@ -386,8 +386,8 @@ export const categoryPages = {
   corporales: {
     slug: 'corporales',
     route: '/corporales',
-    metaTitle: 'Tratamientos Corporales en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en Derma.M. West Palm Beach, Florida.',
+    metaTitle: 'Tratamientos Corporales en West Palm Beach | DERMA.M',
+    metaDescription: 'Tratamientos corporales enfocados en bienestar, recuperación y objetivos estéticos personalizados en DERMA.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Corporales', link: '/corporales' }
@@ -416,7 +416,7 @@ export const categoryPages = {
     overview: {
       eyebrow: 'CORPORALES',
       headline: 'Tratamientos diseñados para acompañar tu cuerpo con precisión',
-      body: 'Los tratamientos corporales casi nunca son de una sola vez. Suelen ir de la mano de un proceso más largo: una recuperación, un cambio de peso, un posparto. En Derma.M armamos el plan pensando en ese recorrido completo, no solo en la sesión de hoy.',
+      body: 'Los tratamientos corporales casi nunca son de una sola vez. Suelen ir de la mano de un proceso más largo: una recuperación, un cambio de peso, un posparto. En DERMA.M armamos el plan pensando en ese recorrido completo, no solo en la sesión de hoy.',
       image: '/assets/images/hubs/corporales/overview.jpg'
     },
     featuredTreatments: {
@@ -575,7 +575,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios del cuidado corporal en Derma.M',
+      headline: 'Beneficios del cuidado corporal en DERMA.M',
       list: [
         {
           title: 'UN PLAN QUE SE ADAPTA',
@@ -654,8 +654,8 @@ export const categoryPages = {
   laserYLuz: {
     slug: 'laser-y-luz',
     route: '/laser-y-luz',
-    metaTitle: 'Tratamientos Láser y Luz en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos con tecnología estética avanzada para renovar y mejorar la piel en Derma.M, medical spa en West Palm Beach, Florida.',
+    metaTitle: 'Tratamientos Láser y Luz en West Palm Beach | DERMA.M',
+    metaDescription: 'Tratamientos con tecnología estética avanzada para renovar y mejorar la piel en DERMA.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Láser y Luz', link: '/laser-y-luz' }
@@ -684,7 +684,7 @@ export const categoryPages = {
     overview: {
       eyebrow: 'LÁSER Y LUZ',
       headline: 'Tratamientos con tecnología para acompañar la calidad visible de tu piel',
-      body: 'Cada equipo de láser o luz se calibra distinto según el tono de piel, la sensibilidad y la zona a tratar. En Derma.M ese ajuste se decide antes de prender el equipo, no es un mismo nivel para todos.',
+      body: 'Cada equipo de láser o luz se calibra distinto según el tono de piel, la sensibilidad y la zona a tratar. En DERMA.M ese ajuste se decide antes de prender el equipo, no es un mismo nivel para todos.',
       image: '/assets/images/hubs/laser-y-luz/overview.jpg'
     },
     featuredTreatments: {
@@ -736,7 +736,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios de Láser y Luz en Derma.M',
+      headline: 'Beneficios de Láser y Luz en DERMA.M',
       list: [
         {
           title: 'AJUSTE FINO POR SESIÓN',
@@ -815,8 +815,8 @@ export const categoryPages = {
   dentalEstetico: {
     slug: 'dental-estetico',
     route: '/dental-estetico',
-    metaTitle: 'Dental Estético en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos para cuidar la apariencia visible de tu sonrisa, como blanqueamiento y limpieza dental, en Derma.M, West Palm Beach, Florida.',
+    metaTitle: 'Dental Estético en West Palm Beach | DERMA.M',
+    metaDescription: 'Tratamientos para cuidar la apariencia visible de tu sonrisa, como blanqueamiento y limpieza dental, en DERMA.M, West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Dental Estético', link: '/dental-estetico' }
@@ -845,7 +845,7 @@ export const categoryPages = {
     overview: {
       eyebrow: 'DENTAL ESTÉTICO',
       headline: 'Tratamientos para cuidar la apariencia visible de tu sonrisa',
-      body: 'Sabemos que el tema dental le genera nervios a mucha gente. En Derma.M el cuidado dental estético se plantea como algo simple y corto, sin el peso de una consulta odontológica tradicional.',
+      body: 'Sabemos que el tema dental le genera nervios a mucha gente. En DERMA.M el cuidado dental estético se plantea como algo simple y corto, sin el peso de una consulta odontológica tradicional.',
       image: '/assets/images/hubs/dental-estetico/overview.jpg'
     },
     featuredTreatments: {
@@ -898,7 +898,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios del cuidado dental estético en Derma.M',
+      headline: 'Beneficios del cuidado dental estético en DERMA.M',
       list: [
         {
           title: 'UNA SONRISA MÁS LUMINOSA',
@@ -958,8 +958,8 @@ export const categoryPages = {
   ivTherapy: {
     slug: 'iv-therapy',
     route: '/iv-therapy',
-    metaTitle: 'IV Therapy en West Palm Beach | Derma.M',
-    metaDescription: 'Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado en Derma.M. West Palm Beach, Florida.',
+    metaTitle: 'IV Therapy en West Palm Beach | DERMA.M',
+    metaDescription: 'Terapias orientadas a acompañar tu bienestar general desde un enfoque profesional y personalizado en DERMA.M. West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'IV Therapy', link: '/iv-therapy' }
@@ -1099,7 +1099,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios de IV Therapy en Derma.M',
+      headline: 'Beneficios de IV Therapy en DERMA.M',
       list: [
         {
           title: 'ENERGÍA PARA TU SEMANA',
@@ -1159,8 +1159,8 @@ export const categoryPages = {
   capilar: {
     slug: 'capilar',
     route: '/capilar',
-    metaTitle: 'Tratamientos Capilares en West Palm Beach | Derma.M',
-    metaDescription: 'Tratamientos para acompañar la salud, apariencia y fortaleza del cabello en Derma.M, medical spa en West Palm Beach, Florida.',
+    metaTitle: 'Tratamientos Capilares en West Palm Beach | DERMA.M',
+    metaDescription: 'Tratamientos para acompañar la salud, apariencia y fortaleza del cabello en DERMA.M, medical spa en West Palm Beach, Florida.',
     breadcrumb: [
       { label: 'Inicio', link: '/' },
       { label: 'Capilar', link: '/capilar' }
@@ -1189,7 +1189,7 @@ export const categoryPages = {
     overview: {
       eyebrow: 'CAPILAR',
       headline: 'Tratamientos para acompañar la salud y apariencia del cabello',
-      body: 'Hablar de pérdida de cabello no siempre es fácil. En Derma.M la primera conversación es justamente esa, sin apuro y sin juicio, antes de definir cualquier protocolo capilar.',
+      body: 'Hablar de pérdida de cabello no siempre es fácil. En DERMA.M la primera conversación es justamente esa, sin apuro y sin juicio, antes de definir cualquier protocolo capilar.',
       image: '/assets/images/hubs/capilar/overview.jpg'
     },
     featuredTreatments: {
@@ -1226,7 +1226,7 @@ export const categoryPages = {
       ]
     },
     benefits: {
-      headline: 'Beneficios del cuidado capilar en Derma.M',
+      headline: 'Beneficios del cuidado capilar en DERMA.M',
       list: [
         {
           title: 'ACOMPAÑAMIENTO DESDE EL PRIMER DÍA',

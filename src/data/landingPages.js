@@ -11,7 +11,7 @@ export const landingPages = {
       whatsappTopic: 'PRF',
       body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg',
-      imageAlt: 'Manos con guantes extrayendo con pinzas el coágulo de fibrina de un tubo con plasma separado, junto a la centrífuga en Derma.M'
+      imageAlt: 'Manos con guantes extrayendo con pinzas el coágulo de fibrina de un tubo con plasma separado, junto a la centrífuga en DERMA.M'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Progresivo", icon: "result" },
@@ -89,8 +89,8 @@ export const landingPages = {
         {
           before: '/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-procedimiento.mp4',
           after: '/assets/images/landings/prf-y-fibrina/plasma-rico-en-plaquetas-resultado.jpg',
-          beforeAlt: 'Aplicación de plasma rico en plaquetas y fibrina con microneedling en el rostro en Derma.M, West Palm Beach',
-          afterAlt: 'Piel del rostro con aspecto luminoso tras una sesión de plasma rico en plaquetas y fibrina en Derma.M, West Palm Beach'
+          beforeAlt: 'Aplicación de plasma rico en plaquetas y fibrina con microneedling en el rostro en DERMA.M, West Palm Beach',
+          afterAlt: 'Piel del rostro con aspecto luminoso tras una sesión de plasma rico en plaquetas y fibrina en DERMA.M, West Palm Beach'
         }
       ],
       beforeLabel: 'PROCEDIMIENTO',
@@ -108,7 +108,7 @@ export const landingPages = {
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      support: 'Experiencias reales de personas que han confiado en DERMA.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
           quote: 'Realmente estoy muy agradecida con DERMA.M especialmente con Mikaela y Nancy... Es un momento de relajación.',
@@ -133,7 +133,7 @@ export const landingPages = {
         },
         {
           question: '¿Cuál es la diferencia entre PRP y PRF?',
-          answer: 'Están relacionados, pero no son lo mismo. El PRP es una fracción líquida de tu sangre concentrada en plaquetas; el PRF se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En Derma.M se combinan en un solo protocolo tópico con Dermapen, no como inyección.'
+          answer: 'Están relacionados, pero no son lo mismo. El PRP es una fracción líquida de tu sangre concentrada en plaquetas; el PRF se procesa como una matriz de fibrina que libera los factores de crecimiento de forma más gradual. En DERMA.M se combinan en un solo protocolo tópico con Dermapen, no como inyección.'
         },
         {
           question: '¿En qué se diferencia de un PRP facial o microneedling con plasma tradicional?',
@@ -161,7 +161,7 @@ export const landingPages = {
         },
         {
           question: '¿El PRF es mejor que el PRP?',
-          answer: 'El PRF representa una evolución respecto al PRP. Al procesarse como una matriz de fibrina, libera los factores de crecimiento de forma sostenida y progresiva, en lugar de una única liberación inicial como el PRP. En Derma.M el protocolo combina ambos de forma tópica con Dermapen para aprovechar la acción inmediata del PRP y la liberación prolongada del PRF; la valoración profesional define el número de sesiones según el estado visible de tu piel.'
+          answer: 'El PRF representa una evolución respecto al PRP. Al procesarse como una matriz de fibrina, libera los factores de crecimiento de forma sostenida y progresiva, en lugar de una única liberación inicial como el PRP. En DERMA.M el protocolo combina ambos de forma tópica con Dermapen para aprovechar la acción inmediata del PRP y la liberación prolongada del PRF; la valoración profesional define el número de sesiones según el estado visible de tu piel.'
         },
         {
           question: '¿El PRF ayuda con las marcas del post-acné?',
@@ -199,7 +199,7 @@ export const landingPages = {
       whatsappTopic: 'Limpieza Facial Profunda',
       body: 'Preparamos la piel para que tus productos en casa funcionen perfectamente, te asesoramos y guiamos en el proceso.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg',
-      imageAlt: 'Clienta recostada con una mascarilla facial purificante blanca y banda de spa durante una limpieza facial profunda en Derma.M, West Palm Beach'
+      imageAlt: 'Clienta recostada con una mascarilla facial purificante blanca y banda de spa durante una limpieza facial profunda en DERMA.M, West Palm Beach'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Inmediato", icon: "result" },
@@ -220,7 +220,7 @@ export const landingPages = {
         'Necesidad de preparación para otros tratamientos'
       ],
       image: '/assets/images/landings/limpieza-facial-profunda/how-it-works.jpg',
-      imageAlt: 'Esteticista retirando producto del rostro de una clienta con algodón, junto al vapor facial y la bandeja de instrumentos en Derma.M'
+      imageAlt: 'Esteticista retirando producto del rostro de una clienta con algodón, junto al vapor facial y la bandeja de instrumentos en DERMA.M'
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
@@ -274,8 +274,8 @@ export const landingPages = {
         {
           before: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-antes.jpg',
           after: '/assets/images/landings/limpieza-facial-profunda/limpieza-facial-profunda-despues.jpg',
-          beforeAlt: 'Piel del rostro antes de una limpieza facial profunda en Derma.M, West Palm Beach',
-          afterAlt: 'Piel del rostro después de una limpieza facial profunda en Derma.M, West Palm Beach'
+          beforeAlt: 'Piel del rostro antes de una limpieza facial profunda en DERMA.M, West Palm Beach',
+          afterAlt: 'Piel del rostro después de una limpieza facial profunda en DERMA.M, West Palm Beach'
         }
       ],
       disclaimer: 'Imágenes de referencia con fines informativos. Los resultados pueden variar según cada persona, tratamiento y condición individual.'
@@ -291,7 +291,7 @@ export const landingPages = {
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Experiencias reales de personas que han confiado en Derma.M para cuidar su piel, su cuerpo y su bienestar.',
+      support: 'Experiencias reales de personas que han confiado en DERMA.M para cuidar su piel, su cuerpo y su bienestar.',
       list: [
         {
           quote: 'Desde que llamé me sentí muy cómoda y confiada. El spa es muy limpio. Y con el facial que me realizó quedé muy conforme.',
@@ -316,7 +316,7 @@ export const landingPages = {
         },
         {
           question: '¿La limpieza facial profunda es dolorosa?',
-          answer: 'Es un procedimiento muy cómodo. En Derma.M aplicamos una técnica de ablandamiento previo que facilita la extracción de impurezas de forma sumamente suave, minimizando molestias y rojeces severas.'
+          answer: 'Es un procedimiento muy cómodo. En DERMA.M aplicamos una técnica de ablandamiento previo que facilita la extracción de impurezas de forma sumamente suave, minimizando molestias y rojeces severas.'
         },
         {
           question: '¿Es la limpieza facial adecuada si tengo brotes activos?',
@@ -370,7 +370,7 @@ export const landingPages = {
       whatsappTopic: 'Tratamientos Postoperatorios',
       body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestro medical spa de West Palm Beach.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
-      imageAlt: 'Especialista con guantes realiza un masaje de drenaje manual en el abdomen de una clienta recostada en la camilla de Derma.M, West Palm Beach'
+      imageAlt: 'Especialista con guantes realiza un masaje de drenaje manual en el abdomen de una clienta recostada en la camilla de DERMA.M, West Palm Beach'
     },
     quickFacts: [
       { label: "RESULTADO", value: "Primera sesión", icon: "result" },
@@ -391,7 +391,7 @@ export const landingPages = {
         'Búsqueda de seguimiento profesional'
       ],
       image: '/assets/images/landings/tratamientos-postoperatorios/how-it-works.jpg',
-      imageAlt: 'Terapeuta de Derma.M aplicando drenaje linfático manual sobre el abdomen de una clienta durante una sesión postoperatoria'
+      imageAlt: 'Terapeuta de DERMA.M aplicando drenaje linfático manual sobre el abdomen de una clienta durante una sesión postoperatoria'
     },
     benefits: {
       eyebrow: 'BENEFICIOS',
@@ -446,12 +446,12 @@ export const landingPages = {
       items: [
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-1.jpg',
-          alt: 'Vista lateral de torso y cadera: izquierda con hematomas e inflamación postoperatorios; derecha con el contorno más liso tras el acompañamiento en Derma.M',
+          alt: 'Vista lateral de torso y cadera: izquierda con hematomas e inflamación postoperatorios; derecha con el contorno más liso tras el acompañamiento en DERMA.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-2.jpg',
-          alt: 'Costado y espalda baja de una paciente antes y después del drenaje postoperatorio: menos hematomas y flanco más uniforme, Derma.M, West Palm Beach',
+          alt: 'Costado y espalda baja de una paciente antes y después del drenaje postoperatorio: menos hematomas y flanco más uniforme, DERMA.M, West Palm Beach',
           type: 'comparison'
         },
         {
@@ -461,31 +461,31 @@ export const landingPages = {
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-4.jpg',
-          alt: 'Costado de una paciente antes y después del acompañamiento postoperatorio: menos hematomas en las costillas y cintura más definida, Derma.M',
+          alt: 'Costado de una paciente antes y después del acompañamiento postoperatorio: menos hematomas en las costillas y cintura más definida, DERMA.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-5.jpg',
-          alt: 'Cadera y muslo vistos de lado: antes con un hematoma amplio e inflamación, después con la zona más lisa tras el drenaje linfático postoperatorio en Derma.M',
+          alt: 'Cadera y muslo vistos de lado: antes con un hematoma amplio e inflamación, después con la zona más lisa tras el drenaje linfático postoperatorio en DERMA.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-6.jpg',
-          alt: 'Abdomen de frente antes y después del acompañamiento postoperatorio: menos inflamación y hematomas en la parte baja, Derma.M, West Palm Beach',
+          alt: 'Abdomen de frente antes y después del acompañamiento postoperatorio: menos inflamación y hematomas en la parte baja, DERMA.M, West Palm Beach',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/drenaje-linfatico-postoperatorio-antes-despues-7.jpg',
-          alt: 'Torso de perfil en piel morena: antes con hematoma oscuro e hinchazón, después con el área más uniforme tras las sesiones postoperatorias, Derma.M',
+          alt: 'Torso de perfil en piel morena: antes con hematoma oscuro e hinchazón, después con el área más uniforme tras las sesiones postoperatorias, DERMA.M',
           type: 'comparison'
         },
         {
           src: '/assets/images/landings/tratamientos-postoperatorios/resultado-postoperatorio-abdomen.jpg',
-          alt: 'Primer plano del abdomen liso y tonificado de una paciente recostada tras completar su acompañamiento postoperatorio en Derma.M, West Palm Beach',
+          alt: 'Primer plano del abdomen liso y tonificado de una paciente recostada tras completar su acompañamiento postoperatorio en DERMA.M, West Palm Beach',
           type: 'result'
         }
       ],
-      disclaimer: 'Fotografías de casos reales de pacientes de Derma.M. Cada proceso postoperatorio es individual: los resultados varían según el procedimiento previo realizado, las características de cada persona y el seguimiento de las indicaciones. Ningún contenido de este sitio garantiza resultados específicos.'
+      disclaimer: 'Fotografías de casos reales de pacientes de DERMA.M. Cada proceso postoperatorio es individual: los resultados varían según el procedimiento previo realizado, las características de cada persona y el seguimiento de las indicaciones. Ningún contenido de este sitio garantiza resultados específicos.'
     },
     relatedLinks: {
       label: 'Explora también',
@@ -498,7 +498,7 @@ export const landingPages = {
     testimonials: {
       eyebrow: 'GOOGLE REVIEWS',
       headline: 'LO QUE DICEN NUESTROS CLIENTES',
-      support: 'Experiencias reales de personas que han confiado en Derma.M para acompañar su recuperación y cuidar su bienestar corporal.',
+      support: 'Experiencias reales de personas que han confiado en DERMA.M para acompañar su recuperación y cuidar su bienestar corporal.',
       list: [
         {
           quote: 'Mi masajista es una persona especial, muy inteligente y amable, hace que el tiempo del masaje sea tan ameno y efectivo que siempre quieras regresar. 100% recomendado.',
@@ -527,7 +527,7 @@ export const landingPages = {
         },
         {
           question: '¿El drenaje linfático manual postoperatorio debe ser doloroso?',
-          answer: 'No. En Derma.M seguimos pautas de máxima suavidad. El drenaje postoperatorio consiste en presiones manuales sumamente sutiles y superficiales para aliviar el tejido inflamado de forma cómoda y tolerable.'
+          answer: 'No. En DERMA.M seguimos pautas de máxima suavidad. El drenaje postoperatorio consiste en presiones manuales sumamente sutiles y superficiales para aliviar el tejido inflamado de forma cómoda y tolerable.'
         },
         {
           question: '¿Cuántas sesiones del protocolo postoperatorio se recomiendan?',

@@ -1,4 +1,4 @@
-# Derma.M — Product & Technical Reference
+# DERMA.M — Product & Technical Reference
 # Version: 1.0 — June 2026
 # Read this before touching any file in the project.
 
@@ -6,7 +6,7 @@
 
 ## Project Identity
 
-- **Project:** Derma.M website
+- **Project:** DERMA.M website
 - **URL:** https://dermamskinhealth.com (canonical — no www, no trailing slash)
 - **Business:** DERMA.M, LLC — med spa
 - **Location:** West Palm Beach FL
@@ -227,7 +227,7 @@ Use these types — no others:
 ### Confirmed business data for schemas:
 
 ```javascript
-name: "Derma.M"
+name: "DERMA.M"
 legalName: "DERMA.M, LLC"
 url: "https://dermamskinhealth.com"
 telephone: "+15612535384"
@@ -235,7 +235,7 @@ email: "info@dermamskinhealth.com"
 
 locations: [
   {
-    name: "Derma.M — West Palm Beach",
+    name: "DERMA.M — West Palm Beach",
     streetAddress: "5707 S Dixie Hwy UNIT D",
     addressLocality: "West Palm Beach",
     addressRegion: "FL",

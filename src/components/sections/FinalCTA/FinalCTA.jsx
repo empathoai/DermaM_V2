@@ -40,7 +40,7 @@ export default function FinalCTA() {
             Empieza con una valoración personalizada
           </h2>
           <p className={styles.bodyCopy}>
-            Agenda tu cita en Derma.M y recibe una orientación profesional según tu piel, tu cuerpo y tus objetivos.
+            Agenda tu cita en DERMA.M y recibe una orientación profesional según tu piel, tu cuerpo y tus objetivos.
           </p>
           
           <div className={styles.buttonGroup}>

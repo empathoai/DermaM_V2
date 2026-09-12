@@ -1,15 +1,15 @@
 ---
-name: "Derma.M Visual Design System"
+name: "DERMA.M Visual Design System"
 version: "3.0.0"
-description: "Authoritative design system for Derma.M. Defines the visual language, color surfaces, typography, layout rhythm, component rules, and page-level surface maps required to create a premium clinical aesthetic website. This system prioritizes editorial luxury, monochrome discipline, asymmetry, and medical clarity. No generic WordPress, med-spa, SaaS, or template patterns are allowed."
+description: "Authoritative design system for DERMA.M. Defines the visual language, color surfaces, typography, layout rhythm, component rules, and page-level surface maps required to create a premium clinical aesthetic website. This system prioritizes editorial luxury, monochrome discipline, asymmetry, and medical clarity. No generic WordPress, med-spa, SaaS, or template patterns are allowed."
 theme:
   mode: "editorial-monochrome"
   description: "Premium skin health system built on dark authority, warm clinical grays, asymmetrical layouts, and restrained clinical clarity."
 ---
 
-# Derma.M — Visual Design System
+# DERMA.M — Visual Design System
 
-Derma.M must feel like a custom premium skin health and aesthetics brand, not a WordPress med-spa template. The design language is editorial, monochrome, clinical, warm, architectural, and conversion-aware.
+DERMA.M must feel like a custom premium skin health and aesthetics brand, not a WordPress med-spa template. The design language is editorial, monochrome, clinical, warm, architectural, and conversion-aware.
 
 The site must communicate:
 - premium care
@@ -182,7 +182,7 @@ CTA:
 
 Headlines must feel editorial, not corporate.
 
-Do not use tight negative tracking in display text. Derma.M uses expanded tracking for premium restraint.
+Do not use tight negative tracking in display text. DERMA.M uses expanded tracking for premium restraint.
 
 Do not over-bold headings. Large scale and spacing should create impact, not heavy font weight.
 

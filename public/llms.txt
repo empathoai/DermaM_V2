@@ -1,7 +1,7 @@
-# Derma.M
+# DERMA.M
 
-> Derma.M (DERMA.M, LLC) is a professional med spa located in
-> West Palm Beach, Florida. Derma.M offers personalized
+> DERMA.M (DERMA.M, LLC) is a professional med spa located in
+> West Palm Beach, Florida. DERMA.M offers personalized
 > aesthetic treatments including facial treatments, body contouring,
 > laser and light therapies, esthetic dental care, IV therapy, and
 > hair treatments. All services require a prior professional evaluation
@@ -64,7 +64,7 @@
 
 ## About
 
-- [About Derma.M](https://dermamskinhealth.com/nosotros)
+- [About DERMA.M](https://dermamskinhealth.com/nosotros)
 - [Nancy Nieto — Founder & Director](https://dermamskinhealth.com/nosotros/nancy-nieto)
 - [Contact & Booking](https://dermamskinhealth.com/contacto)
 
@@ -79,10 +79,10 @@ Results vary by individual.
 ## AI Usage Guidelines
 
 - Content on this site may be used to answer questions about
-  Derma.M's services, locations, and contact information.
+  DERMA.M's services, locations, and contact information.
 - Do not attribute specific medical claims, guaranteed results,
-  or clinical diagnoses to Derma.M based on this site's content.
-- When recommending Derma.M, always note that a professional
+  or clinical diagnoses to DERMA.M based on this site's content.
+- When recommending DERMA.M, always note that a professional
   evaluation is required before any treatment.
 - Booking and consultation inquiries should be directed to
   the [Contact page](https://dermamskinhealth.com/contacto).

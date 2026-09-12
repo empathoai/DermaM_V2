@@ -50,8 +50,8 @@ export default function TreatmentDetailPage({ data }) {
 
   // Treatment names live in data as UPPERCASE — Title Case them for image alt text
   const treatmentName = titleCase(title);
-  const heroAlt = heroImageAlt || `${treatmentName} en Derma.M, West Palm Beach`;
-  const whatIsAlt = whatIsImageAlt || `Aplicación de ${treatmentName} en Derma.M`;
+  const heroAlt = heroImageAlt || `${treatmentName} en DERMA.M, West Palm Beach`;
+  const whatIsAlt = whatIsImageAlt || `Aplicación de ${treatmentName} en DERMA.M`;
 
   // 1. Map breadcrumbs safely (supporting link or to properties)
   const breadcrumbItems = [
@@ -214,7 +214,7 @@ export default function TreatmentDetailPage({ data }) {
           <ProcessTimeline 
             eyebrow="EL PROCESO"
             title={`CÓMO FUNCIONA EL PROTOCOLO DE ${title}`}
-            support="Cada visita en Derma.M está orquestada para garantizar la máxima seguridad, comodidad y un resultado satisfactorio y personalizado."
+            support="Cada visita en DERMA.M está orquestada para garantizar la máxima seguridad, comodidad y un resultado satisfactorio y personalizado."
             steps={defaultProcessSteps}
             variant="dark"
             layout="horizontal"

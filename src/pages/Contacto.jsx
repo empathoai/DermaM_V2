@@ -31,14 +31,14 @@ export default function ContactoPage() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
       <Helmet>
-        <title>Contacto | Derma.M</title>
-        <meta name="description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach." />
+        <title>Contacto | DERMA.M</title>
+        <meta name="description" content="Agenda tu evaluación personalizada en DERMA.M. Escríbenos por WhatsApp o visítanos en West Palm Beach." />
         <link rel="canonical" href="https://dermamskinhealth.com/contacto" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contacto | Derma.M" />
-        <meta property="og:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
+        <meta property="og:title" content="Contacto | DERMA.M" />
+        <meta property="og:description" content="Agenda tu evaluación personalizada en DERMA.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/contacto" />
-        <meta property="og:site_name" content="Derma.M" />
+        <meta property="og:site_name" content="DERMA.M" />
         <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -46,8 +46,8 @@ export default function ContactoPage() {
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contacto | Derma.M" />
-        <meta name="twitter:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
+        <meta name="twitter:title" content="Contacto | DERMA.M" />
+        <meta name="twitter:description" content="Agenda tu evaluación personalizada en DERMA.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
@@ -57,9 +57,9 @@ export default function ContactoPage() {
             {
               "@type": "ContactPage",
               "@id": "https://dermamskinhealth.com/contacto#contactpage",
-              "name": "Contacto | Derma.M",
+              "name": "Contacto | DERMA.M",
               "url": "https://dermamskinhealth.com/contacto",
-              "description": "Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida.",
+              "description": "Agenda tu evaluación personalizada en DERMA.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida.",
               "mainEntity": { "@id": "https://dermamskinhealth.com/#organization" }
             }
           ]
@@ -229,7 +229,7 @@ export default function ContactoPage() {
                       )}
 
                       <iframe
-                        title="Ubicación de Derma.M West Palm Beach"
+                        title="Ubicación de DERMA.M West Palm Beach"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.050478749377!2d-80.0543666!3d26.6531589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d73b573a9e3b%3A0x63fdcfda5a703dca!2s5707%20S%20Dixie%20Hwy%20UNIT%20D%2C%20West%20Palm%20Beach%2C%20FL%2033405!5e0!3m2!1ses!2sus!4v1700000000000!5m2!1ses!2sus"
                         className={styles.mapWpbIframe}
                         allowFullScreen=""

@@ -87,7 +87,7 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <div className={styles.navLogoContainer}>
           <Link to="/" className={styles.navLogo} onClick={() => setIsMobileMenuOpen(false)}>
-            Derma.M
+            DERMA.M
           </Link>
         </div>
 

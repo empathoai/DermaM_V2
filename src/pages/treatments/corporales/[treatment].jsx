@@ -15,7 +15,7 @@ export default function CorporalesTreatmentPage() {
     return (
       <div className="min-h-screen flex flex-col bg-[#F2F0F1] text-[#363633] font-sans selection:bg-[#CCC9C1] selection:text-[#141313]">
         <Helmet>
-          <title>Tratamiento no encontrado | Derma.M</title>
+          <title>Tratamiento no encontrado | DERMA.M</title>
           <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         

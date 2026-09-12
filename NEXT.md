@@ -6,9 +6,8 @@ are in it.
 
 ## State
 
-HEAD at `8c6847c` (this cycle: sharing-metadata sweep — `apple-touch-icon`, `theme-color`,
-`og:site_name` across 13 files; `twitter:site`/manifest.json deliberately skipped, see
-`DECISIONS.md` 2026-09-12). Pushed to origin.
+HEAD at `084bee9` (this cycle: closed CPY-07 tracking — already fixed in code by Task 25
+2026-08-31, only the audit doc/NEXT.md were stale). Not yet pushed — awaiting push confirmation.
 
 ## Next activity
 

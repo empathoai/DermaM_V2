@@ -9,7 +9,7 @@ are in it.
 HEAD at `a31f5bf` (this cycle: `DEPLOY.md` Part 2 items 1-3 executed — `.htaccess`/`robots.txt`
 fixed, `/nosotros/nancy-nieto` confirmed present; `llms.txt` brought into llmstxt.org spec
 compliance; external-audit package reconciled against current code, 26/27 findings closed).
-Pending: push to origin (awaiting confirmation).
+Pushed to origin.
 
 ## Next activity
 

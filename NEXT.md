@@ -6,9 +6,8 @@ are in it.
 
 ## State
 
-HEAD at `bbc1ce5` (this cycle: `DEPLOY.md` Part 2 item 4 — fixed stale "Vercel" reference in
-`docs/seo-setrategies/INTAKE.md:56` to Hostinger/Apache). Not yet pushed — awaiting push
-confirmation.
+HEAD at `d36da54` (this cycle: `DEPLOY.md` Part 2 item 4 — fixed stale "Vercel" reference in
+`docs/seo-setrategies/INTAKE.md:56` to Hostinger/Apache). Pushed to origin.
 
 ## Next activity
 

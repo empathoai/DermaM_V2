@@ -6,18 +6,16 @@ are in it.
 
 ## State
 
-HEAD will be at this cycle's doc-fixup commit, on top of `653930b` (footer version indicator,
-V1.0.0) and `de8c84d` (maderoterapia-corporal request-loop fix). Working tree clean, not yet
-pushed.
+HEAD will be at this cycle's doc-fixup commit, on top of `1ddc9d7` (DERMA.M casing normalization,
+V1.0.1) and `653930b` (footer version indicator). Working tree clean, not yet pushed.
 
 ## Next activity
 
-**Both changes are done and verified locally; production (Hostinger) has NOT been re-deployed
+**All local changes are done and verified; production (Hostinger) has NOT been re-deployed
 yet** — it's still running the build from before this session (site-live cycle only). User needs
 to: `npm run build`, zip `dist/` (Python zipfile, not PowerShell `Compress-Archive` — see
 `DECISIONS.md` 2026-09-12 site-live entry), upload to Hostinger `public_html`. After that deploy,
-confirm the footer shows `V1.0.0` on the live site as the verification signal this whole feature
-was built for.
+confirm the footer shows `V1.0.1` on the live site as the verification signal.
 
 Also still open, not urgent: **GSC domain verification + `sitemap.xml` submission**.
 

@@ -2,14 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — Feature: GA4 `contact_whatsapp` event alongside Meta Pixel (V1.0.2)
+## 2026-09-12 — GSC verification + sitemap + `?page_id=` redirect fix
 
-- User asked how WhatsApp clicks were tracked; found Meta Pixel `Contact` fired on all 8 WhatsApp CTAs but GA4 had no equivalent event. Added `src/utils/ga4.js` (`trackGA4Contact`) and `src/utils/whatsappTracking.js` (`trackWhatsAppClick`, combines Meta + GA4); all 8 CTAs now call the combined function instead of `trackMetaContact` directly.
-- Verified live in the Browser pane: click fires `dataLayer` push `["event","contact_whatsapp",{"method":"whatsapp"}]`. Full `test:visual`: 17/17 passed, no re-baseline needed (JS-only change).
-- Also clarified in this cycle (no code): Meta CAPI "Connection pending" for pixel `3001886450080985` is inert and not a deploy blocker — enabling it needs a backend/serverless piece this static site doesn't have.
-- `package.json` bumped `1.0.1` → `1.0.2`.
-- Commit: `b78223b`.
-- **Deployed to Hostinger 2026-09-12** (this + the DERMA.M casing + maderoterapia fixes): `DEPLOY.md` Part 1 fully green on the prod build (34/34 `test:visual`), zip built with Python `zipfile` (forward-slash paths), uploaded/extracted to `public_html`. Verified live on `dermamskinhealth.com`: title, `V1.0.2` footer, clean redirects, GA4 `contact_whatsapp` firing.
+- GSC: discovered an already-verified URL-prefix property `https://dermamskinhealth.com/` (verified since 2026-08-28) made the new Domain-property TXT verification attempt redundant; deleted the unverified Domain property, kept the working one. Submitted `sitemap.xml`: status Success, 44 pages discovered.
+- Cleaned up the now-orphaned `google-site-verification` TXT record from Hostinger DNS (confirmed SPF record untouched).
+- Reviewed GSC "Page indexing" report (14 not-indexed pages, 3 reasons): confirmed the 404s and most "crawled — not indexed" URLs (`radiofrecuencia-3`, `/category/salud/`, `/portfolio-types/.../feed/`) are already covered by existing `.htaccess` 301s, just crawled before that file was deployed. Found a real gap: WordPress `?page_id=NNN` query strings (7+ of the 11) aren't matched by any path-based `RewriteRule` and were silently falling through to the SPA fallback (200 homepage under the old URL) instead of a clean 301 — see `DECISIONS.md` 2026-09-12.
+- Fix: added a `RewriteCond %{QUERY_STRING} (^|&)page_id=` + `RewriteRule ^(.*)$ /? [R=301,L]` block to `public/.htaccess`, placed after the existing generic WordPress pattern rules.
+- No `test:visual` run — `.htaccess` is server-side routing, outside the DoD gate (not CSS/component/layout). Not yet deployed to Hostinger — live site still runs the previous `.htaccess` until next deploy.
 
 ---
 

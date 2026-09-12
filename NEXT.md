@@ -6,29 +6,27 @@ are in it.
 
 ## State
 
-HEAD at `be37273` (docs close for GA4 event cycle), on top of `b78223b` (GA4 `contact_whatsapp`
-event, V1.0.2), `1ddc9d7` (DERMA.M casing normalization, V1.0.1), and `653930b` (footer version
-indicator). Working tree clean.
+HEAD at `<pending commit>` (this cycle: GSC verify/sitemap + `page_id` redirect fix, V1.0.3), on
+top of `be37273` (docs close for GA4 event cycle), `b78223b` (GA4 `contact_whatsapp` event,
+V1.0.2). Working tree clean.
 
 ## Next activity
 
-**Deployed to Hostinger and verified live (2026-09-12).** `dermam-dist-v1.0.2.zip` built from a
-clean `npm run build` (Part 1 of `DEPLOY.md` fully green: 34/34 `test:visual` on the prod build,
-all routes 200, redirects clean), uploaded to `public_html`, extracted. Confirmed on
-`dermamskinhealth.com`: `<title>` = `DERMA.M`, footer = `V1.0.2`, console clean, all 3 redirect
-types single-hop 301, GA4 `contact_whatsapp` event fires on a real WhatsApp click (dataLayer
-confirmed).
+**GSC done (2026-09-12).** Turned out a URL-prefix property `https://dermamskinhealth.com/` already
+existed and was verified since 2026-08-28 — the new Domain-property TXT attempt was redundant and
+deleted; `sitemap.xml` submitted (Success, 44 pages). TXT record removed from Hostinger DNS (SPF
+confirmed intact).
 
-No proactive next step — wait for the user. Still open, not urgent: **GSC domain verification +
-sitemap.xml submission**.
-
-Also still open, not urgent: **GSC domain verification + `sitemap.xml` submission**.
+**`.htaccess` fix, not yet deployed.** Added a `?page_id=` catch-all 301 (see `DECISIONS.md`
+2026-09-12) — fixes silent duplicate-content on legacy WordPress query-string URLs. `package.json`
+bumped `1.0.2` → `1.0.3`. **The live Hostinger site does not have this yet** — needs the next
+`DEPLOY.md` cycle to go live.
 
 ## How to resume
 
-No proactive next step — wait for the user. If they ask "qué sigue", offer the Hostinger
-re-deploy (a fresh `dist/`+zip is needed, the one from earlier in this session is stale — it
-predates the footer version feature) or GSC setup.
+No proactive next step — wait for the user. If they ask "qué sigue", offer the Hostinger re-deploy
+(fresh `dist/`+zip needed — carries both the footer version bump and the `.htaccess` fix) as the
+only open item.
 
 ## Context by area — grep, not full-read
 

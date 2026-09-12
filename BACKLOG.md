@@ -44,9 +44,10 @@ is already resolved, delete the item now (don't wait for a formal close) and say
 
 ## Resolved infra (do not redo)
 
-graphify out of the workflow · engram off · GSC prefix unverified
-(`public/google2f0ede1a410e8a22.html`) · GA4 `G-9272VHFT03` in `index.html` · Apify token in
-`.env.local` at root (`APIFY_API_KEY`, format `KEY: valor`)
+graphify out of the workflow · engram off · GSC verified (`https://dermamskinhealth.com/`
+URL-prefix property, verified since 2026-08-28; sitemap.xml submitted 2026-09-12, 44 pages) ·
+GA4 `G-9272VHFT03` in `index.html` · Apify token in `.env.local` at root (`APIFY_API_KEY`, format
+`KEY: valor`)
 
 ## Declined by product (do not re-open without a new request)
 

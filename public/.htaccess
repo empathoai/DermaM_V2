@@ -89,6 +89,10 @@ RewriteRule ^donec-tempus-urna-risus/?$                          / [R=301,L]
 RewriteRule ^portfolio-item/(.*)$   /faciales [R=301,L]
 RewriteRule ^portfolio-types/(.*)$  /faciales [R=301,L]
 RewriteRule ^category/(.*)$         /         [R=301,L]
+
+# --- WordPress ?page_id= query strings (any path) ---
+RewriteCond %{QUERY_STRING} (^|&)page_id=
+RewriteRule ^(.*)$ /? [R=301,L]
 RewriteRule ^tag/(.*)$              /         [R=301,L]
 RewriteRule ^author/(.*)$           /         [R=301,L]
 RewriteRule ^page/([0-9]+)/?$       /         [R=301,L]

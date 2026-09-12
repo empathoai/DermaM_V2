@@ -38,11 +38,16 @@ export default function ContactoPage() {
         <meta property="og:title" content="Contacto | Derma.M" />
         <meta property="og:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
         <meta property="og:url" content="https://dermamskinhealth.com/contacto" />
-        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-200x200.jpg" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contacto | Derma.M" />
         <meta name="twitter:description" content="Agenda tu evaluación personalizada en Derma.M. Escríbenos por WhatsApp o visítanos en West Palm Beach, Florida." />
-        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

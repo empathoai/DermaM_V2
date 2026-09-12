@@ -17,11 +17,16 @@ export default function NosotrosPage() {
         <meta property="og:title" content="Equipo y filosofía de cuidado | DERMA.M Florida" />
         <meta property="og:description" content="Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach." />
         <meta property="og:url" content="https://dermamskinhealth.com/nosotros" />
-        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-200x200.jpg" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Equipo y filosofía de cuidado | DERMA.M Florida" />
         <meta name="twitter:description" content="Conoce a Nancy Nieto, al equipo de DERMA.M y el enfoque de valoración, formación continua y atención personalizada en West Palm Beach." />
-        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

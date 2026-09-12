@@ -24,12 +24,17 @@ export default function Home() {
         <meta property="og:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
         <meta property="og:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
         <meta property="og:url" content="https://dermamskinhealth.com/" />
-        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-200x200.jpg" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <meta property="og:locale" content="es_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Derma.M | Medical Spa en West Palm Beach, FL" />
         <meta name="twitter:description" content="Derma.M ofrece tratamientos faciales, corporales, láser y bienestar en West Palm Beach, Florida. Evaluación personalizada. Agenda tu cita hoy." />
-        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

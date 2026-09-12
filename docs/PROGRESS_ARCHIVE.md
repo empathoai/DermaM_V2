@@ -9,6 +9,12 @@ Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para al
 - **Reconciled the external-audit package** (`auditorias-externas/resultados/*.md`, `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`, gitignored) against current code + a live browser pass: of 27 original findings, 26 closed (19 already fixed in untracked prior cycles, 6 UX/`DESIGN.md` items closed after visual verification showed no real defect, 1 — PRF internal linking — matches an already-registered spec that defers it). Only CPY-07 (title-case inconsistency) stays open, deferred to the pre-deploy external re-audit per user request.
 - `test:visual` skipped — no CSS/component changes, only protected config files + doc reconciliation.
 
+## 2026-09-12 — Add missing favicon `<link>` (cont. 74, code) — `4b5ba7e`
+
+- `index.html` had a `favicon.ico` file in `public/assets/images/global/` but no `<link rel="icon">` referencing it — browsers never loaded it. Added `<link rel="icon" href="/assets/images/global/favicon.ico" />` in `<head>`.
+- Verified live: navigated to `/assets/images/global/favicon.ico` on the dev server, confirmed 200 + valid 32×32 ico.
+- `test:visual` not gated per `CLAUDE.md` §DoD (single `<head>` meta link, no CSS/class/layout change) — ran anyway since already in flight, passed with no diffs.
+
 ## 2026-09-12 — DEPLOY.md Part 2 item 4: fix stale "Vercel" reference (cont. 73, docs only) — `bbc1ce5`
 
 - Fixed `docs/seo-setrategies/INTAKE.md:56` — "deploy en **Vercel**" → "deploy en **Hostinger (Apache)**", matching the actual deploy target (Hostinger = prod, Vercel = client demo only).

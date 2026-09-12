@@ -33,7 +33,8 @@ export default function CategorySEO({ data }) {
   const url = `${SITE}${data.route}`;
   const title = data.metaTitle;
   const description = data.metaDescription;
-  const image = `${SITE}/assets/images/global/og-default.jpg`;
+  const image = `${SITE}/assets/images/global/og-default-1200x630.jpg`;
+  const imageFallback = `${SITE}/assets/images/global/og-default-200x200.jpg`;
 
   const featured = (data.featuredTreatments && data.featuredTreatments.treatments) || [];
   const items = featured
@@ -90,6 +91,11 @@ export default function CategorySEO({ data }) {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image" content={imageFallback} />
+      <meta property="og:image:width" content="200" />
+      <meta property="og:image:height" content="200" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

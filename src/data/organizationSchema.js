@@ -9,7 +9,7 @@ export const organizationNode = {
   alternateName: ['Derma.M Med Spa', 'DERMA.M', 'Derma M', 'DermaM'],
   url: 'https://dermamskinhealth.com',
   logo: 'https://dermamskinhealth.com/assets/images/global/logo.jpg',
-  image: 'https://dermamskinhealth.com/assets/images/global/og-default.jpg',
+  image: 'https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg',
   description:
     'Derma.M es un medical spa en West Palm Beach, Florida, con tratamientos estéticos faciales, corporales, de láser y luz, dental estético, IV therapy y capilar. Todos los servicios requieren una valoración profesional previa.',
   telephone: '+15612535384',

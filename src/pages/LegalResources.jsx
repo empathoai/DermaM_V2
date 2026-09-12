@@ -45,11 +45,16 @@ export default function LegalResources() {
         <meta property="og:title" content="Recursos Legales • DERMA.M" />
         <meta property="og:description" content="Centro de documentación de cumplimiento legal de DERMA.M. Accede a nuestras políticas de privacidad, términos de uso, y deslindes clínicos." />
         <meta property="og:url" content="https://dermamskinhealth.com/legal" />
-        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="https://dermamskinhealth.com/assets/images/global/og-default-200x200.jpg" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Recursos Legales • DERMA.M" />
         <meta name="twitter:description" content="Centro de documentación de cumplimiento legal de DERMA.M. Accede a nuestras políticas de privacidad, términos de uso, y deslindes clínicos." />
-        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default.jpg" />
+        <meta name="twitter:image" content="https://dermamskinhealth.com/assets/images/global/og-default-1200x630.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

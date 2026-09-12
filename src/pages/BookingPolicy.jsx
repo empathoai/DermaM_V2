@@ -21,11 +21,16 @@ export default function BookingPolicy() {
         <meta property="og:title" content={bookingPolicyData.meta.title} />
         <meta property="og:description" content={bookingPolicyData.meta.description} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default.jpg`} />
+        <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default-1200x630.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content={`${siteUrl}/assets/images/global/og-default-200x200.jpg`} />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={bookingPolicyData.meta.title} />
         <meta name="twitter:description" content={bookingPolicyData.meta.description} />
-        <meta name="twitter:image" content={`${siteUrl}/assets/images/global/og-default.jpg`} />
+        <meta name="twitter:image" content={`${siteUrl}/assets/images/global/og-default-1200x630.jpg`} />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

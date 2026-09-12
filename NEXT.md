@@ -6,8 +6,10 @@ are in it.
 
 ## State
 
-HEAD at `4b5ba7e` (this cycle: added missing `<link rel="icon">` in `index.html` — favicon file
-existed on disk but was never referenced). Not yet pushed — awaiting push confirmation.
+HEAD at `<pending>` (this cycle: fixed OG image dimensions — 1200×630 primary + 200×200 fallback
+replacing the oversized 1920×1080 default across all `og:image`/`twitter:image` tags; also includes
+the prior favicon-link cycle, `4b5ba7e`, not yet pushed). Not yet pushed — awaiting push
+confirmation.
 
 ## Next activity
 

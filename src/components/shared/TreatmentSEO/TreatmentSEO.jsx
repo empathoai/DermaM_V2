@@ -34,7 +34,8 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
     155
   );
 
-  const image = data.image ? `${SITE}${data.image}` : `${SITE}/assets/images/global/og-default.jpg`;
+  const image = data.image ? `${SITE}${data.image}` : `${SITE}/assets/images/global/og-default-1200x630.jpg`;
+  const imageFallback = data.image ? null : `${SITE}/assets/images/global/og-default-200x200.jpg`;
 
   const graph = {
     '@context': 'https://schema.org',
@@ -105,6 +106,9 @@ export default function TreatmentSEO({ data, categorySlug, slug }) {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
+      {imageFallback && <meta property="og:image" content={imageFallback} />}
+      {imageFallback && <meta property="og:image:width" content="200" />}
+      {imageFallback && <meta property="og:image:height" content="200" />}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

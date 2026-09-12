@@ -5,8 +5,8 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `eb61edb` (cont. 58 — Miguel Ramos team video replaced). In progress: cont. 59 — Melisa
-Ríos team video replaced — files staged, not yet committed. Dev server `:3000` = running.
+Base commit = `ff0960a` (cont. 59 — Melisa Ríos team video replaced). Working tree clean, pushed.
+Dev server `:3000` = running.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing

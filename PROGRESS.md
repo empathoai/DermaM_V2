@@ -7,7 +7,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **What:** replaced `public/assets/images/about/team/melisa-rios.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (1.3 MB → 312 KB, `-an`), regenerated poster `.jpg` (49 KB) and `.webp` sibling.
 - **Why:** item 3 of the client's `/nosotros` team-video swap batch (Daniela Parra cont. 56, Miguel Ramos cont. 58).
 - **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
-- Commit: pending.
+- Commit `ff0960a`.
 
 ---
 
@@ -16,7 +16,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **What:** replaced `public/assets/images/about/team/miguel-ramos.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (4 MB → 459 KB, `-an`), regenerated poster `.jpg` (63 KB) and `.webp` sibling.
 - **Why:** item 2 of the client's `/nosotros` team-video swap batch (item 1 = Daniela Parra, cont. 56).
 - **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
-- Commit: pending.
+- Commit `eb61edb`.
 
 ---
 
@@ -25,7 +25,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **What:** both were video-only slots (no `.jpg`/`.webp`), so their `/nosotros` cards showed the `og-default.jpg` fallback before the video loaded. Frame-extracted a poster from each existing `.mp4` (`ffmpeg -vf "select=eq(n\,0)"`), optimized (~37-39 KB each), generated `.webp` siblings. No new client asset needed — reused the video's own opening frame.
 - **Why:** found while verifying cont. 56 (Daniela's video swap) — two team cards were silently falling back to the generic OG image.
 - **Verified:** browser on `/nosotros` — both cards now show their own photo poster (200 OK, no fallback), console clean. `test:visual` skipped per DoD (single-asset addition, no CSS/component/layout change).
-- Commit: pending.
+- Commit `4adf582`.
 
 ---
 
@@ -35,7 +35,7 @@ Running log of work in this repo. Newest entry on top. One entry per session/tas
 - **Why:** client authorized go-live and requested some `/nosotros` team videos be swapped first — this is item 1 of that batch, executing one per cycle.
 - **Verified:** browser on `/nosotros` — poster (200 OK) and video (206 Partial Content, normal for range requests) both load, no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap, no CSS/component/layout change).
 - **Note:** while checking the team grid, found `mikaela-guajardo.jpg` and `elianne-trujillo.jpg` posters are missing on disk (video-only, so their cards fall back to `og-default.jpg` until the poster loads/plays) — queued as the next cycle.
-- Commit: pending.
+- Commit `847c3e3`.
 
 ---
 

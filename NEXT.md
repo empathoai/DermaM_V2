@@ -5,7 +5,7 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `901d6f6`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
+Base commit = `<cont.67-hash>`, pushed. Working tree clean. Dev server `:3000` = stopped; restart with
 `npm run dev` next session.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
@@ -47,11 +47,9 @@ Protected files (`.htaccess` / `robots.txt` / `sitemap.xml` / `llms.txt`): each 
 
 ## Other pending (outside the cont. 21 queue)
 
-**SlopMonster manual audit follow-up (cont. 64-66)** — testimonial fixes done (cont. 66). Still open:
-(L) The 6 category hubs share a near-identical template (same 4 process steps, same section counts,
-templated `approach` sentence) — the scaled-content pattern Google's spam policies target; needs its
-own `brainstorming` → real per-category copy, no mechanical fix. User's call on whether/when to
-schedule.
+**SlopMonster manual audit follow-up (cont. 64-67) — CLOSED.** Testimonial fixes done (cont. 66); the
+6 category-hub de-templating done (cont. 67, `DECISIONS.md` 2026-09-12) — each hub now has a distinct
+angle instead of a noun-swapped template. No more open items from this audit.
 
 **Founder identity consistency — mostly done (cont. 55).** Title unified to "FUNDADORA Y DIRECTORA
 DE DERMA.M"; `shortBio` + Person-schema `description` aligned to the canonical blurb. Residual (minor,

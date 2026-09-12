@@ -19,22 +19,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'EVALUACIÓN PERSONALIZADA',
-        body: 'Tratamientos adaptados a tu piel y objetivos.'
+        title: 'CONVERSACIÓN PRIMERO',
+        body: 'Antes de recomendar nada te preguntamos qué no te gusta de tu piel y por qué.'
       },
       {
-        title: 'PROTOCOLOS SELECCIONADOS',
-        body: 'Cuidado facial con productos y aparatología profesional.'
+        title: 'PROTOCOLOS AJUSTADOS',
+        body: 'Elegimos entre las opciones disponibles según tu piel, no un paquete cerrado.'
       },
       {
-        title: 'RESULTADOS NATURALES',
-        body: 'Enfoque estético pensado para equilibrio, luminosidad y bienestar.'
+        title: 'SEGUIMIENTO REAL',
+        body: 'Te decimos qué esperar entre sesión y sesión, no solo el día que vienes.'
       }
     ],
     overview: {
       eyebrow: 'FACIALES',
       headline: 'Tratamientos diseñados para renovar, equilibrar y cuidar tu piel',
-      body: 'En Derma.M trabajamos tratamientos faciales personalizados para acompañar distintas necesidades de la piel, desde limpieza profunda y luminosidad hasta textura, manchas, acné y rejuvenecimiento.',
+      body: 'En Derma.M la consulta facial arranca hablando de lo que te molesta cuando te miras al espejo, no del catálogo de aparatología. De ahí sale el protocolo: limpieza, luminosidad, textura, manchas o acné, según lo que realmente te preocupa.',
       image: '/assets/images/hubs/faciales/overview.jpg'
     },
     featuredTreatments: {
@@ -311,23 +311,23 @@ export const categoryPages = {
       headline: 'Beneficios del cuidado facial en Derma.M',
       list: [
         {
-          title: 'PIEL MÁS EQUILIBRADA',
-          body: 'Apoyo para mejorar limpieza, textura y apariencia general.'
+          title: 'PIEL QUE SE VE Y SE SIENTE MEJOR',
+          body: 'El objetivo es que notes el cambio tú, no que quede bien en una foto.'
         },
         {
-          title: 'PROTOCOLOS PERSONALIZADOS',
-          body: 'Cada tratamiento se adapta a las necesidades de tu piel.'
+          title: 'PROTOCOLOS QUE SE AJUSTAN',
+          body: 'Si algo no te convence a mitad de camino, lo hablamos y lo cambiamos.'
         },
         {
-          title: 'CUIDADO PROFESIONAL',
-          body: 'Acompañamiento con productos seleccionados y aparatología estética.'
+          title: 'CLARIDAD SOBRE EL PROCESO',
+          body: 'Sabes desde el principio cuántas sesiones estimamos y por qué.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'Cada piel requiere una mirada personalizada',
-      body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, el estado visible de tu piel y el protocolo más adecuado para acompañarte con claridad y cuidado.'
+      body: 'Cada piel reacciona distinto. Antes de proponer un tratamiento miramos qué tan sensible es, qué ya probaste antes y qué resultado buscas; ese cruce arma el protocolo, no una lista fija de pasos.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -335,22 +335,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y observamos las necesidades de tu piel.'
+          body: 'Nos cuentas qué te preocupa de tu piel y miramos de cerca el estado actual.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Definimos el protocolo facial más adecuado para tu caso.'
+          body: 'Te explicamos qué opciones aplican a tu caso y por qué, sin apurar la decisión.'
         },
         {
           number: '03',
           title: 'TRATAMIENTO',
-          body: 'Aplicamos el tratamiento con productos y aparatología seleccionada.'
+          body: 'Hacemos la sesión con los productos y equipos que corresponden a lo definido.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
+          body: 'Te decimos qué cuidar los próximos días y cuándo tendría sentido la siguiente sesión.'
         }
       ]
     },
@@ -401,22 +401,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'EVALUACIÓN PERSONALIZADA',
-        body: 'Tratamientos adaptados a tu cuerpo, proceso y objetivos.'
+        title: 'PENSADO PARA UN PROCESO',
+        body: 'El plan se ajusta sesión a sesión según cómo vas evolucionando.'
       },
       {
-        title: 'PROTOCOLOS PROFESIONALES',
-        body: 'Cuidado corporal con técnicas, productos y aparatología seleccionada.'
+        title: 'ACOMPAÑAMIENTO EN RECUPERACIONES',
+        body: 'Trabajamos en línea con tu cirugía o tu rutina, no en paralelo a ciegas.'
       },
       {
-        title: 'ACOMPAÑAMIENTO SEGURO',
-        body: 'Orientación profesional antes, durante y después del tratamiento.'
+        title: 'COMUNICACIÓN CONSTANTE',
+        body: 'Si algo no va como esperabas, lo hablamos antes de seguir con el plan.'
       }
     ],
     overview: {
       eyebrow: 'CORPORALES',
       headline: 'Tratamientos diseñados para acompañar tu cuerpo con precisión',
-      body: 'En Derma.M trabajamos protocolos corporales personalizados para acompañar objetivos estéticos, bienestar físico, recuperación y cuidado integral del cuerpo.',
+      body: 'Los tratamientos corporales casi nunca son de una sola vez. Suelen ir de la mano de un proceso más largo: una recuperación, un cambio de peso, un posparto. En Derma.M armamos el plan pensando en ese recorrido completo, no solo en la sesión de hoy.',
       image: '/assets/images/hubs/corporales/overview.jpg'
     },
     featuredTreatments: {
@@ -578,23 +578,23 @@ export const categoryPages = {
       headline: 'Beneficios del cuidado corporal en Derma.M',
       list: [
         {
-          title: 'ACOMPAÑAMIENTO PERSONALIZADO',
-          body: 'Cada protocolo se adapta a tu cuerpo, etapa y objetivos.'
+          title: 'UN PLAN QUE SE ADAPTA',
+          body: 'El protocolo cambia si tu proceso cambia.'
         },
         {
-          title: 'CUIDADO CORPORAL PROFESIONAL',
-          body: 'Trabajamos con técnicas y aparatología seleccionada para cada caso.'
+          title: 'DRENAJE Y CUIDADO SUPERVISADOS',
+          body: 'Cada sesión se ajusta al momento de tu recuperación.'
         },
         {
-          title: 'BIENESTAR Y RECUPERACIÓN',
-          body: 'Apoyamos procesos corporales desde una mirada estética e integral.'
+          title: 'TIEMPOS REALES, NO PROMESAS',
+          body: 'Hablamos claro sobre cuánto suele tomar ver cambios, sesión por sesión.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'Cada cuerpo requiere un plan adaptado',
-      body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, tu proceso corporal y el protocolo más adecuado para acompañarte con seguridad, claridad y cuidado.'
+      body: 'Antes de armar el plan corporal entendemos en qué etapa estás: si vienes de una cirugía, si es un objetivo estético a mediano plazo, o si buscas complementar tu rutina. El protocolo se arma sobre eso.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -602,22 +602,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y entendemos tu proceso corporal.'
+          body: 'Revisamos en qué etapa de tu proceso corporal estás y qué necesitas ahora.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Definimos el protocolo corporal más adecuado para tu caso.'
+          body: 'Armamos un plan de sesiones, no un tratamiento suelto.'
         },
         {
           number: '03',
           title: 'TRATAMIENTO',
-          body: 'Aplicamos técnicas, productos o aparatología seleccionada según el objetivo.'
+          body: 'Aplicamos la sesión según cómo evolucionaste desde la anterior.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
+          body: 'Ajustamos el plan según tu recuperación o tus objetivos, sesión a sesión.'
         }
       ]
     },
@@ -669,22 +669,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'EVALUACIÓN PERSONALIZADA',
-        body: 'Orientamos cada protocolo según tu piel, objetivos y sensibilidad.'
+        title: 'CALIBRACIÓN POR PIEL',
+        body: 'El nivel de energía y la técnica se ajustan a tu tono y sensibilidad, no a un estándar fijo.'
       },
       {
-        title: 'TECNOLOGÍA AVANZADA',
-        body: 'Tratamientos con aparatología estética seleccionada para distintas necesidades.'
+        title: 'CRITERIO SOBRE EL RITMO',
+        body: 'Si tu piel necesita más tiempo entre sesiones, te lo decimos en vez de forzarlo.'
       },
       {
-        title: 'CUIDADO PROFESIONAL',
-        body: 'Acompañamiento seguro antes, durante y después del tratamiento.'
+        title: 'SEGURIDAD ANTES QUE NADA',
+        body: 'Revisamos contraindicaciones (sol reciente, medicación, tipo de piel) antes de cualquier sesión.'
       }
     ],
     overview: {
       eyebrow: 'LÁSER Y LUZ',
       headline: 'Tratamientos con tecnología para acompañar la calidad visible de tu piel',
-      body: 'En Derma.M trabajamos protocolos de láser y luz orientados a mejorar la apariencia de la piel, apoyar renovación, textura, manchas, depilación y otros objetivos estéticos personalizados.',
+      body: 'Cada equipo de láser o luz se calibra distinto según el tono de piel, la sensibilidad y la zona a tratar. En Derma.M ese ajuste se decide antes de prender el equipo, no es un mismo nivel para todos.',
       image: '/assets/images/hubs/laser-y-luz/overview.jpg'
     },
     featuredTreatments: {
@@ -739,23 +739,23 @@ export const categoryPages = {
       headline: 'Beneficios de Láser y Luz en Derma.M',
       list: [
         {
-          title: 'TECNOLOGÍA SELECCIONADA',
-          body: 'Protocolos con aparatología estética adaptada a cada necesidad.'
+          title: 'AJUSTE FINO POR SESIÓN',
+          body: 'Cada sesión parte de cómo reaccionó tu piel a la anterior.'
         },
         {
-          title: 'RESULTADOS PROGRESIVOS',
-          body: 'Tratamientos diseñados para acompañar cambios visibles de forma gradual.'
+          title: 'MENOS SORPRESAS EN CONSULTA',
+          body: 'Te explicamos qué sentir y qué esperar antes de empezar.'
         },
         {
-          title: 'ACOMPAÑAMIENTO PROFESIONAL',
-          body: 'Orientación antes y después de cada sesión para cuidar tu experiencia.'
+          title: 'RITMO SEGÚN TU PIEL',
+          body: 'No forzamos sesiones seguidas si tu piel necesita más tiempo.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'La tecnología debe aplicarse con criterio',
-      body: 'Antes de recomendar un protocolo de láser o luz, evaluamos tu piel, tus objetivos y las condiciones necesarias para elegir una opción adecuada y segura.'
+      body: 'La tecnología no es un botón que se aprieta igual para todos. Antes de cualquier sesión de láser o luz revisamos tu tipo de piel, tu historial (sol, medicación, tratamientos previos) y definimos parámetros específicos para tu caso.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -763,22 +763,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Evaluamos tu piel, tus objetivos y la zona a tratar.'
+          body: 'Revisamos tu tipo de piel, tu historial y la zona a tratar.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Definimos el protocolo tecnológico más adecuado para tu caso.'
+          body: 'Definimos parámetros y una cantidad estimada de sesiones para tu caso.'
         },
         {
           number: '03',
           title: 'TRATAMIENTO',
-          body: 'Aplicamos la sesión con aparatología seleccionada y cuidado profesional.'
+          body: 'Aplicamos la sesión con el equipo calibrado a lo definido.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre cuidados posteriores y próximas sesiones si aplica.'
+          body: 'Revisamos cómo reaccionó tu piel antes de programar la siguiente sesión.'
         }
       ]
     },
@@ -830,22 +830,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'EVALUACIÓN PERSONALIZADA',
-        body: 'Orientación según tus objetivos estéticos y necesidades visibles.'
+        title: 'SIN VUELTA DE LO INCÓMODO',
+        body: 'Si te pone nerviosa la silla dental, lo tenemos en cuenta desde que llegas.'
       },
       {
-        title: 'CUIDADO PROFESIONAL',
-        body: 'Protocolos diseñados para acompañar la estética de tu sonrisa.'
+        title: 'SESIONES CORTAS',
+        body: 'Blanqueamiento y limpieza son protocolos rápidos, pensados para no ocuparte el día.'
       },
       {
-        title: 'RESULTADOS NATURALES',
-        body: 'Enfoque orientado a una apariencia limpia, luminosa y equilibrada.'
+        title: 'EXPLICACIÓN CLARA',
+        body: 'Te contamos qué esperar de tu sonrisa antes y después, sin tecnicismos.'
       }
     ],
     overview: {
       eyebrow: 'DENTAL ESTÉTICO',
       headline: 'Tratamientos para cuidar la apariencia visible de tu sonrisa',
-      body: 'En Derma.M acompañamos el cuidado dental estético con protocolos orientados a mejorar la apariencia visible de la sonrisa desde una experiencia profesional, clara y personalizada.',
+      body: 'Sabemos que el tema dental le genera nervios a mucha gente. En Derma.M el cuidado dental estético se plantea como algo simple y corto, sin el peso de una consulta odontológica tradicional.',
       image: '/assets/images/hubs/dental-estetico/overview.jpg'
     },
     featuredTreatments: {
@@ -901,23 +901,23 @@ export const categoryPages = {
       headline: 'Beneficios del cuidado dental estético en Derma.M',
       list: [
         {
-          title: 'SONRISA MÁS LUMINOSA',
-          body: 'Protocolos orientados a mejorar la apariencia visible de tu sonrisa.'
+          title: 'UNA SONRISA MÁS LUMINOSA',
+          body: 'Sin promesas exageradas: hablamos de lo que realmente cambia.'
         },
         {
-          title: 'CUIDADO PERSONALIZADO',
-          body: 'Orientación según tus objetivos, necesidades y estado visible.'
+          title: 'COMODIDAD DURANTE LA SESIÓN',
+          body: 'Priorizamos que te sientas tranquila mientras dura el proceso.'
         },
         {
-          title: 'EXPERIENCIA PROFESIONAL',
-          body: 'Atención clara, cuidadosa y enfocada en tu bienestar.'
+          title: 'MANTENIMIENTO SIMPLE',
+          body: 'Te decimos cada cuánto conviene repetir la limpieza o el blanqueamiento.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'Una sonrisa cuidada también es parte de tu bienestar',
-      body: 'Antes de recomendar un tratamiento dental estético, evaluamos tus objetivos visibles y el protocolo más adecuado para acompañarte con claridad y cuidado profesional.'
+      body: 'Antes de blanqueamiento o limpieza te preguntamos qué te incomoda de tu sonrisa y qué tan cómoda te sientes con el proceso; eso define el ritmo de la sesión, no solo el protocolo.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -925,22 +925,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y revisamos tus necesidades visibles.'
+          body: 'Conversamos sobre tu sonrisa y qué tan cómoda te sientes con el proceso dental.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Definimos el protocolo dental estético más adecuado para tu caso.'
+          body: 'Te explicamos si blanqueamiento, limpieza o ambos aplican a tu caso.'
         },
         {
           number: '03',
           title: 'TRATAMIENTO',
-          body: 'Aplicamos el tratamiento con cuidado profesional y orientación clara.'
+          body: 'Hacemos la sesión priorizando tu comodidad de principio a fin.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
+          body: 'Te decimos cómo mantener el resultado y cuándo repetir.'
         }
       ]
     },
@@ -973,22 +973,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'VALORACIÓN PERSONALIZADA',
-        body: 'Orientación según tus objetivos de bienestar y necesidades individuales.'
+        title: 'SEGÚN CÓMO LLEGAS HOY',
+        body: 'El suero se elige por cómo te sientes esa semana, no por un catálogo cerrado.'
       },
       {
-        title: 'PROTOCOLOS SELECCIONADOS',
-        body: 'Opciones diseñadas para acompañar hidratación, energía y bienestar general.'
+        title: 'SESIONES RÁPIDAS',
+        body: 'Pensadas para entrar y salir sin que te complique el día.'
       },
       {
-        title: 'ACOMPAÑAMIENTO PROFESIONAL',
-        body: 'Atención clara antes, durante y después de cada sesión.'
+        title: 'AMBIENTE CÓMODO',
+        body: 'La sesión se hace en un espacio tranquilo, sin apuros.'
       }
     ],
     overview: {
       eyebrow: 'IV THERAPY',
       headline: 'Terapias diseñadas para acompañar tu bienestar general',
-      body: 'En Derma.M ofrecemos opciones de IV Therapy orientadas a apoyar hidratación, recuperación, energía y bienestar desde una experiencia profesional, cómoda y personalizada.',
+      body: 'IV Therapy es la única categoría pensada para tu rutina de todos los días: cansancio, bajas defensas, un fin de semana pesado. La sesión es corta y se elige según cómo llegas ese día, no según un menú fijo.',
       image: '/assets/images/hubs/iv-therapy/overview.jpg'
     },
     complementaryTreatments: {
@@ -1102,23 +1102,23 @@ export const categoryPages = {
       headline: 'Beneficios de IV Therapy en Derma.M',
       list: [
         {
-          title: 'HIDRATACIÓN Y BIENESTAR',
-          body: 'Protocolos orientados a acompañar hidratación y sensación general de bienestar.'
+          title: 'ENERGÍA PARA TU SEMANA',
+          body: 'Apoyo puntual cuando el cuerpo lo pide.'
         },
         {
-          title: 'EXPERIENCIA PERSONALIZADA',
-          body: 'Orientación según tus objetivos y necesidades individuales.'
+          title: 'HIDRATACIÓN GUIADA',
+          body: 'Te orientamos sobre qué opción tiene sentido según tu objetivo.'
         },
         {
-          title: 'ATENCIÓN PROFESIONAL',
-          body: 'Acompañamiento en un entorno cómodo, seguro y cuidado.'
+          title: 'FÁCIL DE SUMAR A TU RUTINA',
+          body: 'No requiere preparación previa ni tiempos largos de recuperación.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'El bienestar también requiere orientación profesional',
-      body: 'Antes de recomendar una sesión de IV Therapy, escuchamos tus objetivos y revisamos tus necesidades para orientarte con claridad y cuidado.'
+      body: 'Antes de recomendar un suero te preguntamos cómo vienes esta semana (cansancio, entrenamiento, recuperación, defensas bajas) y de ahí sale la opción que tiene sentido, no la más cara ni la más pedida.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -1126,22 +1126,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos de bienestar y tus necesidades actuales.'
+          body: 'Nos cuentas cómo vienes esta semana y qué buscas con la sesión.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Te orientamos sobre el protocolo más adecuado para tu caso.'
+          body: 'Te orientamos sobre qué opción de IV Therapy tiene sentido para eso.'
         },
         {
           number: '03',
           title: 'SESIÓN',
-          body: 'Realizamos la sesión en un entorno cómodo y cuidado.'
+          body: 'Haces la sesión en un ambiente cómodo, sin apuros.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te ofrecemos orientación posterior según tu experiencia y próximos pasos.'
+          body: 'Te contamos qué esperar después y cuándo repetir si aplica.'
         }
       ]
     },
@@ -1174,22 +1174,22 @@ export const categoryPages = {
     },
     trustItems: [
       {
-        title: 'EVALUACIÓN PERSONALIZADA',
-        body: 'Orientación según tus objetivos capilares y necesidades visibles.'
+        title: 'CONVERSACIÓN SIN JUICIO',
+        body: 'Puedes contarnos qué te preocupa de tu cabello sin sentirte incómoda.'
       },
       {
-        title: 'CUIDADO PROFESIONAL',
-        body: 'Protocolos enfocados en acompañar la salud y apariencia del cabello.'
+        title: 'PRIVACIDAD EN LA CONSULTA',
+        body: 'La valoración capilar se hace en un espacio reservado.'
       },
       {
-        title: 'ACOMPAÑAMIENTO INTEGRAL',
-        body: 'Atención clara antes, durante y después de cada tratamiento.'
+        title: 'PROTOCOLO SEGÚN TU CASO',
+        body: 'No es el mismo tratamiento para pérdida reciente que para cabello debilitado de años.'
       }
     ],
     overview: {
       eyebrow: 'CAPILAR',
       headline: 'Tratamientos para acompañar la salud y apariencia del cabello',
-      body: 'En Derma.M trabajamos el cuidado capilar desde una mirada profesional y personalizada, orientada a apoyar la apariencia, fortaleza y bienestar visible del cabello.',
+      body: 'Hablar de pérdida de cabello no siempre es fácil. En Derma.M la primera conversación es justamente esa, sin apuro y sin juicio, antes de definir cualquier protocolo capilar.',
       image: '/assets/images/hubs/capilar/overview.jpg'
     },
     featuredTreatments: {
@@ -1229,23 +1229,23 @@ export const categoryPages = {
       headline: 'Beneficios del cuidado capilar en Derma.M',
       list: [
         {
-          title: 'ORIENTACIÓN PERSONALIZADA',
-          body: 'Evaluamos tus objetivos y necesidades visibles para recomendar el protocolo adecuado.'
+          title: 'ACOMPAÑAMIENTO DESDE EL PRIMER DÍA',
+          body: 'Aunque no sepas bien qué te pasa, arrancamos por escuchar.'
         },
         {
-          title: 'CUIDADO CAPILAR PROFESIONAL',
-          body: 'Acompañamiento enfocado en salud, fortaleza y apariencia del cabello.'
+          title: 'CUIDADO SIN VERGÜENZA',
+          body: 'El espacio está pensado para que hables con confianza.'
         },
         {
-          title: 'ENFOQUE INTEGRAL',
-          body: 'Cuidamos el cabello como parte de tu bienestar y confianza personal.'
+          title: 'SEGUIMIENTO REAL',
+          body: 'Vemos si el protocolo está funcionando y ajustamos si hace falta.'
         }
       ]
     },
     approach: {
       eyebrow: 'NUESTRO ENFOQUE',
       headline: 'El cuidado capilar requiere una mirada personalizada',
-      body: 'Antes de recomendar un tratamiento, evaluamos tus objetivos, la apariencia visible del cabello y el protocolo más adecuado para acompañarte con claridad y cuidado.'
+      body: 'Antes de proponer un tratamiento capilar entendemos hace cuánto empezó lo que te preocupa, si es algo puntual o algo de más tiempo, y qué tan cómoda te sientes hablándolo. De ahí sale el protocolo.'
     },
     process: {
       headline: 'CÓMO ES TU VISITA',
@@ -1253,22 +1253,22 @@ export const categoryPages = {
         {
           number: '01',
           title: 'VALORACIÓN',
-          body: 'Escuchamos tus objetivos y revisamos tus necesidades capilares visibles.'
+          body: 'Conversamos sobre lo que te preocupa de tu cabello, con calma y en privado.'
         },
         {
           number: '02',
           title: 'RECOMENDACIÓN',
-          body: 'Definimos el protocolo capilar más adecuado para tu caso.'
+          body: 'Te explicamos qué protocolo aplica a tu caso y por qué.'
         },
         {
           number: '03',
           title: 'TRATAMIENTO',
-          body: 'Aplicamos el tratamiento con orientación profesional y cuidado personalizado.'
+          body: 'Aplicamos la sesión con el cuidado que corresponde a tu situación.'
         },
         {
           number: '04',
           title: 'SEGUIMIENTO',
-          body: 'Te orientamos sobre cuidados posteriores y próximos pasos.'
+          body: 'Revisamos cómo vas evolucionando y ajustamos el plan si hace falta.'
         }
       ]
     },

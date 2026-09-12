@@ -5,15 +5,14 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `191d582` (cont. 55 docs). In progress: cont. 56 — Daniela Parra team video replaced
-(client authorized go-live, requested `/nosotros` team video swaps first) — files staged, not yet
-committed. Dev server `:3000` = running.
+Base commit = `847c3e3` (cont. 56 — Daniela Parra team video replaced). In progress: cont. 57 — missing
+posters filled for Mikaela Guajardo + Elianne Trujillo — files staged, not yet committed. Dev server
+`:3000` = running.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
-`/nosotros` team videos first — executing one per cycle, starting with Daniela Parra (cont. 56).
-**Next up:** fill missing posters for `mikaela-guajardo.jpg` and `elianne-trujillo.jpg` (video-only
-slots currently fall back to `og-default.jpg`) — frame-extract from their existing `.mp4`, no new
-client asset needed.
+`/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56). While
+verifying, found + fixed two team cards silently falling back to `og-default.jpg` (cont. 57). Waiting
+on the user for the next team video to swap, or confirmation to move to the Hostinger deploy.
 
 **Client change requests (2026-09-08) — prior batch, done:** founder spotlight (cont. 49), Nancy Nieto
 bio (cont. 50), limpieza image swap (cont. 51), limpieza FAQ reword (cont. 52), Lipo 360 before/after

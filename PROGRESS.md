@@ -2,6 +2,15 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-11 — Missing team posters filled: Mikaela Guajardo + Elianne Trujillo (cont. 57, media)
+
+- **What:** both were video-only slots (no `.jpg`/`.webp`), so their `/nosotros` cards showed the `og-default.jpg` fallback before the video loaded. Frame-extracted a poster from each existing `.mp4` (`ffmpeg -vf "select=eq(n\,0)"`), optimized (~37-39 KB each), generated `.webp` siblings. No new client asset needed — reused the video's own opening frame.
+- **Why:** found while verifying cont. 56 (Daniela's video swap) — two team cards were silently falling back to the generic OG image.
+- **Verified:** browser on `/nosotros` — both cards now show their own photo poster (200 OK, no fallback), console clean. `test:visual` skipped per DoD (single-asset addition, no CSS/component/layout change).
+- Commit: pending.
+
+---
+
 ## 2026-09-11 — Daniela Parra team video replaced (cont. 56, media)
 
 - **What:** replaced `public/assets/images/about/team/daniela-parra.mp4` with the client-supplied clip (same filename/slot, no data-file change). Ran `optimize.js` (2.5 MB → 321 KB, `-an`), extracted a new poster frame → `daniela-parra.jpg` (optimized to ~48 KB), regenerated the `.webp` sibling for the poster (old one was stale from the previous video frame).

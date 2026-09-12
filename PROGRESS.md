@@ -2,6 +2,15 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-11 — Melisa Ríos team video replaced (cont. 59, media)
+
+- **What:** replaced `public/assets/images/about/team/melisa-rios.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (1.3 MB → 312 KB, `-an`), regenerated poster `.jpg` (49 KB) and `.webp` sibling.
+- **Why:** item 3 of the client's `/nosotros` team-video swap batch (Daniela Parra cont. 56, Miguel Ramos cont. 58).
+- **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
+- Commit: pending.
+
+---
+
 ## 2026-09-11 — Miguel Ramos team video replaced (cont. 58, media)
 
 - **What:** replaced `public/assets/images/about/team/miguel-ramos.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (4 MB → 459 KB, `-an`), regenerated poster `.jpg` (63 KB) and `.webp` sibling.

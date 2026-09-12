@@ -2,6 +2,13 @@
 
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
+## 2026-09-12 — DEPLOY.md Part 2 (items 1-3) + external-audit reconciliation (cont. 72, code + docs) — `a31f5bf`
+
+- **DEPLOY.md Part 2 items 1-3** (user go-ahead, full sweep not just documented steps): rewrote `public/.htaccess` (legacy 301 block reordered before the SPA fallback, +27 missing redirects added, trailing-slash regex bug fixed, `/notice-of-privacy-practices` 301 added); removed the 7× stale `Disallow: /notice-of-privacy-practices` from `public/robots.txt`; confirmed `/nosotros/nancy-nieto` already present in sitemap/robots/llms. Added a "Spec:" citation (Apache mod_rewrite docs, Google robots.txt spec, sitemaps.org, llmstxt.org) to each Part 2 item so future passes verify against ground truth, not self-graded thoroughness (`DECISIONS.md` 2026-09-12).
+- **`public/llms.txt` brought into spec compliance**: was violating llmstxt.org (3 H1 headers, plain-text link items instead of `[name](url)`) — caught only because the user asked directly, not by the "thorough" pass. Fixed: single H1, all link sections use markdown hyperlinks, `## Optional` (legal links) moved to the end per spec convention.
+- **Reconciled the external-audit package** (`auditorias-externas/resultados/*.md`, `docs/superpowers/plans/2026-08-30-remediacion-auditorias-externas.md`, gitignored) against current code + a live browser pass: of 27 original findings, 26 closed (19 already fixed in untracked prior cycles, 6 UX/`DESIGN.md` items closed after visual verification showed no real defect, 1 — PRF internal linking — matches an already-registered spec that defers it). Only CPY-07 (title-case inconsistency) stays open, deferred to the pre-deploy external re-audit per user request.
+- `test:visual` skipped — no CSS/component changes, only protected config files + doc reconciliation.
+
 ## 2026-09-12 — Reconcile technical SEO/GEO audit doc + close item 8.19 (cont. 71, code)
 
 - Verified `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` against current code (not a re-research pass) and corrected stale `❌ pendiente` markers that were actually already resolved: 8.12 (robots.txt AI-bot directives), 8.14 (`sameAs` real profiles), 8.16/6.1 (sitemap `<lastmod>`), 8.18/5.6 (`aggregateRating` removed from Home/Contacto), `BreadcrumbList` in treatment templates, 8.9/8.10 (PRF naming), GA4. Reclassified 8.17 (GSC/Bing WT) as blocked by the Hostinger deploy, not un-worked. `docs/SEO_AUDIT_2026.md` left untouched — out of scope.

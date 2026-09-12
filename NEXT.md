@@ -6,17 +6,14 @@ are in it.
 
 ## State
 
-HEAD at `a31f5bf` (this cycle: `DEPLOY.md` Part 2 items 1-3 executed — `.htaccess`/`robots.txt`
-fixed, `/nosotros/nancy-nieto` confirmed present; `llms.txt` brought into llmstxt.org spec
-compliance; external-audit package reconciled against current code, 26/27 findings closed).
-Pushed to origin.
+HEAD at `<pending>` (this cycle: `DEPLOY.md` Part 2 item 4 — fixed stale "Vercel" reference in
+`docs/seo-setrategies/INTAKE.md:56` to Hostinger/Apache). Not yet pushed — awaiting commit/push
+confirmation.
 
 ## Next activity
 
-`DEPLOY.md` Part 2 items 4-6 remain: item 4 (fix `docs/seo-setrategies/INTAKE.md:56` "Vercel" →
-Hostinger/Apache — small doc fix, no gate) and items 5-6 (post-deploy `curl -I` verification +
-`public_html` backup — only executable once the user actually uploads to Hostinger, not from this
-session). None require deploy access to start item 4.
+`DEPLOY.md` Part 2 items 5-6 remain: post-deploy `curl -I` verification + `public_html` backup —
+only executable once the user actually uploads to Hostinger, not from this session.
 
 Auditorías externas: only CPY-07 (title-case inconsistency across `categoryPages.js`/
 `treatmentPages.js`, talla L) stays open — deferred to the pre-deploy external re-audit

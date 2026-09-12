@@ -53,7 +53,7 @@ Rebuild del sitio, rediseño visual, campañas de ads, el sitio viejo actualment
 
 ## Deploy / infraestructura
 
-- Sitio nuevo: **Vite + React SPA**, deploy en **Vercel**, mismo dominio `dermamskinhealth.com`.
+- Sitio nuevo: **Vite + React SPA**, deploy en **Hostinger (Apache)**, mismo dominio `dermamskinhealth.com`.
 - Reemplaza al sitio viejo. Timing: "para ayer" / inminente. **Fecha concreta: PENDIENTE.**
 - Quién deploya: **PENDIENTE.**
 - El Track A tiene que estar listo antes/con el deploy (lo que tenga el sitio nuevo al salir

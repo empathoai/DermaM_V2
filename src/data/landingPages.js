@@ -501,11 +501,11 @@ export const landingPages = {
       support: 'Experiencias reales de personas que han confiado en Derma.M para acompañar su recuperación y cuidar su bienestar corporal.',
       list: [
         {
-          quote: 'Mi masajista Josey es una persona especial, muy inteligente y amable, hace que el tiempo del masaje sea tan ameno y efectivo que siempre quieras regresar. 100% recomendado.',
+          quote: 'Mi masajista es una persona especial, muy inteligente y amable, hace que el tiempo del masaje sea tan ameno y efectivo que siempre quieras regresar. 100% recomendado.',
           author: 'TANIA SEGURA'
         },
         {
-          quote: '100% recomiendo este lugar para masajes post operatorios, muchas gracias a Josey, la mejor masajista, excelente trato.',
+          quote: '100% recomiendo este lugar para masajes post operatorios, muchas gracias por el excelente trato de la mejor masajista.',
           author: 'MAYULI PEREZ'
         },
         {

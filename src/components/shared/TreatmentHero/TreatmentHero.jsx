@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroMedia from '../../utils/HeroMedia';
+import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE, contextualWhatsAppMessage } from '../../../utils/whatsapp';
 import styles from './TreatmentHero.module.css';
 
 export default function TreatmentHero({
@@ -11,13 +12,13 @@ export default function TreatmentHero({
   imageAlt,
   primaryCta = 'AGENDA TU VALORACIÓN',
   secondaryCta = 'WHATSAPP',
+  whatsappTopic,
   disclaimer
 }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv
-    ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}`
-    : 'https://wa.link/z7i9vm';
+  const whatsappUrl = buildWhatsAppUrl(
+    whatsappTopic ? contextualWhatsAppMessage(whatsappTopic) : GENERIC_WHATSAPP_MESSAGE
+  );
 
   return (
     <section className={styles.heroSection}>

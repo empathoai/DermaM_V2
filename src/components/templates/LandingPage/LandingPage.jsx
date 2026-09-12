@@ -38,7 +38,6 @@ export default function LandingPage({ data }) {
   } = data;
 
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappUrl = import.meta.env.VITE_WHATSAPP_NUMBER || 'https://wa.link/z7i9vm';
 
   return (
     <div className={styles.landingPage}>
@@ -65,6 +64,7 @@ export default function LandingPage({ data }) {
           variant="landing"
           primaryCta={hero.primaryCta || 'AGENDA TU VALORACIÓN'}
           secondaryCta={hero.secondaryCta || 'WHATSAPP'}
+          whatsappTopic={hero.whatsappTopic}
         />
       )}
 
@@ -220,6 +220,7 @@ export default function LandingPage({ data }) {
           body={cta.body}
           primaryCta={cta.primaryCta}
           secondaryCta={cta.secondaryCta}
+          whatsappTopic={hero?.whatsappTopic}
           disclaimer={cta.disclaimer}
           backgroundImage={cta.backgroundImage}
           compactLegal

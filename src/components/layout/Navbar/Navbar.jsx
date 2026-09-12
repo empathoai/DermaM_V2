@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import styles from './Navbar.module.css';
+import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE } from '../../../utils/whatsapp';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Navbar() {
   const location = useLocation();
 
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappUrl = 'https://wa.link/z7i9vm';
+  const whatsappUrl = buildWhatsAppUrl(GENERIC_WHATSAPP_MESSAGE);
 
   useEffect(() => {
     function handleClickOutside(event) {

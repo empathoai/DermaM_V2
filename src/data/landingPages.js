@@ -8,6 +8,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'PLASMA RICO EN PLAQUETAS\nY FIBRINA (PRF)',
+      whatsappTopic: 'PRF',
       body: 'Bioestimulación celular progresiva: El poder de tus propios componentes naturales para renovar, reafirmar y devolver la vitalidad a tu piel.',
       backgroundImage: '/assets/images/landings/prf-y-fibrina/hero.jpg',
       imageAlt: 'Manos con guantes extrayendo con pinzas el coágulo de fibrina de un tubo con plasma separado, junto a la centrífuga en Derma.M'
@@ -195,6 +196,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTOS FACIALES',
       title: 'LIMPIEZA FACIAL PROFUNDA',
+      whatsappTopic: 'Limpieza Facial Profunda',
       body: 'Preparamos la piel para que tus productos en casa funcionen perfectamente, te asesoramos y guiamos en el proceso.',
       backgroundImage: '/assets/images/landings/limpieza-facial-profunda/hero.jpg',
       imageAlt: 'Clienta recostada con una mascarilla facial purificante blanca y banda de spa durante una limpieza facial profunda en Derma.M, West Palm Beach'
@@ -365,6 +367,7 @@ export const landingPages = {
     hero: {
       eyebrow: 'TRATAMIENTOS CORPORALES',
       title: 'TRATAMIENTOS POSTOPERATORIOS',
+      whatsappTopic: 'Tratamientos Postoperatorios',
       body: 'Acompañamiento profesional durante tu proceso postoperatorio, con técnicas manuales y drenaje no invasivo orientados a favorecer tu comodidad, bienestar y recuperación progresiva después de un procedimiento estético, en nuestro medical spa de West Palm Beach.',
       backgroundImage: '/assets/images/landings/tratamientos-postoperatorios/hero.jpg',
       imageAlt: 'Especialista con guantes realiza un masaje de drenaje manual en el abdomen de una clienta recostada en la camilla de Derma.M, West Palm Beach'

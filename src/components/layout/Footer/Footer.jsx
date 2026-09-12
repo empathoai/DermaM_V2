@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { Instagram, Facebook } from 'lucide-react';
 import GoogleReviewsLink from '../../shared/GoogleReviewsLink/GoogleReviewsLink';
 import styles from './Footer.module.css';
+import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE } from '../../../utils/whatsapp';
 
 export default function Footer() {
-  const whatsappUrl = import.meta.env.VITE_WHATSAPP_NUMBER || 'https://wa.link/z7i9vm';
+  const whatsappUrl = buildWhatsAppUrl(GENERIC_WHATSAPP_MESSAGE);
 
   return (
     <footer className={`${styles.footer} relative z-10`} aria-label="Pie de página">

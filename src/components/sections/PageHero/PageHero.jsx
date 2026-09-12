@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useMotionSystem } from '../../utils/motion';
 import HeroMedia from '../../utils/HeroMedia';
+import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE, contextualWhatsAppMessage } from '../../../utils/whatsapp';
 import styles from './PageHero.module.css';
 
 export default function PageHero({
@@ -15,13 +16,15 @@ export default function PageHero({
   variant = 'default',
   primaryCta,
   secondaryCta,
+  whatsappTopic,
   attribution,
   hasTrustBar = true
 }) {
   const isLanding = variant === 'landing';
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
+  const whatsappUrl = buildWhatsAppUrl(
+    whatsappTopic ? contextualWhatsAppMessage(whatsappTopic) : GENERIC_WHATSAPP_MESSAGE
+  );
   const { sectionReveal } = useMotionSystem();
   const [mediaReady, setMediaReady] = useState(!backgroundImage);
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MEDICAL_VALUATION_NOTICE } from '../../../data/siteMeta';
+import { buildWhatsAppUrl, GENERIC_WHATSAPP_MESSAGE, contextualWhatsAppMessage } from '../../../utils/whatsapp';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA({
@@ -10,6 +11,7 @@ export default function FinalCTA({
   backgroundImage,
   primaryCta,
   secondaryCta,
+  whatsappTopic,
   disclaimer,
   variant = 'dark',
   primaryLink,
@@ -17,8 +19,9 @@ export default function FinalCTA({
   compactLegal = false
 }) {
   const bookingUrl = import.meta.env.VITE_SQUARE_BOOKING_URL || 'https://squareup.com/appointments/book/h863jjwacvifgt/LVW5A2RBWF1MV/start';
-  const whatsappEnv = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const whatsappUrl = whatsappEnv ? `https://wa.me/${whatsappEnv.replace(/[^0-9]/g, '')}` : 'https://wa.link/z7i9vm';
+  const whatsappUrl = buildWhatsAppUrl(
+    whatsappTopic ? contextualWhatsAppMessage(whatsappTopic) : GENERIC_WHATSAPP_MESSAGE
+  );
 
   const href1 = primaryLink || bookingUrl;
   const href2 = secondaryLink || whatsappUrl;

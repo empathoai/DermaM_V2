@@ -120,6 +120,7 @@ export default function TreatmentDetailPage({ data }) {
         description={heroDescription}
         image={image}
         imageAlt={heroAlt}
+        whatsappTopic={treatmentName}
         disclaimer={cta.disclaimer}
       />
 
@@ -292,6 +293,7 @@ export default function TreatmentDetailPage({ data }) {
         backgroundImage={cta.backgroundImage}
         primaryCta={cta.primaryCta}
         secondaryCta={cta.secondaryCta}
+        whatsappTopic={treatmentName}
         disclaimer={cta.disclaimer}
         variant="dark"
       />

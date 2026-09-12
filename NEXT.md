@@ -6,10 +6,10 @@ are in it.
 
 ## State
 
-Clean, pushed pending this cycle's commit. HEAD will move past `2a50f8a` once committed (this
-cycle: `DEPLOY.md` Part 2 items 1-3 executed — `.htaccess`/`robots.txt` fixed, `/nosotros/nancy-nieto`
-confirmed present; `llms.txt` brought into llmstxt.org spec compliance; external-audit package
-reconciled against current code, 26/27 findings closed).
+HEAD at `a31f5bf` (this cycle: `DEPLOY.md` Part 2 items 1-3 executed — `.htaccess`/`robots.txt`
+fixed, `/nosotros/nancy-nieto` confirmed present; `llms.txt` brought into llmstxt.org spec
+compliance; external-audit package reconciled against current code, 26/27 findings closed).
+Pending: push to origin (awaiting confirmation).
 
 ## Next activity
 

@@ -6,8 +6,8 @@ are in it.
 
 ## State
 
-HEAD at `084bee9` (this cycle: closed CPY-07 tracking — already fixed in code by Task 25
-2026-08-31, only the audit doc/NEXT.md were stale). Not yet pushed — awaiting push confirmation.
+HEAD at `42de864` (this cycle: closed CPY-07 tracking — already fixed in code by Task 25
+2026-08-31, only the audit doc/NEXT.md were stale). Pushed to origin.
 
 ## Next activity
 

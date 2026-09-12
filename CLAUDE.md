@@ -45,10 +45,11 @@ Index: `superpowers:using-superpowers`.
 Session start: read `NEXT.md`, then the top entry of `PROGRESS.md`. Nothing else — `MEMORY.md` is auto-injected; don't re-read it or this file. Sanity-check: `git log --oneline -3` — HEAD is at, or one doc-fixup commit ahead of, the commit named in `NEXT.md`'s State line (message match is enough). A diverged `main` means another session moved it — reconcile before working.
 
 Four git files, each a single source of truth:
-- `NEXT.md` — ordered next steps + blockers + tree/push state. The only planning read at session start. Keep it under ~110 lines: a closed cycle leaves no block here, its summary goes to `PROGRESS.md`.
+- `NEXT.md` — session-resume state only: tree/push state + the single next activity. The only planning read at session start. Never holds blockers/backlog — those live in `BACKLOG.md`, read only on explicit request ("revisemos qué falta"), each item verified before being reported.
 - `MEMORY.md` — durable constraints and do-nots. Auto-injected.
 - `PROGRESS.md` — work log, newest first. Exactly one live entry, ≤4 bullets; on close the previous entry moves to `docs/PROGRESS_ARCHIVE.md`.
 - `DECISIONS.md` — the *why* archive, append-only. Grep the area you're touching; never a full read. No size management — grep-only by design.
+- `BACKLOG.md` — everything not actionable this session (blocked/conditional/off-site). Not read at session start. Update it the moment a cycle resolves, blocks, or unblocks an item — never park that news in `NEXT.md`.
 
 `docs/*_ARCHIVE.md` and `docs/seo-setrategies/INTAKE.md` — grep on demand.
 

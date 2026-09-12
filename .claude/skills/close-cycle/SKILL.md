@@ -29,9 +29,10 @@ Close one working cycle. Makes session state survive a cold start with `NEXT.md`
   would question → one dated entry (absolute date), English, stating the why. Mechanical change → skip.
 - [ ] **3. MEMORY.md — update only if a durable constraint changed.** Edit the memory file and its
   `MEMORY.md` pointer line. Otherwise skip.
-- [ ] **4. NEXT.md — refresh.** Update the `State` block (new expected HEAD). Mark the finished task
-  done, set the next. Delete every line this cycle closed. Then: line count over ~110 → prune
-  closed/stale lines until under.
+- [ ] **4. NEXT.md — refresh.** Update the `State` block (new expected HEAD) and the `Next activity`
+  line. `NEXT.md` holds session-resume state only, never backlog — if this cycle's work touched or
+  revealed the status of any `BACKLOG.md` item (resolved, newly blocked, unblocked), edit that
+  file now instead of parking a note in `NEXT.md`.
 - [ ] **5. Working tree — clean.** No half-edits, no debug code, no stray scratch files in the repo.
   `git status` shows only the intended change plus these doc updates.
 - [ ] **6. Commit.** Conventional message, scope prefix, present tense. End with

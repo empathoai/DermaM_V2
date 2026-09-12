@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-11 — Extend contextual WhatsApp message to category hubs (cont. 61, feature)
+
+- **What:** `CategoryPage.jsx`'s closing `FinalCTA` now passes `whatsappTopic={breadcrumb?.[breadcrumb.length - 1]?.label}` (e.g. "Faciales", "Láser y Luz", "Dental Estético") — 1 file, 1 line. Reuses the `whatsappTopic` prop/helper already built in cont. 60; no new data field, since every hub's breadcrumb already carries a short category label.
+- **Why:** user asked to validate expanding cont. 60's scope to hub pages; the hub hero doesn't even render a WhatsApp button today, so only the bottom `FinalCTA` needed the prop.
+- **Verified:** browser on `/laser-y-luz` and `/dental-estetico` — CTA opens `wa.me` with "Hola, vi su sitio web sobre Láser y Luz / Dental Estético y me gustaría más información."
+- Commit `9da1ac0`.
+
+---
+
 ## 2026-09-11 — Contextual WhatsApp message per treatment/landing CTA (cont. 60, feature)
 
 - **What:** WhatsApp CTAs on treatment detail pages and the 3 landing pages (PRF, Limpieza Facial Profunda, Tratamientos Postoperatorios) now open `wa.me` with a topic-aware pre-filled message ("Hola, vi su sitio web sobre {tratamiento} y me gustaría más información.") instead of the generic `wa.link/z7i9vm` shortlink. Treatments derive the topic from their existing title; landings got a new `hero.whatsappTopic` field. Navbar/Footer keep a generic message, now built locally via `wa.me`, fixing a typo baked into the old shortlink's redirect ("...y **etoy** interesada..." → "estoy"). New `src/utils/whatsapp.js` centralizes URL/message logic previously copy-pasted across 8 files. `FloatingWhatsApp` untouched.

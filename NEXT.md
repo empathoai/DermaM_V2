@@ -5,8 +5,9 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `9da1ac0` (cont. 61 — contextual WhatsApp message extended to category hub CTAs).
-Working tree clean, pushed. Dev server `:3000` = running (owned by another chat this session).
+Base commit = `148f90a` (cont. 62 — Contacto page WhatsApp CTAs routed through the shared helper,
+DRY cleanup, no message/behavior change). Working tree clean, pushed. Dev server `:3000` = running
+(owned by another chat this session).
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing

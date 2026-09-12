@@ -6,24 +6,19 @@ are in it.
 
 ## State
 
-HEAD at `df8fdad` + 1 uncommitted docs cycle (this cycle: **site went live**. `dermamskinhealth.com`
-deployed to Hostinger, DNS cut over from BanaHosting, SSL active, all DEPLOY.md Part 2 items
-resolved — 1-5 and 7 done, 6 explicitly skipped). Not yet pushed.
+HEAD will be at this cycle's commit (site-live docs cycle `b9c3e60` + this fix). Working tree clean
+after commit.
 
 ## Next activity
 
-**Deploy is complete.** `DEPLOY.md` has no more open items. Only loose end: **GSC domain
-verification + `sitemap.xml` submission** — not urgent, do whenever convenient (guide the user
-through search.google.com/search-console, Domain property, DNS TXT verification via Hostinger).
-
-Open item (not a deploy blocker): `/corporales/maderoterapia-corporal` fires ~70 duplicate
-`whatis.webp` requests (re-render loop) — flagged in PROGRESS.md 2026-09-12, not yet
-investigated or fixed.
+**Deploy is complete, maderoterapia-corporal request-loop bug is fixed.** No proactive next step —
+wait for the user. If they ask "qué sigue", offer: **GSC domain verification + `sitemap.xml`
+submission** (not urgent, guide via search.google.com/search-console, Domain property, DNS TXT
+verification via Hostinger). No open external-audit findings remain (all 27 closed).
 
 ## How to resume
 
-No proactive next step — wait for the user. If they ask "qué sigue", offer GSC setup or the
-maderoterapia-corporal bug. No open external-audit findings remain (all 27 closed).
+No proactive next step — wait for the user.
 
 ## Context by area — grep, not full-read
 

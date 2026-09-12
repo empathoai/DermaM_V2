@@ -149,16 +149,23 @@ export default function TreatmentDetailPage({ data }) {
               width="960"
               height="1200"
               onError={(event) => {
+                const img = event.currentTarget;
                 const heroFallback = new URL(image, window.location.origin).href;
                 const globalFallback = new URL('/assets/images/global/og-default.jpg', window.location.origin).href;
 
-                if (event.currentTarget.src !== heroFallback) {
-                  event.currentTarget.src = image;
+                if (img.dataset.fallbackStep === 'exhausted') {
                   return;
                 }
 
-                if (event.currentTarget.src !== globalFallback) {
-                  event.currentTarget.src = '/assets/images/global/og-default.jpg';
+                if (img.src !== heroFallback) {
+                  img.dataset.fallbackStep = 'hero';
+                  img.src = image;
+                  return;
+                }
+
+                if (img.src !== globalFallback) {
+                  img.dataset.fallbackStep = 'exhausted';
+                  img.src = '/assets/images/global/og-default.jpg';
                 }
               }}
             />

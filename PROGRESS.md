@@ -2,17 +2,11 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — LIVE: dermamskinhealth.com deployed to Hostinger, DNS cut over, SSL active
+## 2026-09-12 — Fix: infinite request loop on `/corporales/maderoterapia-corporal` (`whatis.webp` 404 loop)
 
-- **The site is live in production.** Uploaded `dist/` (zipped) to Hostinger `public_html` via File Manager; first zip attempt (PowerShell `Compress-Archive`) wrote backslash-separated paths that broke extraction on the Linux server (files landed as literal filenames like `assets\images\...` instead of nested folders) — rebuilt with Python's `zipfile` module (forward-slash paths) and re-extracted clean.
-- Moved DNS from BanaHosting (old WordPress host) to Hostinger by changing nameservers at the registrar (GoDaddy) to `atlas.dns-parking.com` / `hyperion.dns-parking.com`. Propagation was fast (~minutes, confirmed via `nslookup`). SSL cert ("Lifetime SSL") took ~1 hour to finish installing after DNS resolved — polled every 15 min via scheduled wakeups until `https://dermamskinhealth.com` loaded clean.
-- Ran DEPLOY.md Part 2 item 5 (post-deploy verification) against the live domain: all 12 legacy-WordPress `301` redirects are single-hop to their final URL, `www`→non-www and `http`→`https` both correct, `/` and `/contacto` load 200 with clean console, GA4 (`G-9272VHFT03`) confirmed firing via `gtag`.
-- Item 6 (backup of previous `public_html`) skipped — manual backups are locked behind a Hostinger plan upgrade; automated weekly backup is active (next run 2026-09-18), plus local `dist/` + git history as rollback source.
-- Created `info@dermamskinhealth.com` mailbox in hPanel (item 7, contact-info consistency — no contact form exists on site).
-- Left Hostinger's CDN, WebP/image auto-optimization, and TLS-1.3-only toggle at their recommended defaults (CDN auto-enabled and active; did not enable TLS-1.3-only, to avoid excluding older-device visitors).
-- GSC domain verification + sitemap submission still open, not part of this checklist — do whenever convenient.
-
-## 2026-09-12 — Full-site sanity check (Part 1) + verified DEPLOY.md Part 2 items 1-4 already applied (docs only)
+- Root cause: `treatmentPages.js:1432` builds `whatIs.image` for every treatment as `${folder}/whatis.jpg`, but the `maderoterapia-corporal` asset folder never had a `whatis.jpg/webp` (only `tratamiento-maderoterapia-corporal.*` and `cta.*`) — confirmed against the 3-asset convention (`hero`/`whatis`/`cta`) used by all other 24 treatments (checked `hidrofacial` as reference). The SPA fallback rule in both `vite.config.js` (dev) and `.htaccess:112-114` (prod) returns `index.html` with `200 OK` for any missing static asset instead of a real 404 — the `<picture>`/`<img>` can't decode that HTML as an image, and the decode failure retriggered in a loop (500+ near-simultaneous requests captured via the browser's network log).
+- Fix: (1) added `whatis.jpg/webp` to that folder (copy of the existing hero image, following the site convention); (2) added a `dataset.fallbackStep` guard in the `onError` handler of [TreatmentDetailPage.jsx:151-168](src/components/templates/TreatmentDetailPage/TreatmentDetailPage.jsx:151) so any future missing-asset case caps at 2 fallback attempts (hero → global default) instead of looping indefinitely.
+- Verified in the Browser pane (not the Playwright CLI, per user direction): fresh tab, desktop and mobile (375px) — single `200 OK` request, image renders in "EL PROTOCOLO", clean console, no loop. Full `test:visual` suite was not run (JS-only `onError` logic change, no CSS/class touched); flagged to the user, no objection.
 
 ---
 

@@ -4,8 +4,13 @@
 > **Este documento = análisis y best practices.** El backlog operativo (ítems accionables, un cambio por ciclo) vive en `docs/SEO_AUDIT_2026.md`.
 > Ninguna recomendación se implementa sin `superpowers:brainstorming` + aprobación explícita del usuario, un ítem por vez (regla de `CLAUDE.md`).
 
-Fecha de consolidación: **2026-08-26**
+Fecha de consolidación: **2026-08-26** · Última verificación de estado contra código: **2026-09-12**
 Dominio canónico: `https://dermamskinhealth.com` · Deploy en construcción: `https://derma-m-v2.vercel.app`
+
+> **Nota 2026-09-12:** varios ítems marcados `❌ pendiente` en las secciones 1/5/6/7 ya se
+> implementaron en sesiones posteriores a la fecha de consolidación. El análisis/research (§1–4, §8)
+> sigue vigente tal cual — no se re-audita ese razonamiento. Lo que cambió es el **estado del código**,
+> corregido inline donde aplica. Ver §7 para el backlog reconciliado final.
 
 ---
 
@@ -20,10 +25,10 @@ Dominio canónico: `https://dermamskinhealth.com` · Deploy en construcción: `h
 | Ser **indexable + elegible para snippet** en Google Search (base literal de AI Overviews / AI Mode) | Alta — Google oficial | ⚠️ SPA client-side; shell pre-JS de 432 B sin contenido |
 | **HTML semántico + contenido en texto** ("important content available in textual form" — Google) | Alta | ✅ contenido en texto una vez renderiza |
 | **`structured data` que coincide con el texto visible** (Google) | Alta | ⚠️ `aggregateRating` sin reviews visibles (ver §5) |
-| **Señales de autoridad y locales verificables** (médico, credenciales, ciudad, zona) | Alta — Google + RASTRO | ✅ parcial (bio de Nancy, NAP); falta `sameAs` real |
+| **Señales de autoridad y locales verificables** (médico, credenciales, ciudad, zona) | Alta — Google + RASTRO | ✅ bio de Nancy, NAP, `sameAs` real (Instagram/TikTok/Facebook/Yelp) — falta solo GBP Maps (8.19) |
 | **Contenido estructurado para extracción** (H2 = pregunta, FAQ, tablas, bloques 30–50 palabras) | Media — RASTRO + GEO KDD 2024 + Gemini report | ✅ landings; ⚠️ hubs/tratamientos más flojos |
-| **Medición** (Search Console + Bing Webmaster Tools) | Alta — Google + Bing | ❌ no configurado |
-| **`robots.txt` con directivas de bots IA** | Media (declarativo, no enforcement) | ❌ solo `User-agent: *` |
+| **Medición** (Search Console + Bing Webmaster Tools) | Alta — Google + Bing | ✅ GA4 configurado · ❌ GSC/Bing WT pendientes (bloqueados por deploy a Hostinger) |
+| **`robots.txt` con directivas de bots IA** | Media (declarativo, no enforcement) | ✅ implementado (OAI-SearchBot, Claude-SearchBot, PerplexityBot, GPTBot, ClaudeBot, Google-Extended) |
 
 ### Lo que es experimental o sin efecto probado — NO invertir ahora
 
@@ -98,10 +103,12 @@ Dominio canónico: `https://dermamskinhealth.com` · Deploy en construcción: `h
 - **Veredicto (se mantiene el del `/llm-council` 2026-08-20):** especulativo sin datos. **Medir indexación real en Search Console antes de considerar SSR/prerender.** El "69% de bots sin JS" es un promedio de la web general, no evidencia de este dominio.
 - Buenas prácticas de SPA de Google **ya cumplidas**: History API (React Router v7), `<a href>` reales, canonical fijo en HTML por página (post-fix 8.1), `meta robots index,follow`.
 
-### 5.2 `robots.txt` (ítem 8.12)
+### 5.2 `robots.txt` (ítem 8.12) — ✅ RESUELTO (post-2026-08-26)
 
 - ✅ Válido, `Sitemap:` presente, `Disallow` correcto de variantes EN no canónicas y rutas WP legacy.
-- ❌ Sin directivas por bot de IA. Scan de Cloudflare: *"Checked 15 AI bot user agents — none found, but wildcard rules apply."*
+- ✅ Directivas explícitas por bot de IA ya implementadas: `OAI-SearchBot`, `Claude-SearchBot`,
+  `PerplexityBot` (search/citación) + `GPTBot`, `ClaudeBot`, `Google-Extended` (training, permitidos
+  a propósito — postura del sitio, ver comentario "SEO-06" en el propio archivo).
 - ❌ Sin `Content-Signal` (esperado — spec experimental, no se recomienda).
 
 ### 5.3 `llms.txt` (revisado contra spec v2)
@@ -111,38 +118,32 @@ Estado: **bueno**, mejor que la mayoría. Cumple lo esencial:
 - ⚠️ Nits de formato v2 (no bloqueantes): 3 líneas de comentario `#` antes del H1 (la spec pide H1 primero, BOM opcional); sin `rel="alternate" type="text/markdown"` ni `rel="describedby"` (requeriría versiones `.md` de páginas — no aplica a este stack).
 - **No accionable como prioridad** — `llms.txt` no afecta search. Solo revisar formato si se toca por otra razón. Archivo protegido: no modificar sin instrucción paso a paso.
 
-### 5.4 `sitemap.xml`
+### 5.4 `sitemap.xml` — ✅ RESUELTO (post-2026-08-26)
 
-- ✅ 298 líneas, todas las rutas canónicas, `changefreq` + `priority`.
-- ❌ Sin `<lastmod>` en ninguna entrada (ítem 6.1 / relacionado con 8.16).
+- ✅ Todas las rutas canónicas, `changefreq` + `priority`.
+- ✅ `<lastmod>` presente en las 46 entradas (ítem 6.1 / 8.16 cerrado).
 
 ### 5.5 JSON-LD por tipo de página
 
 | Página | Schema | Estado |
 |---|---|---|
-| `Home.jsx` | `@graph`: `HealthAndBeautyBusiness` (+ `@id`, `location`, `geo`, `openingHoursSpecification`, `aggregateRating`) + `WebSite` | ✅ completo · ⚠️ `sameAs: ["https://dermamskinhealth.com"]` = **autorreferencia inútil** · ⚠️ `aggregateRating` 4.9/117 (ver §5.6) |
-| `Contacto.jsx` | `HealthAndBeautyBusiness` + `aggregateRating` 4.9/117 | mismo problema de rating |
+| `Home.jsx` | `@graph`: `HealthAndBeautyBusiness` (+ `@id`, `location`, `geo`, `openingHoursSpecification`) + `WebSite` | ✅ completo · ✅ `sameAs` real (Instagram/TikTok/Facebook/Yelp) — falta solo GBP Maps, `TODO(8.19)` en el propio archivo · ✅ sin `aggregateRating` (ver §5.6, resuelto) |
+| `Contacto.jsx` | `HealthAndBeautyBusiness` | ✅ sin `aggregateRating` |
 | `Nosotros.jsx` | `HealthAndBeautyBusiness` | ✅ |
 | `/nosotros/nancy-nieto` | `Person` con `worksFor` → entidad org (sin licencia, por pedido de Nancy) | ✅ |
 | 6 hubs | `ItemList` / `CollectionPage` | ✅ (8.5 corrigió `IvTherapy` vacío) |
-| 5 templates de tratamiento | `Service` con `provider` → `HealthAndBeautyBusiness` + `PostalAddress` | ✅ base · ❌ sin `BreadcrumbList`, sin `MedicalWebPage`, sin `mainEntityOfPage` |
+| 5 templates de tratamiento | `Service` con `provider` → `HealthAndBeautyBusiness` + `PostalAddress` + `BreadcrumbList` | ✅ (`BreadcrumbList` ya presente en `TreatmentSEO.jsx`) · ❌ sin `MedicalWebPage`, sin `mainEntityOfPage` (no bloqueante, ver §3.2) |
 | 3 landings | `FAQPage` + Product/Service (post-fix 8.4) | ✅ |
 | `FAQAccordion` | emite `FAQPage` con `mainEntity`/`Question`/`acceptedAnswer` cuando se usa | ✅ |
 
-### 5.6 ⚠️ HALLAZGO NUEVO — `aggregateRating` sin reviews visibles (Severidad: Alta)
+### 5.6 `aggregateRating` sin reviews visibles — ✅ RESUELTO
 
-`Home.jsx:51-55` y `Contacto.jsx:98-101` declaran `aggregateRating` con `ratingValue: "4.9"` / `reviewCount: "117"` hardcodeado (agregado en la sesión de 8.7).
-
-**Riesgo:** la política de Review snippets de Google exige que las valoraciones provengan de reviews **genuinas y visibles en la misma página**. Home y Contacto **no muestran 117 reviews** (hay ~3 testimonios cualitativos por página de categoría, sin conteo ni rating agregado visible). Esto expone a:
-- Acción manual / pérdida de todos los rich results del dominio.
-- Cuestión de honestidad/compliance (`MEDICAL_COMPLIANCE.md`) si el 4.9/117 no es un dato real y verificable.
-
-**A verificar con el usuario:**
-1. ¿El 4.9/117 corresponde a reviews reales de Google Business Profile? ¿Fecha del dato?
-2. Si **sí** → mostrarlas/enlazarlas en la página (widget de reviews o enlace a GBP) y mantener el schema.
-3. Si **no / no verificable** → **eliminar `aggregateRating`** de ambos archivos.
-
-Este hallazgo reabre parcialmente el ítem 8.7 (que lo dio por `Hecho`).
+El hallazgo original (`Home.jsx`/`Contacto.jsx` con `ratingValue: "4.9"` / `reviewCount: "117"`
+hardcodeado, sin reviews visibles en la página) se resolvió eliminando `aggregateRating` de ambos
+archivos, no mostrándolo/verificándolo. Decisión registrada: enlace de salida real al panel de
+Google Reviews (`GoogleReviewsLink`, `GOOGLE_REVIEWS_URL` en `siteMeta.js`) como señal de confianza,
+**sin** schema `aggregateRating`/`Review` — comentario explícito en `siteMeta.js:15` (*"which carry
+NO aggregateRating / Review schema (audit 8.18)"*). Item 8.7 queda cerrado en firme; 8.18 resuelto.
 
 ### 5.7 Meta / OG / canonical
 
@@ -169,7 +170,8 @@ Contra el framework **RASTRO** (Respuesta directa / Autoridad / Señales locales
 
 - ✅ Bio de fundadora (`/nosotros/nancy-nieto`) — sin licencia por pedido explícito de Nancy.
 - ✅ NAP consistente (Footer, JSON-LD Home/Contacto, `llms.txt`).
-- ❌ Sin `sameAs` real hacia Google Business Profile / Instagram / Facebook / Yelp.
+- ✅ `sameAs` real hacia Instagram/TikTok/Facebook/Yelp — falta solo la URL de GBP Maps verificado
+  (`TODO(8.19)` en `organizationSchema.js`).
 - ❌ Google Business Profile no auditado (fuera del repo — requiere sesión `seo-local`).
 - ⚠️ Testimonios existen pero no están conectados a tratamientos específicos vía schema `Review`.
 
@@ -187,42 +189,44 @@ Leyenda: ✅ cumple · ⚠️ parcial / con reservas · ❌ falta · ➖ no apli
 ### Indexabilidad y rendering
 - ✅ `robots.txt` válido con `Sitemap:`
 - ✅ `sitemap.xml` con todas las rutas canónicas
-- ⚠️ `<lastmod>` en sitemap — falta (6.1)
+- ✅ `<lastmod>` en sitemap (6.1 cerrado)
 - ✅ Canonical fijo por página (no calculado en render)
 - ✅ `<html lang>`, `<title>`, meta description, OG, Twitter
-- ⚠️ SPA client-side — procesable por Googlebot; medir antes de SSR (8.11)
+- ⚠️ SPA client-side — procesable por Googlebot; medir antes de SSR (8.11) — **sigue bloqueado por GSC**
 - ➖ Prerender / SSG — no decidido; depende de datos de Search Console
 
 ### Structured data
 - ✅ JSON-LD en todos los tipos de página
 - ✅ `HealthAndBeautyBusiness` con `geo` + `openingHoursSpecification`
-- ⚠️ `aggregateRating` sin reviews visibles — **verificar/quitar** (5.6)
-- ❌ `sameAs` real hacia perfiles externos (8.14)
-- ❌ `BreadcrumbList` en templates de tratamiento
+- ✅ `aggregateRating` eliminado de Home/Contacto — sin reviews falsas en schema (5.6 cerrado)
+- ✅ `sameAs` real hacia perfiles externos (8.14 cerrado) — falta solo GBP Maps (`TODO(8.19)`)
+- ✅ `BreadcrumbList` en templates de tratamiento (`TreatmentSEO.jsx`)
 - ➖ Schema especial para IA — Google confirma que NO hace falta
 
 ### Bots de IA
-- ❌ Directivas por bot en `robots.txt` (8.12)
+- ✅ Directivas por bot en `robots.txt` (8.12 cerrado)
 - ➖ Content Signals / Web Bot Auth / DNS-AID — experimental, no recomendado
 - ✅ `llms.txt` presente y bien formado (bonus, no afecta search)
 
 ### Contenido / AEO
 - ✅ Contenido en texto (no dependiente de imágenes)
 - ✅ `FAQPage` schema vía `FAQAccordion` y en las 3 landings
-- ⚠️ Estructura RASTRO fuerte en landings, floja en hubs/templates (8.13/8.15)
-- ❌ Fecha de "última actualización" visible (8.16)
+- ⚠️ Estructura RASTRO fuerte en landings, floja en hubs/templates (8.13/8.15) — **sigue pendiente**
+- ✅ Fecha "última actualización" — cubierta vía `<lastmod>` en sitemap (8.16 cerrado por esa vía)
 - ⚠️ "Cite sources / stats" — hipótesis editorial, no prioridad
 
 ### E-E-A-T / local
 - ✅ Bio de fundadora con credenciales cualitativas
 - ✅ NAP consistente
-- ❌ `sameAs` / Google Business Profile audit (sesión `seo-local`)
-- ⚠️ Testimonios sin `Review` schema conectado a tratamientos
+- ✅ `sameAs` a redes reales — falta solo GBP Maps (`TODO(8.19)`); GBP audit en sí sigue fuera del
+  repo (sesión `seo-local`)
+- ⚠️ Testimonios sin `Review` schema conectado a tratamientos — decisión firme de no usar `Review`/
+  `aggregateRating` (ver 5.6), no un pendiente
 
 ### Medición
-- ❌ Google Search Console (8.17)
-- ❌ GA4 (8.17)
-- ❌ Bing Webmaster Tools "AI Performance" (nuevo — agregar a 8.17)
+- ✅ GA4 (`G-9272VHFT03` en `index.html`)
+- ❌ Google Search Console — verificación por Dominio, bloqueada hasta el deploy en Hostinger + DNS (8.17)
+- ❌ Bing Webmaster Tools "AI Performance" (8.17)
 
 ### Performance (afecta elegibilidad y CWV)
 - ✅ `.webp` vía componente `Picture` (5.2)
@@ -232,28 +236,31 @@ Leyenda: ✅ cumple · ⚠️ parcial / con reservas · ❌ falta · ➖ no apli
 
 ---
 
-## 7. Backlog reconciliado (8.11–8.17) + plan priorizado
+## 7. Backlog reconciliado (8.11–8.19) + plan priorizado
 
-| Ítem | Estado tras esta auditoría | Prioridad |
+Estado verificado contra código el 2026-09-12.
+
+| Ítem | Estado | Prioridad |
 |---|---|---|
-| **8.12** robots.txt directivas IA | **Confirmado ×4** (council + 2 reports + Google + scan). Riesgo cero. Taxonomía lista en §4. | **1 — hacer ya** |
-| **8.14** `sameAs` en JSON-LD | **Confirmado** (Google textual). Hoy es autorreferencia inútil → apuntar a GBP/redes reales. Riesgo cero. | **2 — hacer ya** |
-| **5.6** `aggregateRating` sin reviews visibles | **NUEVO — Alta.** Riesgo de acción manual + compliance. Verificar con usuario → mostrar reviews o quitar schema. | **3 — decidir ya** |
-| **8.17** GSC + GA4 (+ Bing WT) | **GA4 hecho (2026-08-28, `G-9272VHFT03`).** Falta GSC (verificación por Dominio, recién con el sitio en Hostinger + DNS) y Bing WT. Sin GSC no se validan 8.11/8.13/8.15/8.16. Config externa, no toca código. | **4 — desbloquea el resto** |
-| **8.11** SSR / client-render | **Sigue especulativo.** Evidencia nueva (shell 432 B) pero sin datos de indexación. Veredicto del council intacto: medir en GSC primero. | Bloqueado por 8.17 |
-| **8.13** "Cite sources" en copy médico | **Baja de peso** — sin corroboración en fuentes primarias. Re-enfocar como mejora de claridad/conversión + RASTRO, con sign-off de compliance por página. | Post-8.17, multi-sesión |
-| **8.15** RASTRO/densidad en hubs y templates | **Sube ligeramente** (RASTRO lo respalda como editorial). Mejora de conversión, no palanca de ranking. `BreadcrumbList` en templates entra acá. | Post-8.17 |
-| **8.16** Fecha "última actualización" | **Soporte tibio.** Bajo esfuerzo. Combinar con `<lastmod>` en sitemap (6.1). | Bajo, oportunista |
-| **8.9 / 8.10** naming PRP/PRF | Sin cambios — ver `SEO_AUDIT_2026.md`. | Media |
+| **8.12** robots.txt directivas IA | ✅ **Hecho.** Ver §5.2. | Cerrado |
+| **8.14** `sameAs` en JSON-LD | ✅ **Hecho** — apunta a Instagram/TikTok/Facebook/Yelp reales. | Cerrado |
+| **5.6 / 8.18** `aggregateRating` sin reviews visibles | ✅ **Hecho** — eliminado de Home/Contacto, decisión firme de no usarlo. Ver §5.6. | Cerrado |
+| **6.1 / 8.16** `<lastmod>` en sitemap | ✅ **Hecho** — presente en las 46 entradas. | Cerrado |
+| `BreadcrumbList` en templates de tratamiento | ✅ **Hecho** — `TreatmentSEO.jsx`. | Cerrado |
+| **8.9 / 8.10** naming PRP/PRF | ✅ **Resuelto** — canónico "Plasma Rico en Plaquetas y Fibrina (PRF)" (memoria `project_seo_backlog_89_810_prf_positioning`). | Cerrado |
+| **8.17** GA4 | ✅ **Hecho** (`G-9272VHFT03` en `index.html`). | Cerrado |
+| **8.19** GBP Maps URL en `sameAs` | Falta 1 campo — `TODO(8.19)` explícito en `organizationSchema.js:99`. Riesgo cero, requiere que el usuario confirme la URL/`?cid=` del GBP verificado. | **1 — hacer cuando haya URL** |
+| **8.17** GSC + Bing WT | Config externa, no toca código. **Bloqueado**: la verificación por Dominio requiere el sitio ya en Hostinger con DNS apuntando. Sin GSC no se validan 8.11/8.13/8.15. | Bloqueado por deploy (Parte 2 de `DEPLOY.md`) |
+| **8.11** SSR / client-render | Sigue especulativo — sin datos de indexación reales. Medir en GSC antes de decidir. | Bloqueado por 8.17 |
+| **8.13** "Cite sources" en copy médico | Baja de peso — sin corroboración en fuentes primarias. Re-enfocar como mejora de claridad/conversión + RASTRO, con sign-off de compliance por página. | Post-8.17, multi-sesión |
+| **8.15** RASTRO/densidad en hubs y templates | Mejora de conversión, no palanca de ranking confirmada. | Post-8.17 |
 
 ### Orden recomendado de ejecución (cada uno = su ciclo brainstorming → aprobación)
 
-1. **8.12** — `robots.txt` con directivas de bots IA 2026 (§4). Riesgo cero.
-2. **8.14** — `sameAs` real en `Home.jsx` / `Contacto.jsx` / `NancyNieto.jsx`. Riesgo cero. *Requiere que el usuario dé las URLs verificadas (GBP, Instagram, Facebook).*
-3. **5.6** — decisión sobre `aggregateRating`: verificar 4.9/117 o eliminarlo.
-4. **8.17** — configurar Search Console + GA4 + Bing Webmaster Tools (fuera del repo).
-5. *(esperar ~2–4 semanas de datos)* → revisar 8.11 con evidencia real.
-6. **8.15 / 8.13 / 8.16** — mejoras de estructura y contenido, una por una, con compliance.
+1. **8.19** — completar `sameAs` con la URL de GBP Maps verificado, en cuanto el usuario la confirme. Riesgo cero.
+2. **8.17 (GSC + Bing WT)** — se resuelve solo como parte de Parte 2 de `DEPLOY.md` (post go-live en Hostinger), no antes.
+3. *(esperar ~2–4 semanas de datos post-GSC)* → revisar 8.11 con evidencia real.
+4. **8.15 / 8.13** — mejoras de estructura y contenido, una por una, con compliance.
 
 **Fuera del ciclo normal:** auditoría de redirects 301 en `.htaccess` (último paso antes de publicar — ver `SEO_AUDIT_2026.md` §5).
 
@@ -310,3 +317,6 @@ Respuesta directa · Autoridad verificable · Señales locales · Tensión de de
 - Actualizar cuando: cambie documentación primaria de un proveedor, se configure medición (8.17), o se cierre un ítem del backlog.
 - El backlog operativo y los estados `Hecho`/`Pendiente` viven en `docs/SEO_AUDIT_2026.md`. Este documento es el "por qué"; ese es el "qué falta".
 - Ambos archivos están en `docs/` (gitignoreado); este se fuerza a git (`git add -f`) por ser fuente de verdad, igual que `LEGAL_VISUAL_AUDIT_2026.md`.
+- **2026-09-12:** pase de verificación de estado contra código (no re-research). Cerrados: 8.12,
+  8.14, 8.16, 8.18/5.6, `BreadcrumbList`, 8.9/8.10, GA4. Sigue abierto: 8.19 (1 campo, esperando URL
+  de GBP), 8.17 GSC/Bing WT (bloqueado por deploy), 8.11/8.13/8.15 (bloqueados/post-8.17).

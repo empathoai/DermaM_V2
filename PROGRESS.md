@@ -2,11 +2,11 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — DEPLOY.md Part 1 full-site sanity check + minor fixes (S)
+## 2026-09-12 — Reconcile technical SEO/GEO audit doc + close item 8.19 (cont. 71, code)
 
-- Ran the full `DEPLOY.md` Part 1 checklist (all 10 steps) live in-browser per this session's instruction, superseding `test:visual` for this pass: all 42 routes, SEO tags, JSON-LD, images, internal links, CTAs, mobile 375px, accessibility, compliance, GA4. No blocking failures.
-- Fixed 4 findings surfaced during the check: (1) `CLAUDE.md` had a stale "médica" quote of the mandatory notice contradicting the already-decided "profesional" wording (`DECISIONS.md` 2026-08-30) — corrected to match; (2) mobile menu `aria-label` was hardcoded English ("Toggle menu") on a Spanish site — now dynamic `"Abrir menú"/"Cerrar menú"`; (3) 4 of 6 hub `metaDescription`s (faciales, láser y luz, dental, capilar) were under the 120-char SEO target — lengthened all 4 into the 120–160 range, verified live via HMR.
-- Part 2 (protected files, Hostinger deploy) still gated on the user's explicit "hagamos el deploy" — not touched.
+- Verified `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` against current code (not a re-research pass) and corrected stale `❌ pendiente` markers that were actually already resolved: 8.12 (robots.txt AI-bot directives), 8.14 (`sameAs` real profiles), 8.16/6.1 (sitemap `<lastmod>`), 8.18/5.6 (`aggregateRating` removed from Home/Contacto), `BreadcrumbList` in treatment templates, 8.9/8.10 (PRF naming), GA4. Reclassified 8.17 (GSC/Bing WT) as blocked by the Hostinger deploy, not un-worked. `docs/SEO_AUDIT_2026.md` left untouched — out of scope.
+- Closed item **8.19** (`organizationSchema.js` `sameAs` was missing the verified GBP Maps URL): added `https://maps.google.com/?cid=1960512029393287772` (user-supplied, confirmed live GBP with the 4.9★ rating). Clarified with the user first that this belongs only in the JSON-LD `sameAs` array, not in `siteMeta.js`'s `GOOGLE_REVIEWS_URL` (a separate, already-decided outbound link used by `RatingBadge`/footer) — left that file untouched. Verified live: the `#organization` JSON-LD on Home now contains the cid link.
+- Data-only change in `src/data/organizationSchema.js` (single string added to an existing array, no new visible UI) — `test:visual` skipped per the `CLAUDE.md` §DoD gate.
 
 ---
 

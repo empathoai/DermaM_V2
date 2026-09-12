@@ -96,7 +96,6 @@ export const organizationNode = {
     'https://www.tiktok.com/@derma.m',
     'https://www.facebook.com/DermaMskinhealth',
     'https://www.yelp.com/biz/derma-m-west-palm-beach',
-    // TODO(8.19): añadir la URL de Google Maps del GBP cuando esté verificado
-    // (https://www.google.com/maps/place/?q=place_id:ChIJ85kuJaTX2IgRXPrdsU0jNRs o el ?cid= de la ficha)
+    'https://maps.google.com/?cid=1960512029393287772',
   ],
 };

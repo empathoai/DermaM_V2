@@ -6,24 +6,23 @@ are in it.
 
 ## State
 
-Uncommitted: 4 fixes from this session's `DEPLOY.md` Part 1 pass (`CLAUDE.md`, `Navbar.jsx`,
-`categoryPages.js`, `PROGRESS.md`/archive). Not yet committed/pushed — pending user confirmation.
-Once committed, base commit moves past `1cf5f16`. Hostinger access confirmed by user; deploy is
-unblocked pending only the user's explicit "hagamos el deploy".
+Clean, pushed pending this cycle's commit. HEAD will move past `a82d527` once committed (this
+cycle: `docs/TECHNICAL_SEO_GEO_AUDIT_2026.md` reconciled against code + item 8.19 closed in
+`organizationSchema.js`). Hostinger access confirmed by user; deploy is unblocked pending only the
+user's explicit "hagamos el deploy".
 
 ## Next activity
 
-`DEPLOY.md` Part 1 (full-site local sanity check, all 10 steps) is **done** — passed, live
-in-browser, no blocking failures. 4 minor findings fixed in this same cycle (see `PROGRESS.md` top
-entry). Commit + push these fixes on user confirmation, then Part 1 is fully closed.
+Nothing queued. `DEPLOY.md` Part 1 is fully closed. SEO/GEO/AEO technical audit doc is now
+reconciled with code (see `PROGRESS.md` top entry) — only 8.17 (GSC/Bing WT, blocked by deploy) and
+low-priority 8.11/8.13/8.15 remain, none actionable this session.
 
-After that: Part 2 (protected files: `.htaccess`, `robots.txt`, etc.) stays untouched until the
+Part 2 of `DEPLOY.md` (protected files: `.htaccess`, `robots.txt`, etc.) stays untouched until the
 user says the literal words "hagamos el deploy" / "let's do the Hostinger deploy".
 
 ## How to resume
 
-Confirm commit+push of the pending fixes with the user. If already done, next step is waiting for
-the user's explicit deploy go-ahead — nothing to execute proactively until then.
+Nothing to execute proactively — waiting for the user's explicit deploy go-ahead, or a new task.
 
 ## Context by area — grep, not full-read
 

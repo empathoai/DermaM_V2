@@ -14,8 +14,6 @@ is already resolved, delete the item now (don't wait for a formal close) and say
   files until the user says "let's do the Hostinger deploy". Procedure: `DEPLOY.md` (Part 1 local
   sanity check, Part 2 protected-file work: `.htaccess` SPA catch-all + 301 for
   `/notice-of-privacy-practices`, `robots.txt` cleanup — **Check:** `grep -c "notice-of-privacy-practices" public/robots.txt` should drop from 7 to 0 once done — `sitemap`/`llms.txt` check, `INTAKE.md:56` fix), then GSC verify + submit sitemap.
-- **Reviews 8.20 Part 3** — `aggregateRating` schema. Needs clinic sign-off on showing unfiltered
-  reviews (some negative). Memory: `project_google_reviews_link`.
 - **Square deep-linking.** Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing: clinic confirmation of 4
   rows (PRF, marcación abdominal, corrientes rusas, depilación láser) + validate hidrofacial. Clinic
   doc: artifact `https://claude.ai/code/artifact/3f50986c-a2cf-4f0c-9738-d8fb8214ab46`. On unblock:

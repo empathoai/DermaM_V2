@@ -5,8 +5,9 @@ asked "revisemos qué falta" (verify each item's Check before reporting it).
 
 ## State
 
-Base commit = `42a7610` (cont. 69, pushed — confirmed synced with `origin/main`, tree clean).
-Dev server `:3000` not running unless started this session.
+Base commit = `6687779` (cont. 70, Home rating badge) + this doc-close commit on top — not yet
+pushed, awaiting user confirmation. Dev server `:3000` was running from another session this
+cycle (not started/stopped by this one).
 
 ## Next activity
 

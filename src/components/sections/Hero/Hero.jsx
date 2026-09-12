@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from "motion/react";
 import HeroMedia from '../../utils/HeroMedia';
+import RatingBadge from '../../shared/RatingBadge/RatingBadge';
 import { HERO_LOCAL_TAG } from '../../../data/siteMeta';
 import styles from './Hero.module.css';
 
@@ -68,6 +69,11 @@ export default function Hero({ backgroundImage, image }) {
                 <Link to="/contacto" className="bg-transparent border border-[#f2f0f1]/32 text-[#F2F0F1] px-12 py-[1rem] lg:py-[1.125rem] text-[12px] tracking-[0.1em] transition-colors uppercase font-medium text-center no-underline hover:bg-[#f2f0f1]/5 hover:border-[#F2F0F1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F2F0F1] focus:outline-none">
                   Contacto
                 </Link>
+              </div>
+
+              {/* Rating trust badge */}
+              <div className="mt-5 lg:mt-6">
+                <RatingBadge tone="dark" />
               </div>
             </motion.div>
           </div>

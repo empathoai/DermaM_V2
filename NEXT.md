@@ -5,8 +5,15 @@ summary goes to `PROGRESS.md`. Keep it under ~110 lines — old "CLOSED" blocks 
 
 ## State
 
-Base commit = `ff0960a` (cont. 59 — Melisa Ríos team video replaced). Working tree clean, pushed.
-Dev server `:3000` = running.
+Base commit = `f115d68` (cont. 60 — contextual WhatsApp message per treatment/landing CTA). Working
+tree clean, not yet pushed. Dev server `:3000` = running (owned by another chat this session).
+
+**Next requested:** user asked to evaluate expanding cont. 60's contextual WhatsApp message to hub
+pages too (`CategoryPage.jsx`, e.g. `/laser-y-luz`). Not yet brainstormed — hub CTAs (`FinalCTA`
+shared, already has the `whatsappTopic` prop from cont. 60) would need a topic per category (e.g.
+"Láser y Luz"), likely a new field on `categoryPages.js` entries (6 hubs) mirroring the landing
+approach. Needs its own `superpowers:brainstorming` + approval before touching code — separate
+cycle per `CLAUDE.md` one-change-per-cycle.
 
 **Client authorized go-live (2026-09-11):** site is cleared to deploy. Client also asked to swap some
 `/nosotros` team videos first — executing one per cycle. Done: Daniela Parra video (cont. 56), missing

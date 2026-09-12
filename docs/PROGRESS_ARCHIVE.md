@@ -3,6 +3,15 @@
 Entradas de `PROGRESS.md` de sesiones cerradas, movidas aquí 2026-08-28 para aligerar el arranque de sesión. Newest-first, mismo formato. Consultar solo si se necesita historia; el trabajo vivo está en `PROGRESS.md`.
 
 
+## 2026-09-11 — Melisa Ríos team video replaced (cont. 59, media)
+
+- **What:** replaced `public/assets/images/about/team/melisa-rios.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (1.3 MB → 312 KB, `-an`), regenerated poster `.jpg` (49 KB) and `.webp` sibling.
+- **Why:** item 3 of the client's `/nosotros` team-video swap batch (Daniela Parra cont. 56, Miguel Ramos cont. 58).
+- **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
+- Commit `ff0960a`.
+
+---
+
 ## 2026-09-08 — Lipo 360: add before/after block (cont. 53, media + data)
 
 - **What:** via the `add-media` skill (Acción B, data-only — `TreatmentDetailPage` already reads `beforeAfter`). Client supplied one real before/after pair (side-profile torso, same client). Placed `lipo-360-antes.jpg` / `lipo-360-despues.jpg` in `public/assets/images/treatments/corporales/lipo-360/` (1000×1250; `optimize.js` recompressed to 124/76 KB), generated the `.webp` siblings. Added `beforeAfter.items` (1 pair) to the `'lipo-360'` entry in `src/data/treatmentPages.js` with Spanish `beforeAlt`/`afterAlt` traceable to the page copy.

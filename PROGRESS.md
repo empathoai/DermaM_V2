@@ -2,12 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-11 — Melisa Ríos team video replaced (cont. 59, media)
+## 2026-09-11 — Contextual WhatsApp message per treatment/landing CTA (cont. 60, feature)
 
-- **What:** replaced `public/assets/images/about/team/melisa-rios.mp4` with the client-supplied clip (same slot, no data-file change). Optimized (1.3 MB → 312 KB, `-an`), regenerated poster `.jpg` (49 KB) and `.webp` sibling.
-- **Why:** item 3 of the client's `/nosotros` team-video swap batch (Daniela Parra cont. 56, Miguel Ramos cont. 58).
-- **Verified:** browser on `/nosotros` — poster + video load (200/206), no `og-default` fallback, console clean. `test:visual` skipped per DoD (single-asset swap).
-- Commit `ff0960a`.
+- **What:** WhatsApp CTAs on treatment detail pages and the 3 landing pages (PRF, Limpieza Facial Profunda, Tratamientos Postoperatorios) now open `wa.me` with a topic-aware pre-filled message ("Hola, vi su sitio web sobre {tratamiento} y me gustaría más información.") instead of the generic `wa.link/z7i9vm` shortlink. Treatments derive the topic from their existing title (no data edits needed); landings got a new `hero.whatsappTopic` field. Navbar/Footer keep a generic message but it's now built locally via `wa.me` and the typo baked into the old shortlink's redirect ("...y **etoy** interesada...") is fixed to "estoy". New `src/utils/whatsapp.js` centralizes the URL/message logic that was previously copy-pasted across 8 files. `FloatingWhatsApp` untouched (already correct, per prior decision). Hub/category pages intentionally out of scope — still generic.
+- **Why:** client's original brief wanted a contextual WhatsApp opener per page, not a one-size-fits-all message; found while investigating a user-reported issue. Full design in `docs/superpowers/specs/2026-09-11-contextual-whatsapp-message-design.md`, plan in `docs/superpowers/plans/2026-09-11-contextual-whatsapp-message.md`.
+- **Compliance:** no banned words (`docs/MEDICAL_COMPLIANCE.md`) in either message.
+- **Verified:** browser — `/prf-y-fibrina`, `/limpieza-facial-profunda`, `/tratamientos-postoperatorios` (hero + FinalCTA both show the correct topic), a treatment page (`/faciales/hidrofacial`, derived "Hidrofacial"), Navbar + Footer (generic, typo-fixed), FloatingWhatsApp (untouched). Console clean. `test:visual` not required per DoD — no CSS/layout/class change, only `href` values.
+- Commit `f115d68`.
 
 ---
 

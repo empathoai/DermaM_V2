@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-12 — Added `docs/PROJECT_RETROSPECTIVE.md` (reusable knowledge, not project state)
+
+- Ran `/llm-council` on whether `TECHNICAL_SEO_GEO_AUDIT_2026.md` covers all validations a new site/redesign needs — verdict: it's correctly scoped to technical SEO, but off-page/authority and cross-doc references are missing project-wide, not just in that file.
+- Distilled the council verdict + a full-project skill-usage grep (not just this session) into `docs/PROJECT_RETROSPECTIVE.md`: the 9-layer framework for any new site, the source-of-truth hierarchy for SEO/AEO/GEO claims, 2 method lessons from real incidents this project (cache-header false positive, vendor-AI corroboration ≠ evidence), and a tooling/skill reuse verdict. Meant to outlive this project — not read at session start, only when starting a new one.
+
 ## 2026-09-12 — PageSpeed API tooling; cache-lifetime flag investigated, false-positive corrected
 
 - Added `npm run pagespeed [mobile|desktop] [url]` (`scripts/pagespeed.sh`) — calls Google's PageSpeed Insights v5 API directly against the live published site (not local, unlike `npm run lighthouse`), printing score/FCP/LCP/TBT/CLS plus the cache-lifetime audit's flagged items. Key goes in `.env.pagespeed` (gitignored, `.env.pagespeed.example` committed as template).

@@ -16,7 +16,6 @@ import FinalCTA from '../components/shared/FinalCTA/FinalCTA';
 import HeroMedia from '../components/utils/HeroMedia';
 import styles from './Contacto.module.css';
 import { contactFaq } from '../data/contactPage';
-import { organizationNode } from '../data/organizationSchema';
 import { buildWhatsAppUrl } from '../utils/whatsapp';
 
 export default function ContactoPage() {
@@ -53,7 +52,7 @@ export default function ContactoPage() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            organizationNode,
+            { "@id": "https://dermamskinhealth.com/#organization" },
             {
               "@type": "ContactPage",
               "@id": "https://dermamskinhealth.com/contacto#contactpage",

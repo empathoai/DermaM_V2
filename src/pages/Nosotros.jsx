@@ -4,7 +4,6 @@ import Navbar from '../components/layout/Navbar/Navbar';
 import Footer from '../components/layout/Footer/Footer';
 import AboutPage from '../components/templates/AboutPage/AboutPage';
 import { aboutPage } from '../data/aboutPage';
-import { organizationNode } from '../data/organizationSchema';
 
 export default function NosotrosPage() {
   return (
@@ -32,7 +31,7 @@ export default function NosotrosPage() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            organizationNode,
+            { "@id": "https://dermamskinhealth.com/#organization" },
             {
               "@type": "AboutPage",
               "@id": "https://dermamskinhealth.com/nosotros#aboutpage",

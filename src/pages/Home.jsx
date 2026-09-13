@@ -11,7 +11,6 @@ import Testimonials from "../components/sections/Testimonials/Testimonials";
 import FounderSection from "../components/sections/FounderSection/FounderSection";
 import FinalCTA from "../components/sections/FinalCTA/FinalCTA";
 import Footer from "../components/layout/Footer/Footer";
-import { organizationNode } from "../data/organizationSchema";
 
 export default function Home() {
   return (
@@ -40,7 +39,7 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
-            organizationNode,
+            { "@id": "https://dermamskinhealth.com/#organization" },
             {
               "@type": "WebSite",
               "@id": "https://dermamskinhealth.com/#website",

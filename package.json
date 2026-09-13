@@ -13,7 +13,7 @@
   "homepage": "https://github.com/empathoai/DermaM_V2#readme",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && node scripts/inject-schema.js",
     "preview": "vite preview",
     "deploy": "bash scripts/deploy.sh",
     "lighthouse": "bash scripts/lighthouse.sh",

@@ -6,33 +6,34 @@ are in it.
 
 ## State
 
-HEAD at `8f4877e` (Home reverted to eager import, V1.0.6), on top of `6aa5659`/`abf49bb`
-(FloatingWhatsApp fix)/`0a9631d` (route code-splitting + deploy automation). Working tree clean.
-**V1.0.6 is live and deployed** — matches HEAD.
+HEAD at `3c2a101` (hero poster preload, V1.0.7), on top of `8f4877e` (Home eager import, V1.0.6),
+`abf49bb` (FloatingWhatsApp fix), `0a9631d` (route code-splitting + deploy automation). Working
+tree clean. **V1.0.7 is live and deployed** — matches HEAD.
 
 ## Next activity
 
-**Route code-splitting saga, resolved (2026-09-12):**
+**Route code-splitting saga (2026-09-12), three rounds:**
 1. Split all 27 routes via `React.lazy()` to fix a 67 mobile PageSpeed score (807 KB bundle).
 2. Regression #1: broke `FloatingWhatsApp`'s footer-hide logic — fixed with a `MutationObserver` fallback (`abf49bb`).
-3. Re-checked PageSpeed: still 67 (unchanged). Root-caused via `superpowers:systematic-debugging`: lazy-loading **Home** itself created a waterfall (entry → Home chunk → HeroMedia chunk → hero.jpg/mp4) that delayed LCP discovery as much as the original monolith.
-4. Ran an LLM-council review (5 advisors + peer review + chairman) before fixing — verdict: revert Home to eager import (it's the one route PageSpeed measures, and its hero is the LCP element), keep the other 26 lazy. Confirmed `HeroMedia.jsx` has no lazy import of its own first (it doesn't).
-5. Applied the revert (`8f4877e`, V1.0.6). Verified via `vite preview`: hero.jpg/mp4 now downloads directly alongside the entry bundle, no intermediate chunk. `test:visual` 34/34, mobile 375px clean. **Deployed live, confirmed footer `V1.0.6`.**
+3. Re-checked PageSpeed: still 67. Root-caused via `superpowers:systematic-debugging`: lazy-loading **Home** created a waterfall (entry → Home chunk → HeroMedia chunk → hero.jpg/mp4) delaying LCP discovery as much as the original monolith. LLM-council-reviewed fix: revert Home to eager import, keep other 26 lazy (`8f4877e`, V1.0.6).
+4. Real-world re-check after that deploy: **Desktop jumped 90-92, but Mobile stayed 67-68** (LCP still 5.8s). Second LLM-council review: confirm the actual LCP resource before adding preload hints. Used the browser's `PerformanceObserver` API directly against production — confirmed the measured LCP resource is `hero.jpg` (the video's poster), not `hero.mp4`. Added `<link rel="preload" as="image" href="/assets/images/home/hero.jpg" fetchpriority="high">` to `index.html` only, deliberately no video preload. `test:visual` 34/34, mobile 375px clean. **Deployed live (`3c2a101`, V1.0.7), confirmed footer `V1.0.7`.**
 
-**Deploy automation live.** `npm run deploy` (`scripts/deploy.sh`) — used 4x this session, all
+**Deploy automation live.** `npm run deploy` (`scripts/deploy.sh`) — used 5x this session, all
 confirmed live.
 
-**Not yet done:** user needs to re-run Hostinger's PageSpeed checker against the now-live V1.0.6 to
-confirm the actual score moved (the waterfall fix is verified at the network level, but the
-composite PageSpeed number itself hasn't been re-checked since this last deploy).
+**Not yet done:** user needs to re-run Hostinger's PageSpeed mobile check against the now-live
+V1.0.7 to see if the preload actually moved the number. The council's Outsider raised a real
+alternative hypothesis if it still doesn't move: the score swung 90↔68 between near-identical runs
+earlier today, which could indicate lab-test variance (CPU throttling jitter, cold cache,
+Hostinger shared-hosting TTFB) rather than a purely client-side JS problem — worth 3-5 repeat runs
+before chasing another code change. See `Document request latency: 0` / `Avoid multiple page
+redirects: 0`, unchanged across every variant tried so far.
 
 ## How to resume
 
-No proactive next step — wait for the user to share the new PageSpeed result. If it's still stuck
-at 67, the council's Outsider/Contrarian flagged a real alternative hypothesis worth investigating
-next: a server/hosting-level bottleneck (Hostinger shared-hosting TTFB, cache headers, redirects)
-rather than anything client-side JS — see `Document request latency: 0` and `Avoid multiple page
-redirects: 0` in the diagnostics, unchanged across every variant tried so far.
+No proactive next step — wait for the user to share the new mobile PageSpeed result. If preload
+didn't move it and repeat runs rule out variance, next lever (per council) is hero.mp4 encoding/
+file size on throttled mobile bandwidth, not more `<head>` tags.
 
 ## Context by area — grep, not full-read
 

@@ -1,7 +1,13 @@
 import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-
-const Home = lazy(() => import("./pages/Home"));
+// Home is the one route the browser must render with zero JS-discovery latency —
+// it's the entry point PageSpeed measures, and its hero image/video is the LCP
+// element. Keeping it a static import lets Vite emit its whole dependency chain
+// (Hero -> HeroMedia -> hero.jpg/mp4) as modulepreload/script tags directly in
+// index.html, so the browser discovers and fetches the LCP asset in parallel with
+// the entry bundle instead of after a route-chunk waterfall. See DECISIONS.md
+// 2026-09-12 "Home reverted to eager import — LCP waterfall regression".
+import Home from "./pages/Home";
 
 const Nosotros = lazy(() => import("./pages/Nosotros"));
 const NancyNieto = lazy(() => import("./pages/NancyNieto"));

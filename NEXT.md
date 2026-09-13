@@ -6,7 +6,7 @@ are in it.
 
 ## State
 
-HEAD at `<pending>` (PageSpeed API tooling + CDN root-cause docs), on top of `d7388e1` (`.htaccess`
+HEAD at `ac20a28` (PageSpeed API tooling + CDN root-cause docs), on top of `d7388e1` (`.htaccess`
 cache-control hardening, deployed + verified live). Working tree clean. **V1.0.7 is the live
 deploy**, `.htaccess` cache-control changes are live on Hostinger.
 

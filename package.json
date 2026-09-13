@@ -16,6 +16,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "bash scripts/deploy.sh",
+    "lighthouse": "bash scripts/lighthouse.sh",
     "clean": "rm -rf dist server.js",
     "lint": "echo \"No linting\"",
     "test:visual": "playwright test"
@@ -40,6 +41,7 @@
     "@types/node": "^22.14.0",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
+    "lighthouse": "^13.4.1",
     "sharp": "^0.35.2",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",

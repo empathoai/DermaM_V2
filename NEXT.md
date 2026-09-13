@@ -6,15 +6,18 @@ are in it.
 
 ## State
 
-HEAD at `0ab1459` (HSTS header added to `.htaccess`), on top of `8d26c5a` (project retrospective
-doc). Working tree clean. `.htaccess` HSTS change deployed via direct `scp` (not a full rebuild)
-and verified live on Hostinger.
+HEAD at `a504cda` (organization node `@id`-reference refactor), on top of `d854875`
+(build script wiring), `fcfdde3` (`inject-schema.js`), `2142475`/`0ab1459` (HSTS cycle). Working
+tree clean. Full `npm run build` + `scripts/deploy.sh` deploy done; verified live via `curl`
+(`HealthAndBeautyBusiness` schema + real `og:image` in raw HTML) and in-browser (`/`, `/contacto`,
+`/nosotros` — no console errors, no duplicate entity in final DOM).
 
 ## Next activity
 
-**Session closed 2026-09-13 — nothing in-repo pending.** HSTS header cycle fully resolved: added,
-committed, pushed, deployed, verified live via `curl` (`strict-transport-security` now present).
-Came from a GEO/AEO audit that flagged 2 other items not yet actioned — see below.
+**Session closed 2026-09-13 — nothing in-repo pending.** All 3 GEO/AEO audit findings resolved and
+verified live: HSTS header, static Organization/WebSite JSON-LD, default OG in raw HTML. Per-page
+schema/OG (the other 27 routes) stays deferred — needs SSG/prerendering, its own brainstorm, see
+`BACKLOG.md` "GEO/AEO audit" section.
 
 **User is now waiting on an external, non-code item:** Square deep-linking (see `BACKLOG.md`
 "Blocked" — clinic needs to confirm 4 service-ID rows + validate hidrofacial). No repo work is

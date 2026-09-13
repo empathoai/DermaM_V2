@@ -2,6 +2,13 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-13 — Static Organization/WebSite schema + default OG injected into `index.html`
+
+- Fixed the other 2 GEO/AEO audit findings (JSON-LD and OG were client-side-only via `react-helmet-async`, invisible to crawlers that don't execute JS). Added `scripts/inject-schema.js` (postbuild Node script, no new deps) that reads `organizationNode` from `src/data/organizationSchema.js` (single source of truth) and injects the `Organization`+`WebSite` graph plus default OG/Twitter tags into `dist/index.html` before `</head>`. Wired into `npm run build`.
+- `Home.jsx`, `Contacto.jsx`, `Nosotros.jsx` no longer embed the full `organizationNode` object in their client-side `@graph` — switched to `{ "@id": "...#organization" }`, matching the pattern `NancyNieto.jsx` already used, avoiding duplicate-entity DOM output.
+- Scope explicitly limited to sitewide identity (not per-page schema/OG for the other 27 routes — that needs SSG/prerendering, deferred to `BACKLOG.md` pending its own brainstorm). Design: `docs/superpowers/specs/2026-09-13-static-org-schema-injection-design.md`; plan: `docs/superpowers/plans/2026-09-13-static-org-schema-injection.md` (both gitignored).
+- Verified: local build + `curl` (raw HTML has real schema/`og:image`, no placeholders), browser DOM inspection on `/`, `/contacto`, `/nosotros` (no duplicate entity, no console errors), deployed via `scripts/deploy.sh`, re-verified live via `curl` against `dermamskinhealth.com`.
+
 ## 2026-09-13 — Added HSTS header to `.htaccess`
 
 - GEO/AEO audit flagged missing `Strict-Transport-Security`; confirmed via `curl` against live `dermamskinhealth.com`. Added `max-age=31536000; includeSubDomains; preload` to the security-headers block ([.htaccess:130](public/.htaccess:130)). Committed (`0ab1459`), pushed, deployed via direct `scp` of `.htaccess` only (not a full `deploy.sh` rebuild — unnecessary for a single static file). Verified live via `curl`.

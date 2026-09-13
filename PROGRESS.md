@@ -2,6 +2,10 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-13 — Added HSTS header to `.htaccess`
+
+- GEO/AEO audit flagged missing `Strict-Transport-Security`; confirmed via `curl` against live `dermamskinhealth.com`. Added `max-age=31536000; includeSubDomains; preload` to the security-headers block ([.htaccess:130](public/.htaccess:130)). Committed (`0ab1459`), pushed, deployed via direct `scp` of `.htaccess` only (not a full `deploy.sh` rebuild — unnecessary for a single static file). Verified live via `curl`.
+
 ## 2026-09-12 — Added `docs/PROJECT_RETROSPECTIVE.md` (reusable knowledge, not project state)
 
 - Ran `/llm-council` on whether `TECHNICAL_SEO_GEO_AUDIT_2026.md` covers all validations a new site/redesign needs — verdict: it's correctly scoped to technical SEO, but off-page/authority and cross-doc references are missing project-wide, not just in that file.

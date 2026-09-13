@@ -6,17 +6,15 @@ are in it.
 
 ## State
 
-HEAD at `8d26c5a` (project retrospective doc), on top of `e0f9694` (cache-control false-positive
-correction) and `d7388e1` (`.htaccess` cache-control hardening, deployed + verified live). Working
-tree clean. **V1.0.7 is the live deploy**, `.htaccess` cache-control changes are live on Hostinger.
+HEAD at `0ab1459` (HSTS header added to `.htaccess`), on top of `8d26c5a` (project retrospective
+doc). Working tree clean. `.htaccess` HSTS change deployed via direct `scp` (not a full rebuild)
+and verified live on Hostinger.
 
 ## Next activity
 
-**Session closed 2026-09-12 — nothing in-repo pending.** Cache-control cycle fully resolved
-(`.htaccess` hardening deployed, verified live, mobile PageSpeed 69→70, no CDN limitation — an
-earlier same-day false-positive was corrected same session, see `DECISIONS.md`). Added
-`npm run pagespeed` tooling and `docs/PROJECT_RETROSPECTIVE.md` (reusable knowledge for future
-sites, not project state).
+**Session closed 2026-09-13 — nothing in-repo pending.** HSTS header cycle fully resolved: added,
+committed, pushed, deployed, verified live via `curl` (`strict-transport-security` now present).
+Came from a GEO/AEO audit that flagged 2 other items not yet actioned — see below.
 
 **User is now waiting on an external, non-code item:** Square deep-linking (see `BACKLOG.md`
 "Blocked" — clinic needs to confirm 4 service-ID rows + validate hidrofacial). No repo work is

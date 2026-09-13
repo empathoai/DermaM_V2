@@ -8,12 +8,6 @@ is already resolved, delete the item now (don't wait for a formal close) and say
 
 ## Blocked (waiting on user / client / third party)
 
-- **Hostinger deploy.** Client authorized go-live 2026-09-11; Hostinger access confirmed by user
-  2026-09-12. All other §6 handoff sub-items resolved/deprioritized same day (see below) — nothing
-  left blocking except the user's explicit go-ahead. Do not touch Hostinger or protected files until
-  the user says "let's do the Hostinger deploy" (not yet said as of 2026-09-12). Procedure: `DEPLOY.md`
-  (Part 1 local sanity check, Part 2 protected-file work: `.htaccess` SPA catch-all + 301 for
-  `/notice-of-privacy-practices`, `robots.txt` cleanup — **Check:** `grep -c "notice-of-privacy-practices" public/robots.txt` should drop from 7 to 0 once done — `sitemap`/`llms.txt` check, `INTAKE.md:56` fix), then GSC verify + submit sitemap.
 - **Square deep-linking.** Deferred to post-deploy by user (2026-09-12) — does not block Hostinger.
   Mapping in `docs/LINKEO-SQUARE-2026.md`. Missing: clinic confirmation of 4 rows (PRF, marcación
   abdominal, corrientes rusas, depilación láser) + validate hidrofacial. Clinic doc: artifact
@@ -57,6 +51,18 @@ is already resolved, delete the item now (don't wait for a formal close) and say
   and check the response's cache/request-id header for repetition before concluding the *server's*
   behavior — a repeated identical trace ID across calls means the browser answered from its own
   cache, not the network.
+
+## GEO/AEO audit (2026-09-13) — not actionable this session, needs a design decision
+
+- **JSON-LD schema (`MedicalBusiness`) and OG meta are client-side only.** All `<script
+  type="application/ld+json">` and `<meta property="og:*">` tags are injected via
+  `react-helmet-async` (`<Helmet>`) in React components — confirmed `index.html` has none of
+  this in the static HTML. A crawler that doesn't execute JS (or times out first) never sees the
+  schema, and `og:image` previews (WhatsApp, etc.) may not resolve. HSTS item (above,
+  resolved same session) was a separate, simpler audit finding — this one needs an architecture
+  decision (prerendering/SSG for the `<head>`, or moving global schema/OG into static
+  `index.html`) since the stack is Vite SPA with no SSR (`CLAUDE.md` "Stack: do not add to it").
+  Route through `superpowers:brainstorming` before touching anything — this is not a one-line fix.
 
 ## Conditional (act only if the condition holds)
 

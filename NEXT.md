@@ -6,41 +6,26 @@ are in it.
 
 ## State
 
-HEAD at `350a4bb` (local Lighthouse tooling), on top of `3c2a101` (hero poster preload, V1.0.7),
-`8f4877e` (Home eager import, V1.0.6), `abf49bb` (FloatingWhatsApp fix), `0a9631d` (route
-code-splitting + deploy automation). Working tree clean. **V1.0.7 is live and deployed** (the
-Lighthouse-tooling commit is dev-only, nothing to redeploy for it).
+HEAD at `<pending commit>` (`.htaccess` cache-control hardening), on top of `350a4bb` (local
+Lighthouse tooling), `3c2a101` (hero poster preload, V1.0.7). Working tree clean. **V1.0.7 is
+still the live deploy** — the `.htaccess` change is committed but not yet pushed to Hostinger.
 
 ## Next activity
 
-**Route code-splitting saga (2026-09-12), resolved across 4 rounds** — see `DECISIONS.md` for
-full rationale of each: (1) split 27 routes via `React.lazy()` for a 67 mobile PageSpeed score,
-(2) broke `FloatingWhatsApp`'s footer-hide, fixed, (3) Home itself needed to stay eager (LCP
-waterfall), (4) added a `<link rel="preload">` for the hero poster after confirming via
-`PerformanceObserver` that `hero.jpg` (not `hero.mp4`) is the real measured LCP resource.
-
-**Verified against Google's own `pagespeed.web.dev` (not Hostinger's proxy, which gives different
-numbers)** on the live V1.0.7: Mobile **69**, LCP **5.3s** (down from 5.8s), and — the real
-confirmation the fix worked — **"LCP request discovery" no longer appears as a failing
-diagnostic**. Remaining top issues are different in kind now: cache lifetimes (3.2 MB potential
-savings) and overall payload size (3.7 MB) — a caching/asset-weight problem, not a JS-discovery
-problem.
-
-**Added local Lighthouse tooling:** `npm run lighthouse [mobile|desktop]` — builds + serves via
-`vite preview` + runs a real audit, report to gitignored `lighthouse-reports/`. **Important:**
-local numbers are NOT comparable to `pagespeed.web.dev` (54 locally vs. 69 on Google's tool, same
-build — different CPU/network/TLS conditions). Use only for relative before/after checks on this
-machine; `pagespeed.web.dev` stays the source of truth for the real number.
-
-**Deploy automation live.** `npm run deploy` (`scripts/deploy.sh`) — used 5x this session, all
-confirmed live.
+**`.htaccess` cache-control hardening (2026-09-12), applied but not deployed.** Added
+`video/mp4`/`video/webm`/font types/favicon to `mod_expires` (previously uncached — `hero.mp4` had
+no cache header at all), bumped hashed JS/CSS from 1 month to 1 year, added a
+`Cache-Control: immutable` header scoped to `/assets/` via `SetEnvIf` (see `DECISIONS.md` for why
+`<FilesMatch>` doesn't work for path-based scoping). Targets the 3.2 MB "efficient cache policy"
+flag from `pagespeed.web.dev`.
 
 ## How to resume
 
-No proactive next step — wait for the user. If mobile PageSpeed work continues, the next real
-levers (per Google's own diagnostics) are: (1) cache-control headers for static assets in
-`.htaccess` (biggest potential win, 3.2 MB), (2) reducing overall payload — likely `hero.mp4`
-encoding/size — not more `<head>` tags or further JS-splitting changes.
+**Deploy this `.htaccess` change** (upload the updated file to Hostinger — it's not part of
+`npm run deploy`'s `dist/` sync, `.htaccess` lives in `public/` and is copied into `dist/` by Vite,
+so a normal `npm run deploy` run should carry it), then re-check `pagespeed.web.dev` mobile to
+confirm the cache-lifetime flag clears. If it doesn't move enough, the remaining lever is reducing
+overall payload — likely `hero.mp4` encoding/size.
 
 ## Context by area — grep, not full-read
 

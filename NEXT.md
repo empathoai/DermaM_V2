@@ -6,7 +6,7 @@ are in it.
 
 ## State
 
-HEAD at `<pending commit>` (`.htaccess` cache-control hardening), on top of `350a4bb` (local
+HEAD at `6d6927c` (`.htaccess` cache-control hardening), on top of `350a4bb` (local
 Lighthouse tooling), `3c2a101` (hero poster preload, V1.0.7). Working tree clean. **V1.0.7 is
 still the live deploy** — the `.htaccess` change is committed but not yet pushed to Hostinger.
 

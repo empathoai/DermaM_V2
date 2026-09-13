@@ -12,18 +12,18 @@ deploy**, `.htaccess` cache-control changes are live on Hostinger.
 
 ## Next activity
 
-**Cache-control cycle closed 2026-09-12.** `.htaccess` hardening deployed and verified live
-(`hero.jpg`/`hero.mp4` correctly serve `max-age=31536000, immutable` on CDN passthrough). The
-residual `pagespeed.web.dev` "efficient cache lifetimes" flag on `hero.mp4` (~3.2 MB) is root-caused
-in `BACKLOG.md`/`DECISIONS.md`: Hostinger's `hcdn` CDN drops `Cache-Control` on video cache `HIT`s —
-no `.htaccess` fix exists for this.
+**Cache-control cycle fully closed 2026-09-12 — fix confirmed working, no CDN limitation.**
+`.htaccess` hardening deployed and verified: `hero.mp4` no longer appears in `pagespeed.web.dev`'s
+cache-lifetime audit at all (mobile 69→70). An earlier same-day investigation wrongly concluded
+Hostinger's CDN drops the header on video HITs — that was a browser-cache false positive, corrected
+same session (see `DECISIONS.md`). Only remaining cache-lifetime flag is third-party Facebook Pixel
+scripts (~125 KiB), not fixable from our side.
 
 ## How to resume
 
-No proactive next step — wait for the user. If the residual cache-lifetime flag needs to actually
-close, the next real levers (per `BACKLOG.md`) are: (1) a Hostinger support ticket asking about
-`hcdn` header behavior on video, or (2) moving video delivery off Hostinger's CDN entirely. Otherwise
-the remaining PageSpeed lever is overall payload reduction (`hero.mp4` encoding/size, 3.7 MB total).
+No proactive next step — wait for the user. If mobile PageSpeed work continues, the only lever left
+per Google's diagnostics is overall payload reduction (`hero.mp4` encoding/size, ~3.7 MB total) —
+cache-lifetime is no longer a factor for our own assets.
 
 ## Context by area — grep, not full-read
 

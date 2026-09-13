@@ -41,25 +41,22 @@ is already resolved, delete the item now (don't wait for a formal close) and say
   CDN. **Check:** re-run the `fetch` header check above on the live `index-*.js` chunk — if
   `cache-control` ever shows `max-age=31536000`, this is resolved (Hostinger changed edge behavior or
   plan tier) and this item can be deleted.
-- **`hcdn` strips `Cache-Control` entirely on cache `HIT` for `hero.mp4` — root-caused via
-  `superpowers:systematic-debugging` 2026-09-12.** `pagespeed.web.dev`'s "Use efficient cache
-  lifetimes" audit kept flagging `hero.mp4` at `cacheLifetimeMs: 0` (~3.2 MB) even ~2h post-deploy of
-  the cache-control hardening (`6d6927c`), ruling out edge-propagation lag as the cause. Direct
-  `fetch()` comparison confirmed the real mechanism: when `hcdn` serves the video from its own edge
-  cache (`x-hcdn-cache-status: HIT`), the `Cache-Control` header is **absent from the response
-  entirely** — it only appears when `hcdn` passes the request through to origin (`MISS`/`EXPIRED`).
-  `hero.jpg` and the JS bundle do **not** show this — they keep `Cache-Control` on every response
-  observed. A real user's repeat visit almost always lands on a CDN `HIT` (that's the CDN's job), so
-  in practice browsers never see our cache header for this file — matching exactly what Lighthouse
-  measures. This is `hcdn`'s internal handling of byte-range-heavy content (video), not an
-  `.htaccess` config gap — **no origin-side fix exists**. Options if this needs to actually close:
-  (1) ask Hostinger support whether `hcdn` has a config/tier that preserves headers on video HITs,
-  (2) serve video from a different CDN/host (e.g. Cloudflare Stream, Bunny, or S3+CloudFront) instead
-  of Hostinger's own, (3) accept it — the JS-discovery-order LCP fix (the thing that actually moved
-  the needle earlier this project) already landed; this residual flag is cache-efficiency polish, not
-  a user-facing regression. **Check:** re-run `npm run pagespeed mobile` — if `hero.mp4`'s
-  `cacheLifetimeMs` in the `cache-insight` audit is ever > 0, `hcdn`'s behavior changed and this item
-  can be deleted.
+- ~~`hcdn` strips `Cache-Control` on `hero.mp4` HITs~~ — **RESOLVED, was a false positive.** The
+  2026-09-12 investigation above concluded (wrongly) that Hostinger's CDN drops `Cache-Control` on
+  video cache hits. Root cause of *that* conclusion, found later the same day: the browser tab's own
+  HTTP cache was replaying one stale cached response (identical `x-hcdn-request-id` across 5+
+  `fetch()` calls, proving no real network request occurred) from a window very shortly post-deploy
+  before the header had fully propagated. Forcing genuine network requests (`fetch(url, {cache:
+  'reload'})`, and separately `curl` from a different network) showed the CDN **does** preserve
+  `Cache-Control` on real `HIT`s — confirmed 6+ times. `npm run pagespeed mobile` re-run same day:
+  `hero.mp4` no longer appears in the cache-lifetime audit at all (only third-party Facebook Pixel
+  scripts remain, ~125 KiB, out of our control); mobile score 69→70. No Hostinger ticket needed — the
+  original `.htaccess` fix (commit `6d6927c`) was correct all along.
+  **Lesson:** when re-testing a cache-header fix in a browser tab, always force a genuine network
+  round-trip (`{cache: 'reload'}`, a cache-busting query param, or a fresh `curl`/incognito context)
+  and check the response's cache/request-id header for repetition before concluding the *server's*
+  behavior — a repeated identical trace ID across calls means the browser answered from its own
+  cache, not the network.
 
 ## Conditional (act only if the condition holds)
 

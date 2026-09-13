@@ -2,10 +2,10 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
-## 2026-09-12 — PageSpeed API tooling + root-caused the residual cache-lifetime flag
+## 2026-09-12 — PageSpeed API tooling; cache-lifetime flag investigated, false-positive corrected
 
 - Added `npm run pagespeed [mobile|desktop] [url]` (`scripts/pagespeed.sh`) — calls Google's PageSpeed Insights v5 API directly against the live published site (not local, unlike `npm run lighthouse`), printing score/FCP/LCP/TBT/CLS plus the cache-lifetime audit's flagged items. Key goes in `.env.pagespeed` (gitignored, `.env.pagespeed.example` committed as template).
-- **Root-caused via `superpowers:systematic-debugging`** why `pagespeed.web.dev` kept flagging `hero.mp4` at `cacheLifetimeMs: 0` (~3.2 MB) despite the prior cycle's `.htaccess` fix showing correct headers on manual checks: Hostinger's `hcdn` CDN drops the `Cache-Control` header entirely when serving the video from its edge cache (`HIT`) — it only appears on `MISS`/`EXPIRED` (origin passthrough). `hero.jpg`/JS don't show this. No origin-side fix exists; documented in `BACKLOG.md` + `DECISIONS.md` with options (Hostinger support ticket, or move video off `hcdn`).
+- **Investigated via `superpowers:systematic-debugging`, then self-corrected** why `pagespeed.web.dev` kept flagging `hero.mp4` at `cacheLifetimeMs: 0`: initial conclusion (Hostinger's `hcdn` CDN drops `Cache-Control` on video cache HITs) turned out to be a false positive — a repeated identical `x-hcdn-request-id` across "fresh" browser `fetch()` calls proved the browser was replaying its own stale cached response, not hitting the network. Escalated to Hostinger's support AI (which corroborated the false premise) before catching this. Forcing genuine network round-trips (`{cache: 'reload'}`, separate `curl`) showed the CDN preserves the header correctly. Re-ran `npm run pagespeed mobile`: `hero.mp4` no longer appears in the cache-lifetime audit at all — mobile score 69→70. Full correction + lesson in `DECISIONS.md`/`BACKLOG.md`. The original `.htaccess` fix (`6d6927c`) was correct; no further action needed on this item.
 
 ## 2026-09-12 — `.htaccess` cache-control hardening for static assets
 

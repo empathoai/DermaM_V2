@@ -28,6 +28,32 @@ is already resolved, delete the item now (don't wait for a formal close) and say
   Varies/Call Us/Blank); (3) booking timezone lock (Settings → Calendar & Booking). Links in
   `docs/PROGRESS_ARCHIVE.md` 2026-09-11 if needed.
 
+## Infra constraints (not actionable in this repo)
+
+- **Hostinger's `hcdn` CDN edge layer overrides `.htaccess` Cache-Control for JS.** Confirmed
+  2026-09-12 post-deploy of the cache-control hardening commit (`6d6927c`): images/video under
+  `/assets/` correctly serve our `Cache-Control: public, max-age=31536000, immutable` (verified via
+  `fetch` headers on live `hero.jpg`/`hero.mp4`), but `index-*.js` serves `max-age=604800` (7 days)
+  regardless of the 1-year rule set in `.htaccess` — response headers show `server: hcdn`,
+  `x-hcdn-cache-status: HIT`, `platform: hostinger`, meaning Hostinger's own CDN normalizes JS cache
+  lifetime at its edge, ignoring origin headers for that content type. No `.htaccess` change can fix
+  this — it would require a Hostinger panel/CDN-tier setting (if one exists) or moving JS off Hostinger's
+  CDN. **Check:** re-run the `fetch` header check above on the live `index-*.js` chunk — if
+  `cache-control` ever shows `max-age=31536000`, this is resolved (Hostinger changed edge behavior or
+  plan tier) and this item can be deleted.
+- **`pagespeed.web.dev`'s "Use efficient cache lifetimes" audit still flags `hero.mp4` at
+  `cacheLifetimeMs: 0` (~3.2 MB, unchanged from pre-fix) even though direct `fetch()` checks against
+  the live site show the correct `Cache-Control: public, max-age=31536000, immutable` header — tested
+  3 ways same session (plain GET, Range GET, repeat GET) right after the `pagespeed.web.dev` re-check,
+  all correct. Re-check ran ~10 min post-deploy; likely cause is `hcdn` edge-POP cache propagation lag
+  — Google's crawler may have hit a different edge node than the one serving my manual checks, one
+  that hadn't yet re-fetched the asset from origin with the new `.htaccess` rule. Mobile score stayed
+  at 69 (no regression, no visible gain yet). **Check:** re-run `pagespeed.web.dev` on
+  `dermamskinhealth.com` (mobile) an hour or more after 2026-09-12 ~20:50 UTC — if the cache-lifetime
+  audit still shows `hero.mp4` at 0 ms by then, propagation isn't the explanation and this needs a
+  fresh `superpowers:systematic-debugging` pass (check Vary headers, whether video requests take a
+  different origin path, etc.).
+
 ## Conditional (act only if the condition holds)
 
 - "Why postoperative care matters" section — only if `/tratamientos-postoperatorios` gains traction

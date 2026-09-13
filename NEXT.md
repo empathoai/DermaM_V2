@@ -6,24 +6,28 @@ are in it.
 
 ## State
 
-HEAD at `ac20a28` (PageSpeed API tooling + CDN root-cause docs), on top of `d7388e1` (`.htaccess`
-cache-control hardening, deployed + verified live). Working tree clean. **V1.0.7 is the live
-deploy**, `.htaccess` cache-control changes are live on Hostinger.
+HEAD at `8d26c5a` (project retrospective doc), on top of `e0f9694` (cache-control false-positive
+correction) and `d7388e1` (`.htaccess` cache-control hardening, deployed + verified live). Working
+tree clean. **V1.0.7 is the live deploy**, `.htaccess` cache-control changes are live on Hostinger.
 
 ## Next activity
 
-**Cache-control cycle fully closed 2026-09-12 — fix confirmed working, no CDN limitation.**
-`.htaccess` hardening deployed and verified: `hero.mp4` no longer appears in `pagespeed.web.dev`'s
-cache-lifetime audit at all (mobile 69→70). An earlier same-day investigation wrongly concluded
-Hostinger's CDN drops the header on video HITs — that was a browser-cache false positive, corrected
-same session (see `DECISIONS.md`). Only remaining cache-lifetime flag is third-party Facebook Pixel
-scripts (~125 KiB), not fixable from our side.
+**Session closed 2026-09-12 — nothing in-repo pending.** Cache-control cycle fully resolved
+(`.htaccess` hardening deployed, verified live, mobile PageSpeed 69→70, no CDN limitation — an
+earlier same-day false-positive was corrected same session, see `DECISIONS.md`). Added
+`npm run pagespeed` tooling and `docs/PROJECT_RETROSPECTIVE.md` (reusable knowledge for future
+sites, not project state).
+
+**User is now waiting on an external, non-code item:** Square deep-linking (see `BACKLOG.md`
+"Blocked" — clinic needs to confirm 4 service-ID rows + validate hidrofacial). No repo work is
+blocked on this; it only unblocks the Square-mapping cycle whenever the user has the confirmation.
 
 ## How to resume
 
-No proactive next step — wait for the user. If mobile PageSpeed work continues, the only lever left
-per Google's diagnostics is overall payload reduction (`hero.mp4` encoding/size, ~3.7 MB total) —
-cache-lifetime is no longer a factor for our own assets.
+No proactive next step — wait for the user. If they come back with the Square confirmation,
+that's the next cycle (`superpowers:brainstorming` → `src/data/squareServices.js`, see `BACKLOG.md`
+for the full scope). Otherwise: general PageSpeed cache-lifetime is resolved; only remaining lever
+is overall payload reduction (`hero.mp4` encoding/size) if that's ever revisited.
 
 ## Context by area — grep, not full-read
 

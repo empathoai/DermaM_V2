@@ -2,6 +2,11 @@
 
 Running log of work in this repo. Newest entry on top. One entry per session/task — what was done, what's left.
 
+## 2026-09-12 — PageSpeed API tooling + root-caused the residual cache-lifetime flag
+
+- Added `npm run pagespeed [mobile|desktop] [url]` (`scripts/pagespeed.sh`) — calls Google's PageSpeed Insights v5 API directly against the live published site (not local, unlike `npm run lighthouse`), printing score/FCP/LCP/TBT/CLS plus the cache-lifetime audit's flagged items. Key goes in `.env.pagespeed` (gitignored, `.env.pagespeed.example` committed as template).
+- **Root-caused via `superpowers:systematic-debugging`** why `pagespeed.web.dev` kept flagging `hero.mp4` at `cacheLifetimeMs: 0` (~3.2 MB) despite the prior cycle's `.htaccess` fix showing correct headers on manual checks: Hostinger's `hcdn` CDN drops the `Cache-Control` header entirely when serving the video from its edge cache (`HIT`) — it only appears on `MISS`/`EXPIRED` (origin passthrough). `hero.jpg`/JS don't show this. No origin-side fix exists; documented in `BACKLOG.md` + `DECISIONS.md` with options (Hostinger support ticket, or move video off `hcdn`).
+
 ## 2026-09-12 — `.htaccess` cache-control hardening for static assets
 
 - **Why:** `pagespeed.web.dev` flagged 3.2 MB of potential savings from missing/weak cache headers — the biggest remaining mobile lever per `NEXT.md`.

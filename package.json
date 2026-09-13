@@ -17,6 +17,7 @@
     "preview": "vite preview",
     "deploy": "bash scripts/deploy.sh",
     "lighthouse": "bash scripts/lighthouse.sh",
+    "pagespeed": "bash scripts/pagespeed.sh",
     "clean": "rm -rf dist server.js",
     "lint": "echo \"No linting\"",
     "test:visual": "playwright test"

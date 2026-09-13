@@ -41,18 +41,25 @@ is already resolved, delete the item now (don't wait for a formal close) and say
   CDN. **Check:** re-run the `fetch` header check above on the live `index-*.js` chunk — if
   `cache-control` ever shows `max-age=31536000`, this is resolved (Hostinger changed edge behavior or
   plan tier) and this item can be deleted.
-- **`pagespeed.web.dev`'s "Use efficient cache lifetimes" audit still flags `hero.mp4` at
-  `cacheLifetimeMs: 0` (~3.2 MB, unchanged from pre-fix) even though direct `fetch()` checks against
-  the live site show the correct `Cache-Control: public, max-age=31536000, immutable` header — tested
-  3 ways same session (plain GET, Range GET, repeat GET) right after the `pagespeed.web.dev` re-check,
-  all correct. Re-check ran ~10 min post-deploy; likely cause is `hcdn` edge-POP cache propagation lag
-  — Google's crawler may have hit a different edge node than the one serving my manual checks, one
-  that hadn't yet re-fetched the asset from origin with the new `.htaccess` rule. Mobile score stayed
-  at 69 (no regression, no visible gain yet). **Check:** re-run `pagespeed.web.dev` on
-  `dermamskinhealth.com` (mobile) an hour or more after 2026-09-12 ~20:50 UTC — if the cache-lifetime
-  audit still shows `hero.mp4` at 0 ms by then, propagation isn't the explanation and this needs a
-  fresh `superpowers:systematic-debugging` pass (check Vary headers, whether video requests take a
-  different origin path, etc.).
+- **`hcdn` strips `Cache-Control` entirely on cache `HIT` for `hero.mp4` — root-caused via
+  `superpowers:systematic-debugging` 2026-09-12.** `pagespeed.web.dev`'s "Use efficient cache
+  lifetimes" audit kept flagging `hero.mp4` at `cacheLifetimeMs: 0` (~3.2 MB) even ~2h post-deploy of
+  the cache-control hardening (`6d6927c`), ruling out edge-propagation lag as the cause. Direct
+  `fetch()` comparison confirmed the real mechanism: when `hcdn` serves the video from its own edge
+  cache (`x-hcdn-cache-status: HIT`), the `Cache-Control` header is **absent from the response
+  entirely** — it only appears when `hcdn` passes the request through to origin (`MISS`/`EXPIRED`).
+  `hero.jpg` and the JS bundle do **not** show this — they keep `Cache-Control` on every response
+  observed. A real user's repeat visit almost always lands on a CDN `HIT` (that's the CDN's job), so
+  in practice browsers never see our cache header for this file — matching exactly what Lighthouse
+  measures. This is `hcdn`'s internal handling of byte-range-heavy content (video), not an
+  `.htaccess` config gap — **no origin-side fix exists**. Options if this needs to actually close:
+  (1) ask Hostinger support whether `hcdn` has a config/tier that preserves headers on video HITs,
+  (2) serve video from a different CDN/host (e.g. Cloudflare Stream, Bunny, or S3+CloudFront) instead
+  of Hostinger's own, (3) accept it — the JS-discovery-order LCP fix (the thing that actually moved
+  the needle earlier this project) already landed; this residual flag is cache-efficiency polish, not
+  a user-facing regression. **Check:** re-run `npm run pagespeed mobile` — if `hero.mp4`'s
+  `cacheLifetimeMs` in the `cache-insight` audit is ever > 0, `hcdn`'s behavior changed and this item
+  can be deleted.
 
 ## Conditional (act only if the condition holds)
 
